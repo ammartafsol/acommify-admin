@@ -1,0 +1,77 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 20px;
+  background: var(--Poor-white, #fff);
+  min-width: 430px;
+  padding: 24px;
+  min-height: 385px;
+  justify-content: space-between;
+}
+
+.headerTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header > p {
+  color: var(--Gray-900, #181d27);
+  font-family: var(--font-lato);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.header svg {
+  cursor: pointer;
+}
+
+.businessDetails {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.revenueValue {
+  color: #212121;
+  font-family: var(--font-lato);
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.34px;
+  padding-inline-start: 24px;
+}
+
+.percentage {
+  color: #000;
+  font-family: var(--font-lato);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.main :focus {
+  outline: none;
+}
+@media (max-width: 480px) {
+  .main {
+    min-width: unset;
+  }
+}

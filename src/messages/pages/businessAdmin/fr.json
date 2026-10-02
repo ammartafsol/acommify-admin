@@ -1,0 +1,67 @@
+{
+  "businessAdminPage": {
+    "title": "Centres",
+    "addButton": "Ajouter",
+    "table": {
+      "centreName": "Nom du centre",
+      "country": "Pays",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "statusTitle": "Statut"
+    },
+    "actions": {
+      "view": "Voir",
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "modal": {
+      "detailTitle": "Détails des centres",
+      "deleteMessage": "Êtes-vous sûr de vouloir supprimer cet élément ?",
+      "addTitle": "Ajouter",
+      "editTitle": "Modifier",
+      "addStaff": "Ajouter un centre",
+      "editStaff": "Modifier le centre",
+      "cancel": "Annuler",
+      "confirm": "Confirmer",
+      "loading": "Chargement...",
+      "translating": "Traduction...",
+      "autoFill": "Remplissage automatique",
+      "CreatedSuccessfully": "Créé avec succès",
+      "UpdatedSuccessfully": "Mis à jour avec succès",
+      "PleaseFill": "Veuillez remplir",
+      "translationSuccessMessage": "Traduction terminée avec succès"
+    },
+    "fields": {
+      "centreName": "Nom du centre",
+      "centreNamePlaceholder": "Entrez le nom du centre",
+      "name": "Nom du propriétaire",
+      "namePlaceholder": "Entrez le nom du propriétaire",
+      "email": "Adresse Email",
+      "emailPlaceholder": "example@company.com",
+      "country": "Pays",
+      "countryPlaceholder": "Sélectionnez le pays",
+      "region": "Région",
+      "regionPlaceholder": "Sélectionner la région",
+      "phone": "Numéro de Téléphone",
+      "phonePlaceholder": "Entrez le numéro de téléphone"
+    },
+    "formikSchema": {
+      "centreNameRequired": "Le nom du centre est requis",
+      "countryRequired": "Le pays est requis",
+      "regionRequired": "La région est requise",
+      "fullNameRequired": "Le nom complet est requis",
+      "emailAddress": "Veuillez entrer une adresse email valide",
+      "emailRequired": "L'email est requis",
+      "callingRequired": "L'indicatif téléphonique est requis",
+      "phoneNumberLimit": "Le numéro doit contenir 10 à 15 chiffres, éventuellement précédé de +",
+      "phoneNumberRequired": "Le numéro de téléphone est requis"
+    },
+    "toast": {
+      "created": "Créé avec succès",
+      "updated": "Mis à jour avec succès",
+      "deleted": "Supprimé avec succès",
+      "pleaseFill": "Veuillez remplir"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "busManagementPage": {
+    "title": "إدارة الحافلات",
+    "addBus": "إنشاء حافلة",
+    "addNewBus": "إضافة حافلة جديدة",
+    "busDetail": "تفاصيل الحافلة",
+    "deletedBus": "تم حذف الحافلة بنجاح.",
+    "statusUpdated": "تم تحديث حالة الحافلة بنجاح.",
+    "table": {
+      "busId": "معرف الحافلة",
+      "busName": "اسم الحافلة",
+      "startLocation": "موقع البداية",
+      "endLocation": "موقع النهاية",
+      "capacity": "السعة",
+      "status": "الحالة",
+      "startTime": "وقت البداية",
+      "endTime": "وقت النهاية",
+      "availableDates": "التواريخ المتاحة",
+      "description": "الوصف"
+    },
+    "filterStatus": {
+      "options": [
+        { "label": "الكل", "value": "all" },
+        { "label": "نشط", "value": "active" },
+        { "label": "غير نشط", "value": "inactive" },
+        { "label": "صيانة", "value": "maintenance" }
+      ]
+    },
+    "busStatus": {
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "shiftOptions": {
+      "morning": "الصباح",
+      "afternoon": "بعد الظهر",
+      "evening": "المساء",
+      "night": "الليل"
+    },
+    "toasts": {
+      "busCreated": "تم إنشاء الحافلة بنجاح",
+      "busUpdated": "تم تحديث الحافلة بنجاح"
+    },
+    
+    "modal": {
+      "editTitle": "تعديل الحافلة",
+      "translating": "جاري الترجمة...",
+      "autoFill": "ملء تلقائي",
+      "seater": "مقاعد",
+      "inputLabels": {
+        "document": "شروط وخدمات التحميل",
+        "busName": "اسم الحافلة",
+        "busNumber": "رقم الحافلة",
+        "description": "الوصف",
+        "startLocation": "موقع البداية",
+        "endLocation": "موقع النهاية",
+        "capacity": "السعة",
+        "startTime": "وقت البداية",
+        "endTime": "وقت النهاية",
+        "availableDates": "التواريخ المتاحة",
+        "shift": "الوردية"
+      },
+      "inputPlaceholders": {
+        "busName": "أدخل اسم الحافلة",
+        "busNumber": "أدخل رقم الحافلة",
+        "description": "أدخل الوصف",
+        "startLocation": "أدخل موقع البداية",
+        "endLocation": "أدخل موقع النهاية",
+        "capacity": "أدخل السعة",
+        "startTime": "أدخل وقت البداية",
+        "endTime": "أدخل وقت النهاية",
+        "availableDates": "اختر التواريخ المتاحة",
+        "shift": "اختر الوردية"
+      },
+      "uploadMessage": {
+        "document": "شروط وخدمات التحميل"
+      },
+      "fileFormats": {
+        "document": "PDF, DOC, DOCX, TXT, RTF"
+      },
+      "btnLabels": {
+        "create": "إنشاء",
+        "update": "تحديث",
+        "cancel": "إلغاء"
+      },
+      "translationSuccessMessage": "تمت الترجمة بنجاح",
+      "toasts": {
+        "busCreated": "تم إنشاء الحافلة بنجاح",
+        "busUpdated": "تم تحديث الحافلة بنجاح",
+        "pleaseFill": "يرجى ملء"
+      },
+      "validation": {
+        "busName": "اسم الحافلة مطلوب",
+        "description": "الوصف مطلوب",
+        "busNumber": "رقم الحافلة مطلوب",
+        "startLocation": "موقع البداية مطلوب",
+        "endLocation": "موقع النهاية مطلوب",
+        "capacity": "السعة مطلوبة",
+        "status": "الحالة مطلوبة",
+        "capacityMin": "يجب أن تكون السعة 15 على الأقل",
+        "availableDatesMin": "مطلوب تاريخ واحد متاح على الأقل",
+        "availableDates": "التواريخ المتاحة مطلوبة",
+        "startTime": "وقت البداية مطلوب",
+        "endTime": "وقت النهاية مطلوب",
+        "shift": "الوردية مطلوبة",
+        "mediaError": "تحميل الوسائط"
+      }
+    }
+  }
+}

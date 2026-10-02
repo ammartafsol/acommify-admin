@@ -1,0 +1,68 @@
+{
+  "loginPage": {
+    "title": "Shiga",
+    "titleCentre": "Shiga Cibiyar",
+    "titleNationwide": "Shiga Dashboard Nationwide",
+    "titleAdmin": "Shiga Admin",
+    "selectorTitle": "Wane shiga kuke bukata?",
+    "selectorSubtitle": "Zaɓi nau'in asusun da kuke son shiga da shi.",
+    "selectCentre": "Cibiyar",
+    "selectNationwide": "Dashboard Nationwide",
+    "selectAdmin": "Admin",
+    "emailLabel": "Imel",
+    "emailPlaceholder": "Shigar da Imel",
+    "emailError": "Da fatan za a shigar da adireshin imel mai inganci",
+    "EmailRequired": "Imel yana buƙata",
+    "emailInvalidChars": "Imel yana ɗauke da haruffa marasa inganci",
+    "passwordLabel": "Kalmar sirri",
+    "passwordPlaceholder": "Shigar da Kalmar sirri",
+    "passwordRequired": "Kalmar sirri tana buƙata",
+    "forgotPass": "Ka manta kalmar sirri?",
+    "loginButton": "Shiga",
+    "gotoBusinessOwnerLogin": "Shiga a matsayin Cibiyar",
+    "gotoAdminLogin": "Je zuwa Shiga Admin",
+    "gotoNationWideLogin": "Je zuwa Shiga Dashboard Nationwide"
+  },
+  "forgotPasswordPage": {
+    "title": "Manta Kalmar sirri",
+    "subtitle": "Kada ka damu! Hakan yana faruwa. Da fatan za a shigar da adireshin da ke da alaƙa da asusunka.",
+    "emailLabel": "Imel",
+    "emailPlaceholder": "Shigar da Imel",
+    "emailError": "Da fatan za a shigar da adireshin imel mai inganci",
+    "emailRequired": "Imel yana buƙata",
+    "emailInvalidChars": "Imel yana ɗauke da haruffa marasa inganci",
+    "submitButton": "Aika Imel",
+    "specialChar": "Babu Haruffa na Musamman"
+  },
+  "verificationPage": {
+    "title": "Lambar Tabbatawa",
+    "subtitle": "Tabbata da Lamba",
+    "resendCode": "Aika Lamba Sake {time, plural, =0 {} =1 {# daƙiƙa} other {# daƙiƙa}}",
+    "sendingOtp": "Aika Lambar OTP {time, plural, =0 {} =1 {# daƙiƙa} other {# daƙiƙa}}",
+    "verifyButton": "Tabbata",
+    "minLimit": "OTP dole ya kasance aƙalla haruffa 4",
+    "otpRequired": "OTP yana buƙata"
+  },
+  "resetPasswordPage": {
+    "title": "Sake Saita Kalmar sirri",
+    "subtitle": "Shigar da sabuwar kalmar sirri",
+    "passwordLabel": "Kalmar sirri",
+    "passwordPlaceholder": "Shigar da Kalmar sirri",
+    "passwordRequired": "Kalmar sirri tana buƙata",
+    "minPasswordError": "Aƙalla haruffa 8",
+    "maxPasswordError": "Mafi yawan haruffa 20",
+    "lowerPasswordError": "Ƙara aƙalla ƙaramin harafi ɗaya",
+    "upperPasswordError": "Ƙara aƙalla babban harafi ɗaya",
+    "specialPasswordError": "Ƙara aƙalla harafi na musamman ɗaya",
+    "confirmPasswordLabel": "Tabbatar da Kalmar sirri",
+    "confirmPasswordPlaceholder": "Tabbatar da Kalmar sirri",
+    "confirmPasswordRequired": "Kalmar sirri tana buƙata",
+    "ConfirmPasswordError": "Kalmomin sirri ba su daidaita ba",
+    "submitButton": "Sake Saita Kalmar sirri",
+
+    "modal": {
+      "title": "An canza kalmar sirri cikin nasara!",
+      "btnText": "Ci gaba"
+    }
+  }
+}

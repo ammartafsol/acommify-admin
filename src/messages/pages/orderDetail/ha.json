@@ -1,0 +1,32 @@
+{
+  "orderDetailsPage": {
+    "title": "Cikakken Ajiya",
+    "orderDetail": {
+      "orderId": "Ajiya",
+      "status": "Matsayin Ajiya",
+      "orderDate": "Kwanan Watan Ajiya",
+      "totalPoints": "Jimlar Maki",
+      "userInfo": "Bayanin Mai Amfani",
+      "name": "Suna",
+      "email": "Imel",
+      "phone": "Wayar",
+      "shippingInfo": "Bayanin Aikawa",
+      "address": "Adireshi",
+      "city": "Birni",
+      "country": "Ƙasa",
+      "summary": "Taƙaitaccen Ajiya",
+      "orderIdLabel": "ID na Ajiya",
+      "items": "Kayayyaki",
+      "orderItem": "Kayayyakin Ajiya"
+    },
+    "orderDetailsHeader": {
+      "product": "Kayayyaki",
+      "category": "Rukuni",
+      "quantity": "Adadi",
+      "shippingType": "Nau'in Aikawa",
+      "totalPoints": "Jimla",
+      "status": "Matsayi"
+    },
+    "completedStatusToast": "Matsayin kayayyakin ajiya an ƙare cikin nasara"
+  }
+}

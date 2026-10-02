@@ -1,0 +1,15 @@
+{
+  "profileSettingsPage": {
+    "title": "Налаштування профілю",
+    "fields": {
+      "name": "Повне ім'я",
+      "namePlaceholder": "Введіть повне ім'я",
+      "email": "Електронна пошта",
+      "emailPlaceholder": "Введіть електронну пошту",
+      "phone": "Номер телефону",
+      "phonePlaceholder": "Введіть номер телефону",
+      "address": "Адреса",
+      "addressPlaceholder": "Введіть адресу"
+    }
+  }
+}

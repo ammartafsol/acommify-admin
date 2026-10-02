@@ -1,0 +1,68 @@
+.main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.ul li {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  border-radius: 8px;
+  font-family: var(--font-lato);
+  background: #fff;
+  color: #8c939b;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+  box-shadow: 0 9.628px 48.14px 0 rgba(139, 139, 139, 0);
+  min-width: 103px;
+}
+
+.listSelected {
+  transition: background 0.3s ease-in-out;
+  border-radius: 10px !important;
+  border-radius: 8px;
+  background: #33b5f6 !important;
+  box-shadow: 0 3px 8px 0 rgba(51, 181, 246, 0.35);
+  color: #fff !important;
+  border: none !important;
+  font-weight: 400 !important;
+}
+
+.listSelected svg {
+  transition: background 0.3s ease-in-out;
+}
+
+.selectedIcon svg {
+  color: #fff !important;
+}
+@media (max-width: 1281px) {
+  .ul li {
+    min-width: unset;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* .ul {
+    flex-direction: column;
+  } */
+  .ul li {
+    font-size: 14px;
+  }
+}

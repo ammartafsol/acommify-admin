@@ -1,0 +1,79 @@
+.main {
+  display: flex;
+  padding: 24px 24px 24px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 20px;
+  background: var(--Poor-white);
+  min-width: 430px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: 24px;
+}
+
+.dropDownFilter > div:first-of-type {
+  border-radius: 10px !important;
+}
+
+.header > p {
+  color: var(--Gray-900, #181d27);
+  font-family: var(--font-lato);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.header svg {
+  cursor: pointer;
+}
+.businessDetails {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.revenueValue {
+  color: #212121;
+  font-family: var(--font-lato);
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.34px;
+  padding-inline-start: 24px;
+}
+
+.percentage {
+  color: #000;
+  font-family: var(--font-lato);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 123.077% */
+}
+
+.headerTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.dropDownContainerClass[class*="Container"] {
+  width: max-content !important;
+}
+@media (max-width: 600px) {
+  .main {
+    min-width: unset;
+  }
+}
+.main :focus {
+  outline: none;
+}

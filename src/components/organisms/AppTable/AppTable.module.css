@@ -1,0 +1,131 @@
+.tableMainContainer {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: var(--Poor-white);
+  padding: 20px;
+}
+
+.tableMainContainer::-webkit-scrollbar,
+.tableHeaderContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.tableMainContainer table {
+  width: 100%;
+}
+
+.tableHeaderContainer {
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 5px;
+}
+
+.tableHeaderContainer th {
+  width: 20%;
+  height: 50px;
+  padding: 0px;
+  padding-inline-end: 15px;
+  color: var(--Dark-gray, #8c939b);
+  text-align: start;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 16.8px */
+  word-break: break-word;
+  white-space: pre-line;
+}
+
+.tableBodyContainer {
+  max-height: calc(60vh - 5px) !important;
+}
+
+.tableBodyContainer td {
+  text-align: start;
+  color: var(--Black, #172a33);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 20%;
+  padding-block: 16px;
+  padding-inline-end: 12px;
+}
+
+.tableBodyContainer td > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.tableBodyContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.tableBodyContainer tr:nth-child(even) td {
+  background: #f4f7fd;
+}
+
+.tableBodyContainer tr td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-radius: 0;
+}
+
+.tableBodyContainer tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-radius: 0;
+}
+
+.tableBodyContainer td:first-child,
+.tableBodyContainer td:last-child {
+  text-align: start;
+}
+
+.tableHeaderContainer th:first-child,
+.tableBodyContainer td:first-child {
+  padding-inline-start: 24px !important;
+}
+
+.tableBodyContainer td:first-child {
+  text-align: start;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px !important;
+  max-width: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.actionContainer {
+  display: flex !important;
+  gap: 10px;
+  align-items: center;
+}
+
+.tableHeaderContainer th,
+.tableBodyContainer td {
+  width: 16%;
+}
+.tableBodyContainer[class*="active"],
+.tableHeaderContainer[class*="active"] {
+  cursor: grabbing;
+}

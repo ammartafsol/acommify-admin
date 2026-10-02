@@ -1,0 +1,89 @@
+{
+  "roomsHouses": {
+    "title": "د کوټو/کورونو مدیریت",
+    "addRoom": "کوټه/کور اضافه کړئ",
+    "viewModalTitle": "د کوټې/کور تفصیلات",
+    "filterOptions": {
+      "beds": "د بسترونو شمیر",
+      "occupancyStatus": "د اشغال حالت",
+      "accommodationType": "د استوګنې ډول",
+      "a-z": "ا-ی",
+      "UnOccupied": "غیر اشغال شوی",
+      "partiallyOccupied": "نیمه اشغال شوی",
+      "apartment": "آپارتمان",
+      "house": "کور",
+      "room": "کوټه",
+      "status": "د اشغال حالت",
+      "occupied": "اشغال شوی",
+      "filters": "فلټرونه",
+      "sortBy": "د ترتیب له مخې...",
+      "filterBy": "فلټر کړئ",
+      "clear": "ټول پاک کړئ",
+      "apply": "پلي کړئ"
+    },
+    "table": {
+      "houseRoomNumber": "د کور/کوټې شمیره",
+      "numberOfBeds": "د بسترونو شمیر",
+      "accommodationType": "د استوګنې ډول",
+      "occupancyStatus": "د اشغال حالت",
+      "status": "حالت",
+      "userType": "د کارن ډول",
+      "createdAt": "جوړ شوی",
+      "bedsOccupied": "اشغال شوي بسترونه"
+    },
+    "tabs": {
+      "resident": "استوګن",
+      "visitor": "لیدونکی"
+    },
+    "actions": {
+      "edit": "سمون",
+      "delete": "ړنګول",
+      "view": "کتل",
+      "activate": "فعال کول",
+      "deactivate": "غیرفعال کول"
+    },
+    "modal": {
+      "houseRoomNumber": "د کور/کوټې شمیره",
+      "numberOfBeds": "د بسترونو شمیر",
+      "occupancyStatus": "د اشغال حالت",
+      "accommodationType": "د استوګنې ډول",
+      "accommodationTypePlaceholder": "د استوګنې ډول وټاکئ",
+      "houseRoomNumberPlaceholder": "د کور/کوټې شمیره ولیکئ",
+      "userType": "د کارن ډول",
+      "userTypePlaceholder": "د کارن ډول وټاکئ",
+      "occupancyStatusPlaceholder": "د اشغال حالت وټاکئ",
+      "numberOfBedsPlaceholder": "د بسترونو شمیر ولیکئ",
+      "cancel": "لغوه کول",
+      "create": "جوړول",
+      "edit": "سمون",
+      "editRoomHouse": "کوټه/کور سمون",
+      "createRoomHouse": "کوټه/کور جوړول",
+      "updatedSuccessfully": "استوګنه په بریالیتوب سره تازه شوه",
+      "RoomsHousesSubmitted": "کوټې او کورونه په بریالیتوب سره وسپارل شول",
+      "createdSuccessfully": "کوټه/کور په بریالیتوب سره جوړ شو",
+      "houseTypeLabels": {
+        "house": "کور",
+        "room": "کوټه",
+        "apartment": "آپارتمان"
+      },
+      "userTypeLabels": {
+        "resident": "استوګن",
+        "visitor": "لیدونکی"
+      },
+      "modalFormik": {
+        "HouseRoomNumberRequired": "د کور/کوټې شمیره اړینه ده",
+        "2Characters": "لږ تر لږه 2 حروف باید وي",
+        "BedsRequired": "د بسترونو شمیر اړین دی",
+        "ExceedBeds": "نشي کولی 10 بسترونه تیری کړي",
+        "TypeRequired": "ډول اړین دی",
+        "atLeastBeds": "لږ تر لږه 1 بستر باید وي",
+        "UserTypeRequired": "د کارن ډول اړین دی"
+      }
+    },
+    "toasts": {
+      "activateSuccess": "استوګنه په بریالیتوب سره فعاله شوه",
+      "deactivateSuccess": "استوګنه په بریالیتوب سره غیرفعاله شوه",
+      "deletedRoomHouse": "کوټه/کور په بریالیتوب سره ړنګ شوه"
+    }
+  }
+}

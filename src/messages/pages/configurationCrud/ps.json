@@ -1,0 +1,39 @@
+{
+  "configurationPage": {
+    "title": "ترتیب",
+    "addButton": "ترتیب اضافه کړئ",
+    "editButton": "سمون",
+    "deleteButton": "ړنګول",
+    "table": {
+      "name": "نوم",
+      "ipAddress": "IP پته"
+    },
+    "modal": {
+      "addTitle": "ترتیب اضافه کړئ",
+      "editTitle": "ترتیب سمون",
+      "ConfigurationName": "د ترتیب نوم",
+      "ConfigurationNamePlaceholder": "د ترتیب نوم ولیکئ",
+      "nameRequired": "د ترتیب نوم اړین دی",
+      "ipAddress": "IP پته",
+      "ipAddressPlaceholder": "IP پته ولیکئ",
+      "ipAddressRequired": "IP پته اړینه ده",
+      "ipAddressInvalid": "مهرباني وکړئ د سم IP پته ولیکئ (لکه: 192.168.1.1)",
+      "cancelButton": "لغوه کړئ",
+      "saveButton": "خوندي کړئ",
+      "updateButton": "تازه کړئ",
+      "saving": "د خوندي کولو په حال کې...",
+      "loading": "د پورته کولو په حال کې...",
+      "required": "دا ساحه اړینه ده",
+      "autoFill": "اتوماتیک ډکول",
+      "translating": "د ژباړې په حال کې...",
+      "UpdatedSuccessfully": "ترتیب په بریالیتوب سره تازه شو",
+      "CreatedSuccessfully": "ترتیب په بریالیتوب سره جوړ شو",
+      "PleaseFill": "مهرباني وکړئ ډک کړئ",
+      "translationSuccessMessage": "ژباړه په بریالیتوب سره بشپړه شوه"
+    },
+    "toast": {
+      "configurationDeleted": "ترتیب په بریالیتوب سره ړنګ شو"
+    }
+  }
+}
+

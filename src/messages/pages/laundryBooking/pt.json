@@ -1,0 +1,49 @@
+{
+  "laundryBooking": {
+    "title": "Reserva de Lavanderia",
+    "tabs": {
+      "all": "Todas",
+      "pending": "Pendente",
+      "acceptedORConfirmed": "Confirmado ou Aceito",
+      "cancelled": "Cancelado",
+      "rejected": "Rejeitado"
+    },
+    "table": {
+      "residentName": "Nome do Residente",
+      "laundryDateTime": "Data e Hora da Lavanderia",
+      "roomNumber": "Número do Quarto",
+      "machineName": "Máquina",
+      "DateAndTime": "Data e Hora",
+      "status": "Status"
+    },
+    "status": {
+      "pending": "Pendente",
+      "confirmed": "Confirmado",
+      "completed": "Concluído"
+    },
+    "buttons": {
+      "submit": "Enviar",
+      "cancel": "Cancelar"
+    },
+    "actions": {
+      "approve": "Aprovar",
+      "cancel": "Cancelar",
+      "view": "Visualizar"
+    },
+    "modal": {
+      "viewBookingDetails": "Detalhes da Reserva de Lavanderia",
+      "residentName": "Nome do Residente",
+      "roomNumber": "Número do Quarto",
+      "machineName": "Nome da Máquina",
+      "laundryDate": "Data da Lavanderia",
+      "timeSlot": "Horário",
+      "status": "Status"
+    },
+    "areYouSureModal": {
+      "approve": "Aprovar Reserva",
+      "reject": "Rejeitar Reserva",
+      "approveBookingSure": "Tem certeza de que deseja aprovar esta reserva?",
+      "rejectBookingSure": "Tem certeza de que deseja rejeitar esta reserva?"
+    }
+  }
+}

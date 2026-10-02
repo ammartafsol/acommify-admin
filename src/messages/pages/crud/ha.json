@@ -1,0 +1,157 @@
+{
+  "crudPage": {
+    "title": "Ayyukan CRUD",
+    "crudData": {
+      "maintenanceCategories": "Rukunin Kulawa",
+      "laundaryMachineCategories": "Rukunin Injinan Wanki",
+      "FAQs": "Tambayoyin da Ake Yi",
+      "helplines": "Layukan Taimako",
+      "positions": "Matsayin"
+    },
+    "laundaryMachineCategoriesPage": {
+      "title": "Rukunin Injinan Wanki",
+      "addButton": "Ƙara Sabon Injin",
+      "edit": "Gyara",
+      "table": {
+        "machineName": "Sunan Injin",
+        "status": "Matsayi"
+      },
+      "modal": {
+        "title": "Ƙirƙiri Injin",
+        "editTitle": "Gyara Injin",
+        "autoFill": "Cike Kansa",
+        "translating": "Ana Fassara...",
+        "machineName": "Sunan Injin",
+        "machineNamePlaceholder": "Shigar da sunan injin",
+        "inputRequired": {
+          "name": "Sunan injin yana buƙata"
+        },
+        "status": "Matsayi",
+        "statusPlaceholder": "Zaɓi matsayi",
+        "statusRequired": "Matsayi yana buƙata",
+        "active": "Aiki",
+        "inactive": "Ba Aiki",
+        "cancel": "Soke",
+        "save": "Ajiye",
+        "update": "Sabunta",
+        "confirm": "Tabbata",
+        "MachineUpdatedSuccessfully": "Injin an sabunta cikin nasara",
+        "MachineCreatedSuccessfully": "Injin an ƙirƙira cikin nasara",
+        "fill": "Da fatan za a cika",
+        "autoFilled": "Cike kansa ya yi nasara"
+      }
+    },
+    "maintenanceCategoriesPage": {
+      "title": "Rukunin Kulawa",
+      "addButton": "Ƙara Sabon Rukuni",
+      "edit": "Gyara",
+      "table": {
+        "categoryName": "Sunan Rukuni",
+        "status": "Matsayi",
+        "risk": "Hatsari"
+      },
+      "modal": {
+        "title": "Ƙirƙiri Rukuni",
+        "editTitle": "Gyara Rukuni",
+        "categoryName": "Sunan Rukuni",
+        "categoryNamePlaceholder": "Shigar da sunan rukuni",
+        "inputRequired": {
+          "name": "Sunan rukuni yana buƙata"
+        },
+        "severity": "Matsakaici",
+        "severityPlaceholder": "Zaɓi matsakaici",
+        "severityRequired": "Matsakaici yana buƙata",
+        "autoFilled": "Cike kansa ya yi nasara",
+        "severityOptions": {
+          "low": "Ƙasa",
+          "medium": "Matsakaici",
+          "high": "Sama"
+        },
+        "status": "Matsayi",
+        "statusPlaceholder": "Zaɓi matsayi",
+        "statusOptions": {
+          "active": "Aiki",
+          "inactive": "Ba Aiki"
+        },
+        "statusRequired": "Matsayi yana buƙata",
+        "btnTranslate": "Ana Fassara...",
+        "autoFill": "Cike Kansa",
+        "pleaseFill": "Da fatan za a cika",
+        "cancel": "Soke",
+        "save": "Ajiye",
+        "update": "Sabunta",
+        "confirm": "Tabbata",
+        "toast": {
+          "categoryUpdated": "Rukuni an sabunta cikin nasara",
+          "categoryCreated": "Rukuni an ƙirƙira cikin nasara"
+        }
+      }
+    },
+    "helpLineCrudPage": {
+      "title": "Layukan Taimako",
+      "addButton": "Ƙara Layin Taimako",
+      "edit": "Gyara",
+      "actions": {
+        "active": "Aiki",
+        "inactive": "Ba Aiki"
+      },
+      "table": {
+        "title": "Take",
+        "country": "Ƙasa",
+        "contact": "Lamban Tuntuɓar",
+        "description": "Bayani",
+        "status": "Matsayi",
+        "phoneNumber": "Lambar Wayar"
+      },
+      "modal": {
+        "title": "Ƙirƙiri Layin Taimako",
+        "editTitle": "Gyara Layin Taimako",
+        "autoFill": "Cike Kansa",
+        "translating": "Ana Fassara...",
+        "helpLineTitle": "Take na Layin Taimako",
+        "titleRequired": "Take na layin taimako yana buƙata",
+        "helpLineTitlePlaceholder": "Shigar da take na layin taimako",
+        "helpLineTitleRequired": "Take na layin taimako yana buƙata",
+        "contact": "Lamban Tuntuɓar",
+        "contactPlaceholder": "Shigar da lamban tuntuɓar",
+        "contactRequired": "Lamban tuntuɓar yana buƙata",
+        "description": "Bayani",
+        "callingCodeRequired": "Lambar kira tana buƙata",
+        "pleaseFill": "Da fatan za a cika",
+        "inputRequired": {
+          "country": "Ƙasa tana buƙata",
+          "title": "Take yana buƙata",
+          "description": "Bayani yana buƙata"
+        },
+        "phoneNumberRequired": "Lambar wayar tana buƙata",
+        "timingsRequired": "Lokutan suna buƙata",
+        "descriptionPlaceholder": "Shigar da bayani",
+        "descriptionRequired": "Bayani yana buƙata",
+        "status": "Matsayi",
+        "statusPlaceholder": "Zaɓi matsayi",
+        "statusRequired": "Matsayi yana buƙata",
+        "active": "Aiki",
+        "inactive": "Ba Aiki",
+        "cancel": "Soke",
+        "save": "Ajiye",
+        "update": "Sabunta",
+        "confirm": "Tabbata",
+        "helpLineUpdatedSuccessfully": "Layin taimako an sabunta cikin nasara",
+        "helpLineCreatedSuccessfully": "Layin taimako an ƙirƙira cikin nasara",
+        "minLength": "Dole ya kasance aƙalla haruffa 2",
+        "fill": "Da fatan za a cika",
+        "autoFilled": "Cike kansa ya yi nasara",
+        "phoneNumber": "Lambar Wayar",
+        "phoneNumberPlaceholder": "Shigar da lambar wayar",
+        "timings": "Lokutan",
+        "timingsPlaceholder": "Shigar da lokutan",
+        "translationSuccess": "Fassarar ta yi nasara",
+        "country": "Ƙasa",
+        "countryPlaceholder": "Zaɓi ƙasa"
+      },
+      "toasts": {
+        "statusUpdateSuccess": "Matsayi an sabunta cikin nasara"
+      }
+    }
+  }
+}

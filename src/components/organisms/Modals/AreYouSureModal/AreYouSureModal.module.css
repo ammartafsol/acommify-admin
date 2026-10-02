@@ -1,0 +1,30 @@
+.actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--Black);
+}
+
+.message {
+  font-size: 16px;
+  color: var(--Black);
+}
+.confirmButton[class*="btn"] {
+  box-shadow: none;
+}
+
+.main[class*="modal-content"] {
+  max-width: 360px !important;
+}

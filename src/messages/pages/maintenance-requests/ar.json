@@ -1,0 +1,86 @@
+{
+  "maintenanceRequestsPage": {
+    "title": "طلبات الصيانة",
+    "modalTitle": "تفاصيل طلب الصيانة",
+    "assignTaskTitle": "تعيين المهمة للموظفين",
+    "requestCompletedSuccessfully": "تم إكمال حالة الطلب بنجاح",
+    "requestRejectedSuccessfully": "تم رفض الطلب بنجاح",
+    "requestAcceptedSuccessfully": "تم قبول الطلب بنجاح",
+    "taskAssignedSuccessfully": "تم تعيين المهمة بنجاح",
+    "maintenanceRequestUpdatedSuccessfully": "تم تحديث طلب الصيانة بنجاح",
+    "editMaintenanceRequestTitle": "تعديل طلب الصيانة",
+    "tabs": {
+      "all": "الكل",
+      "pending": "في الانتظار",
+      "inprogress": "قيد التنفيذ",
+      "completed": "مكتمل",
+      "rejected": "مرفوض",
+      "escalated": "مرفوع"
+    },
+    "table": {
+      "residentName": "اسم المقيم",
+      "roomNumber": "رقم الغرفة",
+      "requestDateTime": "تاريخ ووقت الطلب",
+      "issueCategory": "فئة المشكلة",
+      "shortDescription": "وصف مختصر",
+      "status": "الحالة",
+      "images": "الصور",
+      "risk": "المخاطر",
+      "residentEmail": "بريد المقيم الإلكتروني",
+      "assignedTo": "مسؤول عن",
+      "assignedStaff": "الموظفون المسؤولون",
+      "assignedToName": "الاسم",
+      "assignedToEmail": "البريد الإلكتروني",
+      "assignedToPhone": "الهاتف"
+    },
+    "buttons": {
+      "submit": "إرسال",
+      "cancel": "إلغاء"
+    },
+    "inputsLabels": {
+      "residentName": "اسم المقيم",
+      "roomNumber": "رقم الغرفة",
+      "requestDateTime": "تاريخ ووقت الطلب",
+      "issueCategory": "فئة المشكلة",
+      "description": "وصف مختصر",
+      "status": "الحالة",
+      "assignToStaff": "تعيين للموظفين"
+    },
+    "inputsPlaceholders": {
+      "residentName": "أدخل اسم المقيم",
+      "roomNumber": "أدخل رقم الغرفة",
+      "requestDateTime": "اختر تاريخ ووقت الطلب",
+      "issueCategory": "اختر فئة المشكلة",
+      "description": "أدخل وصف مختصر",
+      "status": "اختر الحالة",
+      "assignToStaff": "اختر الموظف"
+    },
+    "validation": {
+      "residentNameRequired": "اسم المقيم مطلوب",
+      "roomNumberRequired": "رقم الغرفة مطلوب",
+      "requestDateTimeRequired": "تاريخ ووقت الطلب مطلوبان",
+      "issueCategoryRequired": "فئة المشكلة مطلوبة",
+      "descriptionRequired": "الوصف المختصر مطلوب",
+      "statusRequired": "الحالة مطلوبة",
+      "assignToStaffRequired": "يرجى اختيار موظف للتعيين"
+    },
+    "actions": {
+      "markCompleted": "تحديد كمكتمل",
+      "assignToStaff": "تعيين للموظفين",
+      "acceptTask": "قبول المهمة",
+      "addComment": "إضافة التعليق"
+    },
+    "commentModal": {
+      "addComment": "إضافة التعليق",
+      "editComment": "تعديل التعليق",
+      "comment": "التعليق",
+      "commentPlaceholder": "أدخل التعليق هنا",
+      "commentRequired": "التعليق مطلوب",
+      "cancel": "إلغاء",
+      "submit": "إرسال",
+      "update": "تحديث",
+      "commentAddedSuccessfully": "تم إضافة التعليق بنجاح",
+      "commentUpdatedSuccessfully": "تم تحديث التعليق بنجاح"
+    }
+  }
+}

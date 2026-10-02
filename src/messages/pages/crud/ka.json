@@ -1,0 +1,156 @@
+{
+  "crudPage": {
+    "title": "CRUD ოპერაციები",
+    "crudData": {
+      "maintenanceCategories": "მოვლის კატეგორიები",
+      "laundaryMachineCategories": "სამრეცხვო მანქანების კატეგორიები",
+      "FAQs": "ხშირად დასმული კითხვები",
+      "helplines": "დახმარების ხაზები",
+      "positions": "პოზიციები"
+    },
+    "laundaryMachineCategoriesPage": {
+      "title": "სამრეცხვო მანქანების კატეგორიები",
+      "addButton": "ახალი მანქანის დამატება",
+      "edit": "რედაქტირება",
+      "table": {
+        "machineName": "მანქანის სახელი",
+        "status": "სტატუსი"
+      },
+      "modal": {
+        "title": "მანქანის შექმნა",
+        "editTitle": "მანქანის რედაქტირება",
+        "autoFill": "ავტომატური შევსება",
+        "translating": "თარგმნება...",
+        "machineName": "მანქანის სახელი",
+        "machineNamePlaceholder": "შეიყვანეთ მანქანის სახელი",
+        "inputRequired": {
+          "name": "მანქანის სახელი აუცილებელია"
+        },
+        "status": "სტატუსი",
+        "statusPlaceholder": "აირჩიეთ სტატუსი",
+        "statusRequired": "სტატუსი აუცილებელია",
+        "active": "აქტიური",
+        "inactive": "არააქტიური",
+        "cancel": "გაუქმება",
+        "save": "შენახვა",
+        "update": "განახლება",
+        "confirm": "დადასტურება",
+        "MachineUpdatedSuccessfully": "მანქანა წარმატებით განახლდა",
+        "MachineCreatedSuccessfully": "მანქანა წარმატებით შეიქმნა",
+        "fill": "გთხოვთ, შეავსოთ",
+        "autoFilled": "ავტომატური შევსება წარმატებით დასრულდა"
+      }
+    },
+    "maintenanceCategoriesPage": {
+      "title": "მოვლის კატეგორიები",
+      "addButton": "ახალი კატეგორიის დამატება",
+      "edit": "რედაქტირება",
+      "table": {
+        "categoryName": "კატეგორიის სახელი",
+        "status": "სტატუსი",
+        "risk": "რისკი"
+      },
+      "modal": {
+        "title": "კატეგორიის შექმნა",
+        "editTitle": "კატეგორიის რედაქტირება",
+        "categoryName": "კატეგორიის სახელი",
+        "categoryNamePlaceholder": "შეიყვანეთ კატეგორიის სახელი",
+        "inputRequired": {
+          "name": "კატეგორიის სახელი აუცილებელია"
+        },
+        "severity": "სიმძიმე",
+        "severityPlaceholder": "აირჩიეთ სიმძიმე",
+        "severityRequired": "სიმძიმე აუცილებელია",
+        "autoFilled": "ავტომატური შევსება წარმატებით დასრულდა",
+        "severityOptions": {
+          "low": "დაბალი",
+          "medium": "საშუალო",
+          "high": "მაღალი"
+        },
+        "status": "სტატუსი",
+        "statusPlaceholder": "აირჩიეთ სტატუსი",
+        "statusOptions": {
+          "active": "აქტიური",
+          "inactive": "არააქტიური"
+        },
+        "statusRequired": "სტატუსი აუცილებელია",
+        "btnTranslate": "თარგმნება...",
+        "autoFill": "ავტომატური შევსება",
+        "pleaseFill": "გთხოვთ, შეავსოთ",
+        "cancel": "გაუქმება",
+        "save": "შენახვა",
+        "update": "განახლება",
+        "confirm": "დადასტურება",
+        "toast": {
+          "categoryUpdated": "კატეგორია წარმატებით განახლდა",
+          "categoryCreated": "კატეგორია წარმატებით შეიქმნა"
+        }
+      }
+    },
+    "helpLineCrudPage": {
+      "title": "დახმარების ხაზები",
+      "addButton": "დახმარების ხაზის დამატება",
+      "edit": "რედაქტირება",
+      "actions": {
+        "active": "აქტიური",
+        "inactive": "არააქტიური"
+      },
+      "table": {
+        "title": "სათაური",
+        "country": "ქვეყანა",
+        "contact": "კონტაქტი",
+        "description": "აღწერა",
+        "status": "სტატუსი",
+        "phoneNumber": "ტელეფონის ნომერი"
+      },
+      "modal": {
+        "title": "დახმარების ხაზის შექმნა",
+        "editTitle": "დახმარების ხაზის რედაქტირება",
+        "autoFill": "ავტომატური შევსება",
+        "translating": "თარგმნება...",
+        "helpLineTitle": "დახმარების ხაზის სათაური",
+        "helpLineTitlePlaceholder": "შეიყვანეთ დახმარების ხაზის სათაური",
+        "helpLineTitleRequired": "დახმარების ხაზის სათაური აუცილებელია",
+        "contact": "კონტაქტი",
+        "contactPlaceholder": "შეიყვანეთ კონტაქტი",
+        "contactRequired": "კონტაქტი აუცილებელია",
+        "description": "აღწერა",
+        "callingCodeRequired": "ზარის კოდი აუცილებელია",
+        "pleaseFill": "გთხოვთ, შეავსოთ",
+        "inputRequired": {
+          "country": "ქვეყანა აუცილებელია",
+          "title": "სათაური აუცილებელია",
+          "description": "აღწერა აუცილებელია"
+        },
+        "phoneNumberRequired": "ტელეფონის ნომერი აუცილებელია",
+        "timingsRequired": "დროები აუცილებელია",
+        "descriptionPlaceholder": "შეიყვანეთ აღწერა",
+        "descriptionRequired": "აღწერა აუცილებელია",
+        "status": "სტატუსი",
+        "statusPlaceholder": "აირჩიეთ სტატუსი",
+        "statusRequired": "სტატუსი აუცილებელია",
+        "active": "აქტიური",
+        "inactive": "არააქტიური",
+        "cancel": "გაუქმება",
+        "save": "შენახვა",
+        "update": "განახლება",
+        "confirm": "დადასტურება",
+        "helpLineUpdatedSuccessfully": "დახმარების ხაზი წარმატებით განახლდა",
+        "helpLineCreatedSuccessfully": "დახმარების ხაზი წარმატებით შეიქმნა",
+        "minLength": "უნდა იყოს მინიმუმ 2 სიმბოლო",
+        "fill": "გთხოვთ, შეავსოთ",
+        "autoFilled": "ავტომატური შევსება წარმატებით დასრულდა",
+        "phoneNumber": "ტელეფონის ნომერი",
+        "phoneNumberPlaceholder": "შეიყვანეთ ტელეფონის ნომერი",
+        "timings": "დროები",
+        "timingsPlaceholder": "შეიყვანეთ დროები",
+        "translationSuccess": "თარგმანი წარმატებული",
+        "country": "ქვეყანა",
+        "countryPlaceholder": "აირჩიეთ ქვეყანა"
+      },
+      "toasts": {
+        "statusUpdateSuccess": "სტატუსი წარმატებით განახლდა"
+      }
+    }
+  }
+}

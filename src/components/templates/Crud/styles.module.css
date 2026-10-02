@@ -1,0 +1,29 @@
+.container {
+  margin-block: 48px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.cartsMain {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.cardClass {
+  align-items: center;
+}
+
+
+.cardsStats {
+  width: 100%;
+}

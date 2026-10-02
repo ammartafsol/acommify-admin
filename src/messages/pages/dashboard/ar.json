@@ -1,0 +1,73 @@
+{
+  "dashboardPage": {
+    "noActivity": "لا يوجد نشاط حديث للعرض",
+    "dashboardCards": {
+      "bookLaundry": "حجز الغسيل",
+      "bookBus": "حجز الحافلة",
+      "bookAppointment": "المواعيد القادمة",
+      "visitorBooking": "حجوزات الزوار",
+      "documentCenter": "مركز المستندات",
+      "signRequests": "طلبات تسجيل الدخول/الخروج",
+      "signInSignOut": "تسجيل الدخول/الخروج"
+    },
+    "statsCards": {
+      "onSite": "المقيمون في الموقع",
+      "offSite": "المقيمون خارج الموقع",
+      "pendingRequests": "الطلبات المعلقة",
+      "maintenanceRequests": "طلبات الصيانة",
+      "upcomingAppointments": "المواعيد القادمة",
+      "staffCount": "عدد الموظفين",
+      "activeCenters": "المراكز النشطة",
+      "nationalOccupancy": "الاستخدام الوطني",
+      "totalResidents": "إجمالي السكان",
+      "totalAdults": "إجمالي البالغين",
+      "totalChildren": "إجمالي الابناء"
+    },
+    "notification": {
+      "recentNotification": "الأنشطة الحديثة",
+      "currentNotification": "هنا ترى إشعارات الحجوزات والطلبات والتحديثات الحديثة."
+    },
+    "activity": {
+      "recentActivity": "سجل الأنشطة الحديثة",
+      "currentActivity": "هنا ترى الحجوزات والطلبات والتحديثات.",
+      "labels": {
+        "bookingId": "معرف الحجز",
+        "visitorName": "اسم الزائر",
+        "relationship": "العلاقة",
+        "serviceType": "نوع الخدمة",
+        "start": "البداية",
+        "end": "النهاية",
+        "created": "تم الإنشاء",
+        "incidentId": "معرف الحادث",
+        "title": "العنوان",
+        "description": "الوصف",
+        "severity": "الخطورة",
+        "address": "العنوان",
+        "resident": "المقيم",
+        "requestId": "معرف الطلب",
+        "user": "المستخدم",
+        "houseNumber": "رقم المنزل"
+      },
+      "activityTabs": {
+        "booking": "الحجوزات",
+        "requests": "طلبات الصيانة",
+        "incident": "تقرير الحوادث"
+      },
+      "activitycard": {
+        "requestHeading": "تم تقديم طلب صيانة جديد",
+        "dateTime": "التاريخ/الوقت",
+        "resident": "المقيم",
+        "purpose": "الغرض",
+        "appointment": "الموعد"
+      }
+    },
+    "chart": {
+      "residentTitle": "المقيم"
+    },
+    "common": {
+      "edit": "تعديل",
+      "approveRequest": "الموافقة على الطلب",
+      "rejectRequest": "رفض الطلب"
+    }
+  }
+}

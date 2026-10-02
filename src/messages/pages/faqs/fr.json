@@ -1,0 +1,44 @@
+{
+  "faqPage": {
+    "title": "FAQ",
+    "questionTitle": "Question",
+    "viewModalTitle": "Détails de la FAQ",
+    "answerTitle": "Réponse",
+    "statusTitle": "Statut",
+    "actionsTitle": "Actions",
+    "addButton": "Ajouter FAQ",
+    "editButton": "Modifier FAQ",
+    "deleteButton": "Supprimer FAQ",
+    "areYouSureMessage": "Êtes-vous sûr de vouloir supprimer cette FAQ ?",
+    "areYouSure": "Êtes-vous sûr ?",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "modal": {
+      "addTitle": "Ajouter FAQ",
+      "editTitle": "Modifier FAQ",
+      "questionLabel": "Question",
+      "questionPlaceholder": "Entrez la question",
+      "answerLabel": "Réponse",
+      "answerPlaceholder": "Entrez la réponse",
+      "inputRequired": {
+        "question": "La question est requise",
+        "answer": "La réponse est requise"
+      },
+      "statusLabel": "Statut",
+      "statusPlaceholder": "Sélectionnez le statut",
+      "activeOption": "Actif",
+      "inactiveOption": "Inactif",
+      "saveButton": "Enregistrer",
+      "updateButton": "Mettre à jour",
+      "cancelButton": "Annuler",
+      "saving": "Enregistrement...",
+      "updating": "Mise à jour...",
+      "translating": "Traduction en cours...",
+      "autoFill": "Remplissage automatique",
+      "CreatedSuccessfully": "FAQ créée avec succès",
+      "UpdatedSuccessfully": "FAQ mise à jour avec succès",
+      "translationSuccessMessage": "Remplissage automatique réussi",
+      "PleaseFill": "Veuillez remplir"
+    }
+  }
+}

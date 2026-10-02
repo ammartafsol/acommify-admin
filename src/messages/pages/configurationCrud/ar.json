@@ -1,0 +1,39 @@
+{
+  "configurationPage": {
+    "title": "التكوين",
+    "addButton": "إضافة تكوين",
+    "editButton": "تعديل",
+    "deleteButton": "حذف",
+    "table": {
+      "name": "الاسم",
+      "ipAddress": "عنوان IP"
+    },
+    "modal": {
+      "addTitle": "إضافة تكوين",
+      "editTitle": "تعديل التكوين",
+      "ConfigurationName": "اسم التكوين",
+      "ConfigurationNamePlaceholder": "أدخل اسم التكوين",
+      "nameRequired": "اسم التكوين مطلوب",
+      "ipAddress": "عنوان IP",
+      "ipAddressPlaceholder": "أدخل عنوان IP",
+      "ipAddressRequired": "عنوان IP مطلوب",
+      "ipAddressInvalid": "يرجى إدخال عنوان IP صالح (مثال: 192.168.1.1)",
+      "cancelButton": "إلغاء",
+      "saveButton": "حفظ",
+      "updateButton": "تحديث",
+      "saving": "جاري الحفظ...",
+      "loading": "جاري التحميل...",
+      "required": "هذا الحقل مطلوب",
+      "autoFill": "ملء تلقائي",
+      "translating": "جاري الترجمة...",
+      "UpdatedSuccessfully": "تم تحديث التكوين بنجاح",
+      "CreatedSuccessfully": "تم إنشاء التكوين بنجاح",
+      "PleaseFill": "يرجى ملء",
+      "translationSuccessMessage": "اكتملت الترجمة بنجاح"
+    },
+    "toast": {
+      "configurationDeleted": "تم حذف التكوين بنجاح"
+    }
+  }
+}
+

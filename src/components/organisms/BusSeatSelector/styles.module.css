@@ -1,0 +1,352 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  height: max-content;
+  padding: 0 0 30px 0;
+}
+
+/* legends */
+.legends {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.legendItem p {
+  color: var(--Black, #172a33);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.legendIcon svg {
+  width: 21.184px;
+  height: 20px;
+}
+
+/* legends end */
+
+/* bus layout */
+.busLayout {
+  position: relative;
+  display: flex;
+  width: max-content;
+  border-radius: 26px;
+}
+
+.busFront {
+  position: relative;
+  width: 135px;
+}
+
+.driver {
+  position: absolute;
+  width: 118px;
+  height: 54px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.driver::after {
+  content: "Driver";
+  font-family: var(--font-lato);
+  width: max-content;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  color: #5f5f5f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.stairs {
+  position: absolute;
+  width: 66px;
+  height: 58px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.stairs::before {
+  content: "";
+  width: 66.179px;
+  height: 2.509px;
+  position: absolute;
+  transform: rotate(-22.456deg);
+  transform-origin: right;
+  writing-mode: vertical-rl;
+  bottom: 0px;
+  z-index: 3;
+  border-radius: 68px;
+  background: #676767;
+}
+
+.stairs::after {
+  content: "Front Door";
+  font-family: var(--font-lato);
+  width: max-content;
+  position: absolute;
+  bottom: -30px;
+  transform: translateX(-20%);
+  z-index: 3;
+  color: #5f5f5f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+/* bus layout end */
+
+/* seat grid */
+.seatArea {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  background-image: url("/app-images/busAssets/busFloor.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-block: 12px;
+  padding-inline-start: 8px;
+  padding-inline-end: 24px;
+  border-start-end-radius: 26px;
+  border-end-end-radius: 26px;
+}
+
+.seatGrid {
+  display: grid;
+  column-gap: 12px;
+}
+
+.seatRow {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+.aisle {
+  margin-inline-start: 8px;
+  color: #8c939b;
+  text-align: center;
+  font-size: 16.342px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.49px;
+}
+
+.seat,
+.hiddenSeat {
+  position: relative;
+  width: 41.608px;
+  height: 39.282px;
+  aspect-ratio: 41.608 / 39.282;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.seat p {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: var(--White, #fff);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.hiddenSeat {
+  background: transparent;
+}
+
+.lastRow {
+  padding-inline-start: 10px;
+}
+
+/* seat grid end */
+
+/* bus wheels */
+.busWheels {
+  position: absolute;
+  width: 93px;
+  aspect-ratio: 93 / 13;
+  z-index: 2;
+}
+
+.wheelNum1 {
+  top: -6px;
+  left: 125px;
+}
+
+.wheelNum2 {
+  top: -6px;
+  right: 15%;
+}
+
+.wheelNum3 {
+  bottom: -6px;
+  right: 15%;
+}
+
+.wheelNum4 {
+  bottom: -6px;
+  left: 125px;
+}
+
+/* bus wheels end */
+
+/* responsive and vertical layout */
+.main[data-vertical="true"] {
+  align-items: center;
+  padding: 0 90px;
+
+  .busLayout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .busFront {
+    width: 100%;
+    height: 135px;
+  }
+
+  .driver {
+    top: 50%;
+    right: 50px;
+    left: unset;
+    transform: translate(50%, -50%) rotate(90deg);
+  }
+
+  .driver::after {
+    bottom: -50px;
+    writing-mode: sideways-lr;
+  }
+
+  .stairs {
+    top: 50%;
+    left: 0px;
+    transform: translate(0, -50%) rotate(90deg);
+  }
+
+  .stairs::after {
+    left: 50px;
+    bottom: -100px;
+    writing-mode: sideways-lr;
+  }
+
+  .seatArea {
+    flex-direction: column;
+    padding: 12px 8px 24px 8px;
+    border-radius: 0;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+  }
+
+  .seatGrid {
+    row-gap: 12px;
+  }
+
+  .seatRow {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .aisle {
+    margin-inline-start: 0px;
+  }
+
+  .seat {
+    transform: rotate(90deg);
+  }
+
+  .seat p {
+    writing-mode: sideways-lr;
+  }
+
+  .lastRow {
+    padding-inline-start: 0px;
+    padding-block-start: 10px;
+  }
+
+  .wheelNum1 {
+    top: 20%;
+    left: 0;
+  }
+
+  .wheelNum2 {
+    top: 20%;
+    right: 0;
+  }
+
+  .wheelNum3 {
+    bottom: 20%;
+    right: 0;
+  }
+
+  .wheelNum4 {
+    bottom: 20%;
+    left: 0;
+  }
+
+  .wheelNum1,
+  .wheelNum4 {
+    transform: rotate(90deg);
+    transform-origin: left;
+  }
+
+  .wheelNum2,
+  .wheelNum3 {
+    transform: rotate(-90deg);
+    transform-origin: right;
+  }
+}
+
+.main[dir="rtl"]:not([data-vertical="true"]) {
+  padding: 0px;
+  gap: 55px;
+
+  .busFront {
+    transform: rotate(-180deg);
+  }
+
+  .seatRow {
+    flex-direction: column-reverse;
+  }
+
+  .stairs::after {
+    transform: translate(100%, 100%) rotate(-180deg);
+  }
+
+  .driver::after {
+    transform: rotate(-180deg);
+  }
+}

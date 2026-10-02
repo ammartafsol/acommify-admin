@@ -1,0 +1,44 @@
+{
+  "faqPage": {
+    "title": "ხშირად დასმული კითხვები",
+    "viewModalTitle": "ხშირად დასმული კითხვების დეტალები",
+    "questionTitle": "კითხვა",
+    "answerTitle": "პასუხი",
+    "statusTitle": "სტატუსი",
+    "actionsTitle": "მოქმედებები",
+    "addButton": "FAQ-ის დამატება",
+    "editButton": "FAQ-ის რედაქტირება",
+    "deleteButton": "FAQ-ის წაშლა",
+    "areYouSureMessage": "დარწმუნებული ხართ, რომ გსურთ ამ FAQ-ის წაშლა?",
+    "areYouSure": "დარწმუნებული ხართ?",
+    "cancel": "გაუქმება",
+    "confirm": "დადასტურება",
+    "modal": {
+      "addTitle": "FAQ-ის დამატება",
+      "editTitle": "FAQ-ის რედაქტირება",
+      "questionLabel": "კითხვა",
+      "questionPlaceholder": "შეიყვანეთ კითხვა",
+      "answerLabel": "პასუხი",
+      "answerPlaceholder": "შეიყვანეთ პასუხი",
+      "inputRequired": {
+        "question": "კითხვა სავალდებულოა",
+        "answer": "პასუხი სავალდებულოა"
+      },
+      "statusLabel": "სტატუსი",
+      "statusPlaceholder": "აირჩიეთ სტატუსი",
+      "activeOption": "აქტიური",
+      "inactiveOption": "არააქტიური",
+      "saveButton": "შენახვა",
+      "updateButton": "განახლება",
+      "cancelButton": "გაუქმება",
+      "saving": "შენახვა...",
+      "updating": "განახლება...",
+      "translating": "თარგმნება...",
+      "autoFill": "ავტომატური შევსება",
+      "CreatedSuccessfully": "FAQ წარმატებით შეიქმნა",
+      "UpdatedSuccessfully": "FAQ წარმატებით განახლდა",
+      "translationSuccessMessage": "ავტომატური შევსება წარმატებით დასრულდა",
+      "PleaseFill": "გთხოვთ, შეავსოთ"
+    }
+  }
+}

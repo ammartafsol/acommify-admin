@@ -1,0 +1,36 @@
+{
+  "busBookings": {
+    "title": "Réservations de Bus",
+    "tabs": {
+      "all": "Toutes",
+      "pending": "En Attente",
+      "cancelled": "Annulé",
+      "completed": "Terminé"
+    },
+    "table": {
+      "residentName": "Nom du Résident",
+      "roomNumber": "Numéro de Chambre",
+      "busName": "Nom du Bus",
+      "busRoute": "Itinéraire du Bus",
+      "DepartureDateAndTime": "Date et Heure de Départ",
+      "status": "Statut",
+      "ArrivalDateAndTime": "Date et Heure d'Arrivée",
+      "actions": "Actions",
+      "shift": "Équipe"
+    },
+    "action": {
+      "cancel": "Annuler",
+      "approve": "Approuver",
+      "view": "Voir"
+    },
+    "areYouSureModal": {
+      "approve": "Approuver",
+      "reject": "Rejeter",
+      "approveBookingSure": "Êtes-vous sûr de vouloir approuver la réservation ?",
+      "rejectBookingSure": "Êtes-vous sûr de vouloir rejeter la réservation ?"
+    },
+    "modal": {
+      "viewBookingDetails": "Détails de la Réservation de Bus"
+    }
+  }
+}

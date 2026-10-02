@@ -1,0 +1,45 @@
+/* Manage Items Component Styles */
+.main {
+  margin-block: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.editIcon,
+.deleteIcon {
+  color: var(--Dark-gray);
+  cursor: pointer;
+}
+
+.editIcon:hover {
+  color: var(--Blue);
+}
+
+.deleteIcon {
+  margin-inline-start: 12px;
+}
+
+.deleteIcon:hover {
+  color: var(--Red);
+}
+.ulCustom {
+flex-wrap: nowrap !important;
+overflow-x: scroll !important;
+}
+.ulCustom::-webkit-scrollbar {
+  display: none;
+}
+.ulCustom::-webkit-scrollbar-track {
+  background: transparent;
+}
+.ulCustom::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+.ulCustom::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.ulCustom li{
+  min-width: max-content !important;
+}

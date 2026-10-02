@@ -1,0 +1,35 @@
+{
+  "positionPage": {
+    "title": "Postes",
+    "addButton": "Ajouter un Poste",
+    "editButton": "Modifier",
+    "deleteButton": "Supprimer",
+    "table": {
+      "name": "Nom",
+      "statusTitle": "Statut"
+    },
+    "modal": {
+      "addTitle": "Ajouter un Poste",
+      "editTitle": "Modifier le Poste",
+      "PositionName": "Nom du Poste",
+      "PositionNameRequired": "Le nom du poste est requis",
+      "PositionNamePlaceholder": "Entrez le nom du poste",
+      "statusLabel": "Statut",
+      "statusPlaceholder": "Sélectionnez le statut",
+      "activeOption": "Actif",
+      "inactiveOption": "Inactif",
+      "cancelButton": "Annuler",
+      "saveButton": "Enregistrer",
+      "updateButton": "Mettre à jour",
+      "saving": "Enregistrement...",
+      "loading": "Chargement...",
+      "required": "Ce champ est requis",
+      "autoFill": "Remplissage automatique",
+      "translating": "Traduction en cours...",
+      "UpdatedSuccessfully": "Poste mis à jour avec succès",
+      "CreatedSuccessfully": "Poste créé avec succès",
+      "PleaseFill": "Veuillez remplir",
+      "translationSuccessMessage": "Traduction terminée avec succès"
+    }
+  }
+}

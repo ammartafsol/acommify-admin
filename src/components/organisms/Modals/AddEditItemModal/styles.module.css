@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ButtonContainer {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-block: 8px;
+}
+.ButtonContainer > button {
+  width: 50% !important;
+  height: 54px !important;
+  box-shadow: none !important;
+}
+
+.dropDownContainerClass > div:first-of-type {
+  height: 59px;
+  border-radius: 25px;
+  border: none;
+}

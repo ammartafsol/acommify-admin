@@ -1,0 +1,130 @@
+{
+  "residentsPage": {
+    "title": "Gudanar da Mazauna",
+    "viewModalTitle": "Cikakken Mazauni",
+    "addResident": "Ƙara Sabon Mazauni",
+    "searchPlaceholder": "Nemo",
+    "table": {
+      "residentName": "Sunan Mazauni",
+      "roomNo": "Lambar Daki/Gida",
+      "email": "Imel",
+      "phone": "Wayar",
+      "residentStatus": "Matsayin Mazauni",
+      "dob": "Kwanan Watan Haihuwa",
+      "age": "Shekaru",
+      "arrivalDate": "Kwanan Watan Zuwa",
+      "gender": "Laifi"
+    },
+    "modal": {
+      "noOfBedsRequired": "Adadin gadaje yana buƙata",
+      "noOfBeds": "Adadin Gadaje",
+      "noOfBedsPlaceholder": "Zaɓi adadin gadaje",
+      "available": "da ake samu",
+      "familyMemberRelation": "Dangantakar Memba na Iyali",
+      "header": "Ƙara Sabon Mazauni",
+      "editResident": "Gyara Mazauni",
+      "familyMembers": "Membobi na Iyali",
+      "name": "Cikakken Suna",
+      "namePlaceholder": "Shigar da cikakken suna",
+      "nameRequired": "Suna yana buƙata",
+      "inputRequired": {
+        "fullName": "Cikakken suna yana buƙata",
+        "schoolName": "Sunan makaranta yana buƙata"
+      },
+      "dob": "Kwanan Watan Haihuwa",
+      "dobPlaceholder": "Zaɓi kwanan watan haihuwa",
+      "dobRequired": "Kwanan watan haihuwa yana buƙata",
+      "dateOfArrival": "Kwanan Watan Zuwa",
+      "dateOfArrivalPlaceholder": "Zaɓi kwanan watan zuwa",
+      "dateOfArrivalRequired": "Kwanan watan zuwa yana buƙata",
+      "phoneNumberRequired": "Lambar wayar tana buƙata",
+      "countryCode": "Lambar Ƙasa",
+      "email": "Adireshin Imel",
+      "emailPlaceholder": "Shigar da adireshin imel",
+      "emailRequired": "Imel yana buƙata",
+      "invalidEmail": "Da fatan za a shigar da adireshin imel mai inganci",
+      "phone": "Lambar Wayar",
+      "phonePlaceholder": "Shigar da lambar wayar",
+      "invalidPhoneNumber": "Da fatan za a shigar da lambar wayar mai inganci tare da lambar ƙasa",
+      "roomNumber": "Lambar Daki",
+      "roomNumberPlaceholder": "Shigar da lambar daki",
+      "roomNumberRequired": "Lambar daki tana buƙata",
+      "status": "Matsayi",
+      "statusPlaceholder": "Zaɓi matsayi",
+      "statusRequired": "Matsayi yana buƙata",
+      "offsite": "A Waje",
+      "onsite": "A Wurin",
+      "familyMemberLabel": "Memba na Iyali",
+      "cancel": "Soke",
+      "confirm": "Tabbata",
+      "addFamilyMember": "Ƙara Membobi na Iyali",
+      "familyMemberName": "Sunan Memba na Iyali",
+      "familyMemberNamePlaceholder": "Shigar da sunan memba na iyali",
+      "relationship": "Dangantaka",
+      "relationshipPlaceholder": "Zaɓi dangantaka",
+      "schoolName": "Sunan Makaranta",
+      "schoolNamePlaceholder": "Shigar da sunan makaranta",
+      "gender": "Laifi",
+      "genderPlaceholder": "Zaɓi laifi",
+      "genderRequired": "Laifi yana buƙata",
+      "trcNumber": "Lambar TRC",
+      "trcNumberPlaceholder": "Shigar da lambar TRC",
+      "ppsnNumber": "Lambar PPSN",
+      "ppsnNumberPlaceholder": "Shigar da lambar PPSN",
+      "medicalCardNumber": "Lambar Katin Lafiya",
+      "familyMember": "Memba na Iyali",
+      "medicalCardNumberPlaceholder": "Shigar da lambar katin lafiya",
+      "relationShipOptions": {
+        "father": "Uba",
+        "mother": "Uwa",
+        "sibling": "Ɗan'uwa/Kanwa",
+        "spouse": "Miji/Mata",
+        "children": "Yara"
+      },
+      "genderOptions": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+      },
+      "schoolPlacement": {
+        "label": "An sanya a makaranta",
+        "placeholder": "Zaɓi matsayin sanyawa a makaranta",
+        "placed": "An Sanya",
+        "notPlaced": "Ba An Sanya Ba"
+      },
+      "year": "Shekara",
+      "yearPlaceholder": "Shigar da shekarar makaranta",
+      "transportType": {
+        "label": "Nau'in Sufuri",
+        "placeholder": "Zaɓi nau'in sufuri",
+        "bus": "Bas",
+        "carpool": "Raba Motar",
+        "family": "Iyali suna kawo su"
+      },
+      "books": {
+        "label": "Littattafai",
+        "placeholder": "Shigar da littafi {number}"
+      },
+      "relationshipRequired": "Dangantaka tana buƙata",
+      "callingCodeRequired": "Lambar kira tana buƙata",
+      "ageAtLeast18": "Mazauni dole ya kasance akalla shekara 18",
+      "schoolPlacementRequired": "Sanyawa a makaranta tana buƙata",
+      "yearRequired": "Shekara tana buƙata",
+      "yearMax": "Shekara ba zata iya zama nan gaba ba",
+      "transportTypeRequired": "Nau'in sufuri yana buƙata",
+      "booksMinRequired": "Aƙalla littafi ɗaya yana buƙata",
+      "age": "Shekaru",
+      "agePlaceholder": "Shigar da shekaru",
+      "toasts": {
+        "residentUpdated": "Mazauni an sabunta cikin nasara",
+        "residentAdded": "Mazauni an ƙara cikin nasara",
+        "translationSuccessMessage": "An fassara cikin nasara"
+      },
+      "autoFill": "Cike Kansa",
+      "translating": "Ana Fassara..."
+    },
+    "actions": {
+      "edit": "Gyara"
+    }
+  }
+}

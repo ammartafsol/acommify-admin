@@ -1,0 +1,17 @@
+{
+  "signInOutPage": {
+    "title": "Registros de Entrada/Saída",
+    "searchPlaceholder": "Buscar por nome ou número da acomodação",
+    "table": {
+      "residentName": "Nome do Residente",
+      "accommodationNumber": "Número da Acomodação",
+      "type": "Tipo",
+      "dateTime": "Data e Hora"
+    },
+    "typeLabel": {
+      "signIn": "Entrada",
+      "signOut": "Saída"
+    }
+  }
+}
+

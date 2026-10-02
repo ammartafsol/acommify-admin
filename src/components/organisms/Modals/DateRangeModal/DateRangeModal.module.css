@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.buttons button {
+    width: 50%;
+    height: 54px;
+    box-shadow: none !important;
+}
+
+@media (max-width: 576px) {
+    .buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}

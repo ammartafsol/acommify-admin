@@ -1,0 +1,25 @@
+{
+  "ordersPage": {
+    "title": "შეკვეთების მართვა",
+    "exportDateRangeTitle": "მონაცემების ექსპორტი",
+    "searchPlaceholder": "შეკვეთების ძებნა...",
+    "exportButtonLabel": "შეკვეთების ექსპორტი",
+    "exportSuccessToast": "შეკვეთები წარმატებით გაიტანეს",
+    "exportErrorToast": "შეკვეთების ექსპორტი ვერ მოხერხდა. გთხოვთ, სცადეთ თავიდან.",
+    "table": {
+      "orderId": "შეკვეთის ID",
+      "customer": "მომხმარებლის სახელი",
+      "date": "შეკვეთის თარიღი",
+      "status": "შეკვეთის სტატუსი",
+      "total": "სულ ქულები",
+      "actions": ""
+    },
+    "ordersTabs": {
+      "all": "ყველა",
+      "pending": "მოლოდინში",
+      "cancelled": "გაუქმებული",
+      "completed": "დასრულებული"
+    },
+    "cancelOrderToast": "შეკვეთა წარმატებით გაუქმდა"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "staffsPage": {
+    "title": "პერსონალის მართვა",
+    "addMember": "პერსონალის დამატება",
+    "table": {
+      "staffID": "პერსონალის ID",
+      "name": "სახელი",
+      "email": "ელ.ფოსტა",
+      "phone": "ტელეფონი",
+      "status": "სტატუსი"
+    },
+    "actions": {
+      "edit": "რედაქტირება",
+      "delete": "წაშლა"
+    },
+    "toast": {
+      "staffStatus": "პერსონალის სტატუსი წარმატებით განახლდა",
+      "staffAdded": "პერსონალი წარმატებით დაემატა",
+      "staffUpdated": "პერსონალი წარმატებით განახლდა",
+      "staffDeleted": "პერსონალი წარმატებით წაიშალა",
+      "fill": "გთხოვთ, შეავსოთ ველები სხვა ენებშიც",
+      "translationSuccessMessage": "წარმატებით თარგმნილია",
+      "pleaseFill": "გთხოვთ, შეავსოთ"
+    },
+    "modal": {
+      "title": "პერსონალის დეტალები",
+      "staffID": "პერსონალის ID",
+      "name": "სრული სახელი",
+      "email": "ელ.ფოსტა",
+      "phone": "ტელეფონის ნომერი",
+      "status": "სტატუსი",
+      "addStaff": "ახალი პერსონალის დამატება",
+      "editStaff": "პერსონალის რედაქტირება",
+      "translating": "თარგმნება...",
+      "autoFill": "ავტომატური შევსება",
+      "cancel": "გაუქმება",
+      "loading": "იტვირთება...",
+      "confirm": "დადასტურება",
+      "morning": "დილის",
+      "night": "ღამის",
+      "shiftTime": "ცვლის დრო",
+      "position": "პოზიცია",
+      "deleteMessage": "დარწმუნებული ხართ, რომ გსურთ ამ თანამშრომლის წაშლა?"
+    },
+    "fields": {
+      "namePlaceholder": "შეიყვანეთ სრული სახელი",
+      "name": "სრული სახელი",
+      "emailPlaceholder": "example@company.com",
+      "email": "ელ.ფოსტის მისამართი",
+      "phonePlaceholder": "შეიყვანეთ ტელეფონის ნომერი",
+      "phone": "ტელეფონის ნომერი",
+      "positionPlaceholder": "აირჩიეთ პოზიცია",
+      "position": "პოზიცია",
+      "shiftStartTime": "ცვლის დაწყების დრო",
+      "shiftEndTime": "ცვლის დასრულების დრო",
+      "shiftStartTimePlaceholder": "აირჩიეთ ცვლის დაწყების დრო",
+      "shiftEndTimePlaceholder": "აირჩიეთ ცვლის დასრულების დრო",
+      "permissionsLabel": "უფლებები",
+      "permissionsPlaceholder": "აირჩიეთ უფლებები",
+      "selected": "არჩეული",
+      "selectAll": "ყველაფრის არჩევა",
+      "deselectAll": "ყველაფრის გაუქმება"
+    },
+    "formikSchema": {
+      "fullNameRequired": "სახელი და გვარი აუცილებელია",
+      "emailAddress": "გთხოვთ, შეიყვანოთ სწორი ელ.ფოსტის მისამართი",
+      "emailRequired": "ელ.ფოსტა აუცილებელია",
+      "callingRequired": "ზარის კოდი აუცილებელია",
+      "phoneNumberLimit": "ტელეფონის ნომერი უნდა იყოს 10-15 ციფრი, ოფციონალურად +-ით დაწყებული",
+      "phoneNumberRequired": "ტელეფონის ნომერი აუცილებელია",
+      "permissionsMin": "მინიმუმ ერთი უფლება უნდა იყოს არჩეული",
+      "permissionsRequired": "უფლებები აუცილებელია",
+      "shiftStartRequired": "ცვლის დაწყების დრო აუცილებელია",
+      "shiftEndRequired": "ცვლის დასრულების დრო აუცილებელია",
+      "positionRequired": "პოზიცია აუცილებელია"
+    }
+  }
+}

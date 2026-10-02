@@ -1,0 +1,108 @@
+{
+  "busManagementPage": {
+    "title": "ავტობუსების მართვა",
+    "addBus": "ავტობუსის შექმნა",
+    "addNewBus": "ახალი ავტობუსის დამატება",
+    "busDetail": "ავტობუსის დეტალები",
+    "deletedBus": "ავტობუსი წარმატებით წაიშალა.",
+    "statusUpdated": "ავტობუსის სტატუსი წარმატებით განახლდა.",
+    "table": {
+      "busId": "ავტობუსის ID",
+      "busName": "ავტობუსის სახელი",
+      "startLocation": "დაწყების ადგილი",
+      "endLocation": "დასრულების ადგილი",
+      "capacity": "ტევადობა",
+      "status": "სტატუსი",
+      "startTime": "დაწყების დრო",
+      "endTime": "დასრულების დრო",
+      "availableDates": "ხელმისაწვდომი თარიღები",
+      "description": "აღწერა"
+    },
+    "filterStatus": {
+      "options": [
+        { "label": "ყველა", "value": "all" },
+        { "label": "აქტიური", "value": "active" },
+        { "label": "არააქტიური", "value": "inactive" },
+        { "label": "მოვლა", "value": "maintenance" }
+      ]
+    },
+    "busStatus": {
+      "active": "აქტიური",
+      "inactive": "არააქტიური"
+    },
+    "shiftOptions": {
+      "morning": "დილა",
+      "afternoon": "შუადღე",
+      "evening": "საღამო",
+      "night": "ღამე"
+    },
+    "toasts": {
+      "busCreated": "ავტობუსი წარმატებით შეიქმნა",
+      "busUpdated": "ავტობუსი წარმატებით განახლდა"
+    },
+    "modal": {
+      "editTitle": "ავტობუსის რედაქტირება",
+      "translating": "თარგმნება...",
+      "autoFill": "ავტომატური შევსება",
+      "seater": "ადგილები",
+      "inputLabels": {
+        "document": "პორტულების და ხდომარების ატვირთვა",
+        "busName": "ავტობუსის სახელი",
+        "busNumber": "ავტობუსის ნომერი",
+        "description": "აღწერა",
+        "startLocation": "დაწყების ადგილი",
+        "endLocation": "დასრულების ადგილი",
+        "capacity": "ტევადობა",
+        "startTime": "დაწყების დრო",
+        "endTime": "დასრულების დრო",
+        "availableDates": "ხელმისაწვდომი თარიღები",
+        "shift": "ცვლა"
+      },
+      "inputPlaceholders": {
+        "busName": "შეიყვანეთ ავტობუსის სახელი",
+        "busNumber": "შეიყვანეთ ავტობუსის ნომერი",
+        "description": "შეიყვანეთ აღწერა",
+        "startLocation": "შეიყვანეთ დაწყების ადგილი",
+        "endLocation": "შეიყვანეთ დასრულების ადგილი",
+        "capacity": "შეიყვანეთ ტევადობა",
+        "startTime": "შეიყვანეთ დაწყების დრო",
+        "endTime": "შეიყვანეთ დასრულების დრო",
+        "availableDates": "აირჩიეთ ხელმისაწვდომი თარიღები",
+        "shift": "აირჩიეთ ცვლა"
+      },
+      "uploadMessage": {
+        "document": "პორტულების და ხდომარების ატვირთვა"
+      },
+      "fileFormats": {
+        "document": "PDF, DOC, DOCX, TXT, RTF"
+      },
+      "btnLabels": {
+        "create": "შექმნა",
+        "update": "განახლება",
+        "cancel": "გაუქმება"
+      },
+      "translationSuccessMessage": "თარგმანი წარმატებით დასრულდა",
+      "toasts": {
+        "busCreated": "ავტობუსი წარმატებით შეიქმნა",
+        "busUpdated": "ავტობუსი წარმატებით განახლდა",
+        "pleaseFill": "გთხოვთ შეავსოთ"
+      },
+      "validation": {
+        "busName": "ავტობუსის სახელი აუცილებელია",
+        "description": "აღწერა აუცილებელია",
+        "busNumber": "ავტობუსის ნომერი აუცილებელია",
+        "startLocation": "დაწყების ადგილი აუცილებელია",
+        "endLocation": "დასრულების ადგილი აუცილებელია",
+        "capacity": "ტევადობა აუცილებელია",
+        "status": "სტატუსი აუცილებელია",
+        "capacityMin": "ტევადობა უნდა იყოს მინიმუმ 15",
+        "availableDatesMin": "მინიმუმ ერთი ხელმისაწვდომი თარიღი აუცილებელია",
+        "availableDates": "ხელმისაწვდომი თარიღები აუცილებელია",
+        "startTime": "დაწყების დრო აუცილებელია",
+        "endTime": "დასრულების დრო აუცილებელია",
+        "shift": "ცვლა აუცილებელია",
+        "mediaError": "მედიის ატვირთვა"
+      }
+    }
+  }
+}

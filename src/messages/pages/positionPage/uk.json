@@ -1,0 +1,35 @@
+{
+  "positionPage": {
+    "title": "Позиції",
+    "addButton": "Додати позицію",
+    "editButton": "Редагувати",
+    "deleteButton": "Видалити",
+    "table": {
+      "name": "Назва",
+      "statusTitle": "Статус"
+    },
+    "modal": {
+      "addTitle": "Додати позицію",
+      "editTitle": "Редагувати позицію",
+      "PositionName": "Назва позиції",
+      "PositionNamePlaceholder": "Введіть назву позиції",
+      "PositionNameRequired": "Назва позиції є обов'язковою",
+      "statusLabel": "Статус",
+      "statusPlaceholder": "Виберіть статус",
+      "activeOption": "Активний",
+      "inactiveOption": "Неактивний",
+      "cancelButton": "Скасувати",
+      "saveButton": "Зберегти",
+      "updateButton": "Оновити",
+      "saving": "Збереження...",
+      "loading": "Завантаження...",
+      "required": "Це поле є обов'язковим",
+      "autoFill": "Автозаповнення",
+      "translating": "Перекладається...",
+      "UpdatedSuccessfully": "Позицію успішно оновлено",
+      "CreatedSuccessfully": "Позицію успішно створено",
+      "PleaseFill": "Будь ласка, заповніть",
+      "translationSuccessMessage": "Переклад успішно завершено"
+    }
+  }
+}

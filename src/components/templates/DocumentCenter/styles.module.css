@@ -1,0 +1,45 @@
+.main {
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.modalMain {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item p:first-child {
+  font-weight: 600;
+  color: var(--Gray-600, #475467);
+  margin: 0;
+}
+
+.item p:last-child {
+  color: var(--Gray-900, #101828);
+  margin: 0;
+}
+
+.fileLink {
+  color: var(--Primary-600, #7f56d9) !important;
+  text-decoration: underline !important;
+}
+
+.fileLink:hover {
+  color: var(--Primary-700, #6941c6) !important;
+}
+
+.noFile {
+  color: var(--Gray-400, #98a2b3);
+  font-style: italic;
+}

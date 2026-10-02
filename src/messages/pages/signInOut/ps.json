@@ -1,0 +1,17 @@
+{
+  "signInOutPage": {
+    "title": "د ننوتلو/وتلو ثبت",
+    "searchPlaceholder": "د نوم یا استوګنې شمېرې په لټه کې شئ",
+    "table": {
+      "residentName": "د اوسېدونکي نوم",
+      "accommodationNumber": "د استوګنې شمېره",
+      "type": "ډول",
+      "dateTime": "نېټه او وخت"
+    },
+    "typeLabel": {
+      "signIn": "ننوتل",
+      "signOut": "وتل"
+    }
+  }
+}
+

@@ -1,0 +1,65 @@
+{
+  "businessAdminPage": {
+    "title": "د سوداګرۍ اداره",
+    "addButton": "اضافه کول",
+    "table": {
+      "centreName": "د مرکز نوم",
+      "country": "هېواد",
+      "name": "نوم",
+      "email": "بریښنالیک",
+      "phone": "تلیفون",
+      "statusTitle": "حالت"
+    },
+    "actions": {
+      "view": "لیدل",
+      "edit": "سمون",
+      "centreNameRequired": "د مرکز نوم اړین دی",
+      "delete": "حذف"
+    },
+    "modal": {
+      "detailTitle": "د مرکزونو توضیحات",
+      "deleteMessage": "ایا تاسو ډاډه یاست چې غواړئ دا توکی حذف کړئ؟",
+      "addTitle": "اضافه کول",
+      "editTitle": "سمون",
+      "addStaff": "مرکز اضافه کړئ",
+      "editStaff": "مرکز سمول",
+      "confirm": "تایید",
+      "loading": "پورته کيږي...",
+      "translating": "ژباړه کيږي...",
+      "autoFill": "خپل ځان ډکول",
+      "cancel": "لغو",
+      "CreatedSuccessfully": "په بریالیتوب سره جوړ شو",
+      "UpdatedSuccessfully": "په بریالیتوب سره تازه شو",
+      "PleaseFill": "مهرباني وکړئ ډک کړئ",
+      "translationSuccessMessage": "ژباړه په بریالیتوب سره بشپړه شوه"
+    },
+    "fields": {
+      "name": "د مالک نوم",
+      "namePlaceholder": "د مالک نوم دننه کړئ",
+      "email": "د بریښنالیک پته",
+      "emailPlaceholder": "example@company.com",
+      "country": "هېواد",
+      "countryPlaceholder": "هېواد وټاکئ",
+      "region": "سیمه",
+      "regionPlaceholder": "سیمه وټاکئ",
+      "phone": "د تلیفون شمیره",
+      "phonePlaceholder": "د تلیفون شمیره ولیکئ"
+    },
+    "formikSchema": {
+      "regionRequired": "سیمه اړینه ده",
+      "countryRequired": "هېواد اړین دی",
+      "fullNameRequired": "بشپړ نوم اړین دی",
+      "emailAddress": "مهرباني وکړئ باوري بریښنالیک ولیکئ",
+      "emailRequired": "بریښنالیک اړین دی",
+      "callingRequired": "د کال کوډ اړین دی",
+      "phoneNumberLimit": "د تلیفون شمیره باید 10-15 ګانې وي، اختیاري ډول سره + سره پیل شي",
+      "phoneNumberRequired": "د تلیفون شمیره اړینه ده"
+    },
+    "toast": {
+      "created": "په بریالیتوب سره جوړ شو",
+      "updated": "په بریالیتوب سره تازه شو",
+      "deleted": "په بریالیتوب سره حذف شو",
+      "pleaseFill": "مهرباني وکړئ ډک کړئ"
+    }
+  }
+}

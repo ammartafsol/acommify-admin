@@ -1,0 +1,39 @@
+{
+  "configurationPage": {
+    "title": "კონფიგურაცია",
+    "addButton": "კონფიგურაციის დამატება",
+    "editButton": "რედაქტირება",
+    "deleteButton": "წაშლა",
+    "table": {
+      "name": "სახელი",
+      "ipAddress": "IP მისამართი"
+    },
+    "modal": {
+      "addTitle": "კონფიგურაციის დამატება",
+      "editTitle": "კონფიგურაციის რედაქტირება",
+      "ConfigurationName": "კონფიგურაციის სახელი",
+      "ConfigurationNamePlaceholder": "შეიყვანეთ კონფიგურაციის სახელი",
+      "nameRequired": "კონფიგურაციის სახელი აუცილებელია",
+      "ipAddress": "IP მისამართი",
+      "ipAddressPlaceholder": "შეიყვანეთ IP მისამართი",
+      "ipAddressRequired": "IP მისამართი აუცილებელია",
+      "ipAddressInvalid": "გთხოვთ შეიყვანოთ სწორი IP მისამართი (მაგ: 192.168.1.1)",
+      "cancelButton": "გაუქმება",
+      "saveButton": "შენახვა",
+      "updateButton": "განახლება",
+      "saving": "მიმდინარეობს შენახვა...",
+      "loading": "მიმდინარეობს ჩატვირთვა...",
+      "required": "ეს ველი აუცილებელია",
+      "autoFill": "ავტომატური შევსება",
+      "translating": "მიმდინარეობს თარგმნა...",
+      "UpdatedSuccessfully": "კონფიგურაცია წარმატებით განახლდა",
+      "CreatedSuccessfully": "კონფიგურაცია წარმატებით შეიქმნა",
+      "PleaseFill": "გთხოვთ შეავსოთ",
+      "translationSuccessMessage": "თარგმანი წარმატებით დასრულდა"
+    },
+    "toast": {
+      "configurationDeleted": "კონფიგურაცია წარმატებით წაიშალა"
+    }
+  }
+}
+

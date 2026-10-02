@@ -1,0 +1,130 @@
+{
+  "residentsPage": {
+    "title": "Управління резидентами",
+    "viewModalTitle": "Деталі резидента",
+    "addResident": "Додати нового резидента",
+    "searchPlaceholder": "Пошук",
+    "table": {
+      "residentName": "Ім'я резидента",
+      "roomNo": "Номер кімнати/будинку",
+      "email": "Електронна пошта",
+      "phone": "Телефон",
+      "residentStatus": "Статус резидента",
+      "dob": "Дата народження",
+      "age": "Вік",
+      "arrivalDate": "Дата прибуття",
+      "gender": "Стать"
+    },
+    "modal": {
+      "noOfBedsRequired": "Кількість ліжок є обов'язковою",
+      "noOfBeds": "Кількість ліжок",
+      "noOfBedsPlaceholder": "Виберіть кількість ліжок",
+      "available": "доступно",
+      "familyMemberRelation": "Стосунки члена сім'ї",
+      "header": "Додати нового резидента",
+      "editResident": "Редагувати резидента",
+      "familyMembers": "Члени сім'ї",
+      "name": "Повне ім'я",
+      "namePlaceholder": "Введіть повне ім'я",
+      "nameRequired": "Ім'я є обов'язковим",
+      "inputRequired": {
+        "fullName": "Повне ім'я є обов'язковим",
+        "schoolName": "Назва школи є обов'язковою"
+      },
+      "dob": "Дата народження",
+      "dobPlaceholder": "Виберіть дату народження",
+      "dobRequired": "Дата народження є обов'язковою",
+      "dateOfArrival": "Дата прибуття",
+      "dateOfArrivalPlaceholder": "Виберіть дату прибуття",
+      "dateOfArrivalRequired": "Дата прибуття є обов'язковою",
+      "phoneNumberRequired": "Номер телефону є обов'язковим",
+      "countryCode": "Код країни",
+      "email": "Адреса електронної пошти",
+      "emailPlaceholder": "Введіть адресу електронної пошти",
+      "emailRequired": "Електронна пошта є обов'язковою",
+      "invalidEmail": "Будь ласка, введіть правильну адресу електронної пошти",
+      "phone": "Номер телефону",
+      "phonePlaceholder": "Введіть номер телефону",
+      "invalidPhoneNumber": "Будь ласка, введіть правильний номер телефону з кодом країни",
+      "roomNumber": "Номер кімнати",
+      "roomNumberPlaceholder": "Введіть номер кімнати",
+      "roomNumberRequired": "Номер кімнати є обов'язковим",
+      "status": "Статус",
+      "statusPlaceholder": "Виберіть статус",
+      "statusRequired": "Статус є обов'язковим",
+      "offsite": "Поза місцем",
+      "onsite": "На місці",
+      "familyMemberLabel": "Член сім'ї",
+      "cancel": "Скасувати",
+      "confirm": "Підтвердити",
+      "addFamilyMember": "Додати членів сім'ї",
+      "familyMemberName": "Ім'я члена сім'ї",
+      "familyMemberNamePlaceholder": "Введіть ім'я члена сім'ї",
+      "relationship": "Стосунки",
+      "relationshipPlaceholder": "Виберіть стосунки",
+      "schoolName": "Назва школи",
+      "schoolNamePlaceholder": "Введіть назву школи",
+      "trcNumber": "Номер TRC",
+      "trcNumberPlaceholder": "Введіть номер TRC",
+      "ppsnNumber": "Номер PPSN",
+      "ppsnNumberPlaceholder": "Введіть номер PPSN",
+      "gender": "Стать",
+      "genderPlaceholder": "Виберіть стать",
+      "genderRequired": "Стать є обов'язковою",
+      "medicalCardNumber": "Номер медичної картки",
+      "familyMember": "Член сім'ї",
+      "medicalCardNumberPlaceholder": "Введіть номер медичної картки",
+      "relationShipOptions": {
+        "father": "Батько",
+        "mother": "Мати",
+        "sibling": "Брат/Сестра",
+        "spouse": "Чоловік/Дружина",
+        "children": "Діти"
+      },
+      "genderOptions": {
+        "male": "Чоловік",
+        "female": "Жінка",
+        "other": "Інше"
+      },
+      "schoolPlacement": {
+        "label": "Розміщений у школі",
+        "placeholder": "Виберіть статус розміщення в школі",
+        "placed": "Розміщений",
+        "notPlaced": "Не розміщений"
+      },
+      "year": "Рік",
+      "yearPlaceholder": "Введіть шкільний рік",
+      "transportType": {
+        "label": "Тип транспорту",
+        "placeholder": "Виберіть тип транспорту",
+        "bus": "Автобус",
+        "carpool": "Спільна поїздка",
+        "family": "Сім'я їх привозить"
+      },
+      "books": {
+        "label": "Книги",
+        "placeholder": "Введіть книгу {number}"
+      },
+      "relationshipRequired": "Стосунки є обов'язковими",
+      "callingCodeRequired": "Код виклику є обов'язковим",
+      "ageAtLeast18": "Резиденту має бути не менше 18 років",
+      "schoolPlacementRequired": "Розміщення в школі обов'язкове",
+      "yearRequired": "Рік є обов'язковим",
+      "yearMax": "Рік не може бути в майбутньому",
+      "transportTypeRequired": "Тип транспорту обов'язковий",
+      "booksMinRequired": "Принаймні одна книга є обов'язковою",
+      "age": "Вік",
+      "agePlaceholder": "Введіть вік",
+      "toasts": {
+        "residentUpdated": "Резидента успішно оновлено",
+        "residentAdded": "Резидента успішно додано",
+        "translationSuccessMessage": "Успішно перекладено"
+      },
+      "autoFill": "Автозаповнення",
+      "translating": "Перекладається..."
+    },
+    "actions": {
+      "edit": "Редагувати"
+    }
+  }
+}

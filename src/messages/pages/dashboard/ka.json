@@ -1,0 +1,73 @@
+{
+  "dashboardPage": {
+    "noActivity": "ჩვენებისთვის ბოლო აქტივობა არ არის",
+    "dashboardCards": {
+      "bookLaundry": "სამრეცხვოს დაჯავშნა",
+      "bookBus": "ავტობუსის დაჯავშნა",
+      "bookAppointment": "მომავალი შეხვედრები",
+      "visitorBooking": "ვიზიტორების დაჯავშნები",
+      "documentCenter": "დოკუმენტების ცენტრი",
+      "signRequests": "შესვლის/გასვლის მოთხოვნები",
+      "signInSignOut": "შესვლა/გასვლა"
+    },
+    "statsCards": {
+      "onSite": "საიტზე მცხოვრები მოსახლეები",
+      "offSite": "საიტის გარეთ მცხოვრები მოსახლეები",
+      "pendingRequests": "მოლოდინში მოთხოვნები",
+      "maintenanceRequests": "მოვლის მოთხოვნები",
+      "upcomingAppointments": "მომავალი შეხვედრები",
+      "staffCount": "პერსონალის რაოდენობა",
+      "activeCenters": "აქტიური ცენტრები",
+      "nationalOccupancy": "ეროვნული დასახლება",
+      "totalResidents": "მოსახლეების ჯამი",
+      "totalAdults": "მოზრდილების ჯამი",
+      "totalChildren": "ბავშვების ჯამი"
+    },
+    "notification": {
+      "recentNotification": "ბოლო აქტივობები",
+      "currentNotification": "აქ ხედავთ ბოლო დაჯავშნებს, მოთხოვნებს, განახლებებს."
+    },
+    "activity": {
+      "recentActivity": "ბოლო აქტივობების ფიდი",
+      "currentActivity": "აქ ხედავთ დაჯავშნებს, მოთხოვნებს, განახლებებს.",
+      "labels": {
+        "bookingId": "დაჯავშნის ID",
+        "visitorName": "ვიზიტორის სახელი",
+        "relationship": "ურთიერთობა",
+        "serviceType": "სერვისის ტიპი",
+        "start": "დაწყება",
+        "end": "დასრულება",
+        "created": "შექმნილი",
+        "incidentId": "ინციდენტის ID",
+        "title": "სათაური",
+        "description": "აღწერა",
+        "severity": "სიმძიმე",
+        "address": "მისამართი",
+        "resident": "მოსახლე",
+        "requestId": "მოთხოვნის ID",
+        "user": "მომხმარებელი",
+        "houseNumber": "სახლის ნომერი"
+      },
+      "activityTabs": {
+        "booking": "დაჯავშნები",
+        "requests": "მოვლის მოთხოვნები",
+        "incident": "ინციდენტების ანგარიშები"
+      },
+      "activitycard": {
+        "requestHeading": "ახალი მოვლის მოთხოვნა გაიგზავნა",
+        "dateTime": "თარიღი/დრო",
+        "resident": "მოსახლე",
+        "purpose": "მიზანი",
+        "appointment": "შეხვედრა"
+      }
+    },
+    "chart": {
+      "residentTitle": "მოსახლე"
+    },
+    "common": {
+      "edit": "რედაქტირება",
+      "approveRequest": "მოთხოვნის დამტკიცება",
+      "rejectRequest": "მოთხოვნის უარყოფა"
+    }
+  }
+}

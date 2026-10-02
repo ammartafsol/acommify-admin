@@ -1,0 +1,10 @@
+.signInOut {
+  margin-block: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.searchInput {
+  width: 500px !important;
+}

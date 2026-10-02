@@ -1,0 +1,36 @@
+{
+  "foodTokensPage": {
+    "title": "Управління токенами їжі",
+    "table": {
+      "residentName": "Ім'я резидента",
+      "roomNo": "Номер кімнати",
+      "email": "Електронна пошта",
+      "phone": "Телефон",
+      "availableToken": "Доступний токен"
+    },
+    "modal": {
+      "tabs": {
+        "addFoodToken": "Додати токени їжі",
+        "subtractFoodToken": "Відняти токени їжі"
+      },
+      "totalFoodToken": "Загальна кількість токенів їжі",
+      "editFoodToken": "Додати токен їжі",
+      "addFoodToken": "Додати токен їжі",
+      "foodTokenAmount": "Кількість токена їжі",
+      "foodTokenAmountPlaceholder": "Введіть кількість токена їжі",
+      "resident": "Резидент",
+      "residentPlaceholder": "Виберіть резидента",
+      "cancel": "Скасувати",
+      "save": "Зберегти",
+      "update": "Оновити",
+      "createdFoodToken": "Токен їжі успішно створено.",
+      "updatedFoodToken": "Токен їжі успішно оновлено.",
+      "modalFormik": {
+        "ResidentRequired": "Резидент є обов'язковим.",
+        "FoodTokenRequired": "Токен їжі є обов'язковим.",
+        "FoodTokenGreater": "Токен їжі повинен бути більше 0."
+      },
+      "InsufficientTokens": "Недостатньо токенів для віднімання"
+    }
+  }
+}

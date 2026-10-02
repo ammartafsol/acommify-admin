@@ -1,0 +1,36 @@
+{
+  "foodTokensPage": {
+    "title": "საკვების ტოკენების მართვა",
+    "table": {
+      "residentName": "მოსახლის სახელი",
+      "roomNo": "ოთახის ნომერი",
+      "email": "ელ.ფოსტა",
+      "phone": "ტელეფონი",
+      "availableToken": "ხელმისაწვდომი ტოკენი"
+    },
+    "modal": {
+      "tabs": {
+        "addFoodToken": "საკვების ტოკენების დამატება",
+        "subtractFoodToken": "საკვების ტოკენების გამოკლება"
+      },
+      "totalFoodToken": "საკვების ტოკენების სულ",
+      "editFoodToken": "საკვების ტოკენის დამატება",
+      "addFoodToken": "საკვების ტოკენის დამატება",
+      "foodTokenAmount": "საკვების ტოკენის რაოდენობა",
+      "foodTokenAmountPlaceholder": "შეიყვანეთ საკვების ტოკენის რაოდენობა",
+      "resident": "მოსახლე",
+      "residentPlaceholder": "აირჩიეთ მოსახლე",
+      "cancel": "გაუქმება",
+      "save": "შენახვა",
+      "update": "განახლება",
+      "createdFoodToken": "საკვების ტოკენი წარმატებით შეიქმნა.",
+      "updatedFoodToken": "საკვების ტოკენი წარმატებით განახლდა.",
+      "modalFormik": {
+        "ResidentRequired": "მოსახლე აუცილებელია.",
+        "FoodTokenRequired": "საკვების ტოკენი აუცილებელია.",
+        "FoodTokenGreater": "საკვების ტოკენი უნდა იყოს 0-ზე მეტი."
+      },
+      "InsufficientTokens": "არასაკმარისი ტოკენები გამოკლებისთვის"
+    }
+  }
+}

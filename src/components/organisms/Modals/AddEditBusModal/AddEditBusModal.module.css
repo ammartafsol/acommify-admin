@@ -1,0 +1,69 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dropDownContainer > div:first-of-type {
+  height: 59px;
+  border: none;
+  border-radius: 25px;
+  text-transform: capitalize;
+}
+.rtl {
+  display: flex;
+  justify-content: flex-start !important;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-block: 12px;
+  justify-content: space-between;
+}
+
+.inputDateContainer input {
+  justify-content: flex-start;
+}
+
+.inputDateContainer
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  inset-inline-end: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.inputDateContainer input[type="datetime-local"] {
+  position: relative;
+  padding-inline-end: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Added styles */
+  border-radius: 25px;
+  background: #f4f7fd;
+  display: flex;
+  height: 59px;
+  padding: 15px 20px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.uploadLabel {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--Dark-gray);
+  margin-bottom: 8px;
+}
+
+.btns > button {
+  width: 50%;
+  height: 54px;
+  box-shadow: none !important;
+}

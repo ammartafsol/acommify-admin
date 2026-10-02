@@ -1,0 +1,90 @@
+{
+  "incidentReportsPage": {
+    "title": "تقرير الحوادث",
+    "addNewReport": "إضافة تقرير جديد",
+    "noDataText": "لم يتم العثور على تقارير حوادث",
+    "reportCreatedSuccessfully": "تم إنشاء تقرير الحادث بنجاح",
+    "status": {
+      "all": "الكل",
+      "resolved": "محلول",
+      "underReview": "قيد المراجعة",
+      "escalated": "متصاعد"
+    },
+    "severityOptions": {
+      "low": "منخفض",
+      "medium": "متوسط",
+      "high": "عالي"
+    },
+    "tabs": {
+      "all": "الكل",
+      "resolved": "محلول",
+      "underReview": "قيد المراجعة",
+      "escalated": "متصاعد"
+    },
+    "actions": {
+      "edit": "تعديل"
+    },
+    "table": {
+      "incidentId": "معرف الحادث",
+      "title": "العنوان",
+      "description": "الوصف",
+      "residentInvolved": "المقيم المشارك",
+      "reportedBy": "تم الإبلاغ بواسطة",
+      "location": "الموقع",
+      "severity": "الخطورة",
+      "dateTime": "التاريخ والوقت",
+      "status": "الحالة",
+      "completedDate": "تاريخ الإكمال"
+    },
+    "inputRequired": {
+      "title": "العنوان مطلوب",
+      "description": "الوصف مطلوب",
+      "location": "الموقع مطلوب",
+      "residentInvolved": "المقيمون المشاركون مطلوبون",
+      "reportedBy": "تم الإبلاغ بواسطة مطلوب",
+      "severity": "الخطورة مطلوبة",
+      "dateTime": "التاريخ والوقت مطلوبان",
+      "status": "الحالة مطلوبة",
+      "completedDate": "تاريخ الإكمال مطلوب"
+    },
+    "modal": {
+      "title": "إضافة تقرير حادث",
+      "editTitle": "تعديل تقرير الحادث",
+      "autoFill": "ملء تلقائي",
+      "translating": "جاري الترجمة...",
+      "detailTitle": "تفاصيل الحادث",
+      "pleaseFill": "يرجى ملء",
+      "modalBtnsLabel": {
+        "cancel": "إلغاء",
+        "submit": "إرسال"
+      },
+      "inputLabels": {
+        "title": "العنوان",
+        "description": "الوصف",
+        "residentInvolved": "المقيم المشارك",
+        "reportedBy": "تم الإبلاغ بواسطة",
+        "location": "الموقع",
+        "severity": "الخطورة",
+        "dateTime": "التاريخ والوقت",
+        "status": "الحالة",
+        "completedDate": "تاريخ الإكمال"
+      },
+      "inputPlaceholders": {
+        "title": "أدخل عنوان التقرير",
+        "description": "أدخل وصف التقرير",
+        "residentInvolved": "أدخل المقيم المشارك",
+        "reportedBy": "اختر تم الإبلاغ بواسطة",
+        "location": "أدخل الموقع",
+        "severity": "اختر الخطورة",
+        "dateTime": "أدخل التاريخ والوقت",
+        "status": "اختر الحالة",
+        "completedDate": "أدخل تاريخ الإكمال"
+      },
+      "toasts": {
+        "reportCreatedSuccessfully": "تم إنشاء التقرير بنجاح",
+        "errorUpdatedReport": "تم تحديث التقرير بنجاح",
+        "autoFilledSuccessfully": "تم الملء التلقائي بنجاح"
+      }
+    }
+  }
+}

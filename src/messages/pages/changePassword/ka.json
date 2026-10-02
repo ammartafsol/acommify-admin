@@ -1,0 +1,25 @@
+{
+  "changePasswordPage": {
+    "title": "პაროლის შეცვლა",
+    "currentPassword": "მიმდინარე პაროლი",
+    "newPassword": "ახალი პაროლი",
+    "confirmNewPassword": "ახალი პაროლის დადასტურება",
+    "updatePasswordButton": "პაროლის განახლება",
+    "successMessage": "პაროლი წარმატებით განახლდა.",
+    "validation": {
+      "currentPasswordRequired": "მიმდინარე პაროლი აუცილებელია.",
+      "newPasswordRequired": "ახალი პაროლი აუცილებელია.",
+      "confirmNewPasswordRequired": "გთხოვთ, დაადასტუროთ თქვენი ახალი პაროლი.",
+      "passwordsMustMatch": "ახალი პაროლი და დადასტურება უნდა ემთხვეოდეს.",
+      "passwordMinLength": "პაროლი უნდა იყოს მინიმუმ 8 სიმბოლო.",
+      "passwordMaxLength": "პაროლი არ უნდა აღემატებოდეს 20 სიმბოლოს.",
+      "passwordLowercase": "პაროლი უნდა შეიცავდეს მინიმუმ ერთ პატარა ასოს.",
+      "passwordUppercase": "პაროლი უნდა შეიცავდეს მინიმუმ ერთ დიდ ასოს.",
+      "passwordNumber": "პაროლი უნდა შეიცავდეს მინიმუმ ერთ ციფრს.",
+      "passwordSpecialChar": "პაროლი უნდა შეიცავდეს მინიმუმ ერთ სპეციალურ სიმბოლოს.",
+      "currentPasswordInvalid": "მიმდინარე პაროლი არასწორია.",
+      "newPasswordInvalid": "ახალი პაროლი არასწორია.",
+      "confirmNewPasswordInvalid": "ახალი პაროლის დადასტურება არასწორია."
+    }
+  }
+}

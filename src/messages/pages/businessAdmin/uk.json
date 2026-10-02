@@ -1,0 +1,67 @@
+{
+  "businessAdminPage": {
+    "title": "Центри",
+    "addButton": "Додати",
+    "table": {
+      "centreName": "Назва центру",
+      "country": "Країна",
+      "name": "Ім'я",
+      "email": "Електронна пошта",
+      "phone": "Телефон",
+      "statusTitle": "Статус"
+    },
+    "actions": {
+      "view": "Переглянути",
+      "edit": "Редагувати",
+      "delete": "Видалити"
+    },
+    "modal": {
+      "detailTitle": "Деталі центрів",
+      "deleteMessage": "Ви впевнені, що хочете видалити цей елемент?",
+      "addTitle": "Додати",
+      "editTitle": "Редагувати",
+      "addStaff": "Додати центр",
+      "editStaff": "Редагувати центр",
+      "cancel": "Скасувати",
+      "confirm": "Підтвердити",
+      "loading": "Завантаження...",
+      "translating": "Перекладається...",
+      "autoFill": "Автозаповнення",
+      "CreatedSuccessfully": "Успішно створено",
+      "UpdatedSuccessfully": "Успішно оновлено",
+      "PleaseFill": "Будь ласка, заповніть",
+      "translationSuccessMessage": "Переклад успішно завершено"
+    },
+    "fields": {
+      "centreName": "Назва центру",
+      "centreNamePlaceholder": "Введіть назву центру",
+      "name": "Повне ім'я",
+      "namePlaceholder": "Введіть повне ім'я",
+      "email": "Адреса електронної пошти",
+      "emailPlaceholder": "example@company.com",
+      "country": "Країна",
+      "countryPlaceholder": "Виберіть країну",
+      "region": "Регіон",
+      "regionPlaceholder": "Виберіть регіон",
+      "phone": "Номер телефону",
+      "phonePlaceholder": "Введіть номер телефону"
+    },
+    "formikSchema": {
+      "centreNameRequired": "Назва центру обов'язкова",
+      "countryRequired": "Країна обов'язкова",
+      "regionRequired": "Регіон обов'язковий",
+      "fullNameRequired": "Повне ім'я обов'язкове",
+      "emailAddress": "Будь ласка, введіть дійсну адресу електронної пошти",
+      "emailRequired": "Електронна пошта обов'язкова",
+      "callingRequired": "Код виклику обов'язковий",
+      "phoneNumberLimit": "Номер телефону має містити 10-15 цифр, можливо починатися з +",
+      "phoneNumberRequired": "Номер телефону обов'язковий"
+    },
+    "toast": {
+      "created": "Успішно створено",
+      "updated": "Успішно оновлено",
+      "deleted": "Успішно видалено",
+      "pleaseFill": "Будь ласка, заповніть"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "laundryBooking": {
+    "title": "Laundry Booking",
+    "tabs": {
+      "all": "All",
+      "pending": "Pending",
+      "acceptedORConfirmed": "Confirmed or Accepted",
+      "cancelled": "Cancelled",
+      "rejected": "Rejected"
+    },
+    "table": {
+      "residentName": "Resident Name",
+      "laundryDateTime": "Laundry Date & Time",
+      "roomNumber": "Room Number",
+      "machineName": "Machine",
+      "DateAndTime": "Date and Time",
+      "status": "Status"
+    },
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "completed": "Completed"
+    },
+    "buttons": {
+      "submit": "Submit",
+      "cancel": "Cancel"
+    },
+    "actions": {
+      "approve": "Approve",
+      "cancel": "Cancel",
+      "view": "View"
+    },
+
+    "modal": {
+      "viewBookingDetails": "Laundry Booking Details",
+      "residentName": "Resident Name",
+      "roomNumber": "Room Number",
+      "machineName": "Machine Name",
+      "laundryDate": "Laundry Date",
+      "timeSlot": "Time Slot",
+      "status": "Status"
+    },
+    "areYouSureModal": {
+      "approve": "Approve Booking",
+      "reject": "Reject Booking",
+      "approveBookingSure": " Are you sure you want to approve this booking? ",
+      "rejectBookingSure": " Are you sure you want to Reject this booking? "
+    }
+  }
+}

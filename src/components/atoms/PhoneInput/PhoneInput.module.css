@@ -1,0 +1,147 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.labelText {
+  color: var(--Dark-gray);
+  font-size: var(--fs16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.noBorder {
+  border: none;
+}
+
+.inputContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  border-radius: 25px;
+}
+
+.inputClass {
+  width: 100%;
+  flex: 1;
+  height: 59px;
+  border: none;
+  padding: 15px 20px;
+  font-size: var(--fs16);
+  color: var(--Dark-gray);
+  border-radius: 25px;
+  background: #f4f7fd;
+  font-weight: 400;
+}
+
+.inputContainer input {
+  width: 100%;
+  flex: 1;
+  border: none;
+  font-size: var(--fs16);
+  color: var(--Black);
+  background: #f4f7fd;
+  font-weight: 400;
+}
+
+.inputContainer input:active,
+.inputContainer input {
+  outline: none !important;
+  border: none !important;
+}
+
+.inputContainer input:disabled,
+.inputClass:has(input:disabled) {
+  box-shadow: none;
+  cursor: not-allowed;
+  background: rgba(220, 220, 220, 0.35);
+  color: var(--Dark-gray);
+}
+
+.inputContainer input::placeholder {
+  color: var(--Dark-gray);
+  font-size: var(--fs16);
+  text-transform: capitalize;
+  font-family: var(--font-lato);
+  font-weight: 400;
+}
+
+.errorText {
+  font-family: var(--font-lato);
+  font-size: var(--fs14);
+  font-weight: 400;
+  color: var(--Red);
+}
+
+.leftIconBox {
+  position: absolute;
+  inset-inline-start: 20px;
+  top: 50%;
+  bottom: 45%;
+  transform: translateY(-50%);
+  height: max-content;
+}
+
+.rightIconBox {
+  position: absolute;
+  inset-inline-end: 10px;
+  top: 50%;
+  bottom: 45%;
+  transform: translateY(-50%);
+  height: max-content;
+}
+
+.inputClass ::-webkit-outer-spin-button,
+.inputClass ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputClass:focus {
+  outline: none;
+}
+
+/*  Firefox  */
+.inputClass[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Internal Classes */
+.Container[dir="rtl"] div[class*="PhoneInputCountrySelectArrow"] {
+  margin-right: 0.35em !important;
+  margin-left: unset !important;
+}
+
+.Container[dir="rtl"] input {
+  text-align: start !important;
+  padding-right: 0.5em !important;
+  padding-left: unset !important;
+}
+
+@media (max-width: 991px) {
+  .labelText {
+    font-size: var(--fs14);
+  }
+  .inputContainer input {
+    font-size: var(--fs12);
+  }
+}
+
+@media (max-width: 576px) {
+  .labelText {
+    font-size: var(--fs12);
+  }
+
+  .inputContainer input {
+    font-size: var(--fs11);
+  }
+
+  .inputClass {
+    padding: 12px 8px;
+  }
+}

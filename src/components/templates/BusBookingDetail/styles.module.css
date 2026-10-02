@@ -1,0 +1,62 @@
+.container {
+  margin-block: 48px;
+}
+.busCard {
+  flex-direction: row !important;
+  /* justify-content: space-between !important; */
+  gap: 31px !important;
+  justify-content: flex-start !important;
+}
+.busCard > div {
+  flex-direction: row !important;
+  /* flex-wrap: wrap; */
+  width: max-content;
+}
+.busCard div[class*="top"] p {
+  white-space: nowrap;
+}
+.busCard div[class*="bottom"] p {
+  width: 315px !important;
+}
+.busCard div[class*="bottom"] p span {
+  display: block;
+  margin-bottom: 5px;
+}
+.busCard div[class*="content"] {
+  flex-direction: column !important;
+  width: 50%;
+}
+
+.busCard div[class*="content"] div {
+  flex-direction: row !important;
+  padding-inline: 16px !important;
+  width: 100% !important;
+}
+.busCardsContainer {
+  margin-block: 32px;
+  width: 100%;
+}
+
+.tableContainer {
+  margin-top: 20px;
+}
+.actionsMain {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tableIcon {
+  cursor: pointer;
+}
+
+@media (max-width: 1366px) {
+  .busCard > div {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1280px) {
+  .busCard div[class*="content"] {
+    width: 100%;
+  }
+}

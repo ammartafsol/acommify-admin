@@ -1,0 +1,65 @@
+:root {
+  /* Black Shades */
+  --Black-color: #000;
+  --Black: #172a33;
+  --text-primary: #141511;
+  --outlined-border: #eef0eb;
+
+  /* White Shades */
+  --White: #f8fdff;
+  --Off-White: #fffdf0;
+  --White-v1: #fefefe;
+  --Poor-white: #fff;
+  --Primary-White: var(--Poor-white);
+  --White-v2: #f2f2f2;
+
+  /* Gray Shades */
+  --Dark-gray: #8c939b;
+  --Gray-v1: #98a0a5;
+  --Gray-v2: #565b60;
+  --Gray-300: #344054;
+  --Gray-25: #d0d5dd;
+  --Gray-200: #fcfcfd;
+
+  /* Blue Shades */
+  --Blue: #33b5f6;
+  --Dark-blue: #1997ed;
+  --Light-blue: #d8edfc;
+  --Light-blue-v1: #f0f9ff;
+  --Light-blue-v2: #f1faff;
+  --Blue-light-50: #f0f9ff;
+  --Blue-light-500: #0ba5ec;
+  --Blue-light-700: #026aa2;
+  --Blue-light-100: #f1f4fa;
+
+  /* Red Shades */
+  --Red: #f86969;
+  --danger-light: #fde6eb;
+  --Error-50: #fef3f2;
+  --Error-700: #b42318;
+  --Error-500: #f04438;
+
+  /* Green Shades */
+  --Green: #00b383;
+  --Green-light: #01615f;
+  --Green-light-100: #16a34a;
+  --Light-green: #ebfaf6;
+  --Success-700: #027a48;
+  --Success-50: #ecfdf3;
+  --Success-500: #12b76a;
+
+  /* Orange Shades */
+  --Orange: #faab18;
+  --Light-orange: #fff8dd;
+  --Warning-50: #fffaeb;
+  --Warning-500: #f79009;
+  --Warning-700: #b54708;
+
+  /* purple */
+  --Purple: #7f56d9;
+  /* Misc */
+  --border-color: #dce0e5;
+  --Background: #f4f7fd;
+  --Text-body: #757575;
+  --blue-gradient: linear-gradient(89deg, #33b5f6 0.5%, #1e6a90 197.33%);
+}

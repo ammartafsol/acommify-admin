@@ -1,0 +1,89 @@
+{
+  "roomsHouses": {
+    "title": "ოთახების/სახლების მართვა",
+    "addRoom": "ოთახის/სახლის დამატება",
+    "viewModalTitle": "ოთახის/სახლის დეტალები",
+    "filterOptions": {
+      "beds": "საწოლების რაოდენობა",
+      "occupancyStatus": "დაკავების სტატუსი",
+      "accommodationType": "შესაძლებლობის ტიპი",
+      "a-z": "ა-ჰ",
+      "UnOccupied": "არ არის დაკავებული",
+      "partiallyOccupied": "ნაწილობრივ დაკავებული",
+      "apartment": "ბინა",
+      "house": "სახლი",
+      "room": "ოთახი",
+      "status": "დაკავების სტატუსი",
+      "occupied": "დაკავებული",
+      "filters": "ფილტრები",
+      "sortBy": "დალაგება...",
+      "filterBy": "ფილტრი",
+      "clear": "ყველაფრის გასუფთავება",
+      "apply": "გამოყენება"
+    },
+    "table": {
+      "houseRoomNumber": "სახლის/ოთახის ნომერი",
+      "numberOfBeds": "საწოლების რაოდენობა",
+      "accommodationType": "შესაძლებლობის ტიპი",
+      "occupancyStatus": "დაკავების სტატუსი",
+      "status": "სტატუსი",
+      "userType": "მომხმარებლის ტიპი",
+      "createdAt": "შექმნილი",
+      "bedsOccupied": "დაკავებული საწოლები"
+    },
+    "tabs": {
+      "resident": "მოსახლე",
+      "visitor": "ვიზიტორი"
+    },
+    "actions": {
+      "edit": "რედაქტირება",
+      "delete": "წაშლა",
+      "view": "ნახვა",
+      "activate": "გააქტიურება",
+      "deactivate": "გაუქმება"
+    },
+    "modal": {
+      "houseRoomNumber": "სახლის/ოთახის ნომერი",
+      "numberOfBeds": "საწოლების რაოდენობა",
+      "occupancyStatus": "დაკავების სტატუსი",
+      "accommodationType": "შესაძლებლობის ტიპი",
+      "accommodationTypePlaceholder": "აირჩიეთ შესაძლებლობის ტიპი",
+      "houseRoomNumberPlaceholder": "შეიყვანეთ სახლის/ოთახის ნომერი",
+      "userType": "მომხმარებლის ტიპი",
+      "userTypePlaceholder": "აირჩიეთ მომხმარებლის ტიპი",
+      "occupancyStatusPlaceholder": "აირჩიეთ დაკავების სტატუსი",
+      "numberOfBedsPlaceholder": "შეიყვანეთ საწოლების რაოდენობა",
+      "cancel": "გაუქმება",
+      "create": "შექმნა",
+      "edit": "რედაქტირება",
+      "editRoomHouse": "ოთახის/სახლის რედაქტირება",
+      "createRoomHouse": "ოთახის/სახლის შექმნა",
+      "updatedSuccessfully": "შესაძლებლობა წარმატებით განახლდა",
+      "RoomsHousesSubmitted": "ოთახები და სახლები წარმატებით გაიგზავნა",
+      "createdSuccessfully": "ოთახი/სახლი წარმატებით შეიქმნა",
+      "houseTypeLabels": {
+        "house": "სახლი",
+        "room": "ოთახი",
+        "apartment": "ბინა"
+      },
+      "userTypeLabels": {
+        "resident": "მოსახლე",
+        "visitor": "ვიზიტორი"
+      },
+      "modalFormik": {
+        "HouseRoomNumberRequired": "სახლის/ოთახის ნომერი აუცილებელია",
+        "2Characters": "უნდა იყოს მინიმუმ 2 სიმბოლო",
+        "BedsRequired": "საწოლების რაოდენობა აუცილებელია",
+        "ExceedBeds": "ვერ აღემატება 10 საწოლს",
+        "TypeRequired": "ტიპი აუცილებელია",
+        "atLeastBeds": "უნდა იყოს მინიმუმ 1 საწოლი",
+        "UserTypeRequired": "მომხმარებლის ტიპი აუცილებელია"
+      }
+    },
+    "toasts": {
+      "activateSuccess": "შესაძლებლობა წარმატებით გააქტიურდა",
+      "deactivateSuccess": "შესაძლებლობა წარმატებით გაუქმდა",
+      "deletedRoomHouse": "ოთახი/სახლი წარმატებით წაიშლა"
+    }
+  }
+}

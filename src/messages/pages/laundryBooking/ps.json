@@ -1,0 +1,49 @@
+{
+  "laundryBooking": {
+    "title": "د جامو د مینځلو حجز",
+    "tabs": {
+      "all": "ټول",
+      "pending": "پاتې",
+      "acceptedORConfirmed": "تصویب شوی یا منل شوی",
+      "cancelled": "لغوه شوي",
+      "rejected": "رد شوی"
+    },
+    "table": {
+      "residentName": "د استوګن نوم",
+      "laundryDateTime": "د جامو د مینځلو نیټه او وخت",
+      "roomNumber": "د کوټې شمیره",
+      "machineName": "ماشین",
+      "DateAndTime": "نیټه او وخت",
+      "status": "حالت"
+    },
+    "status": {
+      "pending": "پاتې",
+      "confirmed": "تصویب شوی",
+      "completed": "بشپړ شوی"
+    },
+    "buttons": {
+      "submit": "استول",
+      "cancel": "لغوه کول"
+    },
+    "actions": {
+      "approve": "تصویب",
+      "cancel": "لغوه کول",
+      "view": "کتل"
+    },
+    "modal": {
+      "viewBookingDetails": "د جامو د مینځلو د حجز تفصیلات",
+      "residentName": "د استوګن نوم",
+      "roomNumber": "د کوټې شمیره",
+      "machineName": "د ماشین نوم",
+      "laundryDate": "د جامو د مینځلو نیټه",
+      "timeSlot": "د وخت ساحه",
+      "status": "حالت"
+    },
+    "areYouSureModal": {
+      "approve": "حجز تصویب کړئ",
+      "reject": "حجز رد کړئ",
+      "approveBookingSure": "ایا تاسو ډاډه یاست چې غواړئ دا حجز تصویب کړئ؟",
+      "rejectBookingSure": "ایا تاسو ډاډه یاست چې غواړئ دا حجز رد کړئ؟"
+    }
+  }
+}

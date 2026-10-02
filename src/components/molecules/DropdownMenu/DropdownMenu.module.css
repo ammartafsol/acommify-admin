@@ -1,0 +1,56 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.iconButton:hover {
+  background-color: var(--White-v2);
+}
+
+.menu {
+  position: absolute;
+  inset-inline-end: 0;
+  margin-top: 6px;
+  background: var(--Poor-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  min-width: 180px;
+  padding: 8px;
+  z-index: 1000;
+}
+
+.item {
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.item:hover {
+  border-radius: 8px;
+  background: var(--Blue-light-100);
+}
+
+.approve {
+  color: var(--Green-light-100);
+  font-weight: 500;
+}
+
+.reject {
+  color: var(--Error-700);
+  font-weight: 500;
+}

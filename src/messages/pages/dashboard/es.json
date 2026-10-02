@@ -1,0 +1,73 @@
+{
+  "dashboardPage": {
+    "noActivity": "No hay actividad reciente para mostrar",
+    "dashboardCards": {
+      "bookLaundry": "Reserva de Lavandería",
+      "bookBus": "Reserva de Autobús",
+      "bookAppointment": "Próximas Citas",
+      "visitorBooking": "Reservas de Visitantes",
+      "documentCenter": "Centro de Documentos",
+      "signRequests": "Solicitudes de Entrada/Salida",
+      "signInSignOut": "Registro de Entrada/Salida"
+    },
+    "statsCards": {
+      "onSite": "Residentes en el sitio",
+      "offSite": "Residentes fuera del sitio",
+      "pendingRequests": "Solicitudes Pendientes",
+      "maintenanceRequests": "Solicitudes de Mantenimiento",
+      "upcomingAppointments": "Próximas Citas",
+      "staffCount": "Conteo de Personal",
+      "activeCenters": "Centros Activos",
+      "nationalOccupancy": "Ocupación Nacional",
+      "totalResidents": "Residentes Totales",
+      "totalAdults": "Adultos Totales",
+      "totalChildren": "Ninos Totales"
+    },
+    "notification": {
+      "recentNotification": "Actividades recientes",
+      "currentNotification": "Aquí ves reservas, solicitudes, actualizaciones de notificaciones recientes."
+    },
+    "activity": {
+      "recentActivity": "Feed de Actividades Recientes",
+      "currentActivity": "Aquí ves reservas, solicitudes, actualizaciones.",
+      "labels": {
+        "bookingId": "ID de Reserva",
+        "visitorName": "Nombre del Visitante",
+        "relationship": "Relación",
+        "serviceType": "Tipo de Servicio",
+        "start": "Inicio",
+        "end": "Fin",
+        "created": "Creado",
+        "incidentId": "ID del Incidente",
+        "title": "Título",
+        "description": "Descripción",
+        "severity": "Severidad",
+        "address": "Dirección",
+        "resident": "Residente",
+        "requestId": "ID de Solicitud",
+        "user": "Usuario",
+        "houseNumber": "Número de casa"
+      },
+      "activityTabs": {
+        "booking": "Reservas",
+        "requests": "Solicitudes de Mantenimiento",
+        "incident": "Reportes de Incidentes"
+      },
+      "activitycard": {
+        "requestHeading": "Nueva Solicitud de Mantenimiento Enviada",
+        "dateTime": "Fecha/Hora",
+        "resident": "Residente",
+        "purpose": "Propósito",
+        "appointment": "Cita"
+      }
+    },
+    "chart": {
+      "residentTitle": "Residente"
+    },
+    "common": {
+      "edit": "Editar",
+      "approveRequest": "Aprobar Solicitud",
+      "rejectRequest": "Rechazar Solicitud"
+    }
+  }
+}

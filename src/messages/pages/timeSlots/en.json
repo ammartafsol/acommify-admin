@@ -1,0 +1,64 @@
+{
+  "timeslotsPage": {
+    "title": "Schedule Appointment Timeslots",
+    "laundryTitle": "Schedule Laundry Machine Timeslots",
+    "visitorTitle": "Schedule Visitor Booking Timeslots",
+    "staffLabel": "Select Staff",
+    "staffPlaceholder": "Choose staff...",
+    "machinePlaceholder": "Choose machine...",
+    "machineLabel": "Select Machine",
+    "visitorLabel": "Select Location",
+    "visitorPlaceholder": "Choose location...",
+    "manageTimeSlots": "Manage time slots for all days of the week",
+    "fetchingOptions": "Fetching options...",
+    "addDaySlots": "Add day slots",
+    "editDaySlots": "Edit day slots",
+    "noSlotsAvailable": "No slots available",
+    "weeklySchedule": "Weekly Schedule",
+    "utcNote": "All times are in UTC",
+    "weekDays": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    },
+    "generateSlotModal": {
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "interval": "Interval",
+      "hour": "Hour",
+      "fixed": "Fixed",
+      "slots": "Slots",
+      "headers": {
+        "previousSlots": "Previous Slots",
+        "addNewSlots": "Add New Slots",
+        "generatedSlots": "Generated Slots"
+      },
+      "validation": {
+        "startTimeRequired": "Start time is required",
+        "endTimeRequired": "End time is required",
+        "slotDurationRequired": "Slot duration is required"
+      },
+      "toasts": {
+        "slotsSavedSuccess": "Slots saved successfully!",
+        "slotsSavedError": "Failed to save slots."
+      },
+      "placeholders": {
+        "selectStartTime": "Select start hour",
+        "selectEndTime": "Select end hour"
+      },
+      "btns": {
+        "editSlots": "Edit Slots",
+        "generateSlots": "Generate Slots",
+        "back": "Back",
+        "confirm": "Confirm Slots",
+        "selectAll": "Select All",
+        "deselectAll": "Deselect All"
+      },
+      "utcNote": "All times are in UTC"
+    }
+  }
+}

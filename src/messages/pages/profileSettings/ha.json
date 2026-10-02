@@ -1,0 +1,15 @@
+{
+  "profileSettingsPage": {
+    "title": "Saitin Bayanin Kai",
+    "fields": {
+      "name": "Cikakken Suna",
+      "namePlaceholder": "Shigar da cikakken suna",
+      "email": "Imel",
+      "emailPlaceholder": "Shigar da imel",
+      "phone": "Lambar Wayar",
+      "phonePlaceholder": "Shigar da lambar wayar",
+      "address": "Adireshi",
+      "addressPlaceholder": "Shigar da adireshi"
+    }
+  }
+}

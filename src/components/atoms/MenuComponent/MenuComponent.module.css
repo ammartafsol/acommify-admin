@@ -1,0 +1,23 @@
+.menu {
+  z-index: 9999;
+}
+
+.menu > ul {
+  min-width: 100px !important;
+  padding: 1px 12px;
+  border-radius: 30px;
+  border-radius: 11px;
+  border: 1px solid var(--border-color);
+  background: var(--Poor-white);
+  box-shadow: 0px 4px 16.8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.menu > ul > li {
+  border-bottom: 1px solid var(--border-color);
+  margin-inline: 4px;
+  padding: 6px 0px;
+}
+
+.menu > ul > li:last-child {
+  border-bottom: none;
+}

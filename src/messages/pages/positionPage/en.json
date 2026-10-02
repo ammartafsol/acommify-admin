@@ -1,0 +1,36 @@
+{
+  "positionPage": {
+    "title": "Positions",
+    "addButton": "Add Position",
+    "editButton": "Edit",
+    "deleteButton": "Delete",
+
+    "table": {
+      "name": "Name",
+      "statusTitle": "Status"
+    },
+    "modal": {
+      "addTitle": "Add Position",
+      "editTitle": "Edit Position",
+      "PositionName": "Position Name",
+      "PositionNamePlaceholder": "Enter position name",
+      "PositionNameRequired": "Position name is required",
+      "statusLabel": "Status",
+      "statusPlaceholder": "Select status",
+      "activeOption": "Active",
+      "inactiveOption": "Inactive",
+      "cancelButton": "Cancel",
+      "saveButton": "Save",
+      "updateButton": "Update",
+      "saving": "Saving...",
+      "loading": "Loading...",
+      "required": "This field is required",
+      "autoFill": "Auto Fill",
+      "translating": "Translating...",
+      "UpdatedSuccessfully": "Position updated successfully",
+      "CreatedSuccessfully": "Position created successfully",
+      "PleaseFill": "Please fill",
+      "translationSuccessMessage": "Translation completed successfully"
+    }
+  }
+}

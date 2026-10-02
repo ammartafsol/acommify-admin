@@ -1,0 +1,39 @@
+{
+  "busBookings": {
+    "title": "Bus Bookings",
+    "tabs": {
+      "all": "All",
+      "pending": "Pending",
+      "cancelled": "Cancelled",
+      "completed": "completed",
+      "accepted": "Accepted",
+      "rejected": "Rejected"
+    },
+
+    "table": {
+      "residentName": "Resident Name",
+      "roomNumber": "Room Number",
+      "busName": "Bus Name",
+      "busRoute": "Bus Route",
+      "DepartureDateAndTime": "Departure Date & Time",
+      "status": "Status",
+      "ArrivalDateAndTime": "Arrival Date & Time",
+      "actions": "Actions",
+      "shift": "Shift"
+    },
+    "action": {
+      "cancel": "Cancel",
+      "approve": "Approve",
+      "view": "View"
+    },
+    "areYouSureModal": {
+      "approve": "Approve",
+      "reject": "Reject",
+      "approveBookingSure": "approveBookingSure",
+      "rejectBookingSure": "rejectBookingSure"
+    },
+    "modal": {
+      "viewBookingDetails": "Bus Booking Details"
+    }
+  }
+}

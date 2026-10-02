@@ -1,0 +1,60 @@
+.dashboardCardContainer {
+  overflow: auto;
+  display: flex;
+  width: 100%;
+  grid-gap: 10px;
+  padding-block: 5px 10px;
+}
+
+.dashboardCardContainer::-webkit-scrollbar {
+  height: 6px;
+}
+.dashboardCardContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dashboardCardContainer::-webkit-scrollbar-thumb {
+  background: var(--Blue);
+  border-radius: 3px;
+}
+
+.dashboardCard {
+  border-radius: 10px;
+  box-shadow:
+    0 0 5px 0 rgba(12, 26, 75, 0.04),
+    0 4px 20px -2px rgba(50, 50, 71, 0.02);
+  min-width: 185px;
+  width: 295px;
+  /* width: 185px; */
+  height: 197px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 22px 18px;
+}
+.dashboardCard:hover {
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+.dashboardCardHeader {
+  height: 55px;
+  width: 55px;
+}
+
+.dashboardCardBody h2 {
+  color: var(--White);
+  font-size: var(--fs24);
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@media (max-width: 800px) {
+  .dashboardCardBody h2 {
+    font-size: var(--fs20);
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboardCard {
+    height: 100%;
+  }
+}

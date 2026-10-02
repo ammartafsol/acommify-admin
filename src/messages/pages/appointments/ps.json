@@ -1,0 +1,46 @@
+{
+  "appointments": {
+    "title": "ناستې",
+    "searchPlaceholder": "پلټنه",
+    "tabs": {
+      "all": "ټول",
+      "completed": "بشپړ شوي",
+      "cancelled": "لغوه شوي",
+      "pending": "پاتې",
+      "rejected": "رد شوي"
+    },
+    "table": {
+      "residentName": "د استوګن نوم",
+      "roomNumber": "د کوټې شمیره",
+      "dateAndTime": "نیټه او وخت",
+      "appointmentType": "د ناستې ډول",
+      "purpose": "هدف",
+      "status": "حالت"
+    },
+    "menuItems": {
+      "edit": "سمون",
+      "delete": "ړنګول"
+    },
+    "modal": {
+      "title": "د ناستې د تفصیلاتو مودال",
+      "name": "د استوګن نوم",
+      "roomNumber": "د کوټې شمیره",
+      "dateTime": "نیټه او وخت",
+      "appointmentType": "د ناستې ډول",
+      "purpose": "هدف",
+      "status": "حالت",
+      "notes": "اضافي یادښتونه"
+    },
+    "actions": {
+      "approve": "تصویب",
+      "cancel": "لغوه کول",
+      "view": "کتل"
+    },
+    "areYouSureModal": {
+      "approve": "تصویب",
+      "reject": "رد",
+      "approveBookingSure": "ایا تاسو ډاډه یاست چې غواړئ حجز تصویب کړئ؟",
+      "rejectBookingSure": "ایا تاسو ډاډه یاست چې غواړئ حجز رد کړئ؟"
+    }
+  }
+}

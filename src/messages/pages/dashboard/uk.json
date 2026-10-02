@@ -1,0 +1,73 @@
+{
+  "dashboardPage": {
+    "noActivity": "Немає недавньої активності для відображення",
+    "dashboardCards": {
+      "bookLaundry": "Бронювання пральні",
+      "bookBus": "Бронювання автобуса",
+      "bookAppointment": "Майбутні зустрічі",
+      "visitorBooking": "Бронювання відвідувачів",
+      "documentCenter": "Центр документів",
+      "signRequests": "Запити на вхід/вихід",
+      "signInSignOut": "Вхід/вихід"
+    },
+    "statsCards": {
+      "onSite": "Резиденти на місці",
+      "offSite": "Резиденти поза місцем",
+      "pendingRequests": "Запити в очікуванні",
+      "maintenanceRequests": "Запити на обслуговування",
+      "upcomingAppointments": "Майбутні зустрічі",
+      "staffCount": "Кількість персоналу",
+      "activeCenters": "Активні центри",
+      "nationalOccupancy": "Національна зайнятість",
+      "totalResidents": "Загальна кількість резидентів",
+      "totalAdults": "Загальна кількість дорослих",
+      "totalChildren": "Загальна кількість дітей"
+    },
+    "notification": {
+      "recentNotification": "Останні активності",
+      "currentNotification": "Тут ви бачите останні бронювання, запити, оновлення сповіщень."
+    },
+    "activity": {
+      "recentActivity": "Стрічка останніх активностей",
+      "currentActivity": "Тут ви бачите бронювання, запити, оновлення.",
+      "labels": {
+        "bookingId": "ID бронювання",
+        "visitorName": "Ім'я відвідувача",
+        "relationship": "Стосунки",
+        "serviceType": "Тип послуги",
+        "start": "Початок",
+        "end": "Кінець",
+        "created": "Створено",
+        "incidentId": "ID інциденту",
+        "title": "Заголовок",
+        "description": "Опис",
+        "severity": "Серйозність",
+        "address": "Адреса",
+        "resident": "Резидент",
+        "requestId": "ID запиту",
+        "user": "Користувач",
+        "houseNumber": "Номер будинку"
+      },
+      "activityTabs": {
+        "booking": "Бронювання",
+        "requests": "Запити на обслуговування",
+        "incident": "Звіти про інциденти"
+      },
+      "activitycard": {
+        "requestHeading": "Новий запит на обслуговування подано",
+        "dateTime": "Дата/Час",
+        "resident": "Резидент",
+        "purpose": "Мета",
+        "appointment": "Зустріч"
+      }
+    },
+    "chart": {
+      "residentTitle": "Резидент"
+    },
+    "common": {
+      "edit": "Редагувати",
+      "approveRequest": "Схвалити запит",
+      "rejectRequest": "Відхилити запит"
+    }
+  }
+}

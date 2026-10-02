@@ -1,0 +1,46 @@
+{
+  "appointments": {
+    "title": "Зустрічі",
+    "searchPlaceholder": "Пошук",
+    "tabs": {
+      "all": "Усі",
+      "completed": "Завершені",
+      "cancelled": "Скасовані",
+      "pending": "Очікує",
+      "rejected": "Відхилено"
+    },
+    "table": {
+      "residentName": "Ім'я резидента",
+      "roomNumber": "Номер кімнати",
+      "dateAndTime": "Дата та час",
+      "appointmentType": "Тип зустрічі",
+      "purpose": "Мета",
+      "status": "Статус"
+    },
+    "menuItems": {
+      "edit": "Редагувати",
+      "delete": "Видалити"
+    },
+    "modal": {
+      "title": "Модальне вікно деталей зустрічі",
+      "name": "Ім'я резидента",
+      "roomNumber": "Номер кімнати",
+      "dateTime": "Дата та час",
+      "appointmentType": "Тип зустрічі",
+      "purpose": "Мета",
+      "status": "Статус",
+      "notes": "Додаткові нотатки"
+    },
+    "actions": {
+      "approve": "Схвалити",
+      "cancel": "Скасувати",
+      "view": "Переглянути"
+    },
+    "areYouSureModal": {
+      "approve": "Схвалити",
+      "reject": "Відхилити",
+      "approveBookingSure": "Ви впевнені, що хочете схвалити бронювання?",
+      "rejectBookingSure": "Ви впевнені, що хочете відхилити бронювання?"
+    }
+  }
+}

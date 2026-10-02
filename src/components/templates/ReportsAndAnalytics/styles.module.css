@@ -1,0 +1,73 @@
+.container {
+  margin-block: 48px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.cartsMain {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.cardsStats {
+  width: 100%;
+}
+.downloadBtn {
+  background-color: #fff !important;
+  border-radius: 12px !important;
+  height: 42px !important;
+}
+
+.downloadBtn label {
+  color: var(--Black) !important;
+
+  /* Body */
+  font-family: var(--font-lato);
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 120%; /* 18px */
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  display: flex;
+  width: 44px;
+  height: 32px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: var(--Poor-white);
+  cursor: pointer;
+  box-shadow: 0 3px 8px 0 rgba(74, 85, 104, 0.04);
+}
+.totalVisitorsChart,
+.maintenanceBarChart {
+  width: 50%;
+}
+@media (max-width: 992px) {
+  .cartsMain {
+    flex-wrap: wrap;
+  }
+  .maintenanceBarChart,
+  .maintenanceChart,
+  .totalVisitorsChart {
+    width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+.searchInput {
+  width: 100% !important;
+  height: 42px !important;
+}
+.searchInput input {
+  border-radius: 12px !important;
+  background-color: var(--Poor-white) !important;
+  height: 42px !important;
+  color: var(--Black) !important;
+}
+.searchInput > div > div {
+  padding-inline-end: 5px;
+  padding-bottom: 4px;
+}

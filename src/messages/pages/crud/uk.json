@@ -1,0 +1,156 @@
+{
+  "crudPage": {
+    "title": "CRUD операції",
+    "crudData": {
+      "maintenanceCategories": "Категорії обслуговування",
+      "laundaryMachineCategories": "Категорії пральних машин",
+      "FAQs": "Часті питання",
+      "helplines": "Лінії допомоги",
+      "positions": "Позиції"
+    },
+    "laundaryMachineCategoriesPage": {
+      "title": "Категорії пральних машин",
+      "addButton": "Додати нову машину",
+      "edit": "Редагувати",
+      "table": {
+        "machineName": "Назва машини",
+        "status": "Статус"
+      },
+      "modal": {
+        "title": "Створити машину",
+        "editTitle": "Редагувати машину",
+        "autoFill": "Автозаповнення",
+        "translating": "Перекладається...",
+        "machineName": "Назва машини",
+        "machineNamePlaceholder": "Введіть назву машини",
+        "inputRequired": {
+          "name": "Назва машини є обов'язковою"
+        },
+        "status": "Статус",
+        "statusPlaceholder": "Виберіть статус",
+        "statusRequired": "Статус є обов'язковим",
+        "active": "Активний",
+        "inactive": "Неактивний",
+        "cancel": "Скасувати",
+        "save": "Зберегти",
+        "update": "Оновити",
+        "confirm": "Підтвердити",
+        "MachineUpdatedSuccessfully": "Машину успішно оновлено",
+        "MachineCreatedSuccessfully": "Машину успішно створено",
+        "fill": "Будь ласка, заповніть",
+        "autoFilled": "Автозаповнення успішне"
+      }
+    },
+    "maintenanceCategoriesPage": {
+      "title": "Категорії обслуговування",
+      "addButton": "Додати нову категорію",
+      "edit": "Редагувати",
+      "table": {
+        "categoryName": "Назва категорії",
+        "status": "Статус",
+        "risk": "Ризик"
+      },
+      "modal": {
+        "title": "Створити категорію",
+        "editTitle": "Редагувати категорію",
+        "categoryName": "Назва категорії",
+        "categoryNamePlaceholder": "Введіть назву категорії",
+        "inputRequired": {
+          "name": "Назва категорії є обов'язковою"
+        },
+        "severity": "Серйозність",
+        "severityPlaceholder": "Виберіть серйозність",
+        "severityRequired": "Серйозність є обов'язковою",
+        "autoFilled": "Автозаповнення успішне",
+        "severityOptions": {
+          "low": "Низька",
+          "medium": "Середня",
+          "high": "Висока"
+        },
+        "status": "Статус",
+        "statusPlaceholder": "Виберіть статус",
+        "statusOptions": {
+          "active": "Активний",
+          "inactive": "Неактивний"
+        },
+        "statusRequired": "Статус є обов'язковим",
+        "btnTranslate": "Перекладається...",
+        "autoFill": "Автозаповнення",
+        "pleaseFill": "Будь ласка, заповніть",
+        "cancel": "Скасувати",
+        "save": "Зберегти",
+        "update": "Оновити",
+        "confirm": "Підтвердити",
+        "toast": {
+          "categoryUpdated": "Категорію успішно оновлено",
+          "categoryCreated": "Категорію успішно створено"
+        }
+      }
+    },
+    "helpLineCrudPage": {
+      "title": "Лінії допомоги",
+      "addButton": "Додати лінію допомоги",
+      "edit": "Редагувати",
+      "actions": {
+        "active": "Активний",
+        "inactive": "Неактивний"
+      },
+      "table": {
+        "title": "Заголовок",
+        "country": "Країна",
+        "contact": "Контакт",
+        "description": "Опис",
+        "status": "Статус",
+        "phoneNumber": "Номер телефону"
+      },
+      "modal": {
+        "title": "Створити лінію допомоги",
+        "editTitle": "Редагувати лінію допомоги",
+        "autoFill": "Автозаповнення",
+        "translating": "Перекладається...",
+        "helpLineTitle": "Заголовок лінії допомоги",
+        "helpLineTitlePlaceholder": "Введіть заголовок лінії допомоги",
+        "helpLineTitleRequired": "Заголовок лінії допомоги є обов'язковим",
+        "contact": "Контакт",
+        "contactPlaceholder": "Введіть контакт",
+        "contactRequired": "Контакт є обов'язковим",
+        "description": "Опис",
+        "callingCodeRequired": "Код виклику є обов'язковим",
+        "pleaseFill": "Будь ласка, заповніть",
+        "inputRequired": {
+          "country": "Країна є обов'язковою",
+          "title": "Назва є обов'язковою",
+          "description": "Опис є обов'язковим"
+        },
+        "phoneNumberRequired": "Номер телефону є обов'язковим",
+        "timingsRequired": "Час роботи є обов'язковим",
+        "descriptionPlaceholder": "Введіть опис",
+        "descriptionRequired": "Опис є обов'язковим",
+        "status": "Статус",
+        "statusPlaceholder": "Виберіть статус",
+        "statusRequired": "Статус є обов'язковим",
+        "active": "Активний",
+        "inactive": "Неактивний",
+        "cancel": "Скасувати",
+        "save": "Зберегти",
+        "update": "Оновити",
+        "confirm": "Підтвердити",
+        "helpLineUpdatedSuccessfully": "Лінію допомоги успішно оновлено",
+        "helpLineCreatedSuccessfully": "Лінію допомоги успішно створено",
+        "minLength": "Повинно бути принаймні 2 символи",
+        "fill": "Будь ласка, заповніть",
+        "autoFilled": "Автозаповнення успішне",
+        "phoneNumber": "Номер телефону",
+        "phoneNumberPlaceholder": "Введіть номер телефону",
+        "timings": "Час роботи",
+        "timingsPlaceholder": "Введіть час роботи",
+        "translationSuccess": "Переклад успішний",
+        "country": "Країна",
+        "countryPlaceholder": "Виберіть країну"
+      },
+      "toasts": {
+        "statusUpdateSuccess": "Статус успішно оновлено"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "ordersPage": {
+    "title": "إدارة الطلبات",
+    "exportDateRangeTitle": "تصدير البيانات",
+    "searchPlaceholder": "البحث في الطلبات...",
+    "exportButtonLabel": "تصدير الطلبات",
+    "exportSuccessToast": "تم تصدير الطلبات بنجاح",
+    "exportErrorToast": "فشل في تصدير الطلبات. يرجى المحاولة مرة أخرى.",
+    "table": {
+      "orderId": "معرف الطلب",
+      "customer": "اسم العميل",
+      "date": "تاريخ الطلب",
+      "status": "حالة الطلب",
+      "total": "إجمالي النقاط",
+      "actions": ""
+    },
+    "ordersTabs": {
+      "all": "الكل",
+      "pending": "في الانتظار",
+      "cancelled": "ملغي",
+      "completed": "مكتمل"
+    },
+    "cancelOrderToast": "تم إلغاء الطلب بنجاح"
+  }
+}

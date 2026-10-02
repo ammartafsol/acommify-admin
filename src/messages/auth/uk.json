@@ -1,0 +1,68 @@
+{
+  "loginPage": {
+    "title": "Вхід",
+    "titleCentre": "Вхід центру",
+    "titleNationwide": "Вхід національної панелі",
+    "titleAdmin": "Вхід адміністратора",
+    "selectorTitle": "Який вхід вам потрібен?",
+    "selectorSubtitle": "Оберіть тип облікового запису, з яким хочете увійти.",
+    "selectCentre": "Центр",
+    "selectNationwide": "Національна панель",
+    "selectAdmin": "Адміністратор",
+    "emailLabel": "Електронна пошта",
+    "emailPlaceholder": "Введіть електронну пошту",
+    "emailError": "Будь ласка, введіть правильну адресу електронної пошти",
+    "EmailRequired": "Електронна пошта є обов'язковою",
+    "emailInvalidChars": "Електронна пошта містить недійсні символи",
+    "passwordLabel": "Пароль",
+    "passwordPlaceholder": "Введіть пароль",
+    "passwordRequired": "Пароль є обов'язковим",
+    "forgotPass": "Забули пароль?",
+    "loginButton": "Увійти",
+    "gotoBusinessOwnerLogin": "Увійти як Центр",
+    "gotoAdminLogin": "Перейти до входу адміністратора",
+    "gotoNationWideLogin": "Перейти до входу в національну панель управління"
+  },
+  "forgotPasswordPage": {
+    "title": "Забули пароль",
+    "subtitle": "Не хвилюйтесь! Таке буває. Будь ласка, введіть адресу, пов'язану з вашим обліковим записом.",
+    "emailLabel": "Електронна пошта",
+    "emailPlaceholder": "Введіть електронну пошту",
+    "emailError": "Будь ласка, введіть правильну адресу електронної пошти",
+    "emailRequired": "Електронна пошта є обов'язковою",
+    "emailInvalidChars": "Електронна пошта містить недійсні символи",
+    "submitButton": "Надіслати лист",
+    "specialChar": "Без спеціальних символів"
+  },
+  "verificationPage": {
+    "title": "Код підтвердження",
+    "subtitle": "Підтвердьте кодом",
+    "resendCode": "Надіслати код ще раз {time, plural, =0 {} =1 {# секунда} few {# секунди} many {# секунд} other {# секунд}}",
+    "sendingOtp": "Надсилається код OTP {time, plural, =0 {} =1 {# секунда} few {# секунди} many {# секунд} other {# секунд}}",
+    "verifyButton": "Підтвердити",
+    "minLimit": "Код OTP (одноразовий пароль) має містити щонайменше 4 символи",
+    "otpRequired": "Код OTP (одноразовий пароль) обов'язковий"
+  },
+  "resetPasswordPage": {
+    "title": "Скинути пароль",
+    "subtitle": "Введіть новий пароль",
+    "passwordLabel": "Пароль",
+    "passwordPlaceholder": "Введіть пароль",
+    "passwordRequired": "Пароль є обов'язковим",
+    "minPasswordError": "Мінімум 8 символів",
+    "maxPasswordError": "Максимум 20 символів",
+    "lowerPasswordError": "Додайте хоча б одну малу літеру",
+    "upperPasswordError": "Додайте хоча б одну велику літеру",
+    "specialPasswordError": "Додайте хоча б один спеціальний символ",
+    "confirmPasswordLabel": "Підтвердження пароля",
+    "confirmPasswordPlaceholder": "Підтвердіть пароль",
+    "confirmPasswordRequired": "Пароль є обов'язковим",
+    "ConfirmPasswordError": "Паролі не співпадають",
+    "submitButton": "Скинути пароль",
+
+    "modal": {
+      "title": "Ваш пароль успішно змінено!",
+      "btnText": "Продовжити"
+    }
+  }
+}

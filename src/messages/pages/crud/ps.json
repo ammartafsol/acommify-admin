@@ -1,0 +1,156 @@
+{
+  "crudPage": {
+    "title": "CRUD عملیات",
+    "crudData": {
+      "maintenanceCategories": "د ساتنې کتګورۍ",
+      "laundaryMachineCategories": "د جامو د مینځلو د ماشینونو کتګورۍ",
+      "FAQs": "په مکرر ډول پوښتل شوي پوښتنې",
+      "helplines": "د مرستې لاینونه",
+      "positions": "موقفونه"
+    },
+    "laundaryMachineCategoriesPage": {
+      "title": "د جامو د مینځلو د ماشینونو کتګورۍ",
+      "addButton": "نوی ماشین اضافه کړئ",
+      "edit": "سمون",
+      "table": {
+        "machineName": "د ماشین نوم",
+        "status": "حالت"
+      },
+      "modal": {
+        "title": "ماشین جوړول",
+        "editTitle": "ماشین سمون",
+        "autoFill": "خپل ځان ډکول",
+        "translating": "ژباړه کيږي...",
+        "machineName": "د ماشین نوم",
+        "machineNamePlaceholder": "د ماشین نوم ولیکئ",
+        "inputRequired": {
+          "name": "د ماشین نوم اړین دی"
+        },
+        "status": "حالت",
+        "statusPlaceholder": "حالت وټاکئ",
+        "statusRequired": "حالت اړین دی",
+        "active": "فعال",
+        "inactive": "غیرفعال",
+        "cancel": "لغوه کول",
+        "save": "ساتل",
+        "update": "تازه کول",
+        "confirm": "تایید",
+        "MachineUpdatedSuccessfully": "ماشین په بریالیتوب سره تازه شو",
+        "MachineCreatedSuccessfully": "ماشین په بریالیتوب سره جوړ شو",
+        "fill": "مهرباني وکړئ ډک کړئ",
+        "autoFilled": "خپل ځان ډکول په بریالیتوب سره بشپړ شو"
+      }
+    },
+    "maintenanceCategoriesPage": {
+      "title": "د ساتنې کتګورۍ",
+      "addButton": "نوی کتګوري اضافه کړئ",
+      "edit": "سمون",
+      "table": {
+        "categoryName": "د کتګورۍ نوم",
+        "status": "حالت",
+        "risk": "خطر"
+      },
+      "modal": {
+        "title": "کتګوري جوړول",
+        "editTitle": "کتګوري سمون",
+        "categoryName": "د کتګورۍ نوم",
+        "categoryNamePlaceholder": "د کتګورۍ نوم ولیکئ",
+        "inputRequired": {
+          "name": "د کتګورۍ نوم اړین دی"
+        },
+        "severity": "سختی",
+        "severityPlaceholder": "سختی وټاکئ",
+        "severityRequired": "سختی اړینه ده",
+        "autoFilled": "خپل ځان ډکول په بریالیتوب سره بشپړ شو",
+        "severityOptions": {
+          "low": "ټیټ",
+          "medium": "منځنی",
+          "high": "لوړ"
+        },
+        "status": "حالت",
+        "statusPlaceholder": "حالت وټاکئ",
+        "statusOptions": {
+          "active": "فعال",
+          "inactive": "غیرفعال"
+        },
+        "statusRequired": "حالت اړین دی",
+        "btnTranslate": "ژباړه کيږي...",
+        "autoFill": "خپل ځان ډکول",
+        "pleaseFill": "مهرباني وکړئ ډک کړئ",
+        "cancel": "لغوه کول",
+        "save": "ساتل",
+        "update": "تازه کول",
+        "confirm": "تایید",
+        "toast": {
+          "categoryUpdated": "کتګوري په بریالیتوب سره تازه شوه",
+          "categoryCreated": "کتګوري په بریالیتوب سره جوړه شوه"
+        }
+      }
+    },
+    "helpLineCrudPage": {
+      "title": "د مرستې لاینونه",
+      "addButton": "د مرستې لاین اضافه کړئ",
+      "edit": "سمون",
+      "actions": {
+        "active": "فعال",
+        "inactive": "غیرفعال"
+      },
+      "table": {
+        "title": "عنوان",
+        "country": "هیواد",
+        "contact": "اړیکه",
+        "description": "توضیحات",
+        "status": "حالت",
+        "phoneNumber": "د تلیفون شمیره"
+      },
+      "modal": {
+        "title": "د مرستې لاین جوړول",
+        "editTitle": "د مرستې لاین سمون",
+        "autoFill": "خپل ځان ډکول",
+        "translating": "ژباړه کيږي...",
+        "helpLineTitle": "د مرستې د لاین عنوان",
+        "helpLineTitlePlaceholder": "د مرستې د لاین عنوان ولیکئ",
+        "helpLineTitleRequired": "د مرستې د لاین عنوان اړین دی",
+        "contact": "اړیکه",
+        "contactPlaceholder": "اړیکه ولیکئ",
+        "contactRequired": "اړیکه اړینه ده",
+        "description": "توضیحات",
+        "callingCodeRequired": "د زنګ کولو کوډ اړین دی",
+        "pleaseFill": "مهرباني وکړئ ډک کړئ",
+        "inputRequired": {
+          "country": "هیواد اړین دی",
+          "title": "عنوان اړین دی",
+          "description": "توضیحات اړین دي"
+        },
+        "phoneNumberRequired": "د تلیفون شمیره اړینه ده",
+        "timingsRequired": "وختونه اړین دي",
+        "descriptionPlaceholder": "توضیحات ولیکئ",
+        "descriptionRequired": "توضیحات اړین دي",
+        "status": "حالت",
+        "statusPlaceholder": "حالت وټاکئ",
+        "statusRequired": "حالت اړین دی",
+        "active": "فعال",
+        "inactive": "غیرفعال",
+        "cancel": "لغوه کول",
+        "save": "ساتل",
+        "update": "تازه کول",
+        "confirm": "تایید",
+        "helpLineUpdatedSuccessfully": "د مرستې لاین په بریالیتوب سره تازه شو",
+        "helpLineCreatedSuccessfully": "د مرستې لاین په بریالیتوب سره جوړ شو",
+        "minLength": "لږترلږه 2 حروف باید ولري",
+        "fill": "مهرباني وکړئ ډک کړئ",
+        "autoFilled": "خپل ځان ډکول په بریالیتوب سره بشپړ شو",
+        "phoneNumber": "د تلیفون شمیره",
+        "phoneNumberPlaceholder": "د تلیفون شمیره ولیکئ",
+        "timings": "وختونه",
+        "timingsPlaceholder": "وختونه ولیکئ",
+        "translationSuccess": "ژباړه بریالیه",
+        "country": "هیواد",
+        "countryPlaceholder": "هیواد وټاکئ"
+      },
+      "toasts": {
+        "statusUpdateSuccess": "حالت په بریالیتوب سره تازه شو"
+      }
+    }
+  }
+}

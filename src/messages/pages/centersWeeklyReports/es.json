@@ -1,0 +1,45 @@
+{
+  "centersWeeklyReportsPage": {
+    "statsCards": {
+      "contractedCapacity": "Contracted Capacity",
+      "occupancy": "Occupancy",
+      "unavailable": "Unavailable",
+      "useableVacancies": "Useable Vacancies",
+      "numberOfChildren": "Number of Children",
+      "singleParent1Child": "Single Parent (1 child)",
+      "singleParent2Children": "Single Parent (2 children)",
+      "singleParent3Children": "Single Parent (3 children)",
+      "singleParent4Children": "Single Parent (4 children)",
+      "singleParent5Children": "Single Parent (5+ children)",
+      "coupleNoChildren": "Couple (no children)",
+      "couple1Child": "Couple (1 child)",
+      "couple2Children": "Couple (2 children)",
+      "couple3Children": "Couple (3 children)",
+      "couple4Children": "Couple (4 children)",
+      "couple5Children": "Couple (5 children)",
+      "couple6Children": "Couple (6+ children)",
+      "otherUnits": "Other Units",
+      "singleMales": "Single Males",
+      "singleFemales": "Single Females"
+    }
+  }
+}
+{
+  "centersWeeklyReportsPage": {
+    "title": "Centers Weekly Reports",
+    "placeholder": {
+      "selectCenter": "Select Center"
+    },
+    "statsCards": {
+      "contractedCapacity": "Contracted Capacity",
+      "occupancy": "Occupancy",
+      "unavailable": "Unavailable",
+      "useableVacancies": "Useable Vacancies"
+    },
+    "infoCards": {
+      "email": "Email",
+      "phone": "Phone",
+      "selectedCenter": "Selected Center"
+    }
+  }
+}

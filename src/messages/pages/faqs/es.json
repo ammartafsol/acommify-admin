@@ -1,0 +1,44 @@
+{
+  "faqPage": {
+    "title": "Preguntas Frecuentes",
+    "viewModalTitle": "Detalles de la FAQ",
+    "questionTitle": "Pregunta",
+    "answerTitle": "Respuesta",
+    "statusTitle": "Estado",
+    "actionsTitle": "Acciones",
+    "addButton": "Agregar FAQ",
+    "editButton": "Editar FAQ",
+    "deleteButton": "Eliminar FAQ",
+    "areYouSureMessage": "¿Está seguro de que desea eliminar esta FAQ?",
+    "areYouSure": "¿Está seguro?",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "modal": {
+      "addTitle": "Agregar FAQ",
+      "editTitle": "Editar FAQ",
+      "questionLabel": "Pregunta",
+      "questionPlaceholder": "Ingrese la pregunta",
+      "answerLabel": "Respuesta",
+      "answerPlaceholder": "Ingrese la respuesta",
+      "inputRequired": {
+        "question": "La pregunta es requerida",
+        "answer": "La respuesta es requerida"
+      },
+      "statusLabel": "Estado",
+      "statusPlaceholder": "Seleccione el estado",
+      "activeOption": "Activo",
+      "inactiveOption": "Inactivo",
+      "saveButton": "Guardar",
+      "updateButton": "Actualizar",
+      "cancelButton": "Cancelar",
+      "saving": "Guardando...",
+      "updating": "Actualizando...",
+      "translating": "Traduciendo...",
+      "autoFill": "Llenado automático",
+      "CreatedSuccessfully": "FAQ creada exitosamente",
+      "UpdatedSuccessfully": "FAQ actualizada exitosamente",
+      "translationSuccessMessage": "Llenado automático exitoso",
+      "PleaseFill": "Por favor, complete"
+    }
+  }
+}

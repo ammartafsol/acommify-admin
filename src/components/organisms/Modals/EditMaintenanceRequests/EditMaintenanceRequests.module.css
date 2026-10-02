@@ -1,0 +1,59 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dropdownClass > div:first-of-type {
+  border: none;
+  height: 59px;
+  border-radius: 25px;
+}
+
+.inputDateContainer input {
+  width: 100% !important;
+  justify-content: space-between !important;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-block: 10px;
+  justify-content: space-between;
+}
+
+.btns button {
+  width: 50%;
+  height: 54px;
+  box-shadow: none !important;
+}
+
+.inputDateContainer
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  inset-inline-end: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.inputDateContainer input[type="datetime-local"] {
+  position: relative;
+  padding-inline-end: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Added styles */
+  border-radius: 25px;
+  background: #f4f7fd;
+  display: flex;
+  height: 59px;
+  padding: 15px 20px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}

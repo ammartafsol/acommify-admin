@@ -1,0 +1,81 @@
+{
+  "manageItemsPage": {
+    "title": "د توکو مدیریت",
+    "categoryTitle": "د کتګوریو مدیریت",
+    "addItem": "توک اضافه کړئ",
+    "addCategory": "کتګوري اضافه کړئ",
+    "pleaseFill": "مهرباني وکړئ ډک کړئ",
+    "inputRequired": {
+      "name": "د کتګورۍ نوم اړین دی",
+      "itemName": "د توک نوم اړین دی"
+    },
+    "topTabs": {
+      "items": "توک",
+      "categories": "کتګورۍ"
+    },
+    "tabs": {
+      "all": "ټول"
+    },
+    "table": {
+      "itemName": "د توک نوم",
+      "stock": "ذخیره",
+      "points": "نښې",
+      "dateAdded": "د اضافه کولو نیټه",
+      "shippingOptions": "د لیږد غوراوي",
+      "category": "کتګوري"
+    },
+    "categoriesTable": {
+      "categoryName": "د کتګورۍ نوم",
+      "dateAdded": "د اضافه کولو نیټه"
+    },
+    "modal": {
+      "addHeader": "نوی توک اضافه کړئ",
+      "editHeader": "توک سمون",
+      "itemName": "د توک نوم",
+      "itemNamePlaceholder": "د توک نوم ولیکئ",
+      "stock": "ذخیره",
+      "stockPlaceholder": "د ذخیرې اندازه ولیکئ",
+      "stockRequired": "ذخیره اړینه ده",
+      "stockMustBePositive": "ذخیره باید مثبت شمیره وي",
+      "stockMustBeInteger": "ذخیره باید بشپړه شمیره وي",
+      "points": "نښې",
+      "pointsPlaceholder": "د نښو ارزښت ولیکئ",
+      "pointsRequired": "نښې اړینې دي",
+      "pointsMustBePositive": "نښې باید مثبت شمیره وي",
+      "pointsMustBeInteger": "نښې باید بشپړه شمیره وي",
+      "photo": "عکس",
+      "photoRequired": "عکس اړین دی",
+      "cancel": "لغوه کول",
+      "add": "توک اضافه کړئ",
+      "translating": "ژباړه کيږي...",
+      "autoFill": "خپل ځان ډکول",
+      "categoryLabel": "کتګوري",
+      "categoryPlaceholder": "کتګوري وټاکئ",
+      "categoryRequired": "کتګوري اړینه ده",
+      "update": "توک تازه کړئ",
+      "shippingOptionsRequired": "د لیږد غوراوي اړین دي",
+      "shippingOptions": "د لیږد غوراوي",
+      "selectShippingOptions": "د لیږد غوراوي وټاکئ",
+      "deliverOptions": {
+        "pickup": "راخیستل",
+        "delivery": "لیږد",
+        "pickupDelivery": "راخیستل او لیږد"
+      },
+      "toast": {
+        "itemUpdatedSuccess": "توک په بریالیتوب سره تازه شو",
+        "itemCreatedSuccess": "توک په بریالیتوب سره جوړ شو",
+        "translationSuccess": "خپل ځان ډکول په بریالیتوب سره بشپړ شو",
+        "imageUploadSuccess": "توک په بریالیتوب سره تازه شو",
+        "imageUploadError": "توک په بریالیتوب سره تازه شو"
+      }
+    },
+    "categoryModal": {
+      "addHeader": "نوې کتګوري اضافه کړئ",
+      "editHeader": "کتګوري سمون",
+      "categoryName": "د کتګورۍ نوم",
+      "categoryNamePlaceholder": "د کتګورۍ نوم ولیکئ",
+      "categoryCreated": "کتګوري په بریالیتوب سره جوړه شوه",
+      "updatedSuccessfully": "کتګوري په بریالیتوب سره تازه شوه"
+    }
+  }
+}

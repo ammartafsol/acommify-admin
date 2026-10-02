@@ -1,0 +1,28 @@
+{
+  "reportsAnalyticsPage": {
+    "title": "Звіти та аналітика",
+    "ethnicityTitle": "Етнічні дані",
+    "demographicBreakdownTitle": "Демографічний розподіл",
+    "children": "Діти",
+    "adults": "Дорослі",
+    "male": "Чоловік",
+    "female": "Жінка",
+    "other": "Інше",
+    "noData": "Дані недоступні",
+    "maintenanceRequestTitle": "Запит на обслуговування",
+    "incidentReportsTitle": "Звіти про інциденти",
+    "totalVisitorTitle": "Загальна кількість відвідувачів",
+    "downloadReport": "Завантажити звіт",
+    "statsCards": {
+      "onSite": "Резиденти на місці",
+      "offSite": "Резиденти поза місцем",
+      "pendingRequests": "Запити в очікуванні",
+      "maintenanceRequests": "Запити на обслуговування в очікуванні",
+      "bedCount": "Загальна кількість ліжок",
+      "upcomingAppointments": "Майбутні зустрічі",
+      "availableBeds": "Доступні ліжка",
+      "totalVisitors": "Загальна кількість відвідувачів",
+      "totalStaffCount": "Загальна кількість персоналу"
+    }
+  }
+}

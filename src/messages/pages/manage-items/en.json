@@ -1,0 +1,81 @@
+{
+  "manageItemsPage": {
+    "title": "Manage Items",
+    "categoryTitle": "Manage Categories",
+    "addItem": "Add Item",
+    "addCategory": "Add Category",
+    "pleaseFill": "Please fill",
+    "inputRequired": {
+      "name": "Category name is required",
+      "itemName": "Item name is required"
+    },
+    "topTabs": {
+      "items": "Items",
+      "categories": "Categories"
+    },
+    "tabs": {
+      "all": "All"
+    },
+    "table": {
+      "itemName": "Item Name",
+      "stock": "Stock",
+      "points": "Points",
+      "dateAdded": "Date Added",
+      "shippingOptions": "Shipping Options",
+      "category": "Category"
+    },
+    "categoriesTable": {
+      "categoryName": "Category Name",
+      "dateAdded": "Date Added"
+    },
+    "modal": {
+      "addHeader": "Add New Item",
+      "editHeader": "Edit Item",
+      "itemName": "Item Name",
+      "itemNamePlaceholder": "Enter item name",
+      "stock": "Stock",
+      "stockPlaceholder": "Enter stock quantity",
+      "stockRequired": "Stock is required",
+      "stockMustBePositive": "Stock must be a positive number",
+      "stockMustBeInteger": "Stock must be a whole number",
+      "points": "Points",
+      "pointsPlaceholder": "Enter points value",
+      "pointsRequired": "Points is required",
+      "pointsMustBePositive": "Points must be a positive number",
+      "pointsMustBeInteger": "Points must be a whole number",
+      "photo": "Photo",
+      "photoRequired": "Photo is required",
+      "cancel": "Cancel",
+      "add": "Add Item",
+      "translating": "Translating...",
+      "autoFill": "Auto fill",
+      "categoryLabel": "Category",
+      "categoryPlaceholder": "Select Category",
+      "categoryRequired": "Category is required",
+      "update": "Update Item",
+      "shippingOptionsRequired": "Shipping options is required",
+      "shippingOptions": "Shipping Options",
+      "selectShippingOptions": "Select Shipping Options",
+      "deliverOptions": {
+        "pickup": "Pick Up",
+        "delivery": "Delivery",
+        "pickupDelivery": "Pick Up & Delivery"
+      },
+      "toast": {
+        "itemUpdatedSuccess": "Item Updated Successfully",
+        "itemCreatedSuccess": "Item Created Successfully",
+        "translationSuccess": "Auto fill successfully",
+        "imageUploadError": "Image upload failed"
+      }
+    },
+    "categoryModal": {
+      "addHeader": "Add New Category",
+      "editHeader": "Edit Category",
+      "categoryName": "Category Name",
+      "categoryNamePlaceholder": "Enter category name",
+
+      "categoryCreated": "Category Created Successfully",
+      "updatedSuccessfully": "Category Updated Successfully"
+    }
+  }
+}

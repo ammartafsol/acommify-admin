@@ -1,0 +1,32 @@
+{
+  "orderDetailsPage": {
+    "title": "Detalhes do Pedido",
+    "orderDetail": {
+      "orderId": "Pedido",
+      "status": "Status do Pedido",
+      "orderDate": "Data do Pedido",
+      "totalPoints": "Total de Pontos",
+      "userInfo": "Informações do Usuário",
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefone",
+      "shippingInfo": "Informações de Envio",
+      "address": "Endereço",
+      "city": "Cidade",
+      "country": "País",
+      "summary": "Resumo do Pedido",
+      "orderIdLabel": "ID do Pedido",
+      "items": "Itens",
+      "orderItem": "Itens do Pedido"
+    },
+    "orderDetailsHeader": {
+      "product": "Produto",
+      "category": "Categoria",
+      "quantity": "Quantidade",
+      "shippingType": "Tipo de Envio",
+      "totalPoints": "Total",
+      "status": "Status"
+    },
+    "completedStatusToast": "Status do item do pedido concluído com sucesso"
+  }
+}

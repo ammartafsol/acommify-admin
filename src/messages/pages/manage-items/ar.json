@@ -1,0 +1,80 @@
+{
+  "manageItemsPage": {
+    "title": "إدارة العناصر",
+    "categoryTitle": "إدارة الفئات",
+    "addItem": "إضافة عنصر",
+    "addCategory": "إضافة فئة",
+    "pleaseFill": "يرجى ملء",
+    "inputRequired": {
+      "name": "اسم الفئة مطلوب",
+      "itemName": "اسم العنصر مطلوب"
+    },
+    "topTabs": {
+      "items": "العناصر",
+      "categories": "الفئات"
+    },
+    "tabs": {
+      "all": "الكل"
+    },
+    "table": {
+      "itemName": "اسم العنصر",
+      "stock": "المخزون",
+      "points": "النقاط",
+      "dateAdded": "تاريخ الإضافة",
+      "shippingOptions": "خيارات الشحن",
+      "category": "الفئة"
+    },
+    "categoriesTable": {
+      "categoryName": "اسم الفئة",
+      "dateAdded": "تاريخ الإضافة"
+    },
+    "modal": {
+      "addHeader": "إضافة عنصر جديد",
+      "editHeader": "تعديل العنصر",
+      "itemName": "اسم العنصر",
+      "itemNamePlaceholder": "أدخل اسم العنصر",
+      "stock": "المخزون",
+      "stockPlaceholder": "أدخل كمية المخزون",
+      "stockRequired": "المخزون مطلوب",
+      "stockMustBePositive": "المخزون يجب أن يكون رقماً موجباً",
+      "stockMustBeInteger": "المخزون يجب أن يكون رقماً صحيحاً",
+      "points": "النقاط",
+      "pointsPlaceholder": "أدخل قيمة النقاط",
+      "pointsRequired": "النقاط مطلوبة",
+      "pointsMustBePositive": "النقاط يجب أن تكون رقماً موجباً",
+      "pointsMustBeInteger": "النقاط يجب أن تكون رقماً صحيحاً",
+      "photo": "الصورة",
+      "photoRequired": "الصورة مطلوبة",
+      "cancel": "إلغاء",
+      "add": "إضافة عنصر",
+      "translating": "جاري الترجمة...",
+      "autoFill": "ملء تلقائي",
+      "categoryLabel": "الفئة",
+      "categoryPlaceholder": "اختر الفئة",
+      "categoryRequired": "الفئة مطلوبة",
+      "update": "تحديث العنصر",
+      "shippingOptionsRequired": "خيارات الشحن مطلوبة",
+      "shippingOptions": "خيارات الشحن",
+      "selectShippingOptions": "اختر خيارات الشحن",
+      "deliverOptions": {
+        "pickup": "استلام",
+        "delivery": "توصيل",
+        "pickupDelivery": "استلام وتوصيل"
+      },
+      "toast": {
+        "itemUpdatedSuccess": "تم تحديث العنصر بنجاح",
+        "itemCreatedSuccess": "تم إنشاء العنصر بنجاح",
+        "translationSuccess": "تم الملء التلقائي بنجاح",
+        "imageUploadError": "فشل رفع الصورة بسبب خطأ ما"
+      }
+    },
+    "categoryModal": {
+      "addHeader": "إضافة فئة جديدة",
+      "editHeader": "تعديل الفئة",
+      "categoryName": "اسم الفئة",
+      "categoryNamePlaceholder": "أدخل اسم الفئة",
+      "categoryCreated": "تم إنشاء الفئة بنجاح",
+      "updatedSuccessfully": "تم تحديث الفئة بنجاح"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.quillInput {
+  color: var(--Black);
+}
+
+.quillInput[dir="rtl"] [class*="ql-editor"] {
+  text-align: right !important;
+}
+
+.quillInput[dir="rtl"] [class*="ql-picker-label"] {
+  padding-right: 20px;
+}
+
+.errorText {
+  color: var(--Red);
+}

@@ -1,0 +1,17 @@
+{
+  "signInOutPage": {
+    "title": "Rajistar Shiga/Fita",
+    "searchPlaceholder": "Nemo ta suna ko lambar masauki",
+    "table": {
+      "residentName": "Sunan Mazauni",
+      "accommodationNumber": "Lambar Masauki",
+      "type": "Nau'i",
+      "dateTime": "Kwanan wata & Lokaci"
+    },
+    "typeLabel": {
+      "signIn": "Shiga",
+      "signOut": "Fita"
+    }
+  }
+}
+

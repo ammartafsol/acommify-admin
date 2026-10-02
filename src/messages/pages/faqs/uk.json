@@ -1,0 +1,44 @@
+{
+  "faqPage": {
+    "title": "Часті питання",
+    "questionTitle": "Питання",
+    "viewModalTitle": "Деталі FAQ",
+    "answerTitle": "Відповідь",
+    "statusTitle": "Статус",
+    "actionsTitle": "Дії",
+    "addButton": "Додати FAQ",
+    "editButton": "Редагувати FAQ",
+    "deleteButton": "Видалити FAQ",
+    "areYouSureMessage": "Ви впевнені, що хочете видалити це FAQ?",
+    "areYouSure": "Ви впевнені?",
+    "cancel": "Скасувати",
+    "confirm": "Підтвердити",
+    "modal": {
+      "addTitle": "Додати FAQ",
+      "editTitle": "Редагувати FAQ",
+      "questionLabel": "Питання",
+      "questionPlaceholder": "Введіть питання",
+      "answerLabel": "Відповідь",
+      "answerPlaceholder": "Введіть відповідь",
+      "inputRequired": {
+        "question": "Питання є обов'язковим",
+        "answer": "Відповідь є обов'язковою"
+      },
+      "statusLabel": "Статус",
+      "statusPlaceholder": "Виберіть статус",
+      "activeOption": "Активний",
+      "inactiveOption": "Неактивний",
+      "saveButton": "Зберегти",
+      "updateButton": "Оновити",
+      "cancelButton": "Скасувати",
+      "saving": "Збереження...",
+      "updating": "Оновлення...",
+      "translating": "Перекладається...",
+      "autoFill": "Автозаповнення",
+      "CreatedSuccessfully": "FAQ успішно створено",
+      "UpdatedSuccessfully": "FAQ успішно оновлено",
+      "translationSuccessMessage": "Автозаповнення успішне",
+      "PleaseFill": "Будь ласка, заповніть"
+    }
+  }
+}

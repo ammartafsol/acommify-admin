@@ -1,0 +1,87 @@
+{
+  "maintenanceRequestsPage": {
+    "title": "Запити на обслуговування",
+    "modalTitle": "Деталі запиту на обслуговування",
+    "assignTaskTitle": "Призначити завдання персоналу",
+    "requestCompletedSuccessfully": "Статус запиту успішно завершено",
+    "requestRejectedSuccessfully": "Запит успішно відхилено",
+    "requestAcceptedSuccessfully": "Запит успішно прийнято",
+    "taskAssignedSuccessfully": "Завдання успішно призначено",
+    "maintenanceRequestUpdatedSuccessfully": "Запит на обслуговування успішно оновлено",
+    "editMaintenanceRequestTitle": "Редагувати запит на обслуговування",
+    "tabs": {
+      "all": "Усі",
+      "pending": "Очікує",
+      "inprogress": "В процесі",
+      "completed": "Завершено",
+      "rejected": "Відхилено",
+      "escalated": "Ескальовано"
+    },
+    "table": {
+      "residentName": "Ім'я резидента",
+      "roomNumber": "Номер кімнати",
+      "requestDateTime": "Дата та час запиту",
+      "issueCategory": "Категорія проблеми",
+      "shortDescription": "Короткий опис",
+      "status": "Статус",
+      "images": "Зображення",
+      "risk": "Ризик",
+      "residentEmail": "Електронна пошта резидента",
+      "assignedTo": "Призначений персоналом",
+      "assignedStaff": "Призначений Персонал",
+      "assignedToName": "Ім'я",
+      "assignedToEmail": "Електронна пошта",
+      "assignedToPhone": "Телефон"
+    },
+    "buttons": {
+      "submit": "Надіслати",
+      "cancel": "Скасувати"
+    },
+    "inputsLabels": {
+      "residentName": "Ім'я резидента",
+      "roomNumber": "Номер кімнати",
+      "requestDateTime": "Дата та час запиту",
+      "issueCategory": "Категорія проблеми",
+      "description": "Короткий опис",
+      "status": "Статус",
+      "assignToStaff": "Призначити персоналу"
+    },
+    "inputsPlaceholders": {
+      "residentName": "Введіть ім'я резидента",
+      "roomNumber": "Введіть номер кімнати",
+      "requestDateTime": "Виберіть дату та час запиту",
+      "issueCategory": "Виберіть категорію проблеми",
+      "description": "Введіть короткий опис",
+      "status": "Виберіть статус",
+      "assignToStaff": "Виберіть персонал"
+    },
+    "validation": {
+      "residentNameRequired": "Ім'я резидента є обов'язковим",
+      "roomNumberRequired": "Номер кімнати є обов'язковим",
+      "requestDateTimeRequired": "Дата та час запиту є обов'язковими",
+      "issueCategoryRequired": "Категорія проблеми є обов'язковою",
+      "descriptionRequired": "Короткий опис є обов'язковим",
+      "statusRequired": "Статус є обов'язковим",
+      "assignToStaffRequired": "Будь ласка, виберіть члена персоналу для призначення"
+    },
+    "actions": {
+      "markCompleted": "Позначити як завершене",
+      "assignToStaff": "Призначити персоналу",
+      "acceptTask": "Прийняти завдання",
+      "addComment": "Додати коментар",
+      "editComment": "Редагувати коментар"
+    },
+    "commentModal": {
+      "addComment": "Додати коментар",
+      "editComment": "Редагувати коментар",
+      "comment": "Коментар",
+      "commentPlaceholder": "Введіть коментар тут",
+      "commentRequired": "Коментар є обов'язковим",
+      "cancel": "Скасувати",
+      "submit": "Надіслати",
+      "update": "Оновити",
+      "commentAddedSuccessfully": "Коментар успішно додано",
+      "commentUpdatedSuccessfully": "Коментар успішно оновлено"
+    }
+  }
+}

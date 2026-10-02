@@ -1,0 +1,39 @@
+{
+  "configurationPage": {
+    "title": "Saitawa",
+    "addButton": "Ƙara Saitawa",
+    "editButton": "Gyara",
+    "deleteButton": "Share",
+    "table": {
+      "name": "Sunan",
+      "ipAddress": "Adireshin IP"
+    },
+    "modal": {
+      "addTitle": "Ƙara Saitawa",
+      "editTitle": "Gyara Saitawa",
+      "ConfigurationName": "Sunan Saitawa",
+      "ConfigurationNamePlaceholder": "Shigar da sunan saitawa",
+      "nameRequired": "Sunan saitawa yana da mahimmanci",
+      "ipAddress": "Adireshin IP",
+      "ipAddressPlaceholder": "Shigar da adireshin IP",
+      "ipAddressRequired": "Adireshin IP yana da mahimmanci",
+      "ipAddressInvalid": "Da fatan za a shigar da adireshin IP mai inganci (misali: 192.168.1.1)",
+      "cancelButton": "Soke",
+      "saveButton": "Ajiye",
+      "updateButton": "Sabunta",
+      "saving": "Ana ajiyewa...",
+      "loading": "Ana lodawa...",
+      "required": "Wannan filin yana da mahimmanci",
+      "autoFill": "Cika Kawa",
+      "translating": "Ana fassarawa...",
+      "UpdatedSuccessfully": "An sabunta saitawa cikin nasara",
+      "CreatedSuccessfully": "An ƙirƙiri saitawa cikin nasara",
+      "PleaseFill": "Da fatan za a cika",
+      "translationSuccessMessage": "An kammala fassarar cikin nasara"
+    },
+    "toast": {
+      "configurationDeleted": "An share saitawa cikin nasara"
+    }
+  }
+}
+

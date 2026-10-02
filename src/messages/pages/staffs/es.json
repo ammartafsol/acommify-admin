@@ -1,0 +1,78 @@
+{
+  "staffsPage": {
+    "title": "Gestión de Personal",
+    "addMember": "Agregar Personal",
+    "table": {
+      "staffID": "ID del Personal",
+      "name": "Nombre",
+      "email": "Email",
+      "phone": "Teléfono",
+      "status": "Estado"
+    },
+    "actions": {
+      "edit": "Editar",
+      "delete": "Eliminar"
+    },
+    "toast": {
+      "staffStatus": "Estado del Personal Actualizado Exitosamente",
+      "staffAdded": "Personal Agregado Exitosamente",
+      "staffUpdated": "Personal Actualizado Exitosamente",
+      "staffDeleted": "Personal eliminado exitosamente",
+      "fill": "Por favor, complete los campos en otros idiomas también",
+      "translationSuccessMessage": "Traducido exitosamente",
+      "pleaseFill": "Por favor, complete"
+    },
+    "modal": {
+      "title": "Detalles del Personal",
+      "staffID": "ID del Personal",
+      "name": "Nombre Completo",
+      "email": "Email",
+      "phone": "Número de Teléfono",
+      "status": "Estado",
+      "addStaff": "Agregar Nuevo Personal",
+      "editStaff": "Editar Personal",
+      "translating": "Traduciendo...",
+      "autoFill": "Llenado automático",
+      "cancel": "Cancelar",
+      "loading": "Cargando...",
+      "confirm": "Confirmar",
+      "morning": "Mañana",
+      "night": "Noche",
+      "shiftTime": "Horario de Turno",
+      "position": "Posición",
+      "deleteMessage": "¿Está seguro de que desea eliminar a este miembro del personal?"
+    },
+    "fields": {
+      "namePlaceholder": "Ingrese el nombre completo",
+      "name": "Nombre Completo",
+      "emailPlaceholder": "example@company.com",
+      "email": "Dirección de Email",
+      "phonePlaceholder": "Ingrese el número de teléfono",
+      "phone": "Número de Teléfono",
+      "positionPlaceholder": "Seleccione el Cargo",
+      "position": "Cargo",
+      "shiftStartTime": "Hora de Inicio del Turno",
+      "shiftEndTime": "Hora de Fin del Turno",
+      "shiftStartTimePlaceholder": "Seleccione la hora de inicio del turno",
+      "shiftEndTimePlaceholder": "Seleccione la hora de fin del turno",
+      "permissionsLabel": "Permisos",
+      "permissionsPlaceholder": "Seleccione los Permisos",
+      "selected": "Seleccionado",
+      "selectAll": "Seleccionar Todo",
+      "deselectAll": "Deseleccionar Todo"
+    },
+    "formikSchema": {
+      "fullNameRequired": "El nombre completo es requerido",
+      "emailAddress": "Por favor, ingrese una dirección de email válida",
+      "emailRequired": "El email es requerido",
+      "callingRequired": "El código de llamada es requerido",
+      "phoneNumberLimit": "El número de teléfono debe tener 10-15 dígitos, opcionalmente comenzando con +",
+      "phoneNumberRequired": "El número de teléfono es requerido",
+      "permissionsMin": "Al menos un permiso debe ser seleccionado",
+      "permissionsRequired": "Los permisos son requeridos",
+      "shiftStartRequired": "La hora de inicio del turno es requerida",
+      "shiftEndRequired": "La hora de fin del turno es requerida",
+      "positionRequired": "El cargo es requerido"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "maintenanceRequestsPage": {
+    "title": "მოვლის მოთხოვნები",
+    "modalTitle": "მოვლის მოთხოვნის დეტალები",
+    "assignTaskTitle": "დავალების მიბმა პერსონალზე",
+    "requestCompletedSuccessfully": "მოთხოვნის სტატუსი წარმატებით დასრულდა",
+    "requestRejectedSuccessfully": "მოთხოვნა წარმატებით უარყოფილია",
+    "requestAcceptedSuccessfully": "მოთხოვნა წარმატებით მიღებულია",
+    "taskAssignedSuccessfully": "დავალება წარმატებით მიბმულია",
+    "maintenanceRequestUpdatedSuccessfully": "მოვლის მოთხოვნა წარმატებით განახლდა",
+    "editMaintenanceRequestTitle": "მოვლის მოთხოვნის რედაქტირება",
+    "tabs": {
+      "all": "ყველა",
+      "pending": "მოლოდინში",
+      "inprogress": "მიმდინარეობს",
+      "completed": "დასრულებული",
+      "rejected": "უარყოფილი",
+      "escalated": "გაფართოებული"
+    },
+    "table": {
+      "residentName": "მოსახლის სახელი",
+      "roomNumber": "ოთახის ნომერი",
+      "requestDateTime": "მოთხოვნის თარიღი და დრო",
+      "issueCategory": "პრობლემის კატეგორია",
+      "shortDescription": "მოკლე აღწერა",
+      "status": "სტატუსი",
+      "images": "სურათები",
+      "risk": "რისკი",
+      "residentEmail": "მოსახლის ელ.ფოსტა",
+      "assignedTo": "პერსონალზე მიბმა",
+      "assignedStaff": "მიბმული პერსონალი",
+      "assignedToName": "სახელი",
+      "assignedToEmail": "ელ.ფოსტა",
+      "assignedToPhone": "ტელეფონი"
+    },
+    "buttons": {
+      "submit": "გაგზავნა",
+      "cancel": "გაუქმება"
+    },
+    "inputsLabels": {
+      "residentName": "მოსახლის სახელი",
+      "roomNumber": "ოთახის ნომერი",
+      "requestDateTime": "მოთხოვნის თარიღი და დრო",
+      "issueCategory": "პრობლემის კატეგორია",
+      "description": "მოკლე აღწერა",
+      "status": "სტატუსი",
+      "assignToStaff": "პერსონალზე მიბმა"
+    },
+    "inputsPlaceholders": {
+      "residentName": "შეიყვანეთ მოსახლის სახელი",
+      "roomNumber": "შეიყვანეთ ოთახის ნომერი",
+      "requestDateTime": "აირჩიეთ მოთხოვნის თარიღი და დრო",
+      "issueCategory": "აირჩიეთ პრობლემის კატეგორია",
+      "description": "შეიყვანეთ მოკლე აღწერა",
+      "status": "აირჩიეთ სტატუსი",
+      "assignToStaff": "აირჩიეთ პერსონალი"
+    },
+    "validation": {
+      "residentNameRequired": "მოსახლის სახელი აუცილებელია",
+      "roomNumberRequired": "ოთახის ნომერი აუცილებელია",
+      "requestDateTimeRequired": "მოთხოვნის თარიღი და დრო აუცილებელია",
+      "issueCategoryRequired": "პრობლემის კატეგორია აუცილებელია",
+      "descriptionRequired": "მოკლე აღწერა აუცილებელია",
+      "statusRequired": "სტატუსი აუცილებელია",
+      "assignToStaffRequired": "გთხოვთ, აირჩიოთ პერსონალის წევრი მიბმისთვის"
+    },
+    "actions": {
+      "markCompleted": "დასრულებულად მონიშვნა",
+      "assignToStaff": "პერსონალზე მიბმა",
+      "acceptTask": "დავალების მიღება",
+      "addComment": "კომენტარის დამატება",
+      "editComment": "კომენტარის რედაქტირება"
+    },
+    "commentModal": {
+      "addComment": "კომენტარის დამატება",
+      "editComment": "კომენტარის რედაქტირება",
+      "comment": "კომენტარი",
+      "commentPlaceholder": "შეიყვანეთ კომენტარი ქვემოთ",
+      "commentRequired": "კომენტარი აუცილებელია",
+      "cancel": "გაუქმება",
+      "submit": "გაგზავნა",
+      "update": "განახლება",
+        "commentAddedSuccessfully": "კომენტარი წარმატებით დამატებულია",
+      "commentUpdatedSuccessfully": "კომენტარი წარმატებით განახლდა"
+    }
+  }
+}

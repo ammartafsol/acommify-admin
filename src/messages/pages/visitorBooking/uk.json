@@ -1,0 +1,20 @@
+{
+  "visitorBooking": {
+    "title": "Бронювання відвідувачів",
+    "viewModalTitle": "Деталі бронювання відвідувачів",
+    "table": {
+      "residentName": "Ім'я резидента",
+      "visitorName": "Ім'я відвідувача",
+      "additionalNotes": "Додаткові примітки",
+      "dateAndTime": "Дата та час"
+    },
+    "modal": {
+      "additionalNotes": "Додаткові примітки",
+      "residentName": "Ім'я резидента",
+      "visitorName": "Ім'я відвідувача",
+      "relationShipToResident": "Стосунки з резидентом",
+      "dateAndTime": "Дата та час",
+      "createdAt": "Створено"
+    }
+  }
+}

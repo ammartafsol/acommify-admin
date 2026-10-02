@@ -1,0 +1,104 @@
+.containerClass {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.activitiesCardMain {
+  display: flex;
+  gap: 15px;
+  padding: 24px;
+  flex-direction: column;
+  border-radius: 8px;
+  background: var(--Poor-white, #fff);
+  box-shadow: 0 9.628px 48.14px 0 rgba(139, 139, 139, 0.1);
+}
+
+.cardMainData {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.cardMainData > h1 {
+  color: var(--Black, #172a33);
+  font-size: var(--fs24);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cardMainData > p {
+  color: #565b60;
+  font-size: var(--fs16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.leftMain {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.main {
+  margin-block: 48px;
+}
+
+.rightMain {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(550px, 793px) minmax(350px, 526px)
+  );
+  gap: 24px;
+}
+
+.ulClass {
+  overflow-x: scroll;
+  flex-wrap: nowrap !important;
+}
+
+.ulClass::-webkit-scrollbar {
+  display: none;
+}
+
+.ulClass > li {
+  background: #eef1f5 !important;
+}
+
+.ulClass li[class*="listSelected"] {
+  background: #33b5f6 !important;
+  color: #fff !important;
+}
+
+.recentTabs {
+  overflow-y: scroll;
+  max-height: 300px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.recentTabs::-webkit-scrollbar {
+  display: none;
+}
+
+@media (width < 1024px) {
+  .rightMain {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .activitiesCardMain {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "incidentReportsPage": {
+    "title": "ინციდენტების ანგარიშები",
+    "addNewReport": "ახალი ანგარიშის დამატება",
+    "noDataText": "ინციდენტების ანგარიშები ვერ მოიძებნა",
+    "reportCreatedSuccessfully": "ინციდენტის ანგარიში წარმატებით შეიქმნა",
+    "status": {
+      "all": "ყველა",
+      "resolved": "გადაწყვეტილი",
+      "underReview": "მიმოხილვის ქვეშ",
+      "escalated": "გაძლიერებული"
+    },
+    "severityOptions": {
+      "low": "დაბალი",
+      "medium": "საშუალო",
+      "high": "მაღალი"
+    },
+    "tabs": {
+      "all": "ყველა",
+      "resolved": "გადაწყვეტილი",
+      "underReview": "მიმოხილვის ქვეშ",
+      "escalated": "გაძლიერებული"
+    },
+    "actions": {
+      "edit": "რედაქტირება"
+    },
+    "table": {
+      "incidentId": "ინციდენტის ID",
+      "title": "სათაური",
+      "description": "აღწერა",
+      "residentInvolved": "ჩართული მოსახლე",
+      "reportedBy": "რომელმა მოხსენა",
+      "location": "მდებარეობა",
+      "severity": "სიმძიმე",
+      "dateTime": "თარიღი და დრო",
+      "status": "სტატუსი",
+      "completedDate": "დასრულების თარიღი"
+    },
+    "inputRequired": {
+      "title": "სათაური აუცილებელია",
+      "description": "აღწერა აუცილებელია",
+      "location": "მდებარეობა აუცილებელია",
+      "residentInvolved": "ჩართული მოსახლეები აუცილებელია",
+      "reportedBy": "რომელმა მოხსენა აუცილებელია",
+      "severity": "სიმძიმე აუცილებელია",
+      "dateTime": "თარიღი და დრო აუცილებელია",
+      "status": "სტატუსი აუცილებელია",
+      "completedDate": "დასრულების თარიღი აუცილებელია"
+    },
+    "modal": {
+      "title": "ინციდენტის ანგარიშის დამატება",
+      "editTitle": "ინციდენტის ანგარიშის რედაქტირება",
+      "autoFill": "ავტომატური შევსება",
+      "translating": "თარგმნება...",
+      "detailTitle": "ინციდენტის დეტალები",
+      "pleaseFill": "გთხოვთ, შეავსოთ",
+      "modalBtnsLabel": {
+        "cancel": "გაუქმება",
+        "submit": "გაგზავნა"
+      },
+      "inputLabels": {
+        "title": "სათაური",
+        "description": "აღწერა",
+        "residentInvolved": "ჩართული მოსახლე",
+        "reportedBy": "რომელმა მოხსენა",
+        "location": "მდებარეობა",
+        "severity": "სიმძიმე",
+        "dateTime": "თარიღი და დრო",
+        "status": "სტატუსი",
+        "completedDate": "დასრულების თარიღი"
+      },
+      "inputPlaceholders": {
+        "title": "შეიყვანეთ ანგარიშის სათაური",
+        "description": "შეიყვანეთ ანგარიშის აღწერა",
+        "residentInvolved": "შეიყვანეთ ჩართული მოსახლე",
+        "reportedBy": "აირჩიეთ რომელმა მოხსენა",
+        "location": "შეიყვანეთ მდებარეობა",
+        "severity": "აირჩიეთ სიმძიმე",
+        "dateTime": "შეიყვანეთ თარიღი და დრო",
+        "status": "აირჩიეთ სტატუსი",
+        "completedDate": "შეიყვანეთ დასრულების თარიღი"
+      },
+      "toasts": {
+        "reportCreatedSuccessfully": "ანგარიში წარმატებით შეიქმნა",
+        "errorUpdatedReport": "ანგარიში წარმატებით განახლდა",
+        "autoFilledSuccessfully": "ავტომატური შევსება წარმატებით დასრულდა"
+      }
+    }
+  }
+}

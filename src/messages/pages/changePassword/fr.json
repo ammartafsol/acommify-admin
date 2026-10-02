@@ -1,0 +1,25 @@
+{
+  "changePasswordPage": {
+    "title": "Changer le Mot de Passe",
+    "currentPassword": "Mot de Passe Actuel",
+    "newPassword": "Nouveau Mot de Passe",
+    "confirmNewPassword": "Confirmer le Nouveau Mot de Passe",
+    "updatePasswordButton": "Mettre à Jour le Mot de Passe",
+    "successMessage": "Le mot de passe a été mis à jour avec succès.",
+    "validation": {
+      "currentPasswordRequired": "Le mot de passe actuel est requis.",
+      "newPasswordRequired": "Le nouveau mot de passe est requis.",
+      "confirmNewPasswordRequired": "Veuillez confirmer votre nouveau mot de passe.",
+      "passwordsMustMatch": "Le nouveau mot de passe et la confirmation doivent correspondre.",
+      "passwordMinLength": "Le mot de passe doit contenir au moins 8 caractères.",
+      "passwordMaxLength": "Le mot de passe ne doit pas dépasser 20 caractères.",
+      "passwordLowercase": "Le mot de passe doit contenir au moins une lettre minuscule.",
+      "passwordUppercase": "Le mot de passe doit contenir au moins une lettre majuscule.",
+      "passwordNumber": "Le mot de passe doit contenir au moins un chiffre.",
+      "passwordSpecialChar": "Le mot de passe doit contenir au moins un caractère spécial.",
+      "currentPasswordInvalid": "Le mot de passe actuel est invalide.",
+      "newPasswordInvalid": "Le nouveau mot de passe est invalide.",
+      "confirmNewPasswordInvalid": "La confirmation du nouveau mot de passe est invalide."
+    }
+  }
+}

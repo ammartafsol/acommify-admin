@@ -1,0 +1,8 @@
+{
+  "scheduleTimeSlotsPage": {
+    "title": "د وختونو سلاټونو تنظیم",
+    "appointmentSlots": "د ناستو سلاټونه",
+    "laundryBookingSlots": "د دکالي د حجز سلاټونه",
+    "visitorBookingSlots": "د لیدونکو د حجز سلاټونه"
+  }
+}

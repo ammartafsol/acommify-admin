@@ -1,0 +1,108 @@
+{
+  "busManagementPage": {
+    "title": "Gudanar da Bas",
+    "addBus": "Ƙirƙiri Bas",
+    "addNewBus": "Ƙara Sabon Bas",
+    "busDetail": "Cikakken Bas",
+    "deletedBus": "An share bas cikin nasara.",
+    "statusUpdated": "Matsayin bas ya ƙaru cikin nasara.",
+    "table": {
+      "busId": "ID na Bas",
+      "busName": "Sunan Bas",
+      "startLocation": "Wurin Fara",
+      "endLocation": "Wurin Ƙarshe",
+      "capacity": "Ƙarfin",
+      "status": "Matsayi",
+      "startTime": "Lokacin Fara",
+      "endTime": "Lokacin Ƙarshe",
+      "availableDates": "Kwanakin da Ake Samu",
+      "description": "Bayani"
+    },
+    "filterStatus": {
+      "options": [
+        { "label": "Duka", "value": "all" },
+        { "label": "Aiki", "value": "active" },
+        { "label": "Ba Aiki", "value": "inactive" },
+        { "label": "Kulawa", "value": "maintenance" }
+      ]
+    },
+    "busStatus": {
+      "active": "Aiki",
+      "inactive": "Ba Aiki"
+    },
+    "shiftOptions": {
+      "morning": "Safe",
+      "afternoon": "Rana",
+      "evening": "Maraice",
+      "night": "Dare"
+    },
+    "toasts": {
+      "busCreated": "Bas An Ƙirƙira Cikin Nasara",
+      "busUpdated": "Bas An Sabunta Cikin Nasara"
+    },
+    "modal": {
+      "editTitle": "Gyara Bas",
+      "translating": "Ana Fassara...",
+      "autoFill": "Cike Kansa",
+      "seater": "Kujeru",
+      "inputLabels": {
+        "document": "Loda Takarda a Dukkan Da Bas",
+        "busName": "Sunan Bas",
+        "busNumber": "Lambar Bas",
+        "description": "Bayani",
+        "startLocation": "Wurin Fara",
+        "endLocation": "Wurin Ƙarshe",
+        "capacity": "Ƙarfin",
+        "startTime": "Lokacin Fara",
+        "endTime": "Lokacin Ƙarshe",
+        "availableDates": "Kwanakin da Ake Samu",
+        "shift": "Juyi"
+      },
+      "inputPlaceholders": {
+        "busName": "Shigar da sunan bas",
+        "busNumber": "Shigar da lambar bas",
+        "description": "Shigar da bayani",
+        "startLocation": "Shigar da wurin fara",
+        "endLocation": "Shigar da wurin ƙarshe",
+        "capacity": "Shigar da ƙarfin",
+        "startTime": "Shigar da lokacin fara",
+        "endTime": "Shigar da lokacin ƙarshe",
+        "availableDates": "Zaɓi kwanakin da ake samu",
+        "shift": "Zaɓi juyi"
+      },
+      "uploadMessage": {
+        "document": "Loda Takarda a Dukkan Da Bas"
+      },
+      "fileFormats": {
+        "document": "PDF, DOC, DOCX, TXT, RTF"
+      },
+      "btnLabels": {
+        "create": "Ƙirƙiri",
+        "update": "Sabunta",
+        "cancel": "Soke"
+      },
+      "translationSuccessMessage": "Fassarar ta ƙare cikin nasara",
+      "toasts": {
+        "busCreated": "Bas an ƙirƙira cikin nasara",
+        "busUpdated": "Bas an sabunta cikin nasara",
+        "pleaseFill": "Da fatan za a cika"
+      },
+      "validation": {
+        "busName": "Sunan bas yana buƙata",
+        "description": "Bayani yana buƙata",
+        "busNumber": "Lambar bas tana buƙata",
+        "startLocation": "Wurin fara yana buƙata",
+        "endLocation": "Wurin ƙarshe yana buƙata",
+        "capacity": "Ƙarfin yana buƙata",
+        "status": "Matsayi yana buƙata",
+        "capacityMin": "Ƙarfin dole ya kasance aƙalla 15",
+        "availableDatesMin": "Aƙalla kwanaki ɗaya da ake samu yana buƙata",
+        "availableDates": "Kwanakin da ake samu suna buƙata",
+        "startTime": "Lokacin fara yana buƙata",
+        "endTime": "Lokacin ƙarshe yana buƙata",
+        "shift": "Juyi yana buƙata",
+        "mediaError": "Loda Kafofin Watsa Labarai"
+      }
+    }
+  }
+}

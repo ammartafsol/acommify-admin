@@ -1,0 +1,68 @@
+{
+  "loginPage": {
+    "title": "Login",
+    "titleCentre": "Centre Login",
+    "titleNationwide": "Nationwide Dashboard Login",
+    "titleAdmin": "Admin Login",
+    "selectorTitle": "Which login do you need?",
+    "selectorSubtitle": "Choose the account type you want to sign in with.",
+    "selectCentre": "Centre",
+    "selectNationwide": "Nationwide Dashboard",
+    "selectAdmin": "Admin",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter Email",
+    "emailError": "Please enter a valid email address",
+    "EmailRequired": "Email is required",
+    "emailInvalidChars": "Email contains invalid characters",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter Password",
+    "passwordRequired": "Password is required",
+    "forgotPass": "Forgot your password?",
+    "loginButton": "Login",
+    "gotoBusinessOwnerLogin": "Sign in as Centre",
+    "gotoAdminLogin": "Go to Admin Login",
+    "gotoNationWideLogin": "Go to Nationwide Dashboard Login"
+  },
+  "forgotPasswordPage": {
+    "title": "Forgot Password",
+    "subtitle": "Don't worry! it happens. Please enter the address associated with your account.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter Email",
+    "emailError": "Please enter a valid email address",
+    "emailRequired": "Email is required",
+    "emailInvalidChars": "Email contains invalid characters",
+    "submitButton": "Send Email",
+    "specialChar": "No Special Characters"
+  },
+  "verificationPage": {
+    "title": "Verification Code",
+    "subtitle": "Confirm With Code",
+    "resendCode": "Resend Code {time, plural, =0 {} =1 {# second} other {# seconds}}",
+    "sendingOtp": "Sending OTP Code {time, plural, =0 {} =1 {# second} other {# seconds}}",
+    "verifyButton": "Verify",
+    "minLimit": "OTP must be at least 4 characters",
+    "otpRequired": "OTP is required"
+  },
+  "resetPasswordPage": {
+    "title": "Reset Password",
+    "subtitle": "Enter your new password",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter Password",
+    "passwordRequired": "Password is required",
+    "minPasswordError": "Min 8 characters",
+    "maxPasswordError": "Max 20 characters",
+    "lowerPasswordError": "Add at least one lowercase",
+    "upperPasswordError": "Add at least one uppercase",
+    "specialPasswordError": "Add at least one special character",
+    "confirmPasswordLabel": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm Password",
+    "confirmPasswordRequired": "Password is required",
+    "ConfirmPasswordError": "Passwords do not match",
+    "submitButton": "Reset Password",
+
+    "modal": {
+      "title": "Your password has been successfully changed!",
+      "btnText": "Continue"
+    }
+  }
+}

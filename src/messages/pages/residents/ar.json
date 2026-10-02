@@ -1,0 +1,130 @@
+{
+  "residentsPage": {
+    "title": "إدارة المقيمين",
+    "viewModalTitle": "تفاصيل المقيم",
+    "addResident": "إضافة مقيم جديد",
+    "searchPlaceholder": "البحث",
+    "table": {
+      "residentName": "اسم المقيم",
+      "roomNo": "رقم الغرفة/المنزل",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "residentStatus": "حالة المقيم",
+      "dob": "تاريخ الميلاد",
+      "age": "العمر",
+      "arrivalDate": "تاريخ الوصول",
+      "gender": "الجنس"
+    },
+    "modal": {
+      "noOfBedsRequired": "عدد الأسرة مطلوب",
+      "noOfBeds": "عدد الأسرة",
+      "noOfBedsPlaceholder": "اختر عدد الأسرة",
+      "available": "متاح",
+      "familyMemberRelation": "علاقة عضو العائلة",
+      "header": "إضافة مقيم جديد",
+      "editResident": "تعديل المقيم",
+      "familyMembers": "أعضاء العائلة",
+      "name": "الاسم الكامل",
+      "namePlaceholder": "أدخل الاسم الكامل",
+      "nameRequired": "الاسم مطلوب",
+      "inputRequired": {
+        "fullName": "الاسم الكامل مطلوب",
+        "schoolName": "اسم المدرسة مطلوب"
+      },
+      "dob": "تاريخ الميلاد",
+      "dobPlaceholder": "اختر تاريخ الميلاد",
+      "dobRequired": "تاريخ الميلاد مطلوب",
+      "dateOfArrival": "تاريخ الوصول",
+      "dateOfArrivalPlaceholder": "اختر تاريخ الوصول",
+      "dateOfArrivalRequired": "تاريخ الوصول مطلوب",
+      "phoneNumberRequired": "رقم الهاتف مطلوب",
+      "countryCode": "رمز الدولة",
+      "email": "عنوان البريد الإلكتروني",
+      "emailPlaceholder": "أدخل عنوان البريد الإلكتروني",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+      "phone": "رقم الهاتف",
+      "phonePlaceholder": "أدخل رقم الهاتف",
+      "invalidPhoneNumber": "يرجى إدخال رقم هاتف صحيح مع رمز الدولة",
+      "roomNumber": "رقم الغرفة",
+      "roomNumberPlaceholder": "أدخل رقم الغرفة",
+      "roomNumberRequired": "رقم الغرفة مطلوب",
+      "status": "الحالة",
+      "statusPlaceholder": "اختر الحالة",
+      "statusRequired": "الحالة مطلوبة",
+      "offsite": "خارج الموقع",
+      "onsite": "في الموقع",
+      "familyMemberLabel": "عضو العائلة",
+      "cancel": "إلغاء",
+      "confirm": "تأكيد",
+      "addFamilyMember": "إضافة أعضاء العائلة",
+      "familyMemberName": "اسم عضو العائلة",
+      "familyMemberNamePlaceholder": "أدخل اسم عضو العائلة",
+      "relationship": "العلاقة",
+      "relationshipPlaceholder": "اختر العلاقة",
+      "schoolName": "اسم المدرسة",
+      "schoolNamePlaceholder": "أدخل اسم المدرسة",
+      "gender": "الجنس",
+      "genderPlaceholder": "اختر الجنس",
+      "genderRequired": "الجنس مطلوب",
+      "trcNumber": "رقم TRC",
+      "trcNumberPlaceholder": "أدخل رقم TRC",
+      "ppsnNumber": "رقم PPSN",
+      "ppsnNumberPlaceholder": "أدخل رقم PPSN",
+      "medicalCardNumber": "رقم البطاقة الطبية",
+      "familyMember": "عضو العائلة",
+      "medicalCardNumberPlaceholder": "أدخل رقم البطاقة الطبية",
+      "relationShipOptions": {
+        "father": "الأب",
+        "mother": "الأم",
+        "sibling": "الأخ/الأخت",
+        "spouse": "الزوج/الزوجة",
+        "children": "الأطفال"
+      },
+      "genderOptions": {
+        "male": "ذكر",
+        "female": "أنثى",
+        "other": "غير ذكر/أنثى"
+      },
+      "schoolPlacement": {
+        "label": "موضوع في المدرسة",
+        "placeholder": "اختر حالة التنسيب المدرسي",
+        "placed": "موضوع",
+        "notPlaced": "غير موضوع"
+      },
+      "year": "السنة",
+      "yearPlaceholder": "أدخل السنة الدراسية",
+      "transportType": {
+        "label": "نوع النقل",
+        "placeholder": "اختر نوع النقل",
+        "bus": "حافلة",
+        "carpool": "مشاركة السيارات",
+        "family": "العائلة تجلبهم"
+      },
+      "books": {
+        "label": "الكتب",
+        "placeholder": "أدخل الكتاب {number}"
+      },
+      "relationshipRequired": "العلاقة مطلوبة",
+      "callingCodeRequired": "رمز الاتصال مطلوب",
+      "ageAtLeast18": "يجب أن يكون عمر المقيم 18 عامًا على الأقل",
+      "schoolPlacementRequired": "موضع المدرسة مطلوب",
+      "yearRequired": "السنة مطلوبة",
+      "yearMax": "لا يمكن أن تكون السنة في المستقبل",
+      "transportTypeRequired": "نوع النقل مطلوب",
+      "booksMinRequired": "كتاب واحد على الأقل مطلوب",
+      "age": "العمر",
+      "agePlaceholder": "أدخل العمر",
+      "toasts": {
+        "residentUpdated": "تم تحديث المقيم بنجاح",
+        "residentAdded": "تم إضافة المقيم بنجاح",
+        "translationSuccessMessage": "تمت الترجمة بنجاح"
+      },
+      "autoFill": "ملء تلقائي",
+      "translating": "جاري الترجمة..."
+    },
+    "actions": {
+      "edit": "تعديل"
+    }
+  }
+}

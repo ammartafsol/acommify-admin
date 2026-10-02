@@ -1,0 +1,212 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.InputContainer {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.InputContainer > div:first-child {
+  width: 50%;
+}
+
+.InputContainer > div:last-child {
+  width: 50%;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 8px;
+  gap: 16px;
+}
+
+.ButtonContainer button {
+  width: 50%;
+  height: 60px;
+  border-radius: 15px !important;
+}
+/* CSS Module / global */
+.menuButton[dir="rtl"] {
+  text-align: right !important;
+}
+.menuButton[dir="ltr"] {
+  text-align: left !important;
+}
+
+/* Permissions Section Styles */
+
+.permissionsLabel {
+  display: block;
+  color: var(--Dark-gray);
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-lato) !important;
+}
+
+.menuButton {
+  width: 100% !important;
+  border: none !important;
+  height: 59px !important;
+  border-radius: 25px !important;
+  text-align: left !important;
+  padding-inline-start: 20px !important;
+  font-size: 16px !important;
+  background: #f4f7fd !important;
+  font-family: var(--font-lato) !important;
+}
+
+.menuButton:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.menuButton {
+  color: var(--Dark-gray) !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-family: var(--font-lato) !important;
+}
+
+.permissionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9fafb;
+}
+
+.permissionItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.permissionItem:hover {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.permissionCheckbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #3b82f6;
+}
+
+.permissionLabel {
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+  margin: 0;
+  user-select: none;
+  line-height: 1.4;
+}
+
+.errorText {
+  color: var(--Red);
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Tags Section Styles */
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--Blue);
+  color: var(--Primary-White);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-family: var(--font-lato);
+  border: 1px solid var(--Dark-blue);
+}
+
+.addTagButton {
+  background: var(--Blue);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 14px;
+  font-size: 13px;
+  font-family: var(--font-lato) !important;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.addTagButton:hover {
+  background: var(--Dark-blue);
+}
+
+.closeIcon {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.permissionsDropdown {
+  display: flex;
+  align-items: center;
+}
+.permissionsDropdownAll {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+}
+
+.error {
+  color: var(--Red);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.timeInputIcon {
+  pointer-events: none;
+  inset-inline-end: 16px;
+}
+
+/* New Permission CSS */
+.menu > ul:first-of-type {
+  inset-inline-start: 20px !important;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.menu > ul::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+.menu > ul::-webkit-scrollbar-thumb {
+  background: #67a1ff;
+  border-radius: 8px;
+}

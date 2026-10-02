@@ -1,0 +1,32 @@
+{
+  "orderDetailsPage": {
+    "title": "შეკვეთის დეტალები",
+    "orderDetail": {
+      "orderId": "შეკვეთა",
+      "status": "შეკვეთის სტატუსი",
+      "orderDate": "შეკვეთის თარიღი",
+      "totalPoints": "სულ ქულები",
+      "userInfo": "მომხმარებლის ინფორმაცია",
+      "name": "სახელი",
+      "email": "ელ.ფოსტა",
+      "phone": "ტელეფონი",
+      "shippingInfo": "მიწოდების ინფორმაცია",
+      "address": "მისამართი",
+      "city": "ქალაქი",
+      "country": "ქვეყანა",
+      "summary": "შეკვეთის შეჯამება",
+      "orderIdLabel": "შეკვეთის ID",
+      "items": "ნივთები",
+      "orderItem": "შეკვეთის ნივთები"
+    },
+    "orderDetailsHeader": {
+      "product": "პროდუქტი",
+      "category": "კატეგორია",
+      "quantity": "რაოდენობა",
+      "shippingType": "მიწოდების ტიპი",
+      "totalPoints": "სულ",
+      "status": "სტატუსი"
+    },
+    "completedStatusToast": "შეკვეთის ნივთის სტატუსი წარმატებით დასრულდა"
+  }
+}

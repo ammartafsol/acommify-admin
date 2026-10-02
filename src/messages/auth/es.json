@@ -1,0 +1,68 @@
+{
+  "loginPage": {
+    "title": "Iniciar Sesión",
+    "titleCentre": "Inicio de sesión del Centro",
+    "titleNationwide": "Inicio de sesión del panel nacional",
+    "titleAdmin": "Inicio de sesión del administrador",
+    "selectorTitle": "¿Qué inicio de sesión necesita?",
+    "selectorSubtitle": "Elija el tipo de cuenta con el que desea iniciar sesión.",
+    "selectCentre": "Centro",
+    "selectNationwide": "Panel Nacional",
+    "selectAdmin": "Administrador",
+    "emailLabel": "Correo Electrónico",
+    "emailPlaceholder": "Ingrese el Correo",
+    "emailError": "Por favor, ingrese una dirección de correo válida",
+    "EmailRequired": "El correo es requerido",
+    "emailInvalidChars": "El correo contiene caracteres inválidos",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "Ingrese la Contraseña",
+    "passwordRequired": "La contraseña es requerida",
+    "forgotPass": "¿Olvidó su contraseña?",
+    "loginButton": "Iniciar Sesión",
+    "gotoBusinessOwnerLogin": "Iniciar sesión como Centro",
+    "gotoAdminLogin": "Ir al inicio de sesión del administrador",
+    "gotoNationWideLogin": "Ir al inicio de sesión del panel de control nacional"
+  },
+  "forgotPasswordPage": {
+    "title": "Olvidó la Contraseña",
+    "subtitle": "¡No se preocupe! Sucede. Por favor, ingrese la dirección asociada con su cuenta.",
+    "emailLabel": "Correo Electrónico",
+    "emailPlaceholder": "Ingrese el Correo",
+    "emailError": "Por favor, ingrese una dirección de correo válida",
+    "emailRequired": "El correo es requerido",
+    "emailInvalidChars": "El correo contiene caracteres inválidos",
+    "submitButton": "Enviar Correo",
+    "specialChar": "Sin Caracteres Especiales"
+  },
+  "verificationPage": {
+    "title": "Código de Verificación",
+    "subtitle": "Confirmar con Código",
+    "resendCode": "Reenviar Código {time, plural, =0 {} =1 {# segundo} other {# segundos}}",
+    "sendingOtp": "Enviando Código OTP {time, plural, =0 {} =1 {# segundo} other {# segundos}}",
+    "verifyButton": "Verificar",
+    "minLimit": "El OTP debe tener al menos 4 caracteres",
+    "otpRequired": "El OTP es requerido"
+  },
+  "resetPasswordPage": {
+    "title": "Restablecer Contraseña",
+    "subtitle": "Ingrese su nueva contraseña",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "Ingrese la Contraseña",
+    "passwordRequired": "La contraseña es requerida",
+    "minPasswordError": "Mín 8 caracteres",
+    "maxPasswordError": "Máx 20 caracteres",
+    "lowerPasswordError": "Agregue al menos una minúscula",
+    "upperPasswordError": "Agregue al menos una mayúscula",
+    "specialPasswordError": "Agregue al menos un carácter especial",
+    "confirmPasswordLabel": "Confirmar Contraseña",
+    "confirmPasswordPlaceholder": "Confirmar Contraseña",
+    "confirmPasswordRequired": "La contraseña es requerida",
+    "ConfirmPasswordError": "Las contraseñas no coinciden",
+    "submitButton": "Restablecer Contraseña",
+
+    "modal": {
+      "title": "¡Su contraseña ha sido cambiada exitosamente!",
+      "btnText": "Continuar"
+    }
+  }
+}

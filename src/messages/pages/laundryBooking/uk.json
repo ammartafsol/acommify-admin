@@ -1,0 +1,49 @@
+{
+  "laundryBooking": {
+    "title": "Бронювання пральні",
+    "tabs": {
+      "all": "Усі",
+      "pending": "Очікує",
+      "acceptedORConfirmed": "Підтверджено або Прийнято",
+      "cancelled": "Скасовано",
+      "rejected": "Відхилено"
+    },
+    "table": {
+      "residentName": "Ім'я резидента",
+      "laundryDateTime": "Дата та час пральні",
+      "roomNumber": "Номер кімнати",
+      "machineName": "Машина",
+      "DateAndTime": "Дата та час",
+      "status": "Статус"
+    },
+    "status": {
+      "pending": "Очікує",
+      "confirmed": "Підтверджено",
+      "completed": "Завершено"
+    },
+    "buttons": {
+      "submit": "Надіслати",
+      "cancel": "Скасувати"
+    },
+    "actions": {
+      "approve": "Схвалити",
+      "cancel": "Скасувати",
+      "view": "Переглянути"
+    },
+    "modal": {
+      "viewBookingDetails": "Деталі бронювання пральні",
+      "residentName": "Ім'я резидента",
+      "roomNumber": "Номер кімнати",
+      "machineName": "Назва машини",
+      "laundryDate": "Дата пральні",
+      "timeSlot": "Часова слот",
+      "status": "Статус"
+    },
+    "areYouSureModal": {
+      "approve": "Схвалити бронювання",
+      "reject": "Відхилити бронювання",
+      "approveBookingSure": "Ви впевнені, що хочете схвалити це бронювання?",
+      "rejectBookingSure": "Ви впевнені, що хочете відхилити це бронювання?"
+    }
+  }
+}

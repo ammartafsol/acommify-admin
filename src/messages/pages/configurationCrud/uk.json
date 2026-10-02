@@ -1,0 +1,39 @@
+{
+  "configurationPage": {
+    "title": "Конфігурація",
+    "addButton": "Додати конфігурацію",
+    "editButton": "Редагувати",
+    "deleteButton": "Видалити",
+    "table": {
+      "name": "Назва",
+      "ipAddress": "IP-адреса"
+    },
+    "modal": {
+      "addTitle": "Додати конфігурацію",
+      "editTitle": "Редагувати конфігурацію",
+      "ConfigurationName": "Назва конфігурації",
+      "ConfigurationNamePlaceholder": "Введіть назву конфігурації",
+      "nameRequired": "Назва конфігурації обов'язкова",
+      "ipAddress": "IP-адреса",
+      "ipAddressPlaceholder": "Введіть IP-адресу",
+      "ipAddressRequired": "IP-адреса обов'язкова",
+      "ipAddressInvalid": "Будь ласка, введіть дійсну IP-адресу (напр: 192.168.1.1)",
+      "cancelButton": "Скасувати",
+      "saveButton": "Зберегти",
+      "updateButton": "Оновити",
+      "saving": "Збереження...",
+      "loading": "Завантаження...",
+      "required": "Це поле обов'язкове",
+      "autoFill": "Автозаповнення",
+      "translating": "Переклад...",
+      "UpdatedSuccessfully": "Конфігурацію успішно оновлено",
+      "CreatedSuccessfully": "Конфігурацію успішно створено",
+      "PleaseFill": "Будь ласка, заповніть",
+      "translationSuccessMessage": "Переклад успішно завершено"
+    },
+    "toast": {
+      "configurationDeleted": "Конфігурацію успішно видалено"
+    }
+  }
+}
+

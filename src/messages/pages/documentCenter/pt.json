@@ -1,0 +1,46 @@
+{
+  "documentCenterPage": {
+    "title": "Centro de Documentos",
+    "addDocument": "Adicionar Documento",
+    "searchPlaceholder": "Pesquisar documentos...",
+    "table": {
+      "documentName": "Nome",
+      "documentType": "Tipo",
+      "document": "Documento",
+      "status": "Status",
+      "createdAt": "Criado Em",
+      "viewDocument": "Visualizar Documento",
+      "forms": "Formulários",
+      "guide-lines": "Diretrizes",
+      "other-documents": "Outros Documentos"
+    },
+    "actions": {
+      "edit": "Editar"
+    },
+    "modal": {
+      "addDocument": "Adicionar Documento",
+      "editDocument": "Editar Documento",
+      "addDocumentSubheading": "Adicionar um novo documento ao centro",
+      "editDocumentSubheading": "Atualizar informações do documento",
+      "documentName": "Nome do Documento",
+      "documentNamePlaceholder": "Digite o nome do documento",
+      "documentType": "Tipo de Documento",
+      "documentTypePlaceholder": "Selecione o tipo de documento",
+      "document": "Arquivo do Documento",
+      "formsOption": "Formulários",
+      "guidelinesOption": "Diretrizes",
+      "othersOption": "Outros Documentos",
+      "cancel": "Cancelar",
+      "create": "Criar",
+      "update": "Atualizar",
+      "autofill": "Preenchimento automático",
+      "createdSuccessfully": "Documento criado com sucesso!",
+      "updatedSuccessfully": "Documento atualizado com sucesso!",
+      "fillRequiredFields": "Por favor, preencha todos os campos obrigatórios antes de traduzir",
+      "translationSuccessMessage": "Tradução bem-sucedida!",
+      "nameRequired": "Nome",
+      "documentTypeRequired": "Tipo de documento é obrigatório",
+      "documentRequired": "Documento é obrigatório"
+    }
+  }
+}

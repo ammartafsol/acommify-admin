@@ -1,0 +1,36 @@
+{
+  "busBookings": {
+    "title": "د بسونو حجزونه",
+    "tabs": {
+      "all": "ټول",
+      "pending": "پاتې",
+      "cancelled": "لغوه شوي",
+      "completed": "بشپړ شوي"
+    },
+    "table": {
+      "residentName": "د استوګن نوم",
+      "roomNumber": "د کوټې شمیره",
+      "busName": "د بس نوم",
+      "busRoute": "د بس لاره",
+      "DepartureDateAndTime": "د وتلو نیټه او وخت",
+      "status": "حالت",
+      "ArrivalDateAndTime": "د راتلو نیټه او وخت",
+      "actions": "کړنې",
+      "shift": "بدل"
+    },
+    "action": {
+      "cancel": "لغوه کول",
+      "approve": "تصویب",
+      "view": "کتل"
+    },
+    "areYouSureModal": {
+      "approve": "تصویب",
+      "reject": "رد",
+      "approveBookingSure": "ایا تاسو ډاډه یاست چې غواړئ حجز تصویب کړئ؟",
+      "rejectBookingSure": "ایا تاسو ډاډه یاست چې غواړئ حجز رد کړئ؟"
+    },
+    "modal": {
+      "viewBookingDetails": "د بسونو حجزونه ډیتال"
+    }
+  }
+}

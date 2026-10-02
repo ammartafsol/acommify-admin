@@ -1,0 +1,49 @@
+{
+  "busBookingDetail": {
+    "busBooking": {
+      "title": "ავტობუსის დაჯავშნა",
+      "availableBusesTitle": "ხელმისაწვდომი ავტობუსები",
+      "availableBusesTabs": {
+        "morning": "დილა",
+        "afternoon": "შუადღე",
+        "evening": "საღამო"
+      },
+      "filterOptions": {
+        "all": "ყველა",
+        "available": "ხელმისაწვდომი",
+        "booked": "დაჯავშნილი",
+        "selected": "არჩეული"
+      },
+      "dropdownOptions": {
+        "greenBus": "მწვანე ავტობუსი",
+        "blueBus": "ლურჯი ავტობუსი",
+        "redBus": "წითელი ავტობუსი"
+      }
+    },
+    "busDetailCard": {
+      "available": "ხელმისაწვდომი",
+      "booked": "დაჯავშნილი",
+      "duration": "ხანგრძლივობა",
+      "date": "თარიღი",
+      "departure": "გამგზავრება",
+      "seatsAvailable": "ხელმისაწვდომი ადგილები"
+    },
+    "table": {
+      "seatNumber": "ადგილის ნომერი",
+      "residentName": "მოსახლის სახელი",
+      "houseNumber": "სახლის ნომერი",
+      "specialRequests": "სპეციალური მოთხოვნები"
+    },
+    "modal": {
+      "validations": {
+        "residentName": "მოსახლის სახელი აუცილებელია",
+        "invalidSeatNumber": "არასწორი ადგილის ნომერი",
+        "invalidHouseNumber": "არასწორი სახლის ნომერი"
+      },
+      "buttons": {
+        "saveChanges": "ცვლილებების შენახვა",
+        "cancel": "გაუქმება"
+      }
+    }
+  }
+}

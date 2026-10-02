@@ -1,0 +1,36 @@
+{
+  "busBookings": {
+    "title": "حجوزات الحافلات",
+    "tabs": {
+      "all": "الكل",
+      "pending": "في الانتظار",
+      "cancelled": "ملغي",
+      "completed": "مكتمل"
+    },
+    "table": {
+      "residentName": "اسم المقيم",
+      "roomNumber": "رقم الغرفة",
+      "busName": "اسم الحافلة",
+      "busRoute": "مسار الحافلة",
+      "DepartureDateAndTime": "تاريخ ووقت المغادرة",
+      "status": "الحالة",
+      "ArrivalDateAndTime": "تاريخ ووقت الوصول",
+      "actions": "الإجراءات",
+      "shift": "الوردية"
+    },
+    "action": {
+      "cancel": "إلغاء",
+      "approve": "موافقة",
+      "view": "عرض"
+    },
+    "areYouSureModal": {
+      "approve": "موافقة",
+      "reject": "رفض",
+      "approveBookingSure": "هل أنت متأكد من الموافقة على الحجز؟",
+      "rejectBookingSure": "هل أنت متأكد من رفض الحجز؟"
+    },
+    "modal": {
+      "viewBookingDetails": "تفاصيل حجز الحافلة"
+    }
+  }
+}

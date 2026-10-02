@@ -1,0 +1,14 @@
+.main {
+  min-height: 50vh;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main p {
+  color: var(--primary);
+  font-size: var(--fs18);
+  font-weight: 500;
+}

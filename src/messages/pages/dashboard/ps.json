@@ -1,0 +1,73 @@
+{
+  "dashboardPage": {
+    "noActivity": "د وروستي فعالیتونو لپاره څه نشته چې وښودل شي",
+    "dashboardCards": {
+      "bookLaundry": "د جامو د مینځلو حجز",
+      "bookBus": "د بس حجز",
+      "bookAppointment": "راتلونکي ناستې",
+      "visitorBooking": "د لیدونکو حجزونه",
+      "documentCenter": "د اسنادو مرکز",
+      "signRequests": "د ننوتلو/وتلو غوښتنې",
+      "signInSignOut": "ننوتل/وتل"
+    },
+    "statsCards": {
+      "onSite": "په ځای کې استوګن",
+      "offSite": "د ځای څخه بهر استوګن",
+      "pendingRequests": "پاتې غوښتنې",
+      "maintenanceRequests": "د ساتنې غوښتنې",
+      "upcomingAppointments": "راتلونکي ناستې",
+      "staffCount": "د کارکوونکو شمیر",
+      "activeCenters": "فعال مرکزونه",
+      "nationalOccupancy": "قومي اشغال",
+      "totalResidents": "ټول استوګن",
+      "totalAdults": "ټول لویان",
+      "totalChildren": "ټول نینو"
+    },
+    "notification": {
+      "recentNotification": "وروستي فعالیتونه",
+      "currentNotification": "دلته تاسو د وروستي حجزونو، غوښتنو، تازه معلوماتو یادښتونه وینئ."
+    },
+    "activity": {
+      "recentActivity": "د وروستي فعالیتونو فیډ",
+      "currentActivity": "دلته تاسو حجزونه، غوښتنې، تازه معلومات وینئ.",
+      "labels": {
+        "bookingId": "د حجز ID",
+        "visitorName": "د لیدونکي نوم",
+        "relationship": "اړیکه",
+        "serviceType": "د خدماتو ډول",
+        "start": "پیل",
+        "end": "پای",
+        "created": "جوړ شوی",
+        "incidentId": "د پیښې ID",
+        "title": "عنوان",
+        "description": "توضیحات",
+        "severity": "سختی",
+        "address": "پته",
+        "resident": "استوګن",
+        "requestId": "د غوښتنې ID",
+        "user": "کارن",
+        "houseNumber": "د کور شمېره"
+      },
+      "activityTabs": {
+        "booking": "حجزونه",
+        "requests": "د ساتنې غوښتنې",
+        "incident": "د پیښو راپورونه"
+      },
+      "activitycard": {
+        "requestHeading": "نوی د ساتنې غوښتنه وسپارل شوه",
+        "dateTime": "نیټه/وخت",
+        "resident": "استوګن",
+        "purpose": "هدف",
+        "appointment": "ناستې"
+      }
+    },
+    "chart": {
+      "residentTitle": "استوګن"
+    },
+    "common": {
+      "edit": "سمون",
+      "approveRequest": "د غوښتنې تصویب",
+      "rejectRequest": "د غوښتنې رد"
+    }
+  }
+}

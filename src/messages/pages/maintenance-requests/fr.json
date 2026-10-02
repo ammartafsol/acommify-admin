@@ -1,0 +1,87 @@
+{
+  "maintenanceRequestsPage": {
+    "title": "Demandes de Maintenance",
+    "modalTitle": "Détails de la Demande de Maintenance",
+    "assignTaskTitle": "Assigner la Tâche au Personnel",
+    "requestCompletedSuccessfully": "Statut de la demande complété avec succès",
+    "requestRejectedSuccessfully": "Demande rejetée avec succès",
+    "requestAcceptedSuccessfully": "Demande acceptée avec succès",
+    "taskAssignedSuccessfully": "Tâche assignée avec succès",
+    "maintenanceRequestUpdatedSuccessfully": "Demande de maintenance modifiée avec succès",
+    "editMaintenanceRequestTitle": "Modifier la Demande de Maintenance",
+    "tabs": {
+      "all": "Toutes",
+      "pending": "En Attente",
+      "inprogress": "En Cours",
+      "completed": "Terminé",
+      "rejected": "Rejeté",
+      "escalated": "Escalé"
+    },
+    "table": {
+      "residentName": "Nom du Résident",
+      "roomNumber": "Numéro de Chambre",
+      "requestDateTime": "Date et Heure de la Demande",
+      "issueCategory": "Catégorie du Problème",
+      "shortDescription": "Description Courte",
+      "status": "Statut",
+      "images": "Images",
+      "risk": "Risque",
+      "residentEmail": "Email du Résident",
+      "assignedTo": "Assigné à",
+      "assignedStaff": "Personnel Assigné",
+      "assignedToName": "Nom",
+      "assignedToEmail": "Email",
+      "assignedToPhone": "Téléphone"
+    },
+    "buttons": {
+      "submit": "Soumettre",
+      "cancel": "Annuler"
+    },
+    "inputsLabels": {
+      "residentName": "Nom du Résident",
+      "roomNumber": "Numéro de Chambre",
+      "requestDateTime": "Date et Heure de la Demande",
+      "issueCategory": "Catégorie du Problème",
+      "description": "Description Courte",
+      "status": "Statut",
+      "assignToStaff": "Assigner au Personnel"
+    },
+    "inputsPlaceholders": {
+      "residentName": "Entrez le nom du résident",
+      "roomNumber": "Entrez le numéro de chambre",
+      "requestDateTime": "Sélectionnez la date et l'heure de la demande",
+      "issueCategory": "Sélectionnez la catégorie du problème",
+      "description": "Entrez une description courte",
+      "status": "Sélectionnez le statut",
+      "assignToStaff": "Sélectionnez le personnel"
+    },
+    "validation": {
+      "residentNameRequired": "Le nom du résident est requis",
+      "roomNumberRequired": "Le numéro de chambre est requis",
+      "requestDateTimeRequired": "La date et l'heure de la demande sont requises",
+      "issueCategoryRequired": "La catégorie du problème est requise",
+      "descriptionRequired": "La description courte est requise",
+      "statusRequired": "Le statut est requis",
+      "assignToStaffRequired": "Veuillez sélectionner un membre du personnel à assigner"
+    },
+    "actions": {
+      "markCompleted": "Marquer comme Terminé",
+      "assignToStaff": "Assigner au Personnel",
+      "acceptTask": "Accepter la Tâche",
+      "addComment": "Ajouter un Commentaire",
+      "editComment": "Modifier le Commentaire"
+    },
+    "commentModal": {
+      "addComment": "Ajouter un Commentaire",
+      "editComment": "Modifier le Commentaire",
+      "comment": "Commentaire",
+      "commentPlaceholder": "Entrez le commentaire ici",
+      "commentRequired": "Le commentaire est requis",
+      "cancel": "Annuler",
+      "submit": "Envoyer",
+      "update": "Mettre à jour",
+      "commentAddedSuccessfully": "Commentaire ajouté avec succès",
+      "commentUpdatedSuccessfully": "Commentaire modifié avec succès"
+    }
+  }
+}

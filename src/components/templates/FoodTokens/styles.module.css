@@ -1,0 +1,15 @@
+/* Food Tokens Component Styles */
+
+.main {
+  margin-block: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.addTokensBtn {
+  height: unset !important;
+  padding: 5px 10px !important;
+  border-radius: 8px !important;
+  gap: 4px !important;
+}

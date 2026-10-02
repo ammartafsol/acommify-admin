@@ -1,0 +1,108 @@
+{
+  "busManagementPage": {
+    "title": "Gestion des Bus",
+    "addBus": "Créer un Bus",
+    "addNewBus": "Ajouter un Nouveau Bus",
+    "busDetail": "Détails du Bus",
+    "deletedBus": "Bus supprimé avec succès.",
+    "statusUpdated": "Statut du bus mis à jour avec succès.",
+    "table": {
+      "busId": "ID du Bus",
+      "busName": "Nom du Bus",
+      "startLocation": "Lieu de Départ",
+      "endLocation": "Lieu d'Arrivée",
+      "capacity": "Capacité",
+      "status": "Statut",
+      "startTime": "Heure de Départ",
+      "endTime": "Heure d'Arrivée",
+      "availableDates": "Dates Disponibles",
+      "description": "Description"
+    },
+    "filterStatus": {
+      "options": [
+        { "label": "Tous", "value": "all" },
+        { "label": "Actif", "value": "active" },
+        { "label": "Inactif", "value": "inactive" },
+        { "label": "Maintenance", "value": "maintenance" }
+      ]
+    },
+    "busStatus": {
+      "active": "Actif",
+      "inactive": "Inactif"
+    },
+    "shiftOptions": {
+      "morning": "Matin",
+      "afternoon": "Après-midi",
+      "evening": "Soir",
+      "night": "Nuit"
+    },
+    "toasts": {
+      "busCreated": "Bus Créé avec Succès",
+      "busUpdated": "Bus Mis à Jour avec Succès"
+    },
+    "modal": {
+      "editTitle": "Modifier le Bus",
+      "translating": "Traduction en cours...",
+      "autoFill": "Remplissage Automatique",
+      "seater": "Places",
+      "inputLabels": {
+        "document": "Télécharger Conditions et Services",
+        "busName": "Nom du Bus",
+        "busNumber": "Numéro du Bus",
+        "description": "Description",
+        "startLocation": "Lieu de Départ",
+        "endLocation": "Lieu d'Arrivée",
+        "capacity": "Capacité",
+        "startTime": "Heure de Départ",
+        "endTime": "Heure d'Arrivée",
+        "availableDates": "Dates Disponibles",
+        "shift": "Équipe"
+      },
+      "inputPlaceholders": {
+        "busName": "Entrez le nom du bus",
+        "busNumber": "Entrez le numéro du bus",
+        "description": "Entrez la description",
+        "startLocation": "Entrez le lieu de départ",
+        "endLocation": "Entrez le lieu d'arrivée",
+        "capacity": "Entrez la capacité",
+        "startTime": "Entrez l'heure de départ",
+        "endTime": "Entrez l'heure d'arrivée",
+        "availableDates": "Sélectionnez les dates disponibles",
+        "shift": "Sélectionnez l'équipe"
+      },
+      "uploadMessage": {
+        "document": "Télécharger un document lié à l'application"
+      },
+      "fileFormats": {
+        "document": "PDF, DOC, DOCX, TXT, RTF"
+      },
+      "btnLabels": {
+        "create": "Créer",
+        "update": "Mettre à Jour",
+        "cancel": "Annuler"
+      },
+      "translationSuccessMessage": "Traduction terminée avec succès",
+      "toasts": {
+        "busCreated": "Bus créé avec succès",
+        "busUpdated": "Bus mis à jour avec succès",
+        "pleaseFill": "Veuillez remplir"
+      },
+      "validation": {
+        "busName": "Le nom du bus est requis",
+        "description": "La description est requise",
+        "busNumber": "Le numéro du bus est requis",
+        "startLocation": "Le lieu de départ est requis",
+        "endLocation": "Le lieu d'arrivée est requis",
+        "capacity": "La capacité est requise",
+        "status": "Le statut est requis",
+        "capacityMin": "La capacité doit être d'au moins 15",
+        "availableDatesMin": "Au moins une date disponible est requise",
+        "availableDates": "Les dates disponibles sont requises",
+        "startTime": "L'heure de départ est requise",
+        "endTime": "L'heure d'arrivée est requise",
+        "shift": "L'équipe est requise",
+        "mediaError": "Télécharger Médias"
+      }
+    }
+  }
+}

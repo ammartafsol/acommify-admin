@@ -1,0 +1,65 @@
+{
+  "businessAdminPage": {
+    "title": "ცენტრები",
+    "addButton": "დამატება",
+    "table": {
+      "centreName": "ცენტრის სახელი",
+      "country": "ქვეყანა",
+      "name": "სახელი",
+      "email": "ელ.ფოსტა",
+      "phone": "ტელეფონი",
+      "statusTitle": "სტატუსი"
+    },
+    "actions": {
+      "view": "ნახვა",
+      "edit": "რედაქტირება",
+      "centreNameRequired": "ცენტრის სახელი სავალდებულოა",
+      "delete": "წაშლა"
+    },
+    "modal": {
+      "detailTitle": "ცენტრების დეტალები",
+      "deleteMessage": "დარწმუნებული ხართ, რომ გსურთ ამ ელემენტის წაშლა?",
+      "addTitle": "დამატება",
+      "editTitle": "რედაქტირება",
+      "addStaff": "ცენტრის დამატება",
+      "editStaff": "ცენტრის რედაქტირება",
+      "cancel": "გაუქმება",
+      "confirm": "დადასტურება",
+      "loading": "იტვირთება...",
+      "translating": "თარგმნა...",
+      "autoFill": "ავტომატური შევსება",
+      "CreatedSuccessfully": "წარმატებით შეიქმნა",
+      "UpdatedSuccessfully": "წარმატებით განახლდა",
+      "PleaseFill": "გთხოვთ შეავსოთ",
+      "translationSuccessMessage": "თარგმნა წარმატებით დასრულდა"
+    },
+    "fields": {
+      "name": "მფლობელის სახელი",
+      "namePlaceholder": "შეიყვანეთ მფლობელის სახელი",
+      "email": "ელ.ფოსტის მისამართი",
+      "emailPlaceholder": "example@company.com",
+      "country": "ქვეყანა",
+      "countryPlaceholder": "აირჩიეთ ქვეყანა",
+      "region": "რეგიონი",
+      "regionPlaceholder": "აირჩიეთ რეგიონი",
+      "phone": "ტელეფონის ნომერი",
+      "phonePlaceholder": "შეიყვანეთ ტელეფონის ნომერი"
+    },
+    "formikSchema": {
+      "regionRequired": "რეგიონი სავალდებულოა",
+      "countryRequired": "ქვეყანა სავალდებულოა",
+      "fullNameRequired": "სრული სახელი სავალდებულოა",
+      "emailAddress": "გთხოვთ შეიყვანოთ ვალიდური ელ.ფოსტა",
+      "emailRequired": "ელ.ფოსტა სავალდებულოა",
+      "callingRequired": "ზარის კოდი სავალდებულოა",
+      "phoneNumberLimit": "ტელეფონის ნომერი უნდა იყოს 10-15 ციფრი, შეიძლება იყოს +-ით",
+      "phoneNumberRequired": "ტელეფონის ნომერი სავალდებულოა"
+    },
+    "toast": {
+      "created": "წარმატებით შეიქმნა",
+      "updated": "წარმატებით განახლდა",
+      "deleted": "წარმატებით წაიშალა",
+      "pleaseFill": "გთხოვთ შეავსოთ"
+    }
+  }
+}

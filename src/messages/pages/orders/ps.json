@@ -1,0 +1,25 @@
+{
+  "ordersPage": {
+    "title": "د امرونو مدیریت",
+    "exportDateRangeTitle": "د معلوماتو صادرات",
+    "searchPlaceholder": "د امرونو لټون...",
+    "exportButtonLabel": "امرونه صادر کړئ",
+    "exportSuccessToast": "امرونه په بریالیتوب سره صادر شول",
+    "exportErrorToast": "د امرونو صادرات ناکام شو. مهرباني وکړئ بیا هڅه وکړئ.",
+    "table": {
+      "orderId": "د امر ID",
+      "customer": "د پیرودونکي نوم",
+      "date": "د امر نیټه",
+      "status": "د امر حالت",
+      "total": "ټولې نښې",
+      "actions": ""
+    },
+    "ordersTabs": {
+      "all": "ټول",
+      "pending": "پاتې",
+      "cancelled": "لغوه شوي",
+      "completed": "بشپړ شوي"
+    },
+    "cancelOrderToast": "امر په بریالیتوب سره لغوه شو"
+  }
+}

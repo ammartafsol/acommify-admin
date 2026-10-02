@@ -1,0 +1,174 @@
+{
+  "crudPage": {
+    "title": "CRUD Operations",
+    "crudData": {
+      "maintenanceCategories": "Maintenance Categories",
+      "laundaryMachineCategories": "Laundary Machine Categories",
+      "FAQs": "FAQs",
+      "helplines": "Helplines",
+      "positions": "Positions",
+      "configuration": "Configuration"
+    },
+    "crudConfigurationPage": {
+      "title": "Configuration",
+      "addButton": "Add Configuration",
+
+      "edit": "Edit",
+      "table": {
+        "configurationName": "Configuration Name",
+        "configurationValue": "Configuration Value"
+      }
+    },
+
+    "laundaryMachineCategoriesPage": {
+      "title": "Laundary Machine Categories",
+      "addButton": "Add New Machine",
+      "edit": "Edit",
+
+      "table": {
+        "machineName": "Machine Name",
+        "status": "Status"
+      },
+      "modal": {
+        "title": "Create Machine",
+        "editTitle": "Edit Machine",
+        "autoFill": "Auto fill",
+        "translating": "Translating...",
+        "machineName": "Machine Name",
+        "machineNamePlaceholder": "Enter machine name",
+        "inputRequired": {
+          "name": "Machine name is required"
+        },
+        "status": "Status",
+        "statusPlaceholder": "Select status",
+        "statusRequired": "Status is required",
+        "active": "Active",
+        "inactive": "Inactive",
+        "cancel": "Cancel",
+        "save": "Save",
+        "update": "Update",
+        "confirm": "Confirm",
+        "MachineUpdatedSuccessfully": "Machine updated successfully",
+        "MachineCreatedSuccessfully": "Machine created successfully",
+        "fill": "Please fill",
+        "autoFilled": "Auto filled successfully"
+      }
+    },
+
+    "maintenanceCategoriesPage": {
+      "title": "Maintenance Categories",
+      "addButton": "Add New Category",
+      "edit": "Edit",
+
+      "table": {
+        "categoryName": "Category Name",
+        "status": "Status",
+        "risk": "Risk"
+      },
+      "modal": {
+        "title": "Create Category",
+        "editTitle": "Edit Category",
+        "categoryName": "Category Name",
+        "categoryNamePlaceholder": "Enter category name",
+        "inputRequired": {
+          "name": "Category name is required"
+        },
+        "severity": "Severity",
+        "severityPlaceholder": "Select severity",
+        "severityRequired": "Severity is required",
+        "autoFilled": "Auto filled successfully",
+        "severityOptions": {
+          "low": "Low",
+          "medium": "Medium",
+          "high": "High"
+        },
+        "status": "Status",
+        "statusPlaceholder": "Select status",
+        "statusOptions": {
+          "active": "Active",
+          "inactive": "Inactive"
+        },
+        "statusRequired": "Status is required",
+        "btnTranslate": "Translating...",
+        "autoFill": "Auto fill",
+        "pleaseFill": "Please fill",
+        "cancel": "Cancel",
+        "save": "Save",
+        "update": "Update",
+        "confirm": "Confirm",
+        "toast": {
+          "categoryUpdated": "Category updated successfully",
+          "categoryCreated": "Category created successfully"
+        }
+      }
+    },
+
+    "helpLineCrudPage": {
+      "title": "Help Lines",
+      "addButton": "Add Help Lines",
+      "edit": "Edit",
+      "actions": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "table": {
+        "title": "Title",
+        "country": "Country",
+        "contact": "Contact",
+        "description": "Description",
+        "status": "Status",
+        "phoneNumber": "Phone Number"
+      },
+      "modal": {
+        "title": "Create Help Line",
+        "editTitle": "Edit Help Line",
+        "autoFill": "Auto fill",
+        "translating": "Translating...",
+        "helpLineTitle": "Help Line Title",
+        "titleRequired": "Title is required",
+        "helpLineTitlePlaceholder": "Enter help line title",
+        "helpLineTitleRequired": "Help line title is required",
+        "contact": "Contact",
+        "contactPlaceholder": "Enter contact",
+        "contactRequired": "Contact is required",
+        "description": "Description",
+        "callingCodeRequired": "Calling code is required",
+        "pleaseFill": "Please fill",
+        "inputRequired": {
+          "country": "Country is required",
+          "title": "Title is required",
+          "description": "Description is required"
+        },
+
+        "phoneNumberRequired": "Phone number is required",
+        "timingsRequired": "Timings is required",
+        "descriptionPlaceholder": "Enter description",
+        "descriptionRequired": "Description is required",
+        "status": "Status",
+        "statusPlaceholder": "Select status",
+        "statusRequired": "Status is required",
+        "active": "Active",
+        "inactive": "Inactive",
+        "cancel": "Cancel",
+        "save": "Save",
+        "update": "Update",
+        "confirm": "Confirm",
+        "helpLineUpdatedSuccessfully": "Help line updated successfully",
+        "helpLineCreatedSuccessfully": "Help line created successfully",
+        "minLength": "Must be at least 2 characters",
+        "fill": "Please fill",
+        "autoFilled": "Auto filled successfully",
+        "phoneNumber": "Phone Number",
+        "phoneNumberPlaceholder": "Enter phone number",
+        "timings": "Timings",
+        "timingsPlaceholder": "Enter timings",
+        "translationSuccess": "Translation successful",
+        "country": "Country",
+        "countryPlaceholder": "Select country"
+      },
+      "toasts": {
+        "statusUpdateSuccess": "Status updated successfully"
+      }
+    }
+  }
+}

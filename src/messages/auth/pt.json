@@ -1,0 +1,68 @@
+{
+  "loginPage": {
+    "title": "Entrar",
+    "titleCentre": "Login do Centro",
+    "titleNationwide": "Login do Dashboard Nacional",
+    "titleAdmin": "Login do Administrador",
+    "selectorTitle": "Qual login você precisa?",
+    "selectorSubtitle": "Escolha o tipo de conta com a qual deseja entrar.",
+    "selectCentre": "Centro",
+    "selectNationwide": "Dashboard Nacional",
+    "selectAdmin": "Administrador",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Digite o Email",
+    "emailError": "Por favor, digite um endereço de email válido",
+    "EmailRequired": "Email é obrigatório",
+    "emailInvalidChars": "Email contém caracteres inválidos",
+    "passwordLabel": "Senha",
+    "passwordPlaceholder": "Digite a Senha",
+    "passwordRequired": "Senha é obrigatória",
+    "forgotPass": "Esqueceu sua senha?",
+    "loginButton": "Entrar",
+    "gotoBusinessOwnerLogin": "Entrar como Centro",
+    "gotoAdminLogin": "Ir para Login do Administrador",
+    "gotoNationWideLogin": "Ir para Login do Dashboard Nacional"
+  },
+  "forgotPasswordPage": {
+    "title": "Esqueceu a Senha",
+    "subtitle": "Não se preocupe! Isso acontece. Por favor, digite o endereço associado à sua conta.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Digite o Email",
+    "emailError": "Por favor, digite um endereço de email válido",
+    "emailRequired": "Email é obrigatório",
+    "emailInvalidChars": "Email contém caracteres inválidos",
+    "submitButton": "Enviar Email",
+    "specialChar": "Sem Caracteres Especiais"
+  },
+  "verificationPage": {
+    "title": "Código de Verificação",
+    "subtitle": "Confirmar com Código",
+    "resendCode": "Reenviar Código {time, plural, =0 {} =1 {# segundo} other {# segundos}}",
+    "sendingOtp": "Enviando Código OTP {time, plural, =0 {} =1 {# segundo} other {# segundos}}",
+    "verifyButton": "Verificar",
+    "minLimit": "OTP deve ter pelo menos 4 caracteres",
+    "otpRequired": "OTP é obrigatório"
+  },
+  "resetPasswordPage": {
+    "title": "Redefinir Senha",
+    "subtitle": "Digite sua nova senha",
+    "passwordLabel": "Senha",
+    "passwordPlaceholder": "Digite a Senha",
+    "passwordRequired": "Senha é obrigatória",
+    "minPasswordError": "Mín 8 caracteres",
+    "maxPasswordError": "Máx 20 caracteres",
+    "lowerPasswordError": "Adicione pelo menos uma minúscula",
+    "upperPasswordError": "Adicione pelo menos uma maiúscula",
+    "specialPasswordError": "Adicione pelo menos um caractere especial",
+    "confirmPasswordLabel": "Confirmar Senha",
+    "confirmPasswordPlaceholder": "Confirmar Senha",
+    "confirmPasswordRequired": "Senha é obrigatória",
+    "ConfirmPasswordError": "As senhas não coincidem",
+    "submitButton": "Redefinir Senha",
+
+    "modal": {
+      "title": "Sua senha foi alterada com sucesso!",
+      "btnText": "Continuar"
+    }
+  }
+}

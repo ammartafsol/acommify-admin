@@ -1,0 +1,20 @@
+{
+  "visitorBooking": {
+    "title": "ვიზიტორების დაჯავშნა",
+    "viewModalTitle": "ვიზიტორების დაჯავშნის დეტალები",
+    "table": {
+      "residentName": "მოსახლის სახელი",
+      "visitorName": "ვიზიტორის სახელი",
+      "additionalNotes": "დამატებითი შენიშვნები",
+      "dateAndTime": "თარიღი და დრო"
+    },
+    "modal": {
+      "additionalNotes": "დამატებითი შენიშვნები",
+      "residentName": "მოსახლის სახელი",
+      "visitorName": "ვიზიტორის სახელი",
+      "relationShipToResident": "ურთიერთობა მოსახლესთან",
+      "dateAndTime": "თარიღი და დრო",
+      "createdAt": "შექმნილი"
+    }
+  }
+}

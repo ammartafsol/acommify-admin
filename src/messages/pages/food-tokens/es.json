@@ -1,0 +1,36 @@
+{
+  "foodTokensPage": {
+    "title": "Gestión de Tokens de Comida",
+    "table": {
+      "residentName": "Nombre del Residente",
+      "roomNo": "Número de Habitación",
+      "email": "Email",
+      "phone": "Teléfono",
+      "availableToken": "Token Disponible"
+    },
+    "modal": {
+      "tabs": {
+        "addFoodToken": "Agregar Tokens de Comida",
+        "subtractFoodToken": "Restar Tokens de Comida"
+      },
+      "totalFoodToken": "Total de Tokens de Comida",
+      "editFoodToken": "Agregar Token de Comida",
+      "addFoodToken": "Agregar Token de Comida",
+      "foodTokenAmount": "Cantidad de Token de Comida",
+      "foodTokenAmountPlaceholder": "Ingrese la cantidad de token de comida",
+      "resident": "Residente",
+      "residentPlaceholder": "Seleccione un residente",
+      "cancel": "Cancelar",
+      "save": "Guardar",
+      "update": "Actualizar",
+      "createdFoodToken": "Token de comida creado exitosamente.",
+      "updatedFoodToken": "Token de comida actualizado exitosamente.",
+      "modalFormik": {
+        "ResidentRequired": "El residente es requerido.",
+        "FoodTokenRequired": "El token de comida es requerido.",
+        "FoodTokenGreater": "El token de comida debe ser mayor que 0."
+      },
+      "InsufficientTokens": "Tokens insuficientes para restar"
+    }
+  }
+}

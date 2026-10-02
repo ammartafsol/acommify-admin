@@ -1,0 +1,25 @@
+{
+  "ordersPage": {
+    "title": "Gudanar da Ajiyayin",
+    "exportDateRangeTitle": "Fitar da Bayanai",
+    "searchPlaceholder": "Nemo ajiyayin...",
+    "exportButtonLabel": "Fitar da Ajiyayin",
+    "exportSuccessToast": "Ajiyayin an fitar da su cikin nasara",
+    "exportErrorToast": "An gaza fitar da ajiyayin. Da fatan za a sake gwadawa.",
+    "table": {
+      "orderId": "ID na Ajiya",
+      "customer": "Sunan Abokin Ciniki",
+      "date": "Kwanan Watan Ajiya",
+      "status": "Matsayin Ajiya",
+      "total": "Jimlar Maki",
+      "actions": ""
+    },
+    "ordersTabs": {
+      "all": "Duka",
+      "pending": "Jiran",
+      "cancelled": "An Soke",
+      "completed": "An Ƙare"
+    },
+    "cancelOrderToast": "Ajiya an soke cikin nasara"
+  }
+}

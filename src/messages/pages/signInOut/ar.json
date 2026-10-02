@@ -1,0 +1,17 @@
+{
+  "signInOutPage": {
+    "title": "سجل تسجيل الدخول/الخروج",
+    "searchPlaceholder": "ابحث بالاسم أو رقم السكن",
+    "table": {
+      "residentName": "اسم المقيم",
+      "accommodationNumber": "رقم السكن",
+      "type": "النوع",
+      "dateTime": "التاريخ والوقت"
+    },
+    "typeLabel": {
+      "signIn": "تسجيل دخول",
+      "signOut": "تسجيل خروج"
+    }
+  }
+}
+

@@ -1,0 +1,33 @@
+.chartContainer {
+  border-radius: 20px;
+  background: var(--Poor-white);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding-bottom: 14px;
+  padding-inline-end: 20px;
+}
+
+.header {
+  padding: 24px 24px 0px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.header svg {
+  cursor: pointer;
+}
+.header > p {
+  color: var(--Gray-900, #181d27);
+  font-family: var(--font-lato);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.chartContainer :focus {
+  outline: none;
+}

@@ -1,0 +1,46 @@
+{
+  "documentCenterPage": {
+    "title": "Centre de Documents",
+    "addDocument": "Ajouter un Document",
+    "searchPlaceholder": "Rechercher des documents...",
+    "table": {
+      "documentName": "Nom",
+      "documentType": "Type",
+      "document": "Document",
+      "status": "Statut",
+      "createdAt": "Créé Le",
+      "viewDocument": "Voir le Document",
+      "forms": "Formulaires",
+      "guide-lines": "Directives",
+      "other-documents": "Autres Documents"
+    },
+    "actions": {
+      "edit": "Modifier"
+    },
+    "modal": {
+      "addDocument": "Ajouter un Document",
+      "editDocument": "Modifier le Document",
+      "addDocumentSubheading": "Ajouter un nouveau document au centre",
+      "editDocumentSubheading": "Mettre à jour les informations du document",
+      "documentName": "Nom du Document",
+      "documentNamePlaceholder": "Entrez le nom du document",
+      "documentType": "Type de Document",
+      "documentTypePlaceholder": "Sélectionnez le type de document",
+      "document": "Fichier du Document",
+      "formsOption": "Formulaires",
+      "guidelinesOption": "Directives",
+      "othersOption": "Autres Documents",
+      "cancel": "Annuler",
+      "create": "Créer",
+      "update": "Mettre à jour",
+      "autofill": "Remplissage automatique",
+      "createdSuccessfully": "Document créé avec succès !",
+      "updatedSuccessfully": "Document mis à jour avec succès !",
+      "fillRequiredFields": "Veuillez remplir tous les champs requis avant de traduire",
+      "translationSuccessMessage": "Traduction réussie !",
+      "nameRequired": "Le nom",
+      "documentTypeRequired": "Le type de document est requis",
+      "documentRequired": "Le document est requis"
+    }
+  }
+}

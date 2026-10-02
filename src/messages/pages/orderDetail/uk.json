@@ -1,0 +1,32 @@
+{
+  "orderDetailsPage": {
+    "title": "Деталі замовлення",
+    "orderDetail": {
+      "orderId": "Замовлення",
+      "status": "Статус замовлення",
+      "orderDate": "Дата замовлення",
+      "totalPoints": "Загальні бали",
+      "userInfo": "Інформація користувача",
+      "name": "Ім'я",
+      "email": "Електронна пошта",
+      "phone": "Телефон",
+      "shippingInfo": "Інформація про доставку",
+      "address": "Адреса",
+      "city": "Місто",
+      "country": "Країна",
+      "summary": "Підсумок замовлення",
+      "orderIdLabel": "ID замовлення",
+      "items": "Елементи",
+      "orderItem": "Елементи замовлення"
+    },
+    "orderDetailsHeader": {
+      "product": "Продукт",
+      "category": "Категорія",
+      "quantity": "Кількість",
+      "shippingType": "Тип доставки",
+      "totalPoints": "Загалом",
+      "status": "Статус"
+    },
+    "completedStatusToast": "Статус елемента замовлення успішно завершено"
+  }
+}

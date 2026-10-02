@@ -1,0 +1,26 @@
+{
+  "ordersPage": {
+    "title": "Orders Management",
+    "exportDateRangeTitle": "Export Data",
+    "searchPlaceholder": "Search orders...",
+    "exportButtonLabel": "Export Orders",
+    "exportSuccessToast": "Orders exported successfully",
+    "exportErrorToast": "Failed to export orders. Please try again.",
+    "table": {
+      "orderId": "Order ID",
+      "customer": "Customer Name",
+      "date": "Order Date",
+      "status": "Order Status",
+      "total": "Total Points",
+      "actions": ""
+    },
+    "ordersTabs": {
+      "all": "All",
+      "pending": "Pending",
+      "cancelled": "Cancelled",
+      "completed": "Completed"
+    },
+
+    "cancelOrderToast": "Order cancelled successfully"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "businessAdminPage": {
+    "title": "المراكز",
+    "addButton": "إضافة",
+    "table": {
+      "centreName": "اسم المركز",
+      "country": "الدولة",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "statusTitle": "الحالة"
+    },
+    "actions": {
+      "view": "عرض",
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "modal": {
+      "detailTitle": "تفاصيل المراكز",
+      "deleteMessage": "هل أنت متأكد أنك تريد حذف هذا العنصر؟",
+      "addTitle": "إضافة",
+      "editTitle": "تعديل",
+      "addStaff": "إضافة مركز",
+      "editStaff": "تعديل مركز",
+      "cancel": "إلغاء",
+      "confirm": "تأكيد",
+      "loading": "جاري التحميل...",
+      "translating": "جاري الترجمة...",
+      "autoFill": "ملء تلقائي",
+      "CreatedSuccessfully": "تم الإنشاء بنجاح",
+      "UpdatedSuccessfully": "تم التحديث بنجاح",
+      "PleaseFill": "يرجى الملء",
+      "translationSuccessMessage": "تمت الترجمة بنجاح"
+    },
+    "fields": {
+      "centreName": "اسم المركز",
+      "centreNamePlaceholder": "أدخل اسم المركز",
+      "name": "اسم المالك",
+      "namePlaceholder": "أدخل اسم المالك",
+      "email": "عنوان البريد الإلكتروني",
+      "emailPlaceholder": "example@company.com",
+      "country": "الدولة",
+      "countryPlaceholder": "اختر الدولة",
+      "region": "المنطقة",
+      "regionPlaceholder": "اختر المنطقة",
+      "phone": "رقم الهاتف",
+      "phonePlaceholder": "أدخل رقم الهاتف"
+    },
+    "formikSchema": {
+      "centreNameRequired": "اسم المركز مطلوب",
+      "countryRequired": "الدولة مطلوبة",
+      "regionRequired": "المنطقة مطلوبة",
+      "fullNameRequired": "الاسم الكامل مطلوب",
+      "emailAddress": "يرجى إدخال عنوان بريد إلكتروني صالح",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "callingRequired": "رمز الاتصال مطلوب",
+      "phoneNumberLimit": "رقم الهاتف يجب أن يكون من 10 إلى 15 رقمًا، ويمكن أن يبدأ بـ +",
+      "phoneNumberRequired": "رقم الهاتف مطلوب"
+    },
+    "toast": {
+      "created": "تم الإنشاء بنجاح",
+      "updated": "تم التحديث بنجاح",
+      "deleted": "تم الحذف بنجاح",
+      "pleaseFill": "يرجى الملء"
+    }
+  }
+}

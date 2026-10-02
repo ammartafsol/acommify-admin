@@ -1,0 +1,46 @@
+{
+  "documentCenterPage": {
+    "title": "مركز المستندات",
+    "addDocument": "إضافة مستند",
+    "searchPlaceholder": "البحث في المستندات...",
+    "table": {
+      "documentName": "الاسم",
+      "documentType": "النوع",
+      "document": "المستند",
+      "status": "الحالة",
+      "createdAt": "تاريخ الإنشاء",
+      "viewDocument": "عرض المستند",
+      "forms": "النماذج",
+      "guide-lines": "الإرشادات",
+      "other-documents": "مستندات أخرى"
+    },
+    "actions": {
+      "edit": "تعديل"
+    },
+    "modal": {
+      "addDocument": "إضافة مستند",
+      "editDocument": "تعديل المستند",
+      "addDocumentSubheading": "إضافة مستند جديد إلى المركز",
+      "editDocumentSubheading": "تحديث معلومات المستند",
+      "documentName": "اسم المستند",
+      "documentNamePlaceholder": "أدخل اسم المستند",
+      "documentType": "نوع المستند",
+      "documentTypePlaceholder": "اختر نوع المستند",
+      "document": "ملف المستند",
+      "formsOption": "النماذج",
+      "guidelinesOption": "الإرشادات",
+      "othersOption": "مستندات أخرى",
+      "cancel": "إلغاء",
+      "create": "إنشاء",
+      "update": "تحديث",
+      "autofill": "ملء تلقائي",
+      "createdSuccessfully": "تم إنشاء المستند بنجاح!",
+      "updatedSuccessfully": "تم تحديث المستند بنجاح!",
+      "fillRequiredFields": "يرجى ملء جميع الحقول المطلوبة قبل الترجمة",
+      "translationSuccessMessage": "الترجمة ناجحة!",
+      "nameRequired": "الاسم",
+      "documentTypeRequired": "نوع المستند مطلوب",
+      "documentRequired": "المستند مطلوب"
+    }
+  }
+}

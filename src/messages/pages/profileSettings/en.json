@@ -1,0 +1,15 @@
+{
+  "profileSettingsPage": {
+    "title": "Profile Settings",
+    "fields": {
+      "name": "Full Name",
+      "namePlaceholder": "Enter Full Name",
+      "email": "Email",
+      "emailPlaceholder": "Enter Email",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter Phone Number",
+      "address": "Address",
+      "addressPlaceholder": "Enter Address"
+    }
+  }
+}

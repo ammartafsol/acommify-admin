@@ -1,0 +1,87 @@
+{
+  "maintenanceRequestsPage": {
+    "title": "د ساتنې غوښتنې",
+    "modalTitle": "د ساتنې د غوښتنې تفصیلات",
+    "assignTaskTitle": "د کارکوونکو ته دنده ورکړئ",
+    "requestCompletedSuccessfully": "د غوښتنې حالت په بریالیتوب سره بشپړ شو",
+    "requestRejectedSuccessfully": "غوښتنه په بریالیتوب سره رد شوه",
+    "requestAcceptedSuccessfully": "غوښتنه په بریالیتوب سره ومنل شوه",
+    "taskAssignedSuccessfully": "دنده په بریالیتوب سره ورکړل شوه",
+    "maintenanceRequestUpdatedSuccessfully": "د ساتنې د غوښتنې تعديل شو",
+    "editMaintenanceRequestTitle": "د ساتنې د غوښتنې تعديل کړئ",
+    "tabs": {
+      "all": "ټول",
+      "pending": "پاتې",
+      "inprogress": "پرمختګ کي",
+      "completed": "بشپړ شوي",
+      "rejected": "رد شوي",
+      "escalated": "لوړ شوي"
+    },
+    "table": {
+      "residentName": "د استوګن نوم",
+      "roomNumber": "د کوټې شمیره",
+      "requestDateTime": "د غوښتنې نیټه او وخت",
+      "issueCategory": "د ستونزې کتګوري",
+      "shortDescription": "لنډ توضیحات",
+      "status": "حالت",
+      "images": "انځورونه",
+      "risk": "خطر",
+      "residentEmail": "د استوګن بریښنالیک",
+      "assignedTo": "د کارکوونکو ته ورکړل شوه",
+      "assignedStaff": "د کارکوونکو ته ورکړل شوی",
+      "assignedToName": "نوم",
+      "assignedToEmail": "بریښنالیک",
+      "assignedToPhone": "تلیفون"
+    },
+    "buttons": {
+      "submit": "استول",
+      "cancel": "لغوه کول"
+    },
+    "inputsLabels": {
+      "residentName": "د استوګن نوم",
+      "roomNumber": "د کوټې شمیره",
+      "requestDateTime": "د غوښتنې نیټه او وخت",
+      "issueCategory": "د ستونزې کتګوري",
+      "description": "لنډ توضیحات",
+      "status": "حالت",
+      "assignToStaff": "د کارکوونکو ته ورکړئ"
+    },
+    "inputsPlaceholders": {
+      "residentName": "د استوګن نوم ولیکئ",
+      "roomNumber": "د کوټې شمیره ولیکئ",
+      "requestDateTime": "د غوښتنې نیټه او وخت وټاکئ",
+      "issueCategory": "د ستونزې کتګوري وټاکئ",
+      "description": "لنډ توضیحات ولیکئ",
+      "status": "حالت وټاکئ",
+      "assignToStaff": "کارکوونکي وټاکئ"
+    },
+    "validation": {
+      "residentNameRequired": "د استوګن نوم اړین دی",
+      "roomNumberRequired": "د کوټې شمیره اړینه ده",
+      "requestDateTimeRequired": "د غوښتنې نیټه او وخت اړین دي",
+      "issueCategoryRequired": "د ستونزې کتګوري اړینه ده",
+      "descriptionRequired": "لنډ توضیحات اړین دي",
+      "statusRequired": "حالت اړین دی",
+      "assignToStaffRequired": "مهرباني وکړئ د ورکولو لپاره د کارکوونکو غړی وټاکئ"
+    },
+    "actions": {
+      "markCompleted": "د بشپړیدو په توګه نښه کړئ",
+      "assignToStaff": "د کارکوونکو ته ورکړئ",
+      "acceptTask": "دنده ومنئ",
+      "addComment": "تعليق ولیکئ",
+      "editComment": "تعليق ولیکئ"
+    },
+    "commentModal": {
+      "addComment": "تعليق ولیکئ",
+      "editComment": "تعليق ولیکئ",
+      "comment": "تعليق",
+      "commentPlaceholder": "تعليق ولیکئ",
+      "commentRequired": "تعليق اړین دی",
+      "cancel": "لغوه کول",
+      "submit": "استول",
+      "update": "تحديث",
+      "commentAddedSuccessfully": "تعليق بايډی شو",
+      "commentUpdatedSuccessfully": "تعليق بايډی شو"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "documentCenterPage": {
+    "title": "Центр документів",
+    "addDocument": "Додати документ",
+    "searchPlaceholder": "Пошук документів...",
+    "table": {
+      "documentName": "Назва",
+      "documentType": "Тип",
+      "document": "Документ",
+      "status": "Статус",
+      "createdAt": "Створено",
+      "viewDocument": "Переглянути документ",
+      "forms": "Форми",
+      "guide-lines": "Керівні принципи",
+      "other-documents": "Інші документи"
+    },
+    "actions": {
+      "edit": "Редагувати"
+    },
+    "modal": {
+      "addDocument": "Додати документ",
+      "editDocument": "Редагувати документ",
+      "addDocumentSubheading": "Додати новий документ до центру",
+      "editDocumentSubheading": "Оновити інформацію про документ",
+      "documentName": "Назва документа",
+      "documentNamePlaceholder": "Введіть назву документа",
+      "documentType": "Тип документа",
+      "documentTypePlaceholder": "Виберіть тип документа",
+      "document": "Файл документа",
+      "formsOption": "Форми",
+      "guidelinesOption": "Керівні принципи",
+      "othersOption": "Інші документи",
+      "cancel": "Скасувати",
+      "create": "Створити",
+      "update": "Оновити",
+      "autofill": "Автозаповнення",
+      "createdSuccessfully": "Документ успішно створено!",
+      "updatedSuccessfully": "Документ успішно оновлено!",
+      "fillRequiredFields": "Будь ласка, заповніть всі обов'язкові поля перед перекладом",
+      "translationSuccessMessage": "Переклад успішний!",
+      "nameRequired": "Назва",
+      "documentTypeRequired": "Тип документа є обов'язковим",
+      "documentRequired": "Документ є обов'язковим"
+    }
+  }
+}

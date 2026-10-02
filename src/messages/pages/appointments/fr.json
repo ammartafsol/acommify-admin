@@ -1,0 +1,46 @@
+{
+  "appointments": {
+    "title": "Rendez-vous",
+    "searchPlaceholder": "Rechercher",
+    "tabs": {
+      "all": "Tous",
+      "completed": "Terminé",
+      "cancelled": "Annulé",
+      "pending": "En attente",
+      "rejected": "Rejeté"
+    },
+    "table": {
+      "residentName": "Nom du Résident",
+      "roomNumber": "Numéro de Chambre",
+      "dateAndTime": "Date et Heure",
+      "appointmentType": "Type de Rendez-vous",
+      "purpose": "Objectif",
+      "status": "Statut"
+    },
+    "menuItems": {
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "modal": {
+      "title": "Modal de Détails du Rendez-vous",
+      "name": "Nom du Résident",
+      "roomNumber": "Numéro de Chambre",
+      "dateTime": "Date et Heure",
+      "appointmentType": "Type de Rendez-vous",
+      "purpose": "Objectif",
+      "status": "Statut",
+      "notes": "Notes Supplémentaires"
+    },
+    "actions": {
+      "approve": "Approuver",
+      "cancel": "Annuler",
+      "view": "Voir"
+    },
+    "areYouSureModal": {
+      "approve": "Approuver",
+      "reject": "Rejeter",
+      "approveBookingSure": "Êtes-vous sûr de vouloir approuver la réservation ?",
+      "rejectBookingSure": "Êtes-vous sûr de vouloir rejeter la réservation ?"
+    }
+  }
+}

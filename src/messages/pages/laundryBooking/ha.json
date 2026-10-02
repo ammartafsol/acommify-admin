@@ -1,0 +1,49 @@
+{
+  "laundryBooking": {
+    "title": "Ajiyar Wanki",
+    "tabs": {
+      "all": "Duka",
+      "pending": "Jiran",
+      "acceptedORConfirmed": "Tabbata ko Aminta",
+      "cancelled": "An soke",
+      "rejected": "An ƙi"
+    },
+    "table": {
+      "residentName": "Sunan Mazauni",
+      "laundryDateTime": "Kwanan Wata da Lokacin Wanki",
+      "roomNumber": "Lambar Daki",
+      "machineName": "Injin",
+      "DateAndTime": "Kwanan Wata da Lokaci",
+      "status": "Matsayi"
+    },
+    "status": {
+      "pending": "Jiran",
+      "confirmed": "Tabbata",
+      "completed": "An ƙare"
+    },
+    "buttons": {
+      "submit": "Aika",
+      "cancel": "Soke"
+    },
+    "actions": {
+      "approve": "Ami",
+      "cancel": "Soke",
+      "view": "Duba"
+    },
+    "modal": {
+      "viewBookingDetails": "Cikakken Ajiyar Wanki",
+      "residentName": "Sunan Mazauni",
+      "roomNumber": "Lambar Daki",
+      "machineName": "Sunan Injin",
+      "laundryDate": "Kwanan Watan Wanki",
+      "timeSlot": "Lokacin",
+      "status": "Matsayi"
+    },
+    "areYouSureModal": {
+      "approve": "Ami Ajiya",
+      "reject": "Ƙi Ajiya",
+      "approveBookingSure": "Ka tabbata cewa kana son amincewa da wannan ajiya?",
+      "rejectBookingSure": "Ka tabbata cewa kana son ƙin wannan ajiya?"
+    }
+  }
+}

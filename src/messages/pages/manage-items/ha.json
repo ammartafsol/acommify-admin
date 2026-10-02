@@ -1,0 +1,80 @@
+{
+  "manageItemsPage": {
+    "title": "Sarrafa Kayayyaki",
+    "categoryTitle": "Sarrafa Rukuni",
+    "addItem": "Ƙara Kayayyaki",
+    "addCategory": "Ƙara Rukuni",
+    "pleaseFill": "Da fatan za a cika",
+    "inputRequired": {
+      "name": "Sunan rukuni yana buƙata",
+      "itemName": "Sunan kayayyaki yana buƙata"
+    },
+    "topTabs": {
+      "items": "Kayayyaki",
+      "categories": "Rukuni"
+    },
+    "tabs": {
+      "all": "Duka"
+    },
+    "table": {
+      "itemName": "Sunan Kayayyaki",
+      "stock": "Kayayyaki",
+      "points": "Maki",
+      "dateAdded": "Kwanan Wata da aka Ƙara",
+      "shippingOptions": "Zaɓuɓɓukan Aikawa",
+      "category": "Rukuni"
+    },
+    "categoriesTable": {
+      "categoryName": "Sunan Rukuni",
+      "dateAdded": "Kwanan Wata da aka Ƙara"
+    },
+    "modal": {
+      "addHeader": "Ƙara Sabon Kayayyaki",
+      "editHeader": "Gyara Kayayyaki",
+      "itemName": "Sunan Kayayyaki",
+      "itemNamePlaceholder": "Shigar da sunan kayayyaki",
+      "stock": "Kayayyaki",
+      "stockPlaceholder": "Shigar da adadin kayayyaki",
+      "stockRequired": "Kayayyaki yana buƙata",
+      "stockMustBePositive": "Kayayyaki dole ya kasance lamba mai kyau",
+      "stockMustBeInteger": "Kayayyaki dole ya kasance lamba mai cikakke",
+      "points": "Maki",
+      "pointsPlaceholder": "Shigar da darajar maki",
+      "pointsRequired": "Maki suna buƙata",
+      "pointsMustBePositive": "Maki dole su kasance lamba mai kyau",
+      "pointsMustBeInteger": "Maki dole su kasance lamba mai cikakke",
+      "photo": "Hoto",
+      "photoRequired": "Hoto yana buƙata",
+      "cancel": "Soke",
+      "add": "Ƙara Kayayyaki",
+      "translating": "Ana Fassara...",
+      "autoFill": "Cike Kansa",
+      "categoryLabel": "Rukuni",
+      "categoryPlaceholder": "Zaɓi Rukuni",
+      "categoryRequired": "Rukuni yana buƙata",
+      "update": "Sabunta Kayayyaki",
+      "shippingOptionsRequired": "Zaɓuɓɓukan aikawa suna buƙata",
+      "shippingOptions": "Zaɓuɓɓukan Aikawa",
+      "selectShippingOptions": "Zaɓi Zaɓuɓɓukan Aikawa",
+      "deliverOptions": {
+        "pickup": "Karɓa",
+        "delivery": "Aikawa",
+        "pickupDelivery": "Karɓa da Aikawa"
+      },
+      "toast": {
+        "itemUpdatedSuccess": "Kayayyaki An Sabunta Cikin Nasara",
+        "itemCreatedSuccess": "Kayayyaki An Ƙirƙira Cikin Nasara",
+        "translationSuccess": "Cike kansa ya yi nasara",
+        "imageUploadError": "Loda ya gaza"
+      }
+    },
+    "categoryModal": {
+      "addHeader": "Ƙara Sabon Rukuni",
+      "editHeader": "Gyara Rukuni",
+      "categoryName": "Sunan Rukuni",
+      "categoryNamePlaceholder": "Shigar da sunan rukuni",
+      "categoryCreated": "Rukuni An Ƙirƙira Cikin Nasara",
+      "updatedSuccessfully": "Rukuni An Sabunta Cikin Nasara"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "timeslotsPage": {
+    "title": "Tsara Lokutan Taro",
+    "laundryTitle": "Tsara Lokutan Injin Wanki",
+    "visitorTitle": "Tsara Lokutan Ajiye Baƙi",
+    "staffLabel": "Zaɓi Ma'aikata",
+    "staffPlaceholder": "Zaɓi ma'aikata...",
+    "machinePlaceholder": "Zaɓi inji...",
+    "machineLabel": "Zaɓi Inji",
+    "visitorLabel": "Zaɓi Wuri",
+    "visitorPlaceholder": "Zaɓi wuri...",
+    "manageTimeSlots": "Gudanar da lokutan duk ranakun mako",
+    "fetchingOptions": "Ana ɗauko zaɓuɓɓuka...",
+    "addDaySlots": "Ƙara lokutan rana",
+    "editDaySlots": "Gyara lokutan rana",
+    "noSlotsAvailable": "Babu lokutan da ake samu",
+    "weeklySchedule": "Jadawalin Mako",
+    "utcNote": "Duk lokutan suna cikin UTC",
+    "weekDays": {
+      "monday": "Litinin",
+      "tuesday": "Talata",
+      "wednesday": "Laraba",
+      "thursday": "Alhamis",
+      "friday": "Juma'a",
+      "saturday": "Asabar",
+      "sunday": "Lahadi"
+    },
+    "generateSlotModal": {
+      "startTime": "Lokacin Farawa",
+      "endTime": "Lokacin Ƙarshe",
+      "interval": "Tazara",
+      "hour": "Awa",
+      "fixed": "Tsayayye",
+      "slots": "Lokutan",
+      "headers": {
+        "previousSlots": "Lokutan da Suka Gabata",
+        "addNewSlots": "Ƙara Sabbin Lokutan",
+        "generatedSlots": "Lokutan da Aka Ƙirƙira"
+      },
+      "validation": {
+        "startTimeRequired": "Lokacin farawa yana buƙata",
+        "endTimeRequired": "Lokacin ƙarshe yana buƙata",
+        "slotDurationRequired": "Tsawon lokaci yana buƙata"
+      },
+      "toasts": {
+        "slotsSavedSuccess": "Lokutan an ajiye cikin nasara!",
+        "slotsSavedError": "An gaza ajiye lokutan."
+      },
+      "placeholders": {
+        "selectStartTime": "Zaɓi awa ta farawa",
+        "selectEndTime": "Zaɓi awa ta ƙarshe"
+      },
+      "btns": {
+        "editSlots": "Gyara Lokutan",
+        "generateSlots": "Ƙirƙiri Lokutan",
+        "back": "Komawa",
+        "confirm": "Tabbata Lokutan",
+        "selectAll": "Zaɓi Duka",
+        "deselectAll": "Cire Zaɓi Duka"
+      },
+      "utcNote": "Duk lokutan suna cikin UTC"
+    }
+  }
+}

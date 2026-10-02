@@ -1,0 +1,80 @@
+{
+  "manageItemsPage": {
+    "title": "Gerenciar Itens",
+    "categoryTitle": "Gerenciar Categorias",
+    "addItem": "Adicionar Item",
+    "addCategory": "Adicionar Categoria",
+    "pleaseFill": "Por favor, preencha",
+    "inputRequired": {
+      "name": "O nome da categoria é obrigatório",
+      "itemName": "O nome do item é obrigatório"
+    },
+    "topTabs": {
+      "items": "Itens",
+      "categories": "Categorias"
+    },
+    "tabs": {
+      "all": "Todos"
+    },
+    "table": {
+      "itemName": "Nome do Item",
+      "stock": "Estoque",
+      "points": "Pontos",
+      "dateAdded": "Data Adicionada",
+      "shippingOptions": "Opções de Envio",
+      "category": "Categoria"
+    },
+    "categoriesTable": {
+      "categoryName": "Nome da Categoria",
+      "dateAdded": "Data Adicionada"
+    },
+    "modal": {
+      "addHeader": "Adicionar Novo Item",
+      "editHeader": "Editar Item",
+      "itemName": "Nome do Item",
+      "itemNamePlaceholder": "Digite o nome do item",
+      "stock": "Estoque",
+      "stockPlaceholder": "Digite a quantidade em estoque",
+      "stockRequired": "Estoque é obrigatório",
+      "stockMustBePositive": "Estoque deve ser um número positivo",
+      "stockMustBeInteger": "Estoque deve ser um número inteiro",
+      "points": "Pontos",
+      "pointsPlaceholder": "Digite o valor dos pontos",
+      "pointsRequired": "Pontos são obrigatórios",
+      "pointsMustBePositive": "Pontos devem ser um número positivo",
+      "pointsMustBeInteger": "Pontos devem ser um número inteiro",
+      "photo": "Foto",
+      "photoRequired": "Foto é obrigatória",
+      "cancel": "Cancelar",
+      "add": "Adicionar Item",
+      "translating": "Traduzindo...",
+      "autoFill": "Preenchimento automático",
+      "categoryLabel": "Categoria",
+      "categoryPlaceholder": "Selecione a Categoria",
+      "categoryRequired": "Categoria é obrigatória",
+      "update": "Atualizar Item",
+      "shippingOptionsRequired": "Opções de envio são obrigatórias",
+      "shippingOptions": "Opções de Envio",
+      "selectShippingOptions": "Selecione as Opções de Envio",
+      "deliverOptions": {
+        "pickup": "Retirada",
+        "delivery": "Entrega",
+        "pickupDelivery": "Retirada e Entrega"
+      },
+      "toast": {
+        "itemUpdatedSuccess": "Item Atualizado com Sucesso",
+        "itemCreatedSuccess": "Item Criado com Sucesso",
+        "translationSuccess": "Preenchimento automático realizado com sucesso",
+        "imageUploadError": "Erro ao carregar a imagem"
+      }
+    },
+    "categoryModal": {
+      "addHeader": "Adicionar Nova Categoria",
+      "editHeader": "Editar Categoria",
+      "categoryName": "Nome da Categoria",
+      "categoryNamePlaceholder": "Digite o nome da categoria",
+      "categoryCreated": "Categoria Criada com Sucesso",
+      "updatedSuccessfully": "Categoria Atualizada com Sucesso"
+    }
+  }
+}

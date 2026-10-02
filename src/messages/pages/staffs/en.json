@@ -1,0 +1,78 @@
+{
+  "staffsPage": {
+    "title": "Staff Management",
+    "addMember": "Add Staff",
+    "table": {
+      "staffID": "Staff ID",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "status": "Status"
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "toast": {
+      "staffStatus": "Staff Status Updated Successfully",
+      "staffAdded": "Staff Added Successfully",
+      "staffUpdated": "Staff Updated Successfully",
+      "staffDeleted": "Staff Deleted Successfully",
+      "fill": "Please fill fields in other languages also",
+      "translationSuccessMessage": "Translated successfully",
+      "pleaseFill": "Please fill"
+    },
+    "modal": {
+      "title": "Staff Details",
+      "staffID": "Staff ID",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "status": "Status",
+      "addStaff": "Add New Staff",
+      "editStaff": "Edit Staff",
+      "translating": "Translating...",
+      "autoFill": "Auto fill",
+      "cancel": "Cancel",
+      "loading": "Loading...",
+      "confirm": "Confirm",
+      "morning": "Morning",
+      "night": "Night",
+      "shiftTime": "Shift Time",
+      "position": "Position",
+      "deleteMessage": "Are you sure you want to delete this staff member?"
+    },
+    "fields": {
+      "namePlaceholder": "Enter full name",
+      "name": "Full Name",
+      "emailPlaceholder": "example@company.com",
+      "email": "Email Address",
+      "phonePlaceholder": "Enter phone number",
+      "phone": "Phone Number",
+      "positionPlaceholder": "Select Position",
+      "position": "Position",
+      "shiftStartTime": "Shift Start Time",
+      "shiftEndTime": "Shift End Time",
+      "shiftStartTimePlaceholder": "Select Shift Start Time",
+      "shiftEndTimePlaceholder": "Select Shift End Time",
+      "permissionsLabel": "Permissions",
+      "permissionsPlaceholder": "Select Permissions",
+      "selected": "Selected",
+      "selectAll": "Select All",
+      "deselectAll": "Deselect All"
+    },
+    "formikSchema": {
+      "fullNameRequired": "Full name is required",
+      "emailAddress": "Please enter a valid email address",
+      "emailRequired": "Email is required",
+      "callingRequired": "Calling code is required",
+      "phoneNumberLimit": "Phone number must be 10-15 digits, optionally starting with +",
+      "phoneNumberRequired": "Phone number is required",
+      "permissionsMin": "At least one permission must be selected",
+      "permissionsRequired": "Permissions are required",
+      "shiftStartRequired": "Shift start time is required",
+      "shiftEndRequired": "Shift end time is required",
+      "positionRequired": "Position is required"
+    }
+  }
+}

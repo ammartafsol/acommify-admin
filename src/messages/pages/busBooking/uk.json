@@ -1,0 +1,49 @@
+{
+  "busBookingDetail": {
+    "busBooking": {
+      "title": "Бронювання автобуса",
+      "availableBusesTitle": "Доступні автобуси",
+      "availableBusesTabs": {
+        "morning": "Ранок",
+        "afternoon": "Після обіду",
+        "evening": "Вечір"
+      },
+      "filterOptions": {
+        "all": "Усі",
+        "available": "Доступний",
+        "booked": "Заброньований",
+        "selected": "Вибраний"
+      },
+      "dropdownOptions": {
+        "greenBus": "Зелений автобус",
+        "blueBus": "Синій автобус",
+        "redBus": "Червоний автобус"
+      }
+    },
+    "busDetailCard": {
+      "available": "Доступний",
+      "booked": "Заброньований",
+      "duration": "Тривалість",
+      "date": "Дата",
+      "departure": "Відправлення",
+      "seatsAvailable": "Доступні місця"
+    },
+    "table": {
+      "seatNumber": "Номер місця",
+      "residentName": "Ім'я резидента",
+      "houseNumber": "Номер будинку",
+      "specialRequests": "Спеціальні запити"
+    },
+    "modal": {
+      "validations": {
+        "residentName": "Ім'я резидента є обов'язковим",
+        "invalidSeatNumber": "Невірний номер місця",
+        "invalidHouseNumber": "Невірний номер будинку"
+      },
+      "buttons": {
+        "saveChanges": "Зберегти зміни",
+        "cancel": "Скасувати"
+      }
+    }
+  }
+}

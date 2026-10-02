@@ -1,0 +1,54 @@
+{
+  "busBookingDetail": {
+    "busBooking": {
+      "title": "Bus Booking",
+      "availableBusesTitle": "Available Buses",
+      "availableBusesTabs": {
+        "morning": "Morning",
+        "afternoon": "Afternoon",
+        "evening": "Evening"
+      },
+      "filterOptions": {
+        "all": "All",
+        "available": "Available",
+        "booked": "Booked",
+        "selected": "Selected"
+      },
+      "dropdownOptions": {
+        "greenBus": "Green Bus",
+        "blueBus": "Blue Bus",
+        "redBus": "Red Bus"
+      }
+    },
+
+    "busDetailCard": {
+      "available": "Available",
+      "booked": "Booked",
+      "duration": "Duration",
+      "date": "Date",
+      "departure": "Departure",
+      "seatsAvailable": "Seats Available"
+    },
+
+    "table": {
+      "seatNumber": "Seat Number",
+      "residentName": "Resident Name",
+      "houseNumber": "House Number",
+      "specialRequests": "Special Requests",
+      "status": "Status",
+      "busNumber": "Bus Number"
+    },
+
+    "modal": {
+      "validations": {
+        "residentName": "Resident Name is required",
+        "invalidSeatNumber": "Invalid seat number",
+        "invalidHouseNumber": "Invalid house number"
+      },
+      "buttons": {
+        "saveChanges": "Save Changes",
+        "cancel": "Cancel"
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "residentsPage": {
+    "title": "მოსახლეების მართვა",
+    "viewModalTitle": "მოსახლის დეტალები",
+    "addResident": "ახალი მოსახლის დამატება",
+    "searchPlaceholder": "ძებნა",
+    "table": {
+      "residentName": "მოსახლის სახელი",
+      "roomNo": "ოთახის/სახლის ნომერი",
+      "email": "ელ.ფოსტა",
+      "phone": "ტელეფონი",
+      "residentStatus": "მოსახლის სტატუსი",
+      "dob": "დაბადების თარიღი",
+      "age": "ასაკი",
+      "arrivalDate": "ჩასვლის თარიღი",
+      "gender": "სქესი"
+    },
+    "modal": {
+      "noOfBedsRequired": "საწოლების რაოდენობა აუცილებელია",
+      "noOfBeds": "საწოლების რაოდენობა",
+      "noOfBedsPlaceholder": "აირჩიეთ საწოლების რაოდენობა",
+      "available": "ხელმისაწვდომი",
+      "familyMemberRelation": "ოჯახის წევრის ურთიერთობა",
+      "header": "ახალი მოსახლის დამატება",
+      "editResident": "მოსახლის რედაქტირება",
+      "familyMembers": "ოჯახის წევრები",
+      "name": "სრული სახელი",
+      "namePlaceholder": "შეიყვანეთ სრული სახელი",
+      "nameRequired": "სახელი აუცილებელია",
+      "inputRequired": {
+        "fullName": "სრული სახელი აუცილებელია",
+        "schoolName": "სკოლის სახელი აუცილებელია"
+      },
+      "dob": "დაბადების თარიღი",
+      "dobPlaceholder": "აირჩიეთ დაბადების თარიღი",
+      "dobRequired": "დაბადების თარიღი აუცილებელია",
+      "dateOfArrival": "ჩასვლის თარიღი",
+      "dateOfArrivalPlaceholder": "აირჩიეთ ჩასვლის თარიღი",
+      "dateOfArrivalRequired": "ჩასვლის თარიღი აუცილებელია",
+      "phoneNumberRequired": "ტელეფონის ნომერი აუცილებელია",
+      "countryCode": "ქვეყნის კოდი",
+      "email": "ელ.ფოსტის მისამართი",
+      "emailPlaceholder": "შეიყვანეთ ელ.ფოსტის მისამართი",
+      "emailRequired": "ელ.ფოსტა აუცილებელია",
+      "invalidEmail": "გთხოვთ, შეიყვანეთ სწორი ელ.ფოსტის მისამართი",
+      "phone": "ტელეფონის ნომერი",
+      "phonePlaceholder": "შეიყვანეთ ტელეფონის ნომერი",
+      "invalidPhoneNumber": "გთხოვთ, შეიყვანეთ სწორი ტელეფონის ნომერი ქვეყნის კოდით",
+      "roomNumber": "ოთახის ნომერი",
+      "roomNumberPlaceholder": "შეიყვანეთ ოთახის ნომერი",
+      "roomNumberRequired": "ოთახის ნომერი აუცილებელია",
+      "status": "სტატუსი",
+      "statusPlaceholder": "აირჩიეთ სტატუსი",
+      "statusRequired": "სტატუსი აუცილებელია",
+      "offsite": "საიტის გარეთ",
+      "onsite": "საიტზე",
+      "familyMemberLabel": "ოჯახის წევრი",
+      "cancel": "გაუქმება",
+      "confirm": "დადასტურება",
+      "addFamilyMember": "ოჯახის წევრების დამატება",
+      "familyMemberName": "ოჯახის წევრის სახელი",
+      "familyMemberNamePlaceholder": "შეიყვანეთ ოახის წევრის სახელი",
+      "relationship": "ურთიერთობა",
+      "relationshipPlaceholder": "აირჩიეთ ურთიერთობა",
+      "schoolName": "სკოლის სახელი",
+      "schoolNamePlaceholder": "შეიყვანეთ სკოლის სახელი",
+      "trcNumber": "TRC ნომერი",
+      "gender": "სქესი",
+      "genderPlaceholder": "აირჩიეთ სქესი",
+      "genderRequired": "სქესი აუცილებელია",
+      "trcNumberPlaceholder": "შეიყვანეთ TRC ნომერი",
+      "ppsnNumber": "PPSN ნომერი",
+      "ppsnNumberPlaceholder": "შეიყვანეთ PPSN ნომერი",
+      "medicalCardNumber": "სამედიცინო ბარათის ნომერი",
+      "familyMember": "ოჯახის წევრი",
+      "medicalCardNumberPlaceholder": "შეიყვანეთ სამედიცინო ბარათის ნომერი",
+      "relationShipOptions": {
+        "father": "მამა",
+        "mother": "დედა",
+        "sibling": "ძმა/და",
+        "spouse": "მეუღლე",
+        "children": "შვილები"
+      },
+      "genderOptions": {
+        "male": "მამრობითი",
+        "female": "დამომსამსობითი",
+        "other": "სხვა"
+      },
+      "schoolPlacement": {
+        "label": "სკოლაში მოთავსებული",
+        "placeholder": "აირჩიეთ სკოლაში მოთავსების სტატუსი",
+        "placed": "მოთავსებული",
+        "notPlaced": "არ არის მოთავსებული"
+      },
+      "year": "წელი",
+      "yearPlaceholder": "შეიყვანეთ სკოლის წელი",
+      "transportType": {
+        "label": "ტრანსპორტის ტიპი",
+        "placeholder": "აირჩიეთ ტრანსპორტის ტიპი",
+        "bus": "ავტობუსი",
+        "carpool": "მანქანის გაზიარება",
+        "family": "ოჯახი მათ მოაქვს"
+      },
+      "books": {
+        "label": "წიგნები",
+        "placeholder": "შეიყვანეთ წიგნი {number}"
+      },
+      "relationshipRequired": "ურთიერთობა აუცილებელია",
+      "callingCodeRequired": "ზარის კოდი აუცილებელია",
+      "ageAtLeast18": "რეზიდენტი უნდა იყოს მინიმუმ 18 წლის",
+      "schoolPlacementRequired": "სკოლის განთავსება აუცილებელია",
+      "yearRequired": "წელი აუცილებელია",
+      "yearMax": "წელი არ შეიძლება იყოს მომავალში",
+      "transportTypeRequired": "ტრანსპორტის ტიპი აუცილებელია",
+      "booksMinRequired": "მინიმუმ ერთი წიგნი აუცილებელია",
+      "age": "ასაკი",
+      "agePlaceholder": "შეიყვანეთ ასაკი",
+      "toasts": {
+        "residentUpdated": "მოსახლე წარმატებით განახლდა",
+        "residentAdded": "მოსახლე წარმატებით დაემატა",
+        "translationSuccessMessage": "წარმატებით თარგმნილია"
+      },
+      "autoFill": "ავტომატური შევსება",
+      "translating": "თარგმნება..."
+    },
+    "actions": {
+      "edit": "რედაქტირება"
+    }
+  }
+}

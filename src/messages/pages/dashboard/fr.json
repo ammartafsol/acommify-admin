@@ -1,0 +1,73 @@
+{
+  "dashboardPage": {
+    "noActivity": "Aucune activité récente à afficher",
+    "dashboardCards": {
+      "bookLaundry": "Réservation de Blanchisserie",
+      "bookBus": "Réservation de Bus",
+      "bookAppointment": "Rendez-vous à Venir",
+      "visitorBooking": "Réservations de Visiteurs",
+      "documentCenter": "Centre de Documents",
+      "signRequests": "Demandes de Connexion/Déconnexion",
+      "signInSignOut": "Connexions/Déconnexions"
+    },
+    "statsCards": {
+      "onSite": "Résidents sur site",
+      "offSite": "Résidents hors site",
+      "pendingRequests": "Demandes en Attente",
+      "maintenanceRequests": "Demandes de Maintenance",
+      "upcomingAppointments": "Rendez-vous à Venir",
+      "staffCount": "Nombre de Personnel",
+      "activeCenters": "Centres Actifs",
+      "nationalOccupancy": "Occupation Nationale",
+      "totalResidents": "Total des Résidents",
+      "totalAdults": "Total des Adultes",
+      "totalChildren": "Total des Enfants"
+    },
+    "notification": {
+      "recentNotification": "Activités récentes",
+      "currentNotification": "Ici vous voyez les réservations, demandes, mises à jour de notifications récentes."
+    },
+    "activity": {
+      "recentActivity": "Flux d'Activités Récentes",
+      "currentActivity": "Ici vous voyez les réservations, demandes, mises à jour.",
+      "labels": {
+        "bookingId": "ID de Réservation",
+        "visitorName": "Nom du Visiteur",
+        "relationship": "Relation",
+        "serviceType": "Type de Service",
+        "start": "Début",
+        "end": "Fin",
+        "houseNumber": "Numéro de maison",
+        "created": "Créé",
+        "incidentId": "ID d'Incident",
+        "title": "Titre",
+        "description": "Description",
+        "severity": "Sévérité",
+        "address": "Adresse",
+        "resident": "Résident",
+        "requestId": "ID de Demande",
+        "user": "Utilisateur"
+      },
+      "activityTabs": {
+        "booking": "Réservations",
+        "requests": "Demandes de Maintenance",
+        "incident": "Rapports d'Incidents"
+      },
+      "activitycard": {
+        "requestHeading": "Nouvelle Demande de Maintenance Soumise",
+        "dateTime": "Date/Heure",
+        "resident": "Résident",
+        "purpose": "Objectif",
+        "appointment": "Rendez-vous"
+      }
+    },
+    "chart": {
+      "residentTitle": "Résident"
+    },
+    "common": {
+      "edit": "Modifier",
+      "approveRequest": "Approuver la Demande",
+      "rejectRequest": "Rejeter la Demande"
+    }
+  }
+}

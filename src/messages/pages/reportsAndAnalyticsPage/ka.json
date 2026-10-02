@@ -1,0 +1,28 @@
+{
+  "reportsAnalyticsPage": {
+    "title": "ანგარიშები და ანალიტიკა",
+    "ethnicityTitle": "ეთნიკური მონაცემები",
+    "demographicBreakdownTitle": "დემოგრაფიული დაყოფა",
+    "children": "ბავშვები",
+    "adults": "ზრდასრულები",
+    "male": "კაცი",
+    "female": "ქალი",
+    "other": "სხვა",
+    "noData": "მონაცემები არ არის ხელმისაწვდომი",
+    "maintenanceRequestTitle": "მოვლის მოთხოვნა",
+    "incidentReportsTitle": "ინციდენტების ანგარიშები",
+    "totalVisitorTitle": "სულ ვიზიტორები",
+    "downloadReport": "ანგარიშის ჩამოტვირთვა",
+    "statsCards": {
+      "onSite": "საიტზე მცხოვრები მოსახლეები",
+      "offSite": "საიტის გარეთ მცხოვრები მოსახლეები",
+      "pendingRequests": "მოლოდინში მოთხოვნები",
+      "maintenanceRequests": "მოვლის მოთხოვნების მოლოდინში",
+      "bedCount": "სულ საწოლები",
+      "upcomingAppointments": "მომავალი შეხვედრები",
+      "availableBeds": "ხელმისაწვდომი საწოლები",
+      "totalVisitors": "სულ ვიზიტორები",
+      "totalStaffCount": "სულ დამუშავებლები"
+    }
+  }
+}

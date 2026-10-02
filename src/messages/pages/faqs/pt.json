@@ -1,0 +1,44 @@
+{
+  "faqPage": {
+    "title": "Perguntas Frequentes",
+    "questionTitle": "Pergunta",
+    "viewModalTitle": "Detalhes da FAQ",
+    "answerTitle": "Resposta",
+    "statusTitle": "Status",
+    "actionsTitle": "Ações",
+    "addButton": "Adicionar FAQ",
+    "editButton": "Editar FAQ",
+    "deleteButton": "Excluir FAQ",
+    "areYouSureMessage": "Tem certeza de que deseja excluir esta FAQ?",
+    "areYouSure": "Tem certeza?",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "modal": {
+      "addTitle": "Adicionar FAQ",
+      "editTitle": "Editar FAQ",
+      "questionLabel": "Pergunta",
+      "questionPlaceholder": "Digite a pergunta",
+      "answerLabel": "Resposta",
+      "answerPlaceholder": "Digite a resposta",
+      "inputRequired": {
+        "question": "A pergunta é requerida",
+        "answer": "A resposta é requerida"
+      },
+      "statusLabel": "Status",
+      "statusPlaceholder": "Selecione o status",
+      "activeOption": "Ativo",
+      "inactiveOption": "Inativo",
+      "saveButton": "Salvar",
+      "updateButton": "Atualizar",
+      "cancelButton": "Cancelar",
+      "saving": "Salvando...",
+      "updating": "Atualizando...",
+      "translating": "Traduzindo...",
+      "autoFill": "Preenchimento automático",
+      "CreatedSuccessfully": "FAQ criada com sucesso",
+      "UpdatedSuccessfully": "FAQ atualizada com sucesso",
+      "translationSuccessMessage": "Preenchimento automático realizado com sucesso",
+      "PleaseFill": "Por favor, preencha"
+    }
+  }
+}

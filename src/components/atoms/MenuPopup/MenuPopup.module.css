@@ -1,0 +1,44 @@
+.menu {
+  z-index: 9999;
+}
+
+.menu > ul {
+  /* min-width: unset !important; */
+  padding: 0px;
+  border-radius: 30px;
+  border-radius: 11px;
+  border: 1px solid var(--gray-v2);
+  background: #fff;
+  box-shadow: 0px 4px 16.8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.menu > ul > li {
+  border-bottom: 1px solid var(--border);
+  margin-inline: 10px;
+  padding-inline: 5px 20px;
+  padding-block: 10px;
+}
+
+.menu > ul > li:last-child {
+  border-bottom: none;
+}
+.menuButton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.arrowIcon {
+  transition: transform 0.2s ease;
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
+}
+
+.menuItem{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

@@ -1,0 +1,35 @@
+{
+  "positionPage": {
+    "title": "Matsayi",
+    "addButton": "Ƙara Matsayi",
+    "editButton": "Gyara",
+    "deleteButton": "Share",
+    "table": {
+      "name": "Suna",
+      "statusTitle": "Matsayi"
+    },
+    "modal": {
+      "addTitle": "Ƙara Matsayi",
+      "editTitle": "Gyara Matsayi",
+      "PositionName": "Sunan Matsayi",
+      "PositionNameRequired": "Sunan matsayi yana buƙata",
+      "PositionNamePlaceholder": "Shigar da sunan matsayi",
+      "statusLabel": "Matsayi",
+      "statusPlaceholder": "Zaɓi matsayi",
+      "activeOption": "Aiki",
+      "inactiveOption": "Ba Aiki",
+      "cancelButton": "Soke",
+      "saveButton": "Ajiye",
+      "updateButton": "Sabunta",
+      "saving": "Ana Ajiye...",
+      "loading": "Ana Loda...",
+      "required": "Wannan filin yana buƙata",
+      "autoFill": "Cike Kansa",
+      "translating": "Ana Fassara...",
+      "UpdatedSuccessfully": "Matsayi an sabunta cikin nasara",
+      "CreatedSuccessfully": "Matsayi an ƙirƙira cikin nasara",
+      "PleaseFill": "Da fatan za a cika",
+      "translationSuccessMessage": "Fassarar ta ƙare cikin nasara"
+    }
+  }
+}

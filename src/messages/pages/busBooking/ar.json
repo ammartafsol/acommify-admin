@@ -1,0 +1,49 @@
+{
+  "busBookingDetail": {
+    "busBooking": {
+      "title": "حجز الحافلة",
+      "availableBusesTitle": "الحافلات المتاحة",
+      "availableBusesTabs": {
+        "morning": "الصباح",
+        "afternoon": "بعد الظهر",
+        "evening": "المساء"
+      },
+      "filterOptions": {
+        "all": "الكل",
+        "available": "متاح",
+        "booked": "محجوز",
+        "selected": "محدد"
+      },
+      "dropdownOptions": {
+        "greenBus": "الحافلة الخضراء",
+        "blueBus": "الحافلة الزرقاء",
+        "redBus": "الحافلة الحمراء"
+      }
+    },
+    "busDetailCard": {
+      "available": "متاح",
+      "booked": "محجوز",
+      "duration": "المدة",
+      "date": "التاريخ",
+      "departure": "المغادرة",
+      "seatsAvailable": "المقاعد المتاحة"
+    },
+    "table": {
+      "seatNumber": "رقم المقعد",
+      "residentName": "اسم المقيم",
+      "houseNumber": "رقم المنزل",
+      "specialRequests": "الطلبات الخاصة"
+    },
+    "modal": {
+      "validations": {
+        "residentName": "اسم المقيم مطلوب",
+        "invalidSeatNumber": "رقم المقعد غير صالح",
+        "invalidHouseNumber": "رقم المنزل غير صالح"
+      },
+      "buttons": {
+        "saveChanges": "حفظ التغييرات",
+        "cancel": "إلغاء"
+      }
+    }
+  }
+}

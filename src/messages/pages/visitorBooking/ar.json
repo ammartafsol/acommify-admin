@@ -1,0 +1,20 @@
+{
+  "visitorBooking": {
+    "title": "حجز الزوار",
+    "viewModalTitle": "تفاصيل حجز الزوار",
+    "table": {
+      "residentName": "اسم المقيم",
+      "visitorName": "اسم الزائر",
+      "additionalNotes": "ملاحظات إضافية",
+      "dateAndTime": "التاريخ والوقت"
+    },
+    "modal": {
+      "additionalNotes": "ملاحظات إضافية",
+      "residentName": "اسم المقيم",
+      "visitorName": "اسم الزائر",
+      "comment": "تعليق",
+      "dateAndTime": "التاريخ والوقت",
+      "createdAt": "تاريخ الإنشاء"
+    }
+  }
+}

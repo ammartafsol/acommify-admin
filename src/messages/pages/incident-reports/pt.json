@@ -1,0 +1,90 @@
+{
+  "incidentReportsPage": {
+    "title": "Relatórios de Incidentes",
+    "addNewReport": "Adicionar Novo Relatório",
+    "noDataText": "Nenhum relatório de incidente encontrado",
+    "reportCreatedSuccessfully": "Relatório de incidente criado com sucesso",
+    "status": {
+      "all": "Todos",
+      "resolved": "Resolvido",
+      "underReview": "Em Revisão",
+      "escalated": "Escalado"
+    },
+    "severityOptions": {
+      "low": "Baixo",
+      "medium": "Médio",
+      "high": "Alto"
+    },
+    "tabs": {
+      "all": "Todos",
+      "resolved": "Resolvido",
+      "underReview": "Em Revisão",
+      "escalated": "Escalado"
+    },
+    "actions": {
+      "edit": "Editar"
+    },
+    "table": {
+      "incidentId": "ID do Incidente",
+      "title": "Título",
+      "description": "Descrição",
+      "residentInvolved": "Residente Envolvido",
+      "reportedBy": "Reportado Por",
+      "location": "Localização",
+      "severity": "Severidade",
+      "dateTime": "Data e Hora",
+      "status": "Status",
+      "completedDate": "Data de Conclusão"
+    },
+    "inputRequired": {
+      "title": "O título é obrigatório",
+      "description": "A descrição é obrigatória",
+      "location": "A localização é obrigatória",
+      "residentInvolved": "Residentes Envolvidos são obrigatórios",
+      "reportedBy": "Reportado Por é obrigatório",
+      "severity": "Severidade é obrigatória",
+      "dateTime": "Data e Hora são obrigatórias",
+      "status": "Status é obrigatório",
+      "completedDate": "Data de Conclusão é obrigatória"
+    },
+    "modal": {
+      "title": "Adicionar Relatório de Incidente",
+      "editTitle": "Editar Relatório de Incidente",
+      "autoFill": "Preenchimento Automático",
+      "translating": "Traduzindo...",
+      "detailTitle": "Detalhes do Incidente",
+      "pleaseFill": "Por favor, preencha",
+      "modalBtnsLabel": {
+        "cancel": "Cancelar",
+        "submit": "Enviar"
+      },
+      "inputLabels": {
+        "title": "Título",
+        "description": "Descrição",
+        "residentInvolved": "Residente Envolvido",
+        "reportedBy": "Reportado Por",
+        "location": "Localização",
+        "severity": "Severidade",
+        "dateTime": "Data e Hora",
+        "status": "Status",
+        "completedDate": "Data de Conclusão"
+      },
+      "inputPlaceholders": {
+        "title": "Digite o título do relatório",
+        "description": "Digite a descrição do relatório",
+        "residentInvolved": "Digite o Residente Envolvido",
+        "reportedBy": "Selecione reportado por",
+        "location": "Digite a localização",
+        "severity": "Selecione a severidade",
+        "dateTime": "Digite a data e hora",
+        "status": "Selecione o status",
+        "completedDate": "Digite a data de conclusão"
+      },
+      "toasts": {
+        "reportCreatedSuccessfully": "Relatório criado com sucesso",
+        "errorUpdatedReport": "Relatório atualizado com sucesso",
+        "autoFilledSuccessfully": "Preenchimento automático realizado com sucesso"
+      }
+    }
+  }
+}

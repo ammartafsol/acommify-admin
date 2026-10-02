@@ -1,0 +1,70 @@
+.textAreaBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: var(--Dark-gray);
+  font-size: var(--fs16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.textAreaBox textarea {
+  padding: 20px;
+  resize: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+  color: var(--Black-color);
+  font-size: var(--fs16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 25px;
+  background: var(--Background);
+  outline: none;
+  border: none;
+}
+
+.textAreaBox textarea::placeholder {
+  color: var(--Dark-gray);
+  font-size: var(--fs16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.labelDisabled {
+  color: var(--disabled-label-color);
+}
+
+.errorText {
+  color: var(--Red);
+  font-size: var(--fs14);
+  font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  .label {
+    font-size: var(--fs14);
+  }
+
+  .textAreaBox textarea {
+    font-size: var(--fs12);
+  }
+}
+
+@media (max-width: 576px) {
+  .label {
+    font-size: var(--fs12);
+  }
+
+  .textAreaBox textarea {
+    padding: 12px 8px;
+  }
+}

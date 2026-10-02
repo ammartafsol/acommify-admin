@@ -1,0 +1,49 @@
+{
+  "laundryBooking": {
+    "title": "სამრეცხვოს დაჯავშნა",
+    "tabs": {
+      "all": "ყველა",
+      "pending": "მოლოდინში",
+      "acceptedORConfirmed": "დადასტურებული ან მიღებული",
+      "cancelled": "გაუქმებული",
+      "rejected": "უარყოფილი"
+    },
+    "table": {
+      "residentName": "მოსახლის სახელი",
+      "laundryDateTime": "სამრეცხვოს თარიღი და დრო",
+      "roomNumber": "ოთახის ნომერი",
+      "machineName": "მანქანა",
+      "DateAndTime": "თარიღი და დრო",
+      "status": "სტატუსი"
+    },
+    "status": {
+      "pending": "მოლოდინში",
+      "confirmed": "დადასტურებული",
+      "completed": "დასრულებული"
+    },
+    "buttons": {
+      "submit": "გაგზავნა",
+      "cancel": "გაუქმება"
+    },
+    "actions": {
+      "approve": "დამტკიცება",
+      "cancel": "გაუქმება",
+      "view": "ნახვა"
+    },
+    "modal": {
+      "viewBookingDetails": "სამრეცხვოს დაჯავშნის დეტალები",
+      "residentName": "მოსახლის სახელი",
+      "roomNumber": "ოთახის ნომერი",
+      "machineName": "მანქანის სახელი",
+      "laundryDate": "სამრეცხვოს თარიღი",
+      "timeSlot": "დროის სლოტი",
+      "status": "სტატუსი"
+    },
+    "areYouSureModal": {
+      "approve": "დაჯავშნის დამტკიცება",
+      "reject": "დაჯავშნის უარყოფა",
+      "approveBookingSure": "დარწმუნებული ხართ, რომ გსურთ ამ დაჯავშნის დამტკიცება?",
+      "rejectBookingSure": "დარწმუნებული ხართ, რომ გსურთ ამ დაჯავშნის უარყოფა?"
+    }
+  }
+}

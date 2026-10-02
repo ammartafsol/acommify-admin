@@ -1,0 +1,157 @@
+{
+  "crudPage": {
+    "title": "عمليات CRUD",
+    "crudData": {
+      "maintenanceCategories": "فئات الصيانة",
+      "laundaryMachineCategories": "فئات آلات الغسيل",
+      "FAQs": "الأسئلة الشائعة",
+      "helplines": "خطوط المساعدة",
+      "positions": "المناصب"
+    },
+    "laundaryMachineCategoriesPage": {
+      "title": "فئات آلات الغسيل",
+      "addButton": "إضافة آلة جديدة",
+      "edit": "تعديل",
+      "table": {
+        "machineName": "اسم الآلة",
+        "status": "الحالة"
+      },
+      "modal": {
+        "title": "إنشاء آلة",
+        "editTitle": "تعديل الآلة",
+        "autoFill": "ملء تلقائي",
+        "translating": "جاري الترجمة...",
+        "machineName": "اسم الآلة",
+        "machineNamePlaceholder": "أدخل اسم الآلة",
+        "inputRequired": {
+          "name": "اسم الآلة مطلوب"
+        },
+        "status": "الحالة",
+        "statusPlaceholder": "اختر الحالة",
+        "statusRequired": "الحالة مطلوبة",
+        "active": "نشط",
+        "inactive": "غير نشط",
+        "cancel": "إلغاء",
+        "save": "حفظ",
+        "update": "تحديث",
+        "confirm": "تأكيد",
+        "MachineUpdatedSuccessfully": "تم تحديث الآلة بنجاح",
+        "MachineCreatedSuccessfully": "تم إنشاء الآلة بنجاح",
+        "fill": "يرجى ملء",
+        "autoFilled": "تم الملء التلقائي بنجاح"
+      }
+    },
+    "maintenanceCategoriesPage": {
+      "title": "فئات الصيانة",
+      "addButton": "إضافة فئة جديدة",
+      "edit": "تعديل",
+      "table": {
+        "categoryName": "اسم الفئة",
+        "status": "الحالة",
+        "risk": "المخاطر"
+      },
+      "modal": {
+        "title": "إنشاء فئة",
+        "editTitle": "تعديل الفئة",
+        "categoryName": "اسم الفئة",
+        "categoryNamePlaceholder": "أدخل اسم الفئة",
+        "inputRequired": {
+          "name": "اسم الفئة مطلوب"
+        },
+        "severity": "الخطورة",
+        "severityPlaceholder": "اختر الخطورة",
+        "severityRequired": "الخطورة مطلوبة",
+        "autoFilled": "تم الملء التلقائي بنجاح",
+        "severityOptions": {
+          "low": "منخفض",
+          "medium": "متوسط",
+          "high": "عالي"
+        },
+        "status": "الحالة",
+        "statusPlaceholder": "اختر الحالة",
+        "statusOptions": {
+          "active": "نشط",
+          "inactive": "غير نشط"
+        },
+        "statusRequired": "الحالة مطلوبة",
+        "btnTranslate": "جاري الترجمة...",
+        "autoFill": "ملء تلقائي",
+        "pleaseFill": "يرجى ملء",
+        "cancel": "إلغاء",
+        "save": "حفظ",
+        "update": "تحديث",
+        "confirm": "تأكيد",
+        "toast": {
+          "categoryUpdated": "تم تحديث الفئة بنجاح",
+          "categoryCreated": "تم إنشاء الفئة بنجاح"
+        }
+      }
+    },
+    "helpLineCrudPage": {
+      "title": "خطوط المساعدة",
+      "addButton": "إضافة خط مساعدة",
+      "edit": "تعديل",
+      "actions": {
+        "active": "نشط",
+        "inactive": "غير نشط"
+      },
+      "table": {
+        "title": "العنوان",
+        "country": "البلد",
+        "contact": "جهة الاتصال",
+        "description": "الوصف",
+        "status": "الحالة",
+        "phoneNumber": "رقم الهاتف"
+      },
+      "modal": {
+        "title": "إنشاء خط مساعدة",
+        "editTitle": "تعديل خط المساعدة",
+        "autoFill": "ملء تلقائي",
+        "translating": "جاري الترجمة...",
+        "helpLineTitle": "عنوان خط المساعدة",
+        "titleRequired": "عنوان خط المساعدة مطلوب",
+        "helpLineTitlePlaceholder": "أدخل عنوان خط المساعدة",
+        "helpLineTitleRequired": "عنوان خط المساعدة مطلوب",
+        "contact": "جهة الاتصال",
+        "contactPlaceholder": "أدخل جهة الاتصال",
+        "contactRequired": "جهة الاتصال مطلوبة",
+        "description": "الوصف",
+        "callingCodeRequired": "رمز الاتصال مطلوب",
+        "pleaseFill": "يرجى ملء",
+        "inputRequired": {
+          "country": "البلد مطلوب",
+          "title": "العنوان مطلوب",
+          "description": "الوصف مطلوب"
+        },
+        "phoneNumberRequired": "رقم الهاتف مطلوب",
+        "timingsRequired": "الأوقات مطلوبة",
+        "descriptionPlaceholder": "أدخل الوصف",
+        "descriptionRequired": "الوصف مطلوب",
+        "status": "الحالة",
+        "statusPlaceholder": "اختر الحالة",
+        "statusRequired": "الحالة مطلوبة",
+        "active": "نشط",
+        "inactive": "غير نشط",
+        "cancel": "إلغاء",
+        "save": "حفظ",
+        "update": "تحديث",
+        "confirm": "تأكيد",
+        "helpLineUpdatedSuccessfully": "تم تحديث خط المساعدة بنجاح",
+        "helpLineCreatedSuccessfully": "تم إنشاء خط المساعدة بنجاح",
+        "minLength": "يجب أن يكون حرفين على الأقل",
+        "fill": "يرجى ملء",
+        "autoFilled": "تم الملء التلقائي بنجاح",
+        "phoneNumber": "رقم الهاتف",
+        "phoneNumberPlaceholder": "أدخل رقم الهاتف",
+        "timings": "الأوقات",
+        "timingsPlaceholder": "أدخل الأوقات",
+        "translationSuccess": "الترجمة ناجحة",
+        "country": "البلد",
+        "countryPlaceholder": "اختر البلد"
+      },
+      "toasts": {
+        "statusUpdateSuccess": "تم تحديث الحالة بنجاح"
+      }
+    }
+  }
+}

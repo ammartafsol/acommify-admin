@@ -1,0 +1,46 @@
+{
+  "documentCenterPage": {
+    "title": "Centro de Documentos",
+    "addDocument": "Agregar Documento",
+    "searchPlaceholder": "Buscar documentos...",
+    "table": {
+      "documentName": "Nombre",
+      "documentType": "Tipo",
+      "document": "Documento",
+      "status": "Estado",
+      "createdAt": "Creado En",
+      "viewDocument": "Ver Documento",
+      "forms": "Formularios",
+      "guide-lines": "Pautas",
+      "other-documents": "Otros Documentos"
+    },
+    "actions": {
+      "edit": "Editar"
+    },
+    "modal": {
+      "addDocument": "Agregar Documento",
+      "editDocument": "Editar Documento",
+      "addDocumentSubheading": "Agregar un nuevo documento al centro",
+      "editDocumentSubheading": "Actualizar información del documento",
+      "documentName": "Nombre del Documento",
+      "documentNamePlaceholder": "Ingrese el nombre del documento",
+      "documentType": "Tipo de Documento",
+      "documentTypePlaceholder": "Seleccione el tipo de documento",
+      "document": "Archivo del Documento",
+      "formsOption": "Formularios",
+      "guidelinesOption": "Pautas",
+      "othersOption": "Otros Documentos",
+      "cancel": "Cancelar",
+      "create": "Crear",
+      "update": "Actualizar",
+      "autofill": "Llenado automático",
+      "createdSuccessfully": "¡Documento creado exitosamente!",
+      "updatedSuccessfully": "¡Documento actualizado exitosamente!",
+      "fillRequiredFields": "Por favor, complete todos los campos requeridos antes de traducir",
+      "translationSuccessMessage": "¡Traducción exitosa!",
+      "nameRequired": "El nombre",
+      "documentTypeRequired": "El tipo de documento es requerido",
+      "documentRequired": "El documento es requerido"
+    }
+  }
+}

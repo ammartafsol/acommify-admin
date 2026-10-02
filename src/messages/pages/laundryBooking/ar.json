@@ -1,0 +1,49 @@
+{
+  "laundryBooking": {
+    "title": "حجز الغسيل",
+    "tabs": {
+      "all": "الكل",
+      "pending": "في الانتظار",
+      "acceptedORConfirmed": "مؤكد أو مقبول",
+      "cancelled": "ملغي",
+      "rejected": "مرفوض"
+    },
+    "table": {
+      "residentName": "اسم المقيم",
+      "laundryDateTime": "تاريخ ووقت الغسيل",
+      "roomNumber": "رقم الغرفة",
+      "machineName": "الآلة",
+      "DateAndTime": "التاريخ والوقت",
+      "status": "الحالة"
+    },
+    "status": {
+      "pending": "في الانتظار",
+      "confirmed": "مؤكد",
+      "completed": "مكتمل"
+    },
+    "buttons": {
+      "submit": "إرسال",
+      "cancel": "إلغاء"
+    },
+    "actions": {
+      "approve": "موافقة",
+      "cancel": "إلغاء",
+      "view": "عرض"
+    },
+    "modal": {
+      "viewBookingDetails": "تفاصيل حجز الغسيل",
+      "residentName": "اسم المقيم",
+      "roomNumber": "رقم الغرفة",
+      "machineName": "اسم الآلة",
+      "laundryDate": "تاريخ الغسيل",
+      "timeSlot": "الفترة الزمنية",
+      "status": "الحالة"
+    },
+    "areYouSureModal": {
+      "approve": "موافقة على الحجز",
+      "reject": "رفض الحجز",
+      "approveBookingSure": "هل أنت متأكد من أنك تريد الموافقة على هذا الحجز؟",
+      "rejectBookingSure": "هل أنت متأكد من أنك تريد رفض هذا الحجز؟"
+    }
+  }
+}

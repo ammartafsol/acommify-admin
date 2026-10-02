@@ -1,0 +1,64 @@
+{
+  "timeslotsPage": {
+    "title": "შეხვედრების დროის სლოტების დაგეგმვა",
+    "laundryTitle": "საბანოების მანქანების დროის სლოტების დაგეგმვა",
+    "visitorTitle": "ვიზიტორების დაჯავშნის დროის სლოტების დაგეგმვა",
+    "staffLabel": "პერსონალის არჩევა",
+    "staffPlaceholder": "აირჩიეთ პერსონალი...",
+    "machinePlaceholder": "აირჩიეთ მანქანა...",
+    "machineLabel": "მანქანის არჩევა",
+    "visitorLabel": "მდებარეობის არჩევა",
+    "visitorPlaceholder": "აირჩიეთ მდებარეობა...",
+    "manageTimeSlots": "კვირის ყველა დღის დროის სლოტების მართვა",
+    "fetchingOptions": "ოფციების მოძიება...",
+    "addDaySlots": "დღის სლოტების დამატება",
+    "editDaySlots": "დღის სლოტების რედაქტირება",
+    "noSlotsAvailable": "სლოტები არ არის ხელმისაწვდომი",
+    "weeklySchedule": "კვირის განრიგი",
+    "utcNote": "ყველა დრო UTC-ში",
+    "weekDays": {
+      "monday": "ორშაბათი",
+      "tuesday": "სამშაბათი",
+      "wednesday": "ოთხშაბათი",
+      "thursday": "ხუთშაბათი",
+      "friday": "პარასკევი",
+      "saturday": "შაბათი",
+      "sunday": "კვირა"
+    },
+    "generateSlotModal": {
+      "startTime": "დაწყების დრო",
+      "endTime": "დასრულების დრო",
+      "interval": "ინტერვალი",
+      "hour": "საათი",
+      "fixed": "ფიქსირებული",
+      "slots": "სლოტები",
+      "headers": {
+        "previousSlots": "წინა სლოტები",
+        "addNewSlots": "ახალი სლოტების დამატება",
+        "generatedSlots": "გენერირებული სლოტები"
+      },
+      "validation": {
+        "startTimeRequired": "დაწყების დრო აუცილებელია",
+        "endTimeRequired": "დასრულების დრო აუცილებელია",
+        "slotDurationRequired": "სლოტის ხანგრძლივობა აუცილებელია"
+      },
+      "toasts": {
+        "slotsSavedSuccess": "სლოტები წარმატებით შენახულია!",
+        "slotsSavedError": "სლოტების შენახვა ვერ მოხერხდა."
+      },
+      "placeholders": {
+        "selectStartTime": "აირჩიეთ დაწყების საათი",
+        "selectEndTime": "აირჩიეთ დასრულების საათი"
+      },
+      "btns": {
+        "editSlots": "სლოტების რედაქტირება",
+        "generateSlots": "სლოტების გენერირება",
+        "back": "უკან",
+        "confirm": "სლოტების დადასტურება",
+        "selectAll": "ყველას არჩევა",
+        "deselectAll": "ყველას მოხსნა"
+      },
+      "utcNote": "ყველა დრო UTC-ში"
+    }
+  }
+}

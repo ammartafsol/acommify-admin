@@ -1,0 +1,108 @@
+{
+  "busManagementPage": {
+    "title": "د بس مدیریت",
+    "addBus": "د بس جوړول",
+    "addNewBus": "نوی بس اضافه کړئ",
+    "busDetail": "د بس تفصیلات",
+    "deletedBus": "بس په بریالیتوب سره ړنګ شو.",
+    "statusUpdated": "د بس حالت په بریالیتوب سره تازه شو.",
+    "table": {
+      "busId": "د بس ID",
+      "busName": "د بس نوم",
+      "startLocation": "د پیل ځای",
+      "endLocation": "د پای ځای",
+      "capacity": "ظرفیت",
+      "status": "حالت",
+      "startTime": "د پیل وخت",
+      "endTime": "د پای وخت",
+      "availableDates": "د شتون نیټې",
+      "description": "توضیحات"
+    },
+    "filterStatus": {
+      "options": [
+        { "label": "ټول", "value": "all" },
+        { "label": "فعال", "value": "active" },
+        { "label": "غیرفعال", "value": "inactive" },
+        { "label": "ساتنه", "value": "maintenance" }
+      ]
+    },
+    "busStatus": {
+      "active": "فعال",
+      "inactive": "غیرفعال"
+    },
+    "shiftOptions": {
+      "morning": "سهار",
+      "afternoon": "ماسپښین",
+      "evening": "ماښام",
+      "night": "شپه"
+    },
+    "toasts": {
+      "busCreated": "بس په بریالیتوب سره جوړ شو",
+      "busUpdated": "بس په بریالیتوب سره تازه شو"
+    },
+    "modal": {
+      "editTitle": "بس سمون",
+      "translating": "ژباړه کيږي...",
+      "autoFill": "خپل ځان ډکول",
+      "seater": "کرسي",
+      "inputLabels": {
+        "document": "د پورته کولو شرایط او خدمات",
+        "busName": "د بس نوم",
+        "busNumber": "د بس شمیره",
+        "description": "توضیحات",
+        "startLocation": "د پیل ځای",
+        "endLocation": "د پای ځای",
+        "capacity": "ظرفیت",
+        "startTime": "د پیل وخت",
+        "endTime": "د پای وخت",
+        "availableDates": "د شتون نیټې",
+        "shift": "بدل"
+      },
+      "inputPlaceholders": {
+        "busName": "د بس نوم ولیکئ",
+        "busNumber": "د بس شمیره ولیکئ",
+        "description": "توضیحات ولیکئ",
+        "startLocation": "د پیل ځای ولیکئ",
+        "endLocation": "د پای ځای ولیکئ",
+        "capacity": "ظرفیت ولیکئ",
+        "startTime": "د پیل وخت ولیکئ",
+        "endTime": "د پای وخت ولیکئ",
+        "availableDates": "د شتون نیټې وټاکئ",
+        "shift": "بدل وټاکئ"
+      },
+      "uploadMessage": {
+        "document": "د پورته کولو شرایط او خدمات اپلوډ کړئ"
+      },
+      "fileFormats": {
+        "document": "PDF, DOC, DOCX, TXT, RTF"
+      },
+      "btnLabels": {
+        "create": "جوړول",
+        "update": "تازه کول",
+        "cancel": "لغوه کول"
+      },
+      "translationSuccessMessage": "ژباړه په بریالیتوب سره بشپړه شوه",
+      "toasts": {
+        "busCreated": "بس په بریالیتوب سره جوړ شو",
+        "busUpdated": "بس په بریالیتوب سره تازه شو",
+        "pleaseFill": "مهرباني وکړئ ډک کړئ"
+      },
+      "validation": {
+        "busName": "د بس نوم اړین دی",
+        "description": "توضیحات اړین دي",
+        "busNumber": "د بس شمیره اړینه ده",
+        "startLocation": "د پیل ځای اړین دی",
+        "endLocation": "د پای ځای اړین دی",
+        "capacity": "ظرفیت اړین دی",
+        "status": "حالت اړین دی",
+        "capacityMin": "ظرفیت باید لږترلږه 15 وي",
+        "availableDatesMin": "لږترلږه یوه د شتون نیټه اړینه ده",
+        "availableDates": "د شتون نیټې اړینې دي",
+        "startTime": "د پیل وخت اړین دی",
+        "endTime": "د پای وخت اړین دی",
+        "shift": "بدل اړین دی",
+        "mediaError": "میډیا اپلوډ کړئ"
+      }
+    }
+  }
+}

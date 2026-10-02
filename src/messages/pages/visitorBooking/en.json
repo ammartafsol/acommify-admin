@@ -1,0 +1,32 @@
+{
+  "visitorBooking": {
+    "title": "Visitor Booking",
+    "viewModalTitle": "Visitor Booking Details",
+    "areYouSureModal": {
+      "approve": "Approve",
+      "reject": "Reject",
+      "approveBookingSure": "approveBookingSure",
+      "rejectBookingSure": "rejectBookingSure"
+    },
+    "action": {
+      "cancel": "Cancel",
+      "approve": "Approve",
+      "view": "View"
+    },
+    "table": {
+      "residentName": "Resident Name",
+      "visitorName": "Visitor Name",
+      "additionalNotes": "Additional Notes",
+      "dateAndTime": "Date and Time"
+    },
+
+    "modal": {
+      "additionalNotes": "Additional Notes",
+      "residentName": "Resident Name",
+      "visitorName": "Visitor Name",
+      "comment": "Comment",
+      "dateAndTime": "Date and Time",
+      "createdAt": "Created At"
+    }
+  }
+}

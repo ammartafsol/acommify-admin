@@ -1,0 +1,8 @@
+{
+  "scheduleTimeSlotsPage": {
+    "title": "Planifier les Créneaux Horaires",
+    "appointmentSlots": "Créneaux de Rendez-vous",
+    "laundryBookingSlots": "Créneaux de Réservation de Blanchisserie",
+    "visitorBookingSlots": "Créneaux de Réservation de Visiteurs"
+  }
+}

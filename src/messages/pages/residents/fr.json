@@ -1,0 +1,130 @@
+{
+  "residentsPage": {
+    "title": "Gestion des Résidents",
+    "viewModalTitle": "Détails du Résident",
+    "addResident": "Ajouter un Nouveau Résident",
+    "searchPlaceholder": "Rechercher",
+    "table": {
+      "residentName": "Nom du Résident",
+      "roomNo": "Numéro de Chambre/Maison",
+      "email": "Email",
+      "phone": "Téléphone",
+      "residentStatus": "Statut du Résident",
+      "dob": "Date de Naissance",
+      "age": "Âge",
+      "arrivalDate": "Date d'Arrivée",
+      "gender": "Genre"
+    },
+    "modal": {
+      "noOfBedsRequired": "Le nombre de lits est requis",
+      "noOfBeds": "Nombre de Lits",
+      "noOfBedsPlaceholder": "Sélectionnez le nombre de lits",
+      "available": "disponible",
+      "familyMemberRelation": "Relation du Membre de la Famille",
+      "header": "Ajouter un Nouveau Résident",
+      "editResident": "Modifier le Résident",
+      "familyMembers": "Membres de la Famille",
+      "name": "Nom Complet",
+      "namePlaceholder": "Entrez le nom complet",
+      "nameRequired": "Le nom est requis",
+      "inputRequired": {
+        "fullName": "Le nom complet est requis",
+        "schoolName": "Le nom de l'école est requis"
+      },
+      "dob": "Date de Naissance",
+      "dobPlaceholder": "Sélectionnez la date de naissance",
+      "dobRequired": "La date de naissance est requise",
+      "dateOfArrival": "Date d'Arrivée",
+      "dateOfArrivalPlaceholder": "Sélectionnez la date d'arrivée",
+      "dateOfArrivalRequired": "La date d'arrivée est requise",
+      "phoneNumberRequired": "Le numéro de téléphone est requis",
+      "countryCode": "Code du Pays",
+      "email": "Adresse Email",
+      "emailPlaceholder": "Entrez l'adresse email",
+      "emailRequired": "L'email est requis",
+      "invalidEmail": "Veuillez entrer une adresse email valide",
+      "phone": "Numéro de Téléphone",
+      "phonePlaceholder": "Entrez le numéro de téléphone",
+      "invalidPhoneNumber": "Veuillez entrer un numéro de téléphone valide avec code pays",
+      "roomNumber": "Numéro de Chambre",
+      "roomNumberPlaceholder": "Entrez le numéro de chambre",
+      "roomNumberRequired": "Le numéro de chambre est requis",
+      "status": "Statut",
+      "statusPlaceholder": "Sélectionnez le statut",
+      "statusRequired": "Le statut est requis",
+      "offsite": "Hors Site",
+      "onsite": "Sur Site",
+      "familyMemberLabel": "Membre de la Famille",
+      "cancel": "Annuler",
+      "confirm": "Confirmer",
+      "addFamilyMember": "Ajouter des Membres de la Famille",
+      "familyMemberName": "Nom du Membre de la Famille",
+      "familyMemberNamePlaceholder": "Entrez le nom du membre de la famille",
+      "relationship": "Relation",
+      "relationshipPlaceholder": "Sélectionnez la relation",
+      "schoolName": "Nom de l'École",
+      "schoolNamePlaceholder": "Entrez le nom de l'école",
+      "gender": "Genre",
+      "genderPlaceholder": "Sélectionnez le genre",
+      "genderRequired": "Le genre est requis",
+      "trcNumber": "Numéro TRC",
+      "trcNumberPlaceholder": "Entrez le numéro TRC",
+      "ppsnNumber": "Numéro PPSN",
+      "ppsnNumberPlaceholder": "Entrez le numéro PPSN",
+      "medicalCardNumber": "Numéro de Carte Médicale",
+      "familyMember": "Membre de la Famille",
+      "medicalCardNumberPlaceholder": "Entrez le numéro de carte médicale",
+      "relationShipOptions": {
+        "father": "Père",
+        "mother": "Mère",
+        "sibling": "Frère/Sœur",
+        "spouse": "Conjoint",
+        "children": "Enfants"
+      },
+      "genderOptions": {
+        "male": "Masculin",
+        "female": "Féminin",
+        "other": "Autre"
+      },
+      "schoolPlacement": {
+        "label": "Placé à l'école",
+        "placeholder": "Sélectionnez le statut de placement scolaire",
+        "placed": "Placé",
+        "notPlaced": "Non Placé"
+      },
+      "year": "Année",
+      "yearPlaceholder": "Entrez l'année scolaire",
+      "transportType": {
+        "label": "Type de Transport",
+        "placeholder": "Sélectionnez le type de transport",
+        "bus": "Bus",
+        "carpool": "Covoiturage",
+        "family": "La famille les amène"
+      },
+      "books": {
+        "label": "Livres",
+        "placeholder": "Entrez le livre {number}"
+      },
+      "relationshipRequired": "La relation est requise",
+      "callingCodeRequired": "Le code d'appel est requis",
+      "ageAtLeast18": "Le résident doit avoir au moins 18 ans",
+      "schoolPlacementRequired": "Le placement scolaire est requis",
+      "yearRequired": "L'année est requise",
+      "yearMax": "L'année ne peut pas être dans le futur",
+      "transportTypeRequired": "Le type de transport est requis",
+      "booksMinRequired": "Au moins un livre est requis",
+      "age": "Âge",
+      "agePlaceholder": "Entrez l'âge",
+      "toasts": {
+        "residentUpdated": "Résident mis à jour avec succès",
+        "residentAdded": "Résident ajouté avec succès",
+        "translationSuccessMessage": "Traduit avec succès"
+      },
+      "autoFill": "Remplissage automatique",
+      "translating": "Traduction en cours..."
+    },
+    "actions": {
+      "edit": "Modifier"
+    }
+  }
+}

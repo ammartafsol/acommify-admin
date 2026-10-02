@@ -1,0 +1,17 @@
+{
+  "signInOutPage": {
+    "title": "Journal des entrées/sorties",
+    "searchPlaceholder": "Rechercher par nom ou numéro d'hébergement",
+    "table": {
+      "residentName": "Nom du résident",
+      "accommodationNumber": "Numéro d'hébergement",
+      "type": "Type",
+      "dateTime": "Date et heure"
+    },
+    "typeLabel": {
+      "signIn": "Entrée",
+      "signOut": "Sortie"
+    }
+  }
+}
+

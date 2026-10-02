@@ -1,0 +1,8 @@
+{
+  "scheduleTimeSlotsPage": {
+    "title": "Планування часових слотів",
+    "appointmentSlots": "Слоти для зустрічей",
+    "laundryBookingSlots": "Слоти для бронювання пральні",
+    "visitorBookingSlots": "Слоти для бронювання відвідувачів"
+  }
+}

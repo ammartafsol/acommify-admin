@@ -1,0 +1,8 @@
+{
+  "scheduleTimeSlotsPage": {
+    "title": "დროის სლოტების დაგეგმვა",
+    "appointmentSlots": "შეხვედრების სლოტები",
+    "laundryBookingSlots": "საბანოების დაჯავშნის სლოტები",
+    "visitorBookingSlots": "ვიზიტორების დაჯავშნის სლოტები"
+  }
+}

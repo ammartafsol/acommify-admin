@@ -1,0 +1,87 @@
+{
+  "maintenanceRequestsPage": {
+    "title": "Bukatun Kulawa",
+    "modalTitle": "Cikakken Bukatar Kulawa",
+    "assignTaskTitle": "Sanya Aiki ga Ma'aikata",
+    "requestCompletedSuccessfully": "Matsayin bukata ya ƙare cikin nasara",
+    "requestRejectedSuccessfully": "Bukata an ƙi cikin nasara",
+    "requestAcceptedSuccessfully": "Bukata an karɓa cikin nasara",
+    "taskAssignedSuccessfully": "Aiki an sanya cikin nasara",
+    "maintenanceRequestUpdatedSuccessfully": "Bukata an karɓa cikin nasara",
+    "editMaintenanceRequestTitle": "Bukatun Kulawa da Gaba",
+    "tabs": {
+      "all": "Duka",
+      "pending": "Jiran",
+      "inprogress": "A Cikin Aiki",
+      "completed": "An ƙare",
+      "rejected": "An ƙi",
+      "escalated": "An ƙi"
+    },
+    "table": {
+      "residentName": "Sunan Mazauni",
+      "roomNumber": "Lambar Daki",
+      "requestDateTime": "Kwanan Wata da Lokacin Bukata",
+      "issueCategory": "Rukunin Matsala",
+      "shortDescription": "Gajeren Bayani",
+      "status": "Matsayi",
+      "images": "Hotuna",
+      "risk": "Hatsari",
+      "residentEmail": "Imel na Mazauni",
+      "assignedTo": "Sanya ga Ma'aikata",
+      "assignedStaff": "Ma'aikaci da aka Sanya",
+      "assignedToName": "Sunan",
+      "assignedToEmail": "Imel",
+      "assignedToPhone": "Wayar"
+    },
+    "buttons": {
+      "submit": "Aika",
+      "cancel": "Soke"
+    },
+    "inputsLabels": {
+      "residentName": "Sunan Mazauni",
+      "roomNumber": "Lambar Daki",
+      "requestDateTime": "Kwanan Wata da Lokacin Bukata",
+      "issueCategory": "Rukunin Matsala",
+      "description": "Gajeren Bayani",
+      "status": "Matsayi",
+      "assignToStaff": "Sanya ga Ma'aikata"
+    },
+    "inputsPlaceholders": {
+      "residentName": "Shigar da sunan mazauni",
+      "roomNumber": "Shigar da lambar daki",
+      "requestDateTime": "Zaɓi kwanan wata da lokacin bukata",
+      "issueCategory": "Zaɓi rukunin matsala",
+      "description": "Shigar da gajeren bayani",
+      "status": "Zaɓi matsayi",
+      "assignToStaff": "Zaɓi ma'aikata"
+    },
+    "validation": {
+      "residentNameRequired": "Sunan mazauni yana buƙata",
+      "roomNumberRequired": "Lambar daki tana buƙata",
+      "requestDateTimeRequired": "Kwanan wata da lokacin bukata suna buƙata",
+      "issueCategoryRequired": "Rukunin matsala yana buƙata",
+      "descriptionRequired": "Gajeren bayani yana buƙata",
+      "statusRequired": "Matsayi yana buƙata",
+      "assignToStaffRequired": "Da fatan za a zaɓi memba na ma'aikata don sanyawa"
+    },
+    "actions": {
+      "markCompleted": "Yi wa alama kamar An ƙare",
+      "assignToStaff": "Sanya ga Ma'aikata",
+      "acceptTask": "Karɓi Aiki",
+      "addComment": "Yi Gaba",
+      "editComment": "Gaba da Gaba"
+    },
+    "commentModal": {
+      "addComment": "Yi Gaba",
+      "editComment": "Gaba da Gaba",
+      "comment": "Gaba",
+      "commentPlaceholder": "Shigar da gaba da gaba",
+      "commentRequired": "Gaba da gaba yana buƙata",
+      "cancel": "Soke",
+      "submit": "Aika",
+      "update": "Gaba da Gaba",
+      "commentAddedSuccessfully": "Gaba da gaba an sanya cikin nasara",
+      "commentUpdatedSuccessfully": "Gaba da gaba an karɓa cikin nasara"
+    }
+  }
+}

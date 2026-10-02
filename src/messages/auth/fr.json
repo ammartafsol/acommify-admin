@@ -1,0 +1,68 @@
+{
+  "loginPage": {
+    "title": "Connexion",
+    "titleCentre": "Connexion Centre",
+    "titleNationwide": "Connexion tableau de bord national",
+    "titleAdmin": "Connexion administrateur",
+    "selectorTitle": "Quelle connexion vous faut-il ?",
+    "selectorSubtitle": "Choisissez le type de compte avec lequel vous souhaitez vous connecter.",
+    "selectCentre": "Centre",
+    "selectNationwide": "Tableau de bord national",
+    "selectAdmin": "Administrateur",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Entrez l'Email",
+    "emailError": "Veuillez entrer une adresse email valide",
+    "EmailRequired": "L'email est requis",
+    "emailInvalidChars": "L'email contient des caractères invalides",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "Entrez le Mot de passe",
+    "passwordRequired": "Le mot de passe est requis",
+    "forgotPass": "Mot de passe oublié ?",
+    "loginButton": "Se connecter",
+    "gotoBusinessOwnerLogin": "Se connecter en tant que Centre",
+    "gotoAdminLogin": "Aller à la connexion administrateur",
+    "gotoNationWideLogin": "Aller à la connexion du tableau de bord national"
+  },
+  "forgotPasswordPage": {
+    "title": "Mot de passe oublié",
+    "subtitle": "Ne vous inquiétez pas ! Cela arrive. Veuillez entrer l'adresse associée à votre compte.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Entrez l'Email",
+    "emailError": "Veuillez entrer une adresse email valide",
+    "emailRequired": "L'email est requis",
+    "emailInvalidChars": "L'email contient des caractères invalides",
+    "submitButton": "Envoyer l'Email",
+    "specialChar": "Pas de Caractères Spéciaux"
+  },
+  "verificationPage": {
+    "title": "Code de Vérification",
+    "subtitle": "Confirmer avec le Code",
+    "resendCode": "Renvoyer le Code {time, plural, =0 {} =1 {# seconde} other {# secondes}}",
+    "sendingOtp": "Envoi du Code OTP {time, plural, =0 {} =1 {# seconde} other {# secondes}}",
+    "verifyButton": "Vérifier",
+    "minLimit": "L'OTP doit contenir au moins 4 caractères",
+    "otpRequired": "L'OTP est requis"
+  },
+  "resetPasswordPage": {
+    "title": "Réinitialiser le Mot de passe",
+    "subtitle": "Entrez votre nouveau mot de passe",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "Entrez le Mot de passe",
+    "passwordRequired": "Le mot de passe est requis",
+    "minPasswordError": "Min 8 caractères",
+    "maxPasswordError": "Max 20 caractères",
+    "lowerPasswordError": "Ajoutez au moins une minuscule",
+    "upperPasswordError": "Ajoutez au moins une majuscule",
+    "specialPasswordError": "Ajoutez au moins un caractère spécial",
+    "confirmPasswordLabel": "Confirmer le Mot de passe",
+    "confirmPasswordPlaceholder": "Confirmer le Mot de passe",
+    "confirmPasswordRequired": "Le mot de passe est requis",
+    "ConfirmPasswordError": "Les mots de passe ne correspondent pas",
+    "submitButton": "Réinitialiser le Mot de passe",
+
+    "modal": {
+      "title": "Votre mot de passe a été modifié avec succès !",
+      "btnText": "Continuer"
+    }
+  }
+}

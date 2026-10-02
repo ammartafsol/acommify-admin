@@ -1,0 +1,89 @@
+{
+  "roomsHouses": {
+    "title": "Gudanar da Dakuna/Gidaje",
+    "addRoom": "Ƙara Daki/Gida",
+    "viewModalTitle": "Cikakken Daki/Gida",
+    "filterOptions": {
+      "beds": "Adadin Gadaje",
+      "occupancyStatus": "Matsayin Zama",
+      "accommodationType": "Nau'in Matsuguni",
+      "a-z": "A-Z",
+      "UnOccupied": "Ba A Zama Ba",
+      "partiallyOccupied": "Wani Bangare A Zama",
+      "apartment": "Gida",
+      "house": "Gida",
+      "room": "Daki",
+      "status": "Matsayin Zama",
+      "occupied": "A Zama",
+      "filters": "Masu Tace",
+      "sortBy": "Tsara ta...",
+      "filterBy": "TACE TA",
+      "clear": "Share Duka",
+      "apply": "Aiwatar"
+    },
+    "table": {
+      "houseRoomNumber": "Lambar Gida/Daki",
+      "numberOfBeds": "Adadin Gadaje",
+      "accommodationType": "Nau'in Matsuguni",
+      "occupancyStatus": "Matsayin Zama",
+      "status": "Matsayi",
+      "userType": "Nau'in Mai Amfani",
+      "createdAt": "An Ƙirƙira",
+      "bedsOccupied": "Gadaje da Ake Zama"
+    },
+    "tabs": {
+      "resident": "Mazauni",
+      "visitor": "Baƙo"
+    },
+    "actions": {
+      "edit": "Gyara",
+      "delete": "Share",
+      "view": "Duba",
+      "activate": "Kunna",
+      "deactivate": "Kashe"
+    },
+    "modal": {
+      "houseRoomNumber": "Lambar Gida/Daki",
+      "numberOfBeds": "Adadin Gadaje",
+      "occupancyStatus": "Matsayin Zama",
+      "accommodationType": "Nau'in Matsuguni",
+      "accommodationTypePlaceholder": "Zaɓi nau'in matsuguni",
+      "houseRoomNumberPlaceholder": "Shigar da lambar gida/daki",
+      "userType": "Nau'in Mai Amfani",
+      "userTypePlaceholder": "Zaɓi nau'in mai amfani",
+      "occupancyStatusPlaceholder": "Zaɓi matsayin zama",
+      "numberOfBedsPlaceholder": "Shigar da adadin gadaje",
+      "cancel": "Soke",
+      "create": "Ƙirƙiri",
+      "edit": "Gyara",
+      "editRoomHouse": "Gyara Daki/Gida",
+      "createRoomHouse": "Ƙirƙiri Daki/Gida",
+      "updatedSuccessfully": "Matsuguni an sabunta cikin nasara",
+      "RoomsHousesSubmitted": "Dakuna da Gidaje an aika cikin nasara",
+      "createdSuccessfully": "Daki/Gida an ƙirƙira cikin nasara",
+      "houseTypeLabels": {
+        "house": "Gida",
+        "room": "Daki",
+        "apartment": "Gida"
+      },
+      "userTypeLabels": {
+        "resident": "Mazauni",
+        "visitor": "Baƙo"
+      },
+      "modalFormik": {
+        "HouseRoomNumberRequired": "Lambar gida/daki tana buƙata",
+        "2Characters": "Dole ya kasance aƙalla haruffa 2",
+        "BedsRequired": "Adadin gadaje yana buƙata",
+        "ExceedBeds": "Ba zai iya wuce gadaje 10 ba",
+        "TypeRequired": "Nau'i yana buƙata",
+        "atLeastBeds": "Dole ya kasance aƙalla gado 1",
+        "UserTypeRequired": "Nau'in mai amfani yana buƙata"
+      }
+    },
+    "toasts": {
+      "activateSuccess": "Matsuguni an kunna cikin nasara",
+      "deactivateSuccess": "Matsuguni an kashe cikin nasara",
+      "deletedRoomHouse": "Daki/Gida an share cikin nasara" 
+    }
+  }
+}

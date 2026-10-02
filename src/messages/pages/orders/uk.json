@@ -1,0 +1,25 @@
+{
+  "ordersPage": {
+    "title": "Управління замовленнями",
+    "exportDateRangeTitle": "Експорт даних",
+    "searchPlaceholder": "Пошук замовлень...",
+    "exportButtonLabel": "Експорт замовлень",
+    "exportSuccessToast": "Замовлення успішно експортовано",
+    "exportErrorToast": "Не вдалося експортувати замовлення. Спробуйте ще раз.",
+    "table": {
+      "orderId": "ID замовлення",
+      "customer": "Ім'я клієнта",
+      "date": "Дата замовлення",
+      "status": "Статус замовлення",
+      "total": "Загальні бали",
+      "actions": ""
+    },
+    "ordersTabs": {
+      "all": "Усі",
+      "pending": "Очікує",
+      "cancelled": "Скасовано",
+      "completed": "Завершено"
+    },
+    "cancelOrderToast": "Замовлення успішно скасовано"
+  }
+}

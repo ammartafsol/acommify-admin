@@ -1,0 +1,68 @@
+{
+  "loginPage": {
+    "title": "ننوتل",
+    "titleCentre": "د مرکز ننوتل",
+    "titleNationwide": "د ملي ډشبورډ ننوتل",
+    "titleAdmin": "د مدیر ننوتل",
+    "selectorTitle": "کوم ننوتل ته اړتیا لرئ؟",
+    "selectorSubtitle": "هغه حساب ډول وټاکئ چې غواړئ ورسره ننوځئ.",
+    "selectCentre": "مرکز",
+    "selectNationwide": "ملي ډشبورډ",
+    "selectAdmin": "مدیر",
+    "emailLabel": "بریښنالیک",
+    "emailPlaceholder": "بریښنالیک ولیکئ",
+    "emailError": "مهرباني وکړئ د بریښنالیک سمه پته ولیکئ",
+    "EmailRequired": "بریښنالیک اړین دی",
+    "emailInvalidChars": "بریښنالیک ناسم حروف لري",
+    "passwordLabel": "پاسورډ",
+    "passwordPlaceholder": "پاسورډ ولیکئ",
+    "passwordRequired": "پاسورډ اړین دی",
+    "forgotPass": "پاسورډ هیر شوی؟",
+    "loginButton": "ننوتل",
+    "gotoBusinessOwnerLogin": "د مرکز په توګه ننوتل",
+    "gotoAdminLogin": "د مدیر ننوتل ته لاړ شئ",
+    "gotoNationWideLogin": "د ملي ډشبورډ ننوتل ته لاړ شئ"
+  },
+  "forgotPasswordPage": {
+    "title": "پاسورډ هیر شوی",
+    "subtitle": "اندیښنه مه کوئ! دا پیښیږي. مهرباني وکړئ د خپل حساب سره تړلي پته ولیکئ.",
+    "emailLabel": "بریښنالیک",
+    "emailPlaceholder": "بریښنالیک ولیکئ",
+    "emailError": "مهرباني وکړئ د بریښنالیک سمه پته ولیکئ",
+    "emailRequired": "بریښنالیک اړین دی",
+    "emailInvalidChars": "بریښنالیک ناسم حروف لري",
+    "submitButton": "بریښنالیک واستوئ",
+    "specialChar": "ځانګړي حروف نشته"
+  },
+  "verificationPage": {
+    "title": "د تایید کوډ",
+    "subtitle": "د کوډ سره تایید کړئ",
+    "resendCode": "کوډ بیا واستوئ {time, plural, =0 {} =1 {# ثانیه} other {# ثانیې}}",
+    "sendingOtp": "OTP کوډ استوي {time, plural, =0 {} =1 {# ثانیه} other {# ثانیې}}",
+    "verifyButton": "تایید کړئ",
+    "minLimit": "OTP باید لږترلږه 4 حروف ولري",
+    "otpRequired": "OTP اړین دی"
+  },
+  "resetPasswordPage": {
+    "title": "پاسورډ بیا تنظیم کړئ",
+    "subtitle": "نوی پاسورډ ولیکئ",
+    "passwordLabel": "پاسورډ",
+    "passwordPlaceholder": "پاسورډ ولیکئ",
+    "passwordRequired": "پاسورډ اړین دی",
+    "minPasswordError": "لږترلږه 8 حروف",
+    "maxPasswordError": "ډیر 20 حروف",
+    "lowerPasswordError": "لږترلږه یو کوچنی حرف اضافه کړئ",
+    "upperPasswordError": "لږترلږه یو لوی حرف اضافه کړئ",
+    "specialPasswordError": "لږترلږه یو ځانګړی حرف اضافه کړئ",
+    "confirmPasswordLabel": "پاسورډ تایید کړئ",
+    "confirmPasswordPlaceholder": "پاسورډ تایید کړئ",
+    "confirmPasswordRequired": "پاسورډ اړین دی",
+    "ConfirmPasswordError": "پاسورډونه سمون نلري",
+    "submitButton": "پاسورډ بیا تنظیم کړئ",
+
+    "modal": {
+      "title": "ستاسو پاسورډ په بریالیتوب سره بدل شو!",
+      "btnText": "دوام ورکړئ"
+    }
+  }
+}

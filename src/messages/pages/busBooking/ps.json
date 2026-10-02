@@ -1,0 +1,49 @@
+{
+  "busBookingDetail": {
+    "busBooking": {
+      "title": "د بس حجز",
+      "availableBusesTitle": "د بسونو شتون",
+      "availableBusesTabs": {
+        "morning": "سهار",
+        "afternoon": "ماسپښین",
+        "evening": "ماښام"
+      },
+      "filterOptions": {
+        "all": "ټول",
+        "available": "شتون لري",
+        "booked": "حجز شوی",
+        "selected": "غوره شوی"
+      },
+      "dropdownOptions": {
+        "greenBus": "شین بس",
+        "blueBus": "آبی بس",
+        "redBus": "سور بس"
+      }
+    },
+    "busDetailCard": {
+      "available": "شتون لري",
+      "booked": "حجز شوی",
+      "duration": "موده",
+      "date": "نیټه",
+      "departure": "وتل",
+      "seatsAvailable": "د کرسیو شتون"
+    },
+    "table": {
+      "seatNumber": "د کرسي شمیره",
+      "residentName": "د استوګن نوم",
+      "houseNumber": "د کور شمیره",
+      "specialRequests": "ځانګړي غوښتنې"
+    },
+    "modal": {
+      "validations": {
+        "residentName": "د استوګن نوم اړین دی",
+        "invalidSeatNumber": "د کرسي ناسم شمیره",
+        "invalidHouseNumber": "د کور ناسم شمیره"
+      },
+      "buttons": {
+        "saveChanges": "بدلونونه وساتئ",
+        "cancel": "لغوه کول"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "businessAdminPage": {
+    "title": "Centros",
+    "addButton": "Adicionar",
+    "table": {
+      "centreName": "Nome do Centro",
+      "country": "País",
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefone",
+      "statusTitle": "Status"
+    },
+    "actions": {
+      "view": "Ver",
+      "edit": "Editar",
+      "delete": "Excluir"
+    },
+    "modal": {
+      "detailTitle": "Detalhes dos Centros",
+      "deleteMessage": "Tem certeza de que deseja excluir este item?",
+      "addTitle": "Adicionar",
+      "editTitle": "Editar",
+      "addStaff": "Adicionar Centro",
+      "editStaff": "Editar Centro",
+      "cancel": "Cancelar",
+      "confirm": "Confirmar",
+      "loading": "Carregando...",
+      "translating": "Traduzindo...",
+      "autoFill": "Preenchimento automático",
+      "CreatedSuccessfully": "Criado com sucesso",
+      "UpdatedSuccessfully": "Atualizado com sucesso",
+      "PleaseFill": "Por favor, preencha",
+      "translationSuccessMessage": "Tradução concluída com sucesso"
+    },
+    "fields": {
+      "centreName": "Nome do Centro",
+      "centreNamePlaceholder": "Digite o nome do centro",
+      "name": "Nome Completo",
+      "namePlaceholder": "Digite o nome completo",
+      "email": "Endereço de Email",
+      "emailPlaceholder": "example@company.com",
+      "country": "País",
+      "countryPlaceholder": "Selecione o país",
+      "region": "Região",
+      "regionPlaceholder": "Selecionar região",
+      "phone": "Número de Telefone",
+      "phonePlaceholder": "Digite o número de telefone"
+    },
+    "formikSchema": {
+      "centreNameRequired": "O nome do centro é obrigatório",
+      "countryRequired": "O país é obrigatório",
+      "regionRequired": "A região é obrigatória",
+      "fullNameRequired": "O nome completo é obrigatório",
+      "emailAddress": "Por favor, insira um endereço de email válido",
+      "emailRequired": "O email é obrigatório",
+      "callingRequired": "O código de discagem é obrigatório",
+      "phoneNumberLimit": "O número de telefone deve ter 10-15 dígitos, opcionalmente começando com +",
+      "phoneNumberRequired": "O número de telefone é obrigatório"
+    },
+    "toast": {
+      "created": "Criado com sucesso",
+      "updated": "Atualizado com sucesso",
+      "deleted": "Excluído com sucesso",
+      "pleaseFill": "Por favor, preencha"
+    }
+  }
+}

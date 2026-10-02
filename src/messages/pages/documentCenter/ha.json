@@ -1,0 +1,46 @@
+{
+  "documentCenterPage": {
+    "title": "Cibiyar Takardu",
+    "addDocument": "Ƙara Takarda",
+    "searchPlaceholder": "Nemo takardu...",
+    "table": {
+      "documentName": "Suna",
+      "documentType": "Nau'i",
+      "document": "Takarda",
+      "status": "Matsayi",
+      "createdAt": "An Ƙirƙira",
+      "viewDocument": "Duba Takarda",
+      "forms": "Fom",
+      "guide-lines": "Jagororin",
+      "other-documents": "Sauran Takardu"
+    },
+    "actions": {
+      "edit": "Gyara"
+    },
+    "modal": {
+      "addDocument": "Ƙara Takarda",
+      "editDocument": "Gyara Takarda",
+      "addDocumentSubheading": "Ƙara sabon takarda zuwa cibiyar",
+      "editDocumentSubheading": "Sabunta bayanin takarda",
+      "documentName": "Sunan Takarda",
+      "documentNamePlaceholder": "Shigar da sunan takarda",
+      "documentType": "Nau'in Takarda",
+      "documentTypePlaceholder": "Zaɓi nau'in takarda",
+      "document": "Fayil na Takarda",
+      "formsOption": "Fom",
+      "guidelinesOption": "Jagororin",
+      "othersOption": "Sauran Takardu",
+      "cancel": "Soke",
+      "create": "Ƙirƙiri",
+      "update": "Sabunta",
+      "autofill": "Cike kansa",
+      "createdSuccessfully": "Takarda an ƙirƙira cikin nasara!",
+      "updatedSuccessfully": "Takarda an sabunta cikin nasara!",
+      "fillRequiredFields": "Da fatan za a cika dukkan filayen da ake buƙata kafin fassara",
+      "translationSuccessMessage": "Fassarar ta yi nasara!",
+      "nameRequired": "Suna",
+      "documentTypeRequired": "Nau'in takarda yana buƙata",
+      "documentRequired": "Takarda tana buƙata"
+    }
+  }
+}

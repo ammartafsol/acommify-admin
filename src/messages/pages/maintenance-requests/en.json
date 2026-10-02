@@ -1,0 +1,95 @@
+{
+  "maintenanceRequestsPage": {
+    "title": "Maintenance Requests",
+    "modalTitle": "Maintenance Request Details",
+    "assignTaskTitle": "Assign Task to Staff",
+    "requestCompletedSuccessfully": "Request status completed successfully",
+    "requestRejectedSuccessfully": "Request rejected successfully",
+    "requestAcceptedSuccessfully": "Request accepted successfully",
+    "taskAssignedSuccessfully": "Task assigned successfully",
+    "maintenanceRequestUpdatedSuccessfully": "Maintenance request updated successfully",
+    "editMaintenanceRequestTitle": "Edit Maintenance Request",
+    "tabs": {
+      "all": "All",
+      "pending": "Pending",
+      "inprogress": "In Progress",
+      "completed": "Completed",
+      "rejected": "Rejected",
+      "escalated": "Escalated"
+    },
+    "table": {
+      "residentName": "Resident Name",
+      "roomNumber": "Room Number",
+      "requestDateTime": "Request Date & Time",
+      "issueCategory": "Issue Category",
+      "shortDescription": "Short Description",
+      "status": "Status",
+      "images": "Images",
+      "risk": "Risk",
+      "residentEmail": "Resident Email",
+      "assignedTo": "Assigned To",
+      "assignedStaff": "Assigned Staff",
+      "assignedToName": "Name",
+      "assignedToEmail": "Email",
+      "assignedToPhone": "Phone"
+    },
+
+    "buttons": {
+      "submit": "Submit",
+      "cancel": "Cancel"
+    },
+
+    "inputsLabels": {
+      "residentName": "Resident Name",
+      "roomNumber": "Room Number",
+      "requestDateTime": "Request Date & Time",
+      "issueCategory": "Issue Category",
+      "description": "Short Description",
+      "status": "Status",
+      "assignToStaff": "Assign To Staff"
+    },
+
+    "inputsPlaceholders": {
+      "residentName": "Enter Resident Name",
+      "roomNumber": "Enter Room Number",
+      "requestDateTime": "Select Request Date & Time",
+      "issueCategory": "Select Issue Category",
+      "description": "Enter Short Description",
+      "status": "Select Status",
+      "assignToStaff": "Select Staff"
+    },
+
+    "validation": {
+      "residentNameRequired": "Resident Name is required",
+      "roomNumberRequired": "Room Number is required",
+      "requestDateTimeRequired": "Request Date & Time is required",
+      "issueCategoryRequired": "Issue Category is required",
+      "descriptionRequired": "Short Description is required",
+      "statusRequired": "Status is required",
+      "assignToStaffRequired": "Please select a staff member to assign"
+    },
+
+    "actions": {
+      "markCompleted": "Mark as Completed",
+      "assignToStaff": "Assign to Staff",
+      "acceptTask": "Accept Task",
+      "addComment": "Add Comment",
+      "editComment": "Edit Comment",
+      "edit": "Edit",
+      "view": "View",
+      "rejectRequest": "Reject Request"
+    },
+    "commentModal": {
+      "addComment": "Add Comment",
+      "editComment": "Edit Comment",
+      "comment": "Comment",
+      "commentPlaceholder": "Add your comment here",
+      "commentRequired": "Comment is required",
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "update": "Update",
+      "commentAddedSuccessfully": "Comment added successfully",
+      "commentUpdatedSuccessfully": "Comment updated successfully"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "roomsHouses": {
+    "title": "Room / House Management",
+    "addRoom": "Add Room/House",
+    "viewModalTitle": "Room/House Details",
+    "filterOptions": {
+      "beds": " Number of beds",
+      "occupancyStatus": "Occupancy Status",
+      "accommodationType": "Accommodation type",
+      "a-z": "A-Z",
+      "UnOccupied": "Un Occupied",
+      "partiallyOccupied": "Partially Occupied",
+      "apartment": "Apartment",
+      "house": "House",
+      "room": "Room",
+      "status": "Occupancy Status",
+      "occupied": "Occupied",
+      "filters": "Filters",
+      "sortBy": "Sort By...",
+      "filterBy": "FILTER BY",
+      "clear": "Clear All",
+      "apply": "Apply"
+    },
+    "table": {
+      "houseRoomNumber": "House/Room Number",
+      "numberOfBeds": "Number of Beds",
+      "accommodationType": "Accommodation Type",
+      "occupancyStatus": "Occupancy Status",
+      "status": "Status",
+      "userType": "User Type",
+      "createdAt": "Created At",
+      "bedsOccupied": "Beds Occupied"
+    },
+    "tabs": {
+      "resident": "Resident",
+      "visitor": "Visitor"
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "view": "View",
+      "activate": "Activate",
+      "deactivate": "Deactivate"
+    },
+
+    "modal": {
+      "houseRoomNumber": "House / Room Number",
+      "numberOfBeds": "Number of Beds",
+      "occupancyStatus": "Occupancy Status",
+      "accommodationType": "Accommodation Type",
+      "accommodationTypePlaceholder": "Select accommodation type",
+      "houseRoomNumberPlaceholder": "Enter house/room number",
+      "userType": "User Type",
+      "userTypePlaceholder": "Select user type",
+      "occupancyStatusPlaceholder": "Select occupancy status",
+      "numberOfBedsPlaceholder": "Enter number of beds",
+      "cancel": "Cancel",
+      "create": "Create",
+      "edit": "Edit",
+      "editRoomHouse": "Edit Room / House",
+      "createRoomHouse": "Create Room / House",
+      "updatedSuccessfully": "Accommodation updated successfully",
+      "RoomsHousesSubmitted": "Rooms & Houses Submitted successfully",
+      "createdSuccessfully": "Room / House created successfully",
+      "houseTypeLabels": {
+        "house": "House",
+        "room": "Room",
+        "apartment": "Apartment"
+      },
+      "userTypeLabels": {
+        "resident": "Resident",
+        "visitor": "Visitor"
+      },
+      "modalFormik": {
+        "HouseRoomNumberRequired": "House/Room number is required",
+        "2Characters": "Must be at least 2 characters",
+        "BedsRequired": "Number of beds is required",
+        "ExceedBeds": "Cannot exceed 10 beds",
+        "TypeRequired": "Type is required",
+        "atLeastBeds": "Must be at least 1 bed",
+        "UserTypeRequired": "User type is required"
+      }
+    },
+    "toasts": {
+      "activateSuccess": "Accommodation activated successfully",
+      "deactivateSuccess": "Accommodation deactivated successfully",
+      "deletedRoomHouse": "Room/House deleted successfully"
+    }
+  }
+}

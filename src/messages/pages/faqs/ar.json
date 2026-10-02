@@ -1,0 +1,44 @@
+{
+  "faqPage": {
+    "title": "الأسئلة الشائعة",
+    "questionTitle": "السؤال",
+    "viewModalTitle": "تفاصيل السؤال الشائع",
+    "answerTitle": "الإجابة",
+    "statusTitle": "الحالة",
+    "actionsTitle": "الإجراءات",
+    "addButton": "إضافة سؤال شائع",
+    "editButton": "تعديل السؤال الشائع",
+    "deleteButton": "حذف السؤال الشائع",
+    "areYouSureMessage": "هل أنت متأكد من أنك تريد حذف هذا السؤال الشائع؟",
+    "areYouSure": "هل أنت متأكد؟",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "modal": {
+      "addTitle": "إضافة سؤال شائع",
+      "editTitle": "تعديل السؤال الشائع",
+      "questionLabel": "السؤال",
+      "questionPlaceholder": "أدخل السؤال",
+      "answerLabel": "الإجابة",
+      "answerPlaceholder": "أدخل الإجابة",
+      "inputRequired": {
+        "question": "السؤال مطلوب",
+        "answer": "الإجابة مطلوبة"
+      },
+      "statusLabel": "الحالة",
+      "statusPlaceholder": "اختر الحالة",
+      "activeOption": "نشط",
+      "inactiveOption": "غير نشط",
+      "saveButton": "حفظ",
+      "updateButton": "تحديث",
+      "cancelButton": "إلغاء",
+      "saving": "جاري الحفظ...",
+      "updating": "جاري التحديث...",
+      "translating": "جاري الترجمة...",
+      "autoFill": "ملء تلقائي",
+      "CreatedSuccessfully": "تم إنشاء السؤال الشائع بنجاح",
+      "UpdatedSuccessfully": "تم تحديث السؤال الشائع بنجاح",
+      "translationSuccessMessage": "تم الملء التلقائي بنجاح",
+      "PleaseFill": "يرجى ملء"
+    }
+  }
+}

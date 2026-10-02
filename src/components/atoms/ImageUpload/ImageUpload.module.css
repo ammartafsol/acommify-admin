@@ -1,0 +1,48 @@
+.mainDiv {
+  display: flex;
+  width: 66px;
+  height: 66px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--blue-1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.labelText {
+  color: var(--primary);
+  font-family: var(--font-segoe) !important;
+  font-size: var(--fs14);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.error {
+  color: var(--error);
+}
+
+.upload,
+.btnDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnDiv {
+  position: absolute;
+}
+
+.btnDiv > * {
+  transition: all 0.3s ease-in-out;
+}
+
+.btnDiv > * {
+  opacity: 0.1;
+}
+
+.btnDiv:hover > * {
+  opacity: 1;
+}

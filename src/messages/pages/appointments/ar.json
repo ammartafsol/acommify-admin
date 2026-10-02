@@ -1,0 +1,46 @@
+{
+  "appointments": {
+    "title": "المواعيد",
+    "searchPlaceholder": "بحث",
+    "tabs": {
+      "all": "الكل",
+      "completed": "مكتمل",
+      "cancelled": "ملغي",
+      "pending": "في الانتظار",
+      "rejected": "مرفوض"
+    },
+    "table": {
+      "residentName": "اسم المقيم",
+      "roomNumber": "رقم الغرفة",
+      "dateAndTime": "التاريخ والوقت",
+      "appointmentType": "نوع الموعد",
+      "purpose": "الغرض",
+      "status": "الحالة"
+    },  
+    "menuItems": {
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "modal": {
+      "title": "نافذة تفاصيل الموعد",
+      "name": "اسم المقيم",
+      "roomNumber": "رقم الغرفة",
+      "dateTime": "التاريخ والوقت",
+      "appointmentType": "نوع الموعد",
+      "purpose": "الغرض",
+      "status": "الحالة",
+      "notes": "ملاحظات إضافية"
+    },
+    "actions": {
+      "approve": "موافقة",
+      "cancel": "إلغاء",
+      "view": "عرض"
+    },
+    "areYouSureModal": {
+      "approve": "موافقة",
+      "reject": "رفض",
+      "approveBookingSure": "هل أنت متأكد من الموافقة على الحجز؟",
+      "rejectBookingSure": "هل أنت متأكد من رفض الحجز؟"
+    }
+  }
+}

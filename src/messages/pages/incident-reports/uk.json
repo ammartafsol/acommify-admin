@@ -1,0 +1,90 @@
+{
+  "incidentReportsPage": {
+    "title": "Звіти про інциденти",
+    "addNewReport": "Додати новий звіт",
+    "noDataText": "Звіти про інциденти не знайдено",
+    "reportCreatedSuccessfully": "Звіт про інцидент створено успішно",
+    "status": {
+      "all": "Усі",
+      "resolved": "Вирішено",
+      "underReview": "На розгляді",
+      "escalated": "Ескаловано"
+    },
+    "severityOptions": {
+      "low": "Низький",
+      "medium": "Середній",
+      "high": "Високий"
+    },
+    "tabs": {
+      "all": "Усі",
+      "resolved": "Вирішено",
+      "underReview": "На розгляді",
+      "escalated": "Ескаловано"
+    },
+    "actions": {
+      "edit": "Редагувати"
+    },
+    "table": {
+      "incidentId": "ID інциденту",
+      "title": "Заголовок",
+      "description": "Опис",
+      "residentInvolved": "Залучений резидент",
+      "reportedBy": "Повідомив",
+      "location": "Місце",
+      "severity": "Серйозність",
+      "dateTime": "Дата та час",
+      "status": "Статус",
+      "completedDate": "Дата завершення"
+    },
+    "inputRequired": {
+      "title": "Заголовок є обов'язковим",
+      "description": "Опис є обов'язковим",
+      "location": "Місце є обов'язковим",
+      "residentInvolved": "Залучені резиденти є обов'язковими",
+      "reportedBy": "Повідомив є обов'язковим",
+      "severity": "Серйозність є обов'язковою",
+      "dateTime": "Дата та час є обов'язковими",
+      "status": "Статус є обов'язковим",
+      "completedDate": "Дата завершення є обов'язковою"
+    },
+    "modal": {
+      "title": "Додати звіт про інцидент",
+      "editTitle": "Редагувати звіт про інцидент",
+      "autoFill": "Автозаповнення",
+      "translating": "Перекладається...",
+      "detailTitle": "Деталі інциденту",
+      "pleaseFill": "Будь ласка, заповніть",
+      "modalBtnsLabel": {
+        "cancel": "Скасувати",
+        "submit": "Надіслати"
+      },
+      "inputLabels": {
+        "title": "Заголовок",
+        "description": "Опис",
+        "residentInvolved": "Залучений резидент",
+        "reportedBy": "Повідомив",
+        "location": "Місце",
+        "severity": "Серйозність",
+        "dateTime": "Дата та час",
+        "status": "Статус",
+        "completedDate": "Дата завершення"
+      },
+      "inputPlaceholders": {
+        "title": "Введіть заголовок звіту",
+        "description": "Введіть опис звіту",
+        "residentInvolved": "Введіть залученого резидента",
+        "reportedBy": "Виберіть повідомив",
+        "location": "Введіть місце",
+        "severity": "Виберіть серйозність",
+        "dateTime": "Введіть дату та час",
+        "status": "Виберіть статус",
+        "completedDate": "Введіть дату завершення"
+      },
+      "toasts": {
+        "reportCreatedSuccessfully": "Звіт створено успішно",
+        "errorUpdatedReport": "Звіт оновлено успішно",
+        "autoFilledSuccessfully": "Автозаповнення успішне"
+      }
+    }
+  }
+}

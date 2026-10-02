@@ -1,0 +1,78 @@
+{
+  "staffsPage": {
+    "title": "إدارة الموظفين",
+    "addMember": "إضافة موظف",
+    "table": {
+      "staffID": "معرف الموظف",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "status": "الحالة"
+    },
+    "actions": {
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "toast": {
+      "staffStatus": "تم تحديث حالة الموظف بنجاح",
+      "staffAdded": "تم إضافة الموظف بنجاح",
+      "staffUpdated": "تم تحديث الموظف بنجاح",
+      "staffDeleted": "تم حذف الموظف بنجاح",
+      "fill": "يرجى ملء الحقول باللغات الأخرى أيضاً",
+      "translationSuccessMessage": "تمت الترجمة بنجاح",
+      "pleaseFill": "يرجى ملء"
+    },
+    "modal": {
+      "title": "تفاصيل الموظف",
+      "staffID": "معرف الموظف",
+      "name": "الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "status": "الحالة",
+      "addStaff": "إضافة موظف جديد",
+      "editStaff": "تعديل الموظف",
+      "translating": "جاري الترجمة...",
+      "autoFill": "ملء تلقائي",
+      "cancel": "إلغاء",
+      "loading": "جاري التحميل...",
+      "confirm": "تأكيد",
+      "morning": "صباحي",
+      "night": "ليلي",
+      "shiftTime": "وقت الوردية",
+      "position": "المنصب",
+      "deleteMessage": "هل أنت متأكد أنك تريد حذف هذا الموظف؟"
+    },
+    "fields": {
+      "namePlaceholder": "أدخل الاسم الكامل",
+      "name": "الاسم الكامل",
+      "emailPlaceholder": "example@company.com",
+      "email": "عنوان البريد الإلكتروني",
+      "phonePlaceholder": "أدخل رقم الهاتف",
+      "phone": "رقم الهاتف",
+      "positionPlaceholder": "اختر المنصب",
+      "position": "المنصب",
+      "shiftStartTime": "وقت بداية الوردية",
+      "shiftEndTime": "وقت نهاية الوردية",
+      "shiftStartTimePlaceholder": "اختر وقت بداية الوردية",
+      "shiftEndTimePlaceholder": "اختر وقت نهاية الوردية",
+      "permissionsLabel": "الصلاحيات",
+      "permissionsPlaceholder": "اختر الصلاحيات",
+      "selected": "محدد",
+      "selectAll": "اختيار الكل",
+      "deselectAll": "إلغاء اختيار الكل"
+    },
+    "formikSchema": {
+      "fullNameRequired": "الاسم الكامل مطلوب",
+      "emailAddress": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "callingRequired": "رمز الاتصال مطلوب",
+      "phoneNumberLimit": "رقم الهاتف يجب أن يكون 10-15 رقماً، ويمكن أن يبدأ بـ +",
+      "phoneNumberRequired": "رقم الهاتف مطلوب",
+      "permissionsMin": "يجب اختيار صلاحية واحدة على الأقل",
+      "permissionsRequired": "الصلاحيات مطلوبة",
+      "shiftStartRequired": "وقت بداية الوردية مطلوب",
+      "shiftEndRequired": "وقت نهاية الوردية مطلوب",
+      "positionRequired": "المنصب مطلوب"
+    }
+  }
+}

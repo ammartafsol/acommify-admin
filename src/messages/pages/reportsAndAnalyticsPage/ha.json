@@ -1,0 +1,28 @@
+{
+  "reportsAnalyticsPage": {
+    "title": "Rahotanni da Nazari",
+    "ethnicityTitle": "Bayanin Kabila",
+    "demographicBreakdownTitle": "Rarraba Al'umma",
+    "children": "Yara",
+    "adults": "Manya",
+    "male": "Namiji",
+    "female": "Mace",
+    "other": "Wani",
+    "noData": "Babu bayanai da ake samu",
+    "maintenanceRequestTitle": "Bukatar Kulawa",
+    "incidentReportsTitle": "Rahoton Abubuwan da Suka Faru",
+    "totalVisitorTitle": "Jimlar Baƙi",
+    "downloadReport": "Zazzage Rahoto",
+    "statsCards": {
+      "onSite": "Mazauna a wurin",
+      "offSite": "Mazauna a waje",
+      "pendingRequests": "Bukatun da ke Jiran",
+      "maintenanceRequests": "Bukatun Kulawa Pendientes",
+      "bedCount": "Jimlar Gadaje",
+      "upcomingAppointments": "Lokutan da Zai Zo",
+      "availableBeds": "Gadaje da Ake Samu",
+      "totalVisitors": "Jimlar Baƙi",
+      "totalStaffCount": "Madaƙa a Wannan"
+    }
+  }
+}

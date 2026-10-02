@@ -1,0 +1,25 @@
+{
+  "changePasswordPage": {
+    "title": "Cambiar Contraseña",
+    "currentPassword": "Contraseña Actual",
+    "newPassword": "Nueva Contraseña",
+    "confirmNewPassword": "Confirmar Nueva Contraseña",
+    "updatePasswordButton": "Actualizar Contraseña",
+    "successMessage": "La contraseña ha sido actualizada exitosamente.",
+    "validation": {
+      "currentPasswordRequired": "La contraseña actual es requerida.",
+      "newPasswordRequired": "La nueva contraseña es requerida.",
+      "confirmNewPasswordRequired": "Por favor, confirme su nueva contraseña.",
+      "passwordsMustMatch": "La nueva contraseña y la confirmación deben coincidir.",
+      "passwordMinLength": "La contraseña debe tener al menos 8 caracteres.",
+      "passwordMaxLength": "La contraseña no debe exceder 20 caracteres.",
+      "passwordLowercase": "La contraseña debe contener al menos una letra minúscula.",
+      "passwordUppercase": "La contraseña debe contener al menos una letra mayúscula.",
+      "passwordNumber": "La contraseña debe contener al menos un número.",
+        "passwordSpecialChar": "La contraseña debe contener al menos un carácter especial.",
+        "currentPasswordInvalid": "La contraseña actual es inválida.",
+        "newPasswordInvalid": "La nueva contraseña es inválida.",
+        "confirmNewPasswordInvalid": "La confirmación de la nueva contraseña es inválida."
+    }
+  }
+}

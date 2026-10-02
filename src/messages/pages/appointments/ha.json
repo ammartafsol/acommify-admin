@@ -1,0 +1,46 @@
+{
+  "appointments": {
+    "title": "Lokutan",
+    "searchPlaceholder": "Nemo",
+    "tabs": {
+      "all": "Duka",
+      "completed": "An ƙare",
+      "cancelled": "An soke",
+      "pending": "An yi",
+      "rejected": "An ƙi"
+    },
+    "table": {
+      "residentName": "Sunan Mazauni",
+      "roomNumber": "Lambar Daki",
+      "dateAndTime": "Kwanan Wata da Lokaci",
+      "appointmentType": "Nau'in Lokaci",
+      "purpose": "Manufa",
+      "status": "Matsayi"
+    },
+    "menuItems": {
+      "edit": "Gyara",
+      "delete": "Share"
+    },
+    "modal": {
+      "title": "Modal na Cikakken Lokaci",
+      "name": "Sunan Mazauni",
+      "roomNumber": "Lambar Daki",
+      "dateTime": "Kwanan Wata da Lokaci",
+      "appointmentType": "Nau'in Lokaci",
+      "purpose": "Manufa",
+      "status": "Matsayi",
+      "notes": "Ƙarin Bayanin Kula"
+    },
+    "actions": {
+      "approve": "Ami",
+      "cancel": "Soke",
+      "view": "Duba"
+    },
+    "areYouSureModal": {
+      "approve": "Ami",
+      "reject": "Ƙi",
+      "approveBookingSure": "Ka tabbata cewa kana son amincewa da ajiya?",
+      "rejectBookingSure": "Ka tabbata cewa kana son ƙin ajiya?"
+    }
+  }
+}

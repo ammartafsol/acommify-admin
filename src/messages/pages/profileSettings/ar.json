@@ -1,0 +1,15 @@
+{
+  "profileSettingsPage": {
+    "title": "إعدادات الملف الشخصي",
+    "fields": {
+      "name": "الاسم الكامل",
+      "namePlaceholder": "أدخل الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "أدخل البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "phonePlaceholder": "أدخل رقم الهاتف",
+      "address": "العنوان",
+      "addressPlaceholder": "أدخل العنوان"
+    }
+  }
+}

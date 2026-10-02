@@ -1,0 +1,44 @@
+{
+  "faqPage": {
+    "title": "FAQ's",
+    "questionTitle": "Question",
+    "viewModalTitle": "FAQ Details",
+    "answerTitle": "Answer",
+    "statusTitle": "Status",
+    "actionsTitle": "Actions",
+    "addButton": "Add FAQ",
+    "editButton": "Edit FAQ",
+    "deleteButton": "Delete FAQ",
+    "areYouSureMessage": "Are you sure you want to delete this FAQ?",
+    "areYouSure": "Are you sure?",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "modal": {
+      "addTitle": "Add FAQ",
+      "editTitle": "Edit FAQ",
+      "questionLabel": "Question",
+      "questionPlaceholder": "Enter question",
+      "answerLabel": "Answer",
+      "answerPlaceholder": "Enter answer",
+      "inputRequired": {
+        "question": "Question is required",
+        "answer": "Answer is required"
+      },
+      "statusLabel": "Status",
+      "statusPlaceholder": "Select status",
+      "activeOption": "Active",
+      "inactiveOption": "Inactive",
+      "saveButton": "Save",
+      "updateButton": "Update",
+      "cancelButton": "Cancel",
+      "saving": "Saving...",
+      "updating": "Updating...",
+      "translating": "Translating...",
+      "autoFill": "Auto Fill",
+      "CreatedSuccessfully": "FAQ created successfully",
+      "UpdatedSuccessfully": "FAQ updated successfully",
+      "translationSuccessMessage": "Auto filled successfully",
+      "PleaseFill": "Please fill"
+    }
+  }
+}

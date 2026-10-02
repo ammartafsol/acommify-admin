@@ -1,0 +1,32 @@
+{
+  "orderDetailsPage": {
+    "title": "Détails de la Commande",
+    "orderDetail": {
+      "orderId": "Commande",
+      "status": "Statut de la Commande",
+      "orderDate": "Date de la Commande",
+      "totalPoints": "Total des Points",
+      "userInfo": "Informations Utilisateur",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "shippingInfo": "Informations d'Expédition",
+      "address": "Adresse",
+      "city": "Ville",
+      "country": "Pays",
+      "summary": "Résumé de la Commande",
+      "orderIdLabel": "ID de la Commande",
+      "items": "Articles",
+      "orderItem": "Articles de la Commande"
+    },
+    "orderDetailsHeader": {
+      "product": "Produit",
+      "category": "Catégorie",
+      "quantity": "Quantité",
+      "shippingType": "Type d'Expédition",
+      "totalPoints": "Total",
+      "status": "Statut"
+    },
+    "completedStatusToast": "Statut de l'article de la commande terminé avec succès"
+  }
+}

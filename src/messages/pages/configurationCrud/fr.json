@@ -1,0 +1,39 @@
+{
+  "configurationPage": {
+    "title": "Configuration",
+    "addButton": "Ajouter une Configuration",
+    "editButton": "Modifier",
+    "deleteButton": "Supprimer",
+    "table": {
+      "name": "Nom",
+      "ipAddress": "Adresse IP"
+    },
+    "modal": {
+      "addTitle": "Ajouter une Configuration",
+      "editTitle": "Modifier la Configuration",
+      "ConfigurationName": "Nom de la Configuration",
+      "ConfigurationNamePlaceholder": "Entrez le nom de la configuration",
+      "nameRequired": "Le nom de la configuration est requis",
+      "ipAddress": "Adresse IP",
+      "ipAddressPlaceholder": "Entrez l'adresse IP",
+      "ipAddressRequired": "L'adresse IP est requise",
+      "ipAddressInvalid": "Veuillez entrer une adresse IP valide (ex: 192.168.1.1)",
+      "cancelButton": "Annuler",
+      "saveButton": "Enregistrer",
+      "updateButton": "Mettre à jour",
+      "saving": "Enregistrement...",
+      "loading": "Chargement...",
+      "required": "Ce champ est requis",
+      "autoFill": "Remplissage Automatique",
+      "translating": "Traduction...",
+      "UpdatedSuccessfully": "Configuration mise à jour avec succès",
+      "CreatedSuccessfully": "Configuration créée avec succès",
+      "PleaseFill": "Veuillez remplir",
+      "translationSuccessMessage": "Traduction terminée avec succès"
+    },
+    "toast": {
+      "configurationDeleted": "Configuration supprimée avec succès"
+    }
+  }
+}
+

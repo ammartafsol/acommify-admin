@@ -1,0 +1,20 @@
+{
+  "visitorBooking": {
+    "title": "Ajiye Baƙi",
+    "viewModalTitle": "Cikakken Ajiye Baƙi",
+    "table": {
+      "residentName": "Sunan Mazauni",
+      "visitorName": "Sunan Baƙo",
+      "additionalNotes": "Ƙarin Bayanin Kula",
+      "dateAndTime": "Kwanan Wata da Lokaci"
+    },
+    "modal": {
+      "additionalNotes": "Ƙarin Bayanin Kula",
+      "residentName": "Sunan Mazauni",
+      "visitorName": "Sunan Baƙo",
+      "relationShipToResident": "Dangantaka da Mazauni",
+      "dateAndTime": "Kwanan Wata da Lokaci",
+      "createdAt": "An Ƙirƙira"
+    }
+  }
+}

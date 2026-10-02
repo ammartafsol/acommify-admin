@@ -1,0 +1,67 @@
+{
+  "businessAdminPage": {
+    "title": "Cibiyoyi",
+    "addButton": "Ƙara",
+    "table": {
+      "centreName": "Sunan Cibiya",
+      "country": "Ƙasa",
+      "name": "Suna",
+      "email": "Imel",
+      "phone": "Wayar",
+      "statusTitle": "Matsayi"
+    },
+    "actions": {
+      "view": "Duba",
+      "edit": "Gyara",
+      "delete": "Goge"
+    },
+    "modal": {
+      "detailTitle": "Cikakkun bayanai na Cibiyoyi",
+      "deleteMessage": "Kana da tabbacin kana son share wannan abu?",
+      "addTitle": "Ƙara",
+      "editTitle": "Gyara",
+      "addStaff": "Ƙara Cibiya",
+      "editStaff": "Gyara Cibiya",
+      "cancel": "Soke",
+      "confirm": "Tabbata",
+      "loading": "Ana Loda...",
+      "translating": "Ana Fassara...",
+      "autoFill": "Cike Kansa",
+      "CreatedSuccessfully": "An Ƙirƙira Cikin Nasara",
+      "UpdatedSuccessfully": "An Sabunta Cikin Nasara",
+      "PleaseFill": "Da Fatan Za A Cika",
+      "translationSuccessMessage": "An kammala fassarar cikin nasara"
+    },
+    "fields": {
+      "centreName": "Sunan Cibiya",
+      "centreNamePlaceholder": "Shigar da sunan cibiya",
+      "name": "Sunan Mai",
+      "namePlaceholder": "Shigar da sunan mai",
+      "email": "Adireshin Imel",
+      "emailPlaceholder": "example@company.com",
+      "country": "Ƙasa",
+      "countryPlaceholder": "Zaɓi ƙasa",
+      "region": "Yanki",
+      "regionPlaceholder": "Zaɓi yanki",
+      "phone": "Lambar Wayar",
+      "phonePlaceholder": "Shigar da lambar wayar"
+    },
+    "formikSchema": {
+      "centreNameRequired": "Sunan cibiya yana buƙata",
+      "countryRequired": "Ƙasa tana buƙata",
+      "regionRequired": "Yanki yana buƙata",
+      "fullNameRequired": "Cikakken suna yana buƙata",
+      "emailAddress": "Da fatan za a shigar da adireshin imel mai inganci",
+      "emailRequired": "Imel yana buƙata",
+      "callingRequired": "Lambar kira tana buƙata",
+      "phoneNumberLimit": "Lambar wayar dole ta zama lambobi 10-15, mai yiwuwa ta fara da +",
+      "phoneNumberRequired": "Lambar wayar tana buƙata"
+    },
+    "toast": {
+      "created": "An Ƙirƙira Cikin Nasara",
+      "updated": "An Sabunta Cikin Nasara",
+      "deleted": "An Goge Cikin Nasara",
+      "pleaseFill": "Da Fatan Za A Cika"
+    }
+  }
+}

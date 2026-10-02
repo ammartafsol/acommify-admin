@@ -1,0 +1,89 @@
+{
+  "roomsHouses": {
+    "title": "إدارة الغرف/المنازل",
+    "addRoom": "إضافة غرفة/منزل",
+    "viewModalTitle": "تفاصيل الغرفة/المنزل",
+    "filterOptions": {
+      "beds": "عدد الأسرة",
+      "occupancyStatus": "حالة الإشغال",
+      "accommodationType": "نوع الإقامة",
+      "a-z": "أ-ي",
+      "UnOccupied": "غير مشغول",
+      "partiallyOccupied": "مشغول جزئياً",
+      "apartment": "شقة",
+      "house": "منزل",
+      "room": "غرفة",
+      "status": "حالة الإشغال",
+      "occupied": "مشغول",
+      "filters": "المرشحات",
+      "sortBy": "ترتيب حسب...",
+      "filterBy": "تصفية حسب",
+      "clear": "مسح الكل",
+      "apply": "تطبيق"
+    },
+    "table": {
+      "houseRoomNumber": "رقم المنزل/الغرفة",
+      "numberOfBeds": "عدد الأسرة",
+      "accommodationType": "نوع الإقامة",
+      "occupancyStatus": "حالة الإشغال",
+      "status": "الحالة",
+      "userType": "نوع المستخدم",
+      "createdAt": "تاريخ الإنشاء",
+      "bedsOccupied": "الأسرة المشغولة"
+    },
+    "tabs": {
+      "resident": "مقيم",
+      "visitor": "زائر"
+    },
+    "actions": {
+      "edit": "تعديل",
+      "delete": "حذف",
+      "view": "عرض",
+      "activate": "تفعيل",
+      "deactivate": "إلغاء التفعيل"
+    },
+    "modal": {
+      "houseRoomNumber": "رقم المنزل/الغرفة",
+      "numberOfBeds": "عدد الأسرة",
+      "occupancyStatus": "حالة الإشغال",
+      "accommodationType": "نوع الإقامة",
+      "accommodationTypePlaceholder": "اختر نوع الإقامة",
+      "houseRoomNumberPlaceholder": "أدخل رقم المنزل/الغرفة",
+      "userType": "نوع المستخدم",
+      "userTypePlaceholder": "اختر نوع المستخدم",
+      "occupancyStatusPlaceholder": "اختر حالة الإشغال",
+      "numberOfBedsPlaceholder": "أدخل عدد الأسرة",
+      "cancel": "إلغاء",
+      "create": "إنشاء",
+      "edit": "تعديل",
+      "editRoomHouse": "تعديل الغرفة/المنزل",
+      "createRoomHouse": "إنشاء غرفة/منزل",
+      "updatedSuccessfully": "تم تحديث الإقامة بنجاح",
+      "RoomsHousesSubmitted": "تم إرسال الغرف والمنازل بنجاح",
+      "createdSuccessfully": "تم إنشاء الغرفة/المنزل بنجاح",
+      "houseTypeLabels": {
+        "house": "منزل",
+        "room": "غرفة",
+        "apartment": "شقة"
+      },
+      "userTypeLabels": {
+        "resident": "مقيم",
+        "visitor": "زائر"
+      },
+      "modalFormik": {
+        "HouseRoomNumberRequired": "رقم المنزل/الغرفة مطلوب",
+        "2Characters": "يجب أن يكون على الأقل حرفين",
+        "BedsRequired": "عدد الأسرة مطلوب",
+        "ExceedBeds": "لا يمكن تجاوز 10 أسرة",
+        "TypeRequired": "النوع مطلوب",
+        "atLeastBeds": "يجب أن يكون على الأقل سرير واحد",
+        "UserTypeRequired": "نوع المستخدم مطلوب"
+      }
+    },
+    "toasts": {
+      "activateSuccess": "تم تفعيل الإقامة بنجاح",
+      "deactivateSuccess": "تم إلغاء تفعيل الإقامة بنجاح",
+      "deletedRoomHouse": "تم حذف الغرفة/المنزل بنجاح"
+    }
+  }
+}

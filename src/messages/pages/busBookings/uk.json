@@ -1,0 +1,36 @@
+{
+  "busBookings": {
+    "title": "Бронювання автобусів",
+    "tabs": {
+      "all": "Усі",
+      "pending": "Очікує",
+      "cancelled": "Скасовано",
+      "completed": "Завершено"
+    },
+    "table": {
+      "residentName": "Ім'я резидента",
+      "roomNumber": "Номер кімнати",
+      "busName": "Назва автобуса",
+      "busRoute": "Маршрут автобуса",
+      "DepartureDateAndTime": "Дата та час відправлення",
+      "status": "Статус",
+      "ArrivalDateAndTime": "Дата та час прибуття",
+      "actions": "Дії",
+      "shift": "Зміна"
+    },
+    "action": {
+      "cancel": "Скасувати",
+      "approve": "Схвалити",
+      "view": "Переглянути"
+    },
+    "areYouSureModal": {
+      "approve": "Схвалити",
+      "reject": "Відхилити",
+      "approveBookingSure": "Ви впевнені, що хочете схвалити бронювання?",
+      "rejectBookingSure": "Ви впевнені, що хочете відхилити бронювання?"
+    },
+    "modal": {
+      "viewBookingDetails": "Деталі бронювання автобуса"
+    }
+  }
+}

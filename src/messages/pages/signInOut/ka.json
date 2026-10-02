@@ -1,0 +1,17 @@
+{
+  "signInOutPage": {
+    "title": "შესვლა/გასვლის ჟურნალები",
+    "searchPlaceholder": "ძებნა სახელით ან ბინის ნომრით",
+    "table": {
+      "residentName": "მოსახლის სახელი",
+      "accommodationNumber": "ბინის ნომერი",
+      "type": "ტიპი",
+      "dateTime": "თარიღი და დრო"
+    },
+    "typeLabel": {
+      "signIn": "შესვლა",
+      "signOut": "გასვლა"
+    }
+  }
+}
+

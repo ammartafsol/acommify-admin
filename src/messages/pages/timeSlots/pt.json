@@ -1,0 +1,64 @@
+{
+  "timeslotsPage": {
+    "title": "Agendar Horários de Consultas",
+    "laundryTitle": "Agendar Horários de Máquinas de Lavanderia",
+    "visitorTitle": "Agendar Horários de Reserva de Visitantes",
+    "staffLabel": "Selecionar Funcionário",
+    "staffPlaceholder": "Escolha o funcionário...",
+    "machinePlaceholder": "Escolha a máquina...",
+    "machineLabel": "Selecionar Máquina",
+    "visitorLabel": "Selecionar Local",
+    "visitorPlaceholder": "Escolha o local...",
+    "manageTimeSlots": "Gerenciar horários para todos os dias da semana",
+    "fetchingOptions": "Buscando opções...",
+    "addDaySlots": "Adicionar horários do dia",
+    "editDaySlots": "Editar horários do dia",
+    "noSlotsAvailable": "Nenhum horário disponível",
+    "weeklySchedule": "Cronograma Semanal",
+    "utcNote": "Todos os horários estão em UTC",
+    "weekDays": {
+      "monday": "Segunda-feira",
+      "tuesday": "Terça-feira",
+      "wednesday": "Quarta-feira",
+      "thursday": "Quinta-feira",
+      "friday": "Sexta-feira",
+      "saturday": "Sábado",
+      "sunday": "Domingo"
+    },
+    "generateSlotModal": {
+      "startTime": "Hora de Início",
+      "endTime": "Hora de Fim",
+      "interval": "Intervalo",
+      "hour": "Hora",
+      "fixed": "Fixo",
+      "slots": "Horários",
+      "headers": {
+        "previousSlots": "Horários Anteriores",
+        "addNewSlots": "Adicionar Novos Horários",
+        "generatedSlots": "Horários Gerados"
+      },
+      "validation": {
+        "startTimeRequired": "Hora de início é obrigatória",
+        "endTimeRequired": "Hora de fim é obrigatória",
+        "slotDurationRequired": "Duração do horário é obrigatória"
+      },
+      "toasts": {
+        "slotsSavedSuccess": "Horários salvos com sucesso!",
+        "slotsSavedError": "Falha ao salvar horários."
+      },
+      "placeholders": {
+        "selectStartTime": "Selecione a hora de início",
+        "selectEndTime": "Selecione a hora de fim"
+      },
+      "btns": {
+        "editSlots": "Editar Horários",
+        "generateSlots": "Gerar Horários",
+        "back": "Voltar",
+        "confirm": "Confirmar Horários",
+        "selectAll": "Selecionar Tudo",
+        "deselectAll": "Desmarcar Tudo"
+      },
+      "utcNote": "Todos os horários estão em UTC"
+    }
+  }
+}

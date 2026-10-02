@@ -1,0 +1,20 @@
+{
+  "visitorBooking": {
+    "title": "د لیدونکو حجز",
+    "viewModalTitle": "د لیدونکو د حجز تفصیلات",
+    "table": {
+      "residentName": "د استوګن نوم",
+      "visitorName": "د لیدونکي نوم",
+      "additionalNotes": "اضافي یادښتونه",
+      "dateAndTime": "نیټه او وخت"
+    },
+    "modal": {
+      "additionalNotes": "اضافي یادښتونه",
+      "residentName": "د استوګن نوم",
+      "visitorName": "د لیدونکي نوم",
+      "relationShipToResident": "د استوګن سره اړیکه",
+      "dateAndTime": "نیټه او وخت",
+      "createdAt": "جوړ شوی"
+    }
+  }
+}

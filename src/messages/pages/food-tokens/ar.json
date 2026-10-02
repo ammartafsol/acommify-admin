@@ -1,0 +1,36 @@
+{
+  "foodTokensPage": {
+    "title": "إدارة رموز الطعام",
+    "table": {
+      "residentName": "اسم المقيم",
+      "roomNo": "رقم الغرفة",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "availableToken": "الرمز المتاح"
+    },
+    "modal": {
+      "tabs": {
+        "addFoodToken": "إضافة رموز الطعام",
+        "subtractFoodToken": "خصم رموز الطعام"
+      },
+      "totalFoodToken": "إجمالي رموز الطعام",
+      "editFoodToken": "إضافة رمز طعام",
+      "addFoodToken": "إضافة رمز طعام",
+      "foodTokenAmount": "مبلغ رمز الطعام",
+      "foodTokenAmountPlaceholder": "أدخل مبلغ رمز الطعام",
+      "resident": "المقيم",
+      "residentPlaceholder": "اختر مقيم",
+      "cancel": "إلغاء",
+      "save": "حفظ",
+      "update": "تحديث",
+      "createdFoodToken": "تم إنشاء رمز الطعام بنجاح.",
+      "updatedFoodToken": "تم تحديث رمز الطعام بنجاح.",
+      "modalFormik": {
+        "ResidentRequired": "المقيم مطلوب.",
+        "FoodTokenRequired": "رمز الطعام مطلوب.",
+        "FoodTokenGreater": "رمز الطعام يجب أن يكون أكبر من 0."
+      },
+      "InsufficientTokens": "رموز غير كافية للخصم"
+    }
+  }
+}

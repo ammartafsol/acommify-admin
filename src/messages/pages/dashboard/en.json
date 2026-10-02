@@ -1,0 +1,74 @@
+{
+  "dashboardPage": {
+    "noActivity": "No recent activity to show",
+    "dashboardCards": {
+      "bookLaundry": "Laundry Booking",
+      "bookBus": "Bus Booking",
+      "bookAppointment": "Upcoming Appointments",
+      "visitorBooking": "Visitor Bookings",
+      "documentCenter": "Document Center",
+      "signRequests": "Sign In/ Sign Out Requests",
+      "signInSignOut": "Sign In/Out"
+    },
+    "statsCards": {
+      "onSite": "On-Site residents",
+      "offSite": "Off-Site residents",
+      "pendingRequests": "Pending Requests",
+      "maintenanceRequests": "Maintenance Requests",
+      "upcomingAppointments": "Upcoming Appts",
+      "staffCount": "Staff Count",
+      "activeCenters": "Active Centers",
+      "nationalOccupancy": "National Occupancy",
+      "totalResidents": "Total Residents",
+      "totalAdults": "Total Adults",
+      "totalChildren": "Total Children"
+    },
+    "notification": {
+      "recentNotification": "Recent activities",
+      "currentNotification": "Here you see recent notification bookings, requests, updates. "
+    },
+    "activity": {
+      "recentActivity": "Recent Activity Feed",
+      "currentActivity": "Here you see bookings, requests, updates. ",
+      "labels": {
+        "bookingId": "Booking ID",
+        "visitorName": "Visitor Name",
+        "relationship": "Relationship",
+        "houseNumber": "House Number",
+        "serviceType": "Service Type",
+        "start": "Start",
+        "end": "End",
+        "created": "Created",
+        "incidentId": "Incident ID",
+        "title": "Title",
+        "description": "Description",
+        "severity": "Severity",
+        "address": "Address",
+        "resident": "Resident",
+        "requestId": "Request ID",
+        "user": "User"
+      },
+      "activityTabs": {
+        "booking": "Pending Bookings",
+        "requests": "Maintenance Requests",
+        "incident": "Incident Reports"
+      },
+      "activitycard": {
+        "requestHeading": "New Maintenance Request Submitted",
+        "dateTime": "Date/Time",
+        "resident": "Resident",
+        "purpose": "Purpose",
+        "appointment": "Appointment"
+      }
+    },
+
+    "chart": {
+      "residentTitle": "Resident"
+    },
+    "common": {
+      "edit": "Edit",
+      "approveRequest": "Approve Request",
+      "rejectRequest": "Reject Request"
+    }
+  }
+}

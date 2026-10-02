@@ -1,0 +1,89 @@
+{
+  "roomsHouses": {
+    "title": "Управління кімнатами/будинками",
+    "addRoom": "Додати кімнату/будинок",
+    "viewModalTitle": "Деталі кімнати/будинку",
+    "filterOptions": {
+      "beds": "Кількість ліжок",
+      "occupancyStatus": "Статус зайнятості",
+      "accommodationType": "Тип проживання",
+      "a-z": "А-Я",
+      "UnOccupied": "Не зайнятий",
+      "partiallyOccupied": "Частково зайнятий",
+      "apartment": "Квартира",
+      "house": "Будинок",
+      "room": "Кімната",
+      "status": "Статус зайнятості",
+      "occupied": "Зайнятий",
+      "filters": "Фільтри",
+      "sortBy": "Сортувати за...",
+      "filterBy": "ФІЛЬТРУВАТИ ЗА",
+      "clear": "Очистити все",
+      "apply": "Застосувати"
+    },
+    "table": {
+      "houseRoomNumber": "Номер будинку/кімнати",
+      "numberOfBeds": "Кількість ліжок",
+      "accommodationType": "Тип проживання",
+      "occupancyStatus": "Статус зайнятості",
+      "status": "Статус",
+      "userType": "Тип користувача",
+      "createdAt": "Створено",
+      "bedsOccupied": "Зайняті ліжка"
+    },
+    "tabs": {
+      "resident": "Резидент",
+      "visitor": "Відвідувач"
+    },
+    "actions": {
+      "edit": "Редагувати",
+      "delete": "Видалити",
+      "view": "Переглянути",
+      "activate": "Активувати",
+      "deactivate": "Деактивувати"
+    },
+    "modal": {
+      "houseRoomNumber": "Номер будинку/кімнати",
+      "numberOfBeds": "Кількість ліжок",
+      "occupancyStatus": "Статус зайнятості",
+      "accommodationType": "Тип проживання",
+      "accommodationTypePlaceholder": "Виберіть тип проживання",
+      "houseRoomNumberPlaceholder": "Введіть номер будинку/кімнати",
+      "userType": "Тип користувача",
+      "userTypePlaceholder": "Виберіть тип користувача",
+      "occupancyStatusPlaceholder": "Виберіть статус зайнятості",
+      "numberOfBedsPlaceholder": "Введіть кількість ліжок",
+      "cancel": "Скасувати",
+      "create": "Створити",
+      "edit": "Редагувати",
+      "editRoomHouse": "Редагувати кімнату/будинок",
+      "createRoomHouse": "Створити кімнату/будинок",
+      "updatedSuccessfully": "Проживання успішно оновлено",
+      "RoomsHousesSubmitted": "Кімнати та будинки успішно надіслано",
+      "createdSuccessfully": "Кімнату/будинок успішно створено",
+      "houseTypeLabels": {
+        "house": "Будинок",
+        "room": "Кімната",
+        "apartment": "Квартира"
+      },
+      "userTypeLabels": {
+        "resident": "Резидент",
+        "visitor": "Відвідувач"
+      },
+      "modalFormik": {
+        "HouseRoomNumberRequired": "Номер будинку/кімнати є обов'язковим",
+        "2Characters": "Повинно бути принаймні 2 символи",
+        "BedsRequired": "Кількість ліжок є обов'язковою",
+        "ExceedBeds": "Не може перевищувати 10 ліжок",
+        "TypeRequired": "Тип є обов'язковим",
+        "atLeastBeds": "Повинно бути принаймні 1 ліжко",
+        "UserTypeRequired": "Тип користувача є обов'язковим"
+      }
+    },
+    "toasts": {
+      "activateSuccess": "Проживання успішно активовано",
+      "deactivateSuccess": "Проживання успішно деактивовано",
+      "deletedRoomHouse": "Кімната/будинок успішно видалено"
+    }
+  }
+}

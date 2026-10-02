@@ -1,0 +1,17 @@
+{
+  "signInOutPage": {
+    "title": "Журнал входу/виходу",
+    "searchPlaceholder": "Пошук за ім'ям або номером житла",
+    "table": {
+      "residentName": "Ім'я мешканця",
+      "accommodationNumber": "Номер житла",
+      "type": "Тип",
+      "dateTime": "Дата й час"
+    },
+    "typeLabel": {
+      "signIn": "Вхід",
+      "signOut": "Вихід"
+    }
+  }
+}
+

@@ -1,0 +1,153 @@
+@import "./typography.css";
+@import "./color.css";
+
+:root {
+  --background: var(--Background);
+  --foreground: var(--Black);
+}
+
+html,
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-lato);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.isRtl *:not(.ignoreRtl) {
+  direction: rtl;
+}
+
+.ignoreRtl {
+  direction: ltr !important;
+}
+
+.ignoreRtlNested * {
+  direction: ltr !important;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--font-lato);
+  margin-bottom: 0px;
+}
+
+.maxLine1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.maxLine2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.maxLine3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.maxLine4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.reactSvg,
+.reactSvg > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerFluid {
+  max-width: 100vw !important;
+  padding-inline: 30px !important;
+  margin-inline: auto !important;
+}
+
+.fixedPosition {
+  position: fixed !important;
+}
+.lowercase {
+  text-transform: lowercase !important;
+}
+.capitalize {
+  text-transform: capitalize !important;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+@media screen and (width > 1400px) {
+  .containerFluid {
+    max-width: 1344px !important;
+    padding-inline: 0px !important;
+  }
+}
+
+@media screen and (width < 992px) {
+  .containerFluid {
+    padding-inline: 24px !important;
+  }
+}
+
+@media screen and (width < 768px) {
+  .containerFluid {
+    padding-inline: 16px !important;
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  inset-inline-end: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+body > .DropdownOptionContainer {
+  z-index: 10000;
+}

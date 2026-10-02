@@ -1,0 +1,78 @@
+{
+  "staffsPage": {
+    "title": "Gudanar da Ma'aikata",
+    "addMember": "Ƙara Ma'aikaci",
+    "table": {
+      "staffID": "ID na Ma'aikaci",
+      "name": "Suna",
+      "email": "Imel",
+      "phone": "Wayar",
+      "status": "Matsayi"
+    },
+    "actions": {
+      "edit": "Gyara",
+      "delete": "Goge"
+    },
+    "toast": {
+      "staffStatus": "Matsayin Ma'aikaci An Sabunta Cikin Nasara",
+      "staffAdded": "Ma'aikaci An Ƙara Cikin Nasara",
+      "staffUpdated": "Ma'aikaci An Sabunta Cikin Nasara",
+      "staffDeleted": "Ma'aikaci an goge cikin nasara",
+      "fill": "Da fatan za a cika filayen a wasu harsuna kuma",
+      "translationSuccessMessage": "An Fassara Cikin Nasara",
+      "pleaseFill": "Da Fatan Za A Cika"
+    },
+    "modal": {
+      "title": "Cikakken Ma'aikaci",
+      "staffID": "ID na Ma'aikaci",
+      "name": "Cikakken Suna",
+      "email": "Imel",
+      "phone": "Lambar Wayar",
+      "status": "Matsayi",
+      "addStaff": "Ƙara Sabon Ma'aikaci",
+      "editStaff": "Gyara Ma'aikaci",
+      "translating": "Ana Fassara...",
+      "autoFill": "Cike Kansa",
+      "cancel": "Soke",
+      "loading": "Ana Loda...",
+      "confirm": "Tabbata",
+      "morning": "Safiya",
+      "night": "Dare",
+      "shiftTime": "Lokacin Aiki",
+      "position": "Matsayi",
+      "deleteMessage": "Ka tabbata kana son goge wannan ma'aikacin?"
+    },
+    "fields": {
+      "namePlaceholder": "Shigar da cikakken suna",
+      "name": "Cikakken Suna",
+      "emailPlaceholder": "example@company.com",
+      "email": "Adireshin Imel",
+      "phonePlaceholder": "Shigar da lambar wayar",
+      "phone": "Lambar Wayar",
+      "positionPlaceholder": "Zaɓi Matsayi",
+      "position": "Matsayi",
+      "shiftStartTime": "Lokacin Farawa na Aiki",
+      "shiftEndTime": "Lokacin Ƙarshe na Aiki",
+      "shiftStartTimePlaceholder": "Zaɓi lokacin farawa na aiki",
+      "shiftEndTimePlaceholder": "Zaɓi lokacin ƙarshe na aiki",
+      "permissionsLabel": "Izinoni",
+      "permissionsPlaceholder": "Zaɓi Izinoni",
+      "selected": "An Zaɓa",
+      "selectAll": "Zaɓi Duka",
+      "deselectAll": "Soke Zaɓin Duka"
+    },
+    "formikSchema": {
+      "fullNameRequired": "Suna yana buƙata",
+      "emailAddress": "Da fatan za a shigar da adireshin imel mai inganci",
+      "emailRequired": "Imel yana buƙata",
+      "callingRequired": "Lambar kira tana buƙata",
+      "phoneNumberLimit": "Lambar wayar dole ta kasance lambobi 10-15, zaɓi da farawa da +",
+      "phoneNumberRequired": "Lambar wayar tana buƙata",
+      "permissionsMin": "Aƙalla izini ɗaya dole a zaɓa",
+      "permissionsRequired": "Izinoni suna buƙata",
+      "shiftStartRequired": "Lokacin farawa na aiki yana buƙata",
+      "shiftEndRequired": "Lokacin ƙarshe na aiki yana buƙata",
+      "positionRequired": "Matsayi yana buƙata"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "busBookings": {
+    "title": "Ajiyayin Bas",
+    "tabs": {
+      "all": "Duka",
+      "pending": "Jiran",
+      "cancelled": "An soke",
+      "completed": "An ƙare"
+    },
+    "table": {
+      "residentName": "Sunan Mazauni",
+      "roomNumber": "Lambar Daki",
+      "busName": "Sunan Bas",
+      "busRoute": "Hanyar Bas",
+      "DepartureDateAndTime": "Kwanan Wata da Lokacin Tashi",
+      "status": "Matsayi",
+      "ArrivalDateAndTime": "Kwanan Wata da Lokacin Isowa",
+      "actions": "Ayyuka",
+      "shift": "Juyi"
+    },
+    "action": {
+      "cancel": "Soke",
+      "approve": "Ami",
+      "view": "Duba"
+    },
+    "areYouSureModal": {
+      "approve": "Ami",
+      "reject": "Ƙi",
+      "approveBookingSure": "Ka tabbata cewa kana son amincewa da ajiya?",
+      "rejectBookingSure": "Ka tabbata cewa kana son ƙin ajiya?"
+    },
+    "modal": {
+      "viewBookingDetails": "Ajiyayin Bas"
+    }
+  }
+}

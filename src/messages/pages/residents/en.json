@@ -1,0 +1,135 @@
+{
+  "residentsPage": {
+    "title": "Residents Management",
+    "viewModalTitle": "Resident Details",
+    "addResident": "Add New Resident",
+    "searchPlaceholder": "Search",
+
+    "table": {
+      "residentName": "Resident Name",
+      "roomNo": " Room/House Number",
+      "email": "Email",
+      "phone": "Phone",
+      "residentStatus": "Resident Status",
+      "dob": "Date Of Birth",
+      "age": "Age",
+      "arrivalDate": "Arrival Date",
+      "gender": "Gender"
+    },
+    "modal": {
+      "noOfBedsRequired": "Number of beds is required",
+      "noOfBeds": "Number of Beds",
+      "noOfBedsPlaceholder": "Select number of beds",
+      "available": "available",
+      "familyMemberRelation": "Family Member Relation",
+      "header": "Add New Resident",
+      "editResident": "Edit Resident",
+      "familyMembers": "Family Members",
+      "name": "Full Name",
+      "namePlaceholder": "Enter full name",
+      "nameRequired": "Name is required",
+      "inputRequired": {
+        "fullName": "Full name is required",
+        "schoolName": "School name is required"
+      },
+      "dob": "Date of Birth",
+      "dobPlaceholder": "Select date of birth",
+      "dobRequired": "Date of birth is required",
+      "ageAtLeast18": "Resident must be at least 18 years old",
+      "dateOfArrival": "Date of Arrival",
+      "dateOfArrivalPlaceholder": "Select date of arrival",
+      "dateOfArrivalRequired": "Date of arrival is required",
+      "phoneNumberRequired": "Phone number is required",
+      "countryCode": "Country Code",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter email address",
+      "emailRequired": "Email is required",
+      "invalidEmail": "Please enter a valid email address",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter phone number",
+      "invalidPhoneNumber": "Please enter a valid phone number with country code",
+
+      "roomNumber": "Room/House Number",
+      "roomNumberPlaceholder": "Enter room number",
+      "roomNumberRequired": "Room number is required",
+      "status": "Status",
+      "statusPlaceholder": "Select status",
+      "statusRequired": "Status is required",
+      "gender": "Gender",
+      "genderPlaceholder": "Select gender",
+      "genderRequired": "Gender is required",
+
+      "offsite": "Offsite",
+      "onsite": "Onsite",
+      "familyMemberLabel": "Family Member",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "addFamilyMember": "Add Family Members",
+      "familyMemberName": "Family Member Name",
+      "familyMemberNamePlaceholder": "Enter Family Member Name",
+      "relationship": "Relationship",
+      "relationshipPlaceholder": "Select Relationship",
+      "schoolName": "School Name",
+      "schoolNamePlaceholder": "Enter School Name",
+      "trcNumber": "TRC Number",
+      "trcNumberPlaceholder": "Enter TRC Number",
+      "ppsnNumber": "PPSN Number",
+      "ppsnNumberPlaceholder": "Enter PPSN Number",
+      "medicalCardNumber": "Medical Card Number",
+      "familyMember": "Family Member",
+      "medicalCardNumberPlaceholder": "Enter Medical Card Number",
+      "relationShipOptions": {
+        "father": "Father",
+        "mother": "Mother",
+        "sibling": "Sibling",
+        "spouse": "Spouse",
+        "children": "Children"
+      },
+      "genderOptions": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+      },
+      "schoolPlacement": {
+        "label": "Placed in school",
+        "placeholder": "Select school placement status",
+        "placed": "Placed",
+        "notPlaced": "Not Placed"
+      },
+      "year": "Year",
+      "yearPlaceholder": "Enter school year",
+      "transportType": {
+        "label": "Transport Type",
+        "placeholder": "Select transport type",
+        "bus": "Bus",
+        "carpool": "Carpool",
+        "family": "Family brings them"
+      },
+      "books": {
+        "label": "Books",
+        "placeholder": "Enter book {number}"
+      },
+      "relationshipRequired": "Relationship is required",
+      "callingCodeRequired": "Calling code is required",
+      "schoolPlacementRequired": "School placement is required",
+      "yearRequired": "Year is required",
+      "yearMax": "Year cannot be in the future",
+      "transportTypeRequired": "Transport type is required",
+      "booksMinRequired": "At least one book is required",
+      "age": "Age",
+      "agePlaceholder": "Enter age",
+      "toasts": {
+        "residentUpdated": "Resident updated successfully",
+        "residentAdded": "Resident added successfully",
+        "translationSuccessMessage": "Translated successfully",
+        "languagesMessage": "Please provide the following fields in the selected language before autofilling"
+      },
+      "autoFill": "Auto fill",
+      "translating": "Translating..."
+    },
+
+    "actions": {
+      "edit": "Edit"
+    }
+  }
+}

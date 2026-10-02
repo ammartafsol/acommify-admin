@@ -1,0 +1,36 @@
+{
+  "foodTokensPage": {
+    "title": "Gestion des Jetons de Nourriture",
+    "table": {
+      "residentName": "Nom du Résident",
+      "roomNo": "Numéro de Chambre",
+      "email": "Email",
+      "phone": "Téléphone",
+      "availableToken": "Jeton Disponible"
+    },
+    "modal": {
+      "tabs": {
+        "addFoodToken": "Ajouter des Jetons de Nourriture",
+        "subtractFoodToken": "Soustraire des Jetons de Nourriture"
+      },
+      "totalFoodToken": "Total des Jetons de Nourriture",
+      "editFoodToken": "Ajouter un Jeton de Nourriture",
+      "addFoodToken": "Ajouter un Jeton de Nourriture",
+      "foodTokenAmount": "Montant du Jeton de Nourriture",
+      "foodTokenAmountPlaceholder": "Entrez le montant du jeton de nourriture",
+      "resident": "Résident",
+      "residentPlaceholder": "Sélectionnez un résident",
+      "cancel": "Annuler",
+      "save": "Enregistrer",
+      "update": "Mettre à jour",
+      "createdFoodToken": "Jeton de nourriture créé avec succès.",
+      "updatedFoodToken": "Jeton de nourriture mis à jour avec succès.",
+      "modalFormik": {
+        "ResidentRequired": "Le résident est requis.",
+        "FoodTokenRequired": "Le jeton de nourriture est requis.",
+        "FoodTokenGreater": "Le jeton de nourriture doit être supérieur à 0."
+      },
+      "InsufficientTokens": "Jetons insuffisants pour soustraire"
+    }
+  }
+}

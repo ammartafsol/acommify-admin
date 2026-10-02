@@ -1,0 +1,92 @@
+{
+  "incidentReportsPage": {
+    "title": "Incident Reports",
+    "addNewReport": "Add New Report",
+    "noDataText": "No incident reports found",
+    "reportCreatedSuccessfully": "Incident report created successfully",
+    "status": {
+      "all": "All",
+      "resolved": "Resolved",
+      "underReview": "Under Review",
+      "escalated": "Escalated"
+    },
+    "severityOptions": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "tabs": {
+      "all": "All",
+      "resolved": "Resolved",
+      "underReview": "Under Review",
+      "escalated": "Escalated"
+    },
+    "actions": {
+      "edit": "Edit"
+    },
+    "table": {
+      "incidentId": "Incident ID",
+      "title": "Title",
+      "description": "Description",
+      "residentInvolved": "Resident Involved",
+      "reportedBy": "Reported By",
+      "location": "Location",
+      "severity": "Severity",
+      "dateTime": "Date & Time",
+      "status": "Status",
+      "completedDate": "Completed Date"
+    },
+
+    "inputRequired": {
+      "title": "Title is required",
+      "description": "Description is required",
+      "location": "Location is required",
+      "residentInvolved": "Residents Involved is required",
+      "reportedBy": "Reported By is required",
+      "severity": "Severity is required",
+      "dateTime": "Date & Time is required",
+      "status": "Status is required",
+      "completedDate": "Completed Date is required"
+    },
+    "modal": {
+      "title": "Add Incident Report",
+      "editTitle": "Edit Incident Report",
+      "autoFill": "Auto Fill",
+      "translating": "Translating...",
+      "detailTitle": "Incident Detail",
+      "pleaseFill": "Please Fill",
+      "modalBtnsLabel": {
+        "cancel": "Cancel",
+        "submit": "Submit"
+      },
+      "inputLabels": {
+        "title": "Title",
+        "description": "Description",
+        "residentInvolved": "Resident Involved",
+        "reportedBy": "Reported By",
+        "location": "Location",
+        "severity": "Severity",
+        "dateTime": "Date & Time",
+        "status": "Status",
+        "completedDate": "Completed Date"
+      },
+      "inputPlaceholders": {
+        "title": "Enter report title",
+        "description": "Enter report description",
+        "residentInvolved": "Enter Resident Involved",
+        "reportedBy": "Select reported by",
+        "location": "Enter location",
+        "severity": "Select severity",
+        "dateTime": "Enter date & time",
+        "status": "Select status",
+        "completedDate": "Enter completed date"
+      },
+
+      "toasts": {
+        "reportCreatedSuccessfully": "Report created successfully",
+        "errorUpdatedReport": "Report updated successfully",
+        "autoFilledSuccessfully": "Auto filled successfully"
+      }
+    }
+  }
+}

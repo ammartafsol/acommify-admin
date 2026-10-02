@@ -1,0 +1,8 @@
+{
+  "scheduleTimeSlotsPage": {
+    "title": "Agendar Horários",
+    "appointmentSlots": "Horários de Consultas",
+    "laundryBookingSlots": "Horários de Reserva de Lavanderia",
+    "visitorBookingSlots": "Horários de Reserva de Visitantes"
+  }
+}

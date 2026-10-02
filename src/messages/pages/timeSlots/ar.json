@@ -1,0 +1,64 @@
+{
+  "timeslotsPage": {
+    "title": "جدولة أوقات المواعيد",
+    "laundryTitle": "جدولة أوقات آلات الغسيل",
+    "visitorTitle": "جدولة أوقات حجز الزوار",
+    "staffLabel": "اختر الموظف",
+    "staffPlaceholder": "اختر الموظف...",
+    "machinePlaceholder": "اختر الآلة...",
+    "machineLabel": "اختر الآلة",
+    "visitorLabel": "اختر الموقع",
+    "visitorPlaceholder": "اختر الموقع...",
+    "manageTimeSlots": "إدارة الفترات الزمنية لجميع أيام الأسبوع",
+    "fetchingOptions": "جاري جلب الخيارات...",
+    "addDaySlots": "إضافة فترات اليوم",
+    "editDaySlots": "تعديل فترات اليوم",
+    "noSlotsAvailable": "لا توجد فترات متاحة",
+    "weeklySchedule": "الجدول الأسبوعي",
+    "utcNote": "جميع الأوقات بتوقيت UTC",
+    "weekDays": {
+      "monday": "الاثنين",
+      "tuesday": "الثلاثاء",
+      "wednesday": "الأربعاء",
+      "thursday": "الخميس",
+      "friday": "الجمعة",
+      "saturday": "السبت",
+      "sunday": "الأحد"
+    },
+    "generateSlotModal": {
+      "startTime": "وقت البداية",
+      "endTime": "وقت النهاية",
+      "interval": "الفترة",
+      "hour": "ساعة",
+      "fixed": "ثابت",
+      "slots": "الفترات",
+      "headers": {
+        "previousSlots": "الفترات السابقة",
+        "addNewSlots": "إضافة فترات جديدة",
+        "generatedSlots": "الفترات المُنشأة"
+      },
+      "validation": {
+        "startTimeRequired": "وقت البداية مطلوب",
+        "endTimeRequired": "وقت النهاية مطلوب",
+        "slotDurationRequired": "مدة الفترة مطلوبة"
+      },
+      "toasts": {
+        "slotsSavedSuccess": "تم حفظ الفترات بنجاح!",
+        "slotsSavedError": "فشل في حفظ الفترات."
+      },
+      "placeholders": {
+        "selectStartTime": "اختر ساعة البداية",
+        "selectEndTime": "اختر ساعة النهاية"
+      },
+      "btns": {
+        "editSlots": "تعديل الفترات",
+        "generateSlots": "إنشاء الفترات",
+        "back": "رجوع",
+        "confirm": "تأكيد الفترات",
+        "selectAll": "تحديد الكل",
+        "deselectAll": "إلغاء تحديد الكل"
+      },
+      "utcNote": "جميع الأوقات بتوقيت UTC"
+    }
+  }
+}

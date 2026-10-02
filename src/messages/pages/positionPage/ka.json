@@ -1,0 +1,35 @@
+{
+  "positionPage": {
+    "title": "პოზიციები",
+    "addButton": "პოზიციის დამატება",
+    "editButton": "რედაქტირება",
+    "deleteButton": "წაშლა",
+    "table": {
+      "name": "სახელი",
+      "statusTitle": "სტატუსი"
+    },
+    "modal": {
+      "addTitle": "პოზიციის დამატება",
+      "editTitle": "პოზიციის რედაქტირება",
+      "PositionName": "პოზიციის სახელი",
+      "PositionNamePlaceholder": "შეიყვანეთ პოზიციის სახელი",
+      "PositionNameRequired": "პოზიციის სახელი აუცილებელია",
+      "statusLabel": "სტატუსი",
+      "statusPlaceholder": "აირჩიეთ სტატუსი",
+      "activeOption": "აქტიური",
+      "inactiveOption": "არააქტიური",
+      "cancelButton": "გაუქმება",
+      "saveButton": "შენახვა",
+      "updateButton": "განახლება",
+      "saving": "შენახვა...",
+      "loading": "იტვირთება...",
+      "required": "ეს ველი აუცილებელია",
+      "autoFill": "ავტომატური შევსება",
+      "translating": "თარგმნება...",
+      "UpdatedSuccessfully": "პოზიცია წარმატებით განახლდა",
+      "CreatedSuccessfully": "პოზიცია წარმატებით შეიქმნა",
+      "PleaseFill": "გთხოვთ, შეავსოთ",
+      "translationSuccessMessage": "თარგმანი წარმატებით დასრულდა"
+    }
+  }
+}

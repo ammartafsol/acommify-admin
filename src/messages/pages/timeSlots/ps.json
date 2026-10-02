@@ -1,0 +1,64 @@
+{
+  "timeslotsPage": {
+    "title": "د ناستو د وختونو سلاټونو تنظیم",
+    "laundryTitle": "د دکالي د ماشینونو د وختونو سلاټونو تنظیم",
+    "visitorTitle": "د لیدونکو د حجز د وختونو سلاټونو تنظیم",
+    "staffLabel": "کارکوونکی وټاکئ",
+    "staffPlaceholder": "کارکوونکی وټاکئ...",
+    "machinePlaceholder": "ماشین وټاکئ...",
+    "machineLabel": "ماشین وټاکئ",
+    "visitorLabel": "ځای وټاکئ",
+    "visitorPlaceholder": "ځای وټاکئ...",
+    "manageTimeSlots": "د اونۍ د ټولو ورځو د وختونو سلاټونو مدیریت",
+    "fetchingOptions": "اختیارونه راټول کيږي...",
+    "addDaySlots": "د ورځې سلاټونه اضافه کړئ",
+    "editDaySlots": "د ورځې سلاټونه سمون",
+    "noSlotsAvailable": "هیڅ سلاټ شتون نلري",
+    "weeklySchedule": "د اونۍ جدول",
+    "utcNote": "ټول وختونه په UTC کې دي",
+    "weekDays": {
+      "monday": "دوشنبه",
+      "tuesday": "درېنۍ",
+      "wednesday": "څلرنۍ",
+      "thursday": "پنځنۍ",
+      "friday": "جمعه",
+      "saturday": "شنبه",
+      "sunday": "یکشنبه"
+    },
+    "generateSlotModal": {
+      "startTime": "د پیل وخت",
+      "endTime": "د پای وخت",
+      "interval": "فاصله",
+      "hour": "ساعت",
+      "fixed": "ثابت",
+      "slots": "سلاټونه",
+      "headers": {
+        "previousSlots": "پخواني سلاټونه",
+        "addNewSlots": "نوي سلاټونه اضافه کړئ",
+        "generatedSlots": "جوړ شوي سلاټونه"
+      },
+      "validation": {
+        "startTimeRequired": "د پیل وخت اړین دی",
+        "endTimeRequired": "د پای وخت اړین دی",
+        "slotDurationRequired": "د سلاټ موده اړینه ده"
+      },
+      "toasts": {
+        "slotsSavedSuccess": "سلاټونه په بریالیتوب سره ساتل شول!",
+        "slotsSavedError": "د سلاټونو ساتل ناکام شول."
+      },
+      "placeholders": {
+        "selectStartTime": "د پیل ساعت وټاکئ",
+        "selectEndTime": "د پای ساعت وټاکئ"
+      },
+      "btns": {
+        "editSlots": "سلاټونه سمون",
+        "generateSlots": "سلاټونه جوړ کړئ",
+        "back": "شاته",
+        "confirm": "سلاټونه تایید کړئ",
+        "selectAll": "ټول وټاکئ",
+        "deselectAll": "ټول لرې کړئ"
+      },
+      "utcNote": "ټول وختونه په UTC کې دي"
+    }
+  }
+}

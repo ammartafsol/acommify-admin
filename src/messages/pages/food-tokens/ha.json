@@ -1,0 +1,36 @@
+{
+  "foodTokensPage": {
+    "title": "Gudanar da Tokens na Abinci",
+    "table": {
+      "residentName": "Sunan Mazauni",
+      "roomNo": "Lambar Daki",
+      "email": "Imel",
+      "phone": "Wayar",
+      "availableToken": "Token da Ake Samu"
+    },
+    "modal": {
+      "tabs": {
+        "addFoodToken": "Ƙara Tokens na Abinci",
+        "subtractFoodToken": "Rage Tokens na Abinci"
+      },
+      "totalFoodToken": "Jimlar Tokens na Abinci",
+      "editFoodToken": "Ƙara Token na Abinci",
+      "addFoodToken": "Ƙara Token na Abinci",
+      "foodTokenAmount": "Adadin Token na Abinci",
+      "foodTokenAmountPlaceholder": "Shigar da adadin token na abinci",
+      "resident": "Mazauni",
+      "residentPlaceholder": "Zaɓi mazauni",
+      "cancel": "Soke",
+      "save": "Ajiye",
+      "update": "Sabunta",
+      "createdFoodToken": "Token na abinci an ƙirƙira cikin nasara.",
+      "updatedFoodToken": "Token na abinci an sabunta cikin nasara.",
+      "modalFormik": {
+        "ResidentRequired": "Mazauni yana buƙata.",
+        "FoodTokenRequired": "Token na abinci yana buƙata.",
+        "FoodTokenGreater": "Token na abinci dole ya kasance fiye da 0."
+      },
+      "InsufficientTokens": "Tokens marasa isa don ragewa"
+    }
+  }
+}

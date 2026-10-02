@@ -1,0 +1,8 @@
+{
+  "scheduleTimeSlotsPage": {
+    "title": "جدولة الفترات الزمنية",
+    "appointmentSlots": "فترات المواعيد",
+    "laundryBookingSlots": "فترات حجز الغسيل",
+    "visitorBookingSlots": "فترات حجز الزوار"
+  }
+}

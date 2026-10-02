@@ -1,0 +1,33 @@
+.authLayout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #a0dbfa 0%, #f4f7fd 100%);
+}
+
+.authLayoutLeft {
+  width: 53.89%;
+  height: 100%;
+}
+
+.authLayoutRight {
+  width: 46.11%;
+  background: url("/app-images/authPageBg.png") no-repeat top right;
+  background-size: contain;
+}
+
+.languageSwitcher {
+  position: absolute;
+  top: 10px;
+  inset-inline-end: 10px;
+}
+
+@media (max-width: 991px) {
+  .authLayoutLeft {
+    width: 100%;
+  }
+  .authLayoutRight {
+    display: none;
+  }
+}

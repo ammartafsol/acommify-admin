@@ -1,0 +1,131 @@
+.uploadContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* gap: 10px; */
+}
+
+.dragAndDropContainer {
+  width: 100%;
+  height: 128px;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 16px;
+  border: 1px solid var(--Blue);
+  background: var(--Poor-white);
+}
+
+.rtl{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  direction: rtl;
+  text-align: right;
+  align-items: center;
+}
+
+.dragAndDropMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.dragAndDropMessage>p {
+  color: var(--Black, #172a33);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+.dragAndDropMessage>h1 {
+  color: var(--Dark-gray, #8c939b);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+.dragActive {
+  border: 2px dashed var(--blue-new);
+  background-color: var(--offWhite-new);
+}
+
+.filePreview {
+  margin-top: 16px;
+}
+
+.fileItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--offWhite-new);
+  padding: 2px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.removeFileButton {
+  color: var(--white);
+  background-color: transparent;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-inline-start: 12px;
+  transition: background 0.2s;
+}
+
+.title {
+  color: var(--Dark-gray);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+
+
+}
+
+
+
+.error {
+  font-family: var(--font-lato);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--Red);
+}
+
+@media (max-width: 500px) {
+  .uploadContainer>h2 {
+    font-size: 20px;
+  }
+
+  .buttonGroup button {
+    height: 44px !important;
+  }
+
+  .buttonGroup button label {
+    font-size: 14px !important;
+  }
+
+  .dragAndDropMessage>p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .buttonGroup button {
+    padding-inline: 10px;
+    height: 40px !important;
+  }
+}

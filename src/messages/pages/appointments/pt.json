@@ -1,0 +1,46 @@
+{
+  "appointments": {
+    "title": "Agendamentos",
+    "searchPlaceholder": "Pesquisar",
+    "tabs": {
+      "all": "Todos",
+      "completed": "Concluído",
+      "cancelled": "Cancelado",
+      "pending": "Pendente",
+      "rejected": "Rejeitado"
+    },
+    "table": {
+      "residentName": "Nome do Residente",
+      "roomNumber": "Número do Quarto",
+      "dateAndTime": "Data e Hora",
+      "appointmentType": "Tipo de Agendamento",
+      "purpose": "Propósito",
+      "status": "Status"
+    },
+    "menuItems": {
+      "edit": "Editar",
+      "delete": "Excluir"
+    },
+    "modal": {
+      "title": "Modal de Detalhes do Agendamento",
+      "name": "Nome do Residente",
+      "roomNumber": "Número do Quarto",
+      "dateTime": "Data e Hora",
+      "appointmentType": "Tipo de Agendamento",
+      "purpose": "Propósito",
+      "status": "Status",
+      "notes": "Notas Adicionais"
+    },
+    "actions": {
+      "approve": "Aprovar",
+      "cancel": "Cancelar",
+      "view": "Visualizar"
+    },
+    "areYouSureModal": {
+      "approve": "Aprovar",
+      "reject": "Rejeitar",
+      "approveBookingSure": "Tem certeza de que deseja aprovar a reserva?",
+      "rejectBookingSure": "Tem certeza de que deseja rejeitar a reserva?"
+    }
+  }
+}

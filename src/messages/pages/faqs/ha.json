@@ -1,0 +1,44 @@
+{
+  "faqPage": {
+    "title": "Tambayoyin da Ake Yi",
+    "viewModalTitle": "Tambayoyin da Ake Yi",
+    "questionTitle": "Tambaya",
+    "answerTitle": "Amsa",
+    "statusTitle": "Matsayi",
+    "actionsTitle": "Ayyuka",
+    "addButton": "Ƙara FAQ",
+    "editButton": "Gyara FAQ",
+    "deleteButton": "Share FAQ",
+    "areYouSureMessage": "Ka tabbata cewa kana son share wannan FAQ?",
+    "areYouSure": "Ka tabbata?",
+    "cancel": "Soke",
+    "confirm": "Tabbata",
+    "modal": {
+      "addTitle": "Ƙara FAQ",
+      "editTitle": "Gyara FAQ",
+      "questionLabel": "Tambaya",
+      "questionPlaceholder": "Shigar da tambaya",
+      "answerLabel": "Amsa",
+      "answerPlaceholder": "Shigar da amsa",
+      "inputRequired": {
+        "question": "Tambaya ya kuɗi",
+        "answer": "Amsa ya kuɗi"
+      },
+      "statusLabel": "Matsayi",
+      "statusPlaceholder": "Zaɓi matsayi",
+      "activeOption": "Aiki",
+      "inactiveOption": "Ba Aiki",
+      "saveButton": "Ajiye",
+      "updateButton": "Sabunta",
+      "cancelButton": "Soke",
+      "saving": "Ana Ajiye...",
+      "updating": "Ana Sabunta...",
+      "translating": "Ana Fassara...",
+      "autoFill": "Cike Kansa",
+      "CreatedSuccessfully": "FAQ an ƙirƙira cikin nasara",
+      "UpdatedSuccessfully": "FAQ an sabunta cikin nasara",
+      "translationSuccessMessage": "Cike kansa ya yi nasara",
+      "PleaseFill": "Da fatan za a cika"
+    }
+  }
+}

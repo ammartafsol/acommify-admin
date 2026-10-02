@@ -1,0 +1,64 @@
+{
+  "timeslotsPage": {
+    "title": "Планування часових слотів зустрічей",
+    "laundryTitle": "Планування часових слотів пральних машин",
+    "visitorTitle": "Планування часових слотів бронювання відвідувачів",
+    "staffLabel": "Вибрати персонал",
+    "staffPlaceholder": "Оберіть персонал...",
+    "machinePlaceholder": "Оберіть машину...",
+    "machineLabel": "Вибрати машину",
+    "visitorLabel": "Вибрати місце",
+    "visitorPlaceholder": "Оберіть місце...",
+    "manageTimeSlots": "Управління часовими слотами для всіх днів тижня",
+    "fetchingOptions": "Отримання опцій...",
+    "addDaySlots": "Додати слоти дня",
+    "editDaySlots": "Редагувати слоти дня",
+    "noSlotsAvailable": "Немає доступних слотів",
+    "weeklySchedule": "Тижневий графік",
+    "utcNote": "Весь час у UTC",
+    "weekDays": {
+      "monday": "Понеділок",
+      "tuesday": "Вівторок",
+      "wednesday": "Середа",
+      "thursday": "Четвер",
+      "friday": "П'ятниця",
+      "saturday": "Субота",
+      "sunday": "Неділя"
+    },
+    "generateSlotModal": {
+      "startTime": "Час початку",
+      "endTime": "Час закінчення",
+      "interval": "Інтервал",
+      "hour": "Година",
+      "fixed": "Фіксований",
+      "slots": "Слоти",
+      "headers": {
+        "previousSlots": "Попередні слоти",
+        "addNewSlots": "Додати нові слоти",
+        "generatedSlots": "Згенеровані слоти"
+      },
+      "validation": {
+        "startTimeRequired": "Час початку є обов'язковим",
+        "endTimeRequired": "Час закінчення є обов'язковим",
+        "slotDurationRequired": "Тривалість слота є обов'язковою"
+      },
+      "toasts": {
+        "slotsSavedSuccess": "Слоти успішно збережено!",
+        "slotsSavedError": "Не вдалося зберегти слоти."
+      },
+      "placeholders": {
+        "selectStartTime": "Виберіть годину початку",
+        "selectEndTime": "Виберіть годину закінчення"
+      },
+      "btns": {
+        "editSlots": "Редагувати слоти",
+        "generateSlots": "Генерувати слоти",
+        "back": "Назад",
+        "confirm": "Підтвердити слоти",
+        "selectAll": "Вибрати все",
+        "deselectAll": "Скасувати вибір"
+      },
+      "utcNote": "Весь час у UTC"
+    }
+  }
+}

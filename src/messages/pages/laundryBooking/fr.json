@@ -1,0 +1,49 @@
+{
+  "laundryBooking": {
+    "title": "Réservation de Blanchisserie",
+    "tabs": {
+      "all": "Toutes",
+      "pending": "En Attente",
+      "acceptedORConfirmed": "Confirmé ou Accepté",
+      "cancelled": "Annulé",
+      "rejected": "Rejeté"
+    },
+    "table": {
+      "residentName": "Nom du Résident",
+      "laundryDateTime": "Date et Heure de Blanchisserie",
+      "roomNumber": "Numéro de Chambre",
+      "machineName": "Machine",
+      "DateAndTime": "Date et Heure",
+      "status": "Statut"
+    },
+    "status": {
+      "pending": "En Attente",
+      "confirmed": "Confirmé",
+      "completed": "Terminé"
+    },
+    "buttons": {
+      "submit": "Soumettre",
+      "cancel": "Annuler"
+    },
+    "actions": {
+      "approve": "Approuver",
+      "cancel": "Annuler",
+      "view": "Voir"
+    },
+    "modal": {
+      "viewBookingDetails": "Détails de la Réservation de Blanchisserie",
+      "residentName": "Nom du Résident",
+      "roomNumber": "Numéro de Chambre",
+      "machineName": "Nom de la Machine",
+      "laundryDate": "Date de Blanchisserie",
+      "timeSlot": "Créneau Horaire",
+      "status": "Statut"
+    },
+    "areYouSureModal": {
+      "approve": "Approuver la Réservation",
+      "reject": "Rejeter la Réservation",
+      "approveBookingSure": "Êtes-vous sûr de vouloir approuver cette réservation ?",
+      "rejectBookingSure": "Êtes-vous sûr de vouloir rejeter cette réservation ?"
+    }
+  }
+}

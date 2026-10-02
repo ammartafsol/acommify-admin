@@ -1,0 +1,130 @@
+{
+  "residentsPage": {
+    "title": "د استوګنو مدیریت",
+    "viewModalTitle": "د استوګن تفصیلات",
+    "addResident": "نوی استوګن اضافه کړئ",
+    "searchPlaceholder": "لټون",
+    "table": {
+      "residentName": "د استوګن نوم",
+      "roomNo": "د کوټې/کور شمیره",
+      "email": "بریښنالیک",
+      "phone": "تلیفون",
+      "residentStatus": "د استوګن حالت",
+      "dob": "د زیږیدو نیټه",
+      "age": "عمر",
+      "arrivalDate": "د راتګ نیټه",
+      "gender": "جنس"
+    },
+    "modal": {
+      "noOfBedsRequired": "د بسترونو شمیر اړین دی",
+      "noOfBeds": "د بسترونو شمیر",
+      "noOfBedsPlaceholder": "د بسترونو شمیر وټاکئ",
+      "available": "شتون لرونکی",
+      "familyMemberRelation": "د کورنۍ د غړي اړیکه",
+      "header": "نوی استوګن اضافه کړئ",
+      "editResident": "استوګن سمون",
+      "familyMembers": "د کورنۍ غړي",
+      "name": "بشپړ نوم",
+      "namePlaceholder": "بشپړ نوم ولیکئ",
+      "nameRequired": "نوم اړین دی",
+      "inputRequired": {
+        "fullName": "بشپړ نوم اړین دی",
+        "schoolName": "د ښوونځي نوم اړین دی"
+      },
+      "dob": "د زیږیدو نیټه",
+      "dobPlaceholder": "د زیږیدو نیټه وټاکئ",
+      "dobRequired": "د زیږیدو نیټه اړینه ده",
+      "dateOfArrival": "د راتګ نیټه",
+      "dateOfArrivalPlaceholder": "د راتګ نیټه وټاکئ",
+      "dateOfArrivalRequired": "د راتګ نیټه اړینه ده",
+      "phoneNumberRequired": "د تلیفون شمیره اړینه ده",
+      "countryCode": "د هیواد کوډ",
+      "email": "د بریښنالیک پته",
+      "emailPlaceholder": "د بریښنالیک پته ولیکئ",
+      "emailRequired": "بریښنالیک اړین دی",
+      "invalidEmail": "مهرباني وکړئ سمه بریښنالیک پته ولیکئ",
+      "phone": "د تلیفون شمیره",
+      "phonePlaceholder": "د تلیفون شمیره ولیکئ",
+      "invalidPhoneNumber": "مهرباني وکړئ د هیواد کوډ سره سمه تلیفون شمیره ولیکئ",
+      "roomNumber": "د کوټې شمیره",
+      "roomNumberPlaceholder": "د کوټې شمیره ولیکئ",
+      "roomNumberRequired": "د کوټې شمیره اړینه ده",
+      "status": "حالت",
+      "statusPlaceholder": "حالت وټاکئ",
+      "statusRequired": "حالت اړین دی",
+      "offsite": "د ځای څخه بهر",
+      "onsite": "په ځای کې",
+      "familyMemberLabel": "د کورنۍ غړی",
+      "cancel": "لغوه کول",
+      "confirm": "تایید",
+      "addFamilyMember": "د کورنۍ غړي اضافه کړئ",
+      "familyMemberName": "د کورنۍ د غړي نوم",
+      "familyMemberNamePlaceholder": "د کورنۍ د غړي نوم ولیکئ",
+      "relationship": "اړیکه",
+      "relationshipPlaceholder": "اړیکه وټاکئ",
+      "schoolName": "د ښوونځي نوم",
+      "schoolNamePlaceholder": "د ښوونځي نوم ولیکئ",
+      "trcNumber": "TRC شمیره",
+      "trcNumberPlaceholder": "TRC شمیره ولیکئ",
+      "gender": "جنس",
+      "genderPlaceholder": "جنس وټاکئ",
+      "genderRequired": "جنس اړین دی",
+      "ppsnNumber": "PPSN شمیره",
+      "ppsnNumberPlaceholder": "PPSN شمیره ولیکئ",
+      "medicalCardNumber": "د درملنې کارت شمیره",
+      "familyMember": "د کورنۍ غړی",
+      "medicalCardNumberPlaceholder": "د درملنې کارت شمیره ولیکئ",
+      "relationShipOptions": {
+        "father": "پلار",
+        "mother": "مور",
+        "sibling": "ورور/خور",
+        "spouse": "مېړه/ښځه",
+        "children": "ماشومان"
+      },
+      "genderOptions": {
+        "male": "مرد",
+        "female": "زن",
+        "other": "دیگر"
+      },
+      "schoolPlacement": {
+        "label": "په ښوونځي کې ځای ورکړل شوی",
+        "placeholder": "د ښوونځي د ځای ورکولو حالت وټاکئ",
+        "placed": "ځای ورکړل شوی",
+        "notPlaced": "ځای ورکړل شوی نه دی"
+      },
+      "year": "کال",
+      "yearPlaceholder": "د ښوونځي کال ولیکئ",
+      "transportType": {
+        "label": "د لیږد ډول",
+        "placeholder": "د لیږد ډول وټاکئ",
+        "bus": "بس",
+        "carpool": "د موټر شریکول",
+        "family": "کورنۍ یې راولي"
+      },
+      "books": {
+        "label": "کتابونه",
+        "placeholder": "کتاب {number} ولیکئ"
+      },
+      "relationshipRequired": "اړیکه اړینه ده",
+      "callingCodeRequired": "د زنګ کوډ اړین دی",
+      "ageAtLeast18": "اوسیدونکی باید لږ تر لږه 18 کلن وي",
+      "schoolPlacementRequired": "د ښوونځي ځای ورکول اړین دي",
+      "yearRequired": "کال اړین دی",
+      "yearMax": "کال په راتلونکي کې نشي کیدای",
+      "transportTypeRequired": "د لیږد ډول اړین دی",
+      "booksMinRequired": "لږ تر لږه یو کتاب اړین دی",
+      "age": "عمر",
+      "agePlaceholder": "عمر ولیکئ",
+      "toasts": {
+        "residentUpdated": "استوګن په بریالیتوب سره تازه شو",
+        "residentAdded": "استوګن په بریالیتوب سره اضافه شو",
+        "translationSuccessMessage": "په بریالیتوب سره ژباړل شو"
+      },
+      "autoFill": "خپل ځان ډکول",
+      "translating": "ژباړه کيږي..."
+    },
+    "actions": {
+      "edit": "سمون"
+    }
+  }
+}

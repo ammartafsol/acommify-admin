@@ -1,0 +1,25 @@
+{
+  "changePasswordPage": {
+    "title": "Зміна пароля",
+    "currentPassword": "Поточний пароль",
+    "newPassword": "Новий пароль",
+    "confirmNewPassword": "Підтвердити новий пароль",
+    "updatePasswordButton": "Оновити пароль",
+    "successMessage": "Пароль успішно оновлено.",
+    "validation": {
+      "currentPasswordRequired": "Поточний пароль є обов'язковим.",
+      "newPasswordRequired": "Новий пароль є обов'язковим.",
+      "confirmNewPasswordRequired": "Будь ласка, підтвердіть новий пароль.",
+      "passwordsMustMatch": "Новий пароль і підтвердження повинні збігатися.",
+      "passwordMinLength": "Пароль повинен містити принаймні 8 символів.",
+      "passwordMaxLength": "Пароль не повинен перевищувати 20 символів.",
+      "passwordLowercase": "Пароль повинен містити принаймні одну малу літеру.",
+      "passwordUppercase": "Пароль повинен містити принаймні одну велику літеру.",
+      "passwordNumber": "Пароль повинен містити принаймні одну цифру.",
+      "passwordSpecialChar": "Пароль повинен містити принаймні один спеціальний символ.",
+      "currentPasswordInvalid": "Поточний пароль є недійсним.",
+      "newPasswordInvalid": "Новий пароль є недійсним.",
+      "confirmNewPasswordInvalid": "Підтвердження нового пароля є недійсним."
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "changePasswordPage": {
+    "title": "Change Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "updatePasswordButton": "Update Password",
+    "successMessage": "Password has been updated successfully.",
+    "validation": {
+      "currentPasswordRequired": "Current password is required.",
+      "newPasswordRequired": "New password is required.",
+      "confirmNewPasswordRequired": "Please confirm your new password.",
+      "passwordsMustMatch": "New password and confirmation must match.",
+      "passwordMinLength": "Password must be at least 8 characters long.",
+      "passwordMaxLength": "Password must not exceed 20 characters.",
+      "passwordLowercase": "Password must contain at least one lowercase letter.",
+      "passwordUppercase": "Password must contain at least one uppercase letter.",
+      "passwordNumber": "Password must contain at least one number.",
+      "passwordSpecialChar": "Password must contain at least one special character.",
+      "currentPasswordInvalid": "Current password is invalid.",
+      "newPasswordInvalid": "New password is invalid."
+     
+    }
+  }
+}

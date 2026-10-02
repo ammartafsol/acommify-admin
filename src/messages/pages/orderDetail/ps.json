@@ -1,0 +1,32 @@
+{
+  "orderDetailsPage": {
+    "title": "د امر تفصیلات",
+    "orderDetail": {
+      "orderId": "امر",
+      "status": "د امر حالت",
+      "orderDate": "د امر نیټه",
+      "totalPoints": "ټولې نښې",
+      "userInfo": "د کارن معلومات",
+      "name": "نوم",
+      "email": "بریښنالیک",
+      "phone": "تلیفون",
+      "shippingInfo": "د لیږد معلومات",
+      "address": "پته",
+      "city": "ښار",
+      "country": "هیواد",
+      "summary": "د امر لنډیز",
+      "orderIdLabel": "د امر ID",
+      "items": "توک",
+      "orderItem": "د امر توک"
+    },
+    "orderDetailsHeader": {
+      "product": "محصول",
+      "category": "کتګوري",
+      "quantity": "اندازه",
+      "shippingType": "د لیږد ډول",
+      "totalPoints": "ټول",
+      "status": "حالت"
+    },
+    "completedStatusToast": "د امر د توک حالت په بریالیتوب سره بشپړ شو"
+  }
+}

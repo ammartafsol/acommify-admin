@@ -1,0 +1,25 @@
+{
+  "changePasswordPage": {
+    "title": "Canza Kalmar Sirri",
+    "currentPassword": "Kalmar Sirri ta Yanzu",
+    "newPassword": "Sabuwar Kalmar Sirri",
+    "confirmNewPassword": "Tabbatar da Sabuwar Kalmar Sirri",
+    "updatePasswordButton": "Sabunta Kalmar Sirri",
+    "successMessage": "An sabunta kalmar sirri cikin nasara.",
+    "validation": {
+      "currentPasswordRequired": "Kalmar sirri ta yanzu tana buƙata.",
+      "newPasswordRequired": "Sabuwar kalmar sirri tana buƙata.",
+      "confirmNewPasswordRequired": "Da fatan za a tabbatar da sabuwar kalmar sirri.",
+      "passwordsMustMatch": "Sabuwar kalmar sirri da tabbatarwa dole su yi daidai.",
+      "passwordMinLength": "Kalmar sirri dole ta kasance aƙalla haruffa 8.",
+      "passwordMaxLength": "Kalmar sirri bata wuce haruffa 20 ba.",
+      "passwordLowercase": "Kalmar sirri dole ta ƙunshi aƙalla harafi ɗaya na ƙarami.",
+      "passwordUppercase": "Kalmar sirri dole ta ƙunshi aƙalla harafi ɗaya na babba.",
+      "passwordNumber": "Kalmar sirri dole ta ƙunshi aƙalla lamba ɗaya.",
+      "passwordSpecialChar": "Kalmar sirri dole ta ƙunshi aƙalla harafi na musamman ɗaya.",
+      "currentPasswordInvalid": "Kalmar sirri ta yanzu tana buƙata.",
+      "newPasswordInvalid": "Sabuwar kalmar sirri tana buƙata.",
+      "confirmNewPasswordInvalid": "Tabbatar da sabuwar kalmar sirri tana buƙata."
+    }
+  }
+}

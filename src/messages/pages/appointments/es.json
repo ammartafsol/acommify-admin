@@ -1,0 +1,46 @@
+{
+  "appointments": {
+    "title": "Citas",
+    "searchPlaceholder": "Buscar",
+    "tabs": {
+      "all": "Todas",
+      "completed": "Completadas",
+      "cancelled": "Canceladas",
+      "pending": "Pendiente",
+      "rejected": "Rechazada"
+    },
+    "table": {
+      "residentName": "Nombre del Residente",
+      "roomNumber": "Número de Habitación",
+      "dateAndTime": "Fecha y Hora",
+      "appointmentType": "Tipo de Cita",
+      "purpose": "Propósito",
+      "status": "Estado"
+    },
+    "menuItems": {
+      "edit": "Editar",
+      "delete": "Eliminar"
+    },
+    "modal": {
+      "title": "Modal de Detalles de la Cita",
+      "name": "Nombre del Residente",
+      "roomNumber": "Número de Habitación",
+      "dateTime": "Fecha y Hora",
+      "appointmentType": "Tipo de Cita",
+      "purpose": "Propósito",
+      "status": "Estado",
+      "notes": "Notas Adicionales"
+    },
+    "actions": {
+      "approve": "Aprobar",
+      "cancel": "Cancelar",
+      "view": "Ver"
+    },
+    "areYouSureModal": {
+      "approve": "Aprobar",
+      "reject": "Rechazar",
+      "approveBookingSure": "¿Está seguro de que desea aprobar la reserva?",
+      "rejectBookingSure": "¿Está seguro de que desea rechazar la reserva?"
+    }
+  }
+}

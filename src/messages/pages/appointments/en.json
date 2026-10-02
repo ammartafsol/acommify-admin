@@ -1,0 +1,47 @@
+{
+  "appointments": {
+    "title": "Appointments",
+    "searchPlaceholder": "Search",
+    "tabs": {
+      "all": "All",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "pending": "Pending",
+      "rejected": "Rejected"
+    },
+
+    "table": {
+      "residentName": "Resident Name",
+      "roomNumber": "Room Number",
+      "dateAndTime": "Date and Time",
+      "appointmentType": "Appointment Type",
+      "purpose": "Purpose",
+      "status": "Status"
+    },
+    "menuItems": {
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "modal": {
+      "title": "Appointment Detail Modal",
+      "name": "Resident Name",
+      "roomNumber": "Room Number",
+      "dateTime": "Date And Time",
+      "appointmentType": "Appointment Type",
+      "purpose": "Purpose",
+      "status": "Status",
+      "notes": "Additional Notes"
+    },
+    "actions": {
+      "approve": "Approve",
+      "cancel": "Cancel",
+      "view": "View"
+    },
+    "areYouSureModal": {
+      "approve": "Approve",
+      "reject": "Reject",
+      "approveBookingSure": "approveBookingSure",
+      "rejectBookingSure": "rejectBookingSure"
+    }
+  }
+}

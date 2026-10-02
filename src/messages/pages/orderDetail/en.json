@@ -1,0 +1,33 @@
+{
+  "orderDetailsPage": {
+    "title": "Order Details",
+    "orderDetail": {
+      "orderId": "Order",
+      "status": "Order Status",
+      "orderDate": "Order Date",
+      "totalPoints": "Total Points",
+      "userInfo": "User Information",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "shippingInfo": "Shipping Information",
+      "address": "Address",
+      "city": "City",
+      "country": "Country",
+
+      "summary": "Order Summary",
+      "orderIdLabel": "Order ID",
+      "items": "Items",
+      "orderItem": "Order Items"
+    },
+    "orderDetailsHeader": {
+      "product": "Product",
+      "category": "Category",
+      "quantity": "Quantity",
+      "shippingType": "Shipping Type",
+      "totalPoints": "Total",
+      "status": "Status"
+    },
+    "completedStatusToast": "Order item status Completed successfully"
+  }
+}

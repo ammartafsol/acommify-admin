@@ -1,0 +1,68 @@
+{
+  "loginPage": {
+    "title": "تسجيل الدخول",
+    "titleCentre": "تسجيل دخول المركز",
+    "titleNationwide": "تسجيل دخول لوحة القيادة الوطنية",
+    "titleAdmin": "تسجيل دخول المسؤول",
+    "selectorTitle": "أي تسجيل دخول تحتاجه؟",
+    "selectorSubtitle": "اختر نوع الحساب الذي تريد تسجيل الدخول به.",
+    "selectCentre": "المركز",
+    "selectNationwide": "لوحة القيادة الوطنية",
+    "selectAdmin": "المسؤول",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "أدخل البريد الإلكتروني",
+    "emailError": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+    "EmailRequired": "البريد الإلكتروني مطلوب",
+    "emailInvalidChars": "البريد الإلكتروني يحتوي على أحرف غير صالحة",
+    "passwordLabel": "كلمة المرور",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "passwordRequired": "كلمة المرور مطلوبة",
+    "forgotPass": "نسيت كلمة المرور؟",
+    "loginButton": "تسجيل الدخول",
+    "gotoBusinessOwnerLogin": "تسجيل الدخول كمركز",
+    "gotoAdminLogin": "الانتقال إلى تسجيل دخول المسؤول",
+    "gotoNationWideLogin": "الانتقال إلى تسجيل دخول لوحة القيادة الوطنية"
+  },
+  "forgotPasswordPage": {
+    "title": "نسيت كلمة المرور",
+    "subtitle": "لا تقلق! هذا يحدث. يرجى إدخال العنوان المرتبط بحسابك.",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "أدخل البريد الإلكتروني",
+    "emailError": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "emailInvalidChars": "البريد الإلكتروني يحتوي على أحرف غير صالحة",
+    "submitButton": "إرسال البريد الإلكتروني",
+    "specialChar": "بدون أحرف خاصة"
+  },
+  "verificationPage": {
+    "title": "رمز التحقق",
+    "subtitle": "تأكيد بالرمز",
+    "resendCode": "إعادة إرسال الرمز {time, plural, =0 {} =1 {# ثانية} few {# ثواني} many {# ثانية} other {# ثانية}}",
+    "sendingOtp": "إرسال رمز OTP {time, plural, =0 {} =1 {# ثانية} few {# ثواني} many {# ثانية} other {# ثانية}}",
+    "verifyButton": "تحقق",
+    "minLimit": "يجب أن يكون رمز OTP 4 أحرف على الأقل",
+    "otpRequired": "رمز OTP مطلوب"
+  },
+  "resetPasswordPage": {
+    "title": "إعادة تعيين كلمة المرور",
+    "subtitle": "أدخل كلمة المرور الجديدة",
+    "passwordLabel": "كلمة المرور",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "passwordRequired": "كلمة المرور مطلوبة",
+    "minPasswordError": "الحد الأدنى 8 أحرف",
+    "maxPasswordError": "الحد الأقصى 20 حرف",
+    "lowerPasswordError": "أضف حرف صغير واحد على الأقل",
+    "upperPasswordError": "أضف حرف كبير واحد على الأقل",
+    "specialPasswordError": "أضف حرف خاص واحد على الأقل",
+    "confirmPasswordLabel": "تأكيد كلمة المرور",
+    "confirmPasswordPlaceholder": "تأكيد كلمة المرور",
+    "confirmPasswordRequired": "كلمة المرور مطلوبة",
+    "ConfirmPasswordError": "كلمات المرور غير متطابقة",
+    "submitButton": "إعادة تعيين كلمة المرور",
+
+    "modal": {
+      "title": "تم تغيير كلمة المرور بنجاح!",
+      "btnText": "متابعة"
+    }
+  }
+}

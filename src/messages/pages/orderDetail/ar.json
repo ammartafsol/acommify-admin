@@ -1,0 +1,32 @@
+{
+  "orderDetailsPage": {
+    "title": "تفاصيل الطلب",
+    "orderDetail": {
+      "orderId": "الطلب",
+      "status": "حالة الطلب",
+      "orderDate": "تاريخ الطلب",
+      "totalPoints": "إجمالي النقاط",
+      "userInfo": "معلومات المستخدم",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "shippingInfo": "معلومات الشحن",
+      "address": "العنوان",
+      "city": "المدينة",
+      "country": "البلد",
+      "summary": "ملخص الطلب",
+      "orderIdLabel": "معرف الطلب",
+      "items": "العناصر",
+      "orderItem": "عناصر الطلب"
+    },
+    "orderDetailsHeader": {
+      "product": "المنتج",
+      "category": "الفئة",
+      "quantity": "الكمية",
+      "shippingType": "نوع الشحن",
+      "totalPoints": "الإجمالي",
+      "status": "الحالة"
+    },
+    "completedStatusToast": "تم إكمال حالة عنصر الطلب بنجاح"
+  }
+}

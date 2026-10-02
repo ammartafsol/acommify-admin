@@ -1,0 +1,29 @@
+{
+  "reportsAnalyticsPage": {
+    "title": "التقارير والتحليلات",
+    "ethnicityTitle": "بيانات العرقية",
+    "demographicBreakdownTitle": "التفصيل الديموغرافي",
+    "children": "الأطفال",
+    "adults": "البالغون",
+    "male": "ذكر",
+    "female": "أنثى",
+    "other": "آخر",
+    "noData": "لا توجد بيانات متاحة",
+    "maintenanceRequestTitle": "طلبات الصيانة",
+    "incidentReportsTitle": "تقرير الحوادث",
+    "totalVisitorTitle": "إجمالي الزوار",
+    "downloadReport": "تحميل التقرير",
+    "statsCards": {
+      "onSite": "المقيمون في الموقع",
+      "offSite": "المقيمون خارج الموقع",
+      "pendingRequests": "الطلبات المعلقة",
+      "maintenanceRequests": "طلبات الصيانة المعلقة",
+      "bedCount": "إجمالي الأسرة",
+      "upcomingAppointments": "المواعيد القادمة",
+      "availableBeds": "الأسرة المتاحة",
+      "totalVisitors": "إجمالي الزوار",
+      "totalStaffCount": "إجمالي الموظفين",
+      "totalChildren": "إجمالي الابناء"
+    }
+  }
+}

@@ -1,0 +1,277 @@
+.main {
+  padding: 20px;
+  margin-block: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.controlSection {
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.createButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--Blue-light-500);
+  color: var(--Primary-White);
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.createButton:hover {
+  background: var(--Blue-light-600);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.slotsContainer {
+  display: flex;
+  flex-direction: column;
+  background: var(--Primary-White);
+  border-radius: 16px;
+  padding: 24px;
+  gap: 24px;
+  border: 2px solid var(--outlined-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sectionHeader {
+  text-align: center;
+}
+
+.sectionHeader h3 {
+  color: var(--Primary-Blue);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.sectionHeader p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0;
+}
+
+.utcNote {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: var(--Blue-light-50);
+  border: 2px solid var(--Blue-light-500);
+  border-radius: 12px;
+  margin-top: 16px;
+  box-shadow: 0 2px 8px rgba(11, 165, 236, 0.12);
+  transition: all 0.3s ease;
+}
+
+.utcNote:hover {
+  box-shadow: 0 4px 12px rgba(11, 165, 236, 0.18);
+  transform: translateY(-1px);
+}
+
+.utcNote span {
+  color: var(--Blue-light-700);
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.3px;
+}
+
+.weekdaysGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.dayCard {
+  background: var(--Primary-White);
+  border-radius: 18px;
+  border: 2px solid var(--outlined-border);
+  box-shadow: 0 2px 8px rgba(11, 165, 236, 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.3s, border-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+}
+
+.dayCard:hover {
+  border-color: var(--Blue-light-500);
+  box-shadow: 0 8px 32px rgba(11, 165, 236, 0.15);
+}
+
+.dayHeader {
+  background: var(--Blue-light-50);
+  padding: 18px 24px 12px 24px;
+  border-bottom: 1px solid var(--outlined-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dayInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.dayHeader h4 {
+  color: var(--Primary-Blue);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.slotCount {
+  background: var(--Blue-light-500);
+  color: var(--Primary-White);
+  padding: 6px 16px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(11, 165, 236, 0.08);
+}
+
+.editIcon,
+.addIcon {
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.editIcon:hover,
+.addIcon:hover {
+  color: var(--Blue-light-500);
+}
+
+.slotsWrapper {
+  height: 250px;
+  padding: 11px 20px;
+  margin-inline-end: 5px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+}
+
+.slotsWrapper::-webkit-scrollbar {
+  width: 4px;
+}
+
+.slotsWrapper::-webkit-scrollbar-thumb {
+  background: var(--Blue);
+  border-radius: 3px;
+}
+
+.slotsWrapper::-webkit-scrollbar-track {
+  margin-block: 16px;
+  background: var(--Blue-light-50);
+  border-radius: 3px;
+}
+
+.slotItem {
+  display: flex;
+  align-items: center;
+  background: var(--Primary-White);
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--outlined-border);
+  transition: all 0.3s ease;
+}
+
+.slotItem:hover {
+  border-color: var(--Blue-light-500);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.slotTime {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.clockIcon {
+  color: var(--Blue-light-500);
+  font-size: 16px;
+}
+
+.noSlots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.noSlots p {
+  color: var(--text-secondary);
+  margin: 0 0 16px 0;
+  font-size: 14px;
+}
+
+.addSlotButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: var(--Green-light-500);
+  color: var(--Primary-White);
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addSlotButton:hover {
+  background: var(--Green-light-600);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .controlSection {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .weekdaysGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionHeader h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 415px) {
+  .dayInfo {
+    flex-wrap: wrap;
+  }
+}

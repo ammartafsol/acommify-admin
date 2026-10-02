@@ -1,0 +1,111 @@
+.paginationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding: 12px 24px 16px 24px;
+}
+
+.pageList {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pageItem {
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--Black);
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  outline: none;
+  user-select: none;
+}
+
+.pageItemActive {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  color: var(--text-primary) !important;
+  text-align: center;
+  border-radius: 8px;
+  background: var(--Blue, #33b5f6);
+  color: var(--Poor-white, #fff) !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.pageItem:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ellipsis {
+  color: var(--Dark-gray);
+  font-size: 18px;
+  padding: 0 4px;
+  user-select: none;
+}
+
+.arrowButton {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--Poor-white);
+  display: flex;
+  padding: 8px 14px;
+  justify-content: center;
+  height: 36px;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 1px 2px 0 rgba(10, 13, 18, 0.05);
+}
+
+.arrowButton:disabled {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  color: var(--Dark-gray);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  box-shadow: 0 1px 2px 0 rgba(10, 13, 18, 0.05);
+  cursor: not-allowed;
+}
+
+@media (max-width: 450px) {
+ .pageItemActive{
+  width: 32px;
+  height: 32px;
+ } 
+
+ .pageList{
+  gap: 4px;
+ }
+}
+
+@media (max-width: 400px) {
+  .arrowButton{
+    padding: 6px 10px;
+  }
+  .paginationContainer{
+    gap: 10px;
+  }
+}

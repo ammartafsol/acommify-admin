@@ -1,0 +1,80 @@
+{
+  "manageItemsPage": {
+    "title": "Управління елементами",
+    "categoryTitle": "Управління категоріями",
+    "addItem": "Додати елемент",
+    "addCategory": "Додати категорію",
+    "pleaseFill": "Будь ласка, заповніть",
+    "inputRequired": {
+      "name": "Назва категорії є обов'язковою",
+      "itemName": "Назва елемента є обов'язковою"
+    },
+    "topTabs": {
+      "items": "Елементи",
+      "categories": "Категорії"
+    },
+    "tabs": {
+      "all": "Усі"
+    },
+    "table": {
+      "itemName": "Назва елемента",
+      "stock": "Запас",
+      "points": "Бали",
+      "dateAdded": "Дата додавання",
+      "shippingOptions": "Варіанти доставки",
+      "category": "Категорія"
+    },
+    "categoriesTable": {
+      "categoryName": "Назва категорії",
+      "dateAdded": "Дата додавання"
+    },
+    "modal": {
+      "addHeader": "Додати новий елемент",
+      "editHeader": "Редагувати елемент",
+      "itemName": "Назва елемента",
+      "itemNamePlaceholder": "Введіть назву елемента",
+      "stock": "Запас",
+      "stockPlaceholder": "Введіть кількість запасів",
+      "stockRequired": "Запас є обов'язковим",
+      "stockMustBePositive": "Запас повинен бути додатним числом",
+      "stockMustBeInteger": "Запас повинен бути цілим числом",
+      "points": "Бали",
+      "pointsPlaceholder": "Введіть значення балів",
+      "pointsRequired": "Бали є обов'язковими",
+      "pointsMustBePositive": "Бали повинні бути додатним числом",
+      "pointsMustBeInteger": "Бали повинні бути цілим числом",
+      "photo": "Фото",
+      "photoRequired": "Фото є обов'язковим",
+      "cancel": "Скасувати",
+      "add": "Додати елемент",
+      "translating": "Перекладається...",
+      "autoFill": "Автозаповнення",
+      "categoryLabel": "Категорія",
+      "categoryPlaceholder": "Виберіть категорію",
+      "categoryRequired": "Категорія є обов'язковою",
+      "update": "Оновити елемент",
+      "shippingOptionsRequired": "Варіанти доставки є обов'язковими",
+      "shippingOptions": "Варіанти доставки",
+      "selectShippingOptions": "Виберіть варіанти доставки",
+      "deliverOptions": {
+        "pickup": "Самовивіз",
+        "delivery": "Доставка",
+        "pickupDelivery": "Самовивіз та доставка"
+      },
+      "toast": {
+        "itemUpdatedSuccess": "Елемент успішно оновлено",
+        "itemCreatedSuccess": "Елемент успішно створено",
+        "translationSuccess": "Автозаповнення успішне",
+        "imageUploadError": "Помилка завантаження фото"
+      }
+    },
+    "categoryModal": {
+      "addHeader": "Додати нову категорію",
+      "editHeader": "Редагувати категорію",
+      "categoryName": "Назва категорії",
+      "categoryNamePlaceholder": "Введіть назву категорії",
+      "categoryCreated": "Категорію успішно створено",
+      "updatedSuccessfully": "Категорію успішно оновлено"
+    }
+  }
+}

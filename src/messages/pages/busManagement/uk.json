@@ -1,0 +1,108 @@
+{
+  "busManagementPage": {
+    "title": "Управління автобусами",
+    "addBus": "Створити автобус",
+    "addNewBus": "Додати новий автобус",
+    "busDetail": "Деталі автобуса",
+    "deletedBus": "Автобус успішно видалено.",
+    "statusUpdated": "Статус автобуса успішно оновлено.",
+    "table": {
+      "busId": "ID автобуса",
+      "busName": "Назва автобуса",
+      "startLocation": "Місце відправлення",
+      "endLocation": "Місце прибуття",
+      "capacity": "Місткість",
+      "status": "Статус",
+      "startTime": "Час відправлення",
+      "endTime": "Час прибуття",
+      "availableDates": "Доступні дати",
+      "description": "Опис"
+    },
+    "filterStatus": {
+      "options": [
+        { "label": "Усі", "value": "all" },
+        { "label": "Активний", "value": "active" },
+        { "label": "Неактивний", "value": "inactive" },
+        { "label": "Обслуговування", "value": "maintenance" }
+      ]
+    },
+    "busStatus": {
+      "active": "Активний",
+      "inactive": "Неактивний"
+    },
+    "shiftOptions": {
+      "morning": "Ранок",
+      "afternoon": "Після обіду",
+      "evening": "Вечір",
+      "night": "Ніч"
+    },
+    "toasts": {
+      "busCreated": "Автобус успішно створено",
+      "busUpdated": "Автобус успішно оновлено"
+    },
+    "modal": {
+      "editTitle": "Редагувати автобус",
+      "translating": "Перекладається...",
+      "autoFill": "Автозаповнення",
+      "seater": "Місця",
+      "inputLabels": {
+        "document": "Завантажити умови та послуги",
+        "busName": "Назва автобуса",
+        "busNumber": "Номер автобуса",
+        "description": "Опис",
+        "startLocation": "Місце відправлення",
+        "endLocation": "Місце прибуття",
+        "capacity": "Місткість",
+        "startTime": "Час відправлення",
+        "endTime": "Час прибуття",
+        "availableDates": "Доступні дати",
+        "shift": "Зміна"
+      },
+      "inputPlaceholders": {
+        "busName": "Введіть назву автобуса",
+        "busNumber": "Введіть номер автобуса",
+        "description": "Введіть опис",
+        "startLocation": "Введіть місце відправлення",
+        "endLocation": "Введіть місце прибуття",
+        "capacity": "Введіть місткість",
+        "startTime": "Введіть час відправлення",
+        "endTime": "Введіть час прибуття",
+        "availableDates": "Виберіть доступні дати",
+        "shift": "Виберіть зміну"
+      },
+      "uploadMessage": {
+        "document": "Завантажити умови та послуги"
+      },
+      "fileFormats": {
+        "document": "PDF, DOC, DOCX, TXT, RTF"
+      },
+      "btnLabels": {
+        "create": "Створити",
+        "update": "Оновити",
+        "cancel": "Скасувати"
+      },
+      "translationSuccessMessage": "Переклад успішно завершено",
+      "toasts": {
+        "busCreated": "Автобус успішно створено",
+        "busUpdated": "Автобус успішно оновлено",
+        "pleaseFill": "Будь ласка, заповніть"
+      },
+      "validation": {
+        "busName": "Назва автобуса є обов'язковою",
+        "description": "Опис є обов'язковим",
+        "busNumber": "Номер автобуса є обов'язковим",
+        "startLocation": "Місце відправлення є обов'язковим",
+        "endLocation": "Місце прибуття є обов'язковим",
+        "capacity": "Місткість є обов'язковою",
+        "status": "Статус є обов'язковим",
+        "capacityMin": "Місткість повинна бути принаймні 15",
+        "availableDatesMin": "Потрібна принаймні одна доступна дата",
+        "availableDates": "Доступні дати є обов'язковими",
+        "startTime": "Час відправлення є обов'язковим",
+        "endTime": "Час прибуття є обов'язковим",
+        "shift": "Зміна є обов'язковою",
+        "mediaError": "Завантажити медіа"
+      }
+    }
+  }
+}

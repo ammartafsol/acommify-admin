@@ -1,0 +1,46 @@
+{
+  "documentCenterPage": {
+    "title": "დოკუმენტების ცენტრი",
+    "addDocument": "დოკუმენტის დამატება",
+    "searchPlaceholder": "დოკუმენტების ძებნა...",
+    "table": {
+      "documentName": "სახელი",
+      "documentType": "ტიპი",
+      "document": "დოკუმენტი",
+      "status": "სტატუსი",
+      "createdAt": "შექმნილი",
+      "viewDocument": "დოკუმენტის ნახვა",
+      "forms": "ფორმები",
+      "guide-lines": "მითითებები",
+      "other-documents": "სხვა დოკუმენტები"
+    },
+    "actions": {
+      "edit": "რედაქტირება"
+    },
+    "modal": {
+      "addDocument": "დოკუმენტის დამატება",
+      "editDocument": "დოკუმენტის რედაქტირება",
+      "addDocumentSubheading": "ახალი დოკუმენტის დამატება ცენტრში",
+      "editDocumentSubheading": "დოკუმენტის ინფორმაციის განახლება",
+      "documentName": "დოკუმენტის სახელი",
+      "documentNamePlaceholder": "შეიყვანეთ დოკუმენტის სახელი",
+      "documentType": "დოკუმენტის ტიპი",
+      "documentTypePlaceholder": "აირჩიეთ დოკუმენტის ტიპი",
+      "document": "დოკუმენტის ფაილი",
+      "formsOption": "ფორმები",
+      "guidelinesOption": "მითითებები",
+      "othersOption": "სხვა დოკუმენტები",
+      "cancel": "გაუქმება",
+      "create": "შექმნა",
+      "update": "განახლება",
+      "autofill": "ავტომატური შევსება",
+      "createdSuccessfully": "დოკუმენტი წარმატებით შეიქმნა!",
+      "updatedSuccessfully": "დოკუმენტი წარმატებით განახლდა!",
+      "fillRequiredFields": "გთხოვთ, შეავსოთ ყველა აუცილებელი ველი თარგმნამდე",
+      "translationSuccessMessage": "თარგმანი წარმატებულია!",
+      "nameRequired": "სახელი",
+      "documentTypeRequired": "დოკუმენტის ტიპი აუცილებელია",
+      "documentRequired": "დოკუმენტი აუცილებელია"
+    }
+  }
+}

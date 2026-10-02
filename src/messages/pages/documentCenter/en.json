@@ -1,0 +1,46 @@
+{
+  "documentCenterPage": {
+    "title": "Document Center",
+    "addDocument": "Add Document",
+    "searchPlaceholder": "Search documents...",
+    "table": {
+      "documentName": "Name",
+      "documentType": "Type",
+      "document": "Document",
+      "status": "Status",
+      "createdAt": "Created At",
+      "viewDocument": "View Document",
+      "forms": "Forms",
+      "guide-lines": "Guidelines",
+      "other-documents": "Other Documents"
+    },
+    "actions": {
+      "edit": "Edit"
+    },
+    "modal": {
+      "addDocument": "Add Document",
+      "editDocument": "Edit Document",
+      "addDocumentSubheading": "Add a new document to the center",
+      "editDocumentSubheading": "Update document information",
+      "documentName": "Document Name",
+      "documentNamePlaceholder": "Enter document name",
+      "documentType": "Document Type",
+      "documentTypePlaceholder": "Select document type",
+      "document": "Document File",
+      "formsOption": "Forms",
+      "guidelinesOption": "Guidelines",
+      "othersOption": "Other Documents",
+      "cancel": "Cancel",
+      "create": "Create",
+      "update": "Update",
+      "autofill": "Autofill",
+      "createdSuccessfully": "Document created successfully!",
+      "updatedSuccessfully": "Document updated successfully!",
+      "fillRequiredFields": "Please fill in all required fields before translating",
+      "translationSuccessMessage": "Translation successful!",
+      "nameRequired": "Name",
+      "documentTypeRequired": "Document type is required",
+      "documentRequired": "Document is required"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.main input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background: #eaf0fa;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  position: relative;
+  box-shadow: 0 0 0 1px #eaf0fa;
+}
+
+.main input[type="checkbox"]:checked {
+  background: var(--Blue);
+  box-shadow: 0 0 0 1px var(--Blue);
+}
+
+.main input[type="checkbox"]:checked::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset-inline-start: 2px;
+  top: 4px;
+  width: 12px;
+  height: 8px;
+  background: url("/svg/tick.svg") center center no-repeat;
+  background-size: 12px 10px;
+}
+
+.main label {
+  color: var(--text-primary);
+  cursor: pointer;
+  font-family: var(--font-lato);
+  font-size: var(--fs14);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}

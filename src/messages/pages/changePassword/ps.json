@@ -1,0 +1,25 @@
+{
+  "changePasswordPage": {
+    "title": "د پاسورډ بدلول",
+    "currentPassword": "اوسنی پاسورډ",
+    "newPassword": "نوی پاسورډ",
+    "confirmNewPassword": "نوی پاسورډ تایید کړئ",
+    "updatePasswordButton": "پاسورډ تازه کړئ",
+    "successMessage": "پاسورډ په بریالیتوب سره تازه شو.",
+    "validation": {
+      "currentPasswordRequired": "اوسنی پاسورډ اړین دی.",
+      "newPasswordRequired": "نوی پاسورډ اړین دی.",
+      "confirmNewPasswordRequired": "مهرباني وکړئ خپل نوی پاسورډ تایید کړئ.",
+      "passwordsMustMatch": "نوی پاسورډ او تایید باید سره سمون ولري.",
+      "passwordMinLength": "پاسورډ باید لږترلږه 8 حروف ولري.",
+      "passwordMaxLength": "پاسورډ باید له 20 حروفو ډیر نه وي.",
+      "passwordLowercase": "پاسورډ باید لږترلږه یو کوچنی توری ولري.",
+      "passwordUppercase": "پاسورډ باید لږترلږه یو لوی توری ولري.",
+      "passwordNumber": "پاسورډ باید لږترلږه یو شمیره ولري.",
+      "passwordSpecialChar": "پاسورډ باید لږترلږه یو ځانګړی توری ولري.",
+      "currentPasswordInvalid": "اوسنی پاسورډ اړین دی.",
+      "newPasswordInvalid": "نوی پاسورډ اړین دی.",
+      "confirmNewPasswordInvalid": "نوی پاسورډ تایید کړئ."
+    }
+  }
+}

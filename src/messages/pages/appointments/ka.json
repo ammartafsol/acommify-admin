@@ -1,0 +1,46 @@
+{
+  "appointments": {
+    "title": "შეხვედრები",
+    "searchPlaceholder": "ძებნა",
+    "tabs": {
+      "all": "ყველა",
+      "completed": "დასრულებული",
+      "cancelled": "გაუქმებული",
+      "pending": "მოლოდინში",
+      "rejected": "უარყოფილი"
+    },
+    "table": {
+      "residentName": "მოსახლის სახელი",
+      "roomNumber": "ოთახის ნომერი",
+      "dateAndTime": "თარიღი და დრო",
+      "appointmentType": "შეხვედრის ტიპი",
+      "purpose": "მიზანი",
+      "status": "სტატუსი"
+    },
+    "menuItems": {
+      "edit": "რედაქტირება",
+      "delete": "წაშლა"
+    },
+    "modal": {
+      "title": "შეხვედრის დეტალების მოდალი",
+      "name": "მოსახლის სახელი",
+      "roomNumber": "ოთახის ნომერი",
+      "dateTime": "თარიღი და დრო",
+      "appointmentType": "შეხვედრის ტიპი",
+      "purpose": "მიზანი",
+      "status": "სტატუსი",
+      "notes": "დამატებითი შენიშვნები"
+    },
+    "actions": {
+      "approve": "დამტკიცება",
+      "cancel": "გაუქმება",
+      "view": "ნახვა"
+    },
+    "areYouSureModal": {
+      "approve": "დამტკიცება",
+      "reject": "უარყოფა",
+      "approveBookingSure": "დარწმუნებული ხართ, რომ გსურთ დაჯავშნის დამტკიცება?",
+      "rejectBookingSure": "დარწმუნებული ხართ, რომ გსურთ დაჯავშნის უარყოფა?"
+    }
+  }
+}

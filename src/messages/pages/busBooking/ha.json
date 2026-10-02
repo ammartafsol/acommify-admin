@@ -1,0 +1,49 @@
+{
+  "busBookingDetail": {
+    "busBooking": {
+      "title": "Ajiyar Bas",
+      "availableBusesTitle": "Bas da Ake Samu",
+      "availableBusesTabs": {
+        "morning": "Safe",
+        "afternoon": "Rana",
+        "evening": "Maraice"
+      },
+      "filterOptions": {
+        "all": "Duka",
+        "available": "Ake Samu",
+        "booked": "An Ajiye",
+        "selected": "An Zaɓa"
+      },
+      "dropdownOptions": {
+        "greenBus": "Bas Koriya",
+        "blueBus": "Bas Shudi",
+        "redBus": "Bas Ja"
+      }
+    },
+    "busDetailCard": {
+      "available": "Ake Samu",
+      "booked": "An Ajiye",
+      "duration": "Tsawon Lokaci",
+      "date": "Kwanan Wata",
+      "departure": "Tashi",
+      "seatsAvailable": "Kujeru da Ake Samu"
+    },
+    "table": {
+      "seatNumber": "Lambar Kujera",
+      "residentName": "Sunan Mazauni",
+      "houseNumber": "Lambar Gida",
+      "specialRequests": "Bukatun Musamman"
+    },
+    "modal": {
+      "validations": {
+        "residentName": "Sunan mazauni yana buƙata",
+        "invalidSeatNumber": "Lambar kujera mara inganci",
+        "invalidHouseNumber": "Lambar gida mara inganci"
+      },
+      "buttons": {
+        "saveChanges": "Ajiye Canje-canje",
+        "cancel": "Soke"
+      }
+    }
+  }
+}

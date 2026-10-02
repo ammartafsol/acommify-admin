@@ -1,0 +1,218 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.back {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.back > p {
+  color: var(--Dark-gray);
+  font-family: var(--font-lato);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title span {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Poor-white);
+}
+.title > p {
+  color: var(--Black);
+  font-family: var(--font-lato);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: max-content;
+  height: 42px;
+  padding: 12px 16px;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--Poor-white);
+}
+
+.filters > p {
+  color: var(--Dark-gray);
+
+  font-family: var(--font-lato);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.dropdownContainer,
+.dropdownMain {
+  width: max-content !important;
+}
+.dropdownContainer > div {
+  /* height: 42px !important; */
+  border: 1px solid var(--Blue);
+  border-radius: 8px !important;
+}
+.dropdownContainer > div svg {
+  color: var(--Blue) !important;
+}
+.dropdownContainer > div:hover {
+  border: 1px solid var(--Blue);
+}
+
+.searchInput {
+  width: 368px !important;
+  height: 42px !important;
+}
+.searchInput input {
+  border-radius: 15px !important;
+  background-color: var(--Poor-white) !important;
+  height: 42px !important;
+}
+.searchInput > div > div {
+  padding-inline-end: 5px;
+  padding-bottom: 4px;
+}
+
+.filterLabel {
+  color: var(--Dark-gray);
+  font-family: var(--font-lato);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.filterDropdown {
+  position: absolute;
+  top: 110%;
+  inset-inline-start: 0;
+  z-index: 100;
+  min-width: 180px;
+  background: var(--Poor-white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.filterOption {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--font-lato);
+  font-size: 15px;
+  color: var(--Black);
+  transition: background 0.15s;
+}
+
+.filterOption:hover {
+  background: var(--Background);
+}
+
+.filterOptionSelected {
+  background: var(--Blue);
+  color: var(--Poor-white);
+}
+
+.downloadBtn label {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+.wordPdfTab {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--Poor-white);
+  overflow: hidden;
+  height: 52px;
+  min-width: 120px;
+  box-shadow: 0 1px 4px rgba(51, 181, 246, 0.08);
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-inline-end: 6px;
+}
+
+.pdfTabActive {
+  background: var(--Blue);
+  color: #d8edfc;
+  font-family: var(--font-lato);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 14px;
+  height: 52px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wordTabInactive {
+  background: var(--Poor-white);
+  color: var(--Dark-gray);
+  font-family: var(--font-lato);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 14px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  border-radius: 0 6px 6px 0;
+  width: max-content;
+  cursor: pointer;
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 1280px) {
+  .header {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .title > p {
+    font-size: 25px;
+  }
+}

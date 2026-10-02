@@ -1,0 +1,46 @@
+{
+  "documentCenterPage": {
+    "title": "د اسنادو مرکز",
+    "addDocument": "سند اضافه کړئ",
+    "searchPlaceholder": "د اسنادو لټون...",
+    "table": {
+      "documentName": "نوم",
+      "documentType": "ډول",
+      "document": "سند",
+      "status": "حالت",
+      "createdAt": "جوړ شوی",
+      "viewDocument": "سند وګورئ",
+      "forms": "فارمونه",
+      "guide-lines": "لارښوونې",
+      "other-documents": "نور اسناد"
+    },
+    "actions": {
+      "edit": "سمون"
+    },
+    "modal": {
+      "addDocument": "سند اضافه کړئ",
+      "editDocument": "سند سمون",
+      "addDocumentSubheading": "مرکز ته نوی سند اضافه کړئ",
+      "editDocumentSubheading": "د سند معلومات تازه کړئ",
+      "documentName": "د سند نوم",
+      "documentNamePlaceholder": "د سند نوم ولیکئ",
+      "documentType": "د سند ډول",
+      "documentTypePlaceholder": "د سند ډول وټاکئ",
+      "document": "د سند فایل",
+      "formsOption": "فارمونه",
+      "guidelinesOption": "لارښوونې",
+      "othersOption": "نور اسناد",
+      "cancel": "لغوه کول",
+      "create": "جوړول",
+      "update": "تازه کول",
+      "autofill": "خپل ځان ډکول",
+      "createdSuccessfully": "سند په بریالیتوب سره جوړ شو!",
+      "updatedSuccessfully": "سند په بریالیتوب سره تازه شو!",
+      "fillRequiredFields": "مهرباني وکړئ د ژباړې دمخه ټول اړین ساحې ډک کړئ",
+      "translationSuccessMessage": "ژباړه بریالیه!",
+      "nameRequired": "نوم",
+      "documentTypeRequired": "د سند ډول اړین دی",
+      "documentRequired": "سند اړین دی"
+    }
+  }
+}

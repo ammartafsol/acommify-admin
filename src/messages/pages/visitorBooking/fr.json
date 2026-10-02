@@ -1,0 +1,19 @@
+{
+  "visitorBooking": {
+    "title": "Réservation de Visiteurs",
+    "viewModalTitle": "Détails de la Réservation de Visiteurs",
+    "table": {
+      "residentName": "Nom du Résident",
+      "visitorName": "Nom du Visiteur",
+      "additionalNotes": "Notes Supplémentaires",
+      "dateAndTime": "Date et Heure"
+    },
+    "modal": {
+      "additionalNotes": "Notes Supplémentaires",
+      "residentName": "Nom du Résident",
+      "visitorName": "Nom du Visiteur",
+      "dateAndTime": "Date et Heure",
+      "createdAt": "Créé Le"
+    }
+  }
+}

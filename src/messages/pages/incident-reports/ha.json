@@ -1,0 +1,90 @@
+{
+  "incidentReportsPage": {
+    "title": "Rahoton Abubuwan da Suka Faru",
+    "addNewReport": "Ƙara Sabon Rahoto",
+    "noDataText": "Ba a sami rahoton abubuwan da suka faru ba",
+    "reportCreatedSuccessfully": "Rahoton abin da ya faru an ƙirƙira cikin nasara",
+    "status": {
+      "all": "Duka",
+      "resolved": "An Warware",
+      "underReview": "A Ƙarƙashin Bita",
+      "escalated": "An Ƙara"
+    },
+    "severityOptions": {
+      "low": "Ƙasa",
+      "medium": "Matsakaici",
+      "high": "Sama"
+    },
+    "tabs": {
+      "all": "Duka",
+      "resolved": "An Warware",
+      "underReview": "A Ƙarƙashin Bita",
+      "escalated": "An Ƙara"
+    },
+    "actions": {
+      "edit": "Gyara"
+    },
+    "table": {
+      "incidentId": "ID na Abin da Ya Faru",
+      "title": "Take",
+      "description": "Bayani",
+      "residentInvolved": "Mazauni da Ya Shiga",
+      "reportedBy": "Wanda Ya Ba da Rahoto",
+      "location": "Wuri",
+      "severity": "Matsakaici",
+      "dateTime": "Kwanan Wata da Lokaci",
+      "status": "Matsayi",
+      "completedDate": "Kwanan Wata na Ƙarshe"
+    },
+    "inputRequired": {
+      "title": "Take yana buƙata",
+      "description": "Bayani yana buƙata",
+      "location": "Wuri yana buƙata",
+      "residentInvolved": "Mazaunan da suka shiga suna buƙata",
+      "reportedBy": "Wanda ya ba da rahoto yana buƙata",
+      "severity": "Matsakaici yana buƙata",
+      "dateTime": "Kwanan wata da lokaci suna buƙata",
+      "status": "Matsayi yana buƙata",
+      "completedDate": "Kwanan wata na ƙarshe yana buƙata"
+    },
+    "modal": {
+      "title": "Ƙara Rahoton Abin da Ya Faru",
+      "editTitle": "Gyara Rahoton Abin da Ya Faru",
+      "autoFill": "Cike Kansa",
+      "translating": "Ana Fassara...",
+      "detailTitle": "Cikakken Abin da Ya Faru",
+      "pleaseFill": "Da fatan za a cika",
+      "modalBtnsLabel": {
+        "cancel": "Soke",
+        "submit": "Aika"
+      },
+      "inputLabels": {
+        "title": "Take",
+        "description": "Bayani",
+        "residentInvolved": "Mazauni da Ya Shiga",
+        "reportedBy": "Wanda Ya Ba da Rahoto",
+        "location": "Wuri",
+        "severity": "Matsakaici",
+        "dateTime": "Kwanan Wata da Lokaci",
+        "status": "Matsayi",
+        "completedDate": "Kwanan Wata na Ƙarshe"
+      },
+      "inputPlaceholders": {
+        "title": "Shigar da taken rahoto",
+        "description": "Shigar da bayanin rahoto",
+        "residentInvolved": "Shigar da Mazauni da Ya Shiga",
+        "reportedBy": "Zaɓi wanda ya ba da rahoto",
+        "location": "Shigar da wuri",
+        "severity": "Zaɓi matsakaici",
+        "dateTime": "Shigar da kwanan wata da lokaci",
+        "status": "Zaɓi matsayi",
+        "completedDate": "Shigar da kwanan wata na ƙarshe"
+      },
+      "toasts": {
+        "reportCreatedSuccessfully": "Rahoto an ƙirƙira cikin nasara",
+        "errorUpdatedReport": "Rahoto an sabunta cikin nasara",
+        "autoFilledSuccessfully": "Cike kansa ya yi nasara"
+      }
+    }
+  }
+}

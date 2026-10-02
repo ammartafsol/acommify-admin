@@ -1,0 +1,188 @@
+.statusCell {
+  width: max-content;
+  display: flex;
+  padding: 2px 8px 2px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.statusCell span:nth-child(1) {
+  display: flex;
+  min-width: 7px;
+  width: 7px;
+  height: 7px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.statusCell span:nth-child(2) {
+  text-align: center !important;
+  font-family: var(--font-inter) !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 18px !important;
+}
+
+.statusBlue {
+  background: var(--Blue-light-50, #f0f9ff) !important;
+}
+
+.statusBlue p {
+  color: var(--Blue-light-700, #026aa2) !important;
+}
+
+.statusBlue span {
+  background: var(--Blue-light-500) !important;
+}
+
+.statusGreen {
+  background: var(--Success-50, #ecfdf3) !important;
+}
+
+.statusGreen p {
+  color: var(--Success-700, #027a48) !important;
+}
+
+.statusGreen span {
+  background: var(--Success-500) !important;
+}
+
+.statusRed {
+  background: var(--Error-50, #fef3f2) !important;
+}
+
+.statusRed p {
+  color: var(--Error-700, #b42318) !important;
+}
+
+.statusRed span {
+  background: var(--Error-500) !important;
+}
+
+.statusOrange {
+  background: var(--Warning-50, #fffaeb) !important;
+}
+
+.statusOrange p {
+  color: var(--Warning-700, #b54708) !important;
+}
+
+.statusOrange span {
+  background: var(--Warning-500) !important;
+}
+
+.statusDefault {
+  background: var(--border-color, #dce0e5) !important;
+}
+
+.statusDefault p {
+  color: var(--Black, #172a33) !important;
+}
+
+.statusDefault span {
+  background: var(--Gray-500, #667085) !important;
+}
+.statusBlue {
+  background: var(--Blue-light-50, #f0f9ff);
+}
+
+.statusBlue p {
+  color: var(--Blue-light-700, #026aa2);
+}
+
+.statusBlue span {
+  background: var(--Blue-light-500);
+}
+
+.statusYellow {
+  background: var(--Yellow-light-50, #fffbeb);
+}
+
+.statusYellow p {
+  color: #f9a825;
+}
+
+.statusYellow span {
+  background: #f9a825;
+}
+
+.dateTimeCell {
+  display: flex;
+  align-items: center;
+  color: var(--Black, #172a33);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.switchCell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.switchCell p {
+  color: var(--Black, #172a33);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.switch {
+  width: max-content !important;
+  height: max-content !important;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.switch input {
+  width: 40px;
+  height: 18px;
+  margin: 0 !important;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.phoneNumberCell {
+  display: flex;
+  align-items: center;
+  color: var(--Black, #172a33);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 18px */
+}
+
+.itemPhotoCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.itemPhotoCell img {
+  border-radius: 8px;
+  border: 1px solid #eaeef4;
+  object-fit: cover;
+}
+
+.itemPhotoCell p {
+  color: var(--Black, #172a33);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.switch input {
+  outline: none;
+  box-shadow: none !important;
+}

@@ -1,0 +1,15 @@
+{
+  "profileSettingsPage": {
+    "title": "د پروفایل تنظیمات",
+    "fields": {
+      "name": "بشپړ نوم",
+      "namePlaceholder": "بشپړ نوم ولیکئ",
+      "email": "بریښنالیک",
+      "emailPlaceholder": "بریښنالیک ولیکئ",
+      "phone": "د تلیفون شمیره",
+      "phonePlaceholder": "د تلیفون شمیره ولیکئ",
+      "address": "پته",
+      "addressPlaceholder": "پته ولیکئ"
+    }
+  }
+}

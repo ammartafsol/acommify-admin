@@ -1,0 +1,78 @@
+{
+  "staffsPage": {
+    "title": "Управління персоналом",
+    "addMember": "Додати персонал",
+    "table": {
+      "staffID": "ID персоналу",
+      "name": "Ім'я",
+      "email": "Електронна пошта",
+      "phone": "Телефон",
+      "status": "Статус"
+    },
+    "actions": {
+      "edit": "Редагувати",
+      "delete": "Видалити"
+    },
+    "toast": {
+      "staffStatus": "Статус персоналу успішно оновлено",
+      "staffAdded": "Персонал успішно додано",
+      "staffUpdated": "Персонал успішно оновлено",
+      "staffDeleted": "Працівника успішно видалено",
+      "fill": "Будь ласка, заповніть поля іншими мовами також",
+      "translationSuccessMessage": "Успішно перекладено",
+      "pleaseFill": "Будь ласка, заповніть"
+    },
+    "modal": {
+      "title": "Деталі персоналу",
+      "staffID": "ID персоналу",
+      "name": "Повне ім'я",
+      "email": "Електронна пошта",
+      "phone": "Номер телефону",
+      "status": "Статус",
+      "addStaff": "Додати новий персонал",
+      "editStaff": "Редагувати персонал",
+      "translating": "Перекладається...",
+      "autoFill": "Автозаповнення",
+      "cancel": "Скасувати",
+      "loading": "Завантаження...",
+      "confirm": "Підтвердити",
+      "morning": "Ранкова",
+      "night": "Нічна",
+      "shiftTime": "Час зміни",
+      "position": "Посада",
+      "deleteMessage": "Ви впевнені, що хочете видалити цього працівника?"
+    },
+    "fields": {
+      "namePlaceholder": "Введіть повне ім'я",
+      "name": "Повне ім'я",
+      "emailPlaceholder": "example@company.com",
+      "email": "Адреса електронної пошти",
+      "phonePlaceholder": "Введіть номер телефону",
+      "phone": "Номер телефону",
+      "positionPlaceholder": "Виберіть посаду",
+      "position": "Посада",
+      "shiftStartTime": "Час початку зміни",
+      "shiftEndTime": "Час закінчення зміни",
+      "shiftStartTimePlaceholder": "Виберіть час початку зміни",
+      "shiftEndTimePlaceholder": "Виберіть час закінчення зміни",
+      "permissionsLabel": "Дозволи",
+      "permissionsPlaceholder": "Виберіть дозволи",
+      "selected": "Вибрано",
+      "selectAll": "Вибрати все",
+      "deselectAll": "Скасувати вибір всього"
+    },
+    "formikSchema": {
+      "fullNameRequired": "Повне ім'я є обов'язковим",
+      "emailAddress": "Будь ласка, введіть правильну адресу електронної пошти",
+      "emailRequired": "Електронна пошта є обов'язковою",
+      "callingRequired": "Код виклику є обов'язковим",
+      "phoneNumberLimit": "Номер телефону повинен містити 10-15 цифр, опціонально починаючи з +",
+      "phoneNumberRequired": "Номер телефону є обов'язковим",
+      "permissionsMin": "Принаймні один дозвіл повинен бути вибраний",
+      "permissionsRequired": "Дозволи є обов'язковими",
+      "shiftStartRequired": "Час початку зміни є обов'язковим",
+      "shiftEndRequired": "Час закінчення зміни є обов'язковим",
+      "positionRequired": "Посада є обов'язковою"
+    }
+  }
+}

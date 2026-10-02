@@ -1,0 +1,49 @@
+{
+  "busBookingDetail": {
+    "busBooking": {
+      "title": "Reserva de Ônibus",
+      "availableBusesTitle": "Ônibus Disponíveis",
+      "availableBusesTabs": {
+        "morning": "Manhã",
+        "afternoon": "Tarde",
+        "evening": "Noite"
+      },
+      "filterOptions": {
+        "all": "Todos",
+        "available": "Disponível",
+        "booked": "Reservado",
+        "selected": "Selecionado"
+      },
+      "dropdownOptions": {
+        "greenBus": "Ônibus Verde",
+        "blueBus": "Ônibus Azul",
+        "redBus": "Ônibus Vermelho"
+      }
+    },
+    "busDetailCard": {
+      "available": "Disponível",
+      "booked": "Reservado",
+      "duration": "Duração",
+      "date": "Data",
+      "departure": "Partida",
+      "seatsAvailable": "Assentos Disponíveis"
+    },
+    "table": {
+      "seatNumber": "Número do Assento",
+      "residentName": "Nome do Residente",
+      "houseNumber": "Número da Casa",
+      "specialRequests": "Solicitações Especiais"
+    },
+    "modal": {
+      "validations": {
+        "residentName": "Nome do Residente é obrigatório",
+        "invalidSeatNumber": "Número de assento inválido",
+        "invalidHouseNumber": "Número da casa inválido"
+      },
+      "buttons": {
+        "saveChanges": "Salvar Alterações",
+        "cancel": "Cancelar"
+      }
+    }
+  }
+}

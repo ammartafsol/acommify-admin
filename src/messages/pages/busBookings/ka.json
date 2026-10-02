@@ -1,0 +1,36 @@
+{
+  "busBookings": {
+    "title": "ავტობუსის დაჯავშნები",
+    "tabs": {
+      "all": "ყველა",
+      "pending": "მოლოდინში",
+      "cancelled": "გაუქმებული",
+      "completed": "დასრულებული"
+    },
+    "table": {
+      "residentName": "მოსახლის სახელი",
+      "roomNumber": "ოთახის ნომერი",
+      "busName": "ავტობუსის სახელი",
+      "busRoute": "ავტობუსის მარშრუტი",
+      "DepartureDateAndTime": "გამგზავრების თარიღი და დრო",
+      "status": "სტატუსი",
+      "ArrivalDateAndTime": "ჩამოსვლის თარიღი და დრო",
+      "actions": "მოქმედებები",
+      "shift": "ცვლა"
+    },
+    "action": {
+      "cancel": "გაუქმება",
+      "approve": "დამტკიცება",
+      "view": "ნახვა"
+    },
+    "areYouSureModal": {
+      "approve": "დამტკიცება",
+      "reject": "უარყოფა",
+      "approveBookingSure": "დარწმუნებული ხართ, რომ გსურთ დაჯავშნის დამტკიცება?",
+      "rejectBookingSure": "დარწმუნებული ხართ, რომ გსურთ დაჯავშნის უარყოფა?"
+    },
+    "modal": {
+      "viewBookingDetails": "ავტობუსის დაჯავშნის დეტალები"
+    }
+  }
+}

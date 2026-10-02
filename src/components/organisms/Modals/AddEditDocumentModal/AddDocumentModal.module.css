@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.languageSelector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.translateBtn {
+  height: 40px;
+  min-width: 120px;
+}
+
+.footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding-top: 20px;
+  border-top: 1px solid var(--Gray-200, #eaecf0);
+}
+
+.cancelBtn {
+  min-width: 100px;
+}
+
+.submitBtn {
+  min-width: 100px;
+}

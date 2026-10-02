@@ -1,0 +1,25 @@
+{
+  "ordersPage": {
+    "title": "Gerenciamento de Pedidos",
+    "exportDateRangeTitle": "Exportar Dados",
+    "searchPlaceholder": "Pesquisar pedidos...",
+    "exportButtonLabel": "Exportar Pedidos",
+    "exportSuccessToast": "Pedidos exportados com sucesso",
+    "exportErrorToast": "Falha ao exportar pedidos. Tente novamente.",
+    "table": {
+      "orderId": "ID do Pedido",
+      "customer": "Nome do Cliente",
+      "date": "Data do Pedido",
+      "status": "Status do Pedido",
+      "total": "Total de Pontos",
+      "actions": ""
+    },
+    "ordersTabs": {
+      "all": "Todos",
+      "pending": "Pendente",
+      "cancelled": "Cancelado",
+      "completed": "Concluído"
+    },
+    "cancelOrderToast": "Pedido cancelado com sucesso"
+  }
+}

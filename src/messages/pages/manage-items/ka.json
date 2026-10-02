@@ -1,0 +1,80 @@
+{
+  "manageItemsPage": {
+    "title": "ნივთების მართვა",
+    "categoryTitle": "კატეგორიების მართვა",
+    "addItem": "ნივთის დამატება",
+    "addCategory": "კატეგორიის დამატება",
+    "pleaseFill": "გთხოვთ, შეავსოთ",
+    "inputRequired": {
+      "name": "კატეგორიის სახელი აუცილებელია",
+      "itemName": "ნივთის სახელი აუცილებელია"
+    },
+    "topTabs": {
+      "items": "ნივთები",
+      "categories": "კატეგორიები"
+    },
+    "tabs": {
+      "all": "ყველა"
+    },
+    "table": {
+      "itemName": "ნივთის სახელი",
+      "stock": "საფონდო",
+      "points": "ქულები",
+      "dateAdded": "დამატების თარიღი",
+      "shippingOptions": "მიწოდების ვარიანტები",
+      "category": "კატეგორია"
+    },
+    "categoriesTable": {
+      "categoryName": "კატეგორიის სახელი",
+      "dateAdded": "დამატების თარიღი"
+    },
+    "modal": {
+      "addHeader": "ახალი ნივთის დამატება",
+      "editHeader": "ნივთის რედაქტირება",
+      "itemName": "ნივთის სახელი",
+      "itemNamePlaceholder": "შეიყვანეთ ნივთის სახელი",
+      "stock": "საფონდო",
+      "stockPlaceholder": "შეიყვანეთ საფონდო რაოდენობა",
+      "stockRequired": "საფონდო აუცილებელია",
+      "stockMustBePositive": "საფონდო უნდა იყოს დადებითი რიცხვი",
+      "stockMustBeInteger": "საფონდო უნდა იყოს მთელი რიცხვი",
+      "points": "ქულები",
+      "pointsPlaceholder": "შეიყვანეთ ქულების მნიშვნელობა",
+      "pointsRequired": "ქულები აუცილებელია",
+      "pointsMustBePositive": "ქულები უნდა იყოს დადებითი რიცხვი",
+      "pointsMustBeInteger": "ქულები უნდა იყოს მთელი რიცხვი",
+      "photo": "ფოტო",
+      "photoRequired": "ფოტო აუცილებელია",
+      "cancel": "გაუქმება",
+      "add": "ნივთის დამატება",
+      "translating": "თარგმნება...",
+      "autoFill": "ავტომატური შევსება",
+      "categoryLabel": "კატეგორია",
+      "categoryPlaceholder": "აირჩიეთ კატეგორია",
+      "categoryRequired": "კატეგორია აუცილებელია",
+      "update": "ნივთის განახლება",
+      "shippingOptionsRequired": "მიწოდების ვარიანტები აუცილებელია",
+      "shippingOptions": "მიწოდების ვარიანტები",
+      "selectShippingOptions": "აირჩიეთ მიწოდების ვარიანტები",
+      "deliverOptions": {
+        "pickup": "შეგროვება",
+        "delivery": "მიწოდება",
+        "pickupDelivery": "შეგროვება და მიწოდება"
+      },
+      "toast": {
+        "itemUpdatedSuccess": "ნივთი წარმატებით განახლდა",
+        "itemCreatedSuccess": "ნივთი წარმატებით შეიქმნა",
+        "translationSuccess": "ავტომატური შევსება წარმატებით დასრულდა",
+        "imageUploadError": "ფოტო განახლების შეცდომა"
+      }
+    },
+    "categoryModal": {
+      "addHeader": "ახალი კატეგორიის დამატება",
+      "editHeader": "კატეგორიის რედაქტირება",
+      "categoryName": "კატეგორიის სახელი",
+      "categoryNamePlaceholder": "შეიყვანეთ კატეგორიის სახელი",
+      "categoryCreated": "კატეგორია წარმატებით შეიქმნა",
+      "updatedSuccessfully": "კატეგორია წარმატებით განახლდა"
+    }
+  }
+}

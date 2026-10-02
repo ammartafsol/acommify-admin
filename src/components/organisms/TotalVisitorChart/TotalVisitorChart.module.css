@@ -1,0 +1,95 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 62px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 20px;
+  background: var(--Poor-white, #fff);
+  min-width: 320px;
+  padding: 24px 24px 24px 0px;
+  min-width: 430px;
+  height: 385px;
+}
+
+.headerTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: 24px;
+}
+
+.header > p {
+  color: var(--Gray-900, #181d27);
+  font-family: var(--font-lato);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.header svg {
+  cursor: pointer;
+}
+
+.chartWrapper {
+  position: relative;
+  width: 210px;
+  height: 210px;
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chartWrapper :focus {
+  outline: none;
+}
+
+.centerLabel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.value {
+  font-family: var(--font-lato);
+  color: #1c2024;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.subLabel {
+  font-family: var(--font-lato);
+  color: #60646c;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+@media (max-width: 1680px) {
+  .main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    min-width: unset;
+  }
+}

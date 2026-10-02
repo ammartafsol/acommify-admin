@@ -1,0 +1,56 @@
+:root {
+  --fs11: 11px;
+  --fs12: 12px; /* Extra Small */
+  --fs13: 13px; /* Small */
+  --fs14: 14px; /* Base */
+  --fs15: 15px; /* Medium */
+  --fs16: 16px; /* Medium */
+  --fs17: 17px; /* Large */
+  --fs18: 18px; /* Extra Large */
+  --fs19: 19px; /* 3XL */
+  --fs20: 20px; /* 2XL */
+  --fs21: 21px; /* 3XL */
+  --fs22: 22px; /* 3XL */
+  --fs24: 24px; /* 4XL */
+  --fs28: 28px; /* 5XL */
+  --fs30: 30px; /* 6XL */
+  --fs32: 32px; /* 7XL */
+  --fs34: 34px; /* 8XL */
+  --fs36: 36px; /* 8XL */
+  --fs40: 40px; /* 9XL */
+  --fs41: 41px; /* 10XL */
+  --fs44: 44.3px; /* 10XL */
+  --fs45: 45px; /* 11XL */
+  --fs48: 48px; /* 12XL */
+  --fs54: 54px; /* 13XL */
+  --fs56: 54px; /* 13XL */
+  --fs58: 58px; /* 13XL */
+  --fs64: 64px; /* 14XL */
+  --fs96: 96px; /* 15XL */
+}
+
+body {
+  font-family: var(--font-lato);
+  font-size: var(--fs14);
+}
+
+body * {
+  font-family: var(--font-lato);
+}
+
+p,
+span {
+  font-size: var(--fs16);
+  font-family: var(--font-lato);
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.pointer,
+.c-p {
+  cursor: pointer;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}

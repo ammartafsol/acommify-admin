@@ -1,0 +1,68 @@
+{
+  "loginPage": {
+    "title": "შესვლა",
+    "titleCentre": "ცენტრის შესვლა",
+    "titleNationwide": "ეროვნული დაფის შესვლა",
+    "titleAdmin": "ადმინისტრატორის შესვლა",
+    "selectorTitle": "რომელი შესვლა გჭირდებათ?",
+    "selectorSubtitle": "აირჩიეთ ანგარიშის ტიპი, რომლითაც გსურთ შესვლა.",
+    "selectCentre": "ცენტრი",
+    "selectNationwide": "ეროვნული დაფა",
+    "selectAdmin": "ადმინისტრატორი",
+    "emailLabel": "ელფოსტა",
+    "emailPlaceholder": "შეიყვანეთ ელფოსტა",
+    "emailError": "გთხოვთ შეიყვანოთ სწორი ელფოსტის მისამართი",
+    "EmailRequired": "ელფოსტა აუცილებელია",
+    "emailInvalidChars": "ელფოსტა შეიცავს არასწორ სიმბოლოებს",
+    "passwordLabel": "პაროლი",
+    "passwordPlaceholder": "შეიყვანეთ პაროლი",
+    "passwordRequired": "პაროლი აუცილებელია",
+    "forgotPass": "დაგავიწყდათ პაროლი?",
+    "loginButton": "შესვლა",
+    "gotoBusinessOwnerLogin": "შესვლა როგორც ცენტრი",
+    "gotoAdminLogin": "გადადით ადმინისტრატორის შესვლაზე",
+    "gotoNationWideLogin": "გადადით ეროვნული დაფის შესვლაზე"
+  },
+  "forgotPasswordPage": {
+    "title": "პაროლის აღდგენა",
+    "subtitle": "არ ინერვიულოთ! ეს ხდება. გთხოვთ შეიყვანოთ თქვენი ანგარიშთან დაკავშირებული მისამართი.",
+    "emailLabel": "ელფოსტა",
+    "emailPlaceholder": "შეიყვანეთ ელფოსტა",
+    "emailError": "გთხოვთ შეიყვანოთ სწორი ელფოსტის მისამართი",
+    "emailRequired": "ელფოსტა აუცილებელია",
+    "emailInvalidChars": "ელფოსტა შეიცავს არასწორ სიმბოლოებს",
+    "submitButton": "ელფოსტის გაგზავნა",
+    "specialChar": "სპეციალური სიმბოლოები არა"
+  },
+  "verificationPage": {
+    "title": "დადასტურების კოდი",
+    "subtitle": "დადასტურება კოდით",
+    "resendCode": "კოდის ხელახლა გაგზავნა {time, plural, =0 {} =1 {# წამი} other {# წამი}}",
+    "sendingOtp": "OTP კოდის გაგზავნა {time, plural, =0 {} =1 {# წამი} other {# წამი}}",
+    "verifyButton": "დადასტურება",
+    "minLimit": "OTP უნდა იყოს მინიმუმ 4 სიმბოლო",
+    "otpRequired": "OTP აუცილებელია"
+  },
+  "resetPasswordPage": {
+    "title": "პაროლის განახლება",
+    "subtitle": "შეიყვანეთ ახალი პაროლი",
+    "passwordLabel": "პაროლი",
+    "passwordPlaceholder": "შეიყვანეთ პაროლი",
+    "passwordRequired": "პაროლი აუცილებელია",
+    "minPasswordError": "მინ 8 სიმბოლო",
+    "maxPasswordError": "მაქს 20 სიმბოლო",
+    "lowerPasswordError": "დაამატეთ მინიმუმ ერთი პატარა ასო",
+    "upperPasswordError": "დაამატეთ მინიმუმ ერთი დიდი ასო",
+    "specialPasswordError": "დაამატეთ მინიმუმ ერთი სპეციალური სიმბოლო",
+    "confirmPasswordLabel": "პაროლის დადასტურება",
+    "confirmPasswordPlaceholder": "დაადასტურეთ პაროლი",
+    "confirmPasswordRequired": "პაროლი აუცილებელია",
+    "ConfirmPasswordError": "პაროლები არ ემთხვევა",
+    "submitButton": "პაროლის განახლება",
+
+    "modal": {
+      "title": "თქვენი პაროლი წარმატებით შეიცვალა!",
+      "btnText": "გაგრძელება"
+    }
+  }
+}

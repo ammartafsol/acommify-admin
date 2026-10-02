@@ -1,0 +1,36 @@
+{
+  "foodTokensPage": {
+    "title": "د خوړو د ټوکنونو مدیریت",
+    "table": {
+      "residentName": "د استوګن نوم",
+      "roomNo": "د کوټې شمیره",
+      "email": "بریښنالیک",
+      "phone": "تلیفون",
+      "availableToken": "شتون لرونکی ټوکن"
+    },
+    "modal": {
+      "tabs": {
+        "addFoodToken": "د خوړو ټوکنونه اضافه کړئ",
+        "subtractFoodToken": "د خوړو ټوکنونه کم کړئ"
+      },
+      "totalFoodToken": "د خوړو د ټوکنونو ټول",
+      "editFoodToken": "د خوړو ټوکن اضافه کړئ",
+      "addFoodToken": "د خوړو ټوکن اضافه کړئ",
+      "foodTokenAmount": "د خوړو د ټوکن اندازه",
+      "foodTokenAmountPlaceholder": "د خوړو د ټوکن اندازه ولیکئ",
+      "resident": "استوګن",
+      "residentPlaceholder": "استوګن وټاکئ",
+      "cancel": "لغوه کول",
+      "save": "ساتل",
+      "update": "تازه کول",
+      "createdFoodToken": "د خوړو ټوکن په بریالیتوب سره جوړ شو.",
+      "updatedFoodToken": "د خوړو ټوکن په بریالیتوب سره تازه شو.",
+      "modalFormik": {
+        "ResidentRequired": "استوګن اړین دی.",
+        "FoodTokenRequired": "د خوړو ټوکن اړین دی.",
+        "FoodTokenGreater": "د خوړو ټوکن باید له 0 څخه لوی وي."
+      },
+      "InsufficientTokens": "د کمولو لپاره ناکافي ټوکنونه"
+    }
+  }
+}

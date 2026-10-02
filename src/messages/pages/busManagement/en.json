@@ -1,0 +1,110 @@
+{
+  "busManagementPage": {
+    "title": "Bus Management",
+    "addBus": "Create Bus",
+    "addNewBus": "Add New Bus",
+    "busDetail": "Bus Details",
+
+    "deletedBus": "Bus deleted successfully.",
+    "statusUpdated": "Bus status updated successfully.",
+    "table": {
+      "busId": "Bus ID",
+      "busName": "Bus Name",
+      "startLocation": "Start Location",
+      "endLocation": "End Location",
+      "capacity": "Capacity",
+      "status": "Status",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "availableDates": "Available Dates",
+      "description": "Description"
+    },
+    "filterStatus": {
+      "options": [
+        { "label": "All", "value": "all" },
+        { "label": "Active", "value": "active" },
+        { "label": "Inactive", "value": "inactive" },
+        { "label": "Maintenance", "value": "maintenance" }
+      ]
+    },
+
+    "busStatus": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "shiftOptions": {
+      "morning": "Morning",
+      "afternoon": "Afternoon",
+      "evening": "Evening",
+      "night": "Night"
+    },
+    "toasts": {
+      "busCreated": "Bus Created Successfully",
+      "busUpdated": "Bus Updated Successfully"
+    },
+    "modal": {
+      "editTitle": "Edit Bus",
+      "translating": "Translating...",
+      "autoFill": "Auto Fill",
+      "seater": "Seater",
+      "inputLabels": {
+        "document": "Upload Terms and Services",
+        "busName": "Bus Name",
+        "busNumber": "Bus Number",
+        "description": "Description",
+        "startLocation": "Start Location",
+        "endLocation": "End Location",
+        "capacity": "Capacity",
+        "startTime": "Start Time",
+        "endTime": "End Time",
+        "availableDates": "Available Dates",
+        "shift": "Shift"
+      },
+      "inputPlaceholders": {
+        "busName": "Enter bus name",
+        "busNumber": "Enter bus number",
+        "description": "Enter description",
+        "startLocation": "Enter start location",
+        "endLocation": "Enter end location",
+        "capacity": "Enter capacity",
+        "startTime": "Enter start time",
+        "endTime": "Enter end time",
+        "availableDates": "Select available dates",
+        "shift": "Select shift"
+      },
+      "uploadMessage": {
+        "document": "Upload a document related to the application"
+      },
+      "fileFormats": {
+        "document": "PDF, DOC, DOCX, TXT, RTF"
+      },
+      "btnLabels": {
+        "create": "Create",
+        "update": "Update",
+        "cancel": "Cancel"
+      },
+      "translationSuccessMessage": "Translation completed successfully",
+      "toasts": {
+        "busCreated": "Bus created successfully",
+        "busUpdated": "Bus updated successfully",
+        "pleaseFill": "Please fill"
+      },
+      "validation": {
+        "busName": "Bus name is required",
+        "description": "Description is required",
+        "busNumber": "Bus number is required",
+        "startLocation": "Start location is required",
+        "endLocation": "End location is required",
+        "capacity": "Capacity is required",
+        "status": "Status is required",
+        "capacityMin": "Capacity must be at least 15",
+        "availableDatesMin": "At least one available date is required",
+        "availableDates": "Available dates are required",
+        "startTime": "Start time is required",
+        "endTime": "End time is required",
+        "shift": "Shift is required",
+        "mediaError": "Upload Media"
+      }
+    }
+  }
+}

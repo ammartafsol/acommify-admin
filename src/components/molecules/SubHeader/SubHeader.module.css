@@ -1,0 +1,414 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.headerTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+.back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  width: max-content;
+}
+
+.back > p {
+  color: var(--Dark-gray);
+  font-family: var(--font-lato);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title span {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Poor-white);
+}
+.title > p {
+  color: var(--Black);
+  font-family: var(--font-lato);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.headerRight,
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  min-width: 106px;
+  height: 42px;
+  padding: 12px 16px;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--Poor-white);
+}
+
+.filters > p {
+  color: var(--Dark-gray);
+
+  font-family: var(--font-lato);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.dropdownContainer,
+.dropdownMain {
+  width: max-content !important;
+}
+.dropdownContainer > div {
+  /* height: 42px !important; */
+  border: 1px solid var(--Blue);
+  border-radius: 8px !important;
+}
+.dropdownContainer > div svg {
+  color: var(--Blue) !important;
+}
+.dropdownContainer > div:hover {
+  border: 1px solid var(--Blue);
+}
+
+.searchInput {
+  width: 368px !important;
+  height: 42px !important;
+}
+.searchInput input {
+  border-radius: 15px !important;
+  background-color: var(--Poor-white) !important;
+  height: 42px !important;
+}
+.searchInput > div > div {
+  padding-inline-end: 5px;
+  padding-bottom: 4px;
+}
+
+.filterLabel {
+  color: #000 !important;
+  font-family: var(--font-lato);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.filterDropdown {
+  position: absolute;
+  top: 110%;
+  inset-inline-start: -67px;
+  z-index: 100;
+  min-width: 180px;
+  background: var(--Poor-white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.filterOption {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--font-lato);
+  font-size: 15px;
+  color: var(--Black);
+  transition: background 0.15s;
+}
+
+.filterOption:hover {
+  background: var(--Blue);
+}
+
+.filterOptionSelected {
+  background: var(--Blue);
+  color: var(--Poor-white);
+}
+
+.tabsMain,
+.headerMain {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: max-content;
+  margin-inline-start: auto;
+}
+
+/* multiple */
+.addFilterWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Main Filters Button */
+.addFilterButton {
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.addFilterButton:hover {
+  background-color: #eaeaea;
+}
+
+/* Dropdown Panel */
+.dropdown {
+  position: absolute;
+  top: 105%;
+  inset-inline-end: 0;
+  min-width: 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  z-index: 50;
+}
+
+/* Each filter row */
+.filterRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.filterLabel {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Dropdown input */
+.addFilterWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.mainButton {
+  border: 1px solid #ccc;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 12px;
+  background: var(--Poor-white, #fff);
+  border: none;
+  text-transform: capitalize;
+  color: var(--Dark-gray) !important;
+}
+
+.dropdownPanel {
+  position: absolute;
+  top: 110%;
+  inset-inline-end: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 250px;
+  z-index: 1000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filterRow {
+  border-bottom: 1px solid #eee;
+  padding: 6px 0;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 8px;
+  background: var(--Background, #f4f7fd);
+}
+
+.filterHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  padding: 4px 6px;
+  width: 100%;
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+/* .filterAll {
+  display: flex;
+  gap: 20px;
+} */
+.innerDropdown {
+  margin-top: 6px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #eee;
+}
+
+.dropdownItem {
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.dropdownItem:hover {
+  background: #f0f0f0;
+}
+
+.rangeInputs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.error {
+  color: var(--Error-500) !important;
+  font-size: 12px;
+  font-family: var(--font-lato);
+  font-weight: 400;
+  line-height: 164%;
+}
+.rangeInputs input {
+  width: 80px;
+  padding: 5px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.actionBtns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.cancelBtn {
+  color: var(--Blue, #33b5f6);
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 148%;
+  border: none;
+  background: none;
+}
+
+.applyBtn {
+  color: #fff;
+  border-radius: 8px;
+  background: var(--Blue, #33b5f6);
+  border: none;
+  padding: 6px 24px;
+}
+.dropdownPanel p {
+  color: var(--Dark-gray, #8c939b);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164%; /* 19.68px */
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  .headerLeft {
+    flex-wrap: wrap;
+  }
+  .headerRight {
+    margin-inline-start: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .title > p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerRight {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  /* Apply column layout only when both search and filter are present */
+  .headerRight:has(.searchInput):has(.filters) {
+    flex-direction: column;
+    align-items: start;
+  }
+  .headerLeft {
+    flex-direction: column;
+    align-items: start;
+  }
+  .filterDropdown {
+    left: unset !important;
+  }
+  .searchInput {
+    width: 100% !important;
+  }
+  .headerLeft,
+  .headerRight {
+    width: 100% !important;
+  }
+  .dropdownPanel {
+    inset-inline-start: 0;
+  }
+}
+
+@media (max-width: 414px) {
+  .tabsMain {
+    flex-wrap: wrap;
+  }
+}

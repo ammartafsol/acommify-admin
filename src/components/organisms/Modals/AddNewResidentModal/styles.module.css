@@ -1,0 +1,156 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.InputContainer {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.InputContainer > div:first-child {
+  width: 50%;
+}
+
+.InputContainer > div:last-child {
+  width: 50%;
+}
+.calendarIcon {
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  gap: 16px;
+}
+
+.ButtonContainer button {
+  width: 50%;
+  height: 60px;
+  border-radius: 15px !important;
+}
+
+.dropDownContainerClass > div:first-of-type {
+  border: none !important;
+  height: 59px !important;
+  border-radius: 25px !important;
+}
+
+.familyMembersHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-block: 10px;
+}
+
+.familyMembersHeader > p {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--Black);
+}
+.familyMembersInputs {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  flex-direction: column;
+}
+.dropDownContainerClass > div:first-of-type {
+  border: none !important;
+  height: 59px !important;
+  border-radius: 25px !important;
+}
+
+.addIcon {
+  background-color: var(--Blue);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.familyMemberLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--Black);
+  margin-block: 20px 14px;
+}
+
+.booksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.booksContainer label {
+  color: var(--Dark-gray);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-lato) !important;
+}
+
+.bookInputContainer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+}
+
+.bookInputContainer > div:first-child {
+  flex: 1;
+}
+
+.removeBookIcon {
+  background-color: var(--Red, #ff4757);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.removeBookIcon:hover {
+  background-color: #ff3742;
+}
+
+.booksLabelContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addBookIcon {
+  background-color: var(--Blue);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+  margin-top: 8px;
+}
+
+.addBookIcon:hover {
+  background-color: #2980b9;
+}

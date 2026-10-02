@@ -1,0 +1,57 @@
+.rmdp-week-day {
+  color: var(--Blue);
+  font-weight: 500;
+}
+
+.rmdp-arrow-container {
+  align-items: center;
+}
+
+.rmdp-arrow {
+  margin-top: 0;
+  color: var(--Blue);
+}
+
+.rmdp-panel > div:nth-child(2) {
+  margin-inline-end: 4px;
+}
+
+.rmdp-panel > div:nth-child(2)::-webkit-scrollbar {
+  width: 6px;
+  background: var(--Light-blue-v2);
+}
+
+.rmdp-panel > div:nth-child(2)::-webkit-scrollbar-thumb {
+  background: var(--Blue-light-700);
+  border-radius: 6px;
+}
+
+.rmdp-panel {
+  min-width: 200px;
+}
+
+.rmdp-panel-body li .b-deselect {
+  padding-inline: 4px;
+  color: var(--Red);
+}
+
+/* RTL Support for calendar popup */
+.rmdp-wrapper[dir="rtl"] .rmdp-calendar {
+  direction: rtl;
+}
+
+.rmdp-wrapper[dir="rtl"] .rmdp-week-day {
+  direction: rtl;
+}
+
+.rmdp-wrapper[dir="rtl"] .rmdp-day-picker {
+  direction: rtl;
+}
+
+.rmdp-wrapper[dir="rtl"] .rmdp-panel {
+  direction: rtl;
+}
+
+.rmdp-wrapper[dir="rtl"] .rmdp-panel-body {
+  direction: rtl;
+}

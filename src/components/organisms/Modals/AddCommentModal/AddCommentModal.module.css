@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.buttons button {
+  width: 50%;
+  height: 54px;
+  box-shadow: none !important;
+}
+
+.header {
+  margin: 0 !important;
+}

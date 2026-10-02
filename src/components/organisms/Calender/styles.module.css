@@ -1,0 +1,257 @@
+.main {
+  min-width: 937px;
+  width: 100%;
+  height: 100%;
+  background: var(--Poor-white);
+  border-radius: 20px;
+}
+
+.main h1 {
+  color: var(--Black, #172a33);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.calendar {
+  padding: 25px;
+  height: 780px;
+}
+
+/* Toolbar */
+.customToolbar {
+  display: flex;
+  height: 36px;
+
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navigationButtons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.navigationButtons button {
+  min-width: 36px;
+  height: 36px !important;
+  padding: 0;
+  transition: all 0.2s;
+  border-radius: 6px;
+  border: 1px solid var(--border-color) !important;
+  background: var(--Poor-white);
+  box-shadow: none !important;
+}
+
+.todayButton {
+  padding-inline: 12px !important;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.monthYear {
+  color: var(--Black, #172a33);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.tabs {
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--Poor-white);
+  overflow: hidden;
+  gap: 0;
+}
+
+.tabs > li {
+  min-width: unset !important;
+  padding-inline: 12px;
+  border-radius: 0 !important;
+}
+
+.tabs > li:not(:first-child) {
+  border-inline-start: 1px solid var(--border-color);
+}
+
+/* Custom Header Styles */
+.monthHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 8px;
+  background: var(--Poor-white);
+}
+
+.monthHeader span {
+  color: var(--text-primary);
+  font-family: var(--font-inter);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.weekHeader {
+  display: flex;
+  padding-block: 12px 13px;
+  padding-inline-start: 10px;
+  padding-inline-end: 38.429px;
+  align-self: stretch;
+
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8px 4px;
+  background: var(--Poor-white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dayNumber {
+  color: var(--text-primary);
+  font-family: var(--font-inter);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 33.6px */
+}
+
+.monthDay {
+  color: var(--text-primary);
+  font-family: var(--font-inter);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 21px */
+  text-transform: capitalize;
+}
+
+.disabledDate {
+  z-index: 5;
+  opacity: 0.75;
+  background-color: #c4c4c4;
+  cursor: not-allowed;
+}
+
+/* Custom Events */
+.event {
+  border-radius: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  background-color: var(--Blue);
+}
+
+.event span {
+  padding-inline: 4px;
+  color: var(--Poor-white);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/* Selected Date */
+.selectedDate {
+  background: #caffe5 !important;
+}
+
+.cancelledEvent {
+  /* cursor: default; */
+  background: #ff061b !important;
+}
+
+.pendingEvent {
+  background: #ffb800 !important;
+}
+
+.confirmedEvent {
+  background: #00c853 !important;
+}
+
+@media (max-width: 1440px) {
+  .main {
+    min-width: 912px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .main {
+    min-width: 800px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 992px) {
+  .dayNumber {
+    font-size: 18px;
+  }
+
+  .monthDay {
+    font-size: 14px;
+  }
+
+  .monthYear {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    min-width: unset;
+  }
+
+  .calendar {
+    height: 600px;
+    padding: 20px;
+  }
+
+  .monthDay {
+    font-size: 11px;
+  }
+
+  .dayNumber {
+    font-size: 12px;
+  }
+
+  .monthYear {
+    font-size: 18px;
+  }
+
+  .weekHeader {
+    min-height: 60px;
+  }
+
+  .event {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .customToolbar {
+    flex-wrap: wrap;
+    height: unset;
+  }
+
+  .event {
+    font-size: 8px;
+  }
+}

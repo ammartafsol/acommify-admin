@@ -1,0 +1,108 @@
+{
+  "busManagementPage": {
+    "title": "Gerenciamento de Ônibus",
+    "addBus": "Criar Ônibus",
+    "addNewBus": "Adicionar Novo Ônibus",
+    "busDetail": "Detalhes do Ônibus",
+    "deletedBus": "Ônibus excluído com sucesso.",
+    "statusUpdated": "Status do ônibus atualizado com sucesso.",
+    "table": {
+      "busId": "ID do Ônibus",
+      "busName": "Nome do Ônibus",
+      "startLocation": "Local de Partida",
+      "endLocation": "Local de Chegada",
+      "capacity": "Capacidade",
+      "status": "Status",
+      "startTime": "Hora de Partida",
+      "endTime": "Hora de Chegada",
+      "availableDates": "Datas Disponíveis",
+      "description": "Descrição"
+    },
+    "filterStatus": {
+      "options": [
+        { "label": "Todos", "value": "all" },
+        { "label": "Ativo", "value": "active" },
+        { "label": "Inativo", "value": "inactive" },
+        { "label": "Manutenção", "value": "maintenance" }
+      ]
+    },
+    "busStatus": {
+      "active": "Ativo",
+      "inactive": "Inativo"
+    },
+    "shiftOptions": {
+      "morning": "Manhã",
+      "afternoon": "Tarde",
+      "evening": "Noite",
+      "night": "Madrugada"
+    },
+    "toasts": {
+      "busCreated": "Ônibus Criado com Sucesso",
+      "busUpdated": "Ônibus Atualizado com Sucesso"
+    },
+    "modal": {
+      "editTitle": "Editar Ônibus",
+      "translating": "Traduzindo...",
+      "autoFill": "Preenchimento Automático",
+      "seater": "Lugares",
+      "inputLabels": {
+        "document": "Carregar Condições e Serviços",
+        "busName": "Nome do Ônibus",
+        "busNumber": "Número do Ônibus",
+        "description": "Descrição",
+        "startLocation": "Local de Partida",
+        "endLocation": "Local de Chegada",
+        "capacity": "Capacidade",
+        "startTime": "Hora de Partida",
+        "endTime": "Hora de Chegada",
+        "availableDates": "Datas Disponíveis",
+        "shift": "Turno"
+      },
+      "inputPlaceholders": {
+        "busName": "Digite o nome do ônibus",
+        "busNumber": "Digite o número do ônibus",
+        "description": "Digite a descrição",
+        "startLocation": "Digite o local de partida",
+        "endLocation": "Digite o local de chegada",
+        "capacity": "Digite a capacidade",
+        "startTime": "Digite a hora de partida",
+        "endTime": "Digite a hora de chegada",
+        "availableDates": "Selecione as datas disponíveis",
+        "shift": "Selecione o turno"
+      },
+      "uploadMessage": {
+        "document": "Carregar um documento relacionado com a aplicação"
+      },
+      "fileFormats": {
+        "document": "PDF, DOC, DOCX, TXT, RTF"
+      },
+      "btnLabels": {
+        "create": "Criar",
+        "update": "Atualizar",
+        "cancel": "Cancelar"
+      },
+      "translationSuccessMessage": "Tradução concluída com sucesso",
+      "toasts": {
+        "busCreated": "Ônibus criado com sucesso",
+        "busUpdated": "Ônibus atualizado com sucesso",
+        "pleaseFill": "Por favor, preencha"
+      },
+      "validation": {
+        "busName": "Nome do ônibus é obrigatório",
+        "description": "Descrição é obrigatória",
+        "busNumber": "Número do ônibus é obrigatório",
+        "startLocation": "Local de partida é obrigatório",
+        "endLocation": "Local de chegada é obrigatório",
+        "capacity": "Capacidade é obrigatória",
+        "status": "Status é obrigatório",
+        "capacityMin": "Capacidade deve ser pelo menos 15",
+        "availableDatesMin": "Pelo menos uma data disponível é obrigatória",
+        "availableDates": "Datas disponíveis são obrigatórias",
+        "startTime": "Hora de partida é obrigatória",
+        "endTime": "Hora de chegada é obrigatória",
+        "shift": "Turno é obrigatório",
+        "mediaError": "Carregar Mídia"
+      }
+    }
+  }
+}

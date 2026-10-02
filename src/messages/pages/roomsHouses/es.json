@@ -1,0 +1,89 @@
+{
+  "roomsHouses": {
+    "title": "Gestión de Habitaciones/Casas",
+    "addRoom": "Agregar Habitación/Casa",
+    "viewModalTitle": "Detalles de la Habitación/Casa",
+    "filterOptions": {
+      "beds": "Número de camas",
+      "occupancyStatus": "Estado de Ocupación",
+      "accommodationType": "Tipo de Alojamiento",
+      "a-z": "A-Z",
+      "UnOccupied": "Desocupado",
+      "partiallyOccupied": "Parcialmente Ocupado",
+      "apartment": "Apartamento",
+      "house": "Casa",
+      "room": "Habitación",
+      "status": "Estado de Ocupación",
+      "occupied": "Ocupado",
+      "filters": "Filtros",
+      "sortBy": "Ordenar por...",
+      "filterBy": "FILTRAR POR",
+      "clear": "Limpiar Todo",
+      "apply": "Aplicar"
+    },
+    "table": {
+      "houseRoomNumber": "Número de Casa/Habitación",
+      "numberOfBeds": "Número de Camas",
+      "accommodationType": "Tipo de Alojamiento",
+      "occupancyStatus": "Estado de Ocupación",
+      "status": "Estado",
+      "userType": "Tipo de Usuario",
+      "createdAt": "Creado En",
+      "bedsOccupied": "Camas Ocupadas"
+    },
+    "tabs": {
+      "resident": "Residente",
+      "visitor": "Visitante"
+    },
+    "actions": {
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "view": "Ver",
+      "activate": "Activar",
+      "deactivate": "Desactivar"
+    },
+    "modal": {
+      "houseRoomNumber": "Número de Casa/Habitación",
+      "numberOfBeds": "Número de Camas",
+      "occupancyStatus": "Estado de Ocupación",
+      "accommodationType": "Tipo de Alojamiento",
+      "accommodationTypePlaceholder": "Seleccione el tipo de alojamiento",
+      "houseRoomNumberPlaceholder": "Ingrese el número de casa/habitación",
+      "userType": "Tipo de Usuario",
+      "userTypePlaceholder": "Seleccione el tipo de usuario",
+      "occupancyStatusPlaceholder": "Seleccione el estado de ocupación",
+      "numberOfBedsPlaceholder": "Ingrese el número de camas",
+      "cancel": "Cancelar",
+      "create": "Crear",
+      "edit": "Editar",
+      "editRoomHouse": "Editar Habitación/Casa",
+      "createRoomHouse": "Crear Habitación/Casa",
+      "updatedSuccessfully": "Alojamiento actualizado exitosamente",
+      "RoomsHousesSubmitted": "Habitaciones y Casas enviadas exitosamente",
+      "createdSuccessfully": "Habitación/Casa creada exitosamente",
+      "houseTypeLabels": {
+        "house": "Casa",
+        "room": "Habitación",
+        "apartment": "Apartamento"
+      },
+      "userTypeLabels": {
+        "resident": "Residente",
+        "visitor": "Visitante"
+      },
+      "modalFormik": {
+        "HouseRoomNumberRequired": "El número de casa/habitación es requerido",
+        "2Characters": "Debe tener al menos 2 caracteres",
+        "BedsRequired": "El número de camas es requerido",
+        "ExceedBeds": "No puede exceder 10 camas",
+        "TypeRequired": "El tipo es requerido",
+        "atLeastBeds": "Debe tener al menos 1 cama",
+        "UserTypeRequired": "El tipo de usuario es requerido"
+      }
+    },
+    "toasts": {
+      "activateSuccess": "Alojamiento activado exitosamente",
+      "deactivateSuccess": "Alojamiento desactivado exitosamente",
+      "deletedRoomHouse": "Habitación/Casa eliminada exitosamente"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "dashboardPage": {
+    "noActivity": "Babu aiki na baya da za a nuna",
+    "dashboardCards": {
+      "bookLaundry": "Ajiyar Wanki",
+      "bookBus": "Ajiyar Bas",
+      "bookAppointment": "Lokutan da Zai Zo",
+      "visitorBooking": "Ajiyayin Baƙi",
+      "documentCenter": "Cibiyar Takardu",
+      "signRequests": "Bukatun Shiga/Fita",
+      "signInSignOut": "Shiga/Fita"
+    },
+    "statsCards": {
+      "onSite": "Mazauna a wurin",
+      "offSite": "Mazauna a waje",
+      "pendingRequests": "Bukatun da ke Jiran",
+      "maintenanceRequests": "Bukatun Kulawa",
+      "upcomingAppointments": "Lokutan da Zai Zo",
+      "staffCount": "Adadin Ma'aikata",
+      "activeCenters": "Cibiyoyi Masu Aiki",
+      "nationalOccupancy": "Cikewar Kasa",
+      "totalResidents": "Jimillar Mazauna",
+      "totalAdults": "Jimillar Manya",
+      "totalChildren": "Jimillar Nini"
+    },
+    "notification": {
+      "recentNotification": "Ayyukan baya",
+      "currentNotification": "A nan ka ga ajiyayin, bukatun, sabuntawar sanarwa na baya."
+    },
+    "activity": {
+      "recentActivity": "Cibiyar Ayyukan Baya",
+      "currentActivity": "A nan ka ga ajiyayin, bukatun, sabuntawa.",
+      "labels": {
+        "bookingId": "ID na Ajiya",
+        "visitorName": "Sunan Baƙo",
+        "relationship": "Dangantaka",
+        "serviceType": "Nau'in Sabis",
+        "start": "Fara",
+        "end": "Ƙarshe",
+        "created": "An Ƙirƙira",
+        "incidentId": "ID na Abin da Ya Faru",
+        "title": "Take",
+        "description": "Bayani",
+        "severity": "Matsakaici",
+        "address": "Adireshi",
+        "resident": "Mazauni",
+        "requestId": "ID na Bukata",
+        "user": "Mai Amfani",
+        "houseNumber": "Lambar Gida"
+      },
+      "activityTabs": {
+        "booking": "Ajiyayin",
+        "requests": "Bukatun Kulawa",
+        "incident": "Rahoton Abubuwan da Suka Faru"
+      },
+      "activitycard": {
+        "requestHeading": "Sabon Bukatar Kulawa An Aika",
+        "dateTime": "Kwanan Wata/Lokaci",
+        "resident": "Mazauni",
+        "purpose": "Manufa",
+        "appointment": "Lokaci"
+      }
+    },
+    "chart": {
+      "residentTitle": "Mazauni"
+    },
+    "common": {
+      "edit": "Gyara",
+      "approveRequest": "Ami Bukata",
+      "rejectRequest": "Ƙi Bukata"
+    }
+  }
+}

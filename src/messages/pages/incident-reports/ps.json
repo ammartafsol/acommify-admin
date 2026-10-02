@@ -1,0 +1,90 @@
+{
+  "incidentReportsPage": {
+    "title": "د پیښو راپورونه",
+    "addNewReport": "نوی راپور اضافه کړئ",
+    "noDataText": "د پیښو راپورونه ونه موندل شول",
+    "reportCreatedSuccessfully": "د پیښې راپور په بریالیتوب سره جوړ شو",
+    "status": {
+      "all": "ټول",
+      "resolved": "حل شوی",
+      "underReview": "د بیاکتنې لاندې",
+      "escalated": "لوړ شوی"
+    },
+    "severityOptions": {
+      "low": "ټیټ",
+      "medium": "منځنی",
+      "high": "لوړ"
+    },
+    "tabs": {
+      "all": "ټول",
+      "resolved": "حل شوی",
+      "underReview": "د بیاکتنې لاندې",
+      "escalated": "لوړ شوی"
+    },
+    "actions": {
+      "edit": "سمون"
+    },
+    "table": {
+      "incidentId": "د پیښې ID",
+      "title": "عنوان",
+      "description": "توضیحات",
+      "residentInvolved": "ښکیل استوګن",
+      "reportedBy": "راپور ورکړی",
+      "location": "ځای",
+      "severity": "سختی",
+      "dateTime": "نیټه او وخت",
+      "status": "حالت",
+      "completedDate": "د بشپړیدو نیټه"
+    },
+    "inputRequired": {
+      "title": "عنوان اړین دی",
+      "description": "توضیحات اړین دي",
+      "location": "ځای اړین دی",
+      "residentInvolved": "ښکیل استوګن اړین دی",
+      "reportedBy": "راپور ورکړی اړین دی",
+      "severity": "سختی اړینه ده",
+      "dateTime": "نیټه او وخت اړین دي",
+      "status": "حالت اړین دی",
+      "completedDate": "د بشپړیدو نیټه اړینه ده"
+    },
+    "modal": {
+      "title": "د پیښې راپور اضافه کړئ",
+      "editTitle": "د پیښې راپور سمون",
+      "autoFill": "خپل ځان ډکول",
+      "translating": "ژباړه کيږي...",
+      "detailTitle": "د پیښې تفصیلات",
+      "pleaseFill": "مهرباني وکړئ ډک کړئ",
+      "modalBtnsLabel": {
+        "cancel": "لغوه کول",
+        "submit": "استول"
+      },
+      "inputLabels": {
+        "title": "عنوان",
+        "description": "توضیحات",
+        "residentInvolved": "ښکیل استوګن",
+        "reportedBy": "راپور ورکړی",
+        "location": "ځای",
+        "severity": "سختی",
+        "dateTime": "نیټه او وخت",
+        "status": "حالت",
+        "completedDate": "د بشپړیدو نیټه"
+      },
+      "inputPlaceholders": {
+        "title": "د راپور عنوان ولیکئ",
+        "description": "د راپور توضیحات ولیکئ",
+        "residentInvolved": "ښکیل استوګن ولیکئ",
+        "reportedBy": "راپور ورکړی وټاکئ",
+        "location": "ځای ولیکئ",
+        "severity": "سختی وټاکئ",
+        "dateTime": "نیټه او وخت ولیکئ",
+        "status": "حالت وټاکئ",
+        "completedDate": "د بشپړیدو نیټه ولیکئ"
+      },
+      "toasts": {
+        "reportCreatedSuccessfully": "راپور په بریالیتوب سره جوړ شو",
+        "errorUpdatedReport": "راپور په بریالیتوب سره تازه شو",
+        "autoFilledSuccessfully": "خپل ځان ډکول په بریالیتوب سره بشپړ شو"
+      }
+    }
+  }
+}

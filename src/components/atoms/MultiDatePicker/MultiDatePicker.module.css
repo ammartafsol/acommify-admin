@@ -1,0 +1,148 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  color: var(--Dark-gray);
+  font-size: var(--fs16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.required {
+  font-family: var(--font-lato);
+  font-size: var(--fs14);
+  font-weight: 400;
+  color: var(--Red);
+}
+
+.datePicker {
+  width: 100%;
+}
+
+.input {
+  justify-content: space-between;
+  width: 100%;
+  flex: 1;
+  border: none;
+  font-size: var(--fs16);
+  color: var(--Dark-gray);
+  border-radius: 25px;
+  font-weight: 400;
+  background: #f4f7fd;
+  height: 59px;
+  text-align: start;
+  padding-inline: 20px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input:disabled {
+  box-shadow: none;
+  cursor: not-allowed;
+  background-color: rgba(220, 220, 220, 0.348);
+}
+
+.error {
+  color: var(--Red);
+  font-size: var(--fs13);
+  margin-top: 2px;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .label {
+    font-size: var(--fs14);
+  }
+
+  .input {
+    font-size: var(--fs12);
+  }
+}
+
+@media (max-width: 576px) {
+  .label {
+    font-size: var(--fs12);
+  }
+
+  .input {
+    font-size: var(--fs11);
+    padding: 12px 8px;
+  }
+}
+
+/* Selected dates display */
+.selectedDates {
+  margin-top: 12px;
+}
+
+.selectedLabel {
+  font-size: var(--fs14);
+  font-weight: 500;
+  color: var(--Dark-gray);
+  margin-bottom: 8px;
+  margin: 0 0 8px 0;
+}
+
+.datesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.dateBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: var(--fs12);
+  font-weight: 500;
+  color: #1976d2;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.dateBadge:hover {
+  background-color: #ffebee;
+  border-color: #ffcdd2;
+  color: #d32f2f;
+}
+
+.removeIcon {
+  text-align: center;
+  font-size: var(--fs16);
+  font-weight: bold;
+  color: #666;
+  margin-inline-start: 4px;
+}
+
+.dateBadge:hover .removeIcon {
+  color: #d32f2f;
+}
+
+/* RTL Support */
+.wrapper[dir="rtl"] .input {
+  text-align: right;
+}
+
+.wrapper[dir="rtl"] .datesContainer {
+  flex-direction: row-reverse;
+}
+
+.wrapper[dir="rtl"] .dateBadge {
+  flex-direction: row-reverse;
+}

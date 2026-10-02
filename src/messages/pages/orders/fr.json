@@ -1,0 +1,25 @@
+{
+  "ordersPage": {
+    "title": "Gestion des Commandes",
+    "exportDateRangeTitle": "Exporter les Données",
+    "searchPlaceholder": "Rechercher des commandes...",
+    "exportButtonLabel": "Exporter les Commandes",
+    "exportSuccessToast": "Commandes exportées avec succès",
+    "exportErrorToast": "Échec de l'exportation des commandes. Veuillez réessayer.",
+    "table": {
+      "orderId": "ID de la Commande",
+      "customer": "Nom du Client",
+      "date": "Date de la Commande",
+      "status": "Statut de la Commande",
+      "total": "Total des Points",
+      "actions": ""
+    },
+    "ordersTabs": {
+      "all": "Toutes",
+      "pending": "En Attente",
+      "cancelled": "Annulé",
+      "completed": "Terminé"
+    },
+    "cancelOrderToast": "Commande annulée avec succès"
+  }
+}

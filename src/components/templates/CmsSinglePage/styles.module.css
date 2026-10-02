@@ -1,0 +1,45 @@
+.container {
+  margin-block: 48px;
+}
+
+.container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.main {
+  margin-block: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.parentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.sectionBox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sectionBox h3 {
+  margin: 0;
+}

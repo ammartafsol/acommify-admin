@@ -1,0 +1,28 @@
+{
+  "reportsAnalyticsPage": {
+    "title": "Reports and Analytics",
+    "ethnicityTitle": "Ethnicity Data",
+    "demographicBreakdownTitle": "Demographic Breakdown",
+    "children": "Children",
+    "adults": "Adults",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "noData": "No data available",
+    "maintenanceRequestTitle": "Maintenance Request",
+    "incidentReportsTitle": "Incident Reports",
+    "totalVisitorTitle": "Total Visitor",
+    "downloadReport": "Download Report",
+    "statsCards": {
+      "onSite": "On-Site residents",
+      "offSite": "Off-Site residents",
+      "totalStaffCount": "Total Staff",
+      "maintenanceRequests": "Pending Maintenance Requests",
+      "bedCount": "Total Beds",
+      "totalVisitors": "Total Visitors",
+      "upcomingAppointments": "Upcoming Appointments",
+        "availableBeds": "Available Beds",
+        "pendingRequests": "Pending Requests"
+    }
+  }
+}

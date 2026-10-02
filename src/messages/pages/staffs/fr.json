@@ -1,0 +1,78 @@
+{
+  "staffsPage": {
+    "title": "Gestion du Personnel",
+    "addMember": "Ajouter du Personnel",
+    "table": {
+      "staffID": "ID du Personnel",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "status": "Statut"
+    },
+    "actions": {
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "toast": {
+      "staffStatus": "Statut du Personnel Mis à Jour avec Succès",
+      "staffAdded": "Personnel Ajouté avec Succès",
+      "staffUpdated": "Personnel Mis à Jour avec Succès",
+      "staffDeleted": "Personnel supprimé avec succès",
+      "fill": "Veuillez remplir les champs dans d'autres langues également",
+      "translationSuccessMessage": "Traduit avec succès",
+      "pleaseFill": "Veuillez remplir"
+    },
+    "modal": {
+      "title": "Détails du Personnel",
+      "staffID": "ID du Personnel",
+      "name": "Nom Complet",
+      "email": "Email",
+      "phone": "Numéro de Téléphone",
+      "status": "Statut",
+      "addStaff": "Ajouter Nouveau Personnel",
+      "editStaff": "Modifier le Personnel",
+      "translating": "Traduction en cours...",
+      "autoFill": "Remplissage automatique",
+      "cancel": "Annuler",
+      "loading": "Chargement...",
+      "confirm": "Confirmer",
+      "morning": "Matin",
+      "night": "Nuit",
+      "shiftTime": "Heure du Quart",
+      "position": "Poste",
+      "deleteMessage": "Êtes-vous sûr de vouloir supprimer ce membre du personnel ?"
+    },
+    "fields": {
+      "namePlaceholder": "Entrez le nom complet",
+      "name": "Nom Complet",
+      "emailPlaceholder": "example@company.com",
+      "email": "Adresse Email",
+      "phonePlaceholder": "Entrez le numéro de téléphone",
+      "phone": "Numéro de Téléphone",
+      "positionPlaceholder": "Sélectionnez le Poste",
+      "position": "Poste",
+      "shiftStartTime": "Heure de Début du Quart",
+      "shiftEndTime": "Heure de Fin du Quart",
+      "shiftStartTimePlaceholder": "Sélectionnez l'heure de début du quart",
+      "shiftEndTimePlaceholder": "Sélectionnez l'heure de fin du quart",
+      "permissionsLabel": "Permissions",
+      "permissionsPlaceholder": "Sélectionnez les Permissions",
+      "selected": "Sélectionné",
+      "selectAll": "Tout Sélectionner",
+      "deselectAll": "Tout Désélectionner"
+    },
+    "formikSchema": {
+      "fullNameRequired": "Le nom complet est requis",
+      "emailAddress": "Veuillez entrer une adresse email valide",
+      "emailRequired": "L'email est requis",
+      "callingRequired": "Le code d'appel est requis",
+      "phoneNumberLimit": "Le numéro de téléphone doit avoir 10-15 chiffres, optionnellement commençant par +",
+      "phoneNumberRequired": "Le numéro de téléphone est requis",
+      "permissionsMin": "Au moins une permission doit être sélectionnée",
+      "permissionsRequired": "Les permissions sont requises",
+      "shiftStartRequired": "L'heure de début du quart est requise",
+      "shiftEndRequired": "L'heure de fin du quart est requise",
+      "positionRequired": "Le poste est requis"
+    }
+  }
+}

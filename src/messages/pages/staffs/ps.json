@@ -1,0 +1,78 @@
+{
+  "staffsPage": {
+    "title": "د کارکوونکو مدیریت",
+    "addMember": "کارکوونکی اضافه کړئ",
+    "table": {
+      "staffID": "د کارکوونکي ID",
+      "name": "نوم",
+      "email": "بریښنالیک",
+      "phone": "تلیفون",
+      "status": "حالت"
+    },
+    "actions": {
+      "edit": "سمون",
+      "delete": "حذف"
+    },
+    "toast": {
+      "staffStatus": "د کارکوونکي حالت په بریالیتوب سره تازه شو",
+      "staffAdded": "کارکوونکی په بریالیتوب سره اضافه شو",
+      "staffUpdated": "کارکوونکی په بریالیتوب سره تازه شو",
+      "staffDeleted": "کارکوونکی په بریالیتوب سره حذف شو",
+      "fill": "مهرباني وکړئ په نورو ژبو کې هم ساحې ډک کړئ",
+      "translationSuccessMessage": "په بریالیتوب سره ژباړل شو",
+      "pleaseFill": "مهرباني وکړئ ډک کړئ"
+    },
+    "modal": {
+      "title": "د کارکوونکي تفصیلات",
+      "staffID": "د کارکوونکي ID",
+      "name": "بشپړ نوم",
+      "email": "بریښنالیک",
+      "phone": "د تلیفون شمیره",
+      "status": "حالت",
+      "addStaff": "نوی کارکوونکی اضافه کړئ",
+      "editStaff": "کارکوونکی سمون",
+      "translating": "ژباړه کيږي...",
+      "autoFill": "خپل ځان ډکول",
+      "cancel": "لغوه کول",
+      "loading": "پورته کيږي...",
+      "confirm": "تایید",
+      "morning": "سهار",
+      "night": "شپه",
+      "shiftTime": "د شفټ وخت",
+      "position": "موقف",
+      "deleteMessage": "ایا تاسو ډاډه یاست چې دا کارکوونکی حذف کړئ؟"
+    },
+    "fields": {
+      "namePlaceholder": "بشپړ نوم ولیکئ",
+      "name": "بشپړ نوم",
+      "emailPlaceholder": "example@company.com",
+      "email": "د بریښنالیک پته",
+      "phonePlaceholder": "د تلیفون شمیره ولیکئ",
+      "phone": "د تلیفون شمیره",
+      "positionPlaceholder": "موقف وټاکئ",
+      "position": "موقف",
+      "shiftStartTime": "د شیفت د پیل وخت",
+      "shiftEndTime": "د شیفت د پای وخت",
+      "shiftStartTimePlaceholder": "د شیفت د پیل وخت وټاکئ",
+      "shiftEndTimePlaceholder": "د شیفت د پای وخت وټاکئ",
+      "permissionsLabel": "اجازې",
+      "permissionsPlaceholder": "اجازې وټاکئ",
+      "selected": "ټاکل شوی",
+      "selectAll": "ټول وټاکئ",
+      "deselectAll": "ټول لغوه کړئ"
+    },
+    "formikSchema": {
+      "fullNameRequired": "نوم ډول اړین دی",
+      "emailAddress": "مهرباني وکړئ سمه بریښنالیک پته ولیکئ",
+      "emailRequired": "بریښنالیک اړین دی",
+      "callingRequired": "د زنګ کوډ اړین دی",
+      "phoneNumberLimit": "د تلیفون شمیره باید 10-15 ګڼې ولري، اختیاري د + سره پیل",
+      "phoneNumberRequired": "د تلیفون شمیره اړینه ده",
+      "permissionsMin": "لږ تر لږه یوه اجازه باید وټاکل شي",
+      "permissionsRequired": "اجازې اړینې دي",
+      "shiftStartRequired": "د شیفت د پیل وخت اړین دی",
+      "shiftEndRequired": "د شیفت د پای وخت اړین دی",
+      "positionRequired": "موقف اړین دی"
+    }
+  }
+}

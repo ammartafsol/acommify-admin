@@ -1,0 +1,16 @@
+{
+  "signInOutPage": {
+    "title": "Sign In/Out Logs",
+    "searchPlaceholder": "Search by name or accommodation number",
+    "table": {
+      "residentName": "Resident Name",
+      "accommodationNumber": "Accommodation Number",
+      "type": "Type",
+      "dateTime": "Date & Time"
+    },
+    "typeLabel": {
+      "signIn": "Sign In",
+      "signOut": "Sign Out"
+    }
+  }
+}

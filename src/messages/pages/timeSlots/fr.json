@@ -1,0 +1,64 @@
+{
+  "timeslotsPage": {
+    "title": "Programmer les Créneaux de Rendez-vous",
+    "laundryTitle": "Programmer les Créneaux de Machines à Laver",
+    "visitorTitle": "Programmer les Créneaux de Réservation de Visiteurs",
+    "staffLabel": "Sélectionner le Personnel",
+    "staffPlaceholder": "Choisir le personnel...",
+    "machinePlaceholder": "Choisir la machine...",
+    "machineLabel": "Sélectionner la Machine",
+    "visitorLabel": "Sélectionner l'Emplacement",
+    "visitorPlaceholder": "Choisir l'emplacement...",
+    "manageTimeSlots": "Gérer les créneaux pour tous les jours de la semaine",
+    "fetchingOptions": "Récupération des options...",
+    "addDaySlots": "Ajouter les créneaux du jour",
+    "editDaySlots": "Modifier les créneaux du jour",
+    "noSlotsAvailable": "Aucun créneau disponible",
+    "weeklySchedule": "Planning Hebdomadaire",
+    "utcNote": "Tous les horaires sont en UTC",
+    "weekDays": {
+      "monday": "Lundi",
+      "tuesday": "Mardi",
+      "wednesday": "Mercredi",
+      "thursday": "Jeudi",
+      "friday": "Vendredi",
+      "saturday": "Samedi",
+      "sunday": "Dimanche"
+    },
+    "generateSlotModal": {
+      "startTime": "Heure de Début",
+      "endTime": "Heure de Fin",
+      "interval": "Intervalle",
+      "hour": "Heure",
+      "fixed": "Fixe",
+      "slots": "Créneaux",
+      "headers": {
+        "previousSlots": "Créneaux Précédents",
+        "addNewSlots": "Ajouter de Nouveaux Créneaux",
+        "generatedSlots": "Créneaux Générés"
+      },
+      "validation": {
+        "startTimeRequired": "L'heure de début est requise",
+        "endTimeRequired": "L'heure de fin est requise",
+        "slotDurationRequired": "La durée du créneau est requise"
+      },
+      "toasts": {
+        "slotsSavedSuccess": "Créneaux sauvegardés avec succès !",
+        "slotsSavedError": "Échec de la sauvegarde des créneaux."
+      },
+      "placeholders": {
+        "selectStartTime": "Sélectionnez l'heure de début",
+        "selectEndTime": "Sélectionnez l'heure de fin"
+      },
+      "btns": {
+        "editSlots": "Modifier les Créneaux",
+        "generateSlots": "Générer les Créneaux",
+        "back": "Retour",
+        "confirm": "Confirmer les Créneaux",
+        "selectAll": "Tout Sélectionner",
+        "deselectAll": "Tout Désélectionner"
+      },
+      "utcNote": "Tous les horaires sont en UTC"
+    }
+  }
+}

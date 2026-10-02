@@ -1,0 +1,167 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.labelText {
+  color: var(--Dark-gray);
+  margin-bottom: 8px;
+  font-size: var(--fs16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: var(--font-lato);
+}
+
+.noBorder {
+  border: none;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  height: 59px;
+  padding: 15px 0px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 25px;
+  background: #f4f7fd;
+}
+
+.inputContainer > div {
+  width: 100%;
+}
+
+.inputContainer div[class*="day--selected"] {
+  background-color: #0b58f4;
+}
+
+.inputContainer div[class*="day--keyboard-selected"] {
+  background-color: #f4f7fd;
+}
+
+.inputContainer div[class*="header"] {
+  background-color: var(--primary);
+}
+
+.inputContainer div[class*="header"] * {
+  color: var(--white) !important;
+}
+
+.inputContainer div[class*="input-container"] button {
+  padding-inline-end: 16px;
+}
+
+.inputContainer div[class*="input-container"] svg {
+  width: 24px;
+  height: 24px;
+}
+
+.inputContainer div[class*="input-container"] {
+  display: flex;
+  align-items: center;
+  padding-inline-start: 10px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.inputContainer input {
+  width: 100%;
+  background-color: #f4f7fd;
+}
+
+.inputContainer input:disabled {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.inputContainer input::placeholder {
+  font-family: var(--font-lato);
+  color: var(--Dark-gray, #8c939b);
+  font-size: var(--fs16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.inputClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 40px !important;
+  width: 100%;
+  height: 55px;
+  border: none;
+}
+
+.errorText {
+  font-family: var(--font-lato);
+  font-size: var(--fs14);
+  font-weight: 400;
+  color: var(--Red);
+}
+
+.leftIconBox {
+  position: absolute;
+  inset-inline-start: 20px;
+  top: 50%;
+  bottom: 45%;
+  transform: translateY(-50%);
+  height: max-content;
+}
+
+.rightIconBox {
+  position: absolute;
+  inset-inline-end: 10px;
+  top: 50%;
+  bottom: 45%;
+  transform: translateY(-50%);
+  height: max-content;
+}
+
+.inputClass ::-webkit-outer-spin-button,
+.inputClass ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputClass:focus {
+  outline: none;
+}
+
+/*  Internal Classes */
+.container[dir="rtl"] input {
+  width: 100%;
+  text-align: right;
+}
+
+/*  Firefox  */
+.inputClass[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+@media (max-width: 991px) {
+  .labelText {
+    font-size: var(--fs14);
+  }
+  .inputContainer input {
+    font-size: var(--fs12);
+  }
+}
+
+@media (max-width: 576px) {
+  .labelText {
+    font-size: var(--fs12);
+  }
+
+  .inputContainer input {
+    font-size: var(--fs11);
+  }
+
+  .inputClass {
+    padding: 12px 8px;
+  }
+}

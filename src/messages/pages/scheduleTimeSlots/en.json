@@ -1,0 +1,8 @@
+{
+    "scheduleTimeSlotsPage":{
+        "title": "Schedule Time Slots",
+        "appointmentSlots": "Appointment Slots",
+        "laundryBookingSlots": "Laundry Booking Slots",
+        "visitorBookingSlots": "Visitor Booking Slots"
+    }
+}

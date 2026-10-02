@@ -1,0 +1,35 @@
+{
+  "positionPage": {
+    "title": "موقفونه",
+    "addButton": "موقف اضافه کړئ",
+    "editButton": "سمون",
+    "deleteButton": "ړنګول",
+    "table": {
+      "name": "نوم",
+      "statusTitle": "حالت"
+    },
+    "modal": {
+      "addTitle": "موقف اضافه کړئ",
+      "editTitle": "موقف سمون",
+      "PositionName": "د موقف نوم",
+      "PositionNamePlaceholder": "د موقف نوم ولیکئ",
+      "PositionNameRequired": "د موقف نوم اړینه ده",
+      "statusLabel": "حالت",
+      "statusPlaceholder": "حالت وټاکئ",
+      "activeOption": "فعال",
+      "inactiveOption": "غیرفعال",
+      "cancelButton": "لغوه کول",
+      "saveButton": "ساتل",
+      "updateButton": "تازه کول",
+      "saving": "ساتل کيږي...",
+      "loading": "پورته کيږي...",
+      "required": "دا ساحه اړینه ده",
+      "autoFill": "خپل ځان ډکول",
+      "translating": "ژباړه کيږي...",
+      "UpdatedSuccessfully": "موقف په بریالیتوب سره تازه شو",
+      "CreatedSuccessfully": "موقف په بریالیتوب سره جوړ شو",
+      "PleaseFill": "مهرباني وکړئ ډک کړئ",
+      "translationSuccessMessage": "ژباړه په بریالیتوب سره بشپړه شوه"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "reportsAnalyticsPage": {
+    "title": "راپورونه او تحلیلونه",
+    "ethnicityTitle": "د قومیت معلومات",
+    "demographicBreakdownTitle": "دیموګرافیک تجزیه",
+    "children": "ماشومان",
+    "adults": "لویان",
+    "male": "نارینه",
+    "female": "ښځینه",
+    "other": "نور",
+    "noData": "هیڅ معلومات شتون نلري",
+    "maintenanceRequestTitle": "د ساتنې غوښتنه",
+    "incidentReportsTitle": "د پیښو راپورونه",
+    "totalVisitorTitle": "ټول لیدونکي",
+    "downloadReport": "راپور ډاونلوډ کړئ",
+    "statsCards": {
+      "onSite": "په ځای کې استوګن",
+      "offSite": "د ځای څخه بهر استوګن",
+      "pendingRequests": "پاتې غوښتنې",
+        "maintenanceRequests": "د ساتنې غوښتنې پاتې ستونزې",
+      "bedCount": "ټول بسترونه",
+      "upcomingAppointments": "راتلونکي ناستې",
+      "availableBeds": "شتون لرونکي بسترونه",
+      "totalVisitors": "ټول لیدونکي",
+      "totalStaffCount": "ټول پوهنکي"
+    }
+  }
+}

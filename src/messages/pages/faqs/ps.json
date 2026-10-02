@@ -1,0 +1,44 @@
+{
+  "faqPage": {
+    "title": "په مکرر ډول پوښتل شوي پوښتنې",
+    "questionTitle": "پوښتنه",
+    "viewModalTitle": "پوښتنې په تفصیل کې",
+    "answerTitle": "ځواب",
+    "statusTitle": "حالت",
+    "actionsTitle": "کړنې",
+    "addButton": "FAQ اضافه کړئ",
+    "editButton": "FAQ سمون",
+    "deleteButton": "FAQ ړنګول",
+    "areYouSureMessage": "ایا تاسو ډاډه یاست چې غواړئ دا FAQ ړنګ کړئ؟",
+    "areYouSure": "ایا تاسو ډاډه یاست؟",
+    "cancel": "لغوه کول",
+    "confirm": "تایید",
+    "modal": {
+      "addTitle": "FAQ اضافه کړئ",
+      "editTitle": "FAQ سمون",
+      "questionLabel": "پوښتنه",
+      "questionPlaceholder": "پوښتنه ولیکئ",
+      "answerLabel": "ځواب",
+      "answerPlaceholder": "ځواب ولیکئ",
+      "inputRequired": {
+        "question": "پوښتنه لازمی یاست",
+        "answer": "ځواب لازمی یاست"
+      },
+      "statusLabel": "حالت",
+      "statusPlaceholder": "حالت وټاکئ",
+      "activeOption": "فعال",
+      "inactiveOption": "غیرفعال",
+      "saveButton": "ساتل",
+      "updateButton": "تازه کول",
+      "cancelButton": "لغوه کول",
+      "saving": "ساتل کيږي...",
+      "updating": "تازه کول کيږي...",
+      "translating": "ژباړه کيږي...",
+      "autoFill": "خپل ځان ډکول",
+      "CreatedSuccessfully": "FAQ په بریالیتوب سره جوړ شو",
+      "UpdatedSuccessfully": "FAQ په بریالیتوب سره تازه شو",
+      "translationSuccessMessage": "خپل ځان ډکول په بریالیتوب سره بشپړ شو",
+      "PleaseFill": "مهرباني وکړئ ډک کړئ"
+    }
+  }
+}

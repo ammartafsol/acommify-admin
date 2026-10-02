@@ -1,0 +1,174 @@
+.rbc-calendar {
+  font-family: inherit;
+  border: none;
+}
+
+.rbc-off-range-bg {
+  background-color: var(--Light-blue-v2);
+}
+
+.rbc-time-view,
+.rbc-month-view {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.rbc-time-view .rbc-row {
+  min-height: max-content;
+}
+
+.rbc-header button:has(div[class*="weekHeader"]) {
+  width: 100%;
+}
+
+.rbc-time-content {
+  border: 1px solid var(--border-color);
+}
+
+.rbc-header {
+  padding: 0 !important;
+}
+
+.rbc-month-view .rbc-header {
+  background: var(--Poor-white) !important;
+  border-bottom: 1px solid var(--Gray, #dbdbdb) !important;
+}
+
+/* Day view - hide header content */
+.rbc-time-gutter,
+.rbc-time-header-gutter {
+  background: #fafbfc;
+  border-inline-end: 1px solid #e0e0e0;
+  width: 100px !important;
+  max-width: 100px !important;
+}
+
+.rbc-timeslot-group {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.rbc-time-slot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rbc-label {
+  color: var(--text-base, #14181f);
+  font-family: var(--font-inter);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: right;
+  padding-inline-end: 8px;
+}
+
+.rbc-today {
+  background-color: var(--Light-green);
+}
+
+.rbc-current-time-indicator {
+  background-color: var(--Blue);
+  height: 2px;
+}
+
+.rbc-event {
+  background-color: var(--Blue);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+}
+
+/* Selected slot styling */
+.rbc-slot-selecting {
+  background-color: rgba(74, 144, 226, 0.2);
+}
+
+.rbc-addons-dnd .rbc-addons-dnd-drag-preview {
+  opacity: 0.7;
+}
+
+.rbc-off-range {
+  color: var(--Dark-gray);
+}
+
+/* Force each week row to a fixed height */
+.rbc-month-row {
+  height: 90px !important;
+  overflow: hidden;
+}
+
+/* Prevent cells from expanding */
+.rbc-date-cell,
+.rbc-day-bg {
+  overflow: hidden;
+}
+
+/* Event style */
+.rbc-event {
+  font-size: 10px;
+  padding: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: transparent;
+}
+
+/* Show More link style */
+.rbc-show-more {
+  font-size: 10px;
+  color: #007bff;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.rbc-row-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.rbc-row-content > .rbc-row:nth-child(2) {
+  margin-top: auto;
+}
+
+.rbc-row-content > .rbc-row:last-child {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 992px) {
+  .rbc-calendar {
+    font-size: 14px;
+  }
+  .rbc-time-view,
+  .rbc-month-view {
+    border-radius: 8px;
+  }
+  .rbc-header {
+    font-size: 13px;
+  }
+  .rbc-label {
+    font-size: 13px;
+    padding-inline-end: 4px;
+  }
+  .rbc-time-gutter,
+  .rbc-time-header-gutter {
+    width: 70px !important;
+    max-width: 70px !important;
+  }
+  .rbc-event {
+    font-size: 11px;
+    padding: 2px 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rbc-label {
+    font-size: 11px;
+  }
+  .rbc-timeslot-group {
+    min-height: 36px;
+  }
+}

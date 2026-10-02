@@ -1,0 +1,157 @@
+{
+  "crudPage": {
+    "title": "Operaciones CRUD",
+    "crudData": {
+      "maintenanceCategories": "Categorías de Mantenimiento",
+      "laundaryMachineCategories": "Categorías de Máquinas de Lavandería",
+      "FAQs": "Preguntas Frecuentes",
+      "helplines": "Líneas de Ayuda",
+      "positions": "Posiciones"
+    },
+    "laundaryMachineCategoriesPage": {
+      "title": "Categorías de Máquinas de Lavandería",
+      "addButton": "Agregar Nueva Máquina",
+      "edit": "Editar",
+      "table": {
+        "machineName": "Nombre de la Máquina",
+        "status": "Estado"
+      },
+      "modal": {
+        "title": "Crear Máquina",
+        "editTitle": "Editar Máquina",
+        "autoFill": "Llenado automático",
+        "translating": "Traduciendo...",
+        "machineName": "Nombre de la Máquina",
+        "machineNamePlaceholder": "Ingrese el nombre de la máquina",
+        "inputRequired": {
+          "name": "El nombre de la máquina es requerido"
+        },
+        "status": "Estado",
+        "statusPlaceholder": "Seleccione el estado",
+        "statusRequired": "El estado es requerido",
+        "active": "Activo",
+        "inactive": "Inactivo",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "update": "Actualizar",
+        "confirm": "Confirmar",
+        "MachineUpdatedSuccessfully": "Máquina actualizada exitosamente",
+        "MachineCreatedSuccessfully": "Máquina creada exitosamente",
+        "fill": "Por favor, complete",
+        "autoFilled": "Llenado automático exitoso"
+      }
+    },
+    "maintenanceCategoriesPage": {
+      "title": "Categorías de Mantenimiento",
+      "addButton": "Agregar Nueva Categoría",
+      "edit": "Editar",
+      "table": {
+        "categoryName": "Nombre de la Categoría",
+        "status": "Estado",
+        "risk": "Riesgo"
+      },
+      "modal": {
+        "title": "Crear Categoría",
+        "editTitle": "Editar Categoría",
+        "categoryName": "Nombre de la Categoría",
+        "categoryNamePlaceholder": "Ingrese el nombre de la categoría",
+        "inputRequired": {
+          "name": "El nombre de la categoría es requerido"
+        },
+        "severity": "Severidad",
+        "severityPlaceholder": "Seleccione la severidad",
+        "severityRequired": "La severidad es requerida",
+        "autoFilled": "Llenado automático exitoso",
+        "severityOptions": {
+          "low": "Baja",
+          "medium": "Media",
+          "high": "Alta"
+        },
+        "status": "Estado",
+        "statusPlaceholder": "Seleccione el estado",
+        "statusOptions": {
+          "active": "Activo",
+          "inactive": "Inactivo"
+        },
+        "statusRequired": "El estado es requerido",
+        "btnTranslate": "Traduciendo...",
+        "autoFill": "Llenado automático",
+        "pleaseFill": "Por favor, complete",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "update": "Actualizar",
+        "confirm": "Confirmar",
+        "toast": {
+          "categoryUpdated": "Categoría actualizada exitosamente",
+          "categoryCreated": "Categoría creada exitosamente"
+        }
+      }
+    },
+    "helpLineCrudPage": {
+      "title": "Líneas de Ayuda",
+      "addButton": "Agregar Línea de Ayuda",
+      "edit": "Editar",
+      "actions": {
+        "active": "Activo",
+        "inactive": "Inactivo"
+      },
+      "table": {
+        "title": "Título",
+        "country": "País",
+        "contact": "Contacto",
+        "description": "Descripción",
+        "status": "Estado",
+        "phoneNumber": "Número de Teléfono"
+      },
+      "modal": {
+        "title": "Crear Línea de Ayuda",
+        "editTitle": "Editar Línea de Ayuda",
+        "autoFill": "Llenado automático",
+        "translating": "Traduciendo...",
+        "helpLineTitle": "Título de la Línea de Ayuda",
+        "titleRequired": "El título de la línea de ayuda es requerido",
+        "helpLineTitlePlaceholder": "Ingrese el título de la línea de ayuda",
+        "helpLineTitleRequired": "El título de la línea de ayuda es requerido",
+        "contact": "Contacto",
+        "contactPlaceholder": "Ingrese el contacto",
+        "contactRequired": "El contacto es requerido",
+        "description": "Descripción",
+        "callingCodeRequired": "El código de llamada es requerido",
+        "pleaseFill": "Por favor, complete",
+        "inputRequired": {
+          "country": "El país es requerido",
+          "title": "El título es requerido",
+          "description": "La descripción es requerida"
+        },
+        "phoneNumberRequired": "El número de teléfono es requerido",
+        "timingsRequired": "Los horarios son requeridos",
+        "descriptionPlaceholder": "Ingrese la descripción",
+        "descriptionRequired": "La descripción es requerida",
+        "status": "Estado",
+        "statusPlaceholder": "Seleccione el estado",
+        "statusRequired": "El estado es requerido",
+        "active": "Activo",
+        "inactive": "Inactivo",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "update": "Actualizar",
+        "confirm": "Confirmar",
+        "helpLineUpdatedSuccessfully": "Línea de ayuda actualizada exitosamente",
+        "helpLineCreatedSuccessfully": "Línea de ayuda creada exitosamente",
+        "minLength": "Debe tener al menos 2 caracteres",
+        "fill": "Por favor, complete",
+        "autoFilled": "Llenado automático exitoso",
+        "phoneNumber": "Número de Teléfono",
+        "phoneNumberPlaceholder": "Ingrese el número de teléfono",
+        "timings": "Horarios",
+        "timingsPlaceholder": "Ingrese los horarios",
+        "translationSuccess": "Traducción exitosa",
+        "country": "País",
+        "countryPlaceholder": "Seleccione el país"
+      },
+      "toasts": {
+        "statusUpdateSuccess": "Estado actualizado exitosamente"
+      }
+    }
+  }
+}

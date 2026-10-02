@@ -1,0 +1,15 @@
+{
+  "profileSettingsPage": {
+    "title": "პროფილის პარამეტრები",
+    "fields": {
+      "name": "სრული სახელი",
+      "namePlaceholder": "შეიყვანეთ სრული სახელი",
+      "email": "ელ.ფოსტა",
+      "emailPlaceholder": "შეიყვანეთ ელ.ფოსტა",
+      "phone": "ტელეფონის ნომერი",
+      "phonePlaceholder": "შეიყვანეთ ტელეფონის ნომერი",
+      "address": "მისამართი",
+      "addressPlaceholder": "შეიყვანეთ მისამართი"
+    }
+  }
+}
