@@ -33,6 +33,7 @@ export default function Residents() {
   const dir = useDirection();
   const router = useRouter();
   const [show, setShow] = useState(false);
+  const [roomOnly, setRoomOnly] = useState(false);
   const [showViewModal, setShowViewModal] = useState(false);
   const [modalData, setModalData] = useState(null);
   const [loading, setLoading] = useState("");
@@ -46,7 +47,7 @@ export default function Residents() {
     {
       title: t("actions.edit"),
       onClick: (data) => {
-        console.log("Edit resident data:", data?.value);
+        setRoomOnly(false);
         setModalData(data?.value);
         setShow(true);
       },
@@ -103,9 +104,12 @@ export default function Residents() {
   }, [debounceSearch]);
 
   useEffect(() => {
-    if (modalData && !show) {
-      setModalData(null);
-      setPage(1);
+    if (!show) {
+      setRoomOnly(false);
+      if (modalData) {
+        setModalData(null);
+        setPage(1);
+      }
     }
   }, [show]);
 
@@ -127,7 +131,11 @@ export default function Residents() {
               ? {
                   label: t("addResident"),
                   variant: "primary",
-                  onClick: () => setShow(true),
+                  onClick: () => {
+                    setRoomOnly(false);
+                    setModalData(null);
+                    setShow(true);
+                  },
                   leftIcon: (
                     <ReactSVG
                       beforeInjection={(svg) => {
@@ -151,7 +159,17 @@ export default function Residents() {
 
         <AppTable
           loading={loading === "loading"}
-          tableHeader={ResidentsTableHeader(t, locale)}
+          tableHeader={ResidentsTableHeader(
+            t,
+            locale,
+            permissions?.includes("add-edit-resident")
+              ? (data) => {
+                  setRoomOnly(true);
+                  setModalData(data);
+                  setShow(true);
+                }
+              : null,
+          )}
           data={residentsData}
           actions={tableActions}
           actionStyles={{
@@ -177,6 +195,7 @@ export default function Residents() {
           show={show}
           setShow={setShow}
           modalData={modalData}
+          roomOnly={roomOnly}
           onSubmit={() => getResidentsData({ _page: 1, _search: "" })}
           setModalData={setModalData}
         />

@@ -54,12 +54,16 @@
   border: none !important;
 }
 
-.inputContainer input:disabled,
-.inputClass:has(input:disabled) {
-  box-shadow: none;
+.inputClass.locked {
+  background: rgba(220, 220, 220, 0.348);
   cursor: not-allowed;
-  background: rgba(220, 220, 220, 0.35);
+  pointer-events: none;
+}
+
+.inputContainer .inputClass.locked input {
+  background: transparent;
   color: var(--Dark-gray);
+  cursor: not-allowed;
 }
 
 .inputContainer input::placeholder {

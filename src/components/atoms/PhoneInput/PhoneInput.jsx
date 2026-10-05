@@ -69,6 +69,12 @@ const PhoneInput = ({
             defaultCountry={defaultCountry}
             value={value}
             color-variant={variant}
+            numberInputProps={
+              disabled
+                ? { readOnly: true, tabIndex: -1, "aria-disabled": true }
+                : undefined
+            }
+            countrySelectProps={disabled ? { tabIndex: -1 } : undefined}
             onChange={(value) => {
               if (disabled) return;
               setValue(value || "");
@@ -78,6 +84,7 @@ const PhoneInput = ({
             className={` ${[
               inputBoxClass,
               classes.inputClass,
+              disabled && classes.locked,
               noBorder && classes.noBorder,
             ].join(" ")}`}
             style={{
@@ -92,7 +99,7 @@ const PhoneInput = ({
             ref={inputRef}
             {...props}
             onCountryChange={(country) => {
-              if (!country) return;
+              if (disabled || !country) return;
               try {
                 const countryCode = getCountryCallingCode(country);
                 props.onCountryChange && props.onCountryChange("+" + countryCode);

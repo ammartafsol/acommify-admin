@@ -23,6 +23,7 @@
       "familyMemberRelation": "Relation du Membre de la Famille",
       "header": "Ajouter un Nouveau Résident",
       "editResident": "Modifier le Résident",
+      "editRoom": "Modifier le numéro de chambre/maison",
       "familyMembers": "Membres de la Famille",
       "name": "Nom Complet",
       "namePlaceholder": "Entrez le nom complet",

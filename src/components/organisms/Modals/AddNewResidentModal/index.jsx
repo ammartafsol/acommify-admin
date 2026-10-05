@@ -29,8 +29,10 @@ export default function AddNewResidentModal({
   onSubmit,
   modalData = null,
   setModalData,
+  roomOnly = false,
 }) {
   const isEdit = Boolean(modalData?.userId);
+  const lockFields = Boolean(modalData);
   const locale = useLocale();
   const direction = useDirection(locale);
   const { Get, Post, Patch } = useAxios();
@@ -306,47 +308,68 @@ export default function AddNewResidentModal({
     transportTypeOptions,
   ]);
 
-  const getAccommodationOptions = async () => {
-    setLoading("gettingOptions");
-    const { response } = await Get({
-      route:
-        "admin/accommodation/all?occupancyStatus=not-occupied&userType=resident",
-    });
-    if (response?.status === "success") {
-      const options = response?.data?.map((item) => ({
-        label: item?.accommodationNumber,
-        value: item?.slug,
-        totalBeds: item?.noOfBeds,
-        remainingBeds: item?.remainingBeds || 0,
-        occupiedBeds: item?.noOfBeds - item?.remainingBeds || 0,
-        myOccupiedBeds: modalData?.noOfBeds || 0,
-      }));
-      setAccommodationOptions(options);
-    }
-    setLoading("");
-  };
+  const toRoomOption = (item, occupiedBeds = modalData?.noOfBeds || 0) => ({
+    label: item?.accommodationNumber,
+    value: item?.slug,
+    totalBeds: item?.noOfBeds,
+    remainingBeds: Number(item?.remainingBeds) || 0,
+    occupiedBeds:
+      (Number(item?.noOfBeds) || 0) - (Number(item?.remainingBeds) || 0),
+    myOccupiedBeds: occupiedBeds,
+  });
 
   useEffect(() => {
-    if (show && modalData && accommodationOptions.length > 0) {
-      if (modalData?.accommodation) {
-        const selectedRoom = accommodationOptions.find(
-          (option) => option?.value === modalData?.accommodation?.slug
-        );
-        if (selectedRoom) {
-          setRemainingBeds(selectedRoom?.remainingBeds);
-          setMyAndRemainingBeds(
-            selectedRoom?.remainingBeds + (modalData?.noOfBeds || 0)
-          );
+    if (!show) return;
+    let cancelled = false;
+    const currentRoom = modalData?.accommodation;
+    const neededBeds = Number(modalData?.noOfBeds) || 0;
+    const currentOption = currentRoom?.slug
+      ? [toRoomOption(currentRoom, neededBeds)]
+      : [];
+
+    if (currentOption.length) {
+      setAccommodationOptions(currentOption);
+    }
+
+    const loadRooms = async () => {
+      setLoading("gettingOptions");
+      const { response } = await Get({
+        route: "admin/accommodation/all?userType=resident&occupancyStatus=all",
+      });
+      if (cancelled) return;
+
+      const rooms = Array.isArray(response?.data) ? response.data : [];
+      const options = rooms
+        .map((item) => toRoomOption(item, neededBeds))
+        .filter((option) => option.label && option.value)
+        .filter((option) => {
+          if (option.value === currentRoom?.slug) return true;
+          if (!lockFields) return option.remainingBeds > 0;
+          return neededBeds === 0 || option.remainingBeds >= neededBeds;
+        });
+
+      currentOption.forEach((option) => {
+        if (!options.some((item) => item.value === option.value)) {
+          options.unshift(option);
         }
-      }
-    }
-  }, [show, modalData, accommodationOptions]);
+      });
 
-  useEffect(() => {
-    if (show) {
-      getAccommodationOptions();
-    }
-  }, [show]);
+      setAccommodationOptions(options);
+      const selectedRoom = options.find(
+        (option) => option.value === currentRoom?.slug,
+      );
+      if (selectedRoom) {
+        setRemainingBeds(selectedRoom.remainingBeds);
+        setMyAndRemainingBeds(selectedRoom.remainingBeds + neededBeds);
+      }
+      setLoading("");
+    };
+
+    loadRooms();
+    return () => {
+      cancelled = true;
+    };
+  }, [show, modalData]);
 
   const addFamilyMember = () => {
     formik.setFieldValue("familyMembers", [
@@ -525,7 +548,9 @@ export default function AddNewResidentModal({
       setShow={setShow}
       show={show}
       padding="20px 32px"
-      header={modalData ? t("editResident") : t("header")}
+      header={
+        roomOnly ? t("editRoom") : modalData ? t("editResident") : t("header")
+      }
     >
       <div
         className={mergeClass(
@@ -545,7 +570,7 @@ export default function AddNewResidentModal({
         <Button
           label={translating ? t("translating") : t("autoFill")}
           onClick={handleAutoFill}
-          disabled={loading === "submitting" || translating}
+          disabled={loading === "submitting" || translating || lockFields}
         />
         <Input
           dir={dir}
@@ -559,7 +584,7 @@ export default function AddNewResidentModal({
             formik.touched.fullName?.[activeLanguage] &&
             formik.errors.fullName?.[activeLanguage]
           }
-          disabled={loading === "submitting"}
+          disabled={loading === "submitting" || lockFields}
           type="text"
         />
 
@@ -587,7 +612,7 @@ export default function AddNewResidentModal({
           errorText={
             formik.touched.dateOfArrival && formik.errors.dateOfArrival
           }
-          disabled={loading === "submitting"}
+          disabled={loading === "submitting" || lockFields}
           rightIcon={<IoCalendarOutline size={20} color="#B2B5BA" />}
           rightIconClass={classes.calendarIcon}
           // min={moment().format("YYYY-MM-DD")}
@@ -614,7 +639,7 @@ export default function AddNewResidentModal({
           onCountryChange={(code) => {
             formik.setFieldValue("callingCode", code);
           }}
-          disabled={loading === "submitting"}
+          disabled={loading === "submitting" || lockFields}
         />
 
         <DropDown
@@ -631,15 +656,17 @@ export default function AddNewResidentModal({
               setMyAndRemainingBeds(
                 val.remainingBeds + (modalData?.noOfBeds || 0)
               );
-              formik.setFieldValue("noOfBeds", null);
             } else {
               setRemainingBeds(0);
             }
-            formik.setFieldValue("noOfBeds", null);
+            if (!lockFields) {
+              formik.setFieldValue("noOfBeds", null);
+            }
           }}
           errorText={formik.touched.roomNumber && formik.errors.roomNumber}
           dropDownContainerClass={classes.dropDownContainerClass}
-          disabled={loading || modalData}
+          hideSelectedOptions={false}
+          disabled={loading === "submitting" || loading === "gettingOptions"}
         />
 
         <DropDown
@@ -658,7 +685,10 @@ export default function AddNewResidentModal({
           error={formik.touched.noOfBeds && formik.errors.noOfBeds}
           dropDownContainerClass={classes.dropDownContainerClass}
           disabled={
-            loading === "submitting" || loading || !formik.values.roomNumber
+            loading === "submitting" ||
+            Boolean(loading) ||
+            !formik.values.roomNumber ||
+            lockFields
           }
         />
 
@@ -672,7 +702,7 @@ export default function AddNewResidentModal({
           value={formik.values.gender}
           setValue={(val) => formik.setFieldValue("gender", val)}
           error={formik.touched.gender && formik.errors.gender}
-          disabled={loading === "submitting"}
+          disabled={loading === "submitting" || lockFields}
         />
 
         <DropDown
@@ -685,6 +715,7 @@ export default function AddNewResidentModal({
           value={formik.values.residentStatus}
           setValue={(val) => formik.setFieldValue("residentStatus", val)}
           error={formik.touched.residentStatus && formik.errors.residentStatus}
+          disabled={loading === "submitting" || lockFields}
         />
         <Input
           dir={dir}
@@ -693,7 +724,7 @@ export default function AddNewResidentModal({
           value={formik.values.trcNumber}
           setValue={(val) => formik.setFieldValue("trcNumber", val)}
           errorText={formik.touched.trcNumber && formik.errors.trcNumber}
-          disabled={loading === "submitting"}
+          disabled={loading === "submitting" || lockFields}
         />
         <Input
           dir={dir}
@@ -702,7 +733,7 @@ export default function AddNewResidentModal({
           value={formik.values.ppsnNumber}
           setValue={(val) => formik.setFieldValue("ppsnNumber", val)}
           errorText={formik.touched.ppsnNumber && formik.errors.ppsnNumber}
-          disabled={loading === "submitting"}
+          disabled={loading === "submitting" || lockFields}
         />
         <Input
           dir={dir}
@@ -713,31 +744,31 @@ export default function AddNewResidentModal({
           errorText={
             formik.touched.medicalCardNumber && formik.errors.medicalCardNumber
           }
-          disabled={loading === "submitting"}
+          disabled={loading === "submitting" || lockFields}
         />
 
         {/* Add family members */}
         <div dir={dir} className={classes.familyMembersContainer}>
           <div className={classes.familyMembersHeader}>
             <p>{modalData ? t("familyMembers") : t("addFamilyMember")}</p>
-            {/* {!modalData && ( */}
-            <div className={classes.addIcon} onClick={addFamilyMember}>
-              <IoAddOutline size={20} color="#fff" />
-            </div>
-            {/* )} */}
+            {!lockFields && (
+              <div className={classes.addIcon} onClick={addFamilyMember}>
+                <IoAddOutline size={20} color="#fff" />
+              </div>
+            )}
           </div>
           {formik.values.familyMembers.map((familyMember, index) => (
             <Fragment key={index}>
               <p className={classes.familyMemberLabel}>
                 {t("familyMemberLabel")}: {index + 1}
-                {/* {!modalData && ( */}
-                <BiTrash
-                  className="c-p"
-                  onClick={() => removeFamilyMember(index)}
-                  color="#FF0000"
-                  size={20}
-                />
-                {/* )} */}
+                {!lockFields && (
+                  <BiTrash
+                    className="c-p"
+                    onClick={() => removeFamilyMember(index)}
+                    color="#FF0000"
+                    size={20}
+                  />
+                )}
               </p>
               <div key={index} className={classes.familyMembersInputs}>
                 <Input
@@ -759,7 +790,7 @@ export default function AddNewResidentModal({
                       activeLanguage
                     ]
                   }
-                  disabled={loading === "submitting"}
+                  disabled={loading === "submitting" || lockFields}
                   type="text"
                 />
                 {/* trc number */}
@@ -778,7 +809,7 @@ export default function AddNewResidentModal({
                     formik.touched.familyMembers?.[index]?.trcNumber &&
                     formik.errors.familyMembers?.[index]?.trcNumber
                   }
-                  disabled={loading === "submitting"}
+                  disabled={loading === "submitting" || lockFields}
                   type="text"
                 />
                 <DropDown
@@ -796,7 +827,7 @@ export default function AddNewResidentModal({
                     formik.touched.familyMembers?.[index]?.gender &&
                     formik.errors.familyMembers?.[index]?.gender
                   }
-                  disabled={loading === "submitting"}
+                  disabled={loading === "submitting" || lockFields}
                 />
                 <DropDown
                   isPortal
@@ -816,7 +847,7 @@ export default function AddNewResidentModal({
                     formik.touched.familyMembers?.[index]?.relationship &&
                     formik.errors.familyMembers?.[index]?.relationship
                   }
-                  disabled={loading === "submitting"}
+                  disabled={loading === "submitting" || lockFields}
                 />
                 {familyMember?.relationship?.value === "children" && (
                   <>
@@ -834,7 +865,7 @@ export default function AddNewResidentModal({
                           val
                         )
                       }
-                      disabled={loading === "submitting"}
+                      disabled={loading === "submitting" || lockFields}
                     />
                     {familyMember?.schoolPlacement?.value === "placed" && (
                       <>
@@ -859,7 +890,7 @@ export default function AddNewResidentModal({
                               activeLanguage
                             ]
                           }
-                          disabled={loading === "submitting"}
+                          disabled={loading === "submitting" || lockFields}
                           type="text"
                         />
                         <Input
@@ -880,7 +911,7 @@ export default function AddNewResidentModal({
                             formik.touched.familyMembers?.[index]?.year &&
                             formik.errors.familyMembers?.[index]?.year
                           }
-                          disabled={loading === "submitting"}
+                          disabled={loading === "submitting" || lockFields}
                         />
                         <DropDown
                           isPortal
@@ -903,26 +934,28 @@ export default function AddNewResidentModal({
                               ?.transportType &&
                             formik.errors.familyMembers?.[index]?.transportType
                           }
-                          disabled={loading === "submitting"}
+                          disabled={loading === "submitting" || lockFields}
                         />
                         <div className={classes.booksContainer}>
                           <div className={classes.booksLabelContainer}>
                             <label>{t("books.label")}</label>
-                            <div
-                              className={classes.addBookIcon}
-                              onClick={() => {
-                                const updatedBooks = [
-                                  ...familyMember.books,
-                                  "",
-                                ];
-                                formik.setFieldValue(
-                                  `familyMembers[${index}].books`,
-                                  updatedBooks
-                                );
-                              }}
-                            >
-                              <IoAddOutline size={18} />
-                            </div>
+                            {!lockFields && (
+                              <div
+                                className={classes.addBookIcon}
+                                onClick={() => {
+                                  const updatedBooks = [
+                                    ...familyMember.books,
+                                    "",
+                                  ];
+                                  formik.setFieldValue(
+                                    `familyMembers[${index}].books`,
+                                    updatedBooks
+                                  );
+                                }}
+                              >
+                                <IoAddOutline size={18} />
+                              </div>
+                            )}
                           </div>
                           {familyMember?.books?.map((book, bookIndex) => (
                             <div
@@ -946,10 +979,10 @@ export default function AddNewResidentModal({
                                     ?.books &&
                                   formik.errors.familyMembers?.[index]?.books
                                 }
-                                disabled={loading === "submitting"}
+                                disabled={loading === "submitting" || lockFields}
                                 type="text"
                               />
-                              {familyMember.books.length > 1 && (
+                              {!lockFields && familyMember.books.length > 1 && (
                                 <div
                                   className={classes.removeBookIcon}
                                   onClick={() => {
@@ -986,7 +1019,7 @@ export default function AddNewResidentModal({
                     formik.touched.familyMembers?.[index]?.dob &&
                     formik.errors.familyMembers?.[index]?.dob
                   }
-                  disabled={loading === "submitting"}
+                  disabled={loading === "submitting" || lockFields}
                   rightIcon={<IoCalendarOutline size={20} color="#B2B5BA" />}
                   rightIconClass={classes.calendarIcon}
                   max={moment().format("YYYY-MM-DD")}
@@ -1005,7 +1038,7 @@ export default function AddNewResidentModal({
               setModalData(null);
               formik.resetForm();
             }}
-            disabled={loading === "submitting"}
+            disabled={loading === "submitting" || lockFields}
           />
           <Button
             variant="primary"
@@ -1014,6 +1047,14 @@ export default function AddNewResidentModal({
               // modalData
               //   ? () => editResident(formik.values)
               () => {
+                if (lockFields) {
+                  if (!formik.values.roomNumber?.value) {
+                    formik.setFieldTouched("roomNumber", true);
+                    return;
+                  }
+                  handleSubmit(formik.values);
+                  return;
+                }
                 const fieldsToValidate = formik.values.familyMembers.flatMap(
                   (member, index) => {
                     const requiredFields = [];
