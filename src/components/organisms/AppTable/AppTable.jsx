@@ -460,7 +460,7 @@ export default function AppTable({
                     >
                       {tableHeader?.map(
                         (
-                          { key, style, title, renderItem, image },
+                          { key, style, title, renderItem, image, preventRowClick },
                           colIndex
                         ) => (
                           <td
@@ -469,8 +469,14 @@ export default function AppTable({
                             style={{
                               ...(image && { paddingBlock: "10px" }),
                               textAlign: "start",
+                              ...(preventRowClick && { cursor: "default" }),
                               ...style,
                             }}
+                            onClick={
+                              preventRowClick
+                                ? (e) => e.stopPropagation()
+                                : undefined
+                            }
                           >
                             <div
                               className={image ? classes.imageContainer : ""}

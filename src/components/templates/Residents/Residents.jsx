@@ -159,17 +159,7 @@ export default function Residents() {
 
         <AppTable
           loading={loading === "loading"}
-          tableHeader={ResidentsTableHeader(
-            t,
-            locale,
-            permissions?.includes("add-edit-resident")
-              ? (data) => {
-                  setRoomOnly(true);
-                  setModalData(data);
-                  setShow(true);
-                }
-              : null,
-          )}
+          tableHeader={ResidentsTableHeader(t, locale)}
           data={residentsData}
           actions={tableActions}
           actionStyles={{

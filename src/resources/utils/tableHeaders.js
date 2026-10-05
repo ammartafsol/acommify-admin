@@ -95,7 +95,7 @@ export function StaffsTableHeader(t, locale) {
   // console.log(fullName, "fullName");
 }
 
-export function ResidentsTableHeader(t, locale, onRoomClick) {
+export function ResidentsTableHeader(t, locale) {
   return [
     {
       key: "fullName",
@@ -137,24 +137,9 @@ export function ResidentsTableHeader(t, locale, onRoomClick) {
       key: "accommodationNumber",
       title: t("table.roomNo"),
       style: { width: "11%" },
-      renderItem: ({ data }) => {
-        const roomNumber = capitalizeEachWord(
-          data?.accommodation?.accommodationNumber || "N/A",
-        );
-        if (!onRoomClick) return roomNumber;
-        return (
-          <button
-            type="button"
-            className="roomNumberLink"
-            onClick={(e) => {
-              e.stopPropagation();
-              onRoomClick(data);
-            }}
-          >
-            {roomNumber}
-          </button>
-        );
-      },
+      preventRowClick: true,
+      renderItem: ({ data }) =>
+        capitalizeEachWord(data?.accommodation?.accommodationNumber || "N/A"),
     },
 
     {
