@@ -13,7 +13,15 @@ import { useLocaleHistory } from "@/resources/hooks/useLocaleHistory";
 export function CustomProvider({ children }) {
   useLocaleHistory();
 
+  const getIp = async () => {
+    const ip = await fetch("https://api.ipify.org?format=json");
+    const data = await ip.json();
+    Cookies.set("ip", data.ip);
+  };
+
+
   useEffect(() => {
+    getIp();
     Aos.init();
   }, []);
 

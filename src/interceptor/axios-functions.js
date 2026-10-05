@@ -94,7 +94,9 @@ const useAxios = () => {
     signal = null,
   }) => {
     const url = baseURL(route);
+    const ip = Cookies.get("ip");
     const _headers = {
+      "x-forwarded-for": ip,
       Accept: "application/json",
       "Content-Type": isFormData ? "multipart/form-data" : "application/json",
       timezone: momentTimezone.tz.guess(),
