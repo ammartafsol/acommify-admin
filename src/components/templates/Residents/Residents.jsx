@@ -1,8 +1,12 @@
 "use client";
 import MenuComponent from "@/components/atoms/MenuComponent";
+import RenderToast from "@/components/atoms/RenderToast";
 import SubHeader from "@/components/molecules/SubHeader/SubHeader";
 import AppTable from "@/components/organisms/AppTable/AppTable";
-import { RenderStatusCell } from "@/components/organisms/AppTable/tableHelper";
+import {
+  RenderStatusCell,
+  RenderSwitchCell,
+} from "@/components/organisms/AppTable/tableHelper";
 import AddNewResidentModal from "@/components/organisms/Modals/AddNewResidentModal";
 import DetailModal from "@/components/organisms/Modals/DetailModal/DetailModal";
 import { useRouter } from "@/i18n/navigation";
@@ -28,7 +32,7 @@ import styles from "./styles.module.css";
 export default function Residents() {
   const { permissions } = useSelector((state) => state.authReducer);
   const t = useTranslations("residentsPage");
-  const { Get } = useAxios();
+  const { Get, Patch } = useAxios();
   const locale = useLocale();
   const dir = useDirection();
   const router = useRouter();
@@ -58,7 +62,27 @@ export default function Residents() {
     },
   ];
 
-  const tableActions = permissions.includes("add-edit-resident")
+  const canEditResident = permissions?.includes("add-edit-resident");
+
+  const switchItem = {
+    key: "status",
+    title: t("table.status"),
+    style: {
+      width: "150px",
+      minWidth: "150px",
+      whiteSpace: "nowrap",
+    },
+    preventRowClick: true,
+    renderItem: ({ data }) => (
+      <RenderSwitchCell
+        isActive={data?.status === "active"}
+        disabled={!canEditResident || loading === "status"}
+        onChange={(newValue) => toggleStatus(newValue, data)}
+      />
+    ),
+  };
+
+  const tableActions = canEditResident
     ? [
         {
           renderItem: ({ data }) => (
@@ -102,6 +126,25 @@ export default function Residents() {
   useEffect(() => {
     getResidentsData({ _search: debounceSearch, _page: 1 });
   }, [debounceSearch]);
+
+  const toggleStatus = async (newValue, item) => {
+    if (!canEditResident || !item?.slug) return;
+
+    setLoading("status");
+    const { response } = await Patch({
+      route: `admin/user/update/${item.slug}`,
+      data: { status: newValue ? "active" : "inactive" },
+    });
+
+    if (response) {
+      RenderToast({
+        type: "success",
+        message: t("modal.toasts.residentStatus"),
+      });
+      await getResidentsData({ _search: debounceSearch, _page: page || 1 });
+    }
+    setLoading("");
+  };
 
   useEffect(() => {
     if (!show) {
@@ -158,12 +201,14 @@ export default function Residents() {
         />
 
         <AppTable
-          loading={loading === "loading"}
-          tableHeader={ResidentsTableHeader(t, locale)}
+          loading={loading === "loading" || loading === "status"}
+          tableHeader={[...ResidentsTableHeader(t, locale), switchItem]}
           data={residentsData}
           actions={tableActions}
           actionStyles={{
-            width: "10%",
+            width: "110px",
+            minWidth: "110px",
+            whiteSpace: "nowrap",
           }}
           rowClassName="c-p"
           onRowClick={(data) => {

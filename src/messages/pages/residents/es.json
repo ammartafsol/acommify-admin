@@ -13,7 +13,8 @@
       "dob": "Fecha de Nacimiento",
       "age": "Edad",
       "arrivalDate": "Fecha de Llegada",
-      "gender": "Género"
+      "gender": "Género",
+      "status": "Estado"
     },
     "modal": {
       "noOfBedsRequired": "El número de camas es requerido",
@@ -53,6 +54,9 @@
       "status": "Estado",
       "statusPlaceholder": "Seleccione el estado",
       "statusRequired": "El estado es requerido",
+      "accountStatus": "Estado de la cuenta",
+      "accountStatusActive": "Activo",
+      "accountStatusInactive": "Inactivo",
       "offsite": "Fuera del Sitio",
       "onsite": "En el Sitio",
       "familyMemberLabel": "Miembro de la Familia",
@@ -118,6 +122,7 @@
       "agePlaceholder": "Ingrese la edad",
       "toasts": {
         "residentUpdated": "Residente actualizado exitosamente",
+        "residentStatus": "Estado del residente actualizado correctamente",
         "residentAdded": "Residente agregado exitosamente",
         "translationSuccessMessage": "Traducido exitosamente"
       },

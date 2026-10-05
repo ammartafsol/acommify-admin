@@ -13,7 +13,8 @@
       "dob": "Kwanan Watan Haihuwa",
       "age": "Shekaru",
       "arrivalDate": "Kwanan Watan Zuwa",
-      "gender": "Laifi"
+      "gender": "Laifi",
+      "status": "Matsayi"
     },
     "modal": {
       "noOfBedsRequired": "Adadin gadaje yana buƙata",
@@ -53,6 +54,9 @@
       "status": "Matsayi",
       "statusPlaceholder": "Zaɓi matsayi",
       "statusRequired": "Matsayi yana buƙata",
+      "accountStatus": "Matsayin Asusu",
+      "accountStatusActive": "Aiki",
+      "accountStatusInactive": "A kashe",
       "offsite": "A Waje",
       "onsite": "A Wurin",
       "familyMemberLabel": "Memba na Iyali",
@@ -118,6 +122,7 @@
       "agePlaceholder": "Shigar da shekaru",
       "toasts": {
         "residentUpdated": "Mazauni an sabunta cikin nasara",
+        "residentStatus": "An sabunta matsayin mazauni cikin nasara",
         "residentAdded": "Mazauni an ƙara cikin nasara",
         "translationSuccessMessage": "An fassara cikin nasara"
       },

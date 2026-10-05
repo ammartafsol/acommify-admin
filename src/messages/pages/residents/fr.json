@@ -13,7 +13,8 @@
       "dob": "Date de Naissance",
       "age": "Âge",
       "arrivalDate": "Date d'Arrivée",
-      "gender": "Genre"
+      "gender": "Genre",
+      "status": "Statut"
     },
     "modal": {
       "noOfBedsRequired": "Le nombre de lits est requis",
@@ -53,6 +54,9 @@
       "status": "Statut",
       "statusPlaceholder": "Sélectionnez le statut",
       "statusRequired": "Le statut est requis",
+      "accountStatus": "Statut du compte",
+      "accountStatusActive": "Actif",
+      "accountStatusInactive": "Inactif",
       "offsite": "Hors Site",
       "onsite": "Sur Site",
       "familyMemberLabel": "Membre de la Famille",
@@ -118,6 +122,7 @@
       "agePlaceholder": "Entrez l'âge",
       "toasts": {
         "residentUpdated": "Résident mis à jour avec succès",
+        "residentStatus": "Statut du résident mis à jour avec succès",
         "residentAdded": "Résident ajouté avec succès",
         "translationSuccessMessage": "Traduit avec succès"
       },

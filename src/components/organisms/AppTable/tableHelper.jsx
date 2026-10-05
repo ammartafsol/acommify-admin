@@ -194,6 +194,7 @@ export function RenderSwitchCell({
   return (
     <div
       className={styles.switchCell}
+      data-switch-cell=""
       onClick={(e) => e.stopPropagation()} // stop modal from opening when clicking anywhere in the switch cell
     >
       <Form.Switch

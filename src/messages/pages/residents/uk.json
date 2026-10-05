@@ -13,7 +13,8 @@
       "dob": "Дата народження",
       "age": "Вік",
       "arrivalDate": "Дата прибуття",
-      "gender": "Стать"
+      "gender": "Стать",
+      "status": "Статус"
     },
     "modal": {
       "noOfBedsRequired": "Кількість ліжок є обов'язковою",
@@ -53,6 +54,9 @@
       "status": "Статус",
       "statusPlaceholder": "Виберіть статус",
       "statusRequired": "Статус є обов'язковим",
+      "accountStatus": "Статус облікового запису",
+      "accountStatusActive": "Активний",
+      "accountStatusInactive": "Неактивний",
       "offsite": "Поза місцем",
       "onsite": "На місці",
       "familyMemberLabel": "Член сім'ї",
@@ -118,6 +122,7 @@
       "agePlaceholder": "Введіть вік",
       "toasts": {
         "residentUpdated": "Резидента успішно оновлено",
+        "residentStatus": "Статус резидента успішно оновлено",
         "residentAdded": "Резидента успішно додано",
         "translationSuccessMessage": "Успішно перекладено"
       },

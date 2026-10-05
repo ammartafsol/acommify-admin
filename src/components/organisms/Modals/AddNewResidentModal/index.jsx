@@ -71,6 +71,14 @@ export default function AddNewResidentModal({
     [t]
   );
 
+  const accountStatusOptions = useMemo(
+    () => [
+      { value: "active", label: t("accountStatusActive") },
+      { value: "inactive", label: t("accountStatusInactive") },
+    ],
+    [t]
+  );
+
   const schoolPlacementOptions = useMemo(
     () => [
       { value: "placed", label: t("schoolPlacement.placed") },
@@ -117,6 +125,7 @@ export default function AddNewResidentModal({
     roomNumber: null,
     dateOfArrival: "",
     residentStatus: null,
+    accountStatus: null,
     gender: null,
     trcNumber: "",
     ppsnNumber: "",
@@ -169,6 +178,10 @@ export default function AddNewResidentModal({
           statusOptions.find(
             (item) => item.value === modalData?.residentStatus
           ) || null,
+        accountStatus:
+          accountStatusOptions.find(
+            (item) => item.value === (modalData?.status || "active")
+          ) || accountStatusOptions[0],
         gender:
           genderOptions.find(
             (item) =>
@@ -216,6 +229,18 @@ export default function AddNewResidentModal({
 
   // Update dropdown option labels when language changes
   useEffect(() => {
+    if (formik.values.accountStatus?.value) {
+      const updatedAccountStatus = accountStatusOptions.find(
+        (opt) => opt.value === formik.values.accountStatus.value
+      );
+      if (
+        updatedAccountStatus &&
+        updatedAccountStatus.label !== formik.values.accountStatus.label
+      ) {
+        formik.setFieldValue("accountStatus", updatedAccountStatus);
+      }
+    }
+
     // Update residentStatus label
     if (formik.values.residentStatus?.value) {
       const updatedStatus = statusOptions.find(
@@ -302,6 +327,7 @@ export default function AddNewResidentModal({
   }, [
     activeLanguage,
     statusOptions,
+    accountStatusOptions,
     genderOptions,
     relationshipOptions,
     schoolPlacementOptions,
@@ -402,6 +428,9 @@ export default function AddNewResidentModal({
       phoneNumber: values.phoneNumber?.slice(values.callingCode?.length),
       accommodationSlug: values.roomNumber?.value,
       residentStatus: values.residentStatus?.value,
+      ...(isEdit && {
+        status: values.accountStatus?.value || modalData?.status || "active",
+      }),
       gender: values.gender?.value,
       trcNumber: values.trcNumber,
       ppsnNumber: values.ppsnNumber,
@@ -668,6 +697,20 @@ export default function AddNewResidentModal({
           hideSelectedOptions={false}
           disabled={loading === "submitting" || loading === "gettingOptions"}
         />
+
+        {lockFields && (
+          <DropDown
+            isPortal
+            dir={dir}
+            label={t("accountStatus")}
+            placeholder={t("accountStatus")}
+            options={accountStatusOptions}
+            value={formik.values.accountStatus}
+            setValue={(val) => formik.setFieldValue("accountStatus", val)}
+            dropDownContainerClass={classes.dropDownContainerClass}
+            disabled={loading === "submitting"}
+          />
+        )}
 
         <DropDown
           isPortal

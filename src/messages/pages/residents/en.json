@@ -14,7 +14,8 @@
       "dob": "Date Of Birth",
       "age": "Age",
       "arrivalDate": "Arrival Date",
-      "gender": "Gender"
+      "gender": "Gender",
+      "status": "Status"
     },
     "modal": {
       "noOfBedsRequired": "Number of beds is required",
@@ -56,6 +57,9 @@
       "status": "Status",
       "statusPlaceholder": "Select status",
       "statusRequired": "Status is required",
+      "accountStatus": "Account Status",
+      "accountStatusActive": "Active",
+      "accountStatusInactive": "Inactive",
       "gender": "Gender",
       "genderPlaceholder": "Select gender",
       "genderRequired": "Gender is required",
@@ -121,6 +125,7 @@
       "agePlaceholder": "Enter age",
       "toasts": {
         "residentUpdated": "Resident updated successfully",
+        "residentStatus": "Resident status updated successfully",
         "residentAdded": "Resident added successfully",
         "translationSuccessMessage": "Translated successfully",
         "languagesMessage": "Please provide the following fields in the selected language before autofilling"

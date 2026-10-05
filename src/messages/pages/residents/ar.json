@@ -13,7 +13,8 @@
       "dob": "تاريخ الميلاد",
       "age": "العمر",
       "arrivalDate": "تاريخ الوصول",
-      "gender": "الجنس"
+      "gender": "الجنس",
+      "status": "الحالة"
     },
     "modal": {
       "noOfBedsRequired": "عدد الأسرة مطلوب",
@@ -53,6 +54,9 @@
       "status": "الحالة",
       "statusPlaceholder": "اختر الحالة",
       "statusRequired": "الحالة مطلوبة",
+      "accountStatus": "حالة الحساب",
+      "accountStatusActive": "نشط",
+      "accountStatusInactive": "غير نشط",
       "offsite": "خارج الموقع",
       "onsite": "في الموقع",
       "familyMemberLabel": "عضو العائلة",
@@ -118,6 +122,7 @@
       "agePlaceholder": "أدخل العمر",
       "toasts": {
         "residentUpdated": "تم تحديث المقيم بنجاح",
+        "residentStatus": "تم تحديث حالة المقيم بنجاح",
         "residentAdded": "تم إضافة المقيم بنجاح",
         "translationSuccessMessage": "تمت الترجمة بنجاح"
       },

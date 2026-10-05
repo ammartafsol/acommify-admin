@@ -13,7 +13,8 @@
       "dob": "د زیږیدو نیټه",
       "age": "عمر",
       "arrivalDate": "د راتګ نیټه",
-      "gender": "جنس"
+      "gender": "جنس",
+      "status": "حالت"
     },
     "modal": {
       "noOfBedsRequired": "د بسترونو شمیر اړین دی",
@@ -53,6 +54,9 @@
       "status": "حالت",
       "statusPlaceholder": "حالت وټاکئ",
       "statusRequired": "حالت اړین دی",
+      "accountStatus": "د حساب حالت",
+      "accountStatusActive": "فعال",
+      "accountStatusInactive": "غیر فعال",
       "offsite": "د ځای څخه بهر",
       "onsite": "په ځای کې",
       "familyMemberLabel": "د کورنۍ غړی",
@@ -118,6 +122,7 @@
       "agePlaceholder": "عمر ولیکئ",
       "toasts": {
         "residentUpdated": "استوګن په بریالیتوب سره تازه شو",
+        "residentStatus": "د استوګن حالت په بریالیتوب سره تازه شو",
         "residentAdded": "استوګن په بریالیتوب سره اضافه شو",
         "translationSuccessMessage": "په بریالیتوب سره ژباړل شو"
       },
