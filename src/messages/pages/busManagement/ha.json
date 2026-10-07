@@ -100,6 +100,7 @@
         "availableDates": "Kwanakin da ake samu suna buƙata",
         "startTime": "Lokacin fara yana buƙata",
         "endTime": "Lokacin ƙarshe yana buƙata",
+        "endTimeAfterStart": "Lokacin ƙarshe dole ya kasance bayan lokacin fara",
         "shift": "Juyi yana buƙata",
         "mediaError": "Loda Kafofin Watsa Labarai"
       }

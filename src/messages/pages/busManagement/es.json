@@ -100,6 +100,7 @@
         "availableDates": "Las fechas disponibles son requeridas",
         "startTime": "La hora de salida es requerida",
         "endTime": "La hora de llegada es requerida",
+        "endTimeAfterStart": "La hora de llegada debe ser posterior a la hora de salida",
         "shift": "El turno es requerido",
         "mediaError": "Subir Medios"
       }

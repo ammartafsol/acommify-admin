@@ -16,7 +16,14 @@ const addEditBusSchema = (t) =>
       .min(1, t("modal.validation.availableDates"))
       .required(t("modal.validation.availableDates")),
     startTime: yup.string().required(t("modal.validation.startTime")),
-    endTime: yup.string().notRequired(),
+    endTime: yup
+      .string()
+      .required(t("modal.validation.endTime"))
+      .test("after-start", t("modal.validation.endTimeAfterStart"), function (value) {
+        const { startTime } = this.parent;
+        if (!value || !startTime) return true;
+        return value > startTime;
+      }),
     document: yup.mixed().required(t("modal.validation.mediaError")),
   });
 

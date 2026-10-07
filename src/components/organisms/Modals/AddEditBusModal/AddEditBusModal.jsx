@@ -236,26 +236,35 @@ export default function AddEditBusModal({
     setLoading("");
   };
 
+  function shiftFromTime(time) {
+    if (!time) return null;
+    const hour = parseInt(time.split(":")[0], 10);
+    if (hour >= 5 && hour < 12) {
+      return shiftOptions.find((s) => s.value === "morning");
+    }
+    if (hour >= 12 && hour < 17) {
+      return shiftOptions.find((s) => s.value === "afternoon");
+    }
+    if (hour >= 17 && hour < 21) {
+      return shiftOptions.find((s) => s.value === "evening");
+    }
+    return shiftOptions.find((s) => s.value === "night");
+  }
+
   function handleStartTimeChange(value) {
     formik.setFieldValue("startTime", value);
-    const [hours, minutes] = value.split(":");
-    const endTime = new Date();
-    endTime.setHours(parseInt(hours) + 1, parseInt(minutes));
-    formik.setFieldValue("endTime", endTime.toTimeString().slice(0, 5));
-
-    // Set shift based on end time
-    let shiftValue = null;
-    const hour = parseInt(hours) + 1;
-    if (hour >= 5 && hour < 12) {
-      shiftValue = shiftOptions.find((s) => s.value === "morning");
-    } else if (hour >= 12 && hour < 17) {
-      shiftValue = shiftOptions.find((s) => s.value === "afternoon");
-    } else if (hour >= 17 && hour < 21) {
-      shiftValue = shiftOptions.find((s) => s.value === "evening");
-    } else {
-      shiftValue = shiftOptions.find((s) => s.value === "night");
+    const endTime = formik.values.endTime;
+    if (endTime && endTime <= value) {
+      formik.setFieldValue("endTime", "");
+      formik.setFieldValue("shift", null);
+      return;
     }
-    formik.setFieldValue("shift", shiftValue);
+    if (endTime) formik.setFieldValue("shift", shiftFromTime(endTime));
+  }
+
+  function handleEndTimeChange(value) {
+    formik.setFieldValue("endTime", value);
+    formik.setFieldValue("shift", shiftFromTime(value));
   }
 
   async function translateMessages() {
@@ -437,10 +446,11 @@ export default function AddEditBusModal({
             placeholder={t("modal.inputPlaceholders.endTime")}
             value={formik.values.endTime}
             type="time"
-            setValue={(value) => formik.setFieldValue("endTime", value)}
+            min={formik.values.startTime || undefined}
+            setValue={handleEndTimeChange}
             errorText={formik.touched.endTime && formik.errors.endTime}
             inputContainerClass={classes.inputDateContainer}
-            disabled={true}
+            disabled={isEdit || !formik.values.startTime}
           />
 
           <DropDown

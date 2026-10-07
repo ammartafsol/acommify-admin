@@ -100,6 +100,7 @@
         "availableDates": "Datas disponíveis são obrigatórias",
         "startTime": "Hora de partida é obrigatória",
         "endTime": "Hora de chegada é obrigatória",
+        "endTimeAfterStart": "A hora de chegada deve ser posterior à hora de partida",
         "shift": "Turno é obrigatório",
         "mediaError": "Carregar Mídia"
       }
