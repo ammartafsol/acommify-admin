@@ -8,6 +8,7 @@ import AreYouSureModal from "@/components/organisms/Modals/AreYouSureModal/AreYo
 import DetailModal from "@/components/organisms/Modals/DetailModal/DetailModal";
 import EditMaintenanceRequests from "@/components/organisms/Modals/EditMaintenanceRequests/EditMaintenanceRequests";
 import useAxios from "@/interceptor/axios-functions";
+import { useRouter } from "@/i18n/navigation";
 import useDebounce from "@/resources/hooks/useDebounce";
 import { useTranslations } from "@/resources/hooks/useTranslations";
 import {
@@ -23,15 +24,17 @@ import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { TbDotsVertical } from "react-icons/tb";
 import { useSelector } from "react-redux";
+import { formatMaintenanceRequest } from "./formatMaintenanceRequest";
+import MaintenanceRequestsMobile from "./MaintenanceRequestsMobile";
 import styles from "./styles.module.css";
 
 export default function MaintenanceRequests() {
   const { user } = useSelector((state) => state.authReducer);
   const { permissions } = useSelector((state) => state.authReducer);
   const t = useTranslations("maintenanceRequestsPage");
+  const router = useRouter();
   const { Get, Patch } = useAxios();
   const locale = useLocale();
-  const [viewDetailModal, setViewDetailModal] = useState(false);
   const [selectedRowData, setSelectedRowData] = useState(null);
   const [editModal, setEditModal] = useState(false);
   const [tableData, setTableData] = useState(null);
@@ -39,6 +42,7 @@ export default function MaintenanceRequests() {
   const [totalRecords, setTotalRecords] = useState(0);
   const [loading, setLoading] = useState("");
   const [search, setSearch] = useState("");
+  const [priority, setPriority] = useState("all");
   const [showAreYouSureModal, setShowAreYouSureModal] = useState(false);
   const [modalActionType, setModalActionType] = useState(null); // "accept" or "reject"
 
@@ -56,8 +60,8 @@ export default function MaintenanceRequests() {
       {
         title: t("actions.view"),
         onClick: (data) => {
-          setSelectedRowData(data);
-          setViewDetailModal(true);
+          if (!data?.slug) return;
+          router.push(`/maintenance-requests/${data.slug}`);
         },
         style: { color: "var(--Black)", fontWeight: 500 },
       },
@@ -140,12 +144,18 @@ export default function MaintenanceRequests() {
       ]
     : [];
 
-  const fetchData = async ({ status, searchDebounce, currentPage }) => {
+  const fetchData = async ({
+    status,
+    searchDebounce,
+    currentPage,
+    severity,
+  }) => {
     const query = {
       status,
       search: searchDebounce,
       page: currentPage,
       limit: 10,
+      ...(severity && severity !== "all" ? { severity } : {}),
     };
 
     const queryString = new URLSearchParams(query).toString();
@@ -154,15 +164,9 @@ export default function MaintenanceRequests() {
       route: `admin/maintenance-request/all?${queryString}`,
     });
     if (response) {
-      const formattedData = response.data.map((item) => ({
-        ...item,
-        residentName: item?.user?.fullName[locale] || "N/A",
-        roomNumber: item?.accommodation?.accommodationNumber || "N/A",
-        requestDateTime: moment(item?.createdAt).format("YYYY-MM-DD • h:mmA"),
-        issueCategory: item?.category?.name[locale] || "N/A",
-        shortDescription: item?.description || "N/A",
-        status: item?.status || "N/A",
-      }));
+      const formattedData = response.data.map((item) =>
+        formatMaintenanceRequest(item, locale),
+      );
       setTableData(formattedData);
       setTotalRecords(response?.totalRecords || 0);
     }
@@ -188,7 +192,12 @@ export default function MaintenanceRequests() {
         type: "success",
         message: t("requestRejectedSuccessfully"),
       });
-      await fetchData({ status: activeTab.value, searchDebounce, currentPage });
+      await fetchData({
+        status: activeTab.value,
+        searchDebounce,
+        currentPage,
+        severity: priority,
+      });
     }
     setLoading("");
   };
@@ -208,7 +217,12 @@ export default function MaintenanceRequests() {
     if (response) {
       setShowAreYouSureModal(false);
       setModalActionType(null);
-      await fetchData({ status: activeTab.value, searchDebounce, currentPage });
+      await fetchData({
+        status: activeTab.value,
+        searchDebounce,
+        currentPage,
+        severity: priority,
+      });
       RenderToast({
         type: "success",
         message: t("requestAcceptedSuccessfully"),
@@ -218,56 +232,88 @@ export default function MaintenanceRequests() {
   };
 
   useEffect(() => {
-    fetchData({ status: activeTab.value, searchDebounce, currentPage });
-  }, [activeTab, searchDebounce, currentPage]);
+    fetchData({
+      status: activeTab.value,
+      searchDebounce,
+      currentPage,
+      severity: priority,
+    });
+  }, [activeTab, searchDebounce, currentPage, priority]);
 
   return (
     <>
       <Container className={mergeClass("containerFluid", styles.main)}>
-        <SubHeader
-          title={t("title")}
-          showSearchAndFilter
-          showBackBtn
-          tabsProps={{
-            selected: activeTab,
-            setSelected: setActiveTab,
-            tabsData,
-            disabled: loading === "loading",
-          }}
-          searchProps={{
-            search: search,
-            setSearch: (value) => {
+        <div className={styles.desktopView}>
+          <SubHeader
+            title={t("title")}
+            showSearchAndFilter
+            showBackBtn
+            tabsProps={{
+              selected: activeTab,
+              setSelected: (tab) => {
+                setActiveTab(tab);
+                setCurrentPage(1);
+              },
+              tabsData,
+              disabled: loading === "loading",
+            }}
+            searchProps={{
+              search: search,
+              setSearch: (value) => {
+                setSearch(value);
+                setCurrentPage(1);
+              },
+            }}
+          ></SubHeader>
+
+          <AppTable
+            tableHeader={MaintenanceRequestsTableHeader(t)}
+            data={tableData}
+            actions={tableActions}
+            actionStyles={{
+              width: "10%",
+            }}
+            loading={loading === "loading"}
+            totalRecords={totalRecords}
+            onPageChange={setCurrentPage}
+            page={currentPage}
+            pagination
+            onRowClick={(data) => {
+              if (!data?.slug) return;
+              router.push(`/maintenance-requests/${data.slug}`);
+            }}
+          />
+        </div>
+
+        <div className={styles.mobileView}>
+          <MaintenanceRequestsMobile
+            data={tableData}
+            loading={loading === "loading"}
+            search={search}
+            setSearch={(value) => {
               setSearch(value);
               setCurrentPage(1);
-            },
-          }}
-        ></SubHeader>
-
-        <AppTable
-          tableHeader={MaintenanceRequestsTableHeader(t)}
-          data={tableData}
-          actions={tableActions}
-          actionStyles={{
-            width: "10%",
-          }}
-          loading={loading === "loading"}
-          totalRecords={totalRecords}
-          onPageChange={setCurrentPage}
-          page={currentPage}
-          pagination
-          onRowClick={(data) => {
-            setSelectedRowData(data);
-            setViewDetailModal(true);
-          }}
-        />
+            }}
+            activeTab={activeTab}
+            setActiveTab={(tab) => {
+              setActiveTab(tab);
+              setCurrentPage(1);
+            }}
+            priority={priority}
+            setPriority={(value) => {
+              setPriority(value);
+              setCurrentPage(1);
+            }}
+            onOpen={(data) => {
+              if (!data?.slug) return;
+              router.push(`/maintenance-requests/${data.slug}`);
+            }}
+            totalRecords={totalRecords}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
+        </div>
       </Container>
-      {viewDetailModal && (
-        <MaintenanceRequestDetailModal
-          show={viewDetailModal}
-          setShow={setViewDetailModal}
-          data={selectedRowData}
-        />
-      )}
       {editModal &&
         permissions.includes("approve-reject-maintenance-request") && (
           <EditMaintenanceRequests
@@ -280,6 +326,7 @@ export default function MaintenanceRequests() {
                 status: activeTab.value,
                 searchDebounce,
                 currentPage,
+                severity: priority,
               })
             }
           />

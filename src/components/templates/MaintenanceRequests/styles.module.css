@@ -4,6 +4,30 @@
   flex-direction: column;
   gap: 24px;
 }
+
+.desktopView {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mobileView {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .main {
+    margin-block: 20px 32px;
+  }
+
+  .desktopView {
+    display: none;
+  }
+
+  .mobileView {
+    display: block;
+  }
+}
 .actionButtons {
   display: flex;
   align-items: center;
