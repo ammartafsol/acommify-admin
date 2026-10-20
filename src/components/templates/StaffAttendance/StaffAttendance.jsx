@@ -23,6 +23,7 @@ import {
   formatTime,
   formatWeekLabel,
   getInitials,
+  getSessionBar,
   getWeekDays,
   getWeekRangeParams,
   getWeekStart,
@@ -438,30 +439,6 @@ function DayCell({ day, date, locale, t }) {
 const POPOVER_WIDTH = 320;
 const POPOVER_GAP = 8;
 
-/** Hour range of the small day bar, padded around the sessions (min. 4h). */
-function getTimelineWindow(sessions, now) {
-  const starts = sessions.map((s) => new Date(s.checkIn));
-  const ends = sessions.map((s) =>
-    s.checkOut ? new Date(s.checkOut) : s.missedCheckOut ? new Date(s.checkIn) : now,
-  );
-  const dayStart = new Date(starts[0]);
-  dayStart.setHours(0, 0, 0, 0);
-  const toHours = (d) => (d - dayStart) / 3600000;
-  let from = Math.floor(Math.min(...starts.map(toHours)));
-  let to = Math.min(24, Math.ceil(Math.max(...ends.map(toHours))));
-  if (to - from < 4) {
-    from = Math.max(0, Math.min(from, to - 4));
-    to = Math.min(24, Math.max(to, from + 4));
-  }
-  return { dayStart, from, to };
-}
-
-function hourLabel(dayStart, hour, locale) {
-  const d = new Date(dayStart);
-  d.setHours(hour, 0, 0, 0);
-  return d.toLocaleTimeString(locale, { hour: "numeric" });
-}
-
 /** Check-in / check-out history for one staff member on one day. */
 function SessionPopover({ anchor, day, date, locale, t }) {
   const popRef = useRef(null);
@@ -485,9 +462,7 @@ function SessionPopover({ anchor, day, date, locale, t }) {
   }, [anchor]);
 
   const now = new Date();
-  const { dayStart, from, to } = getTimelineWindow(day.sessions, now);
-  const pct = (d) =>
-    Math.min(100, Math.max(0, (((d - dayStart) / 3600000 - from) / (to - from || 1)) * 100));
+  const bar = getSessionBar(day.sessions, now);
 
   return createPortal(
     <div
@@ -517,30 +492,21 @@ function SessionPopover({ anchor, day, date, locale, t }) {
       {/* Where in the day each session falls */}
       <div className={styles.dayBar}>
         <div className={styles.dayTrack}>
-          {day.sessions.map((s) => {
-            const isMissed = !s.checkOut && s.missedCheckOut;
-            const start = new Date(s.checkIn);
-            const end = s.checkOut ? new Date(s.checkOut) : isMissed ? start : now;
-            const left = pct(start);
-            return (
-              <span
-                key={`bar-${s._id || s.checkIn}`}
-                className={mergeClass(
-                  styles.daySegment,
-                  !s.checkOut && !isMissed ? styles.segLive : "",
-                  isMissed ? styles.segMissed : "",
-                )}
-                style={{
-                  insetInlineStart: `${left}%`,
-                  width: `${Math.max(1.5, pct(end) - left)}%`,
-                }}
-              />
-            );
-          })}
+          {bar.segments.map((seg) => (
+            <span
+              key={`bar-${seg.key}`}
+              className={mergeClass(
+                styles.daySegment,
+                seg.kind === "live" ? styles.segLive : "",
+                seg.kind === "missed" ? styles.segMissed : "",
+              )}
+              style={{ insetInlineStart: `${seg.left}%`, width: `${seg.width}%` }}
+            />
+          ))}
         </div>
         <div className={styles.dayScale}>
-          <span>{hourLabel(dayStart, from, locale)}</span>
-          <span>{hourLabel(dayStart, to % 24, locale)}</span>
+          <span>{formatTime(bar.from, locale)}</span>
+          <span>{formatTime(bar.to, locale)}</span>
         </div>
       </div>
 

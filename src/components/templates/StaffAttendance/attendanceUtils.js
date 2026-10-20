@@ -77,6 +77,38 @@ export function summarizeDay(records = [], day, now = new Date()) {
   };
 }
 
+// Smallest visible width (in %) for very short sessions on the bar
+const MIN_SEGMENT_PCT = 1.2;
+
+/**
+ * Segments for a day's session bar. The bar starts at the first check-in and
+ * ends at the last check-out (or now while still checked in), so worked time
+ * fills it and breaks between sessions stay empty.
+ * kind: "done" (checked out) | "live" (still checked in) | "missed" (no check-out)
+ */
+export function getSessionBar(sessions = [], now = new Date()) {
+  const items = sessions.map((s) => {
+    const start = new Date(s.checkIn);
+    const missed = !s.checkOut && Boolean(s.missedCheckOut);
+    const live = !s.checkOut && !missed;
+    const end = s.checkOut ? new Date(s.checkOut) : live ? now : start;
+    return { key: s._id || s.checkIn, start, end, kind: live ? "live" : missed ? "missed" : "done" };
+  });
+  if (!items.length) return { from: null, to: null, segments: [] };
+
+  const from = new Date(Math.min(...items.map((i) => i.start)));
+  const to = new Date(Math.max(...items.map((i) => i.end)));
+  const span = to - from || 1;
+
+  const segments = items.map((i) => {
+    const width = Math.max(MIN_SEGMENT_PCT, ((i.end - i.start) / span) * 100);
+    const left = Math.min(((i.start - from) / span) * 100, 100 - width);
+    return { key: i.key, kind: i.kind, left: Math.max(0, left), width };
+  });
+
+  return { from, to, segments };
+}
+
 export function sumMinutes(records = [], now = new Date()) {
   return records.reduce((sum, r) => sum + sessionMinutes(r, now), 0);
 }

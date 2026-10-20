@@ -7,6 +7,7 @@ import {
   formatWeekLabel,
   getWeekDays,
   getWeekRangeParams,
+  getSessionBar,
   getWeekStart,
   isCurrentOrFutureWeek,
   isSameDay,
@@ -24,10 +25,6 @@ import { Container } from "react-bootstrap";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import { LuCalendarCheck, LuCalendarDays, LuClock, LuTimer, LuUserCheck } from "react-icons/lu";
 import styles from "./styles.module.css";
-
-// Day bar covers 6 AM – midnight, widened if a session falls outside it
-const BAR_FROM = 6;
-const BAR_TO = 24;
 
 export default function MyAttendance() {
   const t = useTranslations("myAttendancePage");
@@ -160,12 +157,7 @@ function DayRow({ day, now, loading, locale, t }) {
   const isToday = isSameDay(day.date, now);
   const isFuture = day.date > now && !isToday;
 
-  // Widen the bar if a session falls outside 6 AM – midnight
-  const dayStart = new Date(day.date);
-  const hourOf = (d) => (new Date(d) - dayStart) / 3600000;
-  const from = Math.min(BAR_FROM, ...day.sessions.map((s) => Math.floor(hourOf(s.checkIn))));
-  const span = BAR_TO - from;
-  const pct = (d) => Math.min(100, Math.max(0, ((hourOf(d) - from) / span) * 100));
+  const bar = getSessionBar(day.sessions, now);
 
   return (
     <div className={mergeClass(styles.dayRow, isToday ? styles.todayRow : "")}>
@@ -183,25 +175,17 @@ function DayRow({ day, now, loading, locale, t }) {
         ) : (
           <>
             <div className={styles.track}>
-              {day.sessions.map((s) => {
-                const isMissed = !s.checkOut && s.missedCheckOut;
-                const end = s.checkOut || (isMissed ? s.checkIn : now);
-                const left = pct(s.checkIn);
-                return (
-                  <span
-                    key={`bar-${s._id || s.checkIn}`}
-                    className={mergeClass(
-                      styles.segment,
-                      !s.checkOut && !isMissed ? styles.segLive : "",
-                      isMissed ? styles.segMissed : "",
-                    )}
-                    style={{
-                      insetInlineStart: `${left}%`,
-                      width: `${Math.max(1, pct(end) - left)}%`,
-                    }}
-                  />
-                );
-              })}
+              {bar.segments.map((seg) => (
+                <span
+                  key={`bar-${seg.key}`}
+                  className={mergeClass(
+                    styles.segment,
+                    seg.kind === "live" ? styles.segLive : "",
+                    seg.kind === "missed" ? styles.segMissed : "",
+                  )}
+                  style={{ insetInlineStart: `${seg.left}%`, width: `${seg.width}%` }}
+                />
+              ))}
             </div>
             <div className={styles.sessions}>
               {day.sessions.map((s) => {

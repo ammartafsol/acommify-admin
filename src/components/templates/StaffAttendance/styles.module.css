@@ -513,11 +513,10 @@
 }
 
 .segLive {
-  background: linear-gradient(90deg, #33b5f6, #12b76a);
+  background: #12b76a;
 }
 
 .segMissed {
-  width: 8px !important;
   background: #f79009;
 }
 
