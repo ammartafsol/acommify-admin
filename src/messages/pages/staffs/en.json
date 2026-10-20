@@ -74,5 +74,95 @@
       "shiftEndRequired": "Shift end time is required",
       "positionRequired": "Position is required"
     }
+  },
+  "staffNav": {
+    "label": "Staff sections",
+    "management": "Staff Management",
+    "attendance": "Staff Attendance",
+    "documents": "Staff Documents"
+  },
+  "staffAttendancePage": {
+    "title": "Staff Attendance",
+    "subtitle": "View and download staff attendance records.",
+    "previousWeek": "Previous week",
+    "nextWeek": "Next week",
+    "goToCurrentWeek": "Go to current week",
+    "downloadPdf": "Download PDF",
+    "downloading": "Preparing PDF...",
+    "pdfError": "Could not create the PDF. Please try again.",
+    "searchPlaceholder": "Search staff...",
+    "empty": "No staff attendance found for this week.",
+    "filters": {
+      "all": "All Staff",
+      "checkedIn": "Checked in now",
+      "absent": "No attendance this week"
+    },
+    "table": {
+      "name": "Name",
+      "total": "Total"
+    },
+    "status": {
+      "checkedIn": "Checked in",
+      "checkedOut": "Checked out",
+      "missedCheckOut": "Missing check-out",
+      "onShiftSince": "On shift since {time}",
+      "inSince": "In since {time}",
+      "noCheckOut": "No check-out",
+      "now": "now",
+      "sessions": "{count} sessions"
+    },
+    "history": {
+      "title": "{count, plural, one {# session} other {# sessions}}",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "inProgress": "In progress",
+      "total": "Total for the day"
+    }
+  },
+  "staffDocumentsPage": {
+    "title": "Staff Documents",
+    "subtitle": "Store and manage documents for your staff.",
+    "comingSoonTitle": "Coming soon",
+    "comingSoonText": "Staff documents will be available here soon."
+  },
+  "staffCheckIn": {
+    "open": "Open staff check-in",
+    "title": "Staff Check-In",
+    "close": "Close",
+    "notCheckedIn": "Not checked in",
+    "readyToStart": "Ready to start your shift?",
+    "checkedInSince": "Checked in since {time}",
+    "checkedOutAt": "Checked out at {time}",
+    "workedToday": "Worked today: {hours}",
+    "checkIn": "Check In",
+    "checkOut": "Check Out",
+    "checkedInToast": "You are checked in.",
+    "checkedOutToast": "You are checked out.",
+    "recentActivity": "or view your recent activity",
+    "viewMyAttendance": "View My Attendance",
+    "thisWeek": "This Week",
+    "inSince": "In since {time}",
+    "noCheckOut": "No check-out"
+  },
+  "myAttendancePage": {
+    "title": "My Attendance",
+    "subtitle": "Your check-in and check-out history.",
+    "previousWeek": "Previous week",
+    "nextWeek": "Next week",
+    "goToCurrentWeek": "Go to current week",
+    "cards": {
+      "thisWeek": "This week",
+      "daysWorked": "Days worked",
+      "avgPerDay": "Average per day",
+      "status": "Status now"
+    },
+    "statusIn": "Checked in since {time}",
+    "statusOut": "Not checked in",
+    "today": "Today",
+    "upcoming": "Upcoming",
+    "noAttendance": "No attendance",
+    "inProgress": "In progress",
+    "noCheckOut": "No check-out",
+    "sessions": "{count, plural, one {# session} other {# sessions}}"
   }
 }

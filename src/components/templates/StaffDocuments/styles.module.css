@@ -1,0 +1,68 @@
+.main {
+  margin-block: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.titleBlock h1 {
+  margin: 0;
+  color: var(--Black, #172a33);
+  font-family: var(--font-lato);
+  font-size: var(--fs40, 36px);
+  font-weight: 700;
+}
+
+.titleBlock p {
+  margin: 0;
+  color: var(--Dark-gray, #8c939b);
+  font-size: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 64px 24px;
+  border-radius: 10px;
+  background: var(--Poor-white, #fff);
+  text-align: center;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(51, 181, 246, 0.1);
+  color: var(--Blue, #33b5f6);
+}
+
+.card h2 {
+  margin: 6px 0 0;
+  color: var(--Black, #172a33);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card p {
+  margin: 0;
+  max-width: 420px;
+  color: var(--Dark-gray, #8c939b);
+  font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+  .titleBlock h1 {
+    font-size: 28px;
+  }
+}

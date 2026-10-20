@@ -1,0 +1,658 @@
+.main {
+  margin-block: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ---------- Header ---------- */
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.titleBlock h1 {
+  margin: 0;
+  color: var(--Black, #172a33);
+  font-family: var(--font-lato);
+  font-size: var(--fs40, 36px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.titleBlock p {
+  margin: 0;
+  color: var(--Dark-gray, #8c939b);
+  font-size: 15px;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.weekSelector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.weekBtn,
+.weekLabel {
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  background: var(--Poor-white, #fff);
+  color: var(--Black, #172a33);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(74, 85, 104, 0.04);
+  transition: background 0.2s ease;
+}
+
+.weekBtn {
+  width: 42px;
+}
+
+.weekBtn:hover:not(:disabled),
+.weekLabel:hover {
+  background: #eef6fd;
+}
+
+.weekBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.weekLabel {
+  gap: 8px;
+  padding-inline: 14px;
+  font-family: var(--font-lato);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.weekLabel svg {
+  color: var(--Blue, #33b5f6);
+}
+
+.downloadBtn {
+  height: 42px;
+}
+
+:global([dir="rtl"]) .flipRtl {
+  transform: rotate(180deg);
+}
+
+/* ---------- Toolbar ---------- */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  color: var(--Dark-gray, #8c939b);
+  font-size: 13px;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dotIn,
+.dotOut,
+.dotMissed {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dotIn {
+  background: #12b76a;
+  box-shadow: 0 0 0 3px rgba(18, 183, 106, 0.15);
+}
+
+.dotOut {
+  background: var(--Blue, #33b5f6);
+}
+
+.dotMissed {
+  background: #f79009;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search {
+  width: 280px;
+}
+
+.filterDropdown {
+  width: 210px;
+}
+
+/* ---------- Table ---------- */
+.tableCard {
+  border-radius: 10px;
+  background: var(--Poor-white, #fff);
+  padding: 8px 20px 12px;
+}
+
+.tableScroll {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table th {
+  height: 56px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border-color, #e6eaf0);
+  color: var(--Dark-gray, #8c939b);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: start;
+  vertical-align: middle;
+}
+
+.table td {
+  padding: 14px 10px;
+  color: var(--Black, #172a33);
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.table tbody tr:nth-child(even) td {
+  background: #f4f7fd;
+}
+
+.table tbody tr td:first-child {
+  border-start-start-radius: 8px;
+  border-end-start-radius: 8px;
+}
+
+.table tbody tr td:last-child {
+  border-start-end-radius: 8px;
+  border-end-end-radius: 8px;
+}
+
+.nameCol {
+  width: 22%;
+  min-width: 220px;
+}
+
+.dayCol {
+  width: 9%;
+  min-width: 96px;
+}
+
+.totalCol {
+  width: 10%;
+  min-width: 90px;
+}
+
+.dayName,
+.dayDate {
+  display: block;
+}
+
+.dayName {
+  color: var(--Black, #172a33);
+  font-weight: 600;
+}
+
+.dayDate {
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.today .dayName,
+.today .dayDate {
+  color: var(--Blue, #33b5f6);
+}
+
+.staffCell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.staffInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.staffInfo p {
+  margin: 0;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.staffInfo > span {
+  color: var(--Dark-gray, #8c939b);
+  font-size: 12px;
+}
+
+.livePill {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  width: max-content;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #ecfdf3;
+  color: #027a48 !important;
+  font-weight: 600;
+}
+
+.dayCell {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  cursor: default;
+}
+
+.dayCell strong {
+  font-weight: 600;
+}
+
+.cellTimes,
+.cellStatus,
+.sessions {
+  font-size: 11.5px;
+  color: var(--Dark-gray, #8c939b);
+  white-space: nowrap;
+}
+
+.cellStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.checked-in .cellStatus {
+  color: #027a48;
+  font-weight: 600;
+}
+
+.missed-checkout .cellStatus {
+  color: #b54708;
+  font-weight: 600;
+}
+
+.absent {
+  color: #b2b5ba;
+}
+
+.totalCol strong {
+  font-weight: 700;
+}
+
+.empty {
+  padding: 60px 10px !important;
+  text-align: center !important;
+  color: var(--Dark-gray, #8c939b) !important;
+  background: transparent !important;
+}
+
+.skeleton {
+  display: block;
+  height: 14px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #eef1f5 25%, #f7f9fb 50%, #eef1f5 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton {
+    animation: none;
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .titleBlock h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header,
+  .headerActions,
+  .toolbar,
+  .filters {
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .weekSelector {
+    width: 100%;
+  }
+
+  .weekLabel {
+    flex: 1;
+  }
+
+  .downloadBtn {
+    width: 100%;
+  }
+
+  .search,
+  .filterDropdown {
+    width: 100%;
+  }
+
+  .tableCard {
+    padding: 4px 12px 8px;
+  }
+}
+
+/* ---------- Session history popover ---------- */
+.hasPopover {
+  width: max-content;
+  padding: 4px 6px;
+  margin: -4px -6px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.15s ease;
+}
+
+.hasPopover:hover,
+.hasPopover:focus-visible {
+  background: rgba(51, 181, 246, 0.1);
+}
+
+.popover {
+  position: fixed;
+  z-index: 2000;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--Poor-white, #fff);
+  box-shadow:
+    0 16px 40px rgba(23, 42, 51, 0.18),
+    0 0 0 1px rgba(23, 42, 51, 0.06);
+  font-family: var(--font-lato);
+  color: var(--Black, #172a33);
+  pointer-events: none;
+  animation: popoverIn 0.14s ease-out;
+}
+
+@keyframes popoverIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Blue header: date on the left, day total on the right */
+.popoverHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px 12px;
+  background: linear-gradient(135deg, #33b5f6 0%, #1c96d8 100%);
+  color: #fff;
+}
+
+.popoverDate,
+.popoverTotal {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.popoverTotal {
+  align-items: flex-end;
+  text-align: end;
+}
+
+.popoverDate span,
+.popoverTotal span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.popoverDate strong,
+.popoverTotal strong {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+/* Small bar showing where in the day each session falls */
+.dayBar {
+  padding: 14px 16px 2px;
+}
+
+.dayTrack {
+  position: relative;
+  height: 8px;
+  border-radius: 999px;
+  background: #eef1f5;
+}
+
+.daySegment {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-width: 5px;
+  border-radius: 999px;
+  background: var(--Blue, #33b5f6);
+}
+
+.segLive {
+  background: linear-gradient(90deg, #33b5f6, #12b76a);
+}
+
+.segMissed {
+  width: 8px !important;
+  background: #f79009;
+}
+
+.dayScale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  color: var(--Dark-gray, #8c939b);
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+/* Session rows joined by a thin timeline */
+.sessionList {
+  list-style: none;
+  margin: 0;
+  padding: 4px 16px 12px;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.sessionList li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 12px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.sessionList li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: 5px;
+  top: calc(50% + 9px);
+  height: calc(100% - 18px);
+  width: 2px;
+  border-radius: 2px;
+  background: #e4e9f0;
+}
+
+.sessionDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--Blue, #33b5f6);
+}
+
+.sessionOpen .sessionDot {
+  border-color: #12b76a;
+  box-shadow: 0 0 0 4px rgba(18, 183, 106, 0.15);
+}
+
+.sessionMissedRow .sessionDot {
+  border-color: #f79009;
+}
+
+.sessionRange {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.arrow {
+  color: #b2b5ba;
+  font-weight: 400;
+}
+
+.liveBadge,
+.missedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.liveBadge {
+  background: #ecfdf3;
+  color: #027a48;
+}
+
+.liveBadge i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #12b76a;
+  animation: livePulse 1.6s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.missedBadge {
+  background: #fffaeb;
+  color: #b54708;
+}
+
+.sessionDuration {
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #f4f7fd;
+  color: var(--Black, #172a33);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .popover,
+  .liveBadge i {
+    animation: none;
+  }
+}
+
+/* Beat global span/p font sizes inside the popover */
+.popover .dayScale span {
+  font-size: 11px;
+}
+
+.popover .sessionRange > span {
+  font-size: 14px;
+}
+
+.popover .sessionRange .liveBadge,
+.popover .sessionRange .missedBadge {
+  font-size: 11.5px;
+}

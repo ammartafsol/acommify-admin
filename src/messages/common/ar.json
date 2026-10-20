@@ -19,7 +19,8 @@
     "notification": "الإشعارات",
     "timeslots": "الفتحات الزمنية",
     "settings": "الإعدادات",
-    "centersWeeklyReports": "التقارير الأسبوعية للمراكز"
+    "centersWeeklyReports": "التقارير الأسبوعية للمراكز",
+    "myAttendance": "حضوري"
   },
   "uploadMedia": {
     "title": "العقد",

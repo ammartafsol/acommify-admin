@@ -303,6 +303,8 @@ export const ROUTE_PERMISSIONS = {
   "/settings": [],
 
   "/staffs": [...PERMISSION_GROUPS.STAFF],
+  "/staffs/attendance": [...PERMISSION_GROUPS.STAFF],
+  "/staffs/documents": [...PERMISSION_GROUPS.STAFF],
 
   "/time-slots": [...PERMISSION_GROUPS.TIME_SLOTS],
   "/time-slots/appointment-slots": [

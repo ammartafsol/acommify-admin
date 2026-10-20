@@ -74,5 +74,95 @@
       "shiftEndRequired": "Час закінчення зміни є обов'язковим",
       "positionRequired": "Посада є обов'язковою"
     }
+  },
+  "staffNav": {
+    "label": "Розділи персоналу",
+    "management": "Керування персоналом",
+    "attendance": "Відвідуваність персоналу",
+    "documents": "Документи персоналу"
+  },
+  "staffAttendancePage": {
+    "title": "Відвідуваність персоналу",
+    "subtitle": "Переглядайте та завантажуйте записи відвідуваності персоналу.",
+    "previousWeek": "Попередній тиждень",
+    "nextWeek": "Наступний тиждень",
+    "goToCurrentWeek": "Перейти до поточного тижня",
+    "downloadPdf": "Завантажити PDF",
+    "downloading": "Готуємо PDF...",
+    "pdfError": "Не вдалося створити PDF. Спробуйте ще раз.",
+    "searchPlaceholder": "Пошук працівника...",
+    "empty": "Немає записів відвідуваності за цей тиждень.",
+    "filters": {
+      "all": "Увесь персонал",
+      "checkedIn": "Зараз на зміні",
+      "absent": "Без відвідувань цього тижня"
+    },
+    "table": {
+      "name": "Ім'я",
+      "total": "Разом"
+    },
+    "status": {
+      "checkedIn": "Прихід відмічено",
+      "checkedOut": "Вихід відмічено",
+      "missedCheckOut": "Вихід не відмічено",
+      "onShiftSince": "На зміні з {time}",
+      "inSince": "Прийшов о {time}",
+      "noCheckOut": "Без виходу",
+      "now": "зараз",
+      "sessions": "Сеансів: {count}"
+    },
+    "history": {
+      "title": "{count, plural, one {# сеанс} few {# сеанси} many {# сеансів} other {# сеансу}}",
+      "checkIn": "Прихід",
+      "checkOut": "Вихід",
+      "inProgress": "Триває",
+      "total": "Разом за день"
+    }
+  },
+  "staffDocumentsPage": {
+    "title": "Документи персоналу",
+    "subtitle": "Зберігайте та керуйте документами персоналу.",
+    "comingSoonTitle": "Незабаром",
+    "comingSoonText": "Документи персоналу незабаром з'являться тут."
+  },
+  "staffCheckIn": {
+    "open": "Відкрити відмітку присутності",
+    "title": "Відмітка присутності",
+    "close": "Закрити",
+    "notCheckedIn": "Прихід не відмічено",
+    "readyToStart": "Готові почати зміну?",
+    "checkedInSince": "Прихід о {time}",
+    "checkedOutAt": "Вихід о {time}",
+    "workedToday": "Відпрацьовано сьогодні: {hours}",
+    "checkIn": "Відмітити прихід",
+    "checkOut": "Відмітити вихід",
+    "checkedInToast": "Прихід відмічено.",
+    "checkedOutToast": "Вихід відмічено.",
+    "recentActivity": "або перегляньте нещодавню активність",
+    "viewMyAttendance": "Моя відвідуваність",
+    "thisWeek": "Цей тиждень",
+    "inSince": "Прийшов о {time}",
+    "noCheckOut": "Без виходу"
+  },
+  "myAttendancePage": {
+    "title": "Моя відвідуваність",
+    "subtitle": "Історія ваших приходів і виходів.",
+    "previousWeek": "Попередній тиждень",
+    "nextWeek": "Наступний тиждень",
+    "goToCurrentWeek": "Перейти до поточного тижня",
+    "cards": {
+      "thisWeek": "Цей тиждень",
+      "daysWorked": "Відпрацьовані дні",
+      "avgPerDay": "У середньому за день",
+      "status": "Статус зараз"
+    },
+    "statusIn": "Прихід о {time}",
+    "statusOut": "Прихід не відмічено",
+    "today": "Сьогодні",
+    "upcoming": "Попереду",
+    "noAttendance": "Немає відвідувань",
+    "inProgress": "Триває",
+    "noCheckOut": "Без виходу",
+    "sessions": "{count, plural, one {# сеанс} few {# сеанси} many {# сеансів} other {# сеансу}}"
   }
 }

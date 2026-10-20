@@ -74,5 +74,95 @@
       "shiftEndRequired": "وقت نهاية الوردية مطلوب",
       "positionRequired": "المنصب مطلوب"
     }
+  },
+  "staffNav": {
+    "label": "أقسام الموظفين",
+    "management": "إدارة الموظفين",
+    "attendance": "حضور الموظفين",
+    "documents": "مستندات الموظفين"
+  },
+  "staffAttendancePage": {
+    "title": "حضور الموظفين",
+    "subtitle": "عرض وتنزيل سجلات حضور الموظفين.",
+    "previousWeek": "الأسبوع السابق",
+    "nextWeek": "الأسبوع التالي",
+    "goToCurrentWeek": "الانتقال إلى الأسبوع الحالي",
+    "downloadPdf": "تنزيل PDF",
+    "downloading": "جارٍ تجهيز PDF...",
+    "pdfError": "تعذر إنشاء ملف PDF. يرجى المحاولة مرة أخرى.",
+    "searchPlaceholder": "ابحث عن موظف...",
+    "empty": "لا توجد سجلات حضور لهذا الأسبوع.",
+    "filters": {
+      "all": "كل الموظفين",
+      "checkedIn": "مسجّل الدخول الآن",
+      "absent": "لا حضور هذا الأسبوع"
+    },
+    "table": {
+      "name": "الاسم",
+      "total": "المجموع"
+    },
+    "status": {
+      "checkedIn": "سجّل الدخول",
+      "checkedOut": "سجّل الخروج",
+      "missedCheckOut": "لم يسجّل الخروج",
+      "onShiftSince": "في المناوبة منذ {time}",
+      "inSince": "دخول منذ {time}",
+      "noCheckOut": "بدون تسجيل خروج",
+      "now": "الآن",
+      "sessions": "{count} جلسات"
+    },
+    "history": {
+      "title": "{count, plural, one {جلسة واحدة} two {جلستان} few {# جلسات} many {# جلسة} other {# جلسة}}",
+      "checkIn": "الدخول",
+      "checkOut": "الخروج",
+      "inProgress": "قيد العمل",
+      "total": "مجموع اليوم"
+    }
+  },
+  "staffDocumentsPage": {
+    "title": "مستندات الموظفين",
+    "subtitle": "تخزين وإدارة مستندات موظفيك.",
+    "comingSoonTitle": "قريبًا",
+    "comingSoonText": "ستتوفر مستندات الموظفين هنا قريبًا."
+  },
+  "staffCheckIn": {
+    "open": "فتح تسجيل حضور الموظف",
+    "title": "تسجيل حضور الموظف",
+    "close": "إغلاق",
+    "notCheckedIn": "لم يتم تسجيل الدخول",
+    "readyToStart": "هل أنت مستعد لبدء مناوبتك؟",
+    "checkedInSince": "مسجّل الدخول منذ {time}",
+    "checkedOutAt": "سجّل الخروج في {time}",
+    "workedToday": "ساعات العمل اليوم: {hours}",
+    "checkIn": "تسجيل الدخول",
+    "checkOut": "تسجيل الخروج",
+    "checkedInToast": "تم تسجيل دخولك.",
+    "checkedOutToast": "تم تسجيل خروجك.",
+    "recentActivity": "أو اعرض نشاطك الأخير",
+    "viewMyAttendance": "عرض حضوري",
+    "thisWeek": "هذا الأسبوع",
+    "inSince": "دخول منذ {time}",
+    "noCheckOut": "بدون تسجيل خروج"
+  },
+  "myAttendancePage": {
+    "title": "حضوري",
+    "subtitle": "سجل تسجيل الدخول والخروج الخاص بك.",
+    "previousWeek": "الأسبوع السابق",
+    "nextWeek": "الأسبوع التالي",
+    "goToCurrentWeek": "الانتقال إلى الأسبوع الحالي",
+    "cards": {
+      "thisWeek": "هذا الأسبوع",
+      "daysWorked": "أيام العمل",
+      "avgPerDay": "المتوسط اليومي",
+      "status": "الحالة الآن"
+    },
+    "statusIn": "مسجّل الدخول منذ {time}",
+    "statusOut": "لم يتم تسجيل الدخول",
+    "today": "اليوم",
+    "upcoming": "قادم",
+    "noAttendance": "لا حضور",
+    "inProgress": "قيد العمل",
+    "noCheckOut": "بدون تسجيل خروج",
+    "sessions": "{count, plural, one {جلسة واحدة} two {جلستان} few {# جلسات} many {# جلسة} other {# جلسة}}"
   }
 }

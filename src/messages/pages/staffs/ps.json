@@ -74,5 +74,95 @@
       "shiftEndRequired": "د شیفت د پای وخت اړین دی",
       "positionRequired": "موقف اړین دی"
     }
+  },
+  "staffNav": {
+    "label": "د کارکوونکو برخې",
+    "management": "د کارکوونکو مدیریت",
+    "attendance": "د کارکوونکو حاضري",
+    "documents": "د کارکوونکو اسناد"
+  },
+  "staffAttendancePage": {
+    "title": "د کارکوونکو حاضري",
+    "subtitle": "د کارکوونکو د حاضرۍ ریکارډونه وګورئ او ډاونلوډ یې کړئ.",
+    "previousWeek": "تېره اونۍ",
+    "nextWeek": "راتلونکې اونۍ",
+    "goToCurrentWeek": "اوسنۍ اونۍ ته لاړ شئ",
+    "downloadPdf": "PDF ډاونلوډ کړئ",
+    "downloading": "PDF چمتو کېږي...",
+    "pdfError": "PDF جوړ نه شو. بیا هڅه وکړئ.",
+    "searchPlaceholder": "کارکوونکی ولټوئ...",
+    "empty": "د دې اونۍ لپاره د حاضرۍ ریکارډ نشته.",
+    "filters": {
+      "all": "ټول کارکوونکي",
+      "checkedIn": "اوس په دنده",
+      "absent": "پدې اونۍ کې حاضري نشته"
+    },
+    "table": {
+      "name": "نوم",
+      "total": "ټول"
+    },
+    "status": {
+      "checkedIn": "راغلی",
+      "checkedOut": "تللی",
+      "missedCheckOut": "وتل نه دي ثبت شوي",
+      "onShiftSince": "له {time} راهیسې په دنده",
+      "inSince": "له {time} راهیسې دننه",
+      "noCheckOut": "وتل نشته",
+      "now": "اوس",
+      "sessions": "{count} ناستې"
+    },
+    "history": {
+      "title": "{count} ناستې",
+      "checkIn": "راتګ",
+      "checkOut": "وتل",
+      "inProgress": "روان دی",
+      "total": "د ورځې ټول"
+    }
+  },
+  "staffDocumentsPage": {
+    "title": "د کارکوونکو اسناد",
+    "subtitle": "د خپلو کارکوونکو اسناد خوندي او اداره کړئ.",
+    "comingSoonTitle": "ډېر ژر",
+    "comingSoonText": "د کارکوونکو اسناد به ډېر ژر دلته شتون ولري."
+  },
+  "staffCheckIn": {
+    "open": "د حاضرۍ ثبت پرانیزئ",
+    "title": "د کارکوونکي حاضري",
+    "close": "بندول",
+    "notCheckedIn": "راتګ نه دی ثبت شوی",
+    "readyToStart": "خپلې دندې پیل ته چمتو یاست؟",
+    "checkedInSince": "راتګ په {time}",
+    "checkedOutAt": "وتل په {time}",
+    "workedToday": "نن کار: {hours}",
+    "checkIn": "راتګ ثبت کړئ",
+    "checkOut": "وتل ثبت کړئ",
+    "checkedInToast": "ستاسو راتګ ثبت شو.",
+    "checkedOutToast": "ستاسو وتل ثبت شول.",
+    "recentActivity": "یا خپل وروستي فعالیت وګورئ",
+    "viewMyAttendance": "زما حاضري",
+    "thisWeek": "دا اونۍ",
+    "inSince": "له {time} راهیسې دننه",
+    "noCheckOut": "وتل نشته"
+  },
+  "myAttendancePage": {
+    "title": "زما حاضري",
+    "subtitle": "ستاسو د راتګ او وتلو تاریخچه.",
+    "previousWeek": "تېره اونۍ",
+    "nextWeek": "راتلونکې اونۍ",
+    "goToCurrentWeek": "اوسنۍ اونۍ ته لاړ شئ",
+    "cards": {
+      "thisWeek": "دا اونۍ",
+      "daysWorked": "د کار ورځې",
+      "avgPerDay": "په ورځ کې اوسط",
+      "status": "اوسنی حالت"
+    },
+    "statusIn": "راتګ په {time}",
+    "statusOut": "راتګ نه دی ثبت شوی",
+    "today": "نن",
+    "upcoming": "راتلونکی",
+    "noAttendance": "حاضري نشته",
+    "inProgress": "روان دی",
+    "noCheckOut": "وتل نشته",
+    "sessions": "{count} ناستې"
   }
 }

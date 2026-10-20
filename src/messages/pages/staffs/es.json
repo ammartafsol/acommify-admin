@@ -74,5 +74,95 @@
       "shiftEndRequired": "La hora de fin del turno es requerida",
       "positionRequired": "El cargo es requerido"
     }
+  },
+  "staffNav": {
+    "label": "Secciones de personal",
+    "management": "Gestión de personal",
+    "attendance": "Asistencia del personal",
+    "documents": "Documentos del personal"
+  },
+  "staffAttendancePage": {
+    "title": "Asistencia del personal",
+    "subtitle": "Consulta y descarga los registros de asistencia del personal.",
+    "previousWeek": "Semana anterior",
+    "nextWeek": "Semana siguiente",
+    "goToCurrentWeek": "Ir a la semana actual",
+    "downloadPdf": "Descargar PDF",
+    "downloading": "Preparando PDF...",
+    "pdfError": "No se pudo crear el PDF. Inténtalo de nuevo.",
+    "searchPlaceholder": "Buscar personal...",
+    "empty": "No hay registros de asistencia para esta semana.",
+    "filters": {
+      "all": "Todo el personal",
+      "checkedIn": "Con entrada ahora",
+      "absent": "Sin asistencia esta semana"
+    },
+    "table": {
+      "name": "Nombre",
+      "total": "Total"
+    },
+    "status": {
+      "checkedIn": "Entrada registrada",
+      "checkedOut": "Salida registrada",
+      "missedCheckOut": "Falta la salida",
+      "onShiftSince": "En turno desde {time}",
+      "inSince": "Dentro desde {time}",
+      "noCheckOut": "Sin salida",
+      "now": "ahora",
+      "sessions": "{count} sesiones"
+    },
+    "history": {
+      "title": "{count, plural, one {# sesión} other {# sesiones}}",
+      "checkIn": "Entrada",
+      "checkOut": "Salida",
+      "inProgress": "En curso",
+      "total": "Total del día"
+    }
+  },
+  "staffDocumentsPage": {
+    "title": "Documentos del personal",
+    "subtitle": "Guarda y gestiona los documentos de tu personal.",
+    "comingSoonTitle": "Próximamente",
+    "comingSoonText": "Los documentos del personal estarán disponibles aquí pronto."
+  },
+  "staffCheckIn": {
+    "open": "Abrir registro de asistencia",
+    "title": "Registro de asistencia",
+    "close": "Cerrar",
+    "notCheckedIn": "Sin entrada registrada",
+    "readyToStart": "¿Listo para empezar tu turno?",
+    "checkedInSince": "Entrada desde las {time}",
+    "checkedOutAt": "Salida a las {time}",
+    "workedToday": "Trabajado hoy: {hours}",
+    "checkIn": "Registrar entrada",
+    "checkOut": "Registrar salida",
+    "checkedInToast": "Entrada registrada.",
+    "checkedOutToast": "Salida registrada.",
+    "recentActivity": "o consulta tu actividad reciente",
+    "viewMyAttendance": "Ver mi asistencia",
+    "thisWeek": "Esta semana",
+    "inSince": "Dentro desde {time}",
+    "noCheckOut": "Sin salida"
+  },
+  "myAttendancePage": {
+    "title": "Mi asistencia",
+    "subtitle": "Tu historial de entradas y salidas.",
+    "previousWeek": "Semana anterior",
+    "nextWeek": "Semana siguiente",
+    "goToCurrentWeek": "Ir a la semana actual",
+    "cards": {
+      "thisWeek": "Esta semana",
+      "daysWorked": "Días trabajados",
+      "avgPerDay": "Promedio por día",
+      "status": "Estado actual"
+    },
+    "statusIn": "Entrada desde las {time}",
+    "statusOut": "Sin entrada registrada",
+    "today": "Hoy",
+    "upcoming": "Próximo",
+    "noAttendance": "Sin asistencia",
+    "inProgress": "En curso",
+    "noCheckOut": "Sin salida",
+    "sessions": "{count, plural, one {# sesión} other {# sesiones}}"
   }
 }

@@ -19,7 +19,8 @@
     "notification": "Notification",
     "timeslots": "Créneaux Horaires",
     "settings": "Paramètres",
-    "centersWeeklyReports": "Rapports Semanaux des Centres"
+    "centersWeeklyReports": "Rapports Semanaux des Centres",
+    "myAttendance": "Ma présence"
   },
   "uploadMedia": {
     "title": "Contrat",

@@ -74,5 +74,95 @@
       "shiftEndRequired": "ცვლის დასრულების დრო აუცილებელია",
       "positionRequired": "პოზიცია აუცილებელია"
     }
+  },
+  "staffNav": {
+    "label": "პერსონალის განყოფილებები",
+    "management": "პერსონალის მართვა",
+    "attendance": "პერსონალის დასწრება",
+    "documents": "პერსონალის დოკუმენტები"
+  },
+  "staffAttendancePage": {
+    "title": "პერსონალის დასწრება",
+    "subtitle": "იხილეთ და ჩამოტვირთეთ პერსონალის დასწრების ჩანაწერები.",
+    "previousWeek": "წინა კვირა",
+    "nextWeek": "შემდეგი კვირა",
+    "goToCurrentWeek": "მიმდინარე კვირაზე გადასვლა",
+    "downloadPdf": "PDF-ის ჩამოტვირთვა",
+    "downloading": "PDF მზადდება...",
+    "pdfError": "PDF-ის შექმნა ვერ მოხერხდა. სცადეთ ხელახლა.",
+    "searchPlaceholder": "პერსონალის ძიება...",
+    "empty": "ამ კვირისთვის დასწრების ჩანაწერები არ არის.",
+    "filters": {
+      "all": "მთელი პერსონალი",
+      "checkedIn": "ახლა სამსახურშია",
+      "absent": "ამ კვირაში დასწრება არ არის"
+    },
+    "table": {
+      "name": "სახელი",
+      "total": "სულ"
+    },
+    "status": {
+      "checkedIn": "მოსვლა აღრიცხულია",
+      "checkedOut": "წასვლა აღრიცხულია",
+      "missedCheckOut": "წასვლა არ აღრიცხულა",
+      "onShiftSince": "ცვლაშია {time}-დან",
+      "inSince": "მოვიდა {time}-ზე",
+      "noCheckOut": "წასვლის გარეშე",
+      "now": "ახლა",
+      "sessions": "{count} სესია"
+    },
+    "history": {
+      "title": "{count} სესია",
+      "checkIn": "მოსვლა",
+      "checkOut": "წასვლა",
+      "inProgress": "მიმდინარეობს",
+      "total": "დღის ჯამი"
+    }
+  },
+  "staffDocumentsPage": {
+    "title": "პერსონალის დოკუმენტები",
+    "subtitle": "შეინახეთ და მართეთ პერსონალის დოკუმენტები.",
+    "comingSoonTitle": "მალე",
+    "comingSoonText": "პერსონალის დოკუმენტები მალე იქნება ხელმისაწვდომი."
+  },
+  "staffCheckIn": {
+    "open": "დასწრების აღრიცხვის გახსნა",
+    "title": "დასწრების აღრიცხვა",
+    "close": "დახურვა",
+    "notCheckedIn": "მოსვლა არ არის აღრიცხული",
+    "readyToStart": "მზად ხართ ცვლის დასაწყებად?",
+    "checkedInSince": "მოსვლა {time}-ზე",
+    "checkedOutAt": "წასვლა {time}-ზე",
+    "workedToday": "დღეს ნამუშევარი: {hours}",
+    "checkIn": "მოსვლის აღრიცხვა",
+    "checkOut": "წასვლის აღრიცხვა",
+    "checkedInToast": "მოსვლა აღრიცხულია.",
+    "checkedOutToast": "წასვლა აღრიცხულია.",
+    "recentActivity": "ან იხილეთ ბოლო აქტივობა",
+    "viewMyAttendance": "ჩემი დასწრება",
+    "thisWeek": "ეს კვირა",
+    "inSince": "მოვიდა {time}-ზე",
+    "noCheckOut": "წასვლის გარეშე"
+  },
+  "myAttendancePage": {
+    "title": "ჩემი დასწრება",
+    "subtitle": "თქვენი მოსვლისა და წასვლის ისტორია.",
+    "previousWeek": "წინა კვირა",
+    "nextWeek": "შემდეგი კვირა",
+    "goToCurrentWeek": "მიმდინარე კვირაზე გადასვლა",
+    "cards": {
+      "thisWeek": "ეს კვირა",
+      "daysWorked": "ნამუშევარი დღეები",
+      "avgPerDay": "საშუალოდ დღეში",
+      "status": "ახლანდელი სტატუსი"
+    },
+    "statusIn": "მოსვლა {time}-ზე",
+    "statusOut": "მოსვლა არ არის აღრიცხული",
+    "today": "დღეს",
+    "upcoming": "მომავალი",
+    "noAttendance": "დასწრება არ არის",
+    "inProgress": "მიმდინარეობს",
+    "noCheckOut": "წასვლის გარეშე",
+    "sessions": "{count} სესია"
   }
 }

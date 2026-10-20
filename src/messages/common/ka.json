@@ -19,7 +19,8 @@
     "notification": "შეტყობინება",
     "timeslots": "დროის სლოტები",
     "settings": "პარამეტრები",
-    "centersWeeklyReports": "ცენტრების ყოველკვირეული ანგარიშები"
+    "centersWeeklyReports": "ცენტრების ყოველკვირეული ანგარიშები",
+    "myAttendance": "ჩემი დასწრება"
   },
   "uploadMedia": {
     "title": "კონტრაქტი",

@@ -74,5 +74,95 @@
       "shiftEndRequired": "Lokacin ƙarshe na aiki yana buƙata",
       "positionRequired": "Matsayi yana buƙata"
     }
+  },
+  "staffNav": {
+    "label": "Sassan ma'aikata",
+    "management": "Gudanar da ma'aikata",
+    "attendance": "Halartar ma'aikata",
+    "documents": "Takardun ma'aikata"
+  },
+  "staffAttendancePage": {
+    "title": "Halartar ma'aikata",
+    "subtitle": "Duba kuma sauke bayanan halartar ma'aikata.",
+    "previousWeek": "Makon da ya gabata",
+    "nextWeek": "Mako mai zuwa",
+    "goToCurrentWeek": "Je zuwa makon yanzu",
+    "downloadPdf": "Sauke PDF",
+    "downloading": "Ana shirya PDF...",
+    "pdfError": "Ba a iya ƙirƙirar PDF ba. Da fatan a sake gwadawa.",
+    "searchPlaceholder": "Nemi ma'aikaci...",
+    "empty": "Babu bayanan halarta na wannan makon.",
+    "filters": {
+      "all": "Duk ma'aikata",
+      "checkedIn": "Suna aiki yanzu",
+      "absent": "Ba halarta a wannan makon"
+    },
+    "table": {
+      "name": "Suna",
+      "total": "Jimla"
+    },
+    "status": {
+      "checkedIn": "An shiga",
+      "checkedOut": "An fita",
+      "missedCheckOut": "Ba a yi fita ba",
+      "onShiftSince": "Yana aiki tun {time}",
+      "inSince": "Ya shiga {time}",
+      "noCheckOut": "Babu fita",
+      "now": "yanzu",
+      "sessions": "Zama {count}"
+    },
+    "history": {
+      "title": "Zama {count}",
+      "checkIn": "Shiga",
+      "checkOut": "Fita",
+      "inProgress": "Ana ci gaba",
+      "total": "Jimlar yini"
+    }
+  },
+  "staffDocumentsPage": {
+    "title": "Takardun ma'aikata",
+    "subtitle": "Adana kuma gudanar da takardun ma'aikatan ku.",
+    "comingSoonTitle": "Nan ba da daɗewa ba",
+    "comingSoonText": "Takardun ma'aikata za su kasance a nan ba da daɗewa ba."
+  },
+  "staffCheckIn": {
+    "open": "Buɗe rajistar shiga",
+    "title": "Rajistar shigar ma'aikata",
+    "close": "Rufe",
+    "notCheckedIn": "Ba a yi shiga ba",
+    "readyToStart": "Kun shirya fara aikinku?",
+    "checkedInSince": "An shiga da {time}",
+    "checkedOutAt": "An fita da {time}",
+    "workedToday": "Aikin yau: {hours}",
+    "checkIn": "Yi shiga",
+    "checkOut": "Yi fita",
+    "checkedInToast": "An yi rajistar shigarka.",
+    "checkedOutToast": "An yi rajistar fitarka.",
+    "recentActivity": "ko duba ayyukanka na kwanan nan",
+    "viewMyAttendance": "Duba halartata",
+    "thisWeek": "Wannan makon",
+    "inSince": "Ya shiga {time}",
+    "noCheckOut": "Babu fita"
+  },
+  "myAttendancePage": {
+    "title": "Halartata",
+    "subtitle": "Tarihin shiga da fitarka.",
+    "previousWeek": "Makon da ya gabata",
+    "nextWeek": "Mako mai zuwa",
+    "goToCurrentWeek": "Je zuwa makon yanzu",
+    "cards": {
+      "thisWeek": "Wannan makon",
+      "daysWorked": "Kwanakin aiki",
+      "avgPerDay": "Matsakaici a rana",
+      "status": "Matsayi yanzu"
+    },
+    "statusIn": "An shiga da {time}",
+    "statusOut": "Ba a yi shiga ba",
+    "today": "Yau",
+    "upcoming": "Mai zuwa",
+    "noAttendance": "Babu halarta",
+    "inProgress": "Ana ci gaba",
+    "noCheckOut": "Babu fita",
+    "sessions": "Zama {count}"
   }
 }

@@ -19,7 +19,8 @@
     "notification": "Notificación",
     "timeslots": "Horarios",
     "settings": "Configuraciones",
-    "centersWeeklyReports": "Reportes Semanales de Centros"
+    "centersWeeklyReports": "Reportes Semanales de Centros",
+    "myAttendance": "Mi asistencia"
   },
   "uploadMedia": {
     "title": "Contrato",

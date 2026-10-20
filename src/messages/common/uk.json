@@ -19,7 +19,8 @@
     "notification": "Сповіщення",
     "timeslots": "Часові слоти",
     "settings": "Налаштування",
-    "centersWeeklyReports": "Звіти про центри"
+    "centersWeeklyReports": "Звіти про центри",
+    "myAttendance": "Моя відвідуваність"
   },
   "uploadMedia": {
     "title": "Контракт",

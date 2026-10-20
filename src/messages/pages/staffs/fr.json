@@ -74,5 +74,95 @@
       "shiftEndRequired": "L'heure de fin du quart est requise",
       "positionRequired": "Le poste est requis"
     }
+  },
+  "staffNav": {
+    "label": "Sections du personnel",
+    "management": "Gestion du personnel",
+    "attendance": "Présence du personnel",
+    "documents": "Documents du personnel"
+  },
+  "staffAttendancePage": {
+    "title": "Présence du personnel",
+    "subtitle": "Consultez et téléchargez les relevés de présence du personnel.",
+    "previousWeek": "Semaine précédente",
+    "nextWeek": "Semaine suivante",
+    "goToCurrentWeek": "Aller à la semaine en cours",
+    "downloadPdf": "Télécharger le PDF",
+    "downloading": "Préparation du PDF...",
+    "pdfError": "Impossible de créer le PDF. Veuillez réessayer.",
+    "searchPlaceholder": "Rechercher un membre...",
+    "empty": "Aucune présence enregistrée pour cette semaine.",
+    "filters": {
+      "all": "Tout le personnel",
+      "checkedIn": "Pointé actuellement",
+      "absent": "Aucune présence cette semaine"
+    },
+    "table": {
+      "name": "Nom",
+      "total": "Total"
+    },
+    "status": {
+      "checkedIn": "Arrivée pointée",
+      "checkedOut": "Départ pointé",
+      "missedCheckOut": "Départ non pointé",
+      "onShiftSince": "En service depuis {time}",
+      "inSince": "Présent depuis {time}",
+      "noCheckOut": "Pas de départ",
+      "now": "maintenant",
+      "sessions": "{count} sessions"
+    },
+    "history": {
+      "title": "{count, plural, one {# session} other {# sessions}}",
+      "checkIn": "Arrivée",
+      "checkOut": "Départ",
+      "inProgress": "En cours",
+      "total": "Total de la journée"
+    }
+  },
+  "staffDocumentsPage": {
+    "title": "Documents du personnel",
+    "subtitle": "Stockez et gérez les documents de votre personnel.",
+    "comingSoonTitle": "Bientôt disponible",
+    "comingSoonText": "Les documents du personnel seront bientôt disponibles ici."
+  },
+  "staffCheckIn": {
+    "open": "Ouvrir le pointage",
+    "title": "Pointage du personnel",
+    "close": "Fermer",
+    "notCheckedIn": "Non pointé",
+    "readyToStart": "Prêt à commencer votre service ?",
+    "checkedInSince": "Arrivée pointée à {time}",
+    "checkedOutAt": "Départ pointé à {time}",
+    "workedToday": "Travaillé aujourd'hui : {hours}",
+    "checkIn": "Pointer l'arrivée",
+    "checkOut": "Pointer le départ",
+    "checkedInToast": "Votre arrivée est pointée.",
+    "checkedOutToast": "Votre départ est pointé.",
+    "recentActivity": "ou consultez votre activité récente",
+    "viewMyAttendance": "Voir ma présence",
+    "thisWeek": "Cette semaine",
+    "inSince": "Présent depuis {time}",
+    "noCheckOut": "Pas de départ"
+  },
+  "myAttendancePage": {
+    "title": "Ma présence",
+    "subtitle": "Votre historique de pointage.",
+    "previousWeek": "Semaine précédente",
+    "nextWeek": "Semaine suivante",
+    "goToCurrentWeek": "Aller à la semaine en cours",
+    "cards": {
+      "thisWeek": "Cette semaine",
+      "daysWorked": "Jours travaillés",
+      "avgPerDay": "Moyenne par jour",
+      "status": "Statut actuel"
+    },
+    "statusIn": "Arrivée pointée à {time}",
+    "statusOut": "Non pointé",
+    "today": "Aujourd'hui",
+    "upcoming": "À venir",
+    "noAttendance": "Aucune présence",
+    "inProgress": "En cours",
+    "noCheckOut": "Pas de départ",
+    "sessions": "{count, plural, one {# session} other {# sessions}}"
   }
 }

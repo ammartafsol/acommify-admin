@@ -12,16 +12,15 @@
     "ordersManagement": "Orders Management",
     "incidentReports": "Incident Reports",
     "manageItems": "Manage Items",
-
     "AnalyticsManagement": "Analytics & Management",
-
     "reportsAnalytics": "Reports & Analytics",
     "crud": "CRUD",
     "cms": "CMS",
     "notification": "Notification",
     "timeslots": "Timeslots",
     "settings": "Settings",
-    "centersWeeklyReports": "Centers Weekly Reports"
+    "centersWeeklyReports": "Centers Weekly Reports",
+    "myAttendance": "My Attendance"
   },
   "uploadMedia": {
     "title": "Contract",
@@ -88,7 +87,6 @@
     "confirm": "Confirm",
     "proceeding": "Processing...",
     "areYouSure": "Are you sure?",
-
     "rowsPerPage": "Rows per page:",
     "of": "of",
     "actionTitle": "Actions"

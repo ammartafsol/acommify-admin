@@ -1,6 +1,7 @@
 "use client";
 import MenuComponent from "@/components/atoms/MenuComponent";
 import RenderToast from "@/components/atoms/RenderToast";
+import StaffSubNav from "@/components/molecules/StaffSubNav/StaffSubNav";
 import SubHeader from "@/components/molecules/SubHeader/SubHeader";
 import AppTable from "@/components/organisms/AppTable/AppTable";
 import {
@@ -178,6 +179,7 @@ export default function Staffs() {
   return (
     <>
       <Container className={mergeClass("containerFluid", styles.main)}>
+        <StaffSubNav />
         <SubHeader
           title={t("title")}
           showSearchAndFilter

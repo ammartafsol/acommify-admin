@@ -74,5 +74,95 @@
       "shiftEndRequired": "Horário de fim do turno é obrigatório",
       "positionRequired": "Cargo é obrigatório"
     }
+  },
+  "staffNav": {
+    "label": "Secções de funcionários",
+    "management": "Gestão de funcionários",
+    "attendance": "Assiduidade dos funcionários",
+    "documents": "Documentos dos funcionários"
+  },
+  "staffAttendancePage": {
+    "title": "Assiduidade dos funcionários",
+    "subtitle": "Veja e transfira os registos de assiduidade dos funcionários.",
+    "previousWeek": "Semana anterior",
+    "nextWeek": "Semana seguinte",
+    "goToCurrentWeek": "Ir para a semana atual",
+    "downloadPdf": "Transferir PDF",
+    "downloading": "A preparar PDF...",
+    "pdfError": "Não foi possível criar o PDF. Tente novamente.",
+    "searchPlaceholder": "Pesquisar funcionário...",
+    "empty": "Sem registos de assiduidade para esta semana.",
+    "filters": {
+      "all": "Todos os funcionários",
+      "checkedIn": "Com entrada agora",
+      "absent": "Sem assiduidade esta semana"
+    },
+    "table": {
+      "name": "Nome",
+      "total": "Total"
+    },
+    "status": {
+      "checkedIn": "Entrada registada",
+      "checkedOut": "Saída registada",
+      "missedCheckOut": "Saída em falta",
+      "onShiftSince": "Em turno desde {time}",
+      "inSince": "Dentro desde {time}",
+      "noCheckOut": "Sem saída",
+      "now": "agora",
+      "sessions": "{count} sessões"
+    },
+    "history": {
+      "title": "{count, plural, one {# sessão} other {# sessões}}",
+      "checkIn": "Entrada",
+      "checkOut": "Saída",
+      "inProgress": "Em curso",
+      "total": "Total do dia"
+    }
+  },
+  "staffDocumentsPage": {
+    "title": "Documentos dos funcionários",
+    "subtitle": "Guarde e gira os documentos dos seus funcionários.",
+    "comingSoonTitle": "Em breve",
+    "comingSoonText": "Os documentos dos funcionários estarão disponíveis aqui em breve."
+  },
+  "staffCheckIn": {
+    "open": "Abrir registo de entrada",
+    "title": "Registo de entrada",
+    "close": "Fechar",
+    "notCheckedIn": "Sem entrada registada",
+    "readyToStart": "Pronto para começar o seu turno?",
+    "checkedInSince": "Entrada às {time}",
+    "checkedOutAt": "Saída às {time}",
+    "workedToday": "Trabalhado hoje: {hours}",
+    "checkIn": "Registar entrada",
+    "checkOut": "Registar saída",
+    "checkedInToast": "Entrada registada.",
+    "checkedOutToast": "Saída registada.",
+    "recentActivity": "ou veja a sua atividade recente",
+    "viewMyAttendance": "Ver a minha assiduidade",
+    "thisWeek": "Esta semana",
+    "inSince": "Dentro desde {time}",
+    "noCheckOut": "Sem saída"
+  },
+  "myAttendancePage": {
+    "title": "A minha assiduidade",
+    "subtitle": "O seu histórico de entradas e saídas.",
+    "previousWeek": "Semana anterior",
+    "nextWeek": "Semana seguinte",
+    "goToCurrentWeek": "Ir para a semana atual",
+    "cards": {
+      "thisWeek": "Esta semana",
+      "daysWorked": "Dias trabalhados",
+      "avgPerDay": "Média por dia",
+      "status": "Estado atual"
+    },
+    "statusIn": "Entrada às {time}",
+    "statusOut": "Sem entrada registada",
+    "today": "Hoje",
+    "upcoming": "Próximo",
+    "noAttendance": "Sem assiduidade",
+    "inProgress": "Em curso",
+    "noCheckOut": "Sem saída",
+    "sessions": "{count, plural, one {# sessão} other {# sessões}}"
   }
 }
