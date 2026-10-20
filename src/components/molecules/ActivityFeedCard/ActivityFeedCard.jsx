@@ -59,7 +59,7 @@ export default function ActivityFeedCard({ dataCard = [] }) {
 
   return (
     <>
-      {dataCard.map((activity, idx) => {
+      {(Array.isArray(dataCard) ? dataCard : []).map((activity, idx) => {
         // common top area
         const key = activity._id || idx;
         return (

@@ -1,5 +1,5 @@
 "use client";
-import SpinnerLoading from "@/components/atoms/SpinnerLoading/SpinnerLoading";
+import DashboardSkeleton from "./DashboardSkeleton";
 import ActivityFeedCard from "@/components/molecules/ActivityFeedCard/ActivityFeedCard";
 import DashboardCard from "@/components/molecules/DashboardCard";
 import DashboardStatsCard from "@/components/molecules/DashboardStatsCards";
@@ -9,8 +9,8 @@ import MaintenanceRequestChart from "@/components/organisms/MaintenanceRequestCh
 import { activityTabs, chartData } from "@/developmentContent/dashboardData";
 import useAxios from "@/interceptor/axios-functions";
 import { useTranslations } from "@/resources/hooks/useTranslations";
-import { isAdminOrBusinessOwner, mergeClass } from "@/resources/utils/helper";
-import { use, useEffect, useState } from "react";
+import { mergeClass } from "@/resources/utils/helper";
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import styles from "./styles.module.css";
@@ -18,6 +18,8 @@ import styles from "./styles.module.css";
 export default function Dashboard() {
   const { permissions } = useSelector((state) => state.authReducer);
   const { user } = useSelector((state) => state.authReducer);
+  const isNationwide = user?.role === "nation-wide";
+  const isCentreUser = !!user?.role && !isNationwide;
   const t = useTranslations("dashboardPage");
   const [selectedTab, setSelectedTab] = useState(activityTabs(t)[0]);
   const { Get } = useAxios();
@@ -41,57 +43,67 @@ export default function Dashboard() {
     const params = new URLSearchParams({
       ...(filterBy && { year: filterBy }),
     });
-    setLoading((prev) => ({ ...prev, graph: true, initial: loading.initial }));
+    setLoading((prev) => ({ ...prev, graph: true }));
 
-    const { response } = await Get({
-      route: `admin/dashboard?${params.toString()}`,
-    });
-    if (response) {
-      setStatsData(response?.data);
-      setGraphData(response?.data?.graph);
-      setRecentBookings(response?.data?.recentBookings);
-      setRecentIncidentReports(response?.data?.recentIncidentReports);
-      setRecentMaintenanceRequests(response?.data?.recentMaintenanceRequests);
-      setRecentNotifications(response?.data?.recentNotifications);
+    try {
+      const { response } = await Get({
+        route: `admin/dashboard?${params.toString()}`,
+      });
+      if (response) {
+        setStatsData(response?.data);
+        setGraphData(response?.data?.graph);
+        setRecentBookings(response?.data?.recentBookings);
+        setRecentIncidentReports(response?.data?.recentIncidentReports);
+        setRecentMaintenanceRequests(response?.data?.recentMaintenanceRequests);
+        setRecentNotifications(response?.data?.recentNotifications);
+      }
+    } finally {
+      setLoading({ graph: false, initial: false });
     }
-    setLoading((prev) => ({ ...prev, graph: false, initial: false }));
   }
 
   const getNationwideStats = async () => {
-    setLoading((prev) => ({ ...prev, graph: true, initial: loading.initial }));
-    const { response } = await Get({
-      route: `users/dashboard`,
-    });
-    if (response) {
-      setStatsData(response?.data);
+    setLoading((prev) => ({ ...prev, graph: true }));
+    try {
+      const { response } = await Get({
+        route: `users/dashboard`,
+      });
+      if (response) {
+        setStatsData(response?.data);
+      }
+    } finally {
+      setLoading({ graph: false, initial: false });
     }
-    setLoading((prev) => ({ ...prev, graph: false, initial: false }));
   };
 
   useEffect(() => {
-    if (isAdminOrBusinessOwner(user?.role)) {
-      getAllStats({ filterBy: residentsFilterBy });
-    } else if (user?.role === "nation-wide") {
+    // Wait until the logged-in user is available in the store
+    if (!user?.role) return;
+
+    if (isNationwide) {
       getNationwideStats();
+    } else {
+      // Every centre user (admin, business-owner, staff, ...) uses the centre dashboard API
+      getAllStats({ filterBy: residentsFilterBy });
     }
-  }, [residentsFilterBy]);
+  }, [residentsFilterBy, user?.role]);
 
   return (
     <Container className={mergeClass("containerFluid", styles?.main)}>
       {loading.initial ? (
-        <SpinnerLoading />
+        <DashboardSkeleton showSidePanels={!isNationwide} />
       ) : (
         <div className={styles?.containerClass}>
           <div className={styles?.dashboardContainer}>
             <div className={styles?.leftMain}>
-              {isAdminOrBusinessOwner(user?.role) && (
+              {isCentreUser && (
                 <DashboardStatsCard
                   data={statsCardsData(t, statsData)}
                   cardContainerClass={styles?.cardContainerClass}
                 />
               )}
 
-              {user?.role === "nation-wide" && (
+              {isNationwide && (
                 <DashboardStatsCard
                   data={statsCardsDataNationwide(t, statsData)}
                   cardContainerClass={styles?.cardContainerClass}
@@ -99,7 +111,7 @@ export default function Dashboard() {
               )}
 
               <DashboardCard data={dashboardRoutesData(t, permissions)} />
-              {isAdminOrBusinessOwner(user?.role) && (
+              {isCentreUser && (
                 <MaintenanceRequestChart
                   loading={loading.graph}
                   data={graphData}
@@ -111,7 +123,7 @@ export default function Dashboard() {
               )}
             </div>
 
-            {isAdminOrBusinessOwner(user?.role) && (
+            {isCentreUser && (
               <div className={styles?.rightMain}>
                 <div className={styles?.activitiesCardMain}>
                   <div className={styles?.cardMainData}>

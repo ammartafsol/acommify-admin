@@ -6,6 +6,7 @@ const config = {
   // apiBaseUrl: "https://v2w2xmx9-3080.asse.devtunnels.ms", //dev
   // apiBaseUrl: "https://v2w2xmx9-3080.asse.devtunnels.ms", //dev
   apiBaseUrl: "https://acommify-backend-dg-bb5b410c4c49.herokuapp.com", //dev
+  // apiBaseUrl: "https://v2w2xmx9-3080.asse.devtunnels.ms", //local
   awsBaseUrl: "https://acommify-bucket.s3.eu-north-1.amazonaws.com",
   siteKey: "",
 };

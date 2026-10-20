@@ -65,10 +65,15 @@ export default function NotificationCard({ notifications }) {
   return (
     <>
       {notifications?.map((notification, idx) => {
-        const booking = notification.booking;
+        const booking = notification?.booking;
+        const title = booking?.serviceType
+          ? t(booking.serviceType)
+          : notification?.title?.[locale] || notification?.title;
         return (
           <div
             onClick={() => {
+              // Only booking notifications have a detail modal
+              if (!booking) return;
               setSelectedBooking(booking);
               setShowModal(true);
             }}
@@ -84,16 +89,18 @@ export default function NotificationCard({ notifications }) {
               />
 
               <div className={classes.content}>
-                <p>{t(booking.serviceType)}</p>
+                {title && typeof title === "string" && <p>{title}</p>}
                 {/* <p>
                   {notification.title[locale]
                     ? notification.title[locale]
                     : notification.title}
                 </p> */}
-                {notification.message?.[locale] ? (
+                {notification?.message?.[locale] ? (
                   <p>{notification.message[locale]}</p>
                 ) : (
-                  <p>{notification.message}</p>
+                  typeof notification?.message === "string" && (
+                    <p>{notification.message}</p>
+                  )
                 )}
               </div>
             </div>
