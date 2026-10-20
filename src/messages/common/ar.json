@@ -231,7 +231,9 @@
       "view-visitor-bookings": "عرض حجوزات الزوار",
       "update-visitor-booking-status": "تحديث حالة حجز الزائر",
       "view-cms": "عرض نظام إدارة المحتوى",
-      "edit-cms": "تعديل نظام إدارة المحتوى"
+      "edit-cms": "تعديل نظام إدارة المحتوى",
+      "view-staff-attendance": "عرض حضور الموظفين",
+      "view-staff-documents": "عرض مستندات الموظفين"
     }
   },
   "bookingTypes": {

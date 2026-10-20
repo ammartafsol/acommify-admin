@@ -6,7 +6,6 @@ import DashboardStatsCard from "@/components/molecules/DashboardStatsCards";
 import NotificationCard from "@/components/molecules/NotificationCard/NotificationCard";
 import Tabs from "@/components/molecules/Tabs/Tabs";
 import MaintenanceRequestChart from "@/components/organisms/MaintenanceRequestChart/MaintenanceRequestChart";
-import StaffCheckIn from "@/components/organisms/StaffCheckIn/StaffCheckIn";
 import { activityTabs, chartData } from "@/developmentContent/dashboardData";
 import useAxios from "@/interceptor/axios-functions";
 import { useTranslations } from "@/resources/hooks/useTranslations";
@@ -91,7 +90,6 @@ export default function Dashboard() {
 
   return (
     <Container className={mergeClass("containerFluid", styles?.main)}>
-      {user?.role === "staff" && <StaffCheckIn />}
       {loading.initial ? (
         <DashboardSkeleton showSidePanels={!isNationwide} />
       ) : (

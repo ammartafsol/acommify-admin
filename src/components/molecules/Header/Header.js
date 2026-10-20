@@ -5,6 +5,7 @@ import MenuPopup from "@/components/atoms/MenuPopup/MenuPopup";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import useDimensions from "@/resources/hooks/useDimensions";
 import useAxios from "@/interceptor/axios-functions";
+import StaffCheckIn from "@/components/organisms/StaffCheckIn/StaffCheckIn";
 import { useTranslations } from "@/resources/hooks/useTranslations";
 import { checkOutOnLogout } from "@/resources/utils/staffAttendance";
 import { headerData, headerDataMobile } from "@/resources/utils/headerRoutes";
@@ -109,6 +110,8 @@ export default function Header() {
 
   return (
     <>
+      {/* Staff can check in/out from any page (the header is on every logged-in page) */}
+      {role === "staff" && <StaffCheckIn />}
       <header className={classes.header}>
         <Container className="containerFluid">
           <div className={classes?.headerMain}>

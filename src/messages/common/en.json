@@ -231,7 +231,9 @@
       "view-visitor-bookings": "View Visitor Bookings",
       "update-visitor-booking-status": "Update Visitor Booking Status",
       "view-cms": "View CMS",
-      "edit-cms": "Edit CMS"
+      "edit-cms": "Edit CMS",
+      "view-staff-attendance": "View Staff Attendance",
+      "view-staff-documents": "View Staff Documents"
     }
   },
   "bookingTypes": {

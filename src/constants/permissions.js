@@ -5,6 +5,8 @@ export const PERMISSIONS = {
   STAFF: {
     VIEW_STAFF: "view-staff",
     ADD_EDIT_STAFF: "add-edit-staff",
+    VIEW_STAFF_ATTENDANCE: "view-staff-attendance",
+    VIEW_STAFF_DOCUMENTS: "view-staff-documents",
   },
   POSITIONS: {
     VIEW_POSITIONS: "view-positions",
@@ -303,8 +305,8 @@ export const ROUTE_PERMISSIONS = {
   "/settings": [],
 
   "/staffs": [...PERMISSION_GROUPS.STAFF],
-  "/staffs/attendance": [...PERMISSION_GROUPS.STAFF],
-  "/staffs/documents": [...PERMISSION_GROUPS.STAFF],
+  "/staffs/attendance": [PERMISSIONS.STAFF.VIEW_STAFF_ATTENDANCE],
+  "/staffs/documents": [PERMISSIONS.STAFF.VIEW_STAFF_DOCUMENTS],
 
   "/time-slots": [...PERMISSION_GROUPS.TIME_SLOTS],
   "/time-slots/appointment-slots": [

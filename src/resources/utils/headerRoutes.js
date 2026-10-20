@@ -1,5 +1,15 @@
 import { isAdminOrBusinessOwner } from "./helper";
 
+// Staffs tabs and the permission each one needs (first allowed tab opens from the menu)
+export const STAFF_TABS = [
+  { key: "management", route: "/staffs", permission: "view-staff" },
+  { key: "attendance", route: "/staffs/attendance", permission: "view-staff-attendance" },
+  { key: "documents", route: "/staffs/documents", permission: "view-staff-documents" },
+];
+
+export const getStaffsRoute = (permissions = []) =>
+  STAFF_TABS.find((tab) => permissions.includes(tab.permission))?.route || null;
+
 export const headerDataMobile = (t, permissions = [], user = {}) =>
   [
     permissions.includes("view-dashboard") && {
@@ -27,9 +37,9 @@ export const headerDataMobile = (t, permissions = [], user = {}) =>
         icon: "/svg/dashboardIcon.svg",
       },
 
-    permissions.includes("view-staff") && {
+    getStaffsRoute(permissions) && {
       label: t("adminHeader.staffs"),
-      route: "/staffs",
+      route: getStaffsRoute(permissions),
       icon: "/svg/staff.svg",
     },
     permissions.includes("view-residents") && {
@@ -127,9 +137,9 @@ export const headerData = (t, permissions = [], user = {}) =>
         icon: "/svg/dashboardIcon.svg",
       },
 
-    permissions.includes("view-staff") && {
+    getStaffsRoute(permissions) && {
       label: t("adminHeader.staffs"),
-      route: "/staffs",
+      route: getStaffsRoute(permissions),
       icon: "/svg/staff.svg",
     },
     permissions.includes("view-accommodations") && {

@@ -5,6 +5,8 @@ export const allPermissions = [
   "add-edit-business-owner",
   "view-staff",
   "add-edit-staff",
+  "view-staff-attendance",
+  "view-staff-documents",
   "view-positions",
   "add-edit-position",
   "view-residents",
@@ -63,7 +65,12 @@ export const permissionsList = [
   },
   {
     label: "staff",
-    permissions: ["view-staff", "add-edit-staff"],
+    permissions: [
+      "view-staff",
+      "add-edit-staff",
+      "view-staff-attendance",
+      "view-staff-documents",
+    ],
     removeList: ["see-appointments-slots", "add-incident-report"],
     children: [
       {
@@ -80,6 +87,16 @@ export const permissionsList = [
         label: "add-edit-staff",
         permissions: ["add-edit-staff"],
         dependencies: ["view-staff", "view-positions"],
+      },
+      {
+        label: "view-staff-attendance",
+        permissions: ["view-staff-attendance"],
+        dependencies: [],
+      },
+      {
+        label: "view-staff-documents",
+        permissions: ["view-staff-documents"],
+        dependencies: [],
       },
     ],
     dependencies: ["view-positions"],

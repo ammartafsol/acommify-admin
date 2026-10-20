@@ -231,7 +231,9 @@
       "view-visitor-bookings": "Duba Ajiyayin Baƙi",
       "update-visitor-booking-status": "Sabunta Matsayin Ajiyar Baƙo",
       "view-cms": "Duba CMS",
-      "edit-cms": "Gyara CMS"
+      "edit-cms": "Gyara CMS",
+      "view-staff-attendance": "Duba halartar ma'aikata",
+      "view-staff-documents": "Duba takardun ma'aikata"
     }
   },
   "bookingTypes": {

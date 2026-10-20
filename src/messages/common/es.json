@@ -231,7 +231,9 @@
       "view-visitor-bookings": "Ver Reservas de Visitantes",
       "update-visitor-booking-status": "Actualizar Estado de Reserva de Visitante",
       "view-cms": "Ver CMS",
-      "edit-cms": "Editar CMS"
+      "edit-cms": "Editar CMS",
+      "view-staff-attendance": "Ver asistencia del personal",
+      "view-staff-documents": "Ver documentos del personal"
     }
   },
   "bookingTypes": {

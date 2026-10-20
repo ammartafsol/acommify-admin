@@ -231,7 +231,9 @@
       "view-visitor-bookings": "د لیدونکو حجزونه وګورئ",
       "update-visitor-booking-status": "د لیدونکي حجز حالت تازه کړئ",
       "view-cms": "CMS وګورئ",
-      "edit-cms": "CMS سمون"
+      "edit-cms": "CMS سمون",
+      "view-staff-attendance": "د کارکوونکو حاضري کتل",
+      "view-staff-documents": "د کارکوونکو اسناد کتل"
     }
   },
   "bookingTypes": {

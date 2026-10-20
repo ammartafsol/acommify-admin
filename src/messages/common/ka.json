@@ -231,7 +231,9 @@
       "view-visitor-bookings": "ვიზიტორების დაჯავშნების ნახვა",
       "update-visitor-booking-status": "ვიზიტორის დაჯავშნის სტატუსის განახლება",
       "view-cms": "CMS-ის ნახვა",
-      "edit-cms": "CMS-ის რედაქტირება"
+      "edit-cms": "CMS-ის რედაქტირება",
+      "view-staff-attendance": "პერსონალის დასწრების ნახვა",
+      "view-staff-documents": "პერსონალის დოკუმენტების ნახვა"
     }
   },
   "bookingTypes": {

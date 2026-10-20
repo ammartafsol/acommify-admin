@@ -231,7 +231,9 @@
       "view-visitor-bookings": "Переглядати бронювання відвідувачів",
       "update-visitor-booking-status": "Оновлювати статус бронювання відвідувача",
       "view-cms": "Переглядати CMS",
-      "edit-cms": "Редагувати CMS"
+      "edit-cms": "Редагувати CMS",
+      "view-staff-attendance": "Перегляд відвідуваності персоналу",
+      "view-staff-documents": "Перегляд документів персоналу"
     }
   },
   "bookingTypes": {
