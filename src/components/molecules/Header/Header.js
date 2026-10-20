@@ -4,7 +4,9 @@ import DraggableContainer from "@/components/atoms/DraggableContainer/DraggableC
 import MenuPopup from "@/components/atoms/MenuPopup/MenuPopup";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import useDimensions from "@/resources/hooks/useDimensions";
+import useAxios from "@/interceptor/axios-functions";
 import { useTranslations } from "@/resources/hooks/useTranslations";
+import { checkOutOnLogout } from "@/resources/utils/staffAttendance";
 import { headerData, headerDataMobile } from "@/resources/utils/headerRoutes";
 import { isAdminOrBusinessOwner, mergeClass } from "@/resources/utils/helper";
 import { signOutRequest } from "@/store/auth/authSlice";
@@ -33,6 +35,8 @@ export default function Header() {
   const dispatch = useDispatch();
   const { width } = useDimensions();
   const toggleMenu = () => setMobileOpen((open) => !open);
+  const { Post } = useAxios();
+  const [loggingOut, setLoggingOut] = useState(false);
 
   useEffect(() => {
     if (mobileOpen) {
@@ -73,12 +77,17 @@ export default function Header() {
     }
   }, [pathName]); // Scroll to active item when route changes
 
-  function handleLogout() {
-    router.push("/");
+  async function handleLogout() {
+    if (loggingOut) return;
+    setLoggingOut(true);
+    // Staff are checked out automatically when they log out
+    await checkOutOnLogout({ Post, role });
     dispatch(signOutRequest());
     Cookies.remove("_xpdx_acom");
     Cookies.remove("_xpdx_rf_acom");
     Cookies.remove("role");
+    Cookies.remove("user_permissions");
+    router.push("/");
   }
 
   if (
@@ -130,7 +139,11 @@ export default function Header() {
                 </div>
               )}
 
-              <Button label={t("common.logout")} onClick={handleLogout} />
+              <Button
+                label={t("common.logout")}
+                onClick={handleLogout}
+                disabled={loggingOut}
+              />
             </div>
 
             {/* Mobile Hamburger */}

@@ -54,6 +54,13 @@ export default function ApisProvider({ children }) {
   useEffect(() => {
     if (!accessToken) {
       dispatch(signOutRequest());
+    } else if (!user) {
+      dispatch(signOutRequest());
+      Cookies.remove("_xpdx_acom");
+      Cookies.remove("_xpdx_rf_acom");
+      Cookies.remove("role");
+      Cookies.remove("user_permissions");
+      window.location.replace("/");
     } else {
       console.log(user?.permissions);
       // getCommonData();

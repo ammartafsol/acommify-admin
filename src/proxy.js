@@ -21,6 +21,26 @@ const PUBLIC_ROUTES = [
   "/contact",
 ];
 
+// Login & password pages: a logged-in user is sent to their dashboard instead
+const AUTH_PAGES = [
+  "/",
+  "/login",
+  "/login/admin",
+  "/login/nationwide-dashboard",
+  "/forgot-password",
+  "/verify-otp",
+  "/reset-password",
+];
+
+// Locale from the URL (/fr/login), falling back to the saved locale cookie
+const getLocale = (request) => {
+  const fromPath = request.nextUrl.pathname.split("/")[1];
+  if (routing.locales.includes(fromPath)) return fromPath;
+  const fromCookie = request.cookies.get("NEXT_LOCALE")?.value;
+  if (routing.locales.includes(fromCookie)) return fromCookie;
+  return routing.defaultLocale;
+};
+
 // Admin routes that require admin role specifically
 const ADMIN_ONLY_ROUTES = ["/centres"];
 
@@ -145,6 +165,13 @@ export default function proxy(request) {
     pathname.startsWith("/public")
   ) {
     return intlResponse;
+  }
+
+  // Already logged in: don't show login pages, go to the dashboard
+  const route = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
+  if (AUTH_PAGES.includes(route) && request.cookies.get("_xpdx_acom")?.value) {
+    const dashboardUrl = new URL(`/${getLocale(request)}/dashboard`, request.url);
+    return NextResponse.redirect(dashboardUrl);
   }
 
   // Check if route requires authentication

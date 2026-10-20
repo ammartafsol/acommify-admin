@@ -16,9 +16,12 @@ import Cookies from "js-cookie";
 import { signOutRequest } from "@/store/auth/authSlice";
 import { useDispatch } from "react-redux";
 import { useRouter } from "@/i18n/navigation";
+import { checkOutOnLogout } from "@/resources/utils/staffAttendance";
+import { useSelector } from "react-redux";
 
 export default function ChangePasswordTemplate() {
-  const { Patch } = useAxios();
+  const { Patch, Post } = useAxios();
+  const role = useSelector((state) => state.authReducer?.user?.role);
   const direction = useDirection();
   const router = useRouter();
   const dispatch = useDispatch();
@@ -73,11 +76,14 @@ export default function ChangePasswordTemplate() {
         message: t("successMessage"),
       });
       formik.resetForm();
-      router.push("/");
+      // Changing the password logs the user out, so check staff out too
+      await checkOutOnLogout({ Post, role });
       dispatch(signOutRequest());
       Cookies.remove("_xpdx_acom");
       Cookies.remove("_xpdx_rf_acom");
       Cookies.remove("role");
+      Cookies.remove("user_permissions");
+      router.push("/");
     }
     setLoading(false);
   };
