@@ -142,6 +142,8 @@
     "viewMyAttendance": "Duba halartata",
     "thisWeek": "Wannan makon",
     "inSince": "Ya shiga {time}",
-    "noCheckOut": "Babu fita"
+    "noCheckOut": "Babu fita",
+    "noActivityThisWeek": "Babu halarta a wannan makon tukuna.",
+    "inProgress": "Ana ci gaba"
   }
 }

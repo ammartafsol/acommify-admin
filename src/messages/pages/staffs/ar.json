@@ -142,6 +142,8 @@
     "viewMyAttendance": "عرض حضوري",
     "thisWeek": "هذا الأسبوع",
     "inSince": "دخول منذ {time}",
-    "noCheckOut": "بدون تسجيل خروج"
+    "noCheckOut": "بدون تسجيل خروج",
+    "noActivityThisWeek": "لا يوجد حضور هذا الأسبوع بعد.",
+    "inProgress": "قيد العمل"
   }
 }

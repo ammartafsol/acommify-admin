@@ -142,6 +142,8 @@
     "viewMyAttendance": "زما حاضري",
     "thisWeek": "دا اونۍ",
     "inSince": "له {time} راهیسې دننه",
-    "noCheckOut": "وتل نشته"
+    "noCheckOut": "وتل نشته",
+    "noActivityThisWeek": "پدې اونۍ کې تر اوسه حاضري نشته.",
+    "inProgress": "روان دی"
   }
 }

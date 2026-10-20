@@ -142,6 +142,8 @@
     "viewMyAttendance": "Моя відвідуваність",
     "thisWeek": "Цей тиждень",
     "inSince": "Прийшов о {time}",
-    "noCheckOut": "Без виходу"
+    "noCheckOut": "Без виходу",
+    "noActivityThisWeek": "Цього тижня ще немає відвідувань.",
+    "inProgress": "Триває"
   }
 }

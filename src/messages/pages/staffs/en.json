@@ -142,6 +142,8 @@
     "viewMyAttendance": "View My Attendance",
     "thisWeek": "This Week",
     "inSince": "In since {time}",
-    "noCheckOut": "No check-out"
+    "noCheckOut": "No check-out",
+    "noActivityThisWeek": "No attendance yet this week.",
+    "inProgress": "In progress"
   }
 }

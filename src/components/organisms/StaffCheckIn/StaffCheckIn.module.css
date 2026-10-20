@@ -260,35 +260,199 @@ button.row {
   font-size: 15px;
 }
 
-.weekList {
-  list-style: none;
-  margin: -8px 0 0;
-  padding: 4px 0;
+/* ---------- This week (expanded "View My Attendance") ---------- */
+.week {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+  margin-top: -6px;
 }
 
-.weekList li {
+.chart {
   display: grid;
-  grid-template-columns: 70px 1fr auto;
-  gap: 8px;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  padding: 12px 10px 10px;
+  border-radius: 12px;
+  background: #f4f7fd;
+}
+
+.chartCol {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 8px 8px;
-  border-radius: 8px;
-  font-size: 13px;
+  gap: 5px;
+  min-width: 0;
 }
 
-.todayRow {
-  background: #eef6fd;
-}
-
-.weekDay {
-  color: var(--Black, #172a33);
-  font-weight: 600;
-}
-
-.weekTimes {
+.chartValue {
+  height: 14px;
   color: var(--Dark-gray, #8c939b);
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.chartTrack {
+  position: relative;
+  width: 100%;
+  max-width: 26px;
+  height: 64px;
+  border-radius: 8px;
+  background: #e6ecf4;
+  overflow: hidden;
+}
+
+.chartBar {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  border-radius: 8px;
+  background: var(--Blue, #33b5f6);
+  transition: height 0.3s ease;
+}
+
+.chartBarLive {
+  background: #12b76a;
+}
+
+.chartBarMissed {
+  background: #f79009;
+}
+
+.chartLabel {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Black, #172a33);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.chartToday .chartLabel {
+  background: var(--Blue, #33b5f6);
+  color: #fff;
+}
+
+.chartToday .chartValue {
+  color: var(--Black, #172a33);
+}
+
+.chartFuture .chartLabel {
+  color: #b2b5ba;
+}
+
+.weekEmpty {
+  margin: 0;
+  padding: 6px 0;
+  color: var(--Dark-gray, #8c939b);
+  font-size: 13px;
+  text-align: center;
+}
+
+.dayCards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dayCard {
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #edf0f4;
+  background: #fff;
+}
+
+.dayCardToday {
+  border-color: rgba(51, 181, 246, 0.45);
+  background: #f5fbff;
+}
+
+.dayBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 0;
+  border-radius: 10px;
+  background: #eef6fd;
+  line-height: 1.1;
+}
+
+.dayBadge span {
+  color: var(--Blue, #33b5f6);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dayBadge strong {
+  color: var(--Black, #172a33);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.daySessions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.sessionLine {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--Black, #172a33);
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.sessionLine i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--Blue, #33b5f6);
+}
+
+.sessionLine b {
+  color: #b2b5ba;
+  font-weight: 400;
+}
+
+.sessionLive {
+  color: #027a48;
+}
+
+.sessionLive i {
+  background: #12b76a;
+}
+
+.sessionMissed {
+  color: #b54708;
+}
+
+.sessionMissed i {
+  background: #f79009;
+}
+
+.dayHours {
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: #f4f7fd;
+  color: var(--Black, #172a33);
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
 }
 
 :global([dir="rtl"]) .flipRtl {

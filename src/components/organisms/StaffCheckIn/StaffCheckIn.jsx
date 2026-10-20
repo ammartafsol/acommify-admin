@@ -195,33 +195,12 @@ export default function StaffCheckIn({ onChange }) {
             </button>
 
             {showWeek && (
-              <ul className={styles.weekList}>
-                {weekDays.map((day) => {
-                  const summary = summarizeDay(records, day, now);
-                  return (
-                    <li
-                      key={day.toISOString()}
-                      className={isSameDay(day, now) ? styles.todayRow : ""}
-                    >
-                      <span className={styles.weekDay}>
-                        {day.toLocaleDateString(locale, { weekday: "short", day: "numeric" })}
-                      </span>
-                      <span className={styles.weekTimes}>
-                        {summary.status === "absent"
-                          ? "-"
-                          : summary.status === "checked-in"
-                            ? t("inSince", { time: formatTime(summary.openSince, locale) })
-                            : summary.status === "missed-checkout"
-                              ? t("noCheckOut")
-                              : `${formatTime(summary.firstIn, locale)} – ${formatTime(summary.lastOut, locale)}`}
-                      </span>
-                      <strong>
-                        {summary.status === "absent" ? "" : formatDuration(summary.minutes)}
-                      </strong>
-                    </li>
-                  );
-                })}
-              </ul>
+              <WeekActivity
+                days={weekDays.map((day) => ({ date: day, ...summarizeDay(records, day, now) }))}
+                now={now}
+                locale={locale}
+                t={t}
+              />
             )}
 
             <div className={styles.row} aria-live="polite">
@@ -236,5 +215,100 @@ export default function StaffCheckIn({ onChange }) {
         </>
       )}
     </>
+  );
+}
+
+// Bars are scaled to at least a normal 8-hour day so short days look short
+const CHART_MIN_SCALE_MINUTES = 8 * 60;
+
+/** This week's attendance: a 7-day bar chart + a card for each worked day. */
+function WeekActivity({ days, now, locale, t }) {
+  const scale = Math.max(CHART_MIN_SCALE_MINUTES, ...days.map((d) => d.minutes));
+  const worked = days.filter((d) => d.status !== "absent");
+
+  return (
+    <div className={styles.week}>
+      <div className={styles.chart}>
+        {days.map((day) => {
+          const isToday = isSameDay(day.date, now);
+          const isFuture = day.date > now && !isToday;
+          const height = day.minutes ? Math.max(8, (day.minutes / scale) * 100) : 0;
+          return (
+            <div
+              key={day.date.toISOString()}
+              className={mergeClass(
+                styles.chartCol,
+                isToday ? styles.chartToday : "",
+                isFuture ? styles.chartFuture : "",
+              )}
+            >
+              <span className={styles.chartValue}>
+                {day.minutes ? formatDuration(day.minutes) : ""}
+              </span>
+              <div className={styles.chartTrack}>
+                <span
+                  className={mergeClass(
+                    styles.chartBar,
+                    day.status === "checked-in" ? styles.chartBarLive : "",
+                    day.status === "missed-checkout" ? styles.chartBarMissed : "",
+                  )}
+                  style={{ height: `${height}%` }}
+                />
+              </div>
+              <span className={styles.chartLabel}>
+                {day.date.toLocaleDateString(locale, { weekday: "narrow" })}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+
+      {worked.length === 0 ? (
+        <p className={styles.weekEmpty}>{t("noActivityThisWeek")}</p>
+      ) : (
+        <div className={styles.dayCards}>
+          {worked.map((day) => (
+            <div
+              key={day.date.toISOString()}
+              className={mergeClass(
+                styles.dayCard,
+                isSameDay(day.date, now) ? styles.dayCardToday : "",
+              )}
+            >
+              <div className={styles.dayBadge}>
+                <span>{day.date.toLocaleDateString(locale, { weekday: "short" })}</span>
+                <strong>{day.date.getDate()}</strong>
+              </div>
+              <div className={styles.daySessions}>
+                {day.sessions.map((s) => {
+                  const isOpen = !s.checkOut && !s.missedCheckOut;
+                  const isMissed = !s.checkOut && s.missedCheckOut;
+                  return (
+                    <span
+                      key={s._id || s.checkIn}
+                      className={mergeClass(
+                        styles.sessionLine,
+                        isOpen ? styles.sessionLive : "",
+                        isMissed ? styles.sessionMissed : "",
+                      )}
+                    >
+                      <i />
+                      {formatTime(s.checkIn, locale)}
+                      <b>→</b>
+                      {isOpen
+                        ? t("inProgress")
+                        : isMissed
+                          ? t("noCheckOut")
+                          : formatTime(s.checkOut, locale)}
+                    </span>
+                  );
+                })}
+              </div>
+              <span className={styles.dayHours}>{formatDuration(day.minutes)}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }

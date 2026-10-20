@@ -142,6 +142,8 @@
     "viewMyAttendance": "Ver a minha assiduidade",
     "thisWeek": "Esta semana",
     "inSince": "Dentro desde {time}",
-    "noCheckOut": "Sem saída"
+    "noCheckOut": "Sem saída",
+    "noActivityThisWeek": "Ainda sem assiduidade esta semana.",
+    "inProgress": "Em curso"
   }
 }

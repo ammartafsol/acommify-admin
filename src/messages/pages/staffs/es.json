@@ -142,6 +142,8 @@
     "viewMyAttendance": "Ver mi asistencia",
     "thisWeek": "Esta semana",
     "inSince": "Dentro desde {time}",
-    "noCheckOut": "Sin salida"
+    "noCheckOut": "Sin salida",
+    "noActivityThisWeek": "Aún no hay asistencia esta semana.",
+    "inProgress": "En curso"
   }
 }

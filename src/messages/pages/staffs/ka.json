@@ -142,6 +142,8 @@
     "viewMyAttendance": "ჩემი დასწრება",
     "thisWeek": "ეს კვირა",
     "inSince": "მოვიდა {time}-ზე",
-    "noCheckOut": "წასვლის გარეშე"
+    "noCheckOut": "წასვლის გარეშე",
+    "noActivityThisWeek": "ამ კვირაში დასწრება ჯერ არ არის.",
+    "inProgress": "მიმდინარეობს"
   }
 }

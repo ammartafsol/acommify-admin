@@ -142,6 +142,8 @@
     "viewMyAttendance": "Voir ma présence",
     "thisWeek": "Cette semaine",
     "inSince": "Présent depuis {time}",
-    "noCheckOut": "Pas de départ"
+    "noCheckOut": "Pas de départ",
+    "noActivityThisWeek": "Aucune présence cette semaine pour l’instant.",
+    "inProgress": "En cours"
   }
 }
