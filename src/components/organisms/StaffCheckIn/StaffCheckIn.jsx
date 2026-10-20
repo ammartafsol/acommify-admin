@@ -3,13 +3,14 @@ import RenderToast from "@/components/atoms/RenderToast";
 import {
   formatDuration,
   formatTime,
+  getWeekDays,
   getWeekRangeParams,
   getWeekStart,
   addDays,
+  isSameDay,
   sumMinutes,
   summarizeDay,
 } from "@/components/templates/StaffAttendance/attendanceUtils";
-import { usePathname, useRouter } from "@/i18n/navigation";
 import useAxios from "@/interceptor/axios-functions";
 import { useTranslations } from "@/resources/hooks/useTranslations";
 import { mergeClass } from "@/resources/utils/helper";
@@ -17,24 +18,24 @@ import { useLocale } from "next-intl";
 import { useEffect, useMemo, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import { IoClose } from "react-icons/io5";
-import { LuCalendarCheck, LuChevronRight, LuClock } from "react-icons/lu";
+import { LuCalendarCheck, LuChevronDown, LuChevronRight, LuClock } from "react-icons/lu";
 import styles from "./StaffCheckIn.module.css";
 
 /** Floating check-in button + panel for staff. `onChange` runs after a check-in/out. */
 export default function StaffCheckIn({ onChange }) {
   const t = useTranslations("staffCheckIn");
   const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
   const { Get, Post } = useAxios();
 
   const [open, setOpen] = useState(false);
+  const [showWeek, setShowWeek] = useState(false);
   const [now, setNow] = useState(() => new Date());
   const [current, setCurrent] = useState(null);
   const [records, setRecords] = useState([]);
   const [loading, setLoading] = useState("loading");
 
   const weekStart = useMemo(() => getWeekStart(now), [now.toDateString()]);
+  const weekDays = useMemo(() => getWeekDays(weekStart), [weekStart]);
 
   async function getMyAttendance() {
     const params = new URLSearchParams(getWeekRangeParams(weekStart)).toString();
@@ -179,17 +180,49 @@ export default function StaffCheckIn({ onChange }) {
             <button
               type="button"
               className={styles.row}
-              onClick={() => {
-                setOpen(false);
-                if (pathname !== "/my-attendance") router.push("/my-attendance");
-              }}
+              onClick={() => setShowWeek((v) => !v)}
+              aria-expanded={showWeek}
             >
               <LuCalendarCheck size={18} />
               <span className={styles.rowText}>
                 <strong>{t("viewMyAttendance")}</strong>
               </span>
-              <LuChevronRight size={18} className={styles.flipRtl} />
+              {showWeek ? (
+                <LuChevronDown size={18} />
+              ) : (
+                <LuChevronRight size={18} className={styles.flipRtl} />
+              )}
             </button>
+
+            {showWeek && (
+              <ul className={styles.weekList}>
+                {weekDays.map((day) => {
+                  const summary = summarizeDay(records, day, now);
+                  return (
+                    <li
+                      key={day.toISOString()}
+                      className={isSameDay(day, now) ? styles.todayRow : ""}
+                    >
+                      <span className={styles.weekDay}>
+                        {day.toLocaleDateString(locale, { weekday: "short", day: "numeric" })}
+                      </span>
+                      <span className={styles.weekTimes}>
+                        {summary.status === "absent"
+                          ? "-"
+                          : summary.status === "checked-in"
+                            ? t("inSince", { time: formatTime(summary.openSince, locale) })
+                            : summary.status === "missed-checkout"
+                              ? t("noCheckOut")
+                              : `${formatTime(summary.firstIn, locale)} – ${formatTime(summary.lastOut, locale)}`}
+                      </span>
+                      <strong>
+                        {summary.status === "absent" ? "" : formatDuration(summary.minutes)}
+                      </strong>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
 
             <div className={styles.row} aria-live="polite">
               <LuClock size={18} />

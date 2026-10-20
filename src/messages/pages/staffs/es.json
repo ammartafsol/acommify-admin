@@ -143,26 +143,5 @@
     "thisWeek": "Esta semana",
     "inSince": "Dentro desde {time}",
     "noCheckOut": "Sin salida"
-  },
-  "myAttendancePage": {
-    "title": "Mi asistencia",
-    "subtitle": "Tu historial de entradas y salidas.",
-    "previousWeek": "Semana anterior",
-    "nextWeek": "Semana siguiente",
-    "goToCurrentWeek": "Ir a la semana actual",
-    "cards": {
-      "thisWeek": "Esta semana",
-      "daysWorked": "Días trabajados",
-      "avgPerDay": "Promedio por día",
-      "status": "Estado actual"
-    },
-    "statusIn": "Entrada desde las {time}",
-    "statusOut": "Sin entrada registrada",
-    "today": "Hoy",
-    "upcoming": "Próximo",
-    "noAttendance": "Sin asistencia",
-    "inProgress": "En curso",
-    "noCheckOut": "Sin salida",
-    "sessions": "{count, plural, one {# sesión} other {# sesiones}}"
   }
 }

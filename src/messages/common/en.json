@@ -19,8 +19,7 @@
     "notification": "Notification",
     "timeslots": "Timeslots",
     "settings": "Settings",
-    "centersWeeklyReports": "Centers Weekly Reports",
-    "myAttendance": "My Attendance"
+    "centersWeeklyReports": "Centers Weekly Reports"
   },
   "uploadMedia": {
     "title": "Contract",

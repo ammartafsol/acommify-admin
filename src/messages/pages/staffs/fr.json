@@ -143,26 +143,5 @@
     "thisWeek": "Cette semaine",
     "inSince": "Présent depuis {time}",
     "noCheckOut": "Pas de départ"
-  },
-  "myAttendancePage": {
-    "title": "Ma présence",
-    "subtitle": "Votre historique de pointage.",
-    "previousWeek": "Semaine précédente",
-    "nextWeek": "Semaine suivante",
-    "goToCurrentWeek": "Aller à la semaine en cours",
-    "cards": {
-      "thisWeek": "Cette semaine",
-      "daysWorked": "Jours travaillés",
-      "avgPerDay": "Moyenne par jour",
-      "status": "Statut actuel"
-    },
-    "statusIn": "Arrivée pointée à {time}",
-    "statusOut": "Non pointé",
-    "today": "Aujourd'hui",
-    "upcoming": "À venir",
-    "noAttendance": "Aucune présence",
-    "inProgress": "En cours",
-    "noCheckOut": "Pas de départ",
-    "sessions": "{count, plural, one {# session} other {# sessions}}"
   }
 }

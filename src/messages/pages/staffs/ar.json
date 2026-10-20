@@ -143,26 +143,5 @@
     "thisWeek": "هذا الأسبوع",
     "inSince": "دخول منذ {time}",
     "noCheckOut": "بدون تسجيل خروج"
-  },
-  "myAttendancePage": {
-    "title": "حضوري",
-    "subtitle": "سجل تسجيل الدخول والخروج الخاص بك.",
-    "previousWeek": "الأسبوع السابق",
-    "nextWeek": "الأسبوع التالي",
-    "goToCurrentWeek": "الانتقال إلى الأسبوع الحالي",
-    "cards": {
-      "thisWeek": "هذا الأسبوع",
-      "daysWorked": "أيام العمل",
-      "avgPerDay": "المتوسط اليومي",
-      "status": "الحالة الآن"
-    },
-    "statusIn": "مسجّل الدخول منذ {time}",
-    "statusOut": "لم يتم تسجيل الدخول",
-    "today": "اليوم",
-    "upcoming": "قادم",
-    "noAttendance": "لا حضور",
-    "inProgress": "قيد العمل",
-    "noCheckOut": "بدون تسجيل خروج",
-    "sessions": "{count, plural, one {جلسة واحدة} two {جلستان} few {# جلسات} many {# جلسة} other {# جلسة}}"
   }
 }

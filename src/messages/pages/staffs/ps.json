@@ -143,26 +143,5 @@
     "thisWeek": "دا اونۍ",
     "inSince": "له {time} راهیسې دننه",
     "noCheckOut": "وتل نشته"
-  },
-  "myAttendancePage": {
-    "title": "زما حاضري",
-    "subtitle": "ستاسو د راتګ او وتلو تاریخچه.",
-    "previousWeek": "تېره اونۍ",
-    "nextWeek": "راتلونکې اونۍ",
-    "goToCurrentWeek": "اوسنۍ اونۍ ته لاړ شئ",
-    "cards": {
-      "thisWeek": "دا اونۍ",
-      "daysWorked": "د کار ورځې",
-      "avgPerDay": "په ورځ کې اوسط",
-      "status": "اوسنی حالت"
-    },
-    "statusIn": "راتګ په {time}",
-    "statusOut": "راتګ نه دی ثبت شوی",
-    "today": "نن",
-    "upcoming": "راتلونکی",
-    "noAttendance": "حاضري نشته",
-    "inProgress": "روان دی",
-    "noCheckOut": "وتل نشته",
-    "sessions": "{count} ناستې"
   }
 }

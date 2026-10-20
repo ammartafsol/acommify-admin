@@ -143,26 +143,5 @@
     "thisWeek": "Wannan makon",
     "inSince": "Ya shiga {time}",
     "noCheckOut": "Babu fita"
-  },
-  "myAttendancePage": {
-    "title": "Halartata",
-    "subtitle": "Tarihin shiga da fitarka.",
-    "previousWeek": "Makon da ya gabata",
-    "nextWeek": "Mako mai zuwa",
-    "goToCurrentWeek": "Je zuwa makon yanzu",
-    "cards": {
-      "thisWeek": "Wannan makon",
-      "daysWorked": "Kwanakin aiki",
-      "avgPerDay": "Matsakaici a rana",
-      "status": "Matsayi yanzu"
-    },
-    "statusIn": "An shiga da {time}",
-    "statusOut": "Ba a yi shiga ba",
-    "today": "Yau",
-    "upcoming": "Mai zuwa",
-    "noAttendance": "Babu halarta",
-    "inProgress": "Ana ci gaba",
-    "noCheckOut": "Babu fita",
-    "sessions": "Zama {count}"
   }
 }

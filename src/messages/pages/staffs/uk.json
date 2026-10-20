@@ -143,26 +143,5 @@
     "thisWeek": "Цей тиждень",
     "inSince": "Прийшов о {time}",
     "noCheckOut": "Без виходу"
-  },
-  "myAttendancePage": {
-    "title": "Моя відвідуваність",
-    "subtitle": "Історія ваших приходів і виходів.",
-    "previousWeek": "Попередній тиждень",
-    "nextWeek": "Наступний тиждень",
-    "goToCurrentWeek": "Перейти до поточного тижня",
-    "cards": {
-      "thisWeek": "Цей тиждень",
-      "daysWorked": "Відпрацьовані дні",
-      "avgPerDay": "У середньому за день",
-      "status": "Статус зараз"
-    },
-    "statusIn": "Прихід о {time}",
-    "statusOut": "Прихід не відмічено",
-    "today": "Сьогодні",
-    "upcoming": "Попереду",
-    "noAttendance": "Немає відвідувань",
-    "inProgress": "Триває",
-    "noCheckOut": "Без виходу",
-    "sessions": "{count, plural, one {# сеанс} few {# сеанси} many {# сеансів} other {# сеансу}}"
   }
 }

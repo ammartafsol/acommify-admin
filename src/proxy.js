@@ -44,9 +44,10 @@ const getLocale = (request) => {
 // Admin routes that require admin role specifically
 const ADMIN_ONLY_ROUTES = ["/centres"];
 
-// Route prefixes a role may never open, and routes only one role may open
-const ROLE_BLOCKED_ROUTES = { staff: ["/staffs"] };
-const ROLE_ONLY_ROUTES = { "/my-attendance": ["staff"] };
+// Route prefixes a role may never open, and routes only one role may open.
+// (Staffs pages are controlled by permissions, not by role.)
+const ROLE_BLOCKED_ROUTES = {};
+const ROLE_ONLY_ROUTES = {};
 
 const stripLocale = (pathname) =>
   pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
@@ -191,7 +192,7 @@ export default function proxy(request) {
     } = getUserPermissions(request);
     const requiredPermissions = getRoutePermissions(pathname);
 
-    // Check role-based route rules (e.g. staff can't open the Staffs section)
+    // Check role-based route rules (none configured right now)
     if (isRouteBlockedForRole(pathname, userRole)) {
       logAccess(pathname, userRole, false, ["role-access"], user);
       const accessDeniedUrl = new URL("/en/access-denied", request.url);

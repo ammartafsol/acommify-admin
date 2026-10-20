@@ -143,26 +143,5 @@
     "thisWeek": "ეს კვირა",
     "inSince": "მოვიდა {time}-ზე",
     "noCheckOut": "წასვლის გარეშე"
-  },
-  "myAttendancePage": {
-    "title": "ჩემი დასწრება",
-    "subtitle": "თქვენი მოსვლისა და წასვლის ისტორია.",
-    "previousWeek": "წინა კვირა",
-    "nextWeek": "შემდეგი კვირა",
-    "goToCurrentWeek": "მიმდინარე კვირაზე გადასვლა",
-    "cards": {
-      "thisWeek": "ეს კვირა",
-      "daysWorked": "ნამუშევარი დღეები",
-      "avgPerDay": "საშუალოდ დღეში",
-      "status": "ახლანდელი სტატუსი"
-    },
-    "statusIn": "მოსვლა {time}-ზე",
-    "statusOut": "მოსვლა არ არის აღრიცხული",
-    "today": "დღეს",
-    "upcoming": "მომავალი",
-    "noAttendance": "დასწრება არ არის",
-    "inProgress": "მიმდინარეობს",
-    "noCheckOut": "წასვლის გარეშე",
-    "sessions": "{count} სესია"
   }
 }

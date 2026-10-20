@@ -27,19 +27,11 @@ export const headerDataMobile = (t, permissions = [], user = {}) =>
         icon: "/svg/dashboardIcon.svg",
       },
 
-    user?.role === "staff" && {
-      label: t("adminHeader.myAttendance"),
-      route: "/my-attendance",
-      icon: "/svg/timeSlots.svg",
+    permissions.includes("view-staff") && {
+      label: t("adminHeader.staffs"),
+      route: "/staffs",
+      icon: "/svg/staff.svg",
     },
-
-    // Staff members never see the Staffs section (it is for managers)
-    permissions.includes("view-staff") &&
-      user?.role !== "staff" && {
-        label: t("adminHeader.staffs"),
-        route: "/staffs",
-        icon: "/svg/staff.svg",
-      },
     permissions.includes("view-residents") && {
       label: t("adminHeader.residents"),
       route: "/residents",
@@ -135,19 +127,11 @@ export const headerData = (t, permissions = [], user = {}) =>
         icon: "/svg/dashboardIcon.svg",
       },
 
-    user?.role === "staff" && {
-      label: t("adminHeader.myAttendance"),
-      route: "/my-attendance",
-      icon: "/svg/timeSlots.svg",
+    permissions.includes("view-staff") && {
+      label: t("adminHeader.staffs"),
+      route: "/staffs",
+      icon: "/svg/staff.svg",
     },
-
-    // Staff members never see the Staffs section (it is for managers)
-    permissions.includes("view-staff") &&
-      user?.role !== "staff" && {
-        label: t("adminHeader.staffs"),
-        route: "/staffs",
-        icon: "/svg/staff.svg",
-      },
     permissions.includes("view-accommodations") && {
       label: t("adminHeader.roomsHouses"),
       route: "/rooms-houses",

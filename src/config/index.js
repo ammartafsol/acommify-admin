@@ -5,8 +5,8 @@ const config = {
   // apiBaseUrl: "https://api.acommify.com", //production
   // apiBaseUrl: "https://v2w2xmx9-3080.asse.devtunnels.ms", //dev
   // apiBaseUrl: "https://v2w2xmx9-3080.asse.devtunnels.ms", //dev
-  apiBaseUrl: "https://acommify-backend-dd-871df76912e4.herokuapp.com", //dev
-  // apiBaseUrl: "https://v2w2xmx9-3080.asse.devtunnels.ms", //local
+  // apiBaseUrl: "https://acommify-backend-dd-871df76912e4.herokuapp.com", //dev
+  apiBaseUrl: "https://v2w2xmx9-3080.asse.devtunnels.ms", //local
   awsBaseUrl: "https://acommify-bucket.s3.eu-north-1.amazonaws.com",
   siteKey: "",
 };
