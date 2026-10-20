@@ -66,3 +66,24 @@
     font-size: 14px;
   }
 }
+
+/* Count badge (e.g. "Pending 3") */
+.countBadge {
+  min-width: 22px;
+  height: 22px;
+  padding: 0 7px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef1f5;
+  color: #4b5563;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.countBadgeActive {
+  background: #fff;
+  color: #33b5f6;
+}

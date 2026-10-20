@@ -40,6 +40,7 @@ export default function MaintenanceRequests() {
   const [tableData, setTableData] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalRecords, setTotalRecords] = useState(0);
+  const [statusCounts, setStatusCounts] = useState({});
   const [loading, setLoading] = useState("");
   const [search, setSearch] = useState("");
   const [priority, setPriority] = useState("all");
@@ -53,7 +54,7 @@ export default function MaintenanceRequests() {
     { value: "rejected", label: t("tabs.rejected") },
     { value: "completed", label: t("tabs.completed") },
     { value: "escalated", label: t("tabs.escalated") },
-  ];
+  ].map((tab) => ({ ...tab, count: statusCounts?.[tab.value] ?? 0 }));
 
   const getMenuItems = (data) => {
     const items = [
@@ -169,6 +170,7 @@ export default function MaintenanceRequests() {
       );
       setTableData(formattedData);
       setTotalRecords(response?.totalRecords || 0);
+      if (response?.statusCounts) setStatusCounts(response.statusCounts);
     }
     setLoading("");
   };
@@ -309,6 +311,7 @@ export default function MaintenanceRequests() {
               router.push(`/maintenance-requests/${data.slug}`);
             }}
             totalRecords={totalRecords}
+            statusCounts={statusCounts}
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
           />

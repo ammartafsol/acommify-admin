@@ -35,6 +35,9 @@
 
 .tab {
   flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   height: 40px;
   padding: 0 16px;
   border-radius: 999px;
@@ -54,6 +57,25 @@
   border-color: #3b82f6;
   color: #fff;
   box-shadow: 0 6px 14px rgba(59, 130, 246, 0.28);
+}
+
+.tabCount {
+  min-width: 24px;
+  height: 24px;
+  padding: 0 7px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef1f5;
+  color: #4b5563;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tabActive .tabCount {
+  background: #fff;
+  color: #3b82f6;
 }
 
 .tab:disabled {

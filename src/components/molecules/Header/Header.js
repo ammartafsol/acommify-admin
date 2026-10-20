@@ -51,6 +51,11 @@ export default function Header() {
     }
   }, [width]);
 
+  // Always land on a new page (e.g. /dashboard after login) with the menu closed
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathName]);
+
   // Scroll navigation to active item
   useEffect(() => {
     if (navRef.current) {

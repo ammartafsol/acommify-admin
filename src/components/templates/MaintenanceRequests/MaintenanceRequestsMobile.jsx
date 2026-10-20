@@ -46,6 +46,7 @@ export default function MaintenanceRequestsMobile({
   priority,
   setPriority,
   totalRecords,
+  statusCounts = {},
   currentPage,
   setCurrentPage,
 }) {
@@ -78,6 +79,7 @@ export default function MaintenanceRequestsMobile({
   const tabs = [
     { value: "all", label: t("tabs.all") },
     { value: "pending", label: t("tabs.pending") },
+    { value: "in-progress", label: t("tabs.inprogress") },
     { value: "rejected", label: t("tabs.rejected") },
     { value: "completed", label: t("tabs.completed") },
     { value: "escalated", label: t("tabs.escalated") },
@@ -102,6 +104,9 @@ export default function MaintenanceRequestsMobile({
             disabled={loading}
           >
             {tab.label}
+            <span className={styles.tabCount}>
+              {statusCounts?.[tab.value] ?? 0}
+            </span>
           </button>
         ))}
       </div>
