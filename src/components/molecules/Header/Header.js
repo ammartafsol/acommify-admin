@@ -88,6 +88,8 @@ export default function Header() {
     Cookies.remove("role");
     Cookies.remove("user_permissions");
     router.push("/");
+    // The header stays mounted across pages, so re-enable the button for the next login
+    setLoggingOut(false);
   }
 
   if (
