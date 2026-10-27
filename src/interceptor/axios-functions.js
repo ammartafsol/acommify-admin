@@ -15,7 +15,8 @@ const isLoginRoute = (pathname) => {
     pathname === "/" ||
     pathname === "/login" ||
     pathname === "/login/admin" ||
-    pathname === "/login/staff" ||
+    pathname === "/login/center" ||
+    pathname === "/login/center-staff" ||
     pathname === "/login/nationwide-dashboard"
   );
 };

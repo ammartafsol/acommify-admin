@@ -108,17 +108,17 @@ export default function Login({ type = "admin" }) {
   const otherLogins = [
     {
       type: "business-owner",
-      href: "/login",
+      href: "/login/center",
       labelKey: "gotoBusinessOwnerLogin",
     },
     {
       type: "centre-staff",
-      href: "/login/staff",
+      href: "/login/center-staff",
       labelKey: "gotoCentreStaffLogin",
     },
     {
       type: "admin",
-      href: "/login/admin",
+      href: "/login",
       labelKey: "gotoAdminLogin",
     },
   ].filter((login) => login.type !== type);

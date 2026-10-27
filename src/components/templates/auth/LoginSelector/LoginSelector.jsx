@@ -4,25 +4,14 @@ import { useTranslations } from "@/resources/hooks/useTranslations";
 import { mergeClass } from "@/resources/utils/helper";
 import { Container } from "react-bootstrap";
 import { HiOutlineArrowRight } from "react-icons/hi2";
-import { LuBuilding2, LuShieldCheck, LuUsers } from "react-icons/lu";
+import { LuShieldCheck } from "react-icons/lu";
 import { ReactSVG } from "react-svg";
 import styles from "./styles.module.css";
 
 const LOGIN_OPTIONS = [
+  // Centre and Centre Staff logins are linked from the resident website header
   {
     href: "/login",
-    labelKey: "selectCentre",
-    descKey: "descCentre",
-    Icon: LuBuilding2,
-  },
-  {
-    href: "/login/staff",
-    labelKey: "selectCentreStaff",
-    descKey: "descCentreStaff",
-    Icon: LuUsers,
-  },
-  {
-    href: "/login/admin",
     labelKey: "selectAdmin",
     descKey: "descAdmin",
     Icon: LuShieldCheck,
