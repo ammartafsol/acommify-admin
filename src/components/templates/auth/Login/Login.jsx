@@ -105,17 +105,8 @@ export default function Login({ type = "admin" }) {
   };
   const titleKey = titleByType[type] || "titleCentre";
 
+  // Centre / Centre Staff logins are linked from the resident website, not from here
   const otherLogins = [
-    {
-      type: "business-owner",
-      href: "/login/center",
-      labelKey: "gotoBusinessOwnerLogin",
-    },
-    {
-      type: "centre-staff",
-      href: "/login/center-staff",
-      labelKey: "gotoCentreStaffLogin",
-    },
     {
       type: "admin",
       href: "/login",
