@@ -21,7 +21,15 @@
     "loginButton": "Login",
     "gotoBusinessOwnerLogin": "Sign in as Centre",
     "gotoAdminLogin": "Go to Admin Login",
-    "gotoNationWideLogin": "Go to Nationwide Dashboard Login"
+    "gotoNationWideLogin": "Go to Nationwide Dashboard Login",
+    "titleCentreStaff": "Centre Staff Login",
+    "selectCentreStaff": "Centre Staff",
+    "descCentre": "Centre management and administration.",
+    "descCentreStaff": "Staff access to their Centre.",
+    "descAdmin": "Acommify administration.",
+    "gotoCentreStaffLogin": "Sign in as Centre Staff",
+    "useCentreStaffLogin": "This is a Centre Staff account. Please use the Centre Staff login.",
+    "useCentreLogin": "This is a Centre account. Please use the Centre login."
   },
   "forgotPasswordPage": {
     "title": "Forgot Password",
@@ -59,7 +67,6 @@
     "confirmPasswordRequired": "Password is required",
     "ConfirmPasswordError": "Passwords do not match",
     "submitButton": "Reset Password",
-
     "modal": {
       "title": "Your password has been successfully changed!",
       "btnText": "Continue"

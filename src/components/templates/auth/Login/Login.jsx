@@ -38,6 +38,12 @@ export default function Login({ type = "admin" }) {
       handleSubmit(values);
     },
   });
+  // Centre and Centre Staff share one backend login; each page only accepts its own role
+  const expectedRole = {
+    "business-owner": "business-owner",
+    "centre-staff": "staff",
+  }[type];
+
   const handleSubmit = async (values) => {
     setLoading("loading");
     const { response } = await Post({
@@ -49,6 +55,15 @@ export default function Login({ type = "admin" }) {
             : "auth/business-owner/login",
       data: values,
     });
+    const role = response?.data?.user?.role;
+    if (response && expectedRole && role !== expectedRole) {
+      RenderToast({
+        type: "error",
+        message: t(role === "staff" ? "useCentreStaffLogin" : "useCentreLogin"),
+      });
+      setLoading("");
+      return;
+    }
     if (response) {
       const data = response?.data;
       dispatch(saveLoginUserData(data));
@@ -86,6 +101,7 @@ export default function Login({ type = "admin" }) {
     admin: "titleAdmin",
     "nationwide-dashboard": "titleNationwide",
     "business-owner": "titleCentre",
+    "centre-staff": "titleCentreStaff",
   };
   const titleKey = titleByType[type] || "titleCentre";
 
@@ -96,9 +112,9 @@ export default function Login({ type = "admin" }) {
       labelKey: "gotoBusinessOwnerLogin",
     },
     {
-      type: "nationwide-dashboard",
-      href: "/login/nationwide-dashboard",
-      labelKey: "gotoNationWideLogin",
+      type: "centre-staff",
+      href: "/login/staff",
+      labelKey: "gotoCentreStaffLogin",
     },
     {
       type: "admin",

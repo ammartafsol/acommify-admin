@@ -21,7 +21,15 @@
     "loginButton": "تسجيل الدخول",
     "gotoBusinessOwnerLogin": "تسجيل الدخول كمركز",
     "gotoAdminLogin": "الانتقال إلى تسجيل دخول المسؤول",
-    "gotoNationWideLogin": "الانتقال إلى تسجيل دخول لوحة القيادة الوطنية"
+    "gotoNationWideLogin": "الانتقال إلى تسجيل دخول لوحة القيادة الوطنية",
+    "titleCentreStaff": "تسجيل دخول موظفي المركز",
+    "selectCentreStaff": "موظفو المركز",
+    "descCentre": "إدارة المركز وتشغيله.",
+    "descCentreStaff": "وصول الموظفين إلى مركزهم.",
+    "descAdmin": "إدارة Acommify.",
+    "gotoCentreStaffLogin": "تسجيل الدخول كموظف مركز",
+    "useCentreStaffLogin": "هذا حساب موظف مركز. يرجى استخدام تسجيل دخول موظفي المركز.",
+    "useCentreLogin": "هذا حساب مركز. يرجى استخدام تسجيل دخول المركز."
   },
   "forgotPasswordPage": {
     "title": "نسيت كلمة المرور",
@@ -59,7 +67,6 @@
     "confirmPasswordRequired": "كلمة المرور مطلوبة",
     "ConfirmPasswordError": "كلمات المرور غير متطابقة",
     "submitButton": "إعادة تعيين كلمة المرور",
-
     "modal": {
       "title": "تم تغيير كلمة المرور بنجاح!",
       "btnText": "متابعة"

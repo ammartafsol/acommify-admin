@@ -21,7 +21,15 @@
     "loginButton": "Увійти",
     "gotoBusinessOwnerLogin": "Увійти як Центр",
     "gotoAdminLogin": "Перейти до входу адміністратора",
-    "gotoNationWideLogin": "Перейти до входу в національну панель управління"
+    "gotoNationWideLogin": "Перейти до входу в національну панель управління",
+    "titleCentreStaff": "Вхід для персоналу центру",
+    "selectCentreStaff": "Персонал центру",
+    "descCentre": "Керування та адміністрування центру.",
+    "descCentreStaff": "Доступ персоналу до свого центру.",
+    "descAdmin": "Адміністрування Acommify.",
+    "gotoCentreStaffLogin": "Увійти як персонал центру",
+    "useCentreStaffLogin": "Це обліковий запис персоналу центру. Скористайтеся входом для персоналу центру.",
+    "useCentreLogin": "Це обліковий запис центру. Скористайтеся входом для центру."
   },
   "forgotPasswordPage": {
     "title": "Забули пароль",
@@ -59,7 +67,6 @@
     "confirmPasswordRequired": "Пароль є обов'язковим",
     "ConfirmPasswordError": "Паролі не співпадають",
     "submitButton": "Скинути пароль",
-
     "modal": {
       "title": "Ваш пароль успішно змінено!",
       "btnText": "Продовжити"

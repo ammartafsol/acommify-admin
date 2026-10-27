@@ -21,7 +21,15 @@
     "loginButton": "Entrar",
     "gotoBusinessOwnerLogin": "Entrar como Centro",
     "gotoAdminLogin": "Ir para Login do Administrador",
-    "gotoNationWideLogin": "Ir para Login do Dashboard Nacional"
+    "gotoNationWideLogin": "Ir para Login do Dashboard Nacional",
+    "titleCentreStaff": "Acesso dos funcionários do centro",
+    "selectCentreStaff": "Funcionários do centro",
+    "descCentre": "Gestão e administração do centro.",
+    "descCentreStaff": "Acesso dos funcionários ao seu centro.",
+    "descAdmin": "Administração da Acommify.",
+    "gotoCentreStaffLogin": "Entrar como funcionário do centro",
+    "useCentreStaffLogin": "Esta é uma conta de funcionário do centro. Use o acesso de funcionários do centro.",
+    "useCentreLogin": "Esta é uma conta de centro. Use o acesso de centro."
   },
   "forgotPasswordPage": {
     "title": "Esqueceu a Senha",
@@ -59,7 +67,6 @@
     "confirmPasswordRequired": "Senha é obrigatória",
     "ConfirmPasswordError": "As senhas não coincidem",
     "submitButton": "Redefinir Senha",
-
     "modal": {
       "title": "Sua senha foi alterada com sucesso!",
       "btnText": "Continuar"

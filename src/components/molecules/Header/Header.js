@@ -102,6 +102,7 @@ export default function Header() {
       "/verify-otp",
       "/access-denied",
       "/login/admin",
+      "/login/staff",
       "/login/nationwide-dashboard",
     ].includes(pathName)
   ) {

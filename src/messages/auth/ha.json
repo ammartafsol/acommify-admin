@@ -21,7 +21,15 @@
     "loginButton": "Shiga",
     "gotoBusinessOwnerLogin": "Shiga a matsayin Cibiyar",
     "gotoAdminLogin": "Je zuwa Shiga Admin",
-    "gotoNationWideLogin": "Je zuwa Shiga Dashboard Nationwide"
+    "gotoNationWideLogin": "Je zuwa Shiga Dashboard Nationwide",
+    "titleCentreStaff": "Shigar ma'aikatan cibiya",
+    "selectCentreStaff": "Ma'aikatan cibiya",
+    "descCentre": "Gudanarwa da kula da cibiya.",
+    "descCentreStaff": "Damar ma'aikata zuwa cibiyarsu.",
+    "descAdmin": "Gudanar da Acommify.",
+    "gotoCentreStaffLogin": "Shiga a matsayin ma'aikacin cibiya",
+    "useCentreStaffLogin": "Wannan asusun ma'aikacin cibiya ne. Da fatan a yi amfani da shigar ma'aikatan cibiya.",
+    "useCentreLogin": "Wannan asusun cibiya ne. Da fatan a yi amfani da shigar cibiya."
   },
   "forgotPasswordPage": {
     "title": "Manta Kalmar sirri",
@@ -59,7 +67,6 @@
     "confirmPasswordRequired": "Kalmar sirri tana buƙata",
     "ConfirmPasswordError": "Kalmomin sirri ba su daidaita ba",
     "submitButton": "Sake Saita Kalmar sirri",
-
     "modal": {
       "title": "An canza kalmar sirri cikin nasara!",
       "btnText": "Ci gaba"

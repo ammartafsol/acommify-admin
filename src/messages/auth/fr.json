@@ -21,7 +21,15 @@
     "loginButton": "Se connecter",
     "gotoBusinessOwnerLogin": "Se connecter en tant que Centre",
     "gotoAdminLogin": "Aller à la connexion administrateur",
-    "gotoNationWideLogin": "Aller à la connexion du tableau de bord national"
+    "gotoNationWideLogin": "Aller à la connexion du tableau de bord national",
+    "titleCentreStaff": "Connexion personnel du centre",
+    "selectCentreStaff": "Personnel du centre",
+    "descCentre": "Gestion et administration du centre.",
+    "descCentreStaff": "Accès du personnel à son centre.",
+    "descAdmin": "Administration d’Acommify.",
+    "gotoCentreStaffLogin": "Se connecter en tant que personnel du centre",
+    "useCentreStaffLogin": "Ce compte est un compte du personnel du centre. Utilisez la connexion personnel du centre.",
+    "useCentreLogin": "Ce compte est un compte de centre. Utilisez la connexion centre."
   },
   "forgotPasswordPage": {
     "title": "Mot de passe oublié",
@@ -59,7 +67,6 @@
     "confirmPasswordRequired": "Le mot de passe est requis",
     "ConfirmPasswordError": "Les mots de passe ne correspondent pas",
     "submitButton": "Réinitialiser le Mot de passe",
-
     "modal": {
       "title": "Votre mot de passe a été modifié avec succès !",
       "btnText": "Continuer"

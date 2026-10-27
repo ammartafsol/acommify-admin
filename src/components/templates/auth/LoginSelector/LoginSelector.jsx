@@ -4,7 +4,7 @@ import { useTranslations } from "@/resources/hooks/useTranslations";
 import { mergeClass } from "@/resources/utils/helper";
 import { Container } from "react-bootstrap";
 import { HiOutlineArrowRight } from "react-icons/hi2";
-import { LuBuilding2, LuLayoutDashboard, LuShieldCheck } from "react-icons/lu";
+import { LuBuilding2, LuShieldCheck, LuUsers } from "react-icons/lu";
 import { ReactSVG } from "react-svg";
 import styles from "./styles.module.css";
 
@@ -12,16 +12,19 @@ const LOGIN_OPTIONS = [
   {
     href: "/login",
     labelKey: "selectCentre",
+    descKey: "descCentre",
     Icon: LuBuilding2,
   },
   {
-    href: "/login/nationwide-dashboard",
-    labelKey: "selectNationwide",
-    Icon: LuLayoutDashboard,
+    href: "/login/staff",
+    labelKey: "selectCentreStaff",
+    descKey: "descCentreStaff",
+    Icon: LuUsers,
   },
   {
     href: "/login/admin",
     labelKey: "selectAdmin",
+    descKey: "descAdmin",
     Icon: LuShieldCheck,
   },
 ];
@@ -52,7 +55,10 @@ export default function LoginSelector() {
                 <span className={styles.optionIcon}>
                   <Icon size={22} aria-hidden />
                 </span>
-                <span className={styles.optionLabel}>{t(option.labelKey)}</span>
+                <span className={styles.optionText}>
+                  <span className={styles.optionLabel}>{t(option.labelKey)}</span>
+                  <span className={styles.optionDesc}>{t(option.descKey)}</span>
+                </span>
                 <span className={styles.optionArrow} aria-hidden>
                   <HiOutlineArrowRight size={18} />
                 </span>

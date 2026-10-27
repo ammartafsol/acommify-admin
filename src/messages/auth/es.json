@@ -21,7 +21,15 @@
     "loginButton": "Iniciar Sesión",
     "gotoBusinessOwnerLogin": "Iniciar sesión como Centro",
     "gotoAdminLogin": "Ir al inicio de sesión del administrador",
-    "gotoNationWideLogin": "Ir al inicio de sesión del panel de control nacional"
+    "gotoNationWideLogin": "Ir al inicio de sesión del panel de control nacional",
+    "titleCentreStaff": "Acceso del personal del centro",
+    "selectCentreStaff": "Personal del centro",
+    "descCentre": "Gestión y administración del centro.",
+    "descCentreStaff": "Acceso del personal a su centro.",
+    "descAdmin": "Administración de Acommify.",
+    "gotoCentreStaffLogin": "Acceder como personal del centro",
+    "useCentreStaffLogin": "Esta es una cuenta de personal del centro. Usa el acceso de personal del centro.",
+    "useCentreLogin": "Esta es una cuenta de centro. Usa el acceso de centro."
   },
   "forgotPasswordPage": {
     "title": "Olvidó la Contraseña",
@@ -59,7 +67,6 @@
     "confirmPasswordRequired": "La contraseña es requerida",
     "ConfirmPasswordError": "Las contraseñas no coinciden",
     "submitButton": "Restablecer Contraseña",
-
     "modal": {
       "title": "¡Su contraseña ha sido cambiada exitosamente!",
       "btnText": "Continuar"

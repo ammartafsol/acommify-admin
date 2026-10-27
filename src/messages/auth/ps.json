@@ -21,7 +21,15 @@
     "loginButton": "ننوتل",
     "gotoBusinessOwnerLogin": "د مرکز په توګه ننوتل",
     "gotoAdminLogin": "د مدیر ننوتل ته لاړ شئ",
-    "gotoNationWideLogin": "د ملي ډشبورډ ننوتل ته لاړ شئ"
+    "gotoNationWideLogin": "د ملي ډشبورډ ننوتل ته لاړ شئ",
+    "titleCentreStaff": "د مرکز د کارکوونکو ننوتل",
+    "selectCentreStaff": "د مرکز کارکوونکي",
+    "descCentre": "د مرکز مدیریت او اداره.",
+    "descCentreStaff": "خپل مرکز ته د کارکوونکو لاسرسی.",
+    "descAdmin": "د Acommify اداره.",
+    "gotoCentreStaffLogin": "د مرکز د کارکوونکي په توګه ننوځئ",
+    "useCentreStaffLogin": "دا د مرکز د کارکوونکي حساب دی. مهرباني وکړئ د مرکز د کارکوونکو ننوتل وکاروئ.",
+    "useCentreLogin": "دا د مرکز حساب دی. مهرباني وکړئ د مرکز ننوتل وکاروئ."
   },
   "forgotPasswordPage": {
     "title": "پاسورډ هیر شوی",
@@ -59,7 +67,6 @@
     "confirmPasswordRequired": "پاسورډ اړین دی",
     "ConfirmPasswordError": "پاسورډونه سمون نلري",
     "submitButton": "پاسورډ بیا تنظیم کړئ",
-
     "modal": {
       "title": "ستاسو پاسورډ په بریالیتوب سره بدل شو!",
       "btnText": "دوام ورکړئ"

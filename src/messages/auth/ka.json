@@ -21,7 +21,15 @@
     "loginButton": "შესვლა",
     "gotoBusinessOwnerLogin": "შესვლა როგორც ცენტრი",
     "gotoAdminLogin": "გადადით ადმინისტრატორის შესვლაზე",
-    "gotoNationWideLogin": "გადადით ეროვნული დაფის შესვლაზე"
+    "gotoNationWideLogin": "გადადით ეროვნული დაფის შესვლაზე",
+    "titleCentreStaff": "ცენტრის პერსონალის შესვლა",
+    "selectCentreStaff": "ცენტრის პერსონალი",
+    "descCentre": "ცენტრის მართვა და ადმინისტრირება.",
+    "descCentreStaff": "პერსონალის წვდომა საკუთარ ცენტრზე.",
+    "descAdmin": "Acommify-ის ადმინისტრირება.",
+    "gotoCentreStaffLogin": "შესვლა ცენტრის პერსონალად",
+    "useCentreStaffLogin": "ეს ცენტრის პერსონალის ანგარიშია. გამოიყენეთ ცენტრის პერსონალის შესვლა.",
+    "useCentreLogin": "ეს ცენტრის ანგარიშია. გამოიყენეთ ცენტრის შესვლა."
   },
   "forgotPasswordPage": {
     "title": "პაროლის აღდგენა",
@@ -59,7 +67,6 @@
     "confirmPasswordRequired": "პაროლი აუცილებელია",
     "ConfirmPasswordError": "პაროლები არ ემთხვევა",
     "submitButton": "პაროლის განახლება",
-
     "modal": {
       "title": "თქვენი პაროლი წარმატებით შეიცვალა!",
       "btnText": "გაგრძელება"
