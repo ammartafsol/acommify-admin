@@ -105,15 +105,6 @@ export default function Login({ type = "admin" }) {
   };
   const titleKey = titleByType[type] || "titleCentre";
 
-  // Centre / Centre Staff logins are linked from the resident website, not from here
-  const otherLogins = [
-    {
-      type: "admin",
-      href: "/login",
-      labelKey: "gotoAdminLogin",
-    },
-  ].filter((login) => login.type !== type);
-
   return (
     <Container className={mergeClass("containerFluid", styles.wrapper)}>
       <div className={styles.loginBox}>
@@ -164,13 +155,6 @@ export default function Login({ type = "admin" }) {
           showSpinner={loading}
           disabled={loading}
         />
-        <div className={styles.registerLink}>
-          {otherLogins.map((login) => (
-            <Link key={login.href} className={styles.link} href={login.href}>
-              {t(login.labelKey)}
-            </Link>
-          ))}
-        </div>
       </div>
     </Container>
   );
