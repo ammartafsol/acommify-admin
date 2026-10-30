@@ -399,7 +399,7 @@ function DayCell({ day, date, locale, t }) {
       tabIndex={0}
       aria-label={t("history.title", { count: sessionCount })}
     >
-      <strong>{day.minutes ? formatDuration(day.minutes) : "0h 00m"}</strong>
+      <strong>{formatDuration(day.minutes)}</strong>
       {day.status === "checked-in" && (
         <span className={styles.cellStatus}>
           <i className={styles.dotIn} />

@@ -45,7 +45,8 @@ export function sessionMinutes(record, now = new Date()) {
   if (record.missedCheckOut && !record.checkOut) return 0;
   const start = new Date(record.checkIn).getTime();
   const end = record.checkOut ? new Date(record.checkOut).getTime() : now.getTime();
-  return Math.max(0, Math.round((end - start) / 60000));
+  // Exact (fractional) minutes, so totals aren't rounded before display
+  return Math.max(0, (end - start) / 60000);
 }
 
 /**
@@ -113,13 +114,15 @@ export function sumMinutes(records = [], now = new Date()) {
   return records.reduce((sum, r) => sum + sessionMinutes(r, now), 0);
 }
 
-/** 535 → "8h 55m", 12 → "12m" */
+/**
+ * Decimal hours cut off (never rounded up) at 2 decimals:
+ * 535.67 min (8h 55m 40s) → "8.92 h", 12 min → "0.20 h".
+ */
 export function formatDuration(totalMinutes) {
-  const mins = Math.max(0, Math.round(totalMinutes || 0));
-  const h = Math.floor(mins / 60);
-  const m = mins % 60;
-  if (!h) return `${m}m`;
-  return `${h}h ${String(m).padStart(2, "0")}m`;
+  const hours = Math.max(0, totalMinutes || 0) / 60;
+  // Tiny epsilon stops float noise (e.g. 0.29999…) from cutting off a cent too much
+  const truncated = Math.floor(hours * 100 + 1e-9) / 100;
+  return `${truncated.toFixed(2)} h`;
 }
 
 export function formatTime(date, locale = "en") {
