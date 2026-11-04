@@ -12,6 +12,10 @@
       "startLocation": "დაწყების ადგილი",
       "endLocation": "დასრულების ადგილი",
       "capacity": "ტევადობა",
+      "totalCapacity": "სულ ტევადობა",
+      "availableCapacity": "ხელმისაწვდომი ადგილები",
+      "nextTrip": "შემდეგი რეისი: {date}",
+      "noUpcomingTrip": "მომავალი რეისი არ არის",
       "status": "სტატუსი",
       "startTime": "დაწყების დრო",
       "endTime": "დასრულების დრო",
@@ -23,6 +27,7 @@
         { "label": "ყველა", "value": "all" },
         { "label": "აქტიური", "value": "active" },
         { "label": "არააქტიური", "value": "inactive" },
+        { "label": "ვადაგასული", "value": "expired" },
         { "label": "მოვლა", "value": "maintenance" }
       ]
     },

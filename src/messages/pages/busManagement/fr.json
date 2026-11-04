@@ -12,6 +12,10 @@
       "startLocation": "Lieu de Départ",
       "endLocation": "Lieu d'Arrivée",
       "capacity": "Capacité",
+      "totalCapacity": "Capacité totale",
+      "availableCapacity": "Capacité disponible",
+      "nextTrip": "Prochain trajet : {date}",
+      "noUpcomingTrip": "Aucun trajet à venir",
       "status": "Statut",
       "startTime": "Heure de Départ",
       "endTime": "Heure d'Arrivée",
@@ -23,6 +27,7 @@
         { "label": "Tous", "value": "all" },
         { "label": "Actif", "value": "active" },
         { "label": "Inactif", "value": "inactive" },
+        { "label": "Expiré", "value": "expired" },
         { "label": "Maintenance", "value": "maintenance" }
       ]
     },

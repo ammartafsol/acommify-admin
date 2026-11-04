@@ -12,6 +12,10 @@
       "startLocation": "موقع البداية",
       "endLocation": "موقع النهاية",
       "capacity": "السعة",
+      "totalCapacity": "السعة الإجمالية",
+      "availableCapacity": "السعة المتاحة",
+      "nextTrip": "الرحلة التالية: {date}",
+      "noUpcomingTrip": "لا توجد رحلات قادمة",
       "status": "الحالة",
       "startTime": "وقت البداية",
       "endTime": "وقت النهاية",
@@ -23,6 +27,7 @@
         { "label": "الكل", "value": "all" },
         { "label": "نشط", "value": "active" },
         { "label": "غير نشط", "value": "inactive" },
+        { "label": "منتهي الصلاحية", "value": "expired" },
         { "label": "صيانة", "value": "maintenance" }
       ]
     },

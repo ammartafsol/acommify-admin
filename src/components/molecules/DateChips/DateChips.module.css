@@ -1,0 +1,186 @@
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid #d6ecfb;
+  background: #eef8fe;
+  color: #0b6aa2;
+  font-family: var(--font-lato);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Dates that have already passed */
+.past {
+  border-color: #eaecf0;
+  background: #f2f4f7;
+  color: #98a2b3;
+  text-decoration: line-through;
+}
+
+.more {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border: none;
+  border-radius: 999px;
+  background: var(--Blue, #33b5f6);
+  color: #fff;
+  font-family: var(--font-lato);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.more:hover,
+.more:focus-visible {
+  background: #1c96d8;
+  outline: none;
+}
+
+.empty {
+  color: #8c939b;
+}
+
+.popover {
+  position: fixed;
+  z-index: 3000;
+  max-width: 280px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--Poor-white, #fff);
+  box-shadow:
+    0 12px 32px rgba(23, 42, 51, 0.16),
+    0 0 0 1px rgba(23, 42, 51, 0.06);
+  pointer-events: none;
+  animation: popIn 0.12s ease-out;
+}
+
+.popoverTitle {
+  margin: 0 0 8px;
+  color: var(--Dark-gray, #8c939b);
+  font-family: var(--font-lato);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.popoverChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .popover {
+    animation: none;
+  }
+}
+
+/* Whole cell opens the list on hover */
+.hoverable {
+  cursor: default;
+}
+
+/* ---------- Per-date seats list ---------- */
+.popoverList {
+  min-width: 220px;
+  max-width: 300px;
+  padding: 10px 12px 8px;
+}
+
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #f0f2f5;
+  color: var(--Dark-gray, #8c939b);
+  font-family: var(--font-lato);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 0;
+}
+
+.list li + li {
+  border-top: 1px dashed #f0f2f5;
+}
+
+.seats {
+  font-family: var(--font-lato);
+  font-size: 13px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: #98a2b3;
+}
+
+.ok {
+  color: #039855;
+}
+
+.low {
+  color: #dc6803;
+}
+
+.full {
+  color: #d92d20;
+}
+
+.rowPast .seats {
+  font-weight: 600;
+}
+
+/* Beat global span font sizes inside the popover */
+.popover .listHeader span {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.popover .chip {
+  font-size: 12px;
+}
+
+.popover .seats {
+  font-size: 13px;
+}

@@ -1,3 +1,4 @@
+import DateChips from "@/components/molecules/DateChips/DateChips";
 import {
   RenderDateTimeCell,
   RenderItemPhotoCell,
@@ -750,54 +751,96 @@ export function VisitorBookingTableHeader(t, locale) {
   ];
 }
 
+/** "10 / 14" seats free on the bus's next trip, with that trip's date. */
+function RenderAvailableCapacity({ data, t }) {
+  const total = Number(data?.capacity) || 0;
+  const available = data?.availableSeats;
+  if (available === null || available === undefined || !data?.nextTripDate) {
+    return <span style={{ color: "#8c939b" }}>{t("table.noUpcomingTrip")}</span>;
+  }
+  const ratio = total ? available / total : 0;
+  const color = available === 0 ? "#d92d20" : ratio <= 0.25 ? "#dc6803" : "#039855";
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+      <span style={{ color, fontWeight: 700 }}>
+        {available} / {total}
+      </span>
+      <span style={{ color: "#8c939b", fontSize: 12 }}>
+        {t("table.nextTrip", {
+          date: moment(data.nextTripDate).utc().add(12, "hours").format("DD MMM"),
+        })}
+      </span>
+    </div>
+  );
+}
+
 export function BusManagementTableHeader(t) {
   return [
     {
       key: "busId",
       title: t("table.busId"),
-      style: { width: "7%", textTransform: "capitalize" },
+      style: { width: "6%", textTransform: "capitalize" },
     },
     {
       key: "busName",
       title: t("table.busName"),
-      style: { width: "10%", textTransform: "capitalize" },
+      style: { width: "9%", textTransform: "capitalize" },
     },
     {
       key: "startLocation",
       title: t("table.startLocation"),
-      style: { width: "11%", textTransform: "capitalize" },
+      style: { width: "9%", textTransform: "capitalize" },
     },
     {
       key: "endLocation",
       title: t("table.endLocation"),
-      style: { width: "11%", textTransform: "capitalize" },
+      style: { width: "9%", textTransform: "capitalize" },
     },
 
     {
       key: "capacity",
-      title: t("table.capacity"),
-      style: { width: "8%" },
+      title: t("table.totalCapacity"),
+      style: { width: "7%" },
+    },
+    {
+      key: "availableCapacity",
+      title: t("table.availableCapacity"),
+      style: { width: "10%" },
+      renderItem: ({ data }) => <RenderAvailableCapacity data={data} t={t} />,
     },
     {
       key: "status",
       title: t("table.status"),
-      style: { width: "9%" },
+      style: { width: "8%" },
       renderItem: ({ item }) => <RenderStatusCell status={item} />,
     },
     {
       key: "startTime",
       title: t("table.startTime"),
-      style: { width: "11%" },
+      style: { width: "8%" },
     },
     {
       key: "endTime",
       title: t("table.endTime"),
-      style: { width: "11%" },
+      style: { width: "8%" },
     },
     {
       key: "availableDates",
       title: t("table.availableDates"),
-      style: { width: "11%" },
+      style: { width: "15%" },
+      renderItem: ({ data }) => (
+        <DateChips
+          dates={
+            data?.dateAvailability?.length
+              ? data.dateAvailability
+              : data?.availableDatesList
+          }
+          total={Number(data?.capacity) || undefined}
+          max={2}
+          title={t("table.availableDates")}
+          seatsLabel={t("table.availableCapacity")}
+        />
+      ),
     },
   ];
 }

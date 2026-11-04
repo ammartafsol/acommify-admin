@@ -12,6 +12,10 @@
       "startLocation": "Wurin Fara",
       "endLocation": "Wurin Ƙarshe",
       "capacity": "Ƙarfin",
+      "totalCapacity": "Jimillar kujeru",
+      "availableCapacity": "Kujerun da ake da su",
+      "nextTrip": "Tafiya ta gaba: {date}",
+      "noUpcomingTrip": "Babu tafiya mai zuwa",
       "status": "Matsayi",
       "startTime": "Lokacin Fara",
       "endTime": "Lokacin Ƙarshe",
@@ -23,6 +27,7 @@
         { "label": "Duka", "value": "all" },
         { "label": "Aiki", "value": "active" },
         { "label": "Ba Aiki", "value": "inactive" },
+        { "label": "Ya ƙare", "value": "expired" },
         { "label": "Kulawa", "value": "maintenance" }
       ]
     },

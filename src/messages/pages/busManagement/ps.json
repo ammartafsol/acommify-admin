@@ -12,6 +12,10 @@
       "startLocation": "د پیل ځای",
       "endLocation": "د پای ځای",
       "capacity": "ظرفیت",
+      "totalCapacity": "ټول ظرفیت",
+      "availableCapacity": "شته ظرفیت",
+      "nextTrip": "راتلونکی سفر: {date}",
+      "noUpcomingTrip": "راتلونکی سفر نشته",
       "status": "حالت",
       "startTime": "د پیل وخت",
       "endTime": "د پای وخت",
@@ -23,6 +27,7 @@
         { "label": "ټول", "value": "all" },
         { "label": "فعال", "value": "active" },
         { "label": "غیرفعال", "value": "inactive" },
+        { "label": "پای ته رسیدلی", "value": "expired" },
         { "label": "ساتنه", "value": "maintenance" }
       ]
     },

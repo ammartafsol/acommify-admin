@@ -12,6 +12,10 @@
       "startLocation": "Місце відправлення",
       "endLocation": "Місце прибуття",
       "capacity": "Місткість",
+      "totalCapacity": "Загальна місткість",
+      "availableCapacity": "Доступні місця",
+      "nextTrip": "Наступна поїздка: {date}",
+      "noUpcomingTrip": "Немає майбутніх поїздок",
       "status": "Статус",
       "startTime": "Час відправлення",
       "endTime": "Час прибуття",
@@ -23,6 +27,7 @@
         { "label": "Усі", "value": "all" },
         { "label": "Активний", "value": "active" },
         { "label": "Неактивний", "value": "inactive" },
+        { "label": "Прострочено", "value": "expired" },
         { "label": "Обслуговування", "value": "maintenance" }
       ]
     },

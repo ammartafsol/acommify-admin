@@ -12,6 +12,7 @@ import useDebounce from "@/resources/hooks/useDebounce";
 import { useTranslations } from "@/resources/hooks/useTranslations";
 import { RECORDS_LIMIT } from "@/resources/utils/constant";
 import { capitalizeEachWord, mergeClass } from "@/resources/utils/helper";
+import DateChips from "@/components/molecules/DateChips/DateChips";
 import { BusManagementTableHeader } from "@/resources/utils/tableHeaders";
 import moment from "moment-timezone";
 import { useLocale } from "next-intl";
@@ -146,11 +147,17 @@ export default function BusManagementTemplate() {
         startLocation: bus.startingPointAddress?.[locale] || "N/A",
         endLocation: bus.endingPointAddress?.[locale] || "N/A",
         capacity: bus?.capacity || "N/A",
+        availableSeats: bus?.availableSeats ?? null,
+        nextTripDate: bus?.nextTripDate || null,
         status: bus?.status || "N/A",
         startTime:
           moment(bus?.schedule?.startTime, "HH:mm").format("hh:mm A") || "N/A",
         endTime:
           moment(bus?.schedule?.endTime, "HH:mm").format("hh:mm A") || "N/A",
+        // Full list for the date chips (table cell, details modal)
+        availableDatesList: bus?.schedule?.availableDates || [],
+        // Seats left per date (from the backend), shown in the dates hover
+        dateAvailability: bus?.dateAvailability || [],
         availableDates: bus?.schedule?.availableDates
           ? (() => {
               const formattedDates = bus.schedule.availableDates
@@ -335,22 +342,19 @@ export default function BusManagementTemplate() {
           </div>
           <div className={classes.item}>
             <p>{t("table.availableDates")}</p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-              {rowData?.availableDates && rowData?.availableDates !== "N/A" ? (
-                rowData.availableDates.split(", ").map((date, index) => (
-                  <span
-                    key={index}
-                    style={{
-                      backgroundColor: "#f0f0f0",
-                      padding: "4px 8px",
-                      borderRadius: "4px",
-                      fontSize: "12px",
-                      border: "1px solid #ddd",
-                    }}
-                  >
-                    {date}
-                  </span>
-                ))
+            <div>
+              {rowData?.availableDatesList?.length ? (
+                <DateChips
+                  dates={
+                    rowData?.dateAvailability?.length
+                      ? rowData.dateAvailability
+                      : rowData.availableDatesList
+                  }
+                  total={Number(rowData?.capacity) || undefined}
+                  max={4}
+                  title={t("table.availableDates")}
+                  seatsLabel={t("table.availableCapacity")}
+                />
               ) : (
                 <p>NA</p>
               )}

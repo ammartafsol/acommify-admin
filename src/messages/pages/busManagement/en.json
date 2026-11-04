@@ -13,6 +13,10 @@
       "startLocation": "Start Location",
       "endLocation": "End Location",
       "capacity": "Capacity",
+      "totalCapacity": "Total Capacity",
+      "availableCapacity": "Available Capacity",
+      "nextTrip": "Next trip: {date}",
+      "noUpcomingTrip": "No upcoming trip",
       "status": "Status",
       "startTime": "Start Time",
       "endTime": "End Time",
@@ -24,6 +28,7 @@
         { "label": "All", "value": "all" },
         { "label": "Active", "value": "active" },
         { "label": "Inactive", "value": "inactive" },
+        { "label": "Expired", "value": "expired" },
         { "label": "Maintenance", "value": "maintenance" }
       ]
     },
