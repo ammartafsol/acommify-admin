@@ -4,7 +4,6 @@ import SubHeader from "@/components/molecules/SubHeader/SubHeader";
 import AppTable from "@/components/organisms/AppTable/AppTable";
 import { RenderStatusCell } from "@/components/organisms/AppTable/tableHelper";
 import CalendarComponent from "@/components/organisms/Calender/Calender";
-import AreYouSureModal from "@/components/organisms/Modals/AreYouSureModal/AreYouSureModal";
 import DetailModal from "@/components/organisms/Modals/DetailModal/DetailModal";
 import { useRouter } from "@/i18n/navigation";
 import useAxios from "@/interceptor/axios-functions";
@@ -26,14 +25,13 @@ import useDimensions from "@/resources/hooks/useDimensions";
 const BusBookings = () => {
   const { permissions } = useSelector((state) => state.authReducer);
   const t = useTranslations("busBookings");
-  const { Get, Post } = useAxios();
+  const { Get } = useAxios();
   const router = useRouter();
   const locale = useLocale();
   const { width } = useDimensions();
   const isMobile = width < 576;
   const tabsData = [
     { label: t("tabs.all"), value: "all", id: "all" },
-    { label: t("tabs.pending"), value: "pending", id: "pending" },
     { label: t("tabs.accepted"), value: "accepted", id: "accepted" },
     { label: t("tabs.rejected"), value: "rejected", id: "rejected" },
     { label: t("tabs.cancelled"), value: "cancelled", id: "confirm" },
@@ -44,13 +42,10 @@ const BusBookings = () => {
   const [selectedTab, setSelectedTab] = useState(tabsData[0]);
   const [showViewModal, setShowViewModal] = useState(false);
   const [selectedRowData, setSelectedRowData] = useState(null);
-  const [showAreYouSureModal, setShowAreYouSureModal] = useState(false);
-  const [actionType, setActionType] = useState("");
   const [dataCalender, setDataCalender] = useState([]);
   const [busData, setBusData] = useState([]);
   const [loading, setLoading] = useState({
     tableLoading: false,
-    approveReject: false,
   });
   const [page, setPage] = useState(1);
   const [totalRecords, setTotalRecords] = useState(0);
@@ -63,34 +58,6 @@ const BusBookings = () => {
       {
         renderItem: ({ data }) => (
           <div className={classes.actionsMain}>
-            {data.status === "pending" && (
-              <div
-                className={classes.tableIcon}
-                title={t("action.approve")}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedRowData(data);
-                  setActionType("accept");
-                  setShowAreYouSureModal(true);
-                }}
-              >
-                <ReactSVG src="/svg/approved.svg" />
-              </div>
-            )}
-            {data.status === "pending" && (
-              <div
-                className={classes.tableIcon}
-                title={t("action.cancel")}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedRowData(data);
-                  setActionType("reject");
-                  setShowAreYouSureModal(true);
-                }}
-              >
-                <ReactSVG src="/svg/close.svg" />
-              </div>
-            )}
             <div
               className={classes.tableIcon}
               title={t("action.view")}
@@ -135,7 +102,21 @@ const BusBookings = () => {
         if (isCalendarView) {
           setDataCalender(response.data);
         } else {
-          setBusData(response.data);
+          // Bus tickets expire once the journey ends
+          const now = new Date();
+          setBusData(
+            (response.data || []).map((booking) => {
+              const ended =
+                booking?.bookingEndDate &&
+                new Date(booking.bookingEndDate) <= now;
+              const isExpired =
+                !["cancelled", "rejected"].includes(booking?.status) &&
+                (booking?.status === "completed" || ended);
+              return isExpired
+                ? { ...booking, status: "expired", isExpired: true }
+                : booking;
+            }),
+          );
           setTotalRecords(response.totalRecords);
         }
       }
@@ -251,6 +232,7 @@ const BusBookings = () => {
                 tableHeader={BusBookingsTableHeader(t, locale)}
                 className="cursorPointer"
                 data={busData}
+                rowClassName={(row) => (row?.isExpired ? classes.expiredRow : "")}
                 actions={tableActions}
                 pagination
                 page={page}
@@ -276,39 +258,6 @@ const BusBookings = () => {
           )}
         </div>
       </Container>
-      {/* AreYouSureModal for Accept/Reject */}
-      {showAreYouSureModal && (
-        <AreYouSureModal
-          show={showAreYouSureModal}
-          setShow={setShowAreYouSureModal}
-          loading={loading.approveReject}
-          title={
-            actionType === "accept"
-              ? t("areYouSureModal.approve")
-              : t("areYouSureModal.reject")
-          }
-          description={
-            actionType === "accept"
-              ? t("areYouSureModal.approveBookingSure")
-              : t("areYouSureModal.rejectBookingSure")
-          }
-          onConfirm={async () => {
-            if (!selectedRowData?.slug) return;
-            setLoading({ ...loading, approveReject: true });
-            await Post({
-              route: `admin/booking/accept/reject/${selectedRowData.slug}`,
-              data: {
-                status: actionType === "accept" ? "accepted" : "rejected",
-              },
-            });
-            setShowAreYouSureModal(false);
-            setLoading({ ...loading, approveReject: false });
-            fetchBusData(page);
-          }}
-          onCancel={() => setShowAreYouSureModal(false)}
-        />
-      )}
-
       {showViewModal && (
         <DetailModal
           title={"Details"}

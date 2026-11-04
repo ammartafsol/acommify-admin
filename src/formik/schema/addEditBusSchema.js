@@ -24,7 +24,12 @@ const addEditBusSchema = (t) =>
         if (!value || !startTime) return true;
         return value > startTime;
       }),
-    document: yup.mixed().required(t("modal.validation.mediaError")),
+    // At least one file (a new upload or the bus's existing document) is required
+    document: yup
+      .mixed()
+      .test("required", t("modal.validation.mediaError"), (value) =>
+        Array.isArray(value) ? value.length > 0 : Boolean(value),
+      ),
   });
 
 export default addEditBusSchema;

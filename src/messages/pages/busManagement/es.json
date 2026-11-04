@@ -102,7 +102,7 @@
         "endTime": "La hora de llegada es requerida",
         "endTimeAfterStart": "La hora de llegada debe ser posterior a la hora de salida",
         "shift": "El turno es requerido",
-        "mediaError": "Subir Medios"
+        "mediaError": "Sube un documento."
       }
     }
   }

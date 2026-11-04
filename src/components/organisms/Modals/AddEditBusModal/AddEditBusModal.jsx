@@ -172,25 +172,32 @@ export default function AddEditBusModal({
   const createBusHandler = async (values) => {
     setLoading("loading");
 
-    let documentUrl = "";
+    const selectedDocument = values.document?.[0];
+    // Editing without a new file keeps the bus's existing document
+    let documentUrl =
+      selectedDocument && !(selectedDocument instanceof File)
+        ? selectedDocument.url || ""
+        : "";
 
-    // Upload media files first if any
-    if (
-      values.document &&
-      values.document.length > 0 &&
-      values.document[0] instanceof File
-    ) {
+    // Upload a newly chosen file first
+    if (selectedDocument instanceof File) {
       const formData = new FormData();
-      formData.append("docs", values.document[0]);
+      formData.append("docs", selectedDocument);
       const { response } = await Post({
         route: "media/upload",
         data: formData,
         isFormData: true,
       });
-      console.log("Upload response:", response);
-      if (response && response.data?.docs) {
-        documentUrl = response.data.docs[0]?.key;
-      }
+      documentUrl = response?.data?.docs?.[0]?.key || "";
+    }
+
+    // The document is required: stop here if there is none (e.g. the upload failed)
+    if (!documentUrl) {
+      formik.setFieldTouched("document", true, false);
+      formik.setFieldError("document", t("modal.validation.mediaError"));
+      RenderToast({ type: "error", message: t("modal.validation.mediaError") });
+      setLoading("");
+      return;
     }
 
     const filteredDates = values.availableDates

@@ -454,7 +454,9 @@ export default function AppTable({
                       className={mergeClass(
                         "row100",
                         classes.bodyRow,
-                        rowClassName
+                        typeof rowClassName === "function"
+                        ? rowClassName(item)
+                        : rowClassName
                       )}
                       onClick={() => onRowClick(item, rowIndex)}
                     >

@@ -61,28 +61,119 @@
 }
 
 .filePreview {
-  margin-top: 16px;
+  width: 100%;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
+/* Selected file shown as an attachment card */
 .fileItem {
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background: var(--offWhite-new);
-  padding: 2px;
-  border-radius: 4px;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid #e4e9f0;
+  border-radius: 12px;
+  background: var(--Poor-white, #fff);
+  box-shadow: 0 2px 6px rgba(23, 42, 51, 0.04);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.fileItem:hover {
+  border-color: rgba(51, 181, 246, 0.5);
+  box-shadow: 0 4px 12px rgba(51, 181, 246, 0.12);
+}
+
+.fileIcon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.kindText {
+  background: #f2f4f7;
+  color: #344054;
+}
+
+.kindPdf {
+  background: #fef3f2;
+  color: #d92d20;
+}
+
+.kindDoc {
+  background: #eff8ff;
+  color: #1570ef;
+}
+
+.kindSheet {
+  background: #ecfdf3;
+  color: #039855;
+}
+
+.kindImage {
+  background: #f4f3ff;
+  color: #6941c6;
+}
+
+.kindOther {
+  background: #f2f4f7;
+  color: #475467;
+}
+
+.fileInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fileName {
+  color: var(--Black, #172a33);
   font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fileMeta {
+  color: var(--Dark-gray, #8c939b);
+  font-size: 12px;
 }
 
 .removeFileButton {
-  color: var(--white);
-  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: none;
-  border-radius: 3px;
+  border-radius: 50%;
+  background: #f2f4f7;
+  color: #667085;
   cursor: pointer;
-  font-size: 12px;
-  margin-inline-start: 12px;
-  transition: background 0.2s;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.removeFileButton:hover,
+.removeFileButton:focus-visible {
+  background: #fef3f2;
+  color: #d92d20;
+  outline: none;
 }
 
 .title {

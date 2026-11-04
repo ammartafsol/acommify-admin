@@ -1,11 +1,51 @@
 import React, { useEffect, useRef, useState } from "react";
 import classes from "./UploadMedia.module.css";
 import Image from "next/image";
-import { IoMdCloseCircle } from "react-icons/io";
+import { IoClose } from "react-icons/io5";
+import {
+  BsFileEarmarkExcelFill,
+  BsFileEarmarkFill,
+  BsFileEarmarkImageFill,
+  BsFileEarmarkPdfFill,
+  BsFileEarmarkTextFill,
+  BsFileEarmarkWordFill,
+} from "react-icons/bs";
+
+// Document icon for each kind of file
+const FILE_ICONS = {
+  kindPdf: BsFileEarmarkPdfFill,
+  kindDoc: BsFileEarmarkWordFill,
+  kindSheet: BsFileEarmarkExcelFill,
+  kindImage: BsFileEarmarkImageFill,
+  kindText: BsFileEarmarkTextFill,
+  kindOther: BsFileEarmarkFill,
+};
 import { useTranslations } from "@/resources/hooks/useTranslations";
 import { mergeClass } from "@/resources/utils/helper";
 import { useDynamicTranslations } from "@/resources/hooks/useDynamicTranslations";
 import { useLocale } from "next-intl";
+
+const getExtension = (name = "") => {
+  const match = /\.([a-z0-9]+)$/i.exec(String(name));
+  return match ? match[1].toLowerCase() : "";
+};
+
+// Colour of the file badge
+const getFileKind = (ext) => {
+  if (ext === "pdf") return "kindPdf";
+  if (["doc", "docx", "rtf", "odt"].includes(ext)) return "kindDoc";
+  if (["xls", "xlsx", "csv"].includes(ext)) return "kindSheet";
+  if (["png", "jpg", "jpeg", "gif", "webp", "svg"].includes(ext)) return "kindImage";
+  if (["txt", "md"].includes(ext)) return "kindText";
+  return "kindOther";
+};
+
+const formatFileSize = (bytes) => {
+  if (!Number.isFinite(bytes)) return "";
+  if (bytes < 1024) return `${bytes} B`;
+  if (bytes < 1024 * 1024) return `${Math.round(bytes / 1024)} KB`;
+  return `${(bytes / 1024 / 1024).toFixed(1)} MB`;
+};
 
 // Stateless, controlled upload component
 export default function UploadMedia({
@@ -167,17 +207,40 @@ export default function UploadMedia({
               }
               if (file.name) return file.name;
               if (file.key) return file.key.split("/").pop();
+              if (file.url) return String(file.url).split("/").pop();
               return t("defaultFileName");
             })();
+            const name = fileDisplayName || displayName;
+            const ext = getExtension(displayName);
+            const size = file instanceof File ? formatFileSize(file.size) : "";
+            const kind = getFileKind(ext);
+            const FileIcon = FILE_ICONS[kind];
             return (
               <div key={idx} className={classes.fileItem}>
-                <span>{fileDisplayName ? fileDisplayName : displayName}</span>
+                <span
+                  className={mergeClass(classes.fileIcon, classes[kind])}
+                  aria-hidden
+                >
+                  <FileIcon size={22} />
+                </span>
+                <span className={classes.fileInfo}>
+                  <span className={classes.fileName} title={name}>
+                    {name}
+                  </span>
+                  {(ext || size) && (
+                    <span className={classes.fileMeta}>
+                      {[ext.toUpperCase(), size].filter(Boolean).join(" · ")}
+                    </span>
+                  )}
+                </span>
                 <button
                   type="button"
                   onClick={() => handleRemoveFile(idx)}
                   className={classes.removeFileButton}
+                  aria-label={`Remove ${name}`}
+                  title={`Remove ${name}`}
                 >
-                  <IoMdCloseCircle color="red" size={20} />
+                  <IoClose size={16} />
                 </button>
               </div>
             );

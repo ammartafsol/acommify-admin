@@ -80,3 +80,9 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* Expired bus tickets are slightly greyed out */
+.expiredRow td {
+  opacity: 0.55;
+  filter: grayscale(1);
+}

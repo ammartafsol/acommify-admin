@@ -104,7 +104,7 @@
         "endTime": "End time is required",
         "endTimeAfterStart": "End time must be after the start time",
         "shift": "Shift is required",
-        "mediaError": "Upload Media"
+        "mediaError": "Please upload a document."
       }
     }
   }
