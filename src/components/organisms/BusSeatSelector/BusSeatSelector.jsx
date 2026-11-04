@@ -7,7 +7,7 @@ import { mergeClass } from "@/resources/utils/helper";
 import useDimensions from "@/resources/hooks/useDimensions";
 
 /**
- * @typedef {'53-seater' | '36-seater' | '13-seater' | '11-seater'} BusType
+ * @typedef {'53-seater' | '36-seater' | '16-seater' | '15-seater' | '14-seater' | '13-seater' | '12-seater' | '11-seater' | '8-seater'} BusType
  */
 
 export const BUS_LAYOUTS = {
@@ -23,11 +23,24 @@ export const BUS_LAYOUTS = {
     frontRowSeats: 0,
     lastRowSeats: 5,
   },
+  "16-seater": {
+    rows: 4,
+    cols: 3,
+    frontRowSeats: 0,
+    lastRowSeats: 4,
+  },
   "15-seater": {
     rows: 4,
     cols: 3,
     frontRowSeats: 2,
     frontRowSeatsReverse: false,
+    lastRowSeats: 4,
+  },
+  "14-seater": {
+    rows: 4,
+    cols: 3,
+    frontRowSeats: 1,
+    frontRowSeatsReverse: true,
     lastRowSeats: 4,
   },
   "13-seater": {
@@ -37,6 +50,13 @@ export const BUS_LAYOUTS = {
     lastRowSeats: 4,
   },
 
+  "12-seater": {
+    rows: 3,
+    cols: 3,
+    frontRowSeats: 2,
+    frontRowSeatsReverse: false,
+    lastRowSeats: 4,
+  },
   "11-seater": {
     rows: 3,
     cols: 3,

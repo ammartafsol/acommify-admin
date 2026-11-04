@@ -51,8 +51,11 @@ export default function AddEditBusModal({
     () => [
       { label: `8 ${t("modal.seater")}`, value: 8 },
       { label: `11 ${t("modal.seater")}`, value: 11 },
+      { label: `12 ${t("modal.seater")}`, value: 12 },
       { label: `13 ${t("modal.seater")}`, value: 13 },
+      { label: `14 ${t("modal.seater")}`, value: 14 },
       { label: `15 ${t("modal.seater")}`, value: 15 },
+      { label: `16 ${t("modal.seater")}`, value: 16 },
       { label: `36 ${t("modal.seater")}`, value: 36 },
       { label: `53 ${t("modal.seater")}`, value: 53 },
     ],
