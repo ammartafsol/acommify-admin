@@ -239,7 +239,8 @@
       "manage-staff-roster": "د کارکوونکو مهالویش مدیریت او خپرول",
       "holidays": "رخصتۍ",
       "view-holidays": "رخصتۍ کتل",
-      "add-edit-holiday": "رخصتي اضافه/سمول"
+      "add-edit-holiday": "رخصتي اضافه/سمول",
+      "submit-maintenance-requests": "د ساتنې غوښتنې سپارل"
     }
   },
   "bookingTypes": {

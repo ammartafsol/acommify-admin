@@ -645,9 +645,12 @@
     min-width: 0;
   }
 
-  .stats,
   .skeletonGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .card {
@@ -780,21 +783,26 @@
   }
 
   .stat {
-    align-items: flex-start;
-    gap: 10px;
-    padding: 12px;
+    align-items: center;
+    gap: 12px;
+    padding-block: 12px;
+    padding-inline: 14px;
     border-radius: 14px;
   }
 
+  .stat > div {
+    flex: 1;
+  }
+
   .statIcon {
-    width: 34px;
-    height: 34px;
-    border-radius: 10px;
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
   }
 
   .statIcon svg {
-    width: 17px;
-    height: 17px;
+    width: 18px;
+    height: 18px;
   }
 
   .main .statLabel {

@@ -239,7 +239,8 @@
       "manage-staff-roster": "Керування та публікація графіка персоналу",
       "holidays": "Свята",
       "view-holidays": "Перегляд свят",
-      "add-edit-holiday": "Додати/редагувати свято"
+      "add-edit-holiday": "Додати/редагувати свято",
+      "submit-maintenance-requests": "Подавати запити на обслуговування"
     }
   },
   "bookingTypes": {

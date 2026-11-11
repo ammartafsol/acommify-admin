@@ -239,7 +239,8 @@
       "manage-staff-roster": "إدارة وإصدار جدول الموظفين",
       "holidays": "العطل",
       "view-holidays": "عرض العطل",
-      "add-edit-holiday": "إضافة/تعديل عطلة"
+      "add-edit-holiday": "إضافة/تعديل عطلة",
+      "submit-maintenance-requests": "إرسال طلبات الصيانة"
     }
   },
   "bookingTypes": {

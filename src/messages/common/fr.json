@@ -239,7 +239,8 @@
       "manage-staff-roster": "Gérer et publier le planning du personnel",
       "holidays": "Jours fériés",
       "view-holidays": "Voir les jours fériés",
-      "add-edit-holiday": "Ajouter/Modifier un jour férié"
+      "add-edit-holiday": "Ajouter/Modifier un jour férié",
+      "submit-maintenance-requests": "Soumettre des demandes de maintenance"
     }
   },
   "bookingTypes": {

@@ -115,6 +115,110 @@
       "update": "Actualizar",
       "commentAddedSuccessfully": "Comentario agregado exitosamente",
       "commentUpdatedSuccessfully": "Comentario actualizado exitosamente"
+    },
+    "staffSubmit": {
+      "title": "Enviar solicitud de mantenimiento",
+      "intro": "Informa de un problema de mantenimiento que hayas encontrado. Entra en el flujo normal de mantenimiento para su revisión y asignación.",
+      "open": "Enviar solicitud",
+      "location": "Ubicación de la solicitud",
+      "locationTypes": {
+        "property": "Propiedad / Casa",
+        "communal": "Zona común",
+        "building": "Edificio del centro",
+        "external": "Zona exterior"
+      },
+      "propertyTypes": {
+        "house": "Casa",
+        "room": "Habitación",
+        "apartment": "Apartamento"
+      },
+      "property": "Propiedad / Casa",
+      "propertyPlaceholder": "Selecciona la propiedad",
+      "locationName": "Ubicación",
+      "locationNamePlaceholder": {
+        "communal": "p. ej. Lavandería, Cocina",
+        "building": "p. ej. Recepción, Oficina 2",
+        "external": "p. ej. Puerta principal, Aparcamiento, Valla"
+      },
+      "area": "Habitación / Zona (opcional)",
+      "areaPlaceholder": "p. ej. Baño, Pared trasera",
+      "category": "Categoría de mantenimiento",
+      "categoryPlaceholder": "Selecciona una categoría",
+      "description": "Descripción del problema",
+      "descriptionPlaceholder": "Describe el problema, dónde está exactamente y si hay algo urgente",
+      "priority": "Prioridad",
+      "priorities": {
+        "low": "Baja",
+        "medium": "Media",
+        "high": "Alta",
+        "urgent": "Urgente"
+      },
+      "photos": "Fotos / adjuntos",
+      "photosHint": "(opcional, hasta {count}, 5 MB cada una)",
+      "addPhoto": "Añadir foto",
+      "removePhoto": "Quitar foto",
+      "submittedBy": "Enviado por",
+      "dateTime": "Fecha y hora",
+      "autoNote": "Se registra automáticamente al enviar.",
+      "submit": "Enviar solicitud",
+      "submitted": "Solicitud de mantenimiento enviada",
+      "loading": "Cargando...",
+      "errors": {
+        "property": "Selecciona la propiedad",
+        "locationName": "Indica la ubicación",
+        "category": "Selecciona una categoría",
+        "description": "Describe el problema (mínimo 5 caracteres)",
+        "fileSize": "Cada foto debe pesar 5 MB o menos",
+        "maxFiles": "Puedes añadir hasta {count} fotos"
+      },
+      "sources": {
+        "all": "Todas",
+        "resident": "Residente",
+        "staff": "Personal"
+      },
+      "sourceLabel": "Enviado por",
+      "mySubmitted": "Mis solicitudes enviadas",
+      "mySubmittedHint": "Problemas de mantenimiento que informaste",
+      "reportedBy": "Informado por",
+      "locationColumn": "Ubicación",
+      "submittedByStaff": "Enviado por el personal: {name}"
+    },
+    "assign": {
+      "title": "Asignar trabajo de mantenimiento",
+      "action": "Asignar",
+      "reassign": "Reasignar",
+      "staff": "Miembro del personal",
+      "staffHint": "Alguien de tu equipo",
+      "contractor": "Contratista externo",
+      "contractorHint": "Una empresa o profesional",
+      "staffMember": "Miembro del personal",
+      "staffPlaceholder": "Selecciona un miembro del personal",
+      "contractorName": "Nombre de contacto",
+      "contractorNamePlaceholder": "p. ej. Juan Pérez",
+      "company": "Empresa (opcional)",
+      "companyPlaceholder": "p. ej. Fontanería S.L.",
+      "phone": "Teléfono (opcional)",
+      "email": "Correo (opcional)",
+      "note": "Instrucciones (opcional)",
+      "notePlaceholder": "Algo que deba saber quien haga el trabajo",
+      "save": "Asignar",
+      "saved": "Trabajo asignado",
+      "assignedStaff": "Asignado a",
+      "assignedContractor": "Contratista externo",
+      "errors": {
+        "staff": "Selecciona un miembro del personal",
+        "contractorName": "Indica el nombre del contratista",
+        "email": "Introduce un correo válido"
+      }
+    },
+    "timeline": {
+      "title": "Actividad",
+      "someone": "Alguien",
+      "created": "{name} envió la solicitud",
+      "assigned": "{name} lo asignó a {assignee}",
+      "assignedContractor": "{name} lo asignó al contratista {assignee}",
+      "status": "{name} cambió el estado de {from} a {to}",
+      "note": "{name} añadió una nota"
     }
   }
 }

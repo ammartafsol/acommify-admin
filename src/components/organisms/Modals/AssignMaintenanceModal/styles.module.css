@@ -1,0 +1,71 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: var(--font-lato);
+}
+
+.switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.switch button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1.5px solid #e4e7ec;
+  border-radius: 14px;
+  background: #fff;
+  color: #475467;
+  text-align: start;
+  cursor: pointer;
+}
+
+.switch button span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.switch strong {
+  font-size: 14px;
+}
+
+.switch em {
+  color: #98a2b3;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.switch button.active {
+  border-color: #33b5f6;
+  background: #f0f9ff;
+  color: #0b84c4;
+  box-shadow: 0 0 0 3px rgba(51, 181, 246, 0.12);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 14px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .switch,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions > * {
+    flex: 1;
+  }
+}

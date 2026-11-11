@@ -115,6 +115,110 @@
       "update": "Atualizar",
       "commentAddedSuccessfully": "Comentário adicionado com sucesso",
       "commentUpdatedSuccessfully": "Comentário atualizado com sucesso"
+    },
+    "staffSubmit": {
+      "title": "Enviar solicitação de manutenção",
+      "intro": "Comunique um problema de manutenção que encontrou. Entra no fluxo normal de manutenção para análise e atribuição.",
+      "open": "Enviar solicitação",
+      "location": "Local do pedido",
+      "locationTypes": {
+        "property": "Propriedade / Casa",
+        "communal": "Área comum",
+        "building": "Edifício do centro",
+        "external": "Área externa"
+      },
+      "propertyTypes": {
+        "house": "Casa",
+        "room": "Quarto",
+        "apartment": "Apartamento"
+      },
+      "property": "Propriedade / Casa",
+      "propertyPlaceholder": "Selecione a propriedade",
+      "locationName": "Local",
+      "locationNamePlaceholder": {
+        "communal": "ex.: Lavandaria, Cozinha",
+        "building": "ex.: Receção, Escritório 2",
+        "external": "ex.: Portão principal, Parque, Vedação"
+      },
+      "area": "Divisão / Área (opcional)",
+      "areaPlaceholder": "ex.: Casa de banho, Parede traseira",
+      "category": "Categoria de manutenção",
+      "categoryPlaceholder": "Selecione uma categoria",
+      "description": "Descrição do problema",
+      "descriptionPlaceholder": "Descreva o problema, onde está exatamente e o que é urgente",
+      "priority": "Prioridade",
+      "priorities": {
+        "low": "Baixa",
+        "medium": "Média",
+        "high": "Alta",
+        "urgent": "Urgente"
+      },
+      "photos": "Fotos / anexos",
+      "photosHint": "(opcional, até {count}, 5 MB cada)",
+      "addPhoto": "Adicionar foto",
+      "removePhoto": "Remover foto",
+      "submittedBy": "Enviado por",
+      "dateTime": "Data e hora",
+      "autoNote": "Registado automaticamente ao enviar.",
+      "submit": "Enviar solicitação",
+      "submitted": "Solicitação de manutenção enviada",
+      "loading": "A carregar...",
+      "errors": {
+        "property": "Selecione a propriedade",
+        "locationName": "Indique o local",
+        "category": "Selecione uma categoria",
+        "description": "Descreva o problema (mínimo 5 caracteres)",
+        "fileSize": "Cada foto deve ter no máximo 5 MB",
+        "maxFiles": "Pode adicionar até {count} fotos"
+      },
+      "sources": {
+        "all": "Todos",
+        "resident": "Residente",
+        "staff": "Funcionário"
+      },
+      "sourceLabel": "Enviado por",
+      "mySubmitted": "Os meus pedidos enviados",
+      "mySubmittedHint": "Problemas de manutenção que comunicou",
+      "reportedBy": "Comunicado por",
+      "locationColumn": "Local",
+      "submittedByStaff": "Enviado pelo funcionário: {name}"
+    },
+    "assign": {
+      "title": "Atribuir trabalho de manutenção",
+      "action": "Atribuir",
+      "reassign": "Reatribuir",
+      "staff": "Funcionário",
+      "staffHint": "Alguém da sua equipa",
+      "contractor": "Empreiteiro externo",
+      "contractorHint": "Uma empresa ou técnico",
+      "staffMember": "Funcionário",
+      "staffPlaceholder": "Selecione um funcionário",
+      "contractorName": "Nome do contacto",
+      "contractorNamePlaceholder": "ex.: João Silva",
+      "company": "Empresa (opcional)",
+      "companyPlaceholder": "ex.: Canalizações Lda",
+      "phone": "Telefone (opcional)",
+      "email": "Email (opcional)",
+      "note": "Instruções (opcional)",
+      "notePlaceholder": "Algo que quem faz o trabalho deva saber",
+      "save": "Atribuir",
+      "saved": "Trabalho atribuído",
+      "assignedStaff": "Atribuído a",
+      "assignedContractor": "Empreiteiro externo",
+      "errors": {
+        "staff": "Selecione um funcionário",
+        "contractorName": "Indique o nome do empreiteiro",
+        "email": "Introduza um email válido"
+      }
+    },
+    "timeline": {
+      "title": "Atividade",
+      "someone": "Alguém",
+      "created": "{name} enviou o pedido",
+      "assigned": "{name} atribuiu a {assignee}",
+      "assignedContractor": "{name} atribuiu ao empreiteiro {assignee}",
+      "status": "{name} alterou o estado de {from} para {to}",
+      "note": "{name} adicionou uma nota"
     }
   }
 }

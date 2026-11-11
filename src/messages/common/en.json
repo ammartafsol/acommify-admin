@@ -239,7 +239,8 @@
       "manage-staff-roster": "Manage & Issue Staff Roster",
       "holidays": "Holidays",
       "view-holidays": "View Holidays",
-      "add-edit-holiday": "Add/Edit Holiday"
+      "add-edit-holiday": "Add/Edit Holiday",
+      "submit-maintenance-requests": "Submit Maintenance Requests"
     }
   },
   "bookingTypes": {

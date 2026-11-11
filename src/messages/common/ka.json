@@ -239,7 +239,8 @@
       "manage-staff-roster": "პერსონალის განრიგის მართვა და გამოქვეყნება",
       "holidays": "დღესასწაულები",
       "view-holidays": "დღესასწაულების ნახვა",
-      "add-edit-holiday": "დღესასწაულის დამატება/რედაქტირება"
+      "add-edit-holiday": "დღესასწაულის დამატება/რედაქტირება",
+      "submit-maintenance-requests": "მოვლის მოთხოვნების გაგზავნა"
     }
   },
   "bookingTypes": {

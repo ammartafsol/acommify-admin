@@ -53,7 +53,9 @@ export const headerDataMobile = (t, permissions = [], user = {}) =>
       route: "/food-tokens",
       icon: "/svg/coin.svg",
     },
-    permissions.includes("view-maintenance-requests") && {
+    (permissions.includes("view-maintenance-requests") ||
+      permissions.includes("submit-maintenance-requests") ||
+      isAdminOrBusinessOwner(user?.role)) && {
       label: t("adminHeader.maintenanceRequests"),
       icon: "/svg/maintainceReq.svg",
       route: "/maintenance-requests",
@@ -148,7 +150,9 @@ export const headerData = (t, permissions = [], user = {}) =>
       route: "/rooms-houses",
       icon: "/svg/house.svg",
     },
-    permissions.includes("view-maintenance-requests") && {
+    (permissions.includes("view-maintenance-requests") ||
+      permissions.includes("submit-maintenance-requests") ||
+      isAdminOrBusinessOwner(user?.role)) && {
       label: t("adminHeader.maintenanceRequests"),
       icon: "/svg/maintainceReq.svg",
       route: "/maintenance-requests",

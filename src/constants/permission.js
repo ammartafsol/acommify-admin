@@ -27,6 +27,7 @@ export const allPermissions = [
   "update-staff-booking-status",
   "view-maintenance-requests",
   "approve-reject-maintenance-request",
+  "submit-maintenance-requests",
   "view-products",
   "view-product-categories",
   "add-edit-product",
@@ -280,6 +281,7 @@ export const permissionsList = [
     permissions: [
       "view-maintenance-requests",
       "approve-reject-maintenance-request",
+      "submit-maintenance-requests",
     ],
     children: [
       {
@@ -292,6 +294,12 @@ export const permissionsList = [
         label: "approve-reject-maintenance-request",
         permissions: ["approve-reject-maintenance-request"],
         dependencies: ["view-maintenance-requests"],
+      },
+      {
+        // Report issues only: no manage / assign / close access
+        label: "submit-maintenance-requests",
+        permissions: ["submit-maintenance-requests"],
+        dependencies: [],
       },
     ],
     dependencies: [],

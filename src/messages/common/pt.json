@@ -239,7 +239,8 @@
       "manage-staff-roster": "Gerir e publicar escala de funcionários",
       "holidays": "Feriados",
       "view-holidays": "Ver feriados",
-      "add-edit-holiday": "Adicionar/Editar feriado"
+      "add-edit-holiday": "Adicionar/Editar feriado",
+      "submit-maintenance-requests": "Enviar solicitações de manutenção"
     }
   },
   "bookingTypes": {

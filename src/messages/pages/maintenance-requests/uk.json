@@ -115,6 +115,110 @@
       "update": "Оновити",
       "commentAddedSuccessfully": "Коментар успішно додано",
       "commentUpdatedSuccessfully": "Коментар успішно оновлено"
+    },
+    "staffSubmit": {
+      "title": "Подати запит на обслуговування",
+      "intro": "Повідомте про виявлену проблему. Запит потрапить у звичайний процес обслуговування для розгляду й призначення.",
+      "open": "Подати запит",
+      "location": "Місце запиту",
+      "locationTypes": {
+        "property": "Житло / Будинок",
+        "communal": "Спільна зона",
+        "building": "Будівля центру",
+        "external": "Зовнішня територія"
+      },
+      "propertyTypes": {
+        "house": "Будинок",
+        "room": "Кімната",
+        "apartment": "Квартира"
+      },
+      "property": "Житло / Будинок",
+      "propertyPlaceholder": "Оберіть житло",
+      "locationName": "Розташування",
+      "locationNamePlaceholder": {
+        "communal": "напр.: Пральня, Кухня",
+        "building": "напр.: Рецепція, Офіс 2",
+        "external": "напр.: Головні ворота, Парковка, Огорожа"
+      },
+      "area": "Кімната / Зона (необов'язково)",
+      "areaPlaceholder": "напр.: Ванна, Задня стіна",
+      "category": "Категорія обслуговування",
+      "categoryPlaceholder": "Оберіть категорію",
+      "description": "Опис проблеми",
+      "descriptionPlaceholder": "Опишіть проблему, де саме вона і що термінове",
+      "priority": "Пріоритет",
+      "priorities": {
+        "low": "Низький",
+        "medium": "Середній",
+        "high": "Високий",
+        "urgent": "Терміновий"
+      },
+      "photos": "Фото / вкладення",
+      "photosHint": "(необов'язково, до {count}, по 5 МБ)",
+      "addPhoto": "Додати фото",
+      "removePhoto": "Видалити фото",
+      "submittedBy": "Подав(ла)",
+      "dateTime": "Дата й час",
+      "autoNote": "Фіксується автоматично під час подання.",
+      "submit": "Подати запит",
+      "submitted": "Запит на обслуговування подано",
+      "loading": "Завантаження...",
+      "errors": {
+        "property": "Оберіть житло",
+        "locationName": "Вкажіть розташування",
+        "category": "Оберіть категорію",
+        "description": "Опишіть проблему (щонайменше 5 символів)",
+        "fileSize": "Кожне фото — не більше 5 МБ",
+        "maxFiles": "Можна додати до {count} фото"
+      },
+      "sources": {
+        "all": "Усі",
+        "resident": "Мешканець",
+        "staff": "Персонал"
+      },
+      "sourceLabel": "Подано",
+      "mySubmitted": "Мої подані запити",
+      "mySubmittedHint": "Проблеми, про які ви повідомили",
+      "reportedBy": "Повідомив(ла)",
+      "locationColumn": "Розташування",
+      "submittedByStaff": "Подано працівником: {name}"
+    },
+    "assign": {
+      "title": "Призначити роботу",
+      "action": "Призначити",
+      "reassign": "Перепризначити",
+      "staff": "Працівник",
+      "staffHint": "Хтось із вашої команди",
+      "contractor": "Зовнішній підрядник",
+      "contractorHint": "Компанія або майстер",
+      "staffMember": "Працівник",
+      "staffPlaceholder": "Оберіть працівника",
+      "contractorName": "Контактна особа",
+      "contractorNamePlaceholder": "напр.: Іван Петренко",
+      "company": "Компанія (необов'язково)",
+      "companyPlaceholder": "напр.: ТОВ Сантехніка",
+      "phone": "Телефон (необов'язково)",
+      "email": "Ел. пошта (необов'язково)",
+      "note": "Інструкції (необов'язково)",
+      "notePlaceholder": "Що має знати виконавець",
+      "save": "Призначити",
+      "saved": "Роботу призначено",
+      "assignedStaff": "Призначено",
+      "assignedContractor": "Зовнішній підрядник",
+      "errors": {
+        "staff": "Оберіть працівника",
+        "contractorName": "Вкажіть ім'я підрядника",
+        "email": "Введіть дійсну ел. пошту"
+      }
+    },
+    "timeline": {
+      "title": "Активність",
+      "someone": "Хтось",
+      "created": "{name} подав(ла) запит",
+      "assigned": "{name} призначив(ла) {assignee}",
+      "assignedContractor": "{name} призначив(ла) підряднику {assignee}",
+      "status": "{name} змінив(ла) статус з {from} на {to}",
+      "note": "{name} додав(ла) примітку"
     }
   }
 }

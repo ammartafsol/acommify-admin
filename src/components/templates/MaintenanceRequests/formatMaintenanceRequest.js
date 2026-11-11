@@ -56,6 +56,9 @@ export function getHouseAndRoom(item) {
 }
 
 export function getPriority(item) {
+  // Staff submissions carry their own priority (low / medium / high / urgent)
+  if (item?.priority) return String(item.priority).toLowerCase();
+
   const severity = String(
     item?.category?.severity || item?.severity || "",
   ).toLowerCase();
@@ -92,4 +95,25 @@ export function getDocumentKey(doc) {
   if (!doc) return "";
   if (typeof doc === "string") return doc;
   return doc.key || doc.url || doc.path || "";
+}
+
+/** Raised by a staff member (resident requests have no / "resident" source). */
+export function isStaffRequest(item) {
+  return item?.source === "staff";
+}
+
+/**
+ * Where the issue is, as one line: "House H-12 · Kitchen" for a property,
+ * "Communal area: Laundry room · Back wall" for other locations.
+ */
+export function getLocationText(item, t) {
+  if (!item) return "";
+  const area = item.area ? ` · ${item.area}` : "";
+  if (!isStaffRequest(item) || item.locationType === "property") {
+    const number =
+      item?.accommodation?.accommodationNumber || item?.locationName || "";
+    return number ? `${number}${area}` : "";
+  }
+  const type = item.locationType ? t(`staffSubmit.locationTypes.${item.locationType}`) : "";
+  return [type, item.locationName].filter(Boolean).join(": ") + area;
 }

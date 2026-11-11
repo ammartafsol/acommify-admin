@@ -114,6 +114,110 @@
       "update": "تحديث",
       "commentAddedSuccessfully": "تم إضافة التعليق بنجاح",
       "commentUpdatedSuccessfully": "تم تحديث التعليق بنجاح"
+    },
+    "staffSubmit": {
+      "title": "إرسال طلب صيانة",
+      "intro": "أبلغ عن مشكلة صيانة وجدتها. ستدخل مسار الصيانة المعتاد للمراجعة والإسناد.",
+      "open": "إرسال طلب",
+      "location": "موقع الطلب",
+      "locationTypes": {
+        "property": "عقار / منزل",
+        "communal": "منطقة مشتركة",
+        "building": "مبنى المركز",
+        "external": "منطقة خارجية"
+      },
+      "propertyTypes": {
+        "house": "منزل",
+        "room": "غرفة",
+        "apartment": "شقة"
+      },
+      "property": "عقار / منزل",
+      "propertyPlaceholder": "اختر العقار",
+      "locationName": "الموقع",
+      "locationNamePlaceholder": {
+        "communal": "مثال: غرفة الغسيل، المطبخ",
+        "building": "مثال: الاستقبال، المكتب 2",
+        "external": "مثال: البوابة الرئيسية، الموقف، السياج"
+      },
+      "area": "الغرفة / المنطقة (اختياري)",
+      "areaPlaceholder": "مثال: الحمام، الجدار الخلفي",
+      "category": "فئة الصيانة",
+      "categoryPlaceholder": "اختر فئة",
+      "description": "وصف المشكلة",
+      "descriptionPlaceholder": "صف المشكلة ومكانها بالضبط وأي أمر عاجل",
+      "priority": "الأولوية",
+      "priorities": {
+        "low": "منخفضة",
+        "medium": "متوسطة",
+        "high": "عالية",
+        "urgent": "عاجلة"
+      },
+      "photos": "الصور / المرفقات",
+      "photosHint": "(اختياري، حتى {count}، 5 ميغابايت لكل منها)",
+      "addPhoto": "إضافة صورة",
+      "removePhoto": "إزالة الصورة",
+      "submittedBy": "مقدّم الطلب",
+      "dateTime": "التاريخ والوقت",
+      "autoNote": "يُسجَّل تلقائيًا عند الإرسال.",
+      "submit": "إرسال الطلب",
+      "submitted": "تم إرسال طلب الصيانة",
+      "loading": "جارٍ التحميل...",
+      "errors": {
+        "property": "اختر العقار",
+        "locationName": "أدخل الموقع",
+        "category": "اختر فئة",
+        "description": "صف المشكلة (5 أحرف على الأقل)",
+        "fileSize": "يجب ألا تتجاوز كل صورة 5 ميغابايت",
+        "maxFiles": "يمكنك إضافة حتى {count} صور"
+      },
+      "sources": {
+        "all": "الكل",
+        "resident": "مقيم",
+        "staff": "موظف"
+      },
+      "sourceLabel": "مقدّم من",
+      "mySubmitted": "طلباتي المرسلة",
+      "mySubmittedHint": "مشكلات الصيانة التي أبلغت عنها",
+      "reportedBy": "أبلغ عنه",
+      "locationColumn": "الموقع",
+      "submittedByStaff": "مقدّم من الموظف: {name}"
+    },
+    "assign": {
+      "title": "إسناد مهمة الصيانة",
+      "action": "إسناد",
+      "reassign": "إعادة الإسناد",
+      "staff": "موظف",
+      "staffHint": "شخص من فريقك",
+      "contractor": "مقاول خارجي",
+      "contractorHint": "شركة أو حرفي",
+      "staffMember": "الموظف",
+      "staffPlaceholder": "اختر موظفًا",
+      "contractorName": "اسم جهة الاتصال",
+      "contractorNamePlaceholder": "مثال: أحمد علي",
+      "company": "الشركة (اختياري)",
+      "companyPlaceholder": "مثال: شركة السباكة",
+      "phone": "الهاتف (اختياري)",
+      "email": "البريد الإلكتروني (اختياري)",
+      "note": "تعليمات (اختياري)",
+      "notePlaceholder": "ما يجب أن يعرفه منفّذ المهمة",
+      "save": "إسناد",
+      "saved": "تم إسناد المهمة",
+      "assignedStaff": "مُسند إلى",
+      "assignedContractor": "مقاول خارجي",
+      "errors": {
+        "staff": "اختر موظفًا",
+        "contractorName": "أدخل اسم المقاول",
+        "email": "أدخل بريدًا إلكترونيًا صالحًا"
+      }
+    },
+    "timeline": {
+      "title": "النشاط",
+      "someone": "شخص ما",
+      "created": "قدّم {name} الطلب",
+      "assigned": "أسندها {name} إلى {assignee}",
+      "assignedContractor": "أسندها {name} إلى المقاول {assignee}",
+      "status": "غيّر {name} الحالة من {from} إلى {to}",
+      "note": "أضاف {name} ملاحظة"
     }
   }
 }

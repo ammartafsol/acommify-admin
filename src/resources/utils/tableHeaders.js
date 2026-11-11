@@ -1,3 +1,7 @@
+import {
+  getLocationText,
+  getPriority,
+} from "@/components/templates/MaintenanceRequests/formatMaintenanceRequest";
 import DateChips from "@/components/molecules/DateChips/DateChips";
 import {
   RenderDateTimeCell,
@@ -679,45 +683,96 @@ export function BusBookingDetailTableHeader(t) {
   ];
 }
 
-export function MaintenanceRequestsTableHeader(t) {
+export function MaintenanceRequestsTableHeader(t, { mineOnly = false } = {}) {
+  const priorityColors = {
+    low: ["#eaf3ff", "#3b82f6"],
+    medium: ["#fff4de", "#e09400"],
+    high: ["#fdecec", "#f04438"],
+    urgent: ["#fbe4e1", "#b42318"],
+  };
   return [
-    {
+    !mineOnly && {
       key: "residentName",
-      title: t("table.residentName"),
-      style: { width: "18%" },
-      renderItem: ({ data }) => capitalizeEachWord(data?.residentName || "NA"),
+      title: t("staffSubmit.reportedBy"),
+      style: { width: "16%" },
+      renderItem: ({ data }) => {
+        const staff = data?.source === "staff";
+        return (
+          <span style={{ display: "inline-flex", flexDirection: "column", gap: 4 }}>
+            <span>{capitalizeEachWord(data?.residentName || "NA")}</span>
+            <span
+              data-source-badge={staff ? "staff" : "resident"}
+              style={{
+                alignSelf: "flex-start",
+                padding: "2px 8px",
+                borderRadius: 999,
+                fontSize: 11,
+                fontWeight: 700,
+                background: staff ? "#f4ebff" : "#ecfdf3",
+                color: staff ? "#7f56d9" : "#067647",
+              }}
+            >
+              {t(`staffSubmit.sources.${staff ? "staff" : "resident"}`)}
+            </span>
+          </span>
+        );
+      },
     },
     {
       key: "roomNumber",
-      title: t("table.roomNumber"),
-      style: { width: "11%" },
-      renderItem: ({ data }) => capitalizeEachWord(data?.roomNumber || "NA"),
+      title: t("staffSubmit.locationColumn"),
+      style: { width: mineOnly ? "18%" : "13%" },
+      renderItem: ({ data }) => getLocationText(data, t) || "NA",
     },
     {
       key: "requestDateTime",
       title: t("table.requestDateTime"),
-      style: { width: "15%" },
+      style: { width: mineOnly ? "15%" : "13%" },
     },
     {
       key: "issueCategory",
       title: t("table.issueCategory"),
-      style: { width: "15%" },
+      style: { width: mineOnly ? "14%" : "12%" },
       renderItem: ({ data }) => capitalizeEachWord(data?.issueCategory || "NA"),
+    },
+    {
+      key: "priority",
+      title: t("staffSubmit.priority"),
+      style: { width: mineOnly ? "10%" : "9%" },
+      renderItem: ({ data }) => {
+        const p = getPriority(data);
+        if (!p) return "—";
+        const [bg, color] = priorityColors[p] || priorityColors.medium;
+        return (
+          <span
+            style={{
+              padding: "3px 10px",
+              borderRadius: 999,
+              fontSize: 12,
+              fontWeight: 700,
+              background: bg,
+              color,
+            }}
+          >
+            {t(`staffSubmit.priorities.${p}`)}
+          </span>
+        );
+      },
     },
     {
       key: "shortDescription",
       title: t("table.shortDescription"),
-      style: { width: "20%" },
+      style: { width: mineOnly ? "30%" : "17%" },
       renderItem: ({ data }) =>
         capitalizeEachWord(data?.shortDescription || "NA"),
     },
     {
       key: "status",
       title: t("table.status"),
-      style: { width: "11%" },
+      style: { width: mineOnly ? "13%" : "10%" },
       renderItem: ({ item }) => <RenderStatusCell status={item} />,
     },
-  ];
+  ].filter(Boolean);
 }
 
 export function VisitorBookingTableHeader(t, locale) {

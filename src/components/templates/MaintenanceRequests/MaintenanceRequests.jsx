@@ -7,6 +7,8 @@ import { RenderStatusCell } from "@/components/organisms/AppTable/tableHelper";
 import AreYouSureModal from "@/components/organisms/Modals/AreYouSureModal/AreYouSureModal";
 import DetailModal from "@/components/organisms/Modals/DetailModal/DetailModal";
 import EditMaintenanceRequests from "@/components/organisms/Modals/EditMaintenanceRequests/EditMaintenanceRequests";
+import AssignMaintenanceModal from "@/components/organisms/Modals/AssignMaintenanceModal";
+import SubmitMaintenanceRequestModal from "@/components/organisms/Modals/SubmitMaintenanceRequestModal";
 import useAxios from "@/interceptor/axios-functions";
 import { useRouter } from "@/i18n/navigation";
 import useDebounce from "@/resources/hooks/useDebounce";
@@ -23,6 +25,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { TbDotsVertical } from "react-icons/tb";
+import { LuPlus } from "react-icons/lu";
 import { useSelector } from "react-redux";
 import { formatMaintenanceRequest } from "./formatMaintenanceRequest";
 import MaintenanceRequestsMobile from "./MaintenanceRequestsMobile";
@@ -46,6 +49,25 @@ export default function MaintenanceRequests() {
   const [priority, setPriority] = useState("all");
   const [showAreYouSureModal, setShowAreYouSureModal] = useState(false);
   const [modalActionType, setModalActionType] = useState(null); // "accept" or "reject"
+  const [source, setSource] = useState("all"); // all | resident | staff
+  const [submitModal, setSubmitModal] = useState(false);
+  const [assignModal, setAssignModal] = useState(false);
+
+  // Staff with only "Submit Maintenance Requests" see the requests they raised
+  const canView =
+    isAdminOrBusinessOwner(user?.role) ||
+    permissions.includes("view-maintenance-requests");
+  const canSubmit =
+    isAdminOrBusinessOwner(user?.role) ||
+    permissions.includes("submit-maintenance-requests");
+  const canManage = permissions.includes("approve-reject-maintenance-request");
+  const mineOnly = !canView;
+
+  const sourceOptions = [
+    { value: "all", label: t("staffSubmit.sources.all") },
+    { value: "resident", label: t("staffSubmit.sources.resident") },
+    { value: "staff", label: t("staffSubmit.sources.staff") },
+  ];
 
   const tabsData = [
     { value: "all", label: t("tabs.all") },
@@ -97,6 +119,17 @@ export default function MaintenanceRequests() {
       });
     }
 
+    if (canManage && !["completed", "rejected"].includes(data?.status)) {
+      items.push({
+        title: t("assign.action"),
+        onClick: (data) => {
+          setSelectedRowData(data);
+          setAssignModal(true);
+        },
+        style: { color: "var(--Black)", fontWeight: 500 },
+      });
+    }
+
     if (isAdminOrBusinessOwner(user?.role) && data?.status === "pending") {
       items.push({
         title: t("actions.rejectRequest"),
@@ -115,9 +148,7 @@ export default function MaintenanceRequests() {
   const [activeTab, setActiveTab] = useState(tabsData[0]);
   const searchDebounce = useDebounce(search, 500);
 
-  const tableActions = permissions.includes(
-    "approve-reject-maintenance-request",
-  )
+  const tableActions = canManage && !mineOnly
     ? [
         {
           renderItem: ({ data }) => (
@@ -157,12 +188,15 @@ export default function MaintenanceRequests() {
       page: currentPage,
       limit: 10,
       ...(severity && severity !== "all" ? { severity } : {}),
+      ...(source !== "all" ? { source } : {}),
     };
 
     const queryString = new URLSearchParams(query).toString();
     setLoading("loading");
     const { response } = await Get({
-      route: `admin/maintenance-request/all?${queryString}`,
+      route: mineOnly
+        ? `maintenance-request/staff/my/all?${new URLSearchParams({ status, page: currentPage, limit: 10 })}`
+        : `admin/maintenance-request/all?${queryString}`,
     });
     if (response) {
       const formattedData = response.data.map((item) =>
@@ -240,16 +274,56 @@ export default function MaintenanceRequests() {
       currentPage,
       severity: priority,
     });
-  }, [activeTab, searchDebounce, currentPage, priority]);
+  }, [activeTab, searchDebounce, currentPage, priority, source, mineOnly]);
+
+  const refresh = () =>
+    fetchData({
+      status: activeTab.value,
+      searchDebounce,
+      currentPage,
+      severity: priority,
+    });
+
+  const sourceFilter = !mineOnly ? (
+    <div className={styles.sourceFilter} role="radiogroup" aria-label={t("staffSubmit.sourceLabel")}>
+      {sourceOptions.map((option) => (
+        <button
+          key={option.value}
+          type="button"
+          role="radio"
+          aria-checked={source === option.value}
+          data-source={option.value}
+          className={source === option.value ? styles.sourceActive : ""}
+          onClick={() => {
+            setSource(option.value);
+            setCurrentPage(1);
+          }}
+        >
+          {option.label}
+        </button>
+      ))}
+    </div>
+  ) : null;
 
   return (
     <>
       <Container className={mergeClass("containerFluid", styles.main)}>
         <div className={styles.desktopView}>
           <SubHeader
-            title={t("title")}
-            showSearchAndFilter
+            title={mineOnly ? t("staffSubmit.mySubmitted") : t("title")}
+            showSearchAndFilter={!mineOnly}
             showBackBtn
+            childrenAtTop
+            buttonProps={
+              canSubmit
+                ? {
+                    label: t("staffSubmit.open"),
+                    leftIcon: <LuPlus size={18} />,
+                    onClick: () => setSubmitModal(true),
+                    variant: "primary",
+                  }
+                : {}
+            }
             tabsProps={{
               selected: activeTab,
               setSelected: (tab) => {
@@ -266,14 +340,19 @@ export default function MaintenanceRequests() {
                 setCurrentPage(1);
               },
             }}
-          ></SubHeader>
+          >
+            {sourceFilter}
+          </SubHeader>
 
           <AppTable
-            tableHeader={MaintenanceRequestsTableHeader(t)}
+            tableHeader={MaintenanceRequestsTableHeader(t, { mineOnly })}
+            // fit the page width (the default is 180px per column = 1440px)
+            tableMinWidth="1100px"
             data={tableData}
             actions={tableActions}
             actionStyles={{
               width: "10%",
+              whiteSpace: "nowrap",
             }}
             loading={loading === "loading"}
             totalRecords={totalRecords}
@@ -314,6 +393,15 @@ export default function MaintenanceRequests() {
             statusCounts={statusCounts}
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
+            mineOnly={mineOnly}
+            canSubmit={canSubmit}
+            onSubmit={() => setSubmitModal(true)}
+            source={source}
+            setSource={(value) => {
+              setSource(value);
+              setCurrentPage(1);
+            }}
+            sourceOptions={sourceOptions}
           />
         </div>
       </Container>
@@ -334,6 +422,21 @@ export default function MaintenanceRequests() {
             }
           />
         )}
+      {submitModal && (
+        <SubmitMaintenanceRequestModal
+          show={submitModal}
+          setShow={setSubmitModal}
+          onSubmitted={refresh}
+        />
+      )}
+      {assignModal && selectedRowData && (
+        <AssignMaintenanceModal
+          show={assignModal}
+          setShow={setAssignModal}
+          request={selectedRowData}
+          onSaved={refresh}
+        />
+      )}
       {showAreYouSureModal && (
         <AreYouSureModal
           show={showAreYouSureModal}

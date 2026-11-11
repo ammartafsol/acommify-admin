@@ -479,3 +479,180 @@
     padding: 24px 28px 28px;
   }
 }
+
+.urgent {
+  background: #fbe4e1;
+  color: #b42318;
+}
+
+.badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.staffBadge,
+.residentBadge {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.staffBadge {
+  background: #f4ebff;
+  color: #7f56d9;
+}
+
+.residentBadge {
+  background: #ecfdf3;
+  color: #067647;
+}
+
+.assigneeCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid #e0f2fe;
+  border-radius: 14px;
+  background: #f5fbff;
+}
+
+.assigneeCard div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.assigneeCard span:not(.iconBox) {
+  color: #98a2b3;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.assigneeCard strong {
+  color: #101828;
+  font-size: 15px;
+}
+
+.assigneeCard em {
+  color: #667085;
+  font-size: 13px;
+  font-style: normal;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- audit timeline ---------- */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  inset-inline-start: 15px;
+  width: 2px;
+  background: #eef2f6;
+}
+
+.timeline li {
+  position: relative;
+  display: flex;
+  gap: 12px;
+}
+
+.tlIcon {
+  z-index: 1;
+  display: grid;
+  flex: 0 0 32px;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: #f2f4f7;
+  color: #667085;
+}
+
+.tl_created {
+  background: #e0f2fe;
+  color: #0b84c4;
+}
+
+.tl_assigned {
+  background: #f4ebff;
+  color: #7f56d9;
+}
+
+.tl_status {
+  background: #fff4de;
+  color: #b54708;
+}
+
+.tl_note {
+  background: #ecfdf3;
+  color: #067647;
+}
+
+.tlBody {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  padding-top: 5px;
+}
+
+.tlText {
+  margin: 0;
+  color: #101828;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tlDate {
+  color: #98a2b3;
+  font-size: 12px;
+}
+
+.tlNote {
+  margin: 6px 0 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #475467;
+  font-size: 13.5px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.tlPhotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.tlPhotos img {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+}

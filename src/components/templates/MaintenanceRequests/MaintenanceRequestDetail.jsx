@@ -5,11 +5,12 @@ import NoDataFound from "@/components/atoms/NoDataFound/NoDataFound";
 import RenderToast from "@/components/atoms/RenderToast";
 import AreYouSureModal from "@/components/organisms/Modals/AreYouSureModal/AreYouSureModal";
 import EditMaintenanceRequests from "@/components/organisms/Modals/EditMaintenanceRequests/EditMaintenanceRequests";
+import AssignMaintenanceModal from "@/components/organisms/Modals/AssignMaintenanceModal";
 import useAxios from "@/interceptor/axios-functions";
 import { useRouter } from "@/i18n/navigation";
 import useDirection from "@/resources/hooks/useDirection";
 import { useTranslations } from "@/resources/hooks/useTranslations";
-import { imageUrl, isAdminOrBusinessOwner, uploadImages } from "@/resources/utils/helper";
+import { imageUrl, isAdminOrBusinessOwner } from "@/resources/utils/helper";
 import moment from "moment-timezone";
 import { useLocale } from "next-intl";
 import { useEffect, useState } from "react";
@@ -31,8 +32,14 @@ import {
   LuClock,
   LuFileText,
   LuDoorOpen,
+  LuHardHat,
+  LuHistory,
   LuHouse,
+  LuMapPin,
+  LuMessageSquare,
+  LuPlus,
   LuUser,
+  LuUserCheck,
 } from "react-icons/lu";
 import { IoChevronBack } from "react-icons/io5";
 import { useSelector } from "react-redux";
@@ -42,9 +49,85 @@ import {
   getDocumentKey,
   getDocumentSrc,
   getHouseAndRoom,
+  getLocationText,
   getPriority,
   getRequestCode,
+  isStaffRequest,
 } from "./formatMaintenanceRequest";
+
+const STATUS_KEY = { "in-progress": "inprogress" };
+const statusLabel = (t, status) =>
+  status ? t(`tabs.${STATUS_KEY[status] || status}`) : "";
+const ACTIVITY_ICONS = {
+  created: LuPlus,
+  assigned: LuUserCheck,
+  status: LuHistory,
+  note: LuMessageSquare,
+  updated: LuHistory,
+};
+
+/** Audit trail: who did what, and when. */
+function ActivityTimeline({ activity = [], t, locale }) {
+  if (!activity.length) return null;
+  const name = (by) => by?.fullName?.[locale] || by?.fullName?.en || t("timeline.someone");
+  const assigneeText = (a) =>
+    !a
+      ? ""
+      : a.type === "contractor"
+        ? [a.name, a.company].filter(Boolean).join(" · ")
+        : a.name;
+  return (
+    <>
+      <h2 className={styles.sectionTitle}>{t("timeline.title")}</h2>
+      <ol className={styles.timeline} data-testid="mr-timeline">
+        {[...activity].reverse().map((entry, index) => {
+          const Icon = ACTIVITY_ICONS[entry.action] || LuHistory;
+          const who = name(entry.by);
+          let text = "";
+          if (entry.action === "created") text = t("timeline.created", { name: who });
+          else if (entry.action === "assigned")
+            text = t(
+              entry.assignee?.type === "contractor" ? "timeline.assignedContractor" : "timeline.assigned",
+              { name: who, assignee: assigneeText(entry.assignee) },
+            );
+          else if (entry.action === "status")
+            text = t("timeline.status", {
+              name: who,
+              from: statusLabel(t, entry.fromStatus),
+              to: statusLabel(t, entry.toStatus),
+            });
+          else text = t("timeline.note", { name: who });
+          return (
+            <li key={`${entry.at}-${index}`} data-action={entry.action}>
+              <span className={`${styles.tlIcon} ${styles[`tl_${entry.action}`] || ""}`}>
+                <Icon size={15} />
+              </span>
+              <div className={styles.tlBody}>
+                <p className={styles.tlText}>{text}</p>
+                <span className={styles.tlDate}>
+                  {moment(entry.at).format("D MMM YYYY, HH:mm")}
+                </span>
+                {entry.note ? <p className={styles.tlNote}>{entry.note}</p> : null}
+                {entry.documents?.length ? (
+                  <div className={styles.tlPhotos}>
+                    {entry.documents.map((doc) => (
+                      <img
+                        key={doc}
+                        src={imageUrl(doc)}
+                        alt=""
+                        onClick={() => window.open(imageUrl(doc), "_blank")}
+                      />
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+            </li>
+          );
+        })}
+      </ol>
+    </>
+  );
+}
 
 const IMAGE_EXTENSIONS = new Set([
   "jpg",
@@ -220,7 +303,17 @@ export default function MaintenanceRequestDetail({ slug }) {
   const [previews, setPreviews] = useState([]);
   const [failedImages, setFailedImages] = useState({});
   const [editModal, setEditModal] = useState(false);
+  const [assignModal, setAssignModal] = useState(false);
   const [confirmAction, setConfirmAction] = useState(null);
+
+  // Staff who can only submit requests see their own submissions (read only)
+  const canView =
+    isAdminOrBusinessOwner(user?.role) ||
+    permissions.includes("view-maintenance-requests");
+  const canManage =
+    isAdminOrBusinessOwner(user?.role) ||
+    permissions.includes("approve-reject-maintenance-request");
+  const mineOnly = !canView;
 
   useEffect(() => {
     const nextPreviews = newFiles.map((file) => ({
@@ -237,7 +330,9 @@ export default function MaintenanceRequestDetail({ slug }) {
   const loadRequest = async () => {
     setLoading(true);
     const { response } = await Get({
-      route: `admin/maintenance-request/detail/${slug}`,
+      route: mineOnly
+        ? `maintenance-request/staff/my/detail/${slug}`
+        : `admin/maintenance-request/detail/${slug}`,
     });
     const item = response?.data?.slug ? response.data : null;
     setRequest(item ? formatMaintenanceRequest(item, locale) : null);
@@ -246,11 +341,11 @@ export default function MaintenanceRequestDetail({ slug }) {
 
   useEffect(() => {
     if (slug) loadRequest();
-  }, [slug, locale]);
+  }, [slug, locale, mineOnly]);
 
   useEffect(() => {
     if (!request) return;
-    setNote((request.comment || "").slice(0, 500));
+    setNote("");
     setSelectedStatus(
       ["completed", "pending", "escalated"].includes(request.status)
         ? request.status
@@ -266,6 +361,15 @@ export default function MaintenanceRequestDetail({ slug }) {
   const roomLabel = withLabel(t("mobile.room"), room);
 
   const isCompleted = request?.status === "completed";
+  const isClosed = isCompleted || request?.status === "rejected";
+  const staffSource = isStaffRequest(request);
+  const isAssignee =
+    !!request?.assignedTo &&
+    (request.assignedTo._id === user?._id ||
+      (request.assignedTo.userId && request.assignedTo.userId === user?.userId));
+  // status buttons: managers; notes + photos: managers or the person doing the job
+  const canChangeStatus = !mineOnly && canManage && !isClosed;
+  const canAddNote = !mineOnly && (canManage || isAssignee) && !isClosed;
   const statusOptions = isCompleted
     ? STATUS_OPTIONS.filter((option) => option.value === "completed")
     : STATUS_OPTIONS;
@@ -279,14 +383,22 @@ export default function MaintenanceRequestDetail({ slug }) {
       (isAdminOrBusinessOwner(user?.role) && request?.status !== "rejected"));
 
   const menuItems = [];
-  if (permissions.includes("approve-reject-maintenance-request") && canEdit) {
+  if (!mineOnly && canManage && !isClosed) {
+    menuItems.push({
+      title: request?.assignedTo || request?.contractor?.name ? t("assign.reassign") : t("assign.action"),
+      onClick: () => setAssignModal(true),
+      style: { color: "var(--Black)", fontWeight: 500 },
+    });
+  }
+  if (!mineOnly && permissions.includes("approve-reject-maintenance-request") && canEdit) {
     menuItems.push({
       title: t("actions.edit"),
       onClick: () => setEditModal(true),
       style: { color: "var(--Black)", fontWeight: 500 },
     });
   }
-  if (user?.role === "staff" && request?.status === "pending") {
+  if (!mineOnly && user?.role === "staff" && request?.status === "pending" &&
+    permissions.includes("approve-reject-maintenance-request")) {
     menuItems.push({
       title: t("actions.acceptTask"),
       onClick: () => setConfirmAction("accept"),
@@ -337,50 +449,74 @@ export default function MaintenanceRequestDetail({ slug }) {
 
   const saveUpdate = async () => {
     const trimmedNote = note.trim();
-    if (!selectedStatus && !trimmedNote && newFiles.length === 0) {
+    const statusChanged =
+      canChangeStatus && selectedStatus && selectedStatus !== request.status;
+    if (!statusChanged && !trimmedNote && newFiles.length === 0) {
       RenderToast({ type: "error", message: t("mobile.selectStatusOrNote") });
       return;
     }
 
     setSaving(true);
-    const payload = {};
-    if (selectedStatus) payload.status = selectedStatus;
-    if (trimmedNote) payload.comment = trimmedNote;
-
-    if (newFiles.length) {
-      const uploaded = await uploadImages(newFiles, Post);
-      if (!uploaded?.length) {
-        setSaving(false);
-        return;
-      }
-      const existing = (request.documents || [])
-        .map(getDocumentKey)
-        .filter(Boolean);
-      payload.documents = [...existing, ...uploaded];
+    let ok = true;
+    if (statusChanged) {
+      const { response } = await Patch({
+        route: `admin/maintenance-request/update/${request.slug}`,
+        data: { status: selectedStatus, ...(trimmedNote && { comment: trimmedNote }) },
+      });
+      ok = !!response;
+    }
+    // the note goes with the status change; otherwise (and for photos) it's its own entry
+    if (ok && (newFiles.length || (trimmedNote && !statusChanged))) {
+      const data = new FormData();
+      if (trimmedNote && !statusChanged) data.append("note", trimmedNote);
+      newFiles.forEach((file) => data.append("documents", file));
+      const { response } = await Post({
+        route: `admin/maintenance-request/note/${request.slug}`,
+        data,
+        isFormData: true,
+      });
+      ok = !!response;
     }
 
-    const { response } = await Patch({
-      route: `admin/maintenance-request/update/${request.slug}`,
-      data: payload,
-    });
-
-    if (response) {
+    if (ok) {
       RenderToast({
         type: "success",
         message: t("maintenanceRequestUpdatedSuccessfully"),
       });
       setNewFiles([]);
+      setNote("");
       await loadRequest();
     }
     setSaving(false);
   };
 
-  const infoRows = [
-    houseLabel && { icon: LuHouse, text: houseLabel },
-    roomLabel && { icon: LuDoorOpen, text: roomLabel },
-    { icon: LuUser, text: request?.residentName },
-    { icon: LuFileText, text: request?.shortDescription },
-  ].filter((row) => row && row.text && row.text !== "N/A");
+  const submitter = request?.user;
+  const submitterText = staffSource
+    ? [
+        t("staffSubmit.submittedByStaff", { name: request?.residentName }),
+        submitter?.userId,
+        submitter?.email,
+      ]
+        .filter(Boolean)
+        .join(" · ")
+    : request?.residentName;
+  const infoRows = (
+    staffSource
+      ? [
+          { icon: LuMapPin, text: getLocationText(request, t), key: "location" },
+          { icon: LuUser, text: submitterText, key: "submitter" },
+        ]
+      : [
+          houseLabel && { icon: LuHouse, text: houseLabel },
+          roomLabel && { icon: LuDoorOpen, text: roomLabel },
+          { icon: LuUser, text: submitterText, key: "submitter" },
+        ]
+  )
+    .concat([{ icon: LuFileText, text: request?.shortDescription }])
+    .filter((row) => row && row.text && row.text !== "N/A");
+
+  const contractor = request?.contractor?.name ? request.contractor : null;
+  const assignee = request?.assignedTo;
 
   return (
     <Container className={`containerFluid ${styles.main}`}>
@@ -420,14 +556,20 @@ export default function MaintenanceRequestDetail({ slug }) {
           </div>
 
           <div className={styles.priorityRow}>
-            {priority ? (
-              <span className={`${styles.priority} ${styles[priority]}`}>
-                <i />
-                {t("mobile.priority", { level: t(`mobile.${priority}`) })}
+            <span className={styles.badges}>
+              {priority ? (
+                <span className={`${styles.priority} ${styles[priority]}`}>
+                  <i />
+                  {t("mobile.priority", { level: t(`staffSubmit.priorities.${priority}`) })}
+                </span>
+              ) : null}
+              <span
+                className={staffSource ? styles.staffBadge : styles.residentBadge}
+                data-source-badge={staffSource ? "staff" : "resident"}
+              >
+                {t(`staffSubmit.sources.${staffSource ? "staff" : "resident"}`)}
               </span>
-            ) : (
-              <span />
-            )}
+            </span>
             <span className={styles.code}>{code}</span>
           </div>
 
@@ -438,7 +580,7 @@ export default function MaintenanceRequestDetail({ slug }) {
             {infoRows.map((row) => {
               const Icon = row.icon;
               return (
-                <div className={styles.infoRow} key={row.text}>
+                <div className={styles.infoRow} key={row.key || row.text} data-row={row.key}>
                   <span className={styles.iconBox}>
                     <Icon size={18} />
                   </span>
@@ -447,6 +589,35 @@ export default function MaintenanceRequestDetail({ slug }) {
               );
             })}
           </div>
+
+          {assignee || contractor ? (
+            <div className={styles.assigneeCard} data-testid="mr-assignee">
+              <span className={styles.iconBox}>
+                {contractor ? <LuHardHat size={18} /> : <LuUserCheck size={18} />}
+              </span>
+              <div>
+                <span>{contractor ? t("assign.assignedContractor") : t("assign.assignedStaff")}</span>
+                <strong>
+                  {contractor
+                    ? [contractor.name, contractor.company].filter(Boolean).join(" · ")
+                    : assignee?.fullName?.[locale] || assignee?.fullName?.en}
+                </strong>
+                <em>
+                  {(contractor
+                    ? [contractor.phone, contractor.email]
+                    : [
+                        assignee?.callingCode && assignee?.phoneNumber
+                          ? `${assignee.callingCode} ${assignee.phoneNumber}`
+                          : "",
+                        assignee?.email,
+                      ]
+                  )
+                    .filter(Boolean)
+                    .join(" · ")}
+                </em>
+              </div>
+            </div>
+          ) : null}
 
           <h2 className={styles.sectionTitle}>
             {(() => {
@@ -502,7 +673,7 @@ export default function MaintenanceRequestDetail({ slug }) {
                 }
               />
             ))}
-            {!isCompleted ? (
+            {canAddNote ? (
               <label className={styles.addPhoto}>
                 <LuCamera size={20} />
                 {t("mobile.addPhoto")}
@@ -510,6 +681,7 @@ export default function MaintenanceRequestDetail({ slug }) {
                   className={styles.fileInput}
                   type="file"
                   accept="image/*"
+                  data-testid="mr-note-file"
                   onChange={(event) => {
                     const file = event.target.files?.[0];
                     if (file) setNewFiles((current) => [...current, file]);
@@ -520,6 +692,8 @@ export default function MaintenanceRequestDetail({ slug }) {
             ) : null}
           </div>
 
+          {canChangeStatus || isCompleted ? (
+          <>
           <h2 className={styles.sectionTitle}>{t("mobile.updateStatus")}</h2>
           <div
             className={`${styles.statusGrid} ${
@@ -551,8 +725,11 @@ export default function MaintenanceRequestDetail({ slug }) {
             })}
           </div>
 
-          {isCompleted ? (
-            request.comment ? (
+          </>
+          ) : null}
+
+          {isClosed || !canAddNote ? (
+            request.comment && !(request.activity || []).length ? (
               <>
                 <h2 className={styles.sectionTitle}>{t("commentModal.comment")}</h2>
                 <p className={styles.commentText}>{request.comment}</p>
@@ -582,7 +759,18 @@ export default function MaintenanceRequestDetail({ slug }) {
               </button>
             </>
           )}
+
+          <ActivityTimeline activity={request.activity} t={t} locale={locale} />
         </div>
+      )}
+
+      {assignModal && request && (
+        <AssignMaintenanceModal
+          show={assignModal}
+          setShow={setAssignModal}
+          request={request}
+          onSaved={loadRequest}
+        />
       )}
 
       {editModal && permissions.includes("approve-reject-maintenance-request") && (

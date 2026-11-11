@@ -115,6 +115,110 @@
       "update": "تحديث",
       "commentAddedSuccessfully": "تعليق بايډی شو",
       "commentUpdatedSuccessfully": "تعليق بايډی شو"
+    },
+    "staffSubmit": {
+      "title": "د ساتنې غوښتنه وسپارئ",
+      "intro": "د هغې ستونزې راپور ورکړئ چې تاسو موندلې. دا د کتنې او سپارلو لپاره د ساتنې عادي بهیر ته ځي.",
+      "open": "غوښتنه وسپارئ",
+      "location": "د غوښتنې ځای",
+      "locationTypes": {
+        "property": "ملکیت / کور",
+        "communal": "ګډه سیمه",
+        "building": "د مرکز ودانۍ",
+        "external": "بهرنۍ سیمه"
+      },
+      "propertyTypes": {
+        "house": "کور",
+        "room": "کوټه",
+        "apartment": "اپارتمان"
+      },
+      "property": "ملکیت / کور",
+      "propertyPlaceholder": "ملکیت وټاکئ",
+      "locationName": "ځای",
+      "locationNamePlaceholder": {
+        "communal": "لکه: د مینځلو کوټه، پخلنځی",
+        "building": "لکه: استقبالیه، دفتر ۲",
+        "external": "لکه: اصلي دروازه، پارکینګ، کټاره"
+      },
+      "area": "کوټه / سیمه (اختیاري)",
+      "areaPlaceholder": "لکه: تشناب، شاته دیوال",
+      "category": "د ساتنې کټګوري",
+      "categoryPlaceholder": "کټګوري وټاکئ",
+      "description": "د ستونزې تشریح",
+      "descriptionPlaceholder": "ستونزه، دقیق ځای او بیړني شیان یې تشریح کړئ",
+      "priority": "لومړیتوب",
+      "priorities": {
+        "low": "ټیټ",
+        "medium": "منځنی",
+        "high": "لوړ",
+        "urgent": "بیړنی"
+      },
+      "photos": "انځورونه / ضمیمې",
+      "photosHint": "(اختیاري، تر {count} پورې، هر یو 5 MB)",
+      "addPhoto": "انځور زیات کړئ",
+      "removePhoto": "انځور لرې کړئ",
+      "submittedBy": "سپارونکی",
+      "dateTime": "نېټه او وخت",
+      "autoNote": "د سپارلو پر مهال په اتومات ډول ثبتیږي.",
+      "submit": "غوښتنه وسپارئ",
+      "submitted": "د ساتنې غوښتنه وسپارل شوه",
+      "loading": "پورته کیږي...",
+      "errors": {
+        "property": "ملکیت وټاکئ",
+        "locationName": "ځای ولیکئ",
+        "category": "کټګوري وټاکئ",
+        "description": "ستونزه تشریح کړئ (لږ تر لږه ۵ توري)",
+        "fileSize": "هر انځور باید 5 MB یا کم وي",
+        "maxFiles": "تاسو تر {count} انځورونو پورې زیاتولی شئ"
+      },
+      "sources": {
+        "all": "ټول",
+        "resident": "اوسېدونکی",
+        "staff": "کارکوونکی"
+      },
+      "sourceLabel": "سپارونکی",
+      "mySubmitted": "زما سپارل شوې غوښتنې",
+      "mySubmittedHint": "هغه ستونزې چې تاسو راپور کړې",
+      "reportedBy": "راپور ورکوونکی",
+      "locationColumn": "ځای",
+      "submittedByStaff": "د کارکوونکي لخوا سپارل شوی: {name}"
+    },
+    "assign": {
+      "title": "د ساتنې کار وسپارئ",
+      "action": "وسپارئ",
+      "reassign": "بیا وسپارئ",
+      "staff": "کارکوونکی",
+      "staffHint": "ستاسو د ټیم څوک",
+      "contractor": "بهرنی قراردادي",
+      "contractorHint": "شرکت یا کسبګر",
+      "staffMember": "کارکوونکی",
+      "staffPlaceholder": "کارکوونکی وټاکئ",
+      "contractorName": "د اړیکې نوم",
+      "contractorNamePlaceholder": "لکه: احمد خان",
+      "company": "شرکت (اختیاري)",
+      "companyPlaceholder": "لکه: د نلدوانۍ شرکت",
+      "phone": "تلیفون (اختیاري)",
+      "email": "برېښنالیک (اختیاري)",
+      "note": "لارښوونې (اختیاري)",
+      "notePlaceholder": "هغه څه چې کار کوونکی یې باید پوه شي",
+      "save": "وسپارئ",
+      "saved": "کار وسپارل شو",
+      "assignedStaff": "سپارل شوی",
+      "assignedContractor": "بهرنی قراردادي",
+      "errors": {
+        "staff": "کارکوونکی وټاکئ",
+        "contractorName": "د قراردادي نوم ولیکئ",
+        "email": "سم برېښنالیک ولیکئ"
+      }
+    },
+    "timeline": {
+      "title": "فعالیت",
+      "someone": "یو څوک",
+      "created": "{name} غوښتنه وسپارله",
+      "assigned": "{name} دا {assignee} ته وسپارله",
+      "assignedContractor": "{name} دا قراردادي {assignee} ته وسپارله",
+      "status": "{name} حالت له {from} څخه {to} ته بدل کړ",
+      "note": "{name} یادښت زیات کړ"
     }
   }
 }

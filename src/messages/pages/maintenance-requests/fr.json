@@ -115,6 +115,110 @@
       "update": "Mettre à jour",
       "commentAddedSuccessfully": "Commentaire ajouté avec succès",
       "commentUpdatedSuccessfully": "Commentaire modifié avec succès"
+    },
+    "staffSubmit": {
+      "title": "Soumettre une demande de maintenance",
+      "intro": "Signalez un problème de maintenance constaté. Il suit le circuit de maintenance habituel pour examen et attribution.",
+      "open": "Soumettre une demande",
+      "location": "Lieu de la demande",
+      "locationTypes": {
+        "property": "Logement / Maison",
+        "communal": "Espace commun",
+        "building": "Bâtiment du centre",
+        "external": "Espace extérieur"
+      },
+      "propertyTypes": {
+        "house": "Maison",
+        "room": "Chambre",
+        "apartment": "Appartement"
+      },
+      "property": "Logement / Maison",
+      "propertyPlaceholder": "Sélectionnez le logement",
+      "locationName": "Emplacement",
+      "locationNamePlaceholder": {
+        "communal": "ex. : Buanderie, Cuisine",
+        "building": "ex. : Accueil, Bureau 2",
+        "external": "ex. : Portail, Parking, Clôture"
+      },
+      "area": "Pièce / Zone (facultatif)",
+      "areaPlaceholder": "ex. : Salle de bain, Mur arrière",
+      "category": "Catégorie de maintenance",
+      "categoryPlaceholder": "Sélectionnez une catégorie",
+      "description": "Description du problème",
+      "descriptionPlaceholder": "Décrivez le problème, son emplacement exact et toute urgence",
+      "priority": "Priorité",
+      "priorities": {
+        "low": "Faible",
+        "medium": "Moyenne",
+        "high": "Haute",
+        "urgent": "Urgente"
+      },
+      "photos": "Photos / pièces jointes",
+      "photosHint": "(facultatif, jusqu'à {count}, 5 Mo chacune)",
+      "addPhoto": "Ajouter une photo",
+      "removePhoto": "Supprimer la photo",
+      "submittedBy": "Soumis par",
+      "dateTime": "Date et heure",
+      "autoNote": "Enregistré automatiquement à l'envoi.",
+      "submit": "Soumettre la demande",
+      "submitted": "Demande de maintenance soumise",
+      "loading": "Chargement...",
+      "errors": {
+        "property": "Sélectionnez le logement",
+        "locationName": "Indiquez l'emplacement",
+        "category": "Sélectionnez une catégorie",
+        "description": "Décrivez le problème (5 caractères minimum)",
+        "fileSize": "Chaque photo doit faire 5 Mo maximum",
+        "maxFiles": "Vous pouvez ajouter jusqu'à {count} photos"
+      },
+      "sources": {
+        "all": "Toutes",
+        "resident": "Résident",
+        "staff": "Personnel"
+      },
+      "sourceLabel": "Soumis par",
+      "mySubmitted": "Mes demandes soumises",
+      "mySubmittedHint": "Problèmes de maintenance que vous avez signalés",
+      "reportedBy": "Signalé par",
+      "locationColumn": "Emplacement",
+      "submittedByStaff": "Soumis par le personnel : {name}"
+    },
+    "assign": {
+      "title": "Attribuer l'intervention",
+      "action": "Attribuer",
+      "reassign": "Réattribuer",
+      "staff": "Membre du personnel",
+      "staffHint": "Quelqu'un de votre équipe",
+      "contractor": "Prestataire externe",
+      "contractorHint": "Une entreprise ou un artisan",
+      "staffMember": "Membre du personnel",
+      "staffPlaceholder": "Sélectionnez un membre du personnel",
+      "contractorName": "Nom du contact",
+      "contractorNamePlaceholder": "ex. : Jean Dupont",
+      "company": "Entreprise (facultatif)",
+      "companyPlaceholder": "ex. : Plomberie SARL",
+      "phone": "Téléphone (facultatif)",
+      "email": "E-mail (facultatif)",
+      "note": "Instructions (facultatif)",
+      "notePlaceholder": "Ce que l'intervenant doit savoir",
+      "save": "Attribuer",
+      "saved": "Intervention attribuée",
+      "assignedStaff": "Attribué à",
+      "assignedContractor": "Prestataire externe",
+      "errors": {
+        "staff": "Sélectionnez un membre du personnel",
+        "contractorName": "Indiquez le nom du prestataire",
+        "email": "Saisissez un e-mail valide"
+      }
+    },
+    "timeline": {
+      "title": "Activité",
+      "someone": "Quelqu'un",
+      "created": "{name} a soumis la demande",
+      "assigned": "{name} l'a attribuée à {assignee}",
+      "assignedContractor": "{name} l'a attribuée au prestataire {assignee}",
+      "status": "{name} a changé le statut de {from} à {to}",
+      "note": "{name} a ajouté une note"
     }
   }
 }

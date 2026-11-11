@@ -33,12 +33,10 @@
       "assignedToEmail": "Email",
       "assignedToPhone": "Phone"
     },
-
     "buttons": {
       "submit": "Submit",
       "cancel": "Cancel"
     },
-
     "inputsLabels": {
       "residentName": "Resident Name",
       "roomNumber": "Room Number",
@@ -48,7 +46,6 @@
       "status": "Status",
       "assignToStaff": "Assign To Staff"
     },
-
     "inputsPlaceholders": {
       "residentName": "Enter Resident Name",
       "roomNumber": "Enter Room Number",
@@ -58,7 +55,6 @@
       "status": "Select Status",
       "assignToStaff": "Select Staff"
     },
-
     "validation": {
       "residentNameRequired": "Resident Name is required",
       "roomNumberRequired": "Room Number is required",
@@ -68,7 +64,6 @@
       "statusRequired": "Status is required",
       "assignToStaffRequired": "Please select a staff member to assign"
     },
-
     "mobile": {
       "title": "Maintenance Jobs",
       "subtitle": "Your assigned maintenance requests",
@@ -123,6 +118,110 @@
       "update": "Update",
       "commentAddedSuccessfully": "Comment added successfully",
       "commentUpdatedSuccessfully": "Comment updated successfully"
+    },
+    "staffSubmit": {
+      "title": "Submit Maintenance Request",
+      "intro": "Report a maintenance issue you found. It goes into the normal maintenance workflow for review and assignment.",
+      "open": "Submit Request",
+      "location": "Request location",
+      "locationTypes": {
+        "property": "Property / House",
+        "communal": "Communal area",
+        "building": "Centre building",
+        "external": "External area"
+      },
+      "propertyTypes": {
+        "house": "House",
+        "room": "Room",
+        "apartment": "Apartment"
+      },
+      "property": "Property / House",
+      "propertyPlaceholder": "Select the property",
+      "locationName": "Location",
+      "locationNamePlaceholder": {
+        "communal": "e.g. Laundry room, Kitchen",
+        "building": "e.g. Reception, Office 2",
+        "external": "e.g. Main gate, Car park, Fencing"
+      },
+      "area": "Room / Area (optional)",
+      "areaPlaceholder": "e.g. Bathroom, Back wall",
+      "category": "Maintenance category",
+      "categoryPlaceholder": "Select a category",
+      "description": "Issue description",
+      "descriptionPlaceholder": "Describe the problem, where exactly it is and anything urgent",
+      "priority": "Priority",
+      "priorities": {
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "urgent": "Urgent"
+      },
+      "photos": "Photos / attachments",
+      "photosHint": "(optional, up to {count}, 5 MB each)",
+      "addPhoto": "Add photo",
+      "removePhoto": "Remove photo",
+      "submittedBy": "Submitted by",
+      "dateTime": "Date & time",
+      "autoNote": "Recorded automatically when you submit.",
+      "submit": "Submit Request",
+      "submitted": "Maintenance request submitted",
+      "loading": "Loading...",
+      "errors": {
+        "property": "Select the property",
+        "locationName": "Enter the location",
+        "category": "Select a category",
+        "description": "Describe the issue (at least 5 characters)",
+        "fileSize": "Each photo must be 5 MB or smaller",
+        "maxFiles": "You can add up to {count} photos"
+      },
+      "sources": {
+        "all": "All",
+        "resident": "Resident",
+        "staff": "Staff"
+      },
+      "sourceLabel": "Submitted by",
+      "mySubmitted": "My Submitted Requests",
+      "mySubmittedHint": "Maintenance issues you reported",
+      "reportedBy": "Reported By",
+      "locationColumn": "Location",
+      "submittedByStaff": "Submitted by staff: {name}"
+    },
+    "assign": {
+      "title": "Assign Maintenance Job",
+      "action": "Assign",
+      "reassign": "Reassign",
+      "staff": "Staff member",
+      "staffHint": "Someone from your team",
+      "contractor": "External contractor",
+      "contractorHint": "A company or tradesperson",
+      "staffMember": "Staff member",
+      "staffPlaceholder": "Select a staff member",
+      "contractorName": "Contact name",
+      "contractorNamePlaceholder": "e.g. John Smith",
+      "company": "Company (optional)",
+      "companyPlaceholder": "e.g. FixIt Plumbing Ltd",
+      "phone": "Phone (optional)",
+      "email": "Email (optional)",
+      "note": "Instructions (optional)",
+      "notePlaceholder": "Anything the person doing the job should know",
+      "save": "Assign",
+      "saved": "Job assigned",
+      "assignedStaff": "Assigned to",
+      "assignedContractor": "External contractor",
+      "errors": {
+        "staff": "Select a staff member",
+        "contractorName": "Enter the contractor's name",
+        "email": "Enter a valid email"
+      }
+    },
+    "timeline": {
+      "title": "Activity",
+      "someone": "Someone",
+      "created": "{name} submitted the request",
+      "assigned": "{name} assigned it to {assignee}",
+      "assignedContractor": "{name} assigned it to contractor {assignee}",
+      "status": "{name} changed the status from {from} to {to}",
+      "note": "{name} added a note"
     }
   }
 }

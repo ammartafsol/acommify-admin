@@ -115,6 +115,110 @@
       "update": "Gaba da Gaba",
       "commentAddedSuccessfully": "Gaba da gaba an sanya cikin nasara",
       "commentUpdatedSuccessfully": "Gaba da gaba an karɓa cikin nasara"
+    },
+    "staffSubmit": {
+      "title": "Aika Buƙatar Gyara",
+      "intro": "Ka bayar da rahoton matsalar gyara da ka gani. Za ta shiga tsarin gyara na yau da kullum don dubawa da rabawa.",
+      "open": "Aika Buƙata",
+      "location": "Wurin buƙata",
+      "locationTypes": {
+        "property": "Kadara / Gida",
+        "communal": "Wurin gama gari",
+        "building": "Ginin cibiya",
+        "external": "Wurin waje"
+      },
+      "propertyTypes": {
+        "house": "Gida",
+        "room": "Daki",
+        "apartment": "Gida mai ɗakuna"
+      },
+      "property": "Kadara / Gida",
+      "propertyPlaceholder": "Zaɓi kadarar",
+      "locationName": "Wuri",
+      "locationNamePlaceholder": {
+        "communal": "misali: Ɗakin wanki, Kicin",
+        "building": "misali: Karɓar baƙi, Ofis 2",
+        "external": "misali: Babban ƙofa, Wurin ajiye mota, Shinge"
+      },
+      "area": "Daki / Wuri (na zaɓi)",
+      "areaPlaceholder": "misali: Banɗaki, Bangon baya",
+      "category": "Rukunin gyara",
+      "categoryPlaceholder": "Zaɓi rukuni",
+      "description": "Bayanin matsalar",
+      "descriptionPlaceholder": "Bayyana matsalar, inda take daidai da duk abin da ke gaggawa",
+      "priority": "Fifiko",
+      "priorities": {
+        "low": "Ƙasa",
+        "medium": "Matsakaici",
+        "high": "Babba",
+        "urgent": "Gaggawa"
+      },
+      "photos": "Hotuna / haɗe-haɗe",
+      "photosHint": "(na zaɓi, har zuwa {count}, 5 MB kowanne)",
+      "addPhoto": "Ƙara hoto",
+      "removePhoto": "Cire hoto",
+      "submittedBy": "Wanda ya aika",
+      "dateTime": "Kwanan wata da lokaci",
+      "autoNote": "Ana yin rikodin kai tsaye lokacin da ka aika.",
+      "submit": "Aika Buƙata",
+      "submitted": "An aika buƙatar gyara",
+      "loading": "Ana lodawa...",
+      "errors": {
+        "property": "Zaɓi kadarar",
+        "locationName": "Shigar da wurin",
+        "category": "Zaɓi rukuni",
+        "description": "Bayyana matsalar (aƙalla haruffa 5)",
+        "fileSize": "Kowane hoto dole ya zama 5 MB ko ƙasa",
+        "maxFiles": "Za ka iya ƙara hotuna har {count}"
+      },
+      "sources": {
+        "all": "Duka",
+        "resident": "Mazauni",
+        "staff": "Ma'aikaci"
+      },
+      "sourceLabel": "Wanda ya aika",
+      "mySubmitted": "Buƙatun da na aika",
+      "mySubmittedHint": "Matsalolin gyara da ka bayar da rahoto",
+      "reportedBy": "Wanda ya bayar da rahoto",
+      "locationColumn": "Wuri",
+      "submittedByStaff": "Ma'aikaci ya aika: {name}"
+    },
+    "assign": {
+      "title": "Ba da aikin gyara",
+      "action": "Ba da aiki",
+      "reassign": "Sake ba da aiki",
+      "staff": "Ma'aikaci",
+      "staffHint": "Wani daga ƙungiyarka",
+      "contractor": "Ɗan kwangila na waje",
+      "contractorHint": "Kamfani ko ma'aikacin sana'a",
+      "staffMember": "Ma'aikaci",
+      "staffPlaceholder": "Zaɓi ma'aikaci",
+      "contractorName": "Sunan wanda za a tuntuɓa",
+      "contractorNamePlaceholder": "misali: Musa Ibrahim",
+      "company": "Kamfani (na zaɓi)",
+      "companyPlaceholder": "misali: Kamfanin Gyaran Famfo",
+      "phone": "Waya (na zaɓi)",
+      "email": "Imel (na zaɓi)",
+      "note": "Umarni (na zaɓi)",
+      "notePlaceholder": "Abin da wanda zai yi aikin ya kamata ya sani",
+      "save": "Ba da aiki",
+      "saved": "An ba da aikin",
+      "assignedStaff": "An ba wa",
+      "assignedContractor": "Ɗan kwangila na waje",
+      "errors": {
+        "staff": "Zaɓi ma'aikaci",
+        "contractorName": "Shigar da sunan ɗan kwangila",
+        "email": "Shigar da imel mai inganci"
+      }
+    },
+    "timeline": {
+      "title": "Ayyuka",
+      "someone": "Wani",
+      "created": "{name} ya aika buƙatar",
+      "assigned": "{name} ya ba {assignee}",
+      "assignedContractor": "{name} ya ba ɗan kwangila {assignee}",
+      "status": "{name} ya canza matsayi daga {from} zuwa {to}",
+      "note": "{name} ya ƙara bayani"
     }
   }
 }

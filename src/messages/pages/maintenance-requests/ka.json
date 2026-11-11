@@ -113,8 +113,112 @@
       "cancel": "გაუქმება",
       "submit": "გაგზავნა",
       "update": "განახლება",
-        "commentAddedSuccessfully": "კომენტარი წარმატებით დამატებულია",
+      "commentAddedSuccessfully": "კომენტარი წარმატებით დამატებულია",
       "commentUpdatedSuccessfully": "კომენტარი წარმატებით განახლდა"
+    },
+    "staffSubmit": {
+      "title": "მოვლის მოთხოვნის გაგზავნა",
+      "intro": "შეატყობინეთ ნაპოვნი პრობლემის შესახებ. ის ჩვეულ სამუშაო პროცესში გადავა განხილვისა და მინიჭებისთვის.",
+      "open": "მოთხოვნის გაგზავნა",
+      "location": "მოთხოვნის ადგილი",
+      "locationTypes": {
+        "property": "ობიექტი / სახლი",
+        "communal": "საერთო სივრცე",
+        "building": "ცენტრის შენობა",
+        "external": "გარე ტერიტორია"
+      },
+      "propertyTypes": {
+        "house": "სახლი",
+        "room": "ოთახი",
+        "apartment": "ბინა"
+      },
+      "property": "ობიექტი / სახლი",
+      "propertyPlaceholder": "აირჩიეთ ობიექტი",
+      "locationName": "ადგილი",
+      "locationNamePlaceholder": {
+        "communal": "მაგ.: სამრეცხაო, სამზარეულო",
+        "building": "მაგ.: მიმღები, ოფისი 2",
+        "external": "მაგ.: მთავარი ჭიშკარი, პარკინგი, ღობე"
+      },
+      "area": "ოთახი / ზონა (არასავალდებულო)",
+      "areaPlaceholder": "მაგ.: სააბაზანო, უკანა კედელი",
+      "category": "მოვლის კატეგორია",
+      "categoryPlaceholder": "აირჩიეთ კატეგორია",
+      "description": "პრობლემის აღწერა",
+      "descriptionPlaceholder": "აღწერეთ პრობლემა, ზუსტად სად არის და რა არის სასწრაფო",
+      "priority": "პრიორიტეტი",
+      "priorities": {
+        "low": "დაბალი",
+        "medium": "საშუალო",
+        "high": "მაღალი",
+        "urgent": "სასწრაფო"
+      },
+      "photos": "ფოტოები / დანართები",
+      "photosHint": "(არასავალდებულო, {count}-მდე, თითო 5 MB)",
+      "addPhoto": "ფოტოს დამატება",
+      "removePhoto": "ფოტოს წაშლა",
+      "submittedBy": "გამგზავნი",
+      "dateTime": "თარიღი და დრო",
+      "autoNote": "ავტომატურად ფიქსირდება გაგზავნისას.",
+      "submit": "მოთხოვნის გაგზავნა",
+      "submitted": "მოვლის მოთხოვნა გაიგზავნა",
+      "loading": "იტვირთება...",
+      "errors": {
+        "property": "აირჩიეთ ობიექტი",
+        "locationName": "მიუთითეთ ადგილი",
+        "category": "აირჩიეთ კატეგორია",
+        "description": "აღწერეთ პრობლემა (მინიმუმ 5 სიმბოლო)",
+        "fileSize": "თითო ფოტო არაუმეტეს 5 MB",
+        "maxFiles": "შეგიძლიათ დაამატოთ {count}-მდე ფოტო"
+      },
+      "sources": {
+        "all": "ყველა",
+        "resident": "მცხოვრები",
+        "staff": "თანამშრომელი"
+      },
+      "sourceLabel": "გამგზავნი",
+      "mySubmitted": "ჩემი გაგზავნილი მოთხოვნები",
+      "mySubmittedHint": "თქვენ მიერ შეტყობინებული პრობლემები",
+      "reportedBy": "შეატყობინა",
+      "locationColumn": "ადგილი",
+      "submittedByStaff": "გაგზავნა თანამშრომელმა: {name}"
+    },
+    "assign": {
+      "title": "მოვლის სამუშაოს მინიჭება",
+      "action": "მინიჭება",
+      "reassign": "ხელახლა მინიჭება",
+      "staff": "თანამშრომელი",
+      "staffHint": "თქვენი გუნდის წევრი",
+      "contractor": "გარე კონტრაქტორი",
+      "contractorHint": "კომპანია ან ხელოსანი",
+      "staffMember": "თანამშრომელი",
+      "staffPlaceholder": "აირჩიეთ თანამშრომელი",
+      "contractorName": "საკონტაქტო პირი",
+      "contractorNamePlaceholder": "მაგ.: გიორგი ბერიძე",
+      "company": "კომპანია (არასავალდებულო)",
+      "companyPlaceholder": "მაგ.: სანტექნიკა შპს",
+      "phone": "ტელეფონი (არასავალდებულო)",
+      "email": "ელფოსტა (არასავალდებულო)",
+      "note": "ინსტრუქციები (არასავალდებულო)",
+      "notePlaceholder": "რა უნდა იცოდეს შემსრულებელმა",
+      "save": "მინიჭება",
+      "saved": "სამუშაო მიენიჭა",
+      "assignedStaff": "მინიჭებულია",
+      "assignedContractor": "გარე კონტრაქტორი",
+      "errors": {
+        "staff": "აირჩიეთ თანამშრომელი",
+        "contractorName": "მიუთითეთ კონტრაქტორის სახელი",
+        "email": "შეიყვანეთ სწორი ელფოსტა"
+      }
+    },
+    "timeline": {
+      "title": "აქტივობა",
+      "someone": "ვიღაც",
+      "created": "{name}-მ გააგზავნა მოთხოვნა",
+      "assigned": "{name}-მ მიანიჭა {assignee}-ს",
+      "assignedContractor": "{name}-მ მიანიჭა კონტრაქტორს {assignee}",
+      "status": "{name}-მ შეცვალა სტატუსი {from} → {to}",
+      "note": "{name}-მ დაამატა შენიშვნა"
     }
   }
 }

@@ -8,11 +8,13 @@ import moment from "moment-timezone";
 import { useLocale } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 import { CiFilter } from "react-icons/ci";
-import { LuChevronRight, LuHouse, LuSearch, LuUser } from "react-icons/lu";
+import { LuChevronRight, LuHouse, LuPlus, LuSearch, LuUser } from "react-icons/lu";
 import {
   formatMaintenanceRequest,
   getHouseAndRoom,
+  getLocationText,
   getPriority,
+  isStaffRequest,
 } from "./formatMaintenanceRequest";
 import styles from "./mobile.module.css";
 
@@ -49,6 +51,12 @@ export default function MaintenanceRequestsMobile({
   statusCounts = {},
   currentPage,
   setCurrentPage,
+  mineOnly = false,
+  canSubmit = false,
+  onSubmit,
+  source = "all",
+  setSource,
+  sourceOptions = [],
 }) {
   const t = useTranslations("maintenanceRequestsPage");
   const locale = useLocale();
@@ -88,9 +96,30 @@ export default function MaintenanceRequestsMobile({
   return (
     <div className={styles.wrap}>
       <div className={styles.heading}>
-        <h1>{t("mobile.title")}</h1>
-        <p>{t("mobile.subtitle")}</p>
+        <h1>{mineOnly ? t("staffSubmit.mySubmitted") : t("mobile.title")}</h1>
+        <p>{mineOnly ? t("staffSubmit.mySubmittedHint") : t("mobile.subtitle")}</p>
+        {canSubmit ? (
+          <button type="button" className={styles.submitBtn} onClick={onSubmit}>
+            <LuPlus size={18} />
+            {t("staffSubmit.open")}
+          </button>
+        ) : null}
       </div>
+
+      {!mineOnly && sourceOptions.length ? (
+        <div className={styles.sourceRow}>
+          {sourceOptions.map((option) => (
+            <button
+              key={option.value}
+              type="button"
+              className={source === option.value ? styles.sourceActive : ""}
+              onClick={() => setSource?.(option.value)}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+      ) : null}
 
       <div className={styles.tabs}>
         {tabs.map((tab) => (
@@ -186,12 +215,15 @@ export default function MaintenanceRequestsMobile({
           const request = formatMaintenanceRequest(item, locale) || item;
           const priority = getPriority(request);
           const { house, room } = getHouseAndRoom(request);
-          const location = [
-            withLabel(t("mobile.house"), house),
-            withLabel(t("mobile.room"), room),
-          ]
-            .filter(Boolean)
-            .join(" | ");
+          const staff = isStaffRequest(request);
+          const location = staff
+            ? getLocationText(request, t)
+            : [
+                withLabel(t("mobile.house"), house),
+                withLabel(t("mobile.room"), room),
+              ]
+                .filter(Boolean)
+                .join(" | ");
 
           return (
             <article
@@ -237,10 +269,15 @@ export default function MaintenanceRequestsMobile({
                     {location}
                   </p>
                 ) : null}
-                <p>
-                  <LuUser size={15} />
-                  {request.residentName}
-                </p>
+                {!mineOnly ? (
+                  <p>
+                    <LuUser size={15} />
+                    {request.residentName}
+                    <span className={staff ? styles.staffBadge : styles.residentBadge}>
+                      {t(`staffSubmit.sources.${staff ? "staff" : "resident"}`)}
+                    </span>
+                  </p>
+                ) : null}
               </div>
             </article>
           );

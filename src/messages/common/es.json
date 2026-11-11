@@ -239,7 +239,8 @@
       "manage-staff-roster": "Gestionar y publicar turnos del personal",
       "holidays": "Festivos",
       "view-holidays": "Ver festivos",
-      "add-edit-holiday": "Añadir/Editar festivo"
+      "add-edit-holiday": "Añadir/Editar festivo",
+      "submit-maintenance-requests": "Enviar solicitudes de mantenimiento"
     }
   },
   "bookingTypes": {
