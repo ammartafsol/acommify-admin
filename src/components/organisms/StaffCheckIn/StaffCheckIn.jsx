@@ -3,11 +3,10 @@ import RenderToast from "@/components/atoms/RenderToast";
 import {
   formatDuration,
   formatTime,
-  getWeekDays,
   getWeekRangeParams,
   getWeekStart,
   addDays,
-  isSameDay,
+  openBreak,
   sumMinutes,
   summarizeDay,
 } from "@/components/templates/StaffAttendance/attendanceUtils";
@@ -18,7 +17,18 @@ import { useLocale } from "next-intl";
 import { useEffect, useMemo, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import { IoClose } from "react-icons/io5";
-import { LuCalendarCheck, LuChevronDown, LuChevronRight, LuClock } from "react-icons/lu";
+import {
+  LuCalendarCheck,
+  LuCalendarDays,
+  LuChevronDown,
+  LuChevronRight,
+  LuClock,
+  LuCoffee,
+  LuPlay,
+} from "react-icons/lu";
+import { Link } from "@/i18n/navigation";
+import MyAttendance from "./MyAttendance";
+import MyRoster from "./MyRoster";
 import styles from "./StaffCheckIn.module.css";
 
 /** Floating check-in button + panel for staff. `onChange` runs after a check-in/out. */
@@ -29,13 +39,14 @@ export default function StaffCheckIn({ onChange }) {
 
   const [open, setOpen] = useState(false);
   const [showWeek, setShowWeek] = useState(false);
+  const [showRoster, setShowRoster] = useState(false);
+  const [confirmEnd, setConfirmEnd] = useState(false);
   const [now, setNow] = useState(() => new Date());
   const [current, setCurrent] = useState(null);
   const [records, setRecords] = useState([]);
   const [loading, setLoading] = useState("loading");
 
   const weekStart = useMemo(() => getWeekStart(now), [now.toDateString()]);
-  const weekDays = useMemo(() => getWeekDays(weekStart), [weekStart]);
 
   async function getMyAttendance() {
     const params = new URLSearchParams(getWeekRangeParams(weekStart)).toString();
@@ -67,17 +78,20 @@ export default function StaffCheckIn({ onChange }) {
     return () => document.removeEventListener("keydown", onKey);
   }, [open]);
 
-  async function toggleCheckIn() {
-    const action = current ? "check-out" : "check-in";
+  // Clock actions, in the order of a shift
+  const ACTIONS = {
+    clockIn: { route: "check-in", toast: "clockedInToast" },
+    lunchOut: { route: "break/start", toast: "lunchStartedToast" },
+    lunchReturn: { route: "break/end", toast: "lunchEndedToast" },
+    endShift: { route: "check-out", toast: "shiftEndedToast" },
+  };
+
+  async function run(action) {
     setLoading(action);
-    const { response } = await Post({ route: `staff-attendance/${action}` });
-    if (response) {
-      RenderToast({
-        type: "success",
-        message: action === "check-in" ? t("checkedInToast") : t("checkedOutToast"),
-      });
-    }
-    // Refresh either way so the panel matches the server (e.g. already checked in elsewhere)
+    const { response } = await Post({ route: `staff-attendance/${ACTIONS[action].route}` });
+    if (response) RenderToast({ type: "success", message: t(ACTIONS[action].toast) });
+    setConfirmEnd(false);
+    // Refresh either way so the panel matches the server (e.g. clocked in elsewhere)
     await getMyAttendance();
     onChange?.();
     setLoading("");
@@ -86,17 +100,44 @@ export default function StaffCheckIn({ onChange }) {
   const today = summarizeDay(records, now, now);
   const weekTotal = sumMinutes(records, now);
   const isCheckedIn = Boolean(current);
+  const runningBreak = openBreak(current);
+  const finishedLunch = current?.breaks?.find((b) => b.end);
+  // idle → working → lunch → afterLunch → complete (one shift a day)
+  const phase = runningBreak
+    ? "lunch"
+    : isCheckedIn
+      ? finishedLunch
+        ? "afterLunch"
+        : "working"
+      : today.sessions.some((s) => s.checkOut)
+        ? "complete"
+        : "idle";
 
-  let statusTitle = t("notCheckedIn");
+  let statusTitle = t("notClockedIn");
   let statusText = t("readyToStart");
   let statusTone = "idle";
-  if (isCheckedIn) {
-    statusTitle = t("checkedInSince", { time: formatTime(current.checkIn, locale) });
+  if (phase === "lunch") {
+    statusTitle = t("onLunchSince", { time: formatTime(runningBreak.start, locale) });
+    statusText = t("lunchTimer", {
+      minutes: Math.max(0, Math.floor((now - new Date(runningBreak.start)) / 60000)),
+      hours: formatDuration(today.minutes),
+    });
+    statusTone = "break";
+  } else if (phase === "working") {
+    statusTitle = t("clockedInSince", { time: formatTime(current.checkIn, locale) });
     statusText = t("workedToday", { hours: formatDuration(today.minutes) });
     statusTone = "in";
-  } else if (today.status === "checked-out") {
-    statusTitle = t("checkedOutAt", { time: formatTime(today.lastOut, locale) });
+  } else if (phase === "afterLunch") {
+    statusTitle = t("backFromLunch", { time: formatTime(finishedLunch.end, locale) });
     statusText = t("workedToday", { hours: formatDuration(today.minutes) });
+    statusTone = "in";
+  } else if (phase === "complete") {
+    statusTitle = t("shiftComplete");
+    statusText = t("shiftCompleteText", {
+      in: formatTime(today.firstIn, locale),
+      out: formatTime(today.lastOut, locale),
+      hours: formatDuration(today.minutes),
+    });
     statusTone = "out";
   }
 
@@ -157,23 +198,101 @@ export default function StaffCheckIn({ onChange }) {
               <div>
                 <p>{statusTitle}</p>
                 <span>{statusText}</span>
+                {today.breakMinutes > 0 && phase !== "lunch" && (
+                  <span className={styles.breakToday}>
+                    {t("lunchToday", { hours: formatDuration(today.breakMinutes) })}
+                  </span>
+                )}
               </div>
             </div>
 
-            <button
-              type="button"
-              className={mergeClass(styles.primary, isCheckedIn ? styles.checkOut : "")}
-              onClick={toggleCheckIn}
-              disabled={loading !== ""}
-            >
-              {loading === "check-in" || loading === "check-out" ? (
-                <Spinner size="sm" />
-              ) : isCheckedIn ? (
-                t("checkOut")
+            {phase === "idle" && (
+              <button
+                type="button"
+                className={styles.primary}
+                onClick={() => run("clockIn")}
+                disabled={loading !== ""}
+              >
+                {loading === "clockIn" ? <Spinner size="sm" /> : t("clockIn")}
+              </button>
+            )}
+
+            {phase === "working" && (
+              <button
+                type="button"
+                className={styles.breakBtn}
+                onClick={() => run("lunchOut")}
+                disabled={loading !== ""}
+              >
+                {loading === "lunchOut" ? (
+                  <Spinner size="sm" />
+                ) : (
+                  <>
+                    <LuCoffee size={18} />
+                    {t("lunchOut")}
+                  </>
+                )}
+              </button>
+            )}
+
+            {phase === "lunch" && (
+              <>
+                <button
+                  type="button"
+                  className={mergeClass(styles.breakBtn, styles.breakBtnEnd)}
+                  onClick={() => run("lunchReturn")}
+                  disabled={loading !== ""}
+                >
+                  {loading === "lunchReturn" ? (
+                    <Spinner size="sm" />
+                  ) : (
+                    <>
+                      <LuPlay size={18} />
+                      {t("lunchReturn")}
+                    </>
+                  )}
+                </button>
+                <p className={styles.phaseNote}>{t("returnFirst")}</p>
+              </>
+            )}
+
+            {(phase === "working" || phase === "afterLunch") &&
+              (confirmEnd ? (
+                <div className={styles.confirmEnd} role="alertdialog" aria-label={t("endConfirmTitle")}>
+                  <strong>{t("endConfirmTitle")}</strong>
+                  <span>
+                    {phase === "working" ? t("endConfirmNoLunch") : t("endConfirmText")}
+                  </span>
+                  <div>
+                    <button type="button" className={styles.confirmCancel} onClick={() => setConfirmEnd(false)}>
+                      {t("cancel")}
+                    </button>
+                    <button
+                      type="button"
+                      className={styles.confirmYes}
+                      onClick={() => run("endShift")}
+                      disabled={loading !== ""}
+                    >
+                      {loading === "endShift" ? <Spinner size="sm" /> : t("endConfirmYes")}
+                    </button>
+                  </div>
+                </div>
               ) : (
-                t("checkIn")
-              )}
-            </button>
+                <button
+                  type="button"
+                  className={mergeClass(
+                    styles.primary,
+                    styles.checkOut,
+                    phase === "working" ? styles.endSecondary : "",
+                  )}
+                  onClick={() => setConfirmEnd(true)}
+                  disabled={loading !== ""}
+                >
+                  {t("endShift")}
+                </button>
+              ))}
+
+            {phase === "complete" && <p className={styles.phaseDone}>{t("noMoreActions")}</p>}
 
             <p className={styles.divider}>{t("recentActivity")}</p>
 
@@ -195,13 +314,45 @@ export default function StaffCheckIn({ onChange }) {
             </button>
 
             {showWeek && (
-              <WeekActivity
-                days={weekDays.map((day) => ({ date: day, ...summarizeDay(records, day, now) }))}
-                now={now}
+              <MyAttendance
                 locale={locale}
                 t={t}
+                now={now}
+                // reload after a clock action so the week view stays in sync
+                refreshKey={`${records.length}-${current?._id || ""}-${current?.breaks?.length || 0}-${
+                  today.lastOut || ""
+                }`}
               />
             )}
+
+            <Link
+              href="/my-attendance"
+              className={styles.viewAll}
+              onClick={() => setOpen(false)}
+            >
+              {t("myAtt.viewAll")}
+              <LuChevronRight size={16} className={styles.flipRtl} />
+            </Link>
+
+            <button
+              type="button"
+              className={styles.row}
+              onClick={() => setShowRoster((v) => !v)}
+              aria-expanded={showRoster}
+            >
+              <LuCalendarDays size={18} />
+              <span className={styles.rowText}>
+                <strong>{t("myRoster")}</strong>
+                <span>{t("myRosterHint")}</span>
+              </span>
+              {showRoster ? (
+                <LuChevronDown size={18} />
+              ) : (
+                <LuChevronRight size={18} className={styles.flipRtl} />
+              )}
+            </button>
+
+            {showRoster && <MyRoster locale={locale} t={t} />}
 
             <div className={styles.row} aria-live="polite">
               <LuClock size={18} />
@@ -215,100 +366,5 @@ export default function StaffCheckIn({ onChange }) {
         </>
       )}
     </>
-  );
-}
-
-// Bars are scaled to at least a normal 8-hour day so short days look short
-const CHART_MIN_SCALE_MINUTES = 8 * 60;
-
-/** This week's attendance: a 7-day bar chart + a card for each worked day. */
-function WeekActivity({ days, now, locale, t }) {
-  const scale = Math.max(CHART_MIN_SCALE_MINUTES, ...days.map((d) => d.minutes));
-  const worked = days.filter((d) => d.status !== "absent");
-
-  return (
-    <div className={styles.week}>
-      <div className={styles.chart}>
-        {days.map((day) => {
-          const isToday = isSameDay(day.date, now);
-          const isFuture = day.date > now && !isToday;
-          const height = day.minutes ? Math.max(8, (day.minutes / scale) * 100) : 0;
-          return (
-            <div
-              key={day.date.toISOString()}
-              className={mergeClass(
-                styles.chartCol,
-                isToday ? styles.chartToday : "",
-                isFuture ? styles.chartFuture : "",
-              )}
-            >
-              <span className={styles.chartValue}>
-                {day.minutes ? formatDuration(day.minutes) : ""}
-              </span>
-              <div className={styles.chartTrack}>
-                <span
-                  className={mergeClass(
-                    styles.chartBar,
-                    day.status === "checked-in" ? styles.chartBarLive : "",
-                    day.status === "missed-checkout" ? styles.chartBarMissed : "",
-                  )}
-                  style={{ height: `${height}%` }}
-                />
-              </div>
-              <span className={styles.chartLabel}>
-                {day.date.toLocaleDateString(locale, { weekday: "narrow" })}
-              </span>
-            </div>
-          );
-        })}
-      </div>
-
-      {worked.length === 0 ? (
-        <p className={styles.weekEmpty}>{t("noActivityThisWeek")}</p>
-      ) : (
-        <div className={styles.dayCards}>
-          {worked.map((day) => (
-            <div
-              key={day.date.toISOString()}
-              className={mergeClass(
-                styles.dayCard,
-                isSameDay(day.date, now) ? styles.dayCardToday : "",
-              )}
-            >
-              <div className={styles.dayBadge}>
-                <span>{day.date.toLocaleDateString(locale, { weekday: "short" })}</span>
-                <strong>{day.date.getDate()}</strong>
-              </div>
-              <div className={styles.daySessions}>
-                {day.sessions.map((s) => {
-                  const isOpen = !s.checkOut && !s.missedCheckOut;
-                  const isMissed = !s.checkOut && s.missedCheckOut;
-                  return (
-                    <span
-                      key={s._id || s.checkIn}
-                      className={mergeClass(
-                        styles.sessionLine,
-                        isOpen ? styles.sessionLive : "",
-                        isMissed ? styles.sessionMissed : "",
-                      )}
-                    >
-                      <i />
-                      {formatTime(s.checkIn, locale)}
-                      <b>→</b>
-                      {isOpen
-                        ? t("inProgress")
-                        : isMissed
-                          ? t("noCheckOut")
-                          : formatTime(s.checkOut, locale)}
-                    </span>
-                  );
-                })}
-              </div>
-              <span className={styles.dayHours}>{formatDuration(day.minutes)}</span>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
   );
 }

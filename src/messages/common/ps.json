@@ -233,7 +233,13 @@
       "view-cms": "CMS وګورئ",
       "edit-cms": "CMS سمون",
       "view-staff-attendance": "د کارکوونکو حاضري کتل",
-      "view-staff-documents": "د کارکوونکو اسناد کتل"
+      "edit-staff-attendance": "د کارکوونکو حاضري سمول",
+      "view-staff-documents": "د کارکوونکو اسناد کتل",
+      "view-staff-roster": "د کارکوونکو مهالویش کتل",
+      "manage-staff-roster": "د کارکوونکو مهالویش مدیریت او خپرول",
+      "holidays": "رخصتۍ",
+      "view-holidays": "رخصتۍ کتل",
+      "add-edit-holiday": "رخصتي اضافه/سمول"
     }
   },
   "bookingTypes": {

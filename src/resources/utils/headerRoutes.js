@@ -3,6 +3,7 @@ import { isAdminOrBusinessOwner } from "./helper";
 // Staffs tabs and the permission each one needs (first allowed tab opens from the menu)
 export const STAFF_TABS = [
   { key: "management", route: "/staffs", permission: "view-staff" },
+  { key: "rostering", route: "/staffs/rostering", permission: "view-staff-roster" },
   { key: "attendance", route: "/staffs/attendance", permission: "view-staff-attendance" },
   { key: "documents", route: "/staffs/documents", permission: "view-staff-documents" },
 ];

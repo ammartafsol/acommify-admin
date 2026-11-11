@@ -233,7 +233,13 @@
       "view-cms": "Visualizar CMS",
       "edit-cms": "Editar CMS",
       "view-staff-attendance": "Ver assiduidade dos funcionários",
-      "view-staff-documents": "Ver documentos dos funcionários"
+      "edit-staff-attendance": "Corrigir presenças",
+      "view-staff-documents": "Ver documentos dos funcionários",
+      "view-staff-roster": "Ver escala de funcionários",
+      "manage-staff-roster": "Gerir e publicar escala de funcionários",
+      "holidays": "Feriados",
+      "view-holidays": "Ver feriados",
+      "add-edit-holiday": "Adicionar/Editar feriado"
     }
   },
   "bookingTypes": {

@@ -45,6 +45,14 @@ export const CrudData = (t, permissions, role) =>
       icon: "/svg/maintenance.svg",
       router: "/crud/crud-positions",
     },
+    // Holidays belong to the centre: no permission needed for admins / business owners
+    (isAdminOrBusinessOwner(role) ||
+      permissions.includes("view-holidays") ||
+      permissions.includes("add-edit-holiday")) && {
+      title: t("crudData.holidays"),
+      icon: "/svg/maintenance.svg",
+      router: "/crud/crud-holidays",
+    },
 
     isAdminOrBusinessOwner(role) && {
       title: t("crudData.configuration"),

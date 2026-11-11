@@ -233,7 +233,13 @@
       "view-cms": "Duba CMS",
       "edit-cms": "Gyara CMS",
       "view-staff-attendance": "Duba halartar ma'aikata",
-      "view-staff-documents": "Duba takardun ma'aikata"
+      "edit-staff-attendance": "Gyara halartar ma'aikata",
+      "view-staff-documents": "Duba takardun ma'aikata",
+      "view-staff-roster": "Duba jadawalin ma'aikata",
+      "manage-staff-roster": "Sarrafa da fitar da jadawalin ma'aikata",
+      "holidays": "Ranakun hutu",
+      "view-holidays": "Duba ranakun hutu",
+      "add-edit-holiday": "Ƙara/Gyara ranar hutu"
     }
   },
   "bookingTypes": {

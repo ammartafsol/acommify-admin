@@ -88,6 +88,14 @@ const getRoutePermissions = (pathname) => {
   return perms;
 };
 
+// Pages a centre (business owner) can always open, whatever its permissions
+const CENTRE_OPEN_ROUTES = ["/crud", "/crud/crud-holidays"];
+const isCentreOpenRoute = (pathname, role) => {
+  if (role !== "business-owner") return false;
+  const route = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
+  return CENTRE_OPEN_ROUTES.includes(route);
+};
+
 // Get user permissions from cookies and role
 const getUserPermissions = (request) => {
   try {
@@ -218,6 +226,7 @@ export default function proxy(request) {
     if (requiredPermissions.length > 0) {
       const hasAccess =
         isAdminUser(userRole) ||
+        isCentreOpenRoute(pathname, userRole) ||
         hasPermission(userPermissions, requiredPermissions);
       logAccess(pathname, userRole, hasAccess, requiredPermissions, user);
 

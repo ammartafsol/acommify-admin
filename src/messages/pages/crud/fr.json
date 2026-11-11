@@ -6,7 +6,8 @@
       "laundaryMachineCategories": "Catégories de Machines à Laver",
       "FAQs": "FAQ",
       "helplines": "Lignes d'Aide",
-      "positions": "Positions"
+      "positions": "Positions",
+      "holidays": "Congés et Jours fériés"
     },
     "laundaryMachineCategoriesPage": {
       "title": "Catégories de Machines à Laver",
@@ -152,6 +153,62 @@
       "toasts": {
         "statusUpdateSuccess": "Statut mis à jour avec succès"
       }
+    }
+  },
+  "holidaysPage": {
+    "title": "Congés et Jours fériés",
+    "subtitle": "Ajoutez les congés (HOL) et jours fériés (B/HOL) du centre. Ils apparaissent sur le planning du personnel ce jour-là.",
+    "addButton": "Ajouter un jour férié",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "actions": "Actions",
+    "confirmDelete": "Supprimer « {name} » ? Il n'apparaîtra plus sur le planning.",
+    "types": {
+      "holiday": "Congé",
+      "bank-holiday": "Jour férié"
+    },
+    "filters": {
+      "allTypes": "Tous les types",
+      "previousYear": "Année précédente",
+      "nextYear": "Année suivante"
+    },
+    "table": {
+      "name": "Nom",
+      "date": "Date",
+      "type": "Type",
+      "status": "Statut"
+    },
+    "toast": {
+      "deleted": "Jour férié supprimé."
+    },
+    "modal": {
+      "today": "Aujourd'hui",
+      "previousMonth": "Mois précédent",
+      "nextMonth": "Mois suivant",
+      "addTitle": "Ajouter un jour férié",
+      "editTitle": "Modifier le jour férié",
+      "autoFill": "Remplissage auto",
+      "translating": "Traduction...",
+      "autoFilled": "Rempli avec succès",
+      "fillName": "Saisissez d'abord le nom",
+      "name": "Nom",
+      "namePlaceholder": "ex. : Noël",
+      "nameRequired": "Le nom est obligatoire",
+      "date": "Date",
+      "datePlaceholder": "Choisir la date",
+      "dateRequired": "La date est obligatoire",
+      "type": "Type",
+      "typePlaceholder": "Choisir le type",
+      "typeRequired": "Le type est obligatoire",
+      "status": "Statut",
+      "active": "Actif",
+      "inactive": "Inactif",
+      "cancel": "Annuler",
+      "save": "Enregistrer",
+      "update": "Mettre à jour",
+      "saving": "Enregistrement...",
+      "created": "Jour férié ajouté",
+      "updated": "Jour férié mis à jour"
     }
   }
 }

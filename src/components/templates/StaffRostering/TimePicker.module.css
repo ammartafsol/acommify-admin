@@ -1,0 +1,169 @@
+.trigger {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--border-color, #e6eaf0);
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.trigger:hover {
+  border-color: #b9e3fb;
+}
+
+.trigger:focus-visible,
+.triggerOpen {
+  outline: none;
+  border-color: var(--Blue, #33b5f6);
+  box-shadow: 0 0 0 3px rgba(51, 181, 246, 0.15);
+}
+
+.icon {
+  color: var(--Blue, #33b5f6);
+  flex-shrink: 0;
+}
+
+.trigger .value {
+  flex: 1;
+  color: var(--Black, #172a33);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: start;
+  font-variant-numeric: tabular-nums;
+}
+
+.chevron {
+  color: #8c939b;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.triggerOpen .chevron {
+  transform: rotate(180deg);
+}
+
+/* ---------- Dropdown panel ---------- */
+.panel {
+  position: fixed;
+  z-index: 2000; /* above the bootstrap modal (1055) */
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #e6eaf0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow:
+    0 16px 40px rgba(16, 24, 40, 0.16),
+    0 4px 10px rgba(16, 24, 40, 0.06);
+  animation: pop 0.14s ease-out;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 6px 0 10px;
+  border-bottom: 1px solid #f0f2f5;
+  color: var(--Black, #172a33);
+  font-family: var(--font-lato);
+  font-size: 22px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.preview span {
+  color: var(--Blue, #33b5f6);
+  font-size: 22px;
+}
+
+.columns {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  gap: 6px;
+  padding-top: 8px;
+}
+
+.column {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.panel .columnLabel {
+  color: #8c939b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.options {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-inline: 2px;
+  scrollbar-width: thin;
+  scrollbar-color: #d5dbe3 transparent;
+}
+
+.option {
+  flex-shrink: 0;
+  height: 34px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.option:hover {
+  background: #eef6fd;
+  color: #0369a1;
+}
+
+.option.selected {
+  background: var(--Blue, #33b5f6);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(51, 181, 246, 0.35);
+}
+
+.divider {
+  width: 1px;
+  margin-block: 22px 4px;
+  background: #f0f2f5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel {
+    animation: none;
+  }
+}

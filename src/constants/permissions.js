@@ -6,7 +6,10 @@ export const PERMISSIONS = {
     VIEW_STAFF: "view-staff",
     ADD_EDIT_STAFF: "add-edit-staff",
     VIEW_STAFF_ATTENDANCE: "view-staff-attendance",
+    EDIT_STAFF_ATTENDANCE: "edit-staff-attendance",
     VIEW_STAFF_DOCUMENTS: "view-staff-documents",
+    VIEW_STAFF_ROSTER: "view-staff-roster",
+    MANAGE_STAFF_ROSTER: "manage-staff-roster",
   },
   POSITIONS: {
     VIEW_POSITIONS: "view-positions",
@@ -57,6 +60,10 @@ export const PERMISSIONS = {
   HELPLINE: {
     VIEW_HELPLINES: "view-help-lines",
     ADD_EDIT_HELPLINE: "add-edit-help-line",
+  },
+  HOLIDAYS: {
+    VIEW_HOLIDAYS: "view-holidays",
+    ADD_EDIT_HOLIDAY: "add-edit-holiday",
   },
   LAUNDRY_BOOKINGS: {
     VIEW_LAUNDRY_BOOKINGS: "view-laundry-bookings",
@@ -268,6 +275,14 @@ export const PERMISSION_GROUPS = {
       PERMISSIONS.POSITIONS.VIEW_POSITIONS,
       PERMISSIONS.POSITIONS.ADD_EDIT_POSITION,
     ],
+    ...[
+      PERMISSIONS.HOLIDAYS.VIEW_HOLIDAYS,
+      PERMISSIONS.HOLIDAYS.ADD_EDIT_HOLIDAY,
+    ],
+  ],
+  HOLIDAYS: [
+    PERMISSIONS.HOLIDAYS.VIEW_HOLIDAYS,
+    PERMISSIONS.HOLIDAYS.ADD_EDIT_HOLIDAY,
   ],
   CMS: [PERMISSIONS.CMS.VIEW_CMS, PERMISSIONS.CMS.EDIT_CMS],
 };
@@ -307,6 +322,7 @@ export const ROUTE_PERMISSIONS = {
   "/staffs": [...PERMISSION_GROUPS.STAFF],
   "/staffs/attendance": [PERMISSIONS.STAFF.VIEW_STAFF_ATTENDANCE],
   "/staffs/documents": [PERMISSIONS.STAFF.VIEW_STAFF_DOCUMENTS],
+  "/staffs/rostering": [PERMISSIONS.STAFF.VIEW_STAFF_ROSTER],
 
   "/time-slots": [...PERMISSION_GROUPS.TIME_SLOTS],
   "/time-slots/appointment-slots": [
@@ -332,6 +348,7 @@ export const ROUTE_PERMISSIONS = {
   "/crud/crud-faqs": [...PERMISSION_GROUPS.FAQS],
   "/crud/crud-helplines": [...PERMISSION_GROUPS.HELPLINE],
   "/crud/crud-positions": [...PERMISSION_GROUPS.POSITIONS],
+  "/crud/crud-holidays": [...PERMISSION_GROUPS.HOLIDAYS],
   "/cms": [...PERMISSION_GROUPS.CMS],
 };
 

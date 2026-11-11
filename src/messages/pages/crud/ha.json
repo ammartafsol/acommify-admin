@@ -6,7 +6,8 @@
       "laundaryMachineCategories": "Rukunin Injinan Wanki",
       "FAQs": "Tambayoyin da Ake Yi",
       "helplines": "Layukan Taimako",
-      "positions": "Matsayin"
+      "positions": "Matsayin",
+      "holidays": "Hutu da Ranakun Hutun Ƙasa"
     },
     "laundaryMachineCategoriesPage": {
       "title": "Rukunin Injinan Wanki",
@@ -152,6 +153,62 @@
       "toasts": {
         "statusUpdateSuccess": "Matsayi an sabunta cikin nasara"
       }
+    }
+  },
+  "holidaysPage": {
+    "title": "Hutu da Ranakun Hutun Ƙasa",
+    "subtitle": "Ƙara hutun cibiyar (HOL) da ranakun hutun ƙasa (B/HOL). Suna bayyana a jadawalin ma'aikata a wannan rana.",
+    "addButton": "Ƙara ranar hutu",
+    "edit": "Gyara",
+    "delete": "Share",
+    "actions": "Ayyuka",
+    "confirmDelete": "Share \"{name}\"? Ba zai ƙara bayyana a jadawali ba.",
+    "types": {
+      "holiday": "Hutu",
+      "bank-holiday": "Ranar hutun ƙasa"
+    },
+    "filters": {
+      "allTypes": "Duk nau'o'i",
+      "previousYear": "Shekarar da ta gabata",
+      "nextYear": "Shekara mai zuwa"
+    },
+    "table": {
+      "name": "Suna",
+      "date": "Kwanan wata",
+      "type": "Nau'i",
+      "status": "Matsayi"
+    },
+    "toast": {
+      "deleted": "An share ranar hutu."
+    },
+    "modal": {
+      "today": "Yau",
+      "previousMonth": "Watan da ya gabata",
+      "nextMonth": "Wata mai zuwa",
+      "addTitle": "Ƙara ranar hutu",
+      "editTitle": "Gyara ranar hutu",
+      "autoFill": "Cike kai tsaye",
+      "translating": "Ana fassara...",
+      "autoFilled": "An cike cikin nasara",
+      "fillName": "Fara cike suna",
+      "name": "Sunan hutu",
+      "namePlaceholder": "misali: Ranar Kirsimeti",
+      "nameRequired": "Ana buƙatar suna",
+      "date": "Kwanan wata",
+      "datePlaceholder": "Zaɓi kwanan wata",
+      "dateRequired": "Ana buƙatar kwanan wata",
+      "type": "Nau'i",
+      "typePlaceholder": "Zaɓi nau'i",
+      "typeRequired": "Ana buƙatar nau'i",
+      "status": "Matsayi",
+      "active": "Mai aiki",
+      "inactive": "Ba ya aiki",
+      "cancel": "Soke",
+      "save": "Ajiye",
+      "update": "Sabunta",
+      "saving": "Ana ajiyewa...",
+      "created": "An ƙara ranar hutu",
+      "updated": "An sabunta ranar hutu"
     }
   }
 }

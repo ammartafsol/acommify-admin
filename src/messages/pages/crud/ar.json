@@ -6,7 +6,8 @@
       "laundaryMachineCategories": "فئات آلات الغسيل",
       "FAQs": "الأسئلة الشائعة",
       "helplines": "خطوط المساعدة",
-      "positions": "المناصب"
+      "positions": "المناصب",
+      "holidays": "الإجازات والعطل الرسمية"
     },
     "laundaryMachineCategoriesPage": {
       "title": "فئات آلات الغسيل",
@@ -152,6 +153,62 @@
       "toasts": {
         "statusUpdateSuccess": "تم تحديث الحالة بنجاح"
       }
+    }
+  },
+  "holidaysPage": {
+    "title": "الإجازات والعطل الرسمية",
+    "subtitle": "أضف إجازات المركز (HOL) والعطل الرسمية (B/HOL). تظهر في جدول الموظفين في ذلك اليوم.",
+    "addButton": "إضافة عطلة",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "actions": "الإجراءات",
+    "confirmDelete": "حذف \"{name}\"؟ لن تظهر في الجدول بعد الآن.",
+    "types": {
+      "holiday": "إجازة",
+      "bank-holiday": "عطلة رسمية"
+    },
+    "filters": {
+      "allTypes": "كل الأنواع",
+      "previousYear": "السنة السابقة",
+      "nextYear": "السنة التالية"
+    },
+    "table": {
+      "name": "الاسم",
+      "date": "التاريخ",
+      "type": "النوع",
+      "status": "الحالة"
+    },
+    "toast": {
+      "deleted": "تم حذف العطلة."
+    },
+    "modal": {
+      "today": "اليوم",
+      "previousMonth": "الشهر السابق",
+      "nextMonth": "الشهر التالي",
+      "addTitle": "إضافة عطلة",
+      "editTitle": "تعديل العطلة",
+      "autoFill": "تعبئة تلقائية",
+      "translating": "جارٍ الترجمة...",
+      "autoFilled": "تمت التعبئة بنجاح",
+      "fillName": "يرجى إدخال الاسم أولًا",
+      "name": "اسم العطلة",
+      "namePlaceholder": "مثال: يوم عيد الميلاد",
+      "nameRequired": "الاسم مطلوب",
+      "date": "التاريخ",
+      "datePlaceholder": "اختر التاريخ",
+      "dateRequired": "التاريخ مطلوب",
+      "type": "النوع",
+      "typePlaceholder": "اختر النوع",
+      "typeRequired": "النوع مطلوب",
+      "status": "الحالة",
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "cancel": "إلغاء",
+      "save": "حفظ",
+      "update": "تحديث",
+      "saving": "جارٍ الحفظ...",
+      "created": "تمت إضافة العطلة بنجاح",
+      "updated": "تم تحديث العطلة بنجاح"
     }
   }
 }

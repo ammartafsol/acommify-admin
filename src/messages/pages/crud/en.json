@@ -7,6 +7,7 @@
       "FAQs": "FAQs",
       "helplines": "Helplines",
       "positions": "Positions",
+      "holidays": "Holidays & Bank Holidays",
       "configuration": "Configuration"
     },
     "crudConfigurationPage": {
@@ -169,6 +170,62 @@
       "toasts": {
         "statusUpdateSuccess": "Status updated successfully"
       }
+    }
+  },
+  "holidaysPage": {
+    "title": "Holidays & Bank Holidays",
+    "subtitle": "Add the centre's holidays (HOL) and bank holidays (B/HOL). They show on the staff roster for that day.",
+    "addButton": "Add Holiday",
+    "edit": "Edit",
+    "delete": "Delete",
+    "actions": "Actions",
+    "confirmDelete": "Delete \"{name}\"? It will no longer show on the roster.",
+    "types": {
+      "holiday": "Holiday",
+      "bank-holiday": "Bank Holiday"
+    },
+    "filters": {
+      "allTypes": "All types",
+      "previousYear": "Previous year",
+      "nextYear": "Next year"
+    },
+    "table": {
+      "name": "Name",
+      "date": "Date",
+      "type": "Type",
+      "status": "Status"
+    },
+    "toast": {
+      "deleted": "Holiday deleted."
+    },
+    "modal": {
+      "today": "Today",
+      "previousMonth": "Previous month",
+      "nextMonth": "Next month",
+      "addTitle": "Add Holiday",
+      "editTitle": "Edit Holiday",
+      "autoFill": "Auto fill",
+      "translating": "Translating...",
+      "autoFilled": "Auto filled successfully",
+      "fillName": "Please fill the name first",
+      "name": "Holiday name",
+      "namePlaceholder": "e.g. Christmas Day",
+      "nameRequired": "Holiday name is required",
+      "date": "Date",
+      "datePlaceholder": "Select date",
+      "dateRequired": "Date is required",
+      "type": "Type",
+      "typePlaceholder": "Select type",
+      "typeRequired": "Type is required",
+      "status": "Status",
+      "active": "Active",
+      "inactive": "Inactive",
+      "cancel": "Cancel",
+      "save": "Save",
+      "update": "Update",
+      "saving": "Saving...",
+      "created": "Holiday added successfully",
+      "updated": "Holiday updated successfully"
     }
   }
 }

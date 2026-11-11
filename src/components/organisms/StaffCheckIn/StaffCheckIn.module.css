@@ -513,3 +513,411 @@ button.row {
     animation: none;
   }
 }
+
+/* ---------- My Roster (expanded) ---------- */
+.roster {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -6px;
+}
+
+.rosterNav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 12px;
+  background: #f4f7fd;
+}
+
+.rosterNav button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--Black, #172a33);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.rosterNav > span {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.25;
+}
+
+.rosterNav strong {
+  font-size: 13px;
+}
+
+.rosterNav em {
+  color: #027a48;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.rosterLoading {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  color: var(--Blue, #33b5f6);
+}
+
+.rosterDay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-width: 0;
+}
+
+.rosterDay strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.rosterDay > span {
+  color: var(--Dark-gray, #8c939b);
+  font-size: 12px;
+}
+
+.rosterDay .rosterNote {
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-style: italic;
+}
+
+.rosterCode {
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.rc_off {
+  background: #f2f4f7;
+  color: #475467;
+}
+
+.rc_ro {
+  background: #fef0c7;
+  color: #b54708;
+}
+
+.rc_hol {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.rc_bhol {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+.rosterTotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #eef6fd;
+  font-size: 13px;
+}
+
+.rosterTotal strong {
+  font-size: 15px;
+}
+
+/* ---------- Break (lunch) ---------- */
+.break {
+  background: #fffaeb;
+}
+
+.break i {
+  background: #f79009;
+  box-shadow: 0 0 0 4px rgba(247, 144, 9, 0.18);
+  animation: breakPulse 1.6s ease-in-out infinite;
+}
+
+.break p {
+  color: #b54708;
+}
+
+@keyframes breakPulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.status .breakToday {
+  display: block;
+  margin-top: 2px;
+  color: #b54708;
+  font-weight: 600;
+}
+
+.breakBtn {
+  height: 46px;
+  border: 1.5px solid #fdb022;
+  border-radius: 10px;
+  background: #fffaeb;
+  color: #b54708;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-lato);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.breakBtn:hover:not(:disabled) {
+  background: #fef0c7;
+}
+
+.breakBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.breakBtnEnd {
+  border-color: #12b76a;
+  background: #12b76a;
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(18, 183, 106, 0.28);
+}
+
+.breakBtnEnd:hover:not(:disabled) {
+  background: #039855;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .break i {
+    animation: none;
+  }
+}
+
+.rosterDay .requestTag {
+  margin-top: 2px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.rosterDay .requestTag_pending {
+  background: #fef0c7;
+  color: #b54708;
+}
+
+.rosterDay .requestTag_approved {
+  background: #ecfdf3;
+  color: #027a48;
+}
+
+.rosterDay .requestTag_declined {
+  background: #fef3f2;
+  color: #b42318;
+}
+
+/* Keep buttons full height when the panel scrolls */
+.primary,
+.breakBtn {
+  flex-shrink: 0;
+}
+
+.rosterDay .holidayLine {
+  color: #0f766e;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+/* ---------- Clock flow ---------- */
+.endSecondary {
+  height: 44px;
+  background: #fff;
+  color: #d92d20;
+  border: 1.5px solid #fda29b;
+  box-shadow: none;
+}
+
+.phaseNote,
+.phaseDone {
+  margin: -4px 0 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.phaseNote {
+  background: #fffaeb;
+  color: #b54708;
+}
+
+.phaseDone {
+  margin: 0;
+  background: #f2f4f7;
+  color: #475467;
+  font-weight: 600;
+}
+
+.confirmEnd {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border: 1px solid #fda29b;
+  border-radius: 10px;
+  background: #fef3f2;
+}
+
+.confirmEnd strong {
+  color: #b42318;
+  font-size: 14px;
+}
+
+.confirmEnd > span {
+  color: #7a271a;
+  font-size: 12.5px;
+}
+
+.confirmEnd > div {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.confirmCancel,
+.confirmYes {
+  flex: 1;
+  height: 38px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.confirmCancel {
+  border: 1px solid #e6eaf0;
+  background: #fff;
+  color: #344054;
+}
+
+.confirmYes {
+  border: none;
+  background: #f04438;
+  color: #fff;
+}
+
+/* ---------- Roster updates ---------- */
+.rosterNav .updatedBadge,
+.previousList .updatedBadge {
+  margin-top: 2px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: #f79009;
+  color: #fff !important;
+  font-size: 10.5px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.dayCardChanged {
+  border-color: #fdb022 !important;
+  background: #fffcf5 !important;
+}
+
+.rosterDay .changedLine {
+  color: #b54708;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.previousToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border: 1px solid #e6eaf0;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--Black, #172a33);
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rotated {
+  transform: rotate(90deg);
+}
+
+.previousList {
+  margin: -4px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.previousList button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #edf0f4;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.previousList .previousActive {
+  border-color: var(--Blue, #33b5f6);
+  background: #eef6fd;
+}
+
+.previousEmpty {
+  padding: 8px 12px;
+  color: var(--Dark-gray, #8c939b);
+  font-size: 13px;
+  text-align: center;
+}
+
+/* "View all" → full My Attendance page */
+.viewAll {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 40px;
+  border: 1px solid #b9e3fb;
+  border-radius: 10px;
+  background: #eef6fd;
+  color: #0369a1 !important;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.viewAll:hover {
+  background: #e0f2fe;
+}

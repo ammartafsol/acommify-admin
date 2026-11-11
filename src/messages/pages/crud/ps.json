@@ -6,7 +6,8 @@
       "laundaryMachineCategories": "د جامو د مینځلو د ماشینونو کتګورۍ",
       "FAQs": "په مکرر ډول پوښتل شوي پوښتنې",
       "helplines": "د مرستې لاینونه",
-      "positions": "موقفونه"
+      "positions": "موقفونه",
+      "holidays": "رخصتۍ او رسمي رخصتۍ"
     },
     "laundaryMachineCategoriesPage": {
       "title": "د جامو د مینځلو د ماشینونو کتګورۍ",
@@ -151,6 +152,62 @@
       "toasts": {
         "statusUpdateSuccess": "حالت په بریالیتوب سره تازه شو"
       }
+    }
+  },
+  "holidaysPage": {
+    "title": "رخصتۍ او رسمي رخصتۍ",
+    "subtitle": "د مرکز رخصتۍ (HOL) او رسمي رخصتۍ (B/HOL) اضافه کړئ. هغه ورځ د کارکوونکو په مهالویش کې ښکاري.",
+    "addButton": "رخصتي اضافه کړئ",
+    "edit": "سمول",
+    "delete": "ړنګول",
+    "actions": "کړنې",
+    "confirmDelete": "\"{name}\" ړنګ کړو؟ نور به په مهالویش کې نه ښکاري.",
+    "types": {
+      "holiday": "رخصتي",
+      "bank-holiday": "رسمي رخصتي"
+    },
+    "filters": {
+      "allTypes": "ټول ډولونه",
+      "previousYear": "تېر کال",
+      "nextYear": "راتلونکی کال"
+    },
+    "table": {
+      "name": "نوم",
+      "date": "نېټه",
+      "type": "ډول",
+      "status": "حالت"
+    },
+    "toast": {
+      "deleted": "رخصتي ړنګه شوه."
+    },
+    "modal": {
+      "today": "نن",
+      "previousMonth": "تېره میاشت",
+      "nextMonth": "راتلونکې میاشت",
+      "addTitle": "رخصتي اضافه کړئ",
+      "editTitle": "رخصتي سمول",
+      "autoFill": "اتومات ډکول",
+      "translating": "ژباړل کېږي...",
+      "autoFilled": "په بریالیتوب ډک شو",
+      "fillName": "لومړی نوم ولیکئ",
+      "name": "د رخصتۍ نوم",
+      "namePlaceholder": "د بېلګې په توګه: کرسمس",
+      "nameRequired": "نوم اړین دی",
+      "date": "نېټه",
+      "datePlaceholder": "نېټه وټاکئ",
+      "dateRequired": "نېټه اړینه ده",
+      "type": "ډول",
+      "typePlaceholder": "ډول وټاکئ",
+      "typeRequired": "ډول اړین دی",
+      "status": "حالت",
+      "active": "فعال",
+      "inactive": "غیر فعال",
+      "cancel": "لغوه",
+      "save": "خوندي کول",
+      "update": "تازه کول",
+      "saving": "خوندي کېږي...",
+      "created": "رخصتي اضافه شوه",
+      "updated": "رخصتي تازه شوه"
     }
   }
 }

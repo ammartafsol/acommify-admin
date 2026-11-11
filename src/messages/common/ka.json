@@ -233,7 +233,13 @@
       "view-cms": "CMS-ის ნახვა",
       "edit-cms": "CMS-ის რედაქტირება",
       "view-staff-attendance": "პერსონალის დასწრების ნახვა",
-      "view-staff-documents": "პერსონალის დოკუმენტების ნახვა"
+      "edit-staff-attendance": "დასწრების გასწორება",
+      "view-staff-documents": "პერსონალის დოკუმენტების ნახვა",
+      "view-staff-roster": "პერსონალის განრიგის ნახვა",
+      "manage-staff-roster": "პერსონალის განრიგის მართვა და გამოქვეყნება",
+      "holidays": "დღესასწაულები",
+      "view-holidays": "დღესასწაულების ნახვა",
+      "add-edit-holiday": "დღესასწაულის დამატება/რედაქტირება"
     }
   },
   "bookingTypes": {

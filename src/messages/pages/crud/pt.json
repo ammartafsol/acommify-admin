@@ -6,7 +6,8 @@
       "laundaryMachineCategories": "Categorias de Máquinas de Lavanderia",
       "FAQs": "Perguntas Frequentes",
       "helplines": "Linhas de Ajuda",
-      "positions": "Posições"
+      "positions": "Posições",
+      "holidays": "Férias e Feriados"
     },
     "laundaryMachineCategoriesPage": {
       "title": "Categorias de Máquinas de Lavanderia",
@@ -151,6 +152,62 @@
       "toasts": {
         "statusUpdateSuccess": "Status atualizado com sucesso"
       }
+    }
+  },
+  "holidaysPage": {
+    "title": "Férias e Feriados",
+    "subtitle": "Adicione as férias (HOL) e feriados (B/HOL) do centro. Aparecem na escala dos funcionários nesse dia.",
+    "addButton": "Adicionar feriado",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "actions": "Ações",
+    "confirmDelete": "Eliminar \"{name}\"? Deixará de aparecer na escala.",
+    "types": {
+      "holiday": "Férias",
+      "bank-holiday": "Feriado"
+    },
+    "filters": {
+      "allTypes": "Todos os tipos",
+      "previousYear": "Ano anterior",
+      "nextYear": "Próximo ano"
+    },
+    "table": {
+      "name": "Nome",
+      "date": "Data",
+      "type": "Tipo",
+      "status": "Estado"
+    },
+    "toast": {
+      "deleted": "Feriado eliminado."
+    },
+    "modal": {
+      "today": "Hoje",
+      "previousMonth": "Mês anterior",
+      "nextMonth": "Próximo mês",
+      "addTitle": "Adicionar feriado",
+      "editTitle": "Editar feriado",
+      "autoFill": "Preencher automaticamente",
+      "translating": "A traduzir...",
+      "autoFilled": "Preenchido com sucesso",
+      "fillName": "Preencha primeiro o nome",
+      "name": "Nome do feriado",
+      "namePlaceholder": "ex.: Dia de Natal",
+      "nameRequired": "O nome é obrigatório",
+      "date": "Data",
+      "datePlaceholder": "Selecionar data",
+      "dateRequired": "A data é obrigatória",
+      "type": "Tipo",
+      "typePlaceholder": "Selecionar tipo",
+      "typeRequired": "O tipo é obrigatório",
+      "status": "Estado",
+      "active": "Ativo",
+      "inactive": "Inativo",
+      "cancel": "Cancelar",
+      "save": "Guardar",
+      "update": "Atualizar",
+      "saving": "A guardar...",
+      "created": "Feriado adicionado com sucesso",
+      "updated": "Feriado atualizado com sucesso"
     }
   }
 }

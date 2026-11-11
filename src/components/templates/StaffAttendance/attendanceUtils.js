@@ -39,14 +39,40 @@ export function isSameDay(a, b) {
   );
 }
 
-/** Minutes worked in one session. Open sessions count up to `now`. */
+/** End of a session for time maths: check-out, or `now` while it is still open. */
+function sessionEnd(record, now) {
+  return record.checkOut ? new Date(record.checkOut).getTime() : now.getTime();
+}
+
+/** Minutes of unpaid break (e.g. lunch) in one session. A running break counts up to `now`. */
+export function breakMinutes(record, now = new Date()) {
+  if (!record?.checkIn || !record?.breaks?.length) return 0;
+  if (record.missedCheckOut && !record.checkOut) return 0;
+  const end = sessionEnd(record, now);
+  return record.breaks.reduce((sum, b) => {
+    const from = new Date(b.start).getTime();
+    // A finished lunch counts to its real end; only a running one counts up to `now`
+    const to = b.end
+      ? Math.min(new Date(b.end).getTime(), record.checkOut ? end : Infinity)
+      : Math.min(now.getTime(), end);
+    return sum + Math.max(0, (to - from) / 60000);
+  }, 0);
+}
+
+/** The break that is still running in an open session, if any. */
+export function openBreak(record) {
+  if (!record || record.checkOut || record.missedCheckOut) return null;
+  return record.breaks?.find((b) => !b.end) || null;
+}
+
+/** Minutes worked in one session (breaks not counted). Open sessions count up to `now`. */
 export function sessionMinutes(record, now = new Date()) {
   if (!record?.checkIn) return 0;
   if (record.missedCheckOut && !record.checkOut) return 0;
   const start = new Date(record.checkIn).getTime();
-  const end = record.checkOut ? new Date(record.checkOut).getTime() : now.getTime();
+  const end = sessionEnd(record, now);
   // Exact (fractional) minutes, so totals aren't rounded before display
-  return Math.max(0, (end - start) / 60000);
+  return Math.max(0, (end - start) / 60000 - breakMinutes(record, now));
 }
 
 /**
@@ -59,7 +85,16 @@ export function summarizeDay(records = [], day, now = new Date()) {
     .sort((a, b) => new Date(a.checkIn) - new Date(b.checkIn));
 
   if (!sessions.length) {
-    return { status: "absent", minutes: 0, sessions, firstIn: null, lastOut: null, openSince: null };
+    return {
+      status: "absent",
+      minutes: 0,
+      breakMinutes: 0,
+      sessions,
+      firstIn: null,
+      lastOut: null,
+      openSince: null,
+      onBreakSince: null,
+    };
   }
 
   const minutes = sessions.reduce((sum, r) => sum + sessionMinutes(r, now), 0);
@@ -75,6 +110,9 @@ export function summarizeDay(records = [], day, now = new Date()) {
     lastOut: lastClosed ? new Date(lastClosed.checkOut) : null,
     // Start of the session that is still running (for "In since ...")
     openSince: open ? new Date(open.checkIn) : null,
+    breakMinutes: sessions.reduce((sum, r) => sum + breakMinutes(r, now), 0),
+    // Start of the break that is running right now (for "On break since ...")
+    onBreakSince: openBreak(open) ? new Date(openBreak(open).start) : null,
   };
 }
 
@@ -165,3 +203,53 @@ export function isCurrentOrFutureWeek(weekStart) {
 }
 
 export { DAY_MS };
+
+// ---------- Planned vs actual + missing-record flags ----------
+
+const pad2 = (n) => String(n).padStart(2, "0");
+export const dayKeyOf = (d) => `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
+
+/** "12:30–13:00" style text for a session's lunch breaks. */
+export function lunchText(sessions = [], locale = "en") {
+  return sessions
+    .flatMap((s) => s.breaks || [])
+    .map((b) => `${formatTime(b.start, locale)}–${b.end ? formatTime(b.end, locale) : "?"}`)
+    .join(", ");
+}
+
+/**
+ * Problems with a staff member's day:
+ * - noClockIn:     rostered to work, the day is over (or the shift ended) and there is no record
+ * - noClockOut:    a session was never clocked out
+ * - noLunchReturn: lunch was started but never ended
+ */
+export function dayFlags(summary, scheduled, date, now = new Date()) {
+  const flags = [];
+  const works =
+    scheduled &&
+    (scheduled.type === "shift" ||
+      (scheduled.type === "ro" && scheduled.roDecision === "declined" && scheduled.startTime));
+  if (works && summary.status === "absent") {
+    const dayOver = dayKeyOf(date) < dayKeyOf(now);
+    let shiftOver = false;
+    if (!dayOver && dayKeyOf(date) === dayKeyOf(now) && scheduled.startTime) {
+      const [h, m] = scheduled.startTime.split(":").map(Number);
+      // 30 minutes after the planned start counts as missing
+      shiftOver = now.getHours() * 60 + now.getMinutes() > h * 60 + m + 30;
+    }
+    if (dayOver || shiftOver) flags.push("noClockIn");
+  }
+  if (summary.sessions?.some((s) => s.missedCheckOut && !s.checkOut)) flags.push("noClockOut");
+  if (
+    summary.sessions?.some(
+      (s) => (s.checkOut || s.missedCheckOut) && s.breaks?.some((b) => !b.end),
+    )
+  )
+    flags.push("noLunchReturn");
+  return flags;
+}
+
+/** True when any session of the day was corrected or added by a manager. */
+export function isCorrected(sessions = []) {
+  return sessions.some((s) => s.manual || s.corrections?.length);
+}

@@ -6,7 +6,8 @@
       "laundaryMachineCategories": "Категорії пральних машин",
       "FAQs": "Часті питання",
       "helplines": "Лінії допомоги",
-      "positions": "Позиції"
+      "positions": "Позиції",
+      "holidays": "Відпустки та державні свята"
     },
     "laundaryMachineCategoriesPage": {
       "title": "Категорії пральних машин",
@@ -151,6 +152,62 @@
       "toasts": {
         "statusUpdateSuccess": "Статус успішно оновлено"
       }
+    }
+  },
+  "holidaysPage": {
+    "title": "Відпустки та державні свята",
+    "subtitle": "Додайте відпустки (HOL) і державні свята (B/HOL) центру. Вони відображаються в графіку персоналу цього дня.",
+    "addButton": "Додати свято",
+    "edit": "Редагувати",
+    "delete": "Видалити",
+    "actions": "Дії",
+    "confirmDelete": "Видалити «{name}»? Воно більше не відображатиметься в графіку.",
+    "types": {
+      "holiday": "Відпустка",
+      "bank-holiday": "Державне свято"
+    },
+    "filters": {
+      "allTypes": "Усі типи",
+      "previousYear": "Попередній рік",
+      "nextYear": "Наступний рік"
+    },
+    "table": {
+      "name": "Назва",
+      "date": "Дата",
+      "type": "Тип",
+      "status": "Статус"
+    },
+    "toast": {
+      "deleted": "Свято видалено."
+    },
+    "modal": {
+      "today": "Сьогодні",
+      "previousMonth": "Попередній місяць",
+      "nextMonth": "Наступний місяць",
+      "addTitle": "Додати свято",
+      "editTitle": "Редагувати свято",
+      "autoFill": "Автозаповнення",
+      "translating": "Переклад...",
+      "autoFilled": "Успішно заповнено",
+      "fillName": "Спочатку введіть назву",
+      "name": "Назва свята",
+      "namePlaceholder": "напр.: Різдво",
+      "nameRequired": "Назва обов'язкова",
+      "date": "Дата",
+      "datePlaceholder": "Виберіть дату",
+      "dateRequired": "Дата обов'язкова",
+      "type": "Тип",
+      "typePlaceholder": "Виберіть тип",
+      "typeRequired": "Тип обов'язковий",
+      "status": "Статус",
+      "active": "Активне",
+      "inactive": "Неактивне",
+      "cancel": "Скасувати",
+      "save": "Зберегти",
+      "update": "Оновити",
+      "saving": "Збереження...",
+      "created": "Свято додано",
+      "updated": "Свято оновлено"
     }
   }
 }

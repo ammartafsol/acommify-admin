@@ -1,0 +1,145 @@
+.body {
+  width: 100%;
+  min-width: min(560px, 84vw);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  color: var(--Blue, #33b5f6);
+}
+
+.empty,
+.note {
+  margin: 0;
+  color: var(--Dark-gray, #8c939b);
+  font-size: 14px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  border: 1px solid #e6eaf0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.current {
+  border-color: #a6f4c5;
+}
+
+.head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: none;
+  background: #fff;
+  text-align: start;
+  cursor: pointer;
+}
+
+.version {
+  min-width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #eef6fd;
+  color: #0369a1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px !important;
+  font-weight: 800;
+}
+
+.current .version {
+  background: #ecfdf3;
+  color: #027a48;
+}
+
+.meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.meta strong {
+  color: var(--Black, #172a33);
+  font-size: 14px;
+}
+
+.body .meta span {
+  color: var(--Dark-gray, #8c939b);
+  font-size: 12.5px;
+}
+
+:global([dir="rtl"]) .flipRtl {
+  transform: rotate(180deg);
+}
+
+.changes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 14px 14px;
+  border-top: 1px solid #f0f2f5;
+  background: #f8fafc;
+}
+
+.staff strong {
+  color: var(--Black, #172a33);
+  font-size: 13.5px;
+}
+
+.staff ul {
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.staff li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.body .day {
+  min-width: 92px;
+  color: #475467;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.body .before {
+  color: #b42318;
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+.body .after {
+  color: #027a48;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+@media (max-width: 576px) {
+  .body {
+    min-width: 0;
+  }
+}

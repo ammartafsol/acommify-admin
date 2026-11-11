@@ -233,7 +233,13 @@
       "view-cms": "View CMS",
       "edit-cms": "Edit CMS",
       "view-staff-attendance": "View Staff Attendance",
-      "view-staff-documents": "View Staff Documents"
+      "edit-staff-attendance": "Correct Staff Attendance",
+      "view-staff-documents": "View Staff Documents",
+      "view-staff-roster": "View Staff Roster",
+      "manage-staff-roster": "Manage & Issue Staff Roster",
+      "holidays": "Holidays",
+      "view-holidays": "View Holidays",
+      "add-edit-holiday": "Add/Edit Holiday"
     }
   },
   "bookingTypes": {

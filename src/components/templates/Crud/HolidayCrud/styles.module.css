@@ -1,0 +1,153 @@
+.main {
+  margin-block: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subtitle {
+  margin: -8px 0 0;
+  color: var(--Dark-gray, #8c939b);
+  font-size: 15px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.yearSelector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.yearSelector button,
+.yearSelector > span {
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  background: var(--Poor-white, #fff);
+  color: var(--Black, #172a33);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(74, 85, 104, 0.04);
+}
+
+.yearSelector button {
+  width: 42px;
+  cursor: pointer;
+}
+
+.yearSelector button:hover {
+  background: #eef6fd;
+}
+
+.yearSelector > span {
+  min-width: 110px;
+  gap: 8px;
+  padding-inline: 16px;
+  font-family: var(--font-lato);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.yearSelector > span svg {
+  color: var(--Blue, #33b5f6);
+}
+
+:global([dir="rtl"]) .flipRtl {
+  transform: rotate(180deg);
+}
+
+.typeFilter {
+  width: 230px;
+}
+
+.name {
+  margin: 0;
+  font-weight: 600;
+}
+
+.dateCell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dateBadge {
+  width: 44px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3px 0;
+  border-radius: 10px;
+  background: #eef6fd;
+  line-height: 1.1;
+}
+
+.dateCell .dateBadge b {
+  color: var(--Blue, #33b5f6);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.dateCell .dateBadge strong {
+  color: var(--Black, #172a33);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.dateCell > span:last-child {
+  font-size: 14px;
+}
+
+.typeBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px 4px 4px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.typeBadge b {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 11.5px;
+  font-weight: 800;
+}
+
+.type_holiday {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.type_bank-holiday {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+@media (max-width: 576px) {
+  .toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .yearSelector > span {
+    flex: 1;
+  }
+
+  .typeFilter {
+    width: 100%;
+  }
+}

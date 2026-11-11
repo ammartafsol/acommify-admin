@@ -29,11 +29,20 @@ import {
   getWeekStart,
   isCurrentOrFutureWeek,
   isSameDay,
+  openBreak,
   sessionMinutes,
   sumMinutes,
   summarizeDay,
+  dayFlags,
+  dayKeyOf,
+  isCorrected,
+  lunchText,
 } from "./attendanceUtils";
 import { downloadAttendancePdf } from "./attendancePdf";
+import AttendanceEditModal from "./AttendanceEditModal";
+import { entryMinutes } from "../StaffRostering/rosterUtils";
+import { useSelector } from "react-redux";
+import { LuPencilLine, LuTriangleAlert } from "react-icons/lu";
 import styles from "./styles.module.css";
 
 const PAGE_LIMIT = 10;
@@ -56,6 +65,10 @@ export default function StaffAttendance() {
   const t = useTranslations("staffAttendancePage");
   const locale = useLocale();
   const { Get } = useAxios();
+  const { permissions = [], user } = useSelector((state) => state.authReducer);
+  const canEdit = user?.role === "admin" || permissions.includes("edit-staff-attendance");
+  const [centre, setCentre] = useState(null);
+  const [editing, setEditing] = useState(null); // { staff, date, sessions, scheduled }
 
   const [weekStart, setWeekStart] = useState(() => getWeekStart());
   const [search, setSearch] = useState("");
@@ -88,6 +101,8 @@ export default function StaffAttendance() {
       ...getWeekRangeParams(weekStart),
       search: debouncedSearch?.trim() || "",
       filter: filter?.value || "all",
+      // the week's issued roster is used for planned vs actual
+      weekStart: dayKeyOf(weekStart),
       ...extra,
     }).toString();
   }
@@ -103,6 +118,7 @@ export default function StaffAttendance() {
     if (response) {
       setData(Array.isArray(response?.data) ? response.data : []);
       setTotalRecords(response?.totalRecords || 0);
+      setCentre(response?.centre || null);
     }
     setNow(new Date());
     setLoading("");
@@ -123,8 +139,8 @@ export default function StaffAttendance() {
         await downloadAttendancePdf({
           rows: Array.isArray(response?.data) ? response.data : [],
           weekStart,
-          locale,
-          t,
+          centreName: response?.centre?.name?.en || response?.centre?.name?.[locale] || "",
+          generatedBy: user?.fullName?.en || user?.fullName?.[locale] || user?.email || "",
         });
       } catch (error) {
         console.error(error);
@@ -137,11 +153,24 @@ export default function StaffAttendance() {
   const rows = data.map((staff) => {
     const name =
       staff?.fullName?.[locale] || staff?.fullName?.en || staff?.email || "-";
+    const scheduledByDay = Object.fromEntries((staff?.scheduled || []).map((e) => [e.date, e]));
+    const days = weekDays.map((day) => {
+      const summary = summarizeDay(staff?.records, day, now);
+      const scheduled = scheduledByDay[dayKeyOf(day)] || null;
+      return {
+        ...summary,
+        scheduled,
+        plannedMinutes: entryMinutes(scheduled),
+        flags: dayFlags(summary, scheduled, day, now),
+        corrected: isCorrected(summary.sessions),
+      };
+    });
     return {
       staff,
       name,
-      days: weekDays.map((day) => summarizeDay(staff?.records, day, now)),
+      days,
       total: sumMinutes(staff?.records, now),
+      planned: days.reduce((sum, d) => sum + d.plannedMinutes, 0),
       isCheckedIn: Boolean(staff?.current),
     };
   });
@@ -207,6 +236,15 @@ export default function StaffAttendance() {
           </span>
           <span className={styles.legendItem}>
             <i className={styles.dotMissed} /> {t("status.missedCheckOut")}
+          </span>
+          <span className={styles.legendItem}>
+            <b className={styles.flagPill}>!</b> {t("flags.legend")}
+          </span>
+          <span className={styles.legendItem}>
+            <b className={styles.correctedPill}>
+              <LuPencilLine size={11} />
+            </b>{" "}
+            {t("flags.corrected")}
           </span>
         </div>
 
@@ -279,7 +317,7 @@ export default function StaffAttendance() {
               )}
 
               {loading !== "loading" &&
-                rows.map(({ staff, name, days, total, isCheckedIn }) => {
+                rows.map(({ staff, name, days, total, planned, isCheckedIn }) => {
                   const [bg, fg] = avatarColor(name);
                   return (
                     <tr key={staff?._id || staff?.slug}>
@@ -300,8 +338,22 @@ export default function StaffAttendance() {
                             </span>
                           )}
                           <div className={styles.staffInfo}>
-                            <p title={name}>{name}</p>
-                            {isCheckedIn ? (
+                            <p title={name}>
+                              {name}
+                              {String(staff?._id) === String(user?._id) && (
+                                <em className={styles.youTag} title={t("edit.ownRecord")}>
+                                  {t("edit.you")}
+                                </em>
+                              )}
+                            </p>
+                            {isCheckedIn && openBreak(staff.current) ? (
+                              <span className={mergeClass(styles.livePill, styles.breakPill)}>
+                                <i className={styles.dotMissed} />
+                                {t("status.onBreakSince", {
+                                  time: formatTime(openBreak(staff.current).start, locale),
+                                })}
+                              </span>
+                            ) : isCheckedIn ? (
                               <span className={styles.livePill}>
                                 <i className={styles.dotIn} />
                                 {t("status.onShiftSince", {
@@ -317,12 +369,38 @@ export default function StaffAttendance() {
 
                       {days.map((day, i) => (
                         <td key={i} className={styles.dayCol}>
-                          <DayCell day={day} date={weekDays[i]} locale={locale} t={t} />
+                          <DayCell
+                            day={day}
+                            date={weekDays[i]}
+                            locale={locale}
+                            t={t}
+                            // Nobody may change their own recorded attendance
+                            canEdit={canEdit && String(staff?._id) !== String(user?._id)}
+                            onEdit={() =>
+                              setEditing({
+                                staff,
+                                name,
+                                date: weekDays[i],
+                                sessions: day.sessions,
+                                scheduled: day.scheduled,
+                              })
+                            }
+                          />
                         </td>
                       ))}
 
                       <td className={styles.totalCol}>
                         <strong>{total ? formatDuration(total) : "-"}</strong>
+                        {planned > 0 && (
+                          <span
+                            className={mergeClass(
+                              styles.plannedTotal,
+                              total < planned ? styles.under : styles.over,
+                            )}
+                          >
+                            {t("planned.of", { hours: formatDuration(planned) })}
+                          </span>
+                        )}
                       </td>
                     </tr>
                   );
@@ -331,6 +409,19 @@ export default function StaffAttendance() {
           </table>
         </div>
       </div>
+
+      {editing && (
+        <AttendanceEditModal
+          show={!!editing}
+          setShow={() => setEditing(null)}
+          staffName={editing.name}
+          staffId={editing.staff._id}
+          date={editing.date}
+          sessions={editing.sessions}
+          scheduled={editing.scheduled}
+          onSaved={() => getData(page)}
+        />
+      )}
 
       {totalRecords > PAGE_LIMIT && (
         <Pagination
@@ -347,7 +438,7 @@ export default function StaffAttendance() {
   );
 }
 
-function DayCell({ day, date, locale, t }) {
+function DayCell({ day, date, locale, t, canEdit, onEdit }) {
   const cellRef = useRef(null);
   const [anchor, setAnchor] = useState(null);
 
@@ -373,8 +464,44 @@ function DayCell({ day, date, locale, t }) {
     };
   }, [anchor]);
 
+  const extras = (
+    <>
+      {day.plannedMinutes > 0 && (
+        <span className={styles.planned}>
+          {t("planned.label", { hours: formatDuration(day.plannedMinutes) })}
+        </span>
+      )}
+      {day.flags.map((f) => (
+        <span key={f} className={styles.flag}>
+          <LuTriangleAlert size={11} />
+          {t(`flags.${f}`)}
+        </span>
+      ))}
+    </>
+  );
+  const editButton = canEdit ? (
+    <button
+      type="button"
+      className={styles.editBtn}
+      onClick={(e) => {
+        e.stopPropagation();
+        onEdit();
+      }}
+      aria-label={t("edit.title")}
+      title={t("edit.title")}
+    >
+      <LuPencilLine size={13} />
+    </button>
+  ) : null;
+
   if (day.status === "absent") {
-    return <span className={styles.absent}>-</span>;
+    return (
+      <div className={styles.absentCell}>
+        <span className={styles.absent}>-</span>
+        {extras}
+        {editButton}
+      </div>
+    );
   }
 
   const inTime = formatTime(day.firstIn, locale);
@@ -399,8 +526,21 @@ function DayCell({ day, date, locale, t }) {
       tabIndex={0}
       aria-label={t("history.title", { count: sessionCount })}
     >
-      <strong>{formatDuration(day.minutes)}</strong>
-      {day.status === "checked-in" && (
+      <strong>
+        {formatDuration(day.minutes)}
+        {day.corrected && (
+          <b className={styles.correctedPill} title={t("flags.corrected")}>
+            <LuPencilLine size={10} />
+          </b>
+        )}
+      </strong>
+      {day.status === "checked-in" && day.onBreakSince && (
+        <span className={mergeClass(styles.cellStatus, styles.cellBreak)}>
+          <i className={styles.dotMissed} />
+          {t("status.onBreak")}
+        </span>
+      )}
+      {day.status === "checked-in" && !day.onBreakSince && (
         <span className={styles.cellStatus}>
           <i className={styles.dotIn} />
           {t("status.inSince", { time: formatTime(day.openSince, locale) })}
@@ -411,12 +551,17 @@ function DayCell({ day, date, locale, t }) {
           {inTime} – {outTime}
         </span>
       )}
-      {day.status === "missed-checkout" && (
-        <span className={styles.cellStatus}>
-          <i className={styles.dotMissed} />
-          {t("status.noCheckOut")}
+      {/* A missing clock-out shows as a flag below (with the other missing-record flags) */}
+      {day.breakMinutes > 0 && (
+        <span className={styles.sessions}>
+          {t("status.lunchTimes", {
+            times: lunchText(day.sessions, locale),
+            hours: formatDuration(day.breakMinutes),
+          })}
         </span>
       )}
+      {extras}
+      {editButton}
       {sessionCount > 1 && (
         <span className={styles.sessions}>
           {t("status.sessions", { count: sessionCount })}
@@ -510,6 +655,29 @@ function SessionPopover({ anchor, day, date, locale, t }) {
         </div>
       </div>
 
+      {day.sessions.some((s) => s.corrections?.length) && (
+        <div className={styles.auditBox}>
+          {day.sessions.flatMap((s) =>
+            (s.corrections || []).map((c, i) => (
+              <p key={`${s._id}-${i}`}>
+                <LuPencilLine size={12} />
+                <span>
+                  {t("history.correctedBy", {
+                    name: c.correctedBy?.fullName?.[locale] || c.correctedBy?.fullName?.en || "-",
+                    date: new Date(c.correctedAt).toLocaleString(locale, {
+                      day: "numeric",
+                      month: "short",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                    }),
+                  })}
+                  {" · "}“{c.reason}”
+                </span>
+              </p>
+            )),
+          )}
+        </div>
+      )}
       <ol className={styles.sessionList}>
         {day.sessions.map((s) => {
           const isOpen = !s.checkOut && !s.missedCheckOut;
@@ -542,6 +710,24 @@ function SessionPopover({ anchor, day, date, locale, t }) {
               <span className={styles.sessionDuration}>
                 {isMissed ? "–" : formatDuration(sessionMinutes(s, now))}
               </span>
+              {s.breaks?.length > 0 && (
+                <ul className={styles.breakList}>
+                  {s.breaks.map((b) => (
+                    <li key={b.start}>
+                      <span>{t("history.break")}</span>
+                      <span>
+                        {formatTime(b.start, locale)} →{" "}
+                        {b.end ? formatTime(b.end, locale) : t("history.inProgress")}
+                      </span>
+                      <span>
+                        {formatDuration(
+                          ((b.end ? new Date(b.end) : now) - new Date(b.start)) / 60000,
+                        )}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           );
         })}

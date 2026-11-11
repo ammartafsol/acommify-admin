@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { PersistGate } from "redux-persist/lib/integration/react";
 import store, { persistor } from "..";
-import { signOutRequest } from "../auth/authSlice";
+import { signOutRequest, updatePermissions, updateUser } from "../auth/authSlice";
 import { SocketProvider } from "@/context/SocketContext";
 import { useLocaleHistory } from "@/resources/hooks/useLocaleHistory";
 
@@ -51,6 +51,21 @@ export default function ApisProvider({ children }) {
     }
   };
 
+  /**
+   * Permissions are saved at login. Load the current ones on every app start so
+   * permissions added later (e.g. new features given to business owners, or a
+   * manager changing a staff member's access) show up without logging out.
+   */
+  const refreshPermissions = async () => {
+    const { response } = await Get({ route: "users/me", showAlert: false });
+    const permissions = response?.data?.permissions;
+    if (!Array.isArray(permissions)) return;
+    Cookies.set("user_permissions", JSON.stringify(permissions), { expires: 7 });
+    // Also refresh the profile (e.g. the shift timing a manager assigned)
+    dispatch(updateUser({ ...user, ...response.data }));
+    dispatch(updatePermissions(permissions));
+  };
+
   useEffect(() => {
     if (!accessToken) {
       dispatch(signOutRequest());
@@ -62,8 +77,7 @@ export default function ApisProvider({ children }) {
       Cookies.remove("user_permissions");
       window.location.replace("/");
     } else {
-      console.log(user?.permissions);
-      // getCommonData();
+      refreshPermissions();
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps

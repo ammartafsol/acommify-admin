@@ -655,3 +655,191 @@
 .popover .sessionRange .missedBadge {
   font-size: 11.5px;
 }
+
+/* ---------- Breaks (lunch) ---------- */
+.breakPill {
+  background: #fffaeb !important;
+  color: #b54708 !important;
+}
+
+.checked-in .cellBreak {
+  color: #b54708;
+}
+
+.breakList {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 6px 0 0;
+  padding: 0 0 0 18px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.breakList li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px !important;
+  border-radius: 6px;
+  background: #fffaeb !important;
+}
+
+.popover .breakList span {
+  color: #b54708;
+  font-size: 12px;
+}
+
+.popover .breakList span:first-child {
+  font-weight: 700;
+}
+
+.popover .breakList span:last-child {
+  margin-inline-start: auto;
+  font-weight: 700;
+}
+
+.sessionList .breakList li {
+  position: static;
+  display: flex;
+  gap: 8px;
+}
+
+.sessionList .breakList li::after {
+  display: none;
+}
+
+/* ---------- Planned vs actual, flags, corrections ---------- */
+.dayCell,
+.absentCell {
+  position: relative;
+}
+
+.absentCell {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.dayCell .planned,
+.absentCell .planned {
+  color: #0369a1;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.dayCell .flag,
+.absentCell .flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  width: max-content;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: #fef3f2;
+  color: #b42318;
+  font-size: 10.5px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.flagPill,
+.correctedPill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.flagPill {
+  background: #fef3f2;
+  color: #b42318;
+}
+
+.correctedPill {
+  margin-inline-start: 4px;
+  background: #ede9fe;
+  color: #6d28d9;
+  vertical-align: middle;
+}
+
+.editBtn {
+  position: absolute;
+  top: -4px;
+  inset-inline-end: -4px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e6eaf0;
+  border-radius: 50%;
+  background: #fff;
+  color: #475467;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+td:hover .editBtn,
+.editBtn:focus-visible {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .editBtn {
+    opacity: 1;
+  }
+}
+
+.totalCol .plannedTotal {
+  display: block;
+  margin-top: 2px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.under {
+  color: #b54708;
+}
+
+.over {
+  color: #027a48;
+}
+
+.auditBox {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0 16px 6px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #f5f3ff;
+}
+
+.auditBox p {
+  margin: 0;
+  display: flex;
+  gap: 6px;
+  color: #5b21b6;
+}
+
+.popover .auditBox span {
+  font-size: 12px;
+}
+
+.youTag {
+  margin-inline-start: 6px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #eef6fd;
+  color: #0369a1;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  vertical-align: middle;
+}

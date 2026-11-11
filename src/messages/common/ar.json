@@ -233,7 +233,13 @@
       "view-cms": "عرض نظام إدارة المحتوى",
       "edit-cms": "تعديل نظام إدارة المحتوى",
       "view-staff-attendance": "عرض حضور الموظفين",
-      "view-staff-documents": "عرض مستندات الموظفين"
+      "edit-staff-attendance": "تصحيح حضور الموظفين",
+      "view-staff-documents": "عرض مستندات الموظفين",
+      "view-staff-roster": "عرض جدول الموظفين",
+      "manage-staff-roster": "إدارة وإصدار جدول الموظفين",
+      "holidays": "العطل",
+      "view-holidays": "عرض العطل",
+      "add-edit-holiday": "إضافة/تعديل عطلة"
     }
   },
   "bookingTypes": {

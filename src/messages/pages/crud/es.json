@@ -6,7 +6,8 @@
       "laundaryMachineCategories": "Categorías de Máquinas de Lavandería",
       "FAQs": "Preguntas Frecuentes",
       "helplines": "Líneas de Ayuda",
-      "positions": "Posiciones"
+      "positions": "Posiciones",
+      "holidays": "Vacaciones y Festivos"
     },
     "laundaryMachineCategoriesPage": {
       "title": "Categorías de Máquinas de Lavandería",
@@ -152,6 +153,62 @@
       "toasts": {
         "statusUpdateSuccess": "Estado actualizado exitosamente"
       }
+    }
+  },
+  "holidaysPage": {
+    "title": "Vacaciones y Festivos",
+    "subtitle": "Añade las vacaciones (HOL) y festivos (B/HOL) del centro. Aparecen en los turnos del personal ese día.",
+    "addButton": "Añadir festivo",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "actions": "Acciones",
+    "confirmDelete": "¿Eliminar \"{name}\"? Dejará de aparecer en los turnos.",
+    "types": {
+      "holiday": "Vacaciones",
+      "bank-holiday": "Festivo"
+    },
+    "filters": {
+      "allTypes": "Todos los tipos",
+      "previousYear": "Año anterior",
+      "nextYear": "Año siguiente"
+    },
+    "table": {
+      "name": "Nombre",
+      "date": "Fecha",
+      "type": "Tipo",
+      "status": "Estado"
+    },
+    "toast": {
+      "deleted": "Festivo eliminado."
+    },
+    "modal": {
+      "today": "Hoy",
+      "previousMonth": "Mes anterior",
+      "nextMonth": "Mes siguiente",
+      "addTitle": "Añadir festivo",
+      "editTitle": "Editar festivo",
+      "autoFill": "Autocompletar",
+      "translating": "Traduciendo...",
+      "autoFilled": "Completado correctamente",
+      "fillName": "Escribe primero el nombre",
+      "name": "Nombre del festivo",
+      "namePlaceholder": "p. ej. Navidad",
+      "nameRequired": "El nombre es obligatorio",
+      "date": "Fecha",
+      "datePlaceholder": "Selecciona la fecha",
+      "dateRequired": "La fecha es obligatoria",
+      "type": "Tipo",
+      "typePlaceholder": "Selecciona el tipo",
+      "typeRequired": "El tipo es obligatorio",
+      "status": "Estado",
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "cancel": "Cancelar",
+      "save": "Guardar",
+      "update": "Actualizar",
+      "saving": "Guardando...",
+      "created": "Festivo añadido correctamente",
+      "updated": "Festivo actualizado correctamente"
     }
   }
 }

@@ -233,7 +233,13 @@
       "view-cms": "Переглядати CMS",
       "edit-cms": "Редагувати CMS",
       "view-staff-attendance": "Перегляд відвідуваності персоналу",
-      "view-staff-documents": "Перегляд документів персоналу"
+      "edit-staff-attendance": "Виправлення відвідуваності",
+      "view-staff-documents": "Перегляд документів персоналу",
+      "view-staff-roster": "Перегляд графіка персоналу",
+      "manage-staff-roster": "Керування та публікація графіка персоналу",
+      "holidays": "Свята",
+      "view-holidays": "Перегляд свят",
+      "add-edit-holiday": "Додати/редагувати свято"
     }
   },
   "bookingTypes": {

@@ -233,7 +233,13 @@
       "view-cms": "Voir le CMS",
       "edit-cms": "Modifier le CMS",
       "view-staff-attendance": "Voir la présence du personnel",
-      "view-staff-documents": "Voir les documents du personnel"
+      "edit-staff-attendance": "Corriger les pointages",
+      "view-staff-documents": "Voir les documents du personnel",
+      "view-staff-roster": "Voir le planning du personnel",
+      "manage-staff-roster": "Gérer et publier le planning du personnel",
+      "holidays": "Jours fériés",
+      "view-holidays": "Voir les jours fériés",
+      "add-edit-holiday": "Ajouter/Modifier un jour férié"
     }
   },
   "bookingTypes": {
