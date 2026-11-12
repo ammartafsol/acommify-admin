@@ -24,11 +24,26 @@
     },
     "filterStatus": {
       "options": [
-        { "label": "Tous", "value": "all" },
-        { "label": "Actif", "value": "active" },
-        { "label": "Inactif", "value": "inactive" },
-        { "label": "Expiré", "value": "expired" },
-        { "label": "Maintenance", "value": "maintenance" }
+        {
+          "label": "Tous",
+          "value": "all"
+        },
+        {
+          "label": "Actif",
+          "value": "active"
+        },
+        {
+          "label": "Inactif",
+          "value": "inactive"
+        },
+        {
+          "label": "Expiré",
+          "value": "expired"
+        },
+        {
+          "label": "Maintenance",
+          "value": "maintenance"
+        }
       ]
     },
     "busStatus": {
@@ -109,6 +124,29 @@
         "shift": "L'équipe est requise",
         "mediaError": "Veuillez téléverser un document."
       }
+    },
+    "passengers": {
+      "open": "Passagers",
+      "title": "Liste des passagers",
+      "pickDate": "Date du trajet",
+      "capacity": "Capacité",
+      "occupied": "Occupées",
+      "available": "Disponibles",
+      "loading": "Chargement des passagers...",
+      "active": "Passagers actifs",
+      "none": "Aucun passager réservé pour ce trajet.",
+      "removed": "Annulés / Absents (place libérée)",
+      "checkIn": "Enregistrer",
+      "noShow": "Absent",
+      "confirmNoShow": "Marquer {name} comme absent ? Il quitte la liste et la place est libérée.",
+      "cancel": "Annuler",
+      "confirm": "Oui, marquer absent",
+      "noShowDone": "Marqué absent — place libérée",
+      "checkedInDone": "Passager enregistré",
+      "checkedInAt": "Enregistré à {time} par {name}",
+      "noShowBy": "Absent {time} · par {name}",
+      "cancelledAt": "Annulé par le résident {time}",
+      "seatReleased": "Place libérée"
     }
   }
 }

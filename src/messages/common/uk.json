@@ -240,7 +240,8 @@
       "holidays": "Свята",
       "view-holidays": "Перегляд свят",
       "add-edit-holiday": "Додати/редагувати свято",
-      "submit-maintenance-requests": "Подавати запити на обслуговування"
+      "submit-maintenance-requests": "Подавати запити на обслуговування",
+      "manage-bus-passengers": "Керування пасажирами (реєстрація / неявка)"
     }
   },
   "bookingTypes": {

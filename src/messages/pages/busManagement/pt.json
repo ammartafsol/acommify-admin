@@ -24,11 +24,26 @@
     },
     "filterStatus": {
       "options": [
-        { "label": "Todos", "value": "all" },
-        { "label": "Ativo", "value": "active" },
-        { "label": "Inativo", "value": "inactive" },
-        { "label": "Expirado", "value": "expired" },
-        { "label": "Manutenção", "value": "maintenance" }
+        {
+          "label": "Todos",
+          "value": "all"
+        },
+        {
+          "label": "Ativo",
+          "value": "active"
+        },
+        {
+          "label": "Inativo",
+          "value": "inactive"
+        },
+        {
+          "label": "Expirado",
+          "value": "expired"
+        },
+        {
+          "label": "Manutenção",
+          "value": "maintenance"
+        }
       ]
     },
     "busStatus": {
@@ -109,6 +124,29 @@
         "shift": "Turno é obrigatório",
         "mediaError": "Carregue um documento."
       }
+    },
+    "passengers": {
+      "open": "Passageiros",
+      "title": "Lista de passageiros",
+      "pickDate": "Data da viagem",
+      "capacity": "Capacidade",
+      "occupied": "Ocupados",
+      "available": "Disponíveis",
+      "loading": "A carregar passageiros...",
+      "active": "Passageiros ativos",
+      "none": "Sem passageiros reservados nesta viagem.",
+      "removed": "Cancelados / Não compareceu (lugar libertado)",
+      "checkIn": "Check-in",
+      "noShow": "Não compareceu",
+      "confirmNoShow": "Marcar {name} como não comparecido? Sai da lista e o lugar é libertado.",
+      "cancel": "Cancelar",
+      "confirm": "Sim, marcar",
+      "noShowDone": "Marcado como não comparecido — lugar libertado",
+      "checkedInDone": "Check-in do passageiro feito",
+      "checkedInAt": "Check-in às {time} por {name}",
+      "noShowBy": "Não compareceu {time} · por {name}",
+      "cancelledAt": "Cancelado pelo residente {time}",
+      "seatReleased": "Lugar libertado"
     }
   }
 }

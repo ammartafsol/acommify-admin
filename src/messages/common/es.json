@@ -240,7 +240,8 @@
       "holidays": "Festivos",
       "view-holidays": "Ver festivos",
       "add-edit-holiday": "Añadir/Editar festivo",
-      "submit-maintenance-requests": "Enviar solicitudes de mantenimiento"
+      "submit-maintenance-requests": "Enviar solicitudes de mantenimiento",
+      "manage-bus-passengers": "Gestionar pasajeros (registro / no presentado)"
     }
   },
   "bookingTypes": {

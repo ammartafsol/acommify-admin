@@ -5,7 +5,9 @@
       "all": "Duka",
       "pending": "Jiran",
       "cancelled": "An soke",
-      "completed": "An ƙare"
+      "completed": "An ƙare",
+      "checkedIn": "An shigar",
+      "noShow": "Ba su zo ba"
     },
     "table": {
       "residentName": "Sunan Mazauni",

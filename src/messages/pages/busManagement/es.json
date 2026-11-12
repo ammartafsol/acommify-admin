@@ -24,11 +24,26 @@
     },
     "filterStatus": {
       "options": [
-        { "label": "Todos", "value": "all" },
-        { "label": "Activo", "value": "active" },
-        { "label": "Inactivo", "value": "inactive" },
-        { "label": "Caducado", "value": "expired" },
-        { "label": "Mantenimiento", "value": "maintenance" }
+        {
+          "label": "Todos",
+          "value": "all"
+        },
+        {
+          "label": "Activo",
+          "value": "active"
+        },
+        {
+          "label": "Inactivo",
+          "value": "inactive"
+        },
+        {
+          "label": "Caducado",
+          "value": "expired"
+        },
+        {
+          "label": "Mantenimiento",
+          "value": "maintenance"
+        }
       ]
     },
     "busStatus": {
@@ -109,6 +124,29 @@
         "shift": "El turno es requerido",
         "mediaError": "Sube un documento."
       }
+    },
+    "passengers": {
+      "open": "Pasajeros",
+      "title": "Lista de pasajeros",
+      "pickDate": "Fecha del viaje",
+      "capacity": "Capacidad",
+      "occupied": "Ocupados",
+      "available": "Disponibles",
+      "loading": "Cargando pasajeros...",
+      "active": "Pasajeros activos",
+      "none": "No hay pasajeros reservados para este viaje.",
+      "removed": "Cancelados / No presentados (asiento liberado)",
+      "checkIn": "Registrar",
+      "noShow": "No presentado",
+      "confirmNoShow": "¿Marcar a {name} como no presentado? Sale de la lista y se libera el asiento.",
+      "cancel": "Cancelar",
+      "confirm": "Sí, marcar",
+      "noShowDone": "Marcado como no presentado — asiento liberado",
+      "checkedInDone": "Pasajero registrado",
+      "checkedInAt": "Registrado a las {time} por {name}",
+      "noShowBy": "No presentado {time} · por {name}",
+      "cancelledAt": "Cancelado por el residente {time}",
+      "seatReleased": "Asiento liberado"
     }
   }
 }

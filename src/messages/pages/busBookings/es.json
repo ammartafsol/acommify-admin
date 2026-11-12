@@ -5,7 +5,9 @@
       "all": "Todas",
       "pending": "Pendiente",
       "cancelled": "Cancelado",
-      "completed": "Completado"
+      "completed": "Completado",
+      "checkedIn": "Registrados",
+      "noShow": "No presentados"
     },
     "table": {
       "residentName": "Nombre del Residente",

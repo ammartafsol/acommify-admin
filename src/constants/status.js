@@ -1,6 +1,9 @@
 // src/locales/statusTranslations.js
 export const statusTranslations = {
   en: {
+    booked: "Booked",
+    "no-show": "No-Show",
+    "checked-in": "Checked In",
     confirmed: "Confirmed",
     low: "Low",
     completed: "Completed",
@@ -36,6 +39,9 @@ export const statusTranslations = {
     cancelled: "Cancelled",
   },
   pt: {
+    booked: "Reservado",
+    "no-show": "Não compareceu",
+    "checked-in": "Check-in feito",
     confirmed: "Confirmado",
     low: "Baixo",
     completed: "Concluído",
@@ -71,6 +77,9 @@ export const statusTranslations = {
     cancelled: "Cancelado",
   },
   es: {
+    booked: "Reservado",
+    "no-show": "No presentado",
+    "checked-in": "Registrado",
     confirmed: "Confirmado",
     low: "Bajo",
     completed: "Completado",
@@ -106,6 +115,9 @@ export const statusTranslations = {
     cancelled: "Cancelado",
   },
   fr: {
+    booked: "Réservé",
+    "no-show": "Absent",
+    "checked-in": "Enregistré",
     confirmed: "Confirmé",
     low: "Faible",
     completed: "Terminé",
@@ -141,6 +153,9 @@ export const statusTranslations = {
     cancelled: "Annulé",
   },
   ka: {
+    booked: "დაჯავშნილი",
+    "no-show": "არ გამოცხადდა",
+    "checked-in": "დარეგისტრირდა",
     confirmed: "დადასტურებულია",
     low: "დაბალი",
     completed: "დასრულებულია",
@@ -176,6 +191,9 @@ export const statusTranslations = {
     cancelled: "გაუქმებულია",
   },
   ha: {
+    booked: "An ajiye",
+    "no-show": "Bai zo ba",
+    "checked-in": "An shigar",
     confirmed: "An tabbatar",
     low: "Ƙarami",
     completed: "An gama",
@@ -211,6 +229,9 @@ export const statusTranslations = {
     cancelled: "An soke",
   },
   ar: {
+    booked: "محجوز",
+    "no-show": "لم يحضر",
+    "checked-in": "تم تسجيل الحضور",
     confirmed: "مؤكد",
     low: "منخفض",
     completed: "مكتمل",
@@ -246,6 +267,9 @@ export const statusTranslations = {
     cancelled: "ألغيت",
   },
   uk: {
+    booked: "Заброньовано",
+    "no-show": "Неявка",
+    "checked-in": "Зареєстровано",
     confirmed: "Підтверджено",
     low: "Низький",
     completed: "Завершено",
@@ -281,6 +305,9 @@ export const statusTranslations = {
     cancelled: "Скасовано",
   },
   ps: {
+    booked: "بک شوی",
+    "no-show": "نه دی راغلی",
+    "checked-in": "حاضر شو",
     confirmed: "تایید شوی",
     low: "ټیټ",
     completed: "بشپړ شوی",

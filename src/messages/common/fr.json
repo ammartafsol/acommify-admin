@@ -240,7 +240,8 @@
       "holidays": "Jours fériés",
       "view-holidays": "Voir les jours fériés",
       "add-edit-holiday": "Ajouter/Modifier un jour férié",
-      "submit-maintenance-requests": "Soumettre des demandes de maintenance"
+      "submit-maintenance-requests": "Soumettre des demandes de maintenance",
+      "manage-bus-passengers": "Gérer les passagers (enregistrement / absent)"
     }
   },
   "bookingTypes": {

@@ -24,11 +24,26 @@
     },
     "filterStatus": {
       "options": [
-        { "label": "Усі", "value": "all" },
-        { "label": "Активний", "value": "active" },
-        { "label": "Неактивний", "value": "inactive" },
-        { "label": "Прострочено", "value": "expired" },
-        { "label": "Обслуговування", "value": "maintenance" }
+        {
+          "label": "Усі",
+          "value": "all"
+        },
+        {
+          "label": "Активний",
+          "value": "active"
+        },
+        {
+          "label": "Неактивний",
+          "value": "inactive"
+        },
+        {
+          "label": "Прострочено",
+          "value": "expired"
+        },
+        {
+          "label": "Обслуговування",
+          "value": "maintenance"
+        }
       ]
     },
     "busStatus": {
@@ -109,6 +124,29 @@
         "shift": "Зміна є обов'язковою",
         "mediaError": "Будь ласка, завантажте документ."
       }
+    },
+    "passengers": {
+      "open": "Пасажири",
+      "title": "Список пасажирів",
+      "pickDate": "Дата поїздки",
+      "capacity": "Місткість",
+      "occupied": "Зайнято",
+      "available": "Вільно",
+      "loading": "Завантаження пасажирів...",
+      "active": "Активні пасажири",
+      "none": "На цю поїздку немає пасажирів.",
+      "removed": "Скасовані / Неявка (місце звільнено)",
+      "checkIn": "Зареєструвати",
+      "noShow": "Неявка",
+      "confirmNoShow": "Позначити {name} як неявку? Пасажира приберуть зі списку, місце звільниться.",
+      "cancel": "Скасувати",
+      "confirm": "Так, позначити",
+      "noShowDone": "Позначено неявку — місце звільнено",
+      "checkedInDone": "Пасажира зареєстровано",
+      "checkedInAt": "Зареєстровано о {time}, {name}",
+      "noShowBy": "Неявка {time} · {name}",
+      "cancelledAt": "Скасовано мешканцем {time}",
+      "seatReleased": "Місце звільнено"
     }
   }
 }

@@ -6,6 +6,8 @@ import AppTable from "@/components/organisms/AppTable/AppTable";
 import { RenderStatusCell } from "@/components/organisms/AppTable/tableHelper";
 import AddEditBusModal from "@/components/organisms/Modals/AddEditBusModal/AddEditBusModal";
 import AreYouSureModal from "@/components/organisms/Modals/AreYouSureModal/AreYouSureModal";
+import BusPassengersModal from "@/components/organisms/Modals/BusPassengersModal";
+import { LuUsers } from "react-icons/lu";
 import DetailModal from "@/components/organisms/Modals/DetailModal/DetailModal";
 import useAxios from "@/interceptor/axios-functions";
 import useDebounce from "@/resources/hooks/useDebounce";
@@ -56,6 +58,15 @@ export default function BusManagementTemplate() {
   const [loading, setLoading] = useState("");
   const searchDebounce = useDebounce(search, 500);
   const [showAreYouSureModal, setShowAreYouSureModal] = useState(false);
+  const [passengersBus, setPassengersBus] = useState(null);
+  const { user } = useSelector((state) => state.authReducer);
+  const canEditBus = permissions.includes("add-edit-bus");
+  // reception: passenger list, check-in and no-show
+  const canSeePassengers =
+    ["admin", "business-owner"].includes(user?.role) ||
+    ["manage-bus-passengers", "view-bus-bookings", "view-buses"].some((p) =>
+      permissions.includes(p),
+    );
 
   const tableActions = [
     {
@@ -80,6 +91,20 @@ export default function BusManagementTemplate() {
 
         return (
           <div className={classes.actionsMain}>
+            {canSeePassengers ? (
+              <div
+                className={classes.tableIcon}
+                title={t("passengers.open")}
+                aria-label={t("passengers.open")}
+                data-testid="bus-passengers-btn"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setPassengersBus(data);
+                }}
+              >
+                <LuUsers size={18} color="#33b5f6" />
+              </div>
+            ) : null}
             <div
               className={classes.tableIcon}
               onClick={() => {
@@ -89,6 +114,8 @@ export default function BusManagementTemplate() {
             >
               <ReactSVG src="/svg/eye.svg" />
             </div>
+            {canEditBus ? (
+            <>
             <div
               className={classes.tableIcon}
               onClick={() => {
@@ -121,6 +148,8 @@ export default function BusManagementTemplate() {
               }
               value={data?._id}
             />
+            </>
+            ) : null}
           </div>
         );
       },
@@ -269,7 +298,7 @@ export default function BusManagementTemplate() {
       />
       <AppTable
         tableHeader={BusManagementTableHeader(t)}
-        actions={permissions.includes("add-edit-bus") ? tableActions : []}
+        actions={canEditBus || canSeePassengers ? tableActions : []}
         actionStyles={{
           width: "11%",
         }}
@@ -367,6 +396,16 @@ export default function BusManagementTemplate() {
         </div>
       </DetailModal>
 
+      {passengersBus && (
+        <BusPassengersModal
+          show={!!passengersBus}
+          setShow={(v) => !v && setPassengersBus(null)}
+          bus={passengersBus}
+          onChanged={() =>
+            fetchBusData({ page, search: searchDebounce, filter: filter.value })
+          }
+        />
+      )}
       {showAreYouSureModal && (
         <AreYouSureModal
           show={showAreYouSureModal}

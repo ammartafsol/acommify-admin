@@ -36,6 +36,8 @@ const BusBookings = () => {
     { label: t("tabs.rejected"), value: "rejected", id: "rejected" },
     { label: t("tabs.cancelled"), value: "cancelled", id: "confirm" },
     { label: t("tabs.completed"), value: "completed", id: "completed" },
+    { label: t("tabs.checkedIn"), value: "checked-in", id: "checked-in" },
+    { label: t("tabs.noShow"), value: "no-show", id: "no-show" },
   ];
 
   const [activeIcon, setActiveIcon] = useState("menu");
@@ -110,7 +112,7 @@ const BusBookings = () => {
                 booking?.bookingEndDate &&
                 new Date(booking.bookingEndDate) <= now;
               const isExpired =
-                !["cancelled", "rejected"].includes(booking?.status) &&
+                !["cancelled", "rejected", "no-show", "checked-in"].includes(booking?.status) &&
                 (booking?.status === "completed" || ended);
               return isExpired
                 ? { ...booking, status: "expired", isExpired: true }

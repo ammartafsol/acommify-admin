@@ -24,11 +24,26 @@
     },
     "filterStatus": {
       "options": [
-        { "label": "الكل", "value": "all" },
-        { "label": "نشط", "value": "active" },
-        { "label": "غير نشط", "value": "inactive" },
-        { "label": "منتهي الصلاحية", "value": "expired" },
-        { "label": "صيانة", "value": "maintenance" }
+        {
+          "label": "الكل",
+          "value": "all"
+        },
+        {
+          "label": "نشط",
+          "value": "active"
+        },
+        {
+          "label": "غير نشط",
+          "value": "inactive"
+        },
+        {
+          "label": "منتهي الصلاحية",
+          "value": "expired"
+        },
+        {
+          "label": "صيانة",
+          "value": "maintenance"
+        }
       ]
     },
     "busStatus": {
@@ -45,7 +60,6 @@
       "busCreated": "تم إنشاء الحافلة بنجاح",
       "busUpdated": "تم تحديث الحافلة بنجاح"
     },
-    
     "modal": {
       "editTitle": "تعديل الحافلة",
       "translating": "جاري الترجمة...",
@@ -110,6 +124,29 @@
         "shift": "الوردية مطلوبة",
         "mediaError": "يرجى تحميل مستند."
       }
+    },
+    "passengers": {
+      "open": "الركاب",
+      "title": "قائمة الركاب",
+      "pickDate": "تاريخ الرحلة",
+      "capacity": "السعة",
+      "occupied": "مشغولة",
+      "available": "متاحة",
+      "loading": "جارٍ تحميل الركاب...",
+      "active": "الركاب النشطون",
+      "none": "لا يوجد ركاب محجوزون لهذه الرحلة.",
+      "removed": "ملغاة / لم يحضر (المقعد محرر)",
+      "checkIn": "تسجيل الحضور",
+      "noShow": "لم يحضر",
+      "confirmNoShow": "تسجيل {name} كمتغيب؟ سيُزال من القائمة ويُحرر المقعد.",
+      "cancel": "إلغاء",
+      "confirm": "نعم، سجّل الغياب",
+      "noShowDone": "تم التسجيل كمتغيب — المقعد محرر",
+      "checkedInDone": "تم تسجيل حضور الراكب",
+      "checkedInAt": "سُجّل الحضور {time} بواسطة {name}",
+      "noShowBy": "متغيب {time} · بواسطة {name}",
+      "cancelledAt": "ألغاه المقيم {time}",
+      "seatReleased": "المقعد محرر"
     }
   }
 }

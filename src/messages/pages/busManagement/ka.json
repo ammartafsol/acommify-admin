@@ -24,11 +24,26 @@
     },
     "filterStatus": {
       "options": [
-        { "label": "ყველა", "value": "all" },
-        { "label": "აქტიური", "value": "active" },
-        { "label": "არააქტიური", "value": "inactive" },
-        { "label": "ვადაგასული", "value": "expired" },
-        { "label": "მოვლა", "value": "maintenance" }
+        {
+          "label": "ყველა",
+          "value": "all"
+        },
+        {
+          "label": "აქტიური",
+          "value": "active"
+        },
+        {
+          "label": "არააქტიური",
+          "value": "inactive"
+        },
+        {
+          "label": "ვადაგასული",
+          "value": "expired"
+        },
+        {
+          "label": "მოვლა",
+          "value": "maintenance"
+        }
       ]
     },
     "busStatus": {
@@ -109,6 +124,29 @@
         "shift": "ცვლა აუცილებელია",
         "mediaError": "გთხოვთ, ატვირთოთ დოკუმენტი."
       }
+    },
+    "passengers": {
+      "open": "მგზავრები",
+      "title": "მგზავრების სია",
+      "pickDate": "მგზავრობის თარიღი",
+      "capacity": "ტევადობა",
+      "occupied": "დაკავებული",
+      "available": "თავისუფალი",
+      "loading": "მგზავრები იტვირთება...",
+      "active": "აქტიური მგზავრები",
+      "none": "ამ მგზავრობაზე მგზავრები არ არიან.",
+      "removed": "გაუქმებული / არ გამოცხადდა (ადგილი თავისუფალია)",
+      "checkIn": "რეგისტრაცია",
+      "noShow": "არ გამოცხადდა",
+      "confirmNoShow": "მოვნიშნოთ {name} როგორც არ გამოცხადებული? ადგილი გათავისუფლდება.",
+      "cancel": "გაუქმება",
+      "confirm": "დიახ, მოვნიშნოთ",
+      "noShowDone": "მოინიშნა — ადგილი გათავისუფლდა",
+      "checkedInDone": "მგზავრი დარეგისტრირდა",
+      "checkedInAt": "დარეგისტრირდა {time}, {name}",
+      "noShowBy": "არ გამოცხადდა {time} · {name}",
+      "cancelledAt": "გააუქმა მცხოვრებმა {time}",
+      "seatReleased": "ადგილი თავისუფალია"
     }
   }
 }

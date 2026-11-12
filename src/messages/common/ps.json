@@ -240,7 +240,8 @@
       "holidays": "رخصتۍ",
       "view-holidays": "رخصتۍ کتل",
       "add-edit-holiday": "رخصتي اضافه/سمول",
-      "submit-maintenance-requests": "د ساتنې غوښتنې سپارل"
+      "submit-maintenance-requests": "د ساتنې غوښتنې سپارل",
+      "manage-bus-passengers": "د بس مسافرین اداره (حاضري / غیر حاضري)"
     }
   },
   "bookingTypes": {

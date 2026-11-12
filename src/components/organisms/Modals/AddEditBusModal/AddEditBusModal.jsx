@@ -435,7 +435,8 @@ export default function AddEditBusModal({
             dropDownContainerClass={classes.dropDownContainer}
             setValue={(value) => formik.setFieldValue("capacity", value)}
             error={formik.touched.capacity && formik.errors.capacity}
-            disabled={isEdit}
+            // the size can change later; the server refuses it while an
+            // upcoming booking holds a seat the new size doesn't have
           />
 
           <Input

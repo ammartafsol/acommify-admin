@@ -4,7 +4,6 @@
     "addBus": "Create Bus",
     "addNewBus": "Add New Bus",
     "busDetail": "Bus Details",
-
     "deletedBus": "Bus deleted successfully.",
     "statusUpdated": "Bus status updated successfully.",
     "table": {
@@ -25,14 +24,28 @@
     },
     "filterStatus": {
       "options": [
-        { "label": "All", "value": "all" },
-        { "label": "Active", "value": "active" },
-        { "label": "Inactive", "value": "inactive" },
-        { "label": "Expired", "value": "expired" },
-        { "label": "Maintenance", "value": "maintenance" }
+        {
+          "label": "All",
+          "value": "all"
+        },
+        {
+          "label": "Active",
+          "value": "active"
+        },
+        {
+          "label": "Inactive",
+          "value": "inactive"
+        },
+        {
+          "label": "Expired",
+          "value": "expired"
+        },
+        {
+          "label": "Maintenance",
+          "value": "maintenance"
+        }
       ]
     },
-
     "busStatus": {
       "active": "Active",
       "inactive": "Inactive"
@@ -111,6 +124,29 @@
         "shift": "Shift is required",
         "mediaError": "Please upload a document."
       }
+    },
+    "passengers": {
+      "open": "Passengers",
+      "title": "Passenger List",
+      "pickDate": "Journey date",
+      "capacity": "Capacity",
+      "occupied": "Occupied",
+      "available": "Available",
+      "loading": "Loading passengers...",
+      "active": "Active passengers",
+      "none": "No passengers booked for this journey.",
+      "removed": "Cancelled / No-Show (seat released)",
+      "checkIn": "Check In",
+      "noShow": "No-Show",
+      "confirmNoShow": "Mark {name} as a no-show? They leave the passenger list and the seat is released.",
+      "cancel": "Cancel",
+      "confirm": "Yes, mark No-Show",
+      "noShowDone": "Marked as no-show — seat released",
+      "checkedInDone": "Passenger checked in",
+      "checkedInAt": "Checked in {time} by {name}",
+      "noShowBy": "No-show {time} · by {name}",
+      "cancelledAt": "Cancelled by resident {time}",
+      "seatReleased": "Seat released"
     }
   }
 }

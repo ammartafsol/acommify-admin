@@ -5,7 +5,9 @@
       "all": "الكل",
       "pending": "في الانتظار",
       "cancelled": "ملغي",
-      "completed": "مكتمل"
+      "completed": "مكتمل",
+      "checkedIn": "تم الحضور",
+      "noShow": "لم يحضر"
     },
     "table": {
       "residentName": "اسم المقيم",

@@ -24,11 +24,26 @@
     },
     "filterStatus": {
       "options": [
-        { "label": "Duka", "value": "all" },
-        { "label": "Aiki", "value": "active" },
-        { "label": "Ba Aiki", "value": "inactive" },
-        { "label": "Ya ƙare", "value": "expired" },
-        { "label": "Kulawa", "value": "maintenance" }
+        {
+          "label": "Duka",
+          "value": "all"
+        },
+        {
+          "label": "Aiki",
+          "value": "active"
+        },
+        {
+          "label": "Ba Aiki",
+          "value": "inactive"
+        },
+        {
+          "label": "Ya ƙare",
+          "value": "expired"
+        },
+        {
+          "label": "Kulawa",
+          "value": "maintenance"
+        }
       ]
     },
     "busStatus": {
@@ -109,6 +124,29 @@
         "shift": "Juyi yana buƙata",
         "mediaError": "Da fatan a loda takarda."
       }
+    },
+    "passengers": {
+      "open": "Fasinjoji",
+      "title": "Jerin fasinjoji",
+      "pickDate": "Ranar tafiya",
+      "capacity": "Ƙarfin ɗauka",
+      "occupied": "An mamaye",
+      "available": "Akwai",
+      "loading": "Ana lodawa fasinjoji...",
+      "active": "Fasinjoji masu aiki",
+      "none": "Babu fasinjoji da aka ajiye don wannan tafiya.",
+      "removed": "An soke / Bai zo ba (an saki kujera)",
+      "checkIn": "Shigar",
+      "noShow": "Bai zo ba",
+      "confirmNoShow": "Yi wa {name} alamar bai zo ba? Za a cire shi kuma a saki kujera.",
+      "cancel": "Soke",
+      "confirm": "Ee, yi alama",
+      "noShowDone": "An yi alama — an saki kujera",
+      "checkedInDone": "An shigar da fasinja",
+      "checkedInAt": "An shigar {time} ta {name}",
+      "noShowBy": "Bai zo ba {time} · ta {name}",
+      "cancelledAt": "Mazauni ya soke {time}",
+      "seatReleased": "An saki kujera"
     }
   }
 }

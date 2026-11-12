@@ -1,0 +1,274 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: var(--font-lato);
+}
+
+.busLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+}
+
+.busLine strong {
+  color: #101828;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.busLine span {
+  color: #667085;
+  font-size: 13.5px;
+}
+
+/* ---------- dates ---------- */
+.dates {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #667085;
+}
+
+.chips {
+  display: flex;
+  flex: 1;
+  gap: 6px;
+  min-width: 0;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.chips button {
+  flex: 0 0 auto;
+  height: 32px;
+  padding: 0 12px;
+  border: 1.5px solid #e4e7ec;
+  border-radius: 999px;
+  background: #fff;
+  color: #475467;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chips button.chipActive {
+  border-color: #33b5f6;
+  background: #f0f9ff;
+  color: #0b84c4;
+}
+
+.dates input {
+  height: 34px;
+  padding: 0 8px;
+  border: 1.5px solid #e4e7ec;
+  border-radius: 10px;
+  color: #475467;
+  font-family: inherit;
+}
+
+/* ---------- seat stats ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.stats span {
+  color: #98a2b3;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.stats strong {
+  color: #101828;
+  font-size: 22px;
+}
+
+.stats .free {
+  background: #ecfdf3;
+}
+
+.stats .free strong {
+  color: #067647;
+}
+
+/* ---------- list ---------- */
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0 0;
+  color: #101828;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.heading em {
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: #f2f4f7;
+  color: #475467;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.empty {
+  margin: 0;
+  color: #98a2b3;
+  font-size: 14px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 1px solid #eef2f6;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.person strong {
+  color: #101828;
+  font-size: 14.5px;
+  text-transform: capitalize;
+}
+
+.person span {
+  color: #667085;
+  font-size: 12.5px;
+}
+
+.person em {
+  color: #98a2b3;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.actions button,
+.confirm button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 32px;
+  padding: 0 12px;
+  border: 1.5px solid #e4e7ec;
+  border-radius: 9px;
+  background: #fff;
+  color: #475467;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.actions .checkIn {
+  border-color: #abefc6;
+  background: #ecfdf3;
+  color: #067647;
+}
+
+.actions .noShow {
+  border-color: #fecdca;
+  background: #fef3f2;
+  color: #d92d20;
+}
+
+.confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  max-width: 300px;
+}
+
+.confirm p {
+  margin: 0;
+  color: #b42318;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-align: end;
+}
+
+.confirm div {
+  display: flex;
+  gap: 6px;
+}
+
+.confirm .danger {
+  border-color: #d92d20;
+  background: #d92d20;
+  color: #fff;
+}
+
+.expired,
+.removedList li {
+  opacity: 0.6;
+  background: #f9fafb;
+}
+
+.seatFree {
+  color: #067647;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .list li {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .list li > :last-child {
+    grid-column: 1 / -1;
+  }
+
+  .confirm {
+    align-items: stretch;
+    max-width: none;
+  }
+
+  .confirm p {
+    text-align: start;
+  }
+
+  .dates {
+    flex-wrap: wrap;
+  }
+}

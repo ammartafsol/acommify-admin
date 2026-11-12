@@ -44,6 +44,7 @@ export const allPermissions = [
   "add-edit-holiday",
   "view-buses",
   "add-edit-bus",
+  "manage-bus-passengers",
   "view-faqs",
   "add-edit-faq",
   "view-maintenance-request-categories",
@@ -425,7 +426,7 @@ export const permissionsList = [
   },
   {
     label: "bus-management",
-    permissions: ["view-buses", "add-edit-bus"],
+    permissions: ["view-buses", "add-edit-bus", "manage-bus-passengers"],
     children: [
       {
         label: "view-buses",
@@ -436,6 +437,12 @@ export const permissionsList = [
       {
         label: "add-edit-bus",
         permissions: ["add-edit-bus"],
+        dependencies: ["view-buses"],
+      },
+      {
+        // Reception: passenger lists, check-in and no-show
+        label: "manage-bus-passengers",
+        permissions: ["manage-bus-passengers"],
         dependencies: ["view-buses"],
       },
     ],

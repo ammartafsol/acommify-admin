@@ -5,7 +5,9 @@
       "all": "ټول",
       "pending": "پاتې",
       "cancelled": "لغوه شوي",
-      "completed": "بشپړ شوي"
+      "completed": "بشپړ شوي",
+      "checkedIn": "حاضر شوي",
+      "noShow": "نه دي راغلي"
     },
     "table": {
       "residentName": "د استوګن نوم",

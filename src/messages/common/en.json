@@ -240,7 +240,8 @@
       "holidays": "Holidays",
       "view-holidays": "View Holidays",
       "add-edit-holiday": "Add/Edit Holiday",
-      "submit-maintenance-requests": "Submit Maintenance Requests"
+      "submit-maintenance-requests": "Submit Maintenance Requests",
+      "manage-bus-passengers": "Manage Bus Passengers (check-in / no-show)"
     }
   },
   "bookingTypes": {

@@ -240,7 +240,8 @@
       "holidays": "العطل",
       "view-holidays": "عرض العطل",
       "add-edit-holiday": "إضافة/تعديل عطلة",
-      "submit-maintenance-requests": "إرسال طلبات الصيانة"
+      "submit-maintenance-requests": "إرسال طلبات الصيانة",
+      "manage-bus-passengers": "إدارة ركاب الحافلة (الحضور / الغياب)"
     }
   },
   "bookingTypes": {

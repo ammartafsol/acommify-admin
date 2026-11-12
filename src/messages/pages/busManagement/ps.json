@@ -24,11 +24,26 @@
     },
     "filterStatus": {
       "options": [
-        { "label": "ټول", "value": "all" },
-        { "label": "فعال", "value": "active" },
-        { "label": "غیرفعال", "value": "inactive" },
-        { "label": "پای ته رسیدلی", "value": "expired" },
-        { "label": "ساتنه", "value": "maintenance" }
+        {
+          "label": "ټول",
+          "value": "all"
+        },
+        {
+          "label": "فعال",
+          "value": "active"
+        },
+        {
+          "label": "غیرفعال",
+          "value": "inactive"
+        },
+        {
+          "label": "پای ته رسیدلی",
+          "value": "expired"
+        },
+        {
+          "label": "ساتنه",
+          "value": "maintenance"
+        }
       ]
     },
     "busStatus": {
@@ -109,6 +124,29 @@
         "shift": "بدل اړین دی",
         "mediaError": "مهرباني وکړئ یو سند پورته کړئ."
       }
+    },
+    "passengers": {
+      "open": "مسافرین",
+      "title": "د مسافرینو لیست",
+      "pickDate": "د سفر نېټه",
+      "capacity": "ظرفیت",
+      "occupied": "نیول شوې",
+      "available": "شته",
+      "loading": "مسافرین پورته کیږي...",
+      "active": "فعال مسافرین",
+      "none": "د دې سفر لپاره هیڅ مسافر نشته.",
+      "removed": "لغوه / نه دی راغلی (څوکۍ آزاده)",
+      "checkIn": "حاضر کړئ",
+      "noShow": "نه دی راغلی",
+      "confirmNoShow": "{name} غیر حاضر وښیئ؟ له لیست وځي او څوکۍ آزادېږي.",
+      "cancel": "لغوه",
+      "confirm": "هو، وښیئ",
+      "noShowDone": "غیر حاضر وښودل شو — څوکۍ آزاده شوه",
+      "checkedInDone": "مسافر حاضر شو",
+      "checkedInAt": "{time} کې د {name} لخوا حاضر شو",
+      "noShowBy": "غیر حاضر {time} · د {name} لخوا",
+      "cancelledAt": "اوسېدونکي لغوه کړ {time}",
+      "seatReleased": "څوکۍ آزاده"
     }
   }
 }

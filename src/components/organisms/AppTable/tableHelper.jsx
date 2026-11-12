@@ -83,11 +83,14 @@ export function RenderStatusCell({ status }) {
         "open",
         "accepted",
         "delivery",
+        "checked-in",
+        "booked",
       ].includes(status)
     ) {
       return styles.statusGreen;
     } else if (
       [
+        "no-show",
         "escalated",
         "urgent",
         "inactive",

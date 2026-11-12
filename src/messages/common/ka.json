@@ -240,7 +240,8 @@
       "holidays": "დღესასწაულები",
       "view-holidays": "დღესასწაულების ნახვა",
       "add-edit-holiday": "დღესასწაულის დამატება/რედაქტირება",
-      "submit-maintenance-requests": "მოვლის მოთხოვნების გაგზავნა"
+      "submit-maintenance-requests": "მოვლის მოთხოვნების გაგზავნა",
+      "manage-bus-passengers": "მგზავრების მართვა (რეგისტრაცია / არ გამოცხადდა)"
     }
   },
   "bookingTypes": {

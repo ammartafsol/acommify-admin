@@ -5,7 +5,9 @@
       "all": "Усі",
       "pending": "Очікує",
       "cancelled": "Скасовано",
-      "completed": "Завершено"
+      "completed": "Завершено",
+      "checkedIn": "Зареєстровані",
+      "noShow": "Неявка"
     },
     "table": {
       "residentName": "Ім'я резидента",

@@ -5,7 +5,9 @@
       "all": "ყველა",
       "pending": "მოლოდინში",
       "cancelled": "გაუქმებული",
-      "completed": "დასრულებული"
+      "completed": "დასრულებული",
+      "checkedIn": "დარეგისტრირებული",
+      "noShow": "არ გამოცხადდა"
     },
     "table": {
       "residentName": "მოსახლის სახელი",
