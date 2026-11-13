@@ -42,7 +42,11 @@
       "checkedIn": "An shigar",
       "noShow": "An yi alamar bai zo ba",
       "cancelled": "An soke",
-      "cancelReason": "Dalilin soke"
+      "cancelReason": "Dalilin soke",
+      "terms": "Sharuɗɗa da Ka'idoji",
+      "termsAccepted": "An amince {date}",
+      "termsNotRecorded": "Ba a rubuta ba",
+      "viewTerms": "Duba takarda"
     }
   }
 }

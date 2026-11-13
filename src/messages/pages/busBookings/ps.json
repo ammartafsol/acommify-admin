@@ -42,7 +42,11 @@
       "checkedIn": "حاضر شو",
       "noShow": "غیر حاضر وښودل شو",
       "cancelled": "لغوه شو",
-      "cancelReason": "د لغوه کولو دلیل"
+      "cancelReason": "د لغوه کولو دلیل",
+      "terms": "شرایط او ضوابط",
+      "termsAccepted": "منل شوي {date}",
+      "termsNotRecorded": "نه دي ثبت شوي",
+      "viewTerms": "سند وګورئ"
     }
   }
 }

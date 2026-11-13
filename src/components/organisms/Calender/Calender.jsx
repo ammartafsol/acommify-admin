@@ -113,10 +113,11 @@ export default function CalendarComponent({
   };
 
   const CustomEvent = ({ event }) => {
-    const isCancelled = event?.status === "cancelled";
+    const isCancelled = ["cancelled", "no-show"].includes(event?.status);
     const isPending = event?.status === "pending";
     const isRejected = event?.status === "rejected";
-    const isConfirmed = event?.status === "completed";
+    const isConfirmed = ["completed", "checked-in"].includes(event?.status);
+    const isExpired = event?.status === "expired";
     return (
       <div
         // onClick={(e) => {
@@ -129,8 +130,10 @@ export default function CalendarComponent({
           styles.event,
           isCancelled || isRejected ? styles.cancelledEvent : "",
           isPending ? styles.pendingEvent : "",
-          isConfirmed ? styles.confirmedEvent : ""
+          isConfirmed ? styles.confirmedEvent : "",
+          isExpired ? styles.expiredEvent : ""
         )}
+        data-status={event?.status}
       >
         <span>{event.title || t("myBooking")} </span>
       </div>

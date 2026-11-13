@@ -42,7 +42,11 @@
       "checkedIn": "Зареєстровано",
       "noShow": "Позначено неявку",
       "cancelled": "Скасовано",
-      "cancelReason": "Причина скасування"
+      "cancelReason": "Причина скасування",
+      "terms": "Умови та положення",
+      "termsAccepted": "Прийнято {date}",
+      "termsNotRecorded": "Не зафіксовано",
+      "viewTerms": "Переглянути документ"
     }
   }
 }

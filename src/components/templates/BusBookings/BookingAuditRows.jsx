@@ -5,6 +5,7 @@ import { useTranslations } from "@/resources/hooks/useTranslations";
 import moment from "moment-timezone";
 import { useLocale } from "next-intl";
 import { useEffect, useState } from "react";
+import { imageUrl } from "@/resources/utils/helper";
 
 const fmt = (d) => (d ? moment(d).format("DD MMM YYYY, HH:mm") : null);
 
@@ -43,12 +44,29 @@ export default function BookingAuditRows({ slug, itemClass }) {
       `${fmt(b.cancelledAt)}${name(b.cancelledBy) ? ` · ${name(b.cancelledBy)}` : ""}`,
     ],
     b.cancelReason && [t("history.cancelReason"), b.cancelReason],
+    [
+      t("history.terms"),
+      b.termsAccepted
+        ? t("history.termsAccepted", { date: fmt(b.termsAcceptedAt) || "" })
+        : t("history.termsNotRecorded"),
+      b.termsAccepted && b.termsDocument ? imageUrl(b.termsDocument) : null,
+    ],
   ].filter(Boolean);
 
-  return rows.map(([label, value]) => (
+  return rows.map(([label, value, link]) => (
     <div className={itemClass} key={label} data-history={label}>
       <p>{label}</p>
-      <p>{value || "N/A"}</p>
+      <p>
+        {value || "N/A"}
+        {link ? (
+          <>
+            {" · "}
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              {t("history.viewTerms")}
+            </a>
+          </>
+        ) : null}
+      </p>
     </div>
   ));
 }

@@ -44,7 +44,11 @@
       "checkedIn": "Checked in",
       "noShow": "Marked no-show",
       "cancelled": "Cancelled",
-      "cancelReason": "Cancellation reason"
+      "cancelReason": "Cancellation reason",
+      "terms": "Terms & Conditions",
+      "termsAccepted": "Accepted {date}",
+      "termsNotRecorded": "Not recorded",
+      "viewTerms": "View document"
     }
   }
 }

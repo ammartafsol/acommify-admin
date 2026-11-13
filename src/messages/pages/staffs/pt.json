@@ -505,6 +505,14 @@
         "declined": "recusado",
         "pending": "pendente"
       }
+    },
+    "delete": {
+      "deleteButton": "Eliminar rascunho",
+      "discardButton": "Descartar alterações",
+      "confirmDelete": "Eliminar o rascunho da escala de {week}? Todos os turnos e códigos desta semana serão removidos.",
+      "confirmDiscard": "Descartar as alterações não publicadas de {week}? A escala volta à versão que a equipa vê.",
+      "deletedToast": "Rascunho eliminado.",
+      "discardedToast": "Alterações descartadas — a escala corresponde ao que a equipa vê."
     }
   }
 }

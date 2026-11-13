@@ -505,6 +505,14 @@
         "declined": "refusé",
         "pending": "en attente"
       }
+    },
+    "delete": {
+      "deleteButton": "Supprimer le brouillon",
+      "discardButton": "Annuler les modifications",
+      "confirmDelete": "Supprimer le brouillon du planning de {week} ? Tous les postes et codes de cette semaine seront supprimés.",
+      "confirmDiscard": "Annuler les modifications non publiées de {week} ? Le planning revient à la version vue par le personnel.",
+      "deletedToast": "Brouillon supprimé.",
+      "discardedToast": "Modifications annulées — le planning correspond à ce que voit le personnel."
     }
   }
 }

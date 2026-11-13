@@ -141,22 +141,33 @@ const BusBookings = () => {
     fetchBusData(page);
   }, [debounceSearch, selectedTab]);
 
+  // Calendar uses the same PDF statuses as the list (Booked / Checked In /
+  // No-Show / Cancelled / Expired), never the raw "accepted"
+  const STATUS_TAB = { booked: "booked", "checked-in": "checkedIn", "no-show": "noShow", cancelled: "cancelled", expired: "expired", completed: "completed" };
   const events = useMemo(() => {
+    const now = new Date();
     return (
-      dataCalender?.map((booking) => ({
-        id: booking?.slug,
-        title: `${booking?.user?.fullName?.[locale] || ""} - ${
-          booking?.bus?.name?.[locale] || ""
-        }`,
-        start: moment(booking.bookingStartDate).format("YYYY-MM-DD"),
-        end: moment(booking.bookingEndDate).format("YYYY-MM-DD"),
-        status: booking?.status,
-        resource: {
-          ...booking,
-        },
-      })) || []
+      dataCalender?.map((booking) => {
+        const status = busDisplayStatus(booking, now);
+        const label = STATUS_TAB[status] ? t(`tabs.${STATUS_TAB[status]}`) : status;
+        return {
+          id: booking?.slug,
+          title: `${booking?.user?.fullName?.[locale] || ""} - ${
+            booking?.bus?.name?.[locale] || ""
+          } · ${label}`,
+          start: moment(booking.bookingStartDate).format("YYYY-MM-DD"),
+          end: moment(booking.bookingEndDate).format("YYYY-MM-DD"),
+          status,
+          resource: {
+            ...booking,
+            status,
+            rawStatus: booking?.status,
+            isExpired: status === "expired",
+          },
+        };
+      }) || []
     );
-  }, [dataCalender]);
+  }, [dataCalender, locale]);
 
   return (
     <div className={classes.container}>

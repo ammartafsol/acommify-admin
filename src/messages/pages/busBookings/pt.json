@@ -42,7 +42,11 @@
       "checkedIn": "Check-in feito",
       "noShow": "Marcado como não compareceu",
       "cancelled": "Cancelado",
-      "cancelReason": "Motivo do cancelamento"
+      "cancelReason": "Motivo do cancelamento",
+      "terms": "Termos e Condições",
+      "termsAccepted": "Aceites {date}",
+      "termsNotRecorded": "Não registado",
+      "viewTerms": "Ver documento"
     }
   }
 }

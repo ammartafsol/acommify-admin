@@ -677,3 +677,8 @@
   background: #ccfbf1;
   color: #0f766e;
 }
+
+.dangerBtn {
+  border-color: #fecdca !important;
+  color: #d92d20 !important;
+}

@@ -505,6 +505,14 @@
         "declined": "declined",
         "pending": "pending"
       }
+    },
+    "delete": {
+      "deleteButton": "Delete draft",
+      "discardButton": "Discard changes",
+      "confirmDelete": "Delete the draft roster for {week}? All shifts and codes planned for this week will be removed.",
+      "confirmDiscard": "Discard the changes not yet issued for {week}? The roster goes back to the version staff can see.",
+      "deletedToast": "Draft roster deleted.",
+      "discardedToast": "Changes discarded — the roster matches what staff see."
     }
   }
 }

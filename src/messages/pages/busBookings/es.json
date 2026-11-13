@@ -42,7 +42,11 @@
       "checkedIn": "Registrado",
       "noShow": "Marcado como no presentado",
       "cancelled": "Cancelado",
-      "cancelReason": "Motivo de cancelación"
+      "cancelReason": "Motivo de cancelación",
+      "terms": "Términos y condiciones",
+      "termsAccepted": "Aceptados {date}",
+      "termsNotRecorded": "No registrado",
+      "viewTerms": "Ver documento"
     }
   }
 }

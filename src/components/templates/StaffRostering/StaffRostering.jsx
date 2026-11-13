@@ -12,7 +12,7 @@ import { useLocale } from "next-intl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Container } from "react-bootstrap";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
-import {
+import { LuTrash2,
   LuCalendarDays,
   LuCircleAlert,
   LuCopy,
@@ -68,7 +68,7 @@ function avatarColor(seed = "") {
 export default function StaffRostering() {
   const t = useTranslations("staffRosterPage");
   const locale = useLocale();
-  const { Get, Put, Post, Patch } = useAxios();
+  const { Get, Put, Post, Patch, Delete } = useAxios();
   const { permissions = [], user } = useSelector((state) => state.authReducer);
   const canManage =
     user?.role === "admin" || permissions.includes("manage-staff-roster");
@@ -256,6 +256,21 @@ export default function StaffRostering() {
     setLoading("");
   }
 
+  /** Draft: delete the week's roster. Issued: discard the changes not yet issued. */
+  async function deleteRoster() {
+    setLoading("delete");
+    const { response } = await Delete({ route: `staff-roster/week?weekStart=${weekKey}` });
+    setLoading("");
+    setConfirm(null);
+    if (response?.data) {
+      RenderToast({
+        type: "success",
+        message: response.data.deleted ? t("delete.deletedToast") : t("delete.discardedToast"),
+      });
+      await getData(weekStart);
+    }
+  }
+
   async function copyPreviousWeek() {
     setLoading("copy");
     const { response } = await Get({
@@ -428,6 +443,16 @@ export default function StaffRostering() {
                 className={styles.actionBtn}
               />
             )}
+            {(isIssued ? roster?.hasUnissuedChanges : roster?._id) ? (
+              <Button
+                label={isIssued ? t("delete.discardButton") : t("delete.deleteButton")}
+                variant="outlined"
+                leftIcon={<LuTrash2 size={16} />}
+                onClick={() => setConfirm({ type: "delete" })}
+                disabled={isBusy}
+                className={`${styles.actionBtn} ${styles.dangerBtn}`}
+              />
+            ) : null}
             <Button
               label={
                 loading === "save"
@@ -751,7 +776,7 @@ export default function StaffRostering() {
         <AreYouSureModal
           show={!!confirm}
           setShow={() => setConfirm(null)}
-          loading={loading === "issue" || loading === "copy"}
+          loading={loading === "issue" || loading === "copy" || loading === "delete"}
           message={
             confirm?.type === "issue"
               ? t(isIssued ? "confirm.reissue" : "confirm.issue", {
@@ -760,11 +785,16 @@ export default function StaffRostering() {
                 })
               : confirm?.type === "copy"
                 ? t("confirm.copy")
-                : t("confirm.leave")
+                : confirm?.type === "delete"
+                  ? t(isIssued ? "delete.confirmDiscard" : "delete.confirmDelete", {
+                      week: formatWeekLabel(weekStart, locale),
+                    })
+                  : t("confirm.leave")
           }
           onConfirm={() => {
             if (confirm?.type === "issue") issueRoster();
             else if (confirm?.type === "copy") copyPreviousWeek();
+            else if (confirm?.type === "delete") deleteRoster();
             else if (confirm?.type === "leave") {
               setWeekStart(confirm.week);
               setShowPendingOnly(false);

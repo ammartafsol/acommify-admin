@@ -42,7 +42,11 @@
       "checkedIn": "დარეგისტრირდა",
       "noShow": "მოინიშნა — არ გამოცხადდა",
       "cancelled": "გაუქმდა",
-      "cancelReason": "გაუქმების მიზეზი"
+      "cancelReason": "გაუქმების მიზეზი",
+      "terms": "წესები და პირობები",
+      "termsAccepted": "მიღებულია {date}",
+      "termsNotRecorded": "არ არის ჩაწერილი",
+      "viewTerms": "დოკუმენტის ნახვა"
     }
   }
 }

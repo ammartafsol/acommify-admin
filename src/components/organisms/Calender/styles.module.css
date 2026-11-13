@@ -255,3 +255,9 @@
     font-size: 8px;
   }
 }
+
+/* Expired bus tickets: slightly greyed out (PDF §4) */
+.expiredEvent {
+  background: #98a2b3 !important;
+  opacity: 0.75;
+}

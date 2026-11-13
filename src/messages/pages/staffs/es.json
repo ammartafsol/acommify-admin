@@ -505,6 +505,14 @@
         "declined": "rechazado",
         "pending": "pendiente"
       }
+    },
+    "delete": {
+      "deleteButton": "Eliminar borrador",
+      "discardButton": "Descartar cambios",
+      "confirmDelete": "¿Eliminar el borrador del turno de {week}? Se quitarán todos los turnos y códigos de esta semana.",
+      "confirmDiscard": "¿Descartar los cambios no publicados de {week}? El turno vuelve a la versión que ve el personal.",
+      "deletedToast": "Borrador eliminado.",
+      "discardedToast": "Cambios descartados — el turno coincide con lo que ve el personal."
     }
   }
 }

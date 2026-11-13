@@ -505,6 +505,14 @@
         "declined": "an ƙi",
         "pending": "ana jira"
       }
+    },
+    "delete": {
+      "deleteButton": "Share daftari",
+      "discardButton": "Watsar da canje-canje",
+      "confirmDelete": "Share daftarin jadawali na {week}? Za a cire duk lokutan aiki da lambobin wannan mako.",
+      "confirmDiscard": "Watsar da canje-canjen da ba a fitar ba na {week}? Jadawalin zai koma ga wanda ma'aikata ke gani.",
+      "deletedToast": "An share daftarin.",
+      "discardedToast": "An watsar da canje-canje — jadawalin ya yi daidai da na ma'aikata."
     }
   }
 }

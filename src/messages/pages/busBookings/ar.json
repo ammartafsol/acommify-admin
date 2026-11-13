@@ -42,7 +42,11 @@
       "checkedIn": "تم تسجيل الحضور",
       "noShow": "سُجّل كمتغيب",
       "cancelled": "أُلغي",
-      "cancelReason": "سبب الإلغاء"
+      "cancelReason": "سبب الإلغاء",
+      "terms": "الشروط والأحكام",
+      "termsAccepted": "تمت الموافقة {date}",
+      "termsNotRecorded": "غير مسجل",
+      "viewTerms": "عرض المستند"
     }
   }
 }
