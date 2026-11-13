@@ -46,21 +46,16 @@ export default function AddEditBusModal({
   const isEdit = Boolean(data);
   const [translating, setTranslating] = useState(false);
 
-  // Memoize options to prevent unnecessary reinitializations
-  const capacityOptions = useMemo(
-    () => [
-      { label: `8 ${t("modal.seater")}`, value: 8 },
-      { label: `11 ${t("modal.seater")}`, value: 11 },
-      { label: `12 ${t("modal.seater")}`, value: 12 },
-      { label: `13 ${t("modal.seater")}`, value: 13 },
-      { label: `14 ${t("modal.seater")}`, value: 14 },
-      { label: `15 ${t("modal.seater")}`, value: 15 },
-      { label: `16 ${t("modal.seater")}`, value: 16 },
-      { label: `36 ${t("modal.seater")}`, value: 36 },
-      { label: `53 ${t("modal.seater")}`, value: 53 },
-    ],
-    [t]
-  );
+  // Memoize options to prevent unnecessary reinitializations.
+  // 36 and 53-seaters are no longer offered; a bus that already has one of
+  // those sizes still shows it while editing (so it can be saved as is).
+  const capacityOptions = useMemo(() => {
+    const sizes = [8, 11, 12, 13, 14, 15, 16];
+    const current = Number(data?.capacity);
+    if (Number.isFinite(current) && current > 0 && !sizes.includes(current))
+      sizes.push(current);
+    return sizes.map((value) => ({ label: `${value} ${t("modal.seater")}`, value }));
+  }, [t, data?.capacity]);
 
   const statusOptions = useMemo(
     () => [
