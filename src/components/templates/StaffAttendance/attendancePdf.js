@@ -21,6 +21,7 @@ const FLAG_TEXT = {
   noClockIn: "! No clock-in",
   noClockOut: "! No clock-out",
   noLunchReturn: "! No lunch return",
+  noLunchOut: "! No lunch clock-out",
 };
 
 function scheduledFor(staff, date) {
@@ -97,17 +98,20 @@ export async function downloadAttendancePdf({ rows, weekStart, centreName, gener
     [
       "Name",
       ...days.map((d) => `${formatDayName(d, PDF_LOCALE)}\n${formatDayDate(d, PDF_LOCALE)}`),
+      "Lunch (week)",
       "Actual / Planned",
     ],
   ];
 
   const body = rows.map((staff) => {
     const actual = sumMinutes(staff?.records || [], now);
+    const lunch = (staff?.records || []).reduce((n, r) => n + breakMinutes(r, now), 0);
     const planned = days.reduce((sum, d) => sum + entryMinutes(scheduledFor(staff, d)), 0);
     const diff = actual - planned;
     return [
       pdfName(staff),
       ...days.map((d) => cellText(staff, d, now)),
+      lunch ? formatDuration(lunch) : "-",
       `${formatDuration(actual)}\n/ ${planned ? formatDuration(planned) : "-"}${
         planned ? `\n(${diff >= 0 ? "+" : "-"}${formatDuration(Math.abs(diff))})` : ""
       }`,
@@ -131,7 +135,8 @@ export async function downloadAttendancePdf({ rows, weekStart, centreName, gener
     headStyles: { fillColor: [51, 181, 246], textColor: [255, 255, 255], fontStyle: "bold", halign: "center" },
     columnStyles: {
       0: { cellWidth: 95, fontStyle: "bold" },
-      8: { fontStyle: "bold", halign: "center", cellWidth: 70 },
+      8: { halign: "center", cellWidth: 52 },
+      9: { fontStyle: "bold", halign: "center", cellWidth: 70 },
     },
     bodyStyles: { halign: "center" },
     alternateRowStyles: { fillColor: [244, 247, 253] },
@@ -149,7 +154,9 @@ export async function downloadAttendancePdf({ rows, weekStart, centreName, gener
     doc.text("No staff found for this week.", 40, 130);
   }
 
-  // Approved corrections (audit trail)
+  // Approved corrections (audit trail). Corrections can only be made by an
+  // authorised manager — staff cannot change their own times — so each one is
+  // an approved correction, with the approving manager and reason.
   const corrections = rows.flatMap((staff) =>
     (staff.records || []).flatMap((rec) =>
       (rec.corrections || []).map((c) => [
@@ -172,15 +179,15 @@ export async function downloadAttendancePdf({ rows, weekStart, centreName, gener
   doc.setFont("helvetica", "bold");
   doc.setFontSize(13);
   doc.setTextColor(23, 42, 51);
-  doc.text("Corrections made by managers", 40, y);
+  doc.text("Approved attendance corrections", 40, y);
   if (!corrections.length) {
     doc.setFont("helvetica", "normal");
     doc.setFontSize(10);
     doc.setTextColor(140, 147, 155);
-    doc.text("No corrections this week.", 40, y + 18);
+    doc.text("No approved corrections this week.", 40, y + 18);
   } else {
     autoTable(doc, {
-      head: [["Staff", "Day", "Original", "Corrected", "Corrected by", "When", "Reason"]],
+      head: [["Staff", "Day", "Original", "Corrected", "Approved by (manager)", "When", "Reason"]],
       body: corrections,
       startY: y + 10,
       margin: { left: 30, right: 30 },

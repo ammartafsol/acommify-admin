@@ -44,10 +44,23 @@ function sessionEnd(record, now) {
   return record.checkOut ? new Date(record.checkOut).getTime() : now.getTime();
 }
 
+// An open session older than this was never clocked out (matches the backend)
+const STALE_OPEN_MS = 16 * 60 * 60 * 1000;
+
+/**
+ * True when a session was never clocked out: flagged by the backend, or still
+ * open after STALE_OPEN_MS. Such a session must not keep counting up to "now".
+ */
+export function isMissedCheckOut(record, now = new Date()) {
+  if (!record || record.checkOut) return false;
+  if (record.missedCheckOut) return true;
+  return Boolean(record.checkIn) && now.getTime() - new Date(record.checkIn).getTime() > STALE_OPEN_MS;
+}
+
 /** Minutes of unpaid break (e.g. lunch) in one session. A running break counts up to `now`. */
 export function breakMinutes(record, now = new Date()) {
   if (!record?.checkIn || !record?.breaks?.length) return 0;
-  if (record.missedCheckOut && !record.checkOut) return 0;
+  if (isMissedCheckOut(record, now)) return 0;
   const end = sessionEnd(record, now);
   return record.breaks.reduce((sum, b) => {
     const from = new Date(b.start).getTime();
@@ -60,15 +73,15 @@ export function breakMinutes(record, now = new Date()) {
 }
 
 /** The break that is still running in an open session, if any. */
-export function openBreak(record) {
-  if (!record || record.checkOut || record.missedCheckOut) return null;
+export function openBreak(record, now = new Date()) {
+  if (!record || record.checkOut || isMissedCheckOut(record, now)) return null;
   return record.breaks?.find((b) => !b.end) || null;
 }
 
 /** Minutes worked in one session (breaks not counted). Open sessions count up to `now`. */
 export function sessionMinutes(record, now = new Date()) {
   if (!record?.checkIn) return 0;
-  if (record.missedCheckOut && !record.checkOut) return 0;
+  if (isMissedCheckOut(record, now)) return 0;
   const start = new Date(record.checkIn).getTime();
   const end = sessionEnd(record, now);
   // Exact (fractional) minutes, so totals aren't rounded before display
@@ -98,8 +111,8 @@ export function summarizeDay(records = [], day, now = new Date()) {
   }
 
   const minutes = sessions.reduce((sum, r) => sum + sessionMinutes(r, now), 0);
-  const open = sessions.find((r) => !r.checkOut && !r.missedCheckOut);
-  const missed = sessions.some((r) => r.missedCheckOut && !r.checkOut);
+  const open = sessions.find((r) => !r.checkOut && !isMissedCheckOut(r, now));
+  const missed = sessions.some((r) => isMissedCheckOut(r, now));
   const lastClosed = [...sessions].reverse().find((r) => r.checkOut);
 
   return {
@@ -112,7 +125,7 @@ export function summarizeDay(records = [], day, now = new Date()) {
     openSince: open ? new Date(open.checkIn) : null,
     breakMinutes: sessions.reduce((sum, r) => sum + breakMinutes(r, now), 0),
     // Start of the break that is running right now (for "On break since ...")
-    onBreakSince: openBreak(open) ? new Date(openBreak(open).start) : null,
+    onBreakSince: openBreak(open, now) ? new Date(openBreak(open, now).start) : null,
   };
 }
 
@@ -128,7 +141,7 @@ const MIN_SEGMENT_PCT = 1.2;
 export function getSessionBar(sessions = [], now = new Date()) {
   const items = sessions.map((s) => {
     const start = new Date(s.checkIn);
-    const missed = !s.checkOut && Boolean(s.missedCheckOut);
+    const missed = isMissedCheckOut(s, now);
     const live = !s.checkOut && !missed;
     const end = s.checkOut ? new Date(s.checkOut) : live ? now : start;
     return { key: s._id || s.checkIn, start, end, kind: live ? "live" : missed ? "missed" : "done" };
@@ -207,6 +220,8 @@ export { DAY_MS };
 // ---------- Planned vs actual + missing-record flags ----------
 
 const pad2 = (n) => String(n).padStart(2, "0");
+// A shift this long or longer is expected to include a lunch break
+export const LUNCH_EXPECTED_AFTER_MIN = 6 * 60;
 export const dayKeyOf = (d) => `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
 
 /** "12:30–13:00" style text for a session's lunch breaks. */
@@ -222,6 +237,8 @@ export function lunchText(sessions = [], locale = "en") {
  * - noClockIn:     rostered to work, the day is over (or the shift ended) and there is no record
  * - noClockOut:    a session was never clocked out
  * - noLunchReturn: lunch was started but never ended
+ * - noLunchOut:    a finished day without any lunch, when lunch was planned
+ *                  (roster break) or the day was 6 h or longer
  */
 export function dayFlags(summary, scheduled, date, now = new Date()) {
   const flags = [];
@@ -239,13 +256,23 @@ export function dayFlags(summary, scheduled, date, now = new Date()) {
     }
     if (dayOver || shiftOver) flags.push("noClockIn");
   }
-  if (summary.sessions?.some((s) => s.missedCheckOut && !s.checkOut)) flags.push("noClockOut");
+  if (summary.sessions?.some((s) => isMissedCheckOut(s, now))) flags.push("noClockOut");
   if (
     summary.sessions?.some(
-      (s) => (s.checkOut || s.missedCheckOut) && s.breaks?.some((b) => !b.end),
+      (s) => (s.checkOut || isMissedCheckOut(s, now)) && s.breaks?.some((b) => !b.end),
     )
   )
     flags.push("noLunchReturn");
+  const finished =
+    summary.sessions?.length && summary.sessions.every((s) => s.checkOut);
+  if (finished && !summary.breakMinutes) {
+    const atWork = summary.sessions.reduce(
+      (n, s) => n + (new Date(s.checkOut) - new Date(s.checkIn)) / 60000,
+      0,
+    );
+    const lunchPlanned = scheduled?.breakMinutes ? scheduled.breakMinutes > 0 : null;
+    if (lunchPlanned ?? atWork >= LUNCH_EXPECTED_AFTER_MIN) flags.push("noLunchOut");
+  }
   return flags;
 }
 

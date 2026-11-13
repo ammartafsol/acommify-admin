@@ -7,7 +7,9 @@
       "cancelled": "Cancelado",
       "completed": "Completado",
       "checkedIn": "Registrados",
-      "noShow": "No presentados"
+      "noShow": "No presentados",
+      "booked": "Reservados",
+      "expired": "Caducados"
     },
     "table": {
       "residentName": "Nombre del Residente",
@@ -33,6 +35,14 @@
     },
     "modal": {
       "viewBookingDetails": "Detalles de la Reserva de Autobús"
+    },
+    "history": {
+      "ticketIssued": "Billete emitido",
+      "ticketExpires": "El billete caduca",
+      "checkedIn": "Registrado",
+      "noShow": "Marcado como no presentado",
+      "cancelled": "Cancelado",
+      "cancelReason": "Motivo de cancelación"
     }
   }
 }

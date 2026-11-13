@@ -123,7 +123,8 @@
       "corrected": "Corrected by a manager",
       "noClockIn": "No clock-in",
       "noClockOut": "No clock-out",
-      "noLunchReturn": "No lunch return"
+      "noLunchReturn": "No lunch return",
+      "noLunchOut": "No lunch clock-out"
     },
     "planned": {
       "label": "Planned {hours}",
@@ -232,7 +233,8 @@
       "flags": {
         "noClockIn": "No clock-in",
         "noClockOut": "No clock-out",
-        "noLunchReturn": "No lunch return"
+        "noLunchReturn": "No lunch return",
+        "noLunchOut": "No lunch clock-out"
       },
       "readOnly": "Only a manager can correct your attendance."
     },
@@ -481,6 +483,27 @@
         "sameTime": "Start and end time can't be the same.",
         "break": "The break must be shorter than the shift.",
         "days": "Choose at least one day."
+      }
+    },
+    "review": {
+      "title": "Review roster before issuing",
+      "intro": "This is exactly what staff will receive for {week}. Check it, then issue — or go back to make changes.",
+      "staffOnRoster": "Staff on roster",
+      "shifts": "Shifts",
+      "plannedHours": "Planned hours",
+      "codes": "Days off & holidays",
+      "notOnRoster": "{count} staff member(s) have nothing this week: {names}",
+      "changed": "Changed since the last issue — {count} staff will be notified: {names}",
+      "staff": "Staff",
+      "total": "Total",
+      "updated": "Updated",
+      "back": "Back to edit",
+      "issue": "Issue Roster",
+      "reissue": "Re-issue Roster",
+      "ro": {
+        "approved": "approved",
+        "declined": "declined",
+        "pending": "pending"
       }
     }
   }

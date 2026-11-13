@@ -21,6 +21,8 @@ import { useSelector } from "react-redux";
 import { ReactSVG } from "react-svg";
 import classes from "./styles.module.css";
 import useDimensions from "@/resources/hooks/useDimensions";
+import { busDisplayStatus } from "./busStatus";
+import BookingAuditRows from "./BookingAuditRows";
 
 const BusBookings = () => {
   const { permissions } = useSelector((state) => state.authReducer);
@@ -32,12 +34,11 @@ const BusBookings = () => {
   const isMobile = width < 576;
   const tabsData = [
     { label: t("tabs.all"), value: "all", id: "all" },
-    { label: t("tabs.accepted"), value: "accepted", id: "accepted" },
-    { label: t("tabs.rejected"), value: "rejected", id: "rejected" },
-    { label: t("tabs.cancelled"), value: "cancelled", id: "confirm" },
-    { label: t("tabs.completed"), value: "completed", id: "completed" },
+    { label: t("tabs.booked"), value: "booked", id: "booked" },
     { label: t("tabs.checkedIn"), value: "checked-in", id: "checked-in" },
     { label: t("tabs.noShow"), value: "no-show", id: "no-show" },
+    { label: t("tabs.cancelled"), value: "cancelled", id: "cancelled" },
+    { label: t("tabs.expired"), value: "expired", id: "expired" },
   ];
 
   const [activeIcon, setActiveIcon] = useState("menu");
@@ -104,19 +105,12 @@ const BusBookings = () => {
         if (isCalendarView) {
           setDataCalender(response.data);
         } else {
-          // Bus tickets expire once the journey ends
+          // PDF statuses: Booked / Checked In / No-Show / Cancelled / Expired
           const now = new Date();
           setBusData(
             (response.data || []).map((booking) => {
-              const ended =
-                booking?.bookingEndDate &&
-                new Date(booking.bookingEndDate) <= now;
-              const isExpired =
-                !["cancelled", "rejected", "no-show", "checked-in"].includes(booking?.status) &&
-                (booking?.status === "completed" || ended);
-              return isExpired
-                ? { ...booking, status: "expired", isExpired: true }
-                : booking;
+              const status = busDisplayStatus(booking, now);
+              return { ...booking, status, rawStatus: booking?.status, isExpired: status === "expired" };
             }),
           );
           setTotalRecords(response.totalRecords);
@@ -351,6 +345,7 @@ const BusBookings = () => {
                 }
               />
             </div>
+            <BookingAuditRows slug={selectedRowData?.slug} itemClass={classes.item} />
           </div>
         </DetailModal>
       )}

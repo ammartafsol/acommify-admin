@@ -9,7 +9,9 @@
       "accepted": "Accepted",
       "rejected": "Rejected",
       "checkedIn": "Checked In",
-      "noShow": "No-Show"
+      "noShow": "No-Show",
+      "booked": "Booked",
+      "expired": "Expired"
     },
     "table": {
       "residentName": "Resident Name",
@@ -35,6 +37,14 @@
     },
     "modal": {
       "viewBookingDetails": "Bus Booking Details"
+    },
+    "history": {
+      "ticketIssued": "Ticket issued",
+      "ticketExpires": "Ticket expires",
+      "checkedIn": "Checked in",
+      "noShow": "Marked no-show",
+      "cancelled": "Cancelled",
+      "cancelReason": "Cancellation reason"
     }
   }
 }

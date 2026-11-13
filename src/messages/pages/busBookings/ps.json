@@ -7,7 +7,9 @@
       "cancelled": "لغوه شوي",
       "completed": "بشپړ شوي",
       "checkedIn": "حاضر شوي",
-      "noShow": "نه دي راغلي"
+      "noShow": "نه دي راغلي",
+      "booked": "بک شوي",
+      "expired": "ختم شوي"
     },
     "table": {
       "residentName": "د استوګن نوم",
@@ -33,6 +35,14 @@
     },
     "modal": {
       "viewBookingDetails": "د بسونو حجزونه ډیتال"
+    },
+    "history": {
+      "ticketIssued": "ټکټ صادر شو",
+      "ticketExpires": "ټکټ ختمیږي",
+      "checkedIn": "حاضر شو",
+      "noShow": "غیر حاضر وښودل شو",
+      "cancelled": "لغوه شو",
+      "cancelReason": "د لغوه کولو دلیل"
     }
   }
 }

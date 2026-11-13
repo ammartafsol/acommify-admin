@@ -7,7 +7,9 @@
       "cancelled": "An soke",
       "completed": "An ƙare",
       "checkedIn": "An shigar",
-      "noShow": "Ba su zo ba"
+      "noShow": "Ba su zo ba",
+      "booked": "An ajiye",
+      "expired": "Sun ƙare"
     },
     "table": {
       "residentName": "Sunan Mazauni",
@@ -33,6 +35,14 @@
     },
     "modal": {
       "viewBookingDetails": "Ajiyayin Bas"
+    },
+    "history": {
+      "ticketIssued": "An ba da tikiti",
+      "ticketExpires": "Tikiti zai ƙare",
+      "checkedIn": "An shigar",
+      "noShow": "An yi alamar bai zo ba",
+      "cancelled": "An soke",
+      "cancelReason": "Dalilin soke"
     }
   }
 }

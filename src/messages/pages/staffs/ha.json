@@ -123,7 +123,8 @@
       "corrected": "Manaja ya gyara",
       "noClockIn": "Babu shiga",
       "noClockOut": "Babu fita",
-      "noLunchReturn": "Babu dawowa daga abinci"
+      "noLunchReturn": "Babu dawowa daga abinci",
+      "noLunchOut": "Babu fita abincin rana"
     },
     "planned": {
       "label": "Tsararre {hours}",
@@ -232,7 +233,8 @@
       "flags": {
         "noClockIn": "Babu shiga",
         "noClockOut": "Babu fita",
-        "noLunchReturn": "Babu dawowa daga abinci"
+        "noLunchReturn": "Babu dawowa daga abinci",
+        "noLunchOut": "Babu fita abincin rana"
       },
       "readOnly": "Manaja ne kaɗai zai iya gyara halartarka."
     },
@@ -481,6 +483,27 @@
         "sameTime": "Lokacin farawa da gamawa ba za su zama iri ɗaya ba.",
         "break": "Hutu dole ya fi aikin gajarta.",
         "days": "Zaɓi aƙalla rana ɗaya."
+      }
+    },
+    "review": {
+      "title": "Duba jadawali kafin a fitar",
+      "intro": "Wannan shi ne abin da ma'aikata za su karɓa na {week}. Duba, sannan ka fitar — ko koma don gyara.",
+      "staffOnRoster": "Ma'aikata a jadawali",
+      "shifts": "Lokutan aiki",
+      "plannedHours": "Sa'o'in da aka tsara",
+      "codes": "Hutu da hutun biki",
+      "notOnRoster": "Ma'aikata {count} ba su da komai a wannan mako: {names}",
+      "changed": "An canza tun fitarwa ta ƙarshe — za a sanar da {count}: {names}",
+      "staff": "Ma'aikata",
+      "total": "Jimla",
+      "updated": "An sabunta",
+      "back": "Koma don gyara",
+      "issue": "Fitar da jadawali",
+      "reissue": "Sake fitar da jadawali",
+      "ro": {
+        "approved": "an amince",
+        "declined": "an ƙi",
+        "pending": "ana jira"
       }
     }
   }

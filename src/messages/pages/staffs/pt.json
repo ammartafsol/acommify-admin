@@ -123,7 +123,8 @@
       "corrected": "Corrigido por um gestor",
       "noClockIn": "Sem entrada",
       "noClockOut": "Sem saída",
-      "noLunchReturn": "Sem regresso do almoço"
+      "noLunchReturn": "Sem regresso do almoço",
+      "noLunchOut": "Sem saída para almoço"
     },
     "planned": {
       "label": "Previsto {hours}",
@@ -232,7 +233,8 @@
       "flags": {
         "noClockIn": "Sem entrada",
         "noClockOut": "Sem saída",
-        "noLunchReturn": "Sem regresso do almoço"
+        "noLunchReturn": "Sem regresso do almoço",
+        "noLunchOut": "Sem saída para almoço"
       },
       "readOnly": "Só um gestor pode corrigir a sua presença."
     },
@@ -481,6 +483,27 @@
         "sameTime": "A hora de início e de fim não podem ser iguais.",
         "break": "A pausa tem de ser mais curta do que o turno.",
         "days": "Escolha pelo menos um dia."
+      }
+    },
+    "review": {
+      "title": "Rever a escala antes de publicar",
+      "intro": "Isto é exatamente o que a equipa receberá para {week}. Verifique e publique, ou volte para alterar.",
+      "staffOnRoster": "Equipa na escala",
+      "shifts": "Turnos",
+      "plannedHours": "Horas planeadas",
+      "codes": "Folgas e feriados",
+      "notOnRoster": "{count} membro(s) da equipa sem nada esta semana: {names}",
+      "changed": "Alterado desde a última publicação — {count} serão notificados: {names}",
+      "staff": "Equipa",
+      "total": "Total",
+      "updated": "Atualizado",
+      "back": "Voltar a editar",
+      "issue": "Publicar escala",
+      "reissue": "Republicar escala",
+      "ro": {
+        "approved": "aprovado",
+        "declined": "recusado",
+        "pending": "pendente"
       }
     }
   }

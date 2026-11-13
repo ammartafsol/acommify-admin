@@ -7,7 +7,9 @@
       "cancelled": "Скасовано",
       "completed": "Завершено",
       "checkedIn": "Зареєстровані",
-      "noShow": "Неявка"
+      "noShow": "Неявка",
+      "booked": "Заброньовані",
+      "expired": "Прострочені"
     },
     "table": {
       "residentName": "Ім'я резидента",
@@ -33,6 +35,14 @@
     },
     "modal": {
       "viewBookingDetails": "Деталі бронювання автобуса"
+    },
+    "history": {
+      "ticketIssued": "Квиток видано",
+      "ticketExpires": "Квиток дійсний до",
+      "checkedIn": "Зареєстровано",
+      "noShow": "Позначено неявку",
+      "cancelled": "Скасовано",
+      "cancelReason": "Причина скасування"
     }
   }
 }

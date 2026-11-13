@@ -123,7 +123,8 @@
       "corrected": "Corregido por un responsable",
       "noClockIn": "Sin entrada",
       "noClockOut": "Sin salida",
-      "noLunchReturn": "Sin vuelta del almuerzo"
+      "noLunchReturn": "Sin vuelta del almuerzo",
+      "noLunchOut": "Sin salida a comer"
     },
     "planned": {
       "label": "Previsto {hours}",
@@ -232,7 +233,8 @@
       "flags": {
         "noClockIn": "Sin entrada",
         "noClockOut": "Sin salida",
-        "noLunchReturn": "Sin vuelta del almuerzo"
+        "noLunchReturn": "Sin vuelta del almuerzo",
+        "noLunchOut": "Sin salida a comer"
       },
       "readOnly": "Solo un responsable puede corregir tu asistencia."
     },
@@ -481,6 +483,27 @@
         "sameTime": "La hora de inicio y de fin no pueden ser iguales.",
         "break": "El descanso debe ser más corto que el turno.",
         "days": "Elige al menos un día."
+      }
+    },
+    "review": {
+      "title": "Revisar el turno antes de publicar",
+      "intro": "Esto es exactamente lo que recibirá el personal para {week}. Revísalo y publícalo, o vuelve para cambiarlo.",
+      "staffOnRoster": "Personal en el turno",
+      "shifts": "Turnos",
+      "plannedHours": "Horas planificadas",
+      "codes": "Libres y festivos",
+      "notOnRoster": "{count} miembro(s) del personal sin nada esta semana: {names}",
+      "changed": "Cambiado desde la última publicación — se avisará a {count}: {names}",
+      "staff": "Personal",
+      "total": "Total",
+      "updated": "Actualizado",
+      "back": "Volver a editar",
+      "issue": "Publicar turno",
+      "reissue": "Volver a publicar",
+      "ro": {
+        "approved": "aprobado",
+        "declined": "rechazado",
+        "pending": "pendiente"
       }
     }
   }

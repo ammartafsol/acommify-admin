@@ -7,7 +7,9 @@
       "cancelled": "Annulé",
       "completed": "Terminé",
       "checkedIn": "Enregistrés",
-      "noShow": "Absents"
+      "noShow": "Absents",
+      "booked": "Réservés",
+      "expired": "Expirés"
     },
     "table": {
       "residentName": "Nom du Résident",
@@ -33,6 +35,14 @@
     },
     "modal": {
       "viewBookingDetails": "Détails de la Réservation de Bus"
+    },
+    "history": {
+      "ticketIssued": "Billet émis",
+      "ticketExpires": "Le billet expire",
+      "checkedIn": "Enregistré",
+      "noShow": "Marqué absent",
+      "cancelled": "Annulé",
+      "cancelReason": "Motif d'annulation"
     }
   }
 }

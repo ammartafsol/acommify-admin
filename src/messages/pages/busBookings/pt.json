@@ -7,7 +7,9 @@
       "cancelled": "Cancelado",
       "completed": "Concluído",
       "checkedIn": "Check-in feito",
-      "noShow": "Não compareceu"
+      "noShow": "Não compareceu",
+      "booked": "Reservados",
+      "expired": "Expirados"
     },
     "table": {
       "residentName": "Nome do Residente",
@@ -33,6 +35,14 @@
     },
     "modal": {
       "viewBookingDetails": "Detalhes da Reserva de Ônibus"
+    },
+    "history": {
+      "ticketIssued": "Bilhete emitido",
+      "ticketExpires": "Bilhete expira",
+      "checkedIn": "Check-in feito",
+      "noShow": "Marcado como não compareceu",
+      "cancelled": "Cancelado",
+      "cancelReason": "Motivo do cancelamento"
     }
   }
 }

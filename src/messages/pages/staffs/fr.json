@@ -123,7 +123,8 @@
       "corrected": "Corrigé par un responsable",
       "noClockIn": "Pas d'arrivée",
       "noClockOut": "Pas de sortie",
-      "noLunchReturn": "Pas de retour du déjeuner"
+      "noLunchReturn": "Pas de retour du déjeuner",
+      "noLunchOut": "Pas de sortie déjeuner"
     },
     "planned": {
       "label": "Prévu {hours}",
@@ -232,7 +233,8 @@
       "flags": {
         "noClockIn": "Pas d'arrivée",
         "noClockOut": "Pas de sortie",
-        "noLunchReturn": "Pas de retour du déjeuner"
+        "noLunchReturn": "Pas de retour du déjeuner",
+        "noLunchOut": "Pas de sortie déjeuner"
       },
       "readOnly": "Seul un responsable peut corriger votre pointage."
     },
@@ -481,6 +483,27 @@
         "sameTime": "Les heures de début et de fin ne peuvent pas être identiques.",
         "break": "La pause doit être plus courte que le poste.",
         "days": "Choisissez au moins un jour."
+      }
+    },
+    "review": {
+      "title": "Vérifier le planning avant de le publier",
+      "intro": "Voici exactement ce que le personnel recevra pour {week}. Vérifiez puis publiez, ou revenez pour modifier.",
+      "staffOnRoster": "Personnel planifié",
+      "shifts": "Postes",
+      "plannedHours": "Heures prévues",
+      "codes": "Repos et congés",
+      "notOnRoster": "{count} membre(s) du personnel sans rien cette semaine : {names}",
+      "changed": "Modifié depuis la dernière publication — {count} seront notifiés : {names}",
+      "staff": "Personnel",
+      "total": "Total",
+      "updated": "Mis à jour",
+      "back": "Retour à l'édition",
+      "issue": "Publier le planning",
+      "reissue": "Republier le planning",
+      "ro": {
+        "approved": "approuvé",
+        "declined": "refusé",
+        "pending": "en attente"
       }
     }
   }

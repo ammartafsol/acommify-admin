@@ -4,6 +4,7 @@ import RenderToast from "@/components/atoms/RenderToast";
 import SearchInput from "@/components/molecules/SearchInput/SearchInput";
 import StaffSubNav from "@/components/molecules/StaffSubNav/StaffSubNav";
 import AreYouSureModal from "@/components/organisms/Modals/AreYouSureModal/AreYouSureModal";
+import RosterReviewModal from "./RosterReviewModal";
 import useAxios from "@/interceptor/axios-functions";
 import { useTranslations } from "@/resources/hooks/useTranslations";
 import { imageUrl, mergeClass } from "@/resources/utils/helper";
@@ -87,6 +88,8 @@ export default function StaffRostering() {
   const [editing, setEditing] = useState(null); // { staff, day }
   const [confirm, setConfirm] = useState(null); // { type: "issue" | "leave" | "copy", ... }
   const [showPendingOnly, setShowPendingOnly] = useState(false);
+  // Review the whole week before issuing it (PDF §3)
+  const [showReview, setShowReview] = useState(false);
   const requestId = useRef(0);
 
   const weekKey = toDayKey(weekStart);
@@ -233,7 +236,7 @@ export default function StaffRostering() {
       });
       return;
     }
-    setConfirm({ type: "issue" });
+    setShowReview(true);
   }
 
   async function issueRoster() {
@@ -248,6 +251,7 @@ export default function StaffRostering() {
         isIssued ? t("toast.reissued") : t("toast.issued"),
       );
       setConfirm(null);
+      setShowReview(false);
     }
     setLoading("");
   }
@@ -719,6 +723,26 @@ export default function StaffRostering() {
             const s = staff.find((x) => String(x._id) === String(id));
             return s ? staffName(s) : "";
           }}
+        />
+      )}
+
+      {showReview && (
+        <RosterReviewModal
+          show={showReview}
+          setShow={setShowReview}
+          t={t}
+          locale={locale}
+          staff={staff}
+          entries={entries}
+          issuedEntries={roster?.issuedEntries}
+          isIssued={isIssued}
+          weekDays={weekDays}
+          dayKeys={dayKeys}
+          holidays={holidays}
+          weekLabel={formatWeekLabel(weekStart, locale)}
+          staffName={staffName}
+          onIssue={issueRoster}
+          loading={loading === "issue"}
         />
       )}
 

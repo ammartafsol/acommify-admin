@@ -7,7 +7,9 @@
       "cancelled": "გაუქმებული",
       "completed": "დასრულებული",
       "checkedIn": "დარეგისტრირებული",
-      "noShow": "არ გამოცხადდა"
+      "noShow": "არ გამოცხადდა",
+      "booked": "დაჯავშნილი",
+      "expired": "ვადაგასული"
     },
     "table": {
       "residentName": "მოსახლის სახელი",
@@ -33,6 +35,14 @@
     },
     "modal": {
       "viewBookingDetails": "ავტობუსის დაჯავშნის დეტალები"
+    },
+    "history": {
+      "ticketIssued": "ბილეთი გაიცა",
+      "ticketExpires": "ბილეთის ვადა",
+      "checkedIn": "დარეგისტრირდა",
+      "noShow": "მოინიშნა — არ გამოცხადდა",
+      "cancelled": "გაუქმდა",
+      "cancelReason": "გაუქმების მიზეზი"
     }
   }
 }
