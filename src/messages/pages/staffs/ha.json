@@ -331,8 +331,13 @@
         "pending": "An nemi hutu · ana jira",
         "approved": "An amince da hutu",
         "declined": "An ƙi hutu"
-      }
-    }
+      },
+      "holidayDay": "Ranar hutu – ba sai ka nemi hutu ba"
+    },
+    "holidayToday": "Yau ranar hutu ce",
+    "bankHolidayToday": "Yau ranar hutun banki ce",
+    "holidayEnjoy": "Ji daɗin ranar hutunka.",
+    "holidayNoClockIn": "Yau ranar hutu ce, don haka ba za a iya shiga aiki ba."
   },
   "staffRosterPage": {
     "history": {
@@ -401,7 +406,8 @@
       "break": "hutun minti {minutes}",
       "roPending": "Yana buƙatar dubawa",
       "roApproved": "An amince",
-      "roDeclinedNoShift": "An ƙi · babu aiki"
+      "roDeclinedNoShift": "An ƙi · babu aiki",
+      "holidayLocked": "Ranar hutu – ba za a iya sanya aiki a wannan rana ba"
     },
     "toast": {
       "saved": "An ajiye daftarin jadawali.",

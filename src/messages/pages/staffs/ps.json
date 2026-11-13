@@ -331,8 +331,13 @@
         "pending": "رخصتي غوښتل شوې · په تمه",
         "approved": "رخصتي منظوره شوه",
         "declined": "رخصتي رد شوه"
-      }
-    }
+      },
+      "holidayDay": "رخصتي – د رخصتۍ غوښتنې ته اړتیا نشته"
+    },
+    "holidayToday": "نن رخصتي ده",
+    "bankHolidayToday": "نن عمومي رخصتي ده",
+    "holidayEnjoy": "د خپلې رخصتۍ ورځ مو خوند واخلئ.",
+    "holidayNoClockIn": "نن رخصتي ده، نو د حاضرۍ ثبتول شتون نه لري."
   },
   "staffRosterPage": {
     "history": {
@@ -401,7 +406,8 @@
       "break": "{minutes} دقیقې وقفه",
       "roPending": "کتنې ته اړتیا",
       "roApproved": "منظور شو",
-      "roDeclinedNoShift": "رد شو · شفټ نشته"
+      "roDeclinedNoShift": "رد شو · شفټ نشته",
+      "holidayLocked": "رخصتي – پدې ورځ هېڅ نه شي ټاکل کېدای"
     },
     "toast": {
       "saved": "د مهالویش مسوده خوندي شوه.",

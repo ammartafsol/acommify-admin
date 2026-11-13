@@ -276,6 +276,7 @@ export default function MyRoster({ locale, t }) {
       <DayOffRequests
         weekDays={weekDays}
         requests={requests}
+        holidayByDay={holidayByDay}
         onChanged={loadRequests}
         locale={locale}
         t={t}

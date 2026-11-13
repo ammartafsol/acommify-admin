@@ -26,6 +26,7 @@ import {
   LuCoffee,
   LuPlay,
 } from "react-icons/lu";
+import { toDayKey } from "@/components/templates/StaffRostering/rosterUtils";
 import { Link } from "@/i18n/navigation";
 import MyAttendance from "./MyAttendance";
 import MyRoster from "./MyRoster";
@@ -44,6 +45,8 @@ export default function StaffCheckIn({ onChange }) {
   const [now, setNow] = useState(() => new Date());
   const [current, setCurrent] = useState(null);
   const [records, setRecords] = useState([]);
+  // today's holiday from the server (no clock-in), or null
+  const [holiday, setHoliday] = useState(null);
   const [loading, setLoading] = useState("loading");
 
   const weekStart = useMemo(() => getWeekStart(now), [now.toDateString()]);
@@ -57,6 +60,7 @@ export default function StaffCheckIn({ onChange }) {
     if (response) {
       setCurrent(response?.data?.current || null);
       setRecords(Array.isArray(response?.data?.records) ? response.data.records : []);
+      setHoliday(response?.data?.holiday || null);
     }
     setLoading("");
   }
@@ -102,7 +106,9 @@ export default function StaffCheckIn({ onChange }) {
   const isCheckedIn = Boolean(current);
   const runningBreak = openBreak(current);
   const finishedLunch = current?.breaks?.find((b) => b.end);
-  // idle → working → lunch → afterLunch → complete (one shift a day)
+  // idle → working → lunch → afterLunch → complete (one shift a day);
+  // "holiday" replaces idle on a holiday: no clock-in that day
+  const isHolidayToday = Boolean(holiday) && holiday.date === toDayKey(now);
   const phase = runningBreak
     ? "lunch"
     : isCheckedIn
@@ -111,7 +117,9 @@ export default function StaffCheckIn({ onChange }) {
         : "working"
       : today.sessions.some((s) => s.checkOut)
         ? "complete"
-        : "idle";
+        : isHolidayToday
+          ? "holiday"
+          : "idle";
 
   let statusTitle = t("notClockedIn");
   let statusText = t("readyToStart");
@@ -139,6 +147,10 @@ export default function StaffCheckIn({ onChange }) {
       hours: formatDuration(today.minutes),
     });
     statusTone = "out";
+  } else if (phase === "holiday") {
+    statusTitle = t(holiday.type === "bank-holiday" ? "bankHolidayToday" : "holidayToday");
+    statusText = holiday.name?.[locale] || holiday.name?.en || t("holidayEnjoy");
+    statusTone = "holiday";
   }
 
   const weekRange = `${weekStart.toLocaleDateString(locale, {
@@ -293,6 +305,11 @@ export default function StaffCheckIn({ onChange }) {
               ))}
 
             {phase === "complete" && <p className={styles.phaseDone}>{t("noMoreActions")}</p>}
+            {phase === "holiday" && (
+              <p className={styles.phaseDone} data-testid="holiday-no-clock-in">
+                {t("holidayNoClockIn")}
+              </p>
+            )}
 
             <p className={styles.divider}>{t("recentActivity")}</p>
 

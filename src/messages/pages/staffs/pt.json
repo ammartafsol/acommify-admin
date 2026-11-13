@@ -331,8 +331,13 @@
         "pending": "Folga pedida · a aguardar",
         "approved": "Folga aprovada",
         "declined": "Folga recusada"
-      }
-    }
+      },
+      "holidayDay": "Feriado – não é preciso pedir folga"
+    },
+    "holidayToday": "Feriado hoje",
+    "bankHolidayToday": "Feriado bancário hoje",
+    "holidayEnjoy": "Aproveite o seu dia de folga.",
+    "holidayNoClockIn": "Hoje é feriado, por isso não é possível registar a entrada."
   },
   "staffRosterPage": {
     "history": {
@@ -401,7 +406,8 @@
       "break": "pausa {minutes}m",
       "roPending": "Por rever",
       "roApproved": "Aprovado",
-      "roDeclinedNoShift": "Recusado · sem turno"
+      "roDeclinedNoShift": "Recusado · sem turno",
+      "holidayLocked": "Feriado – não é possível escalar ninguém neste dia"
     },
     "toast": {
       "saved": "Rascunho da escala guardado.",

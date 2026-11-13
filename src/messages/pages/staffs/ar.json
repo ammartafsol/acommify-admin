@@ -331,8 +331,13 @@
         "pending": "إجازة مطلوبة · بانتظار",
         "approved": "تمت الموافقة على الإجازة",
         "declined": "تم رفض الإجازة"
-      }
-    }
+      },
+      "holidayDay": "عطلة – لا حاجة لطلب إجازة"
+    },
+    "holidayToday": "اليوم عطلة",
+    "bankHolidayToday": "اليوم عطلة رسمية",
+    "holidayEnjoy": "استمتع بيوم إجازتك.",
+    "holidayNoClockIn": "اليوم عطلة، لذلك تسجيل الحضور غير متاح."
   },
   "staffRosterPage": {
     "history": {
@@ -401,7 +406,8 @@
       "break": "استراحة {minutes} د",
       "roPending": "بحاجة إلى مراجعة",
       "roApproved": "موافق عليه",
-      "roDeclinedNoShift": "مرفوض · بدون مناوبة"
+      "roDeclinedNoShift": "مرفوض · بدون مناوبة",
+      "holidayLocked": "عطلة – لا يمكن جدولة أي شيء في هذا اليوم"
     },
     "toast": {
       "saved": "تم حفظ مسودة الجدول.",

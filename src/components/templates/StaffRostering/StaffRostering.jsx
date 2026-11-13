@@ -567,6 +567,7 @@ export default function StaffRostering() {
                     className={mergeClass(
                       styles.dayCol,
                       isSameDay(day, today) ? styles.today : "",
+                      holidayClass(holidayByDay[toDayKey(day)]),
                     )}
                   >
                     <span className={styles.dayName}>
@@ -667,11 +668,19 @@ export default function StaffRostering() {
                       </td>
 
                       {days.map((entry, i) => (
-                        <td key={dayKeys[i]} className={styles.dayCol}>
+                        <td
+                          key={dayKeys[i]}
+                          className={mergeClass(
+                            styles.dayCol,
+                            holidayClass(holidayByDay[dayKeys[i]]),
+                          )}
+                        >
                           <RosterCell
                             entry={entry}
                             request={pendingRequestByKey[entryKey(id, dayKeys[i])]}
-                            canEdit={canManage && !isBusy}
+                            holiday={holidayByDay[dayKeys[i]]}
+                            // a centre holiday is closed: nothing can be rostered on it
+                            canEdit={canManage && !isBusy && !holidayByDay[dayKeys[i]]}
                             onClick={() =>
                               setEditing({ staff: s, day: weekDays[i] })
                             }
@@ -696,7 +705,10 @@ export default function StaffRostering() {
                 <tr>
                   <td className={styles.nameCol}>{t("table.dailyTotal")}</td>
                   {dayTotals.map((d, i) => (
-                    <td key={dayKeys[i]} className={styles.dayCol}>
+                    <td
+                      key={dayKeys[i]}
+                      className={mergeClass(styles.dayCol, holidayClass(holidayByDay[dayKeys[i]]))}
+                    >
                       <strong>
                         {d.minutes ? formatHours(d.minutes) : "-"}
                       </strong>
@@ -808,9 +820,21 @@ export default function StaffRostering() {
 }
 
 /** One day of one staff member in the roster table. */
-function RosterCell({ entry, request, canEdit, onClick, label, t }) {
+/** Tinted, striped column for a centre holiday / bank holiday. */
+function holidayClass(holiday) {
+  if (!holiday) return "";
+  return mergeClass(
+    styles.holidayCol,
+    holiday.type === "bank-holiday" ? styles.holidayCol_bhol : styles.holidayCol_hol,
+  );
+}
+
+function RosterCell({ entry, request, holiday, canEdit, onClick, label, t }) {
   let content;
-  if (!entry) {
+  if (!entry && holiday) {
+    // the striped holiday column already says it: keep the cell clean
+    content = null;
+  } else if (!entry) {
     content = canEdit ? (
       <span className={styles.addIcon}>
         <LuPlus size={16} />
@@ -867,6 +891,7 @@ function RosterCell({ entry, request, canEdit, onClick, label, t }) {
     entry ? styles[`cell_${entry.type}`] : styles.cellEmpty,
     isPendingRo(entry) || request ? styles.cellPending : "",
     canEdit ? styles.cellEditable : "",
+    holiday ? styles.cellHoliday : "",
   );
 
   // A staff member asked for this day off and it hasn't been reviewed yet
@@ -884,7 +909,11 @@ function RosterCell({ entry, request, canEdit, onClick, label, t }) {
 
   if (!canEdit)
     return (
-      <div className={className} title={entry?.note || undefined}>
+      <div
+        className={className}
+        title={holiday ? t("cell.holidayLocked") : entry?.note || undefined}
+        data-holiday={holiday ? "true" : undefined}
+      >
         {requestTag}
         {content}
         {note}

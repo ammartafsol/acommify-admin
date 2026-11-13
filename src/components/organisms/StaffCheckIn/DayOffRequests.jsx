@@ -13,7 +13,7 @@ import styles from "./DayOffRequests.module.css";
  * Staff side of R/O: ask for days off in the week being viewed, and follow
  * what the manager decided. A request is not approved leave until reviewed.
  */
-export default function DayOffRequests({ weekDays, requests, onChanged, locale, t }) {
+export default function DayOffRequests({ weekDays, requests, holidayByDay = {}, onChanged, locale, t }) {
   const { Post, Delete } = useAxios();
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState([]);
@@ -82,18 +82,27 @@ export default function DayOffRequests({ weekDays, requests, onChanged, locale, 
               const key = toDayKey(d);
               const past = key < todayKey;
               const taken = activeByDay[key];
+              // no day off needed on a centre holiday
+              const holiday = holidayByDay[key];
               const isOn = selected.includes(key);
               return (
                 <button
                   key={key}
                   type="button"
-                  disabled={past || !!taken}
+                  disabled={past || !!taken || !!holiday}
                   aria-pressed={isOn}
-                  title={taken ? t("requests.alreadyRequested") : undefined}
+                  title={
+                    holiday
+                      ? t("requests.holidayDay")
+                      : taken
+                        ? t("requests.alreadyRequested")
+                        : undefined
+                  }
                   className={mergeClass(
                     styles.day,
                     isOn ? styles.dayOn : "",
                     taken ? styles.dayTaken : "",
+                    holiday ? styles.dayHoliday : "",
                   )}
                   onClick={() => toggle(key)}
                 >

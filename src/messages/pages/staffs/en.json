@@ -331,8 +331,13 @@
         "pending": "Day off requested · waiting",
         "approved": "Day off approved",
         "declined": "Day off declined"
-      }
-    }
+      },
+      "holidayDay": "Holiday – no day off needed"
+    },
+    "holidayToday": "Holiday today",
+    "bankHolidayToday": "Bank holiday today",
+    "holidayEnjoy": "Enjoy your day off.",
+    "holidayNoClockIn": "Today is a holiday, so clock-in is not available."
   },
   "staffRosterPage": {
     "history": {
@@ -401,7 +406,8 @@
       "break": "{minutes}m break",
       "roPending": "Needs review",
       "roApproved": "Approved",
-      "roDeclinedNoShift": "Declined · no shift"
+      "roDeclinedNoShift": "Declined · no shift",
+      "holidayLocked": "Holiday – nothing can be rostered on this day"
     },
     "toast": {
       "saved": "Roster draft saved.",

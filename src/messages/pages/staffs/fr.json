@@ -331,8 +331,13 @@
         "pending": "Congé demandé · en attente",
         "approved": "Congé approuvé",
         "declined": "Congé refusé"
-      }
-    }
+      },
+      "holidayDay": "Jour férié – inutile de demander un congé"
+    },
+    "holidayToday": "Jour férié aujourd'hui",
+    "bankHolidayToday": "Jour férié bancaire aujourd'hui",
+    "holidayEnjoy": "Profitez de votre journée de repos.",
+    "holidayNoClockIn": "Aujourd'hui est un jour férié : le pointage d'arrivée n'est pas disponible."
   },
   "staffRosterPage": {
     "history": {
@@ -401,7 +406,8 @@
       "break": "pause {minutes} min",
       "roPending": "À examiner",
       "roApproved": "Approuvé",
-      "roDeclinedNoShift": "Refusé · sans poste"
+      "roDeclinedNoShift": "Refusé · sans poste",
+      "holidayLocked": "Jour férié – rien ne peut être planifié ce jour-là"
     },
     "toast": {
       "saved": "Brouillon du planning enregistré.",

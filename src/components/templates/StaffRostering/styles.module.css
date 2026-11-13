@@ -507,6 +507,42 @@
   background: #fffcf5;
 }
 
+/* A centre holiday: closed, not clickable (the column carries the look) */
+.cellHoliday {
+  align-items: center;
+  justify-content: center;
+  cursor: not-allowed;
+}
+
+.cellHoliday:not(.cell_ro):not(.cell_shift) {
+  background: transparent;
+}
+
+/* Holiday column: one soft striped band from header to the last row */
+.holidayCol {
+  --hol-tint: #faf8ff;
+  --hol-stripe: rgba(109, 40, 217, 0.035);
+  background-color: var(--hol-tint) !important;
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--hol-stripe) 0 6px,
+    transparent 6px 14px
+  ) !important;
+}
+
+.holidayCol_bhol {
+  --hol-tint: #f5fefc;
+  --hol-stripe: rgba(15, 118, 110, 0.04);
+}
+
+th.holidayCol {
+  border-radius: 10px 10px 0 0;
+}
+
+tfoot td.holidayCol {
+  border-radius: 0 0 10px 10px;
+}
+
 .cellPending {
   border: 1px dashed #f79009;
   background: #fffaeb;
@@ -646,7 +682,8 @@
 
 /* Centre holiday / bank holiday on this day (from CRUD → Holidays) */
 .holidayTag {
-  margin-top: 4px;
+  margin-top: 6px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06);
   max-width: 100%;
   display: inline-flex !important;
   align-items: center;

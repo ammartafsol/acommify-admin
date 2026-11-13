@@ -331,8 +331,13 @@
         "pending": "Libre solicitado · pendiente",
         "approved": "Día libre aprobado",
         "declined": "Día libre rechazado"
-      }
-    }
+      },
+      "holidayDay": "Festivo – no hace falta pedir el día libre"
+    },
+    "holidayToday": "Hoy es festivo",
+    "bankHolidayToday": "Hoy es festivo bancario",
+    "holidayEnjoy": "Disfruta de tu día libre.",
+    "holidayNoClockIn": "Hoy es festivo, por lo que no puedes fichar la entrada."
   },
   "staffRosterPage": {
     "history": {
@@ -401,7 +406,8 @@
       "break": "descanso {minutes}m",
       "roPending": "Por revisar",
       "roApproved": "Aprobado",
-      "roDeclinedNoShift": "Rechazado · sin turno"
+      "roDeclinedNoShift": "Rechazado · sin turno",
+      "holidayLocked": "Festivo – no se puede programar nada este día"
     },
     "toast": {
       "saved": "Borrador de turnos guardado.",

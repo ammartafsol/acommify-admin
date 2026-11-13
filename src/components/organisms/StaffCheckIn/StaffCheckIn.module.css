@@ -186,6 +186,18 @@
   color: #0b6aa2;
 }
 
+.holiday {
+  background: #fffaeb;
+}
+
+.holiday i {
+  background: #f79009;
+}
+
+.holiday p {
+  color: #b54708;
+}
+
 .primary {
   height: 48px;
   border: none;
